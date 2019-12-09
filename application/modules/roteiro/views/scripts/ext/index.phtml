@@ -1,0 +1,257 @@
+<div class="outter-wp">
+	<!--/sub-heard-part-->
+	<div class="sub-heard-part">
+		<ol class="breadcrumb m-b-0">
+            <li><a href="<?php echo $this->baseUrl('/administrativo/painel/')?>">Home</a></li>
+			<li><a href="<?php echo $this->baseUrl('/roteiro/painel/')?>">Roteiro</a></li>
+			<li class="active">Inspeção de Segurança em Extintores</li>
+		</ol>
+	</div>
+
+	<div class="forms-main">
+		<div class="graph-form">
+			<div class="validation-form">
+				<form class="form-horizontal group-border hover-stripped" role="form" method="post" action="{{ url('extintor/store') }}" >                    
+                    <div class="col-md-5 form-group2">
+                        <label class="control-label">Cliente</label>
+                        <select name="id_cliente" id="id_cliente" required data-dependent="st_conformidade" class="dynamic">
+                            <option></option>
+                        </select>
+                    </div>
+                    
+                    <div class="col-md-5 form-group2">
+                        <label class="control-label">Conformidade e nº da área</label>
+                        <select name="id_conformidade" id="id_conformidade" >
+                            <option></option>
+                            <option value=""> </option>
+                        </select>
+                    </div>
+
+                    <div class="col-md-2 form-group2">
+                        <label class="control-label">Mês/Ano</label>
+                        <input type="text" class="form-control" name="st_mes_ano" id="st_mes_ano" value="<?php echo date('m/Y')?>">
+                    </div>
+
+                    <div class="col-md-4 form-group2">
+                        <label class="control-label">Unidade</label>
+                        <input type="text" class="form-control" name="st_unidade" id="st_unidade" >
+                    </div>
+                    
+                    <div class="col-md-4 form-group2">
+                        <label class="control-label">descrição</label>
+                        <input type="text" class="form-control" name="st_descricao" id="st_descricao" >
+                    </div>
+
+                    <div class="col-md-4 form-group2">
+                        <label class="control-label">Operador</label>
+                        <input type="text" class="form-control" name="st_operador" id="st_operador" >
+                    </div>
+
+                    <div class="col-md-6 form-group2">
+                        <label class="control-label">Supervisor do setor</label>
+                        <input type="text" class="form-control" name="st_supervisor" id="st_supervisor" >
+                    </div>
+
+                    <div class="col-md-6 form-group2">
+                        <label class="control-label">Engenheiro/Técnico em Segurança ou Responsável</label>
+                        <input type="text" class="form-control" name="st_engenheiro" id="st_engenheiro" >
+                    </div>
+
+                    <div class="col-md-12 form-group2">
+                        <label class="control-label"><strong>Roteiro</strong></label>
+                    </div>
+
+                    <div class="col-md-12 form-group2">
+
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Identificação.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_identificacao" id="st_identificacao" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_identificacao" id="st_identificacao" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_identificacao" id="st_identificacao" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Carga/Recarga.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_carga_recarga" id="st_carga_recarga" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_carga_recarga" id="st_carga_recarga" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_carga_recarga" id="st_carga_recarga" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Reteste.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_reteste" id="st_reteste" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_reteste" id="st_reteste" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_reteste" id="st_reteste" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Pintura.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_pintura" id="st_pintura" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_pintura" id="st_pintura" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_pintura" id="st_pintura" value='NA'>  <label>N.A.</label></div>
+                        </div> 
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Lacre.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_lacre" id="st_lacre" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_lacre" id="st_lacre" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_lacre" id="st_lacre" value='NA'>  <label>N.A.</label></div>
+                        </div> 
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Manômetro.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_manometro" id="st_manometro" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_manometro" id="st_manometro" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_manometro" id="st_manometro" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Bico ou difusor.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_bico_difusor" id="st_bico_difusor" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_bico_difusor" id="st_bico_difusor" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_bico_difusor" id="st_bico_difusor" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Punho.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_punho" id="st_punho" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_punho" id="st_punho" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_punho" id="st_punho" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Recarga no mesmo estado.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_recarga_estado" id="st_recarga_estado" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_recarga_estado" id="st_recarga_estado" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_recarga_estado" id="st_recarga_estado" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Alavanca/Pistola.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_alavanca_pistola" id="st_alavanca_pistola" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_alavanca_pistola" id="st_alavanca_pistola" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_alavanca_pistola" id="st_alavanca_pistola" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Anel de identificação.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_anel_identificacao" id="st_anel_identificacao" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_anel_identificacao" id="st_anel_identificacao" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_anel_identificacao" id="st_anel_identificacao" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Suporte no piso.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_suporte_piso" id="st_suporte_piso" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_suporte_piso" id="st_suporte_piso" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_suporte_piso" id="st_suporte_piso" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Bem sinalização.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_bem_sinalizacao" id="st_bem_sinalizacao" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_bem_sinalizacao" id="st_bem_sinalizacao" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_bem_sinalizacao" id="st_bem_sinalizacao" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Localização.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_localizacao" id="st_localizacao" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_localizacao" id="st_localizacao" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_localizacao" id="st_localizacao" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Extintor desobstruído.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_extintor" id="st_extintor" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_extintor" id="st_extintor" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_extintor" id="st_extintor" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Proteção intempérie.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_protecao_intemperie" id="st_protecao_intemperie" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_protecao_intemperie" id="st_protecao_intemperie" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_protecao_intemperie" id="st_protecao_intemperie" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Está bem fixado.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_bem_fixado" id="st_bem_fixado" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_bem_fixado" id="st_bem_fixado" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_bem_fixado" id="st_bem_fixado" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Adequado classe do fogo.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_classe_fogo" id="st_classe_fogo" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_classe_fogo" id="st_classe_fogo" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_classe_fogo" id="st_classe_fogo" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Trabalhadores apto ao uso.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_trabalhadores_aptos" id="st_trabalhadores_aptos" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_trabalhadores_aptos" id="st_trabalhadores_aptos" value='N'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_trabalhadores_aptos" id="st_trabalhadores_aptos" value='NA'>  <label>N.A.</label></div>
+                        </div>
+                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+                            <div class="col-md-9 form-group2">
+                                <label>Outros.</label>
+                            </div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_outros" id="st_outros" value='S'>  <label>SIM</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_outros" id="st_outros" value='S'>  <label>NÃO</label></div>
+                            <div class="col-md-1 form-group1"><input type="radio" name="st_outros" id="st_outros" value='S'>  <label>N.A.</label></div>
+                        </div>
+                    </div>  
+                    <div class="col-md-12 form-group1 ">
+                        <label class="control-label">Observação</label>
+                        <textarea name="ds_observacao" id="ds_observacao"></textarea>
+                    </div>     
+                    
+					<div class="col-md-12 form-group button-2">
+						<button type="submit" class="btn btn-primary">Salvar</button>
+						<a href="{{ url('/extintor') }}">
+							<button class="btn btn-red" type="button">Visualizar Cadastrados</button>
+						</a>
+					</div>
+					<div class="clearfix"> </div>
+				</form>
+			</div>
+		</div>
+	</div> 
+</div>
+
+<script>
+    $(document).ready(function(){
+        $("#id_cliente").change(function(){
+            $.get('get_conformidade/' + $(this).val(), function(response){
+                $('#id_conformidade').empty();
+                $('#id_conformidade').append('<option value="">Selecione</option>');
+                $.each(response,function(key,value){
+                    $('#id_conformidade').append('<option value='+value.id+'>'+value.st_conformidade+'</option>');
+                });
+            });
+        });
+    });
+</script>

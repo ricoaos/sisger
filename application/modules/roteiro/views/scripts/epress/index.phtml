@@ -1,0 +1,282 @@
+<div class="outter-wp">
+	<!--/sub-heard-part-->
+	<div class="sub-heard-part">
+		<ol class="breadcrumb m-b-0">
+			<li><a href="<?php echo $this->baseUrl('/administrativo/painel/')?>">Home</a></li>
+			<li><a href="<?php echo $this->baseUrl('/roteiro/painel/')?>">Roteiro</a></li>
+			<li class="active">Escada Pressurizada</li>
+		</ol>
+	</div>
+
+	<div class="forms-main">
+		<div class="graph-form">
+			<div class="validation-form">
+				<form class="form-horizontal group-border hover-stripped" role="form" method="post" action="{{ url('escada/store') }}" >
+                    <div class="col-md-6 form-group2 group mail">
+                        <label class="control-label">Cliente</label>
+                        <select name="id_cliente" id="id_cliente" required>
+                            <option></option>
+                            <?php foreach($cliente as $item) : ?>
+                                <option value="<?php echo $item['id'] ?>"><?php echo $item['nm_pessoa'] ?></option>
+                            <?php endforeach; ?>
+                        </select>
+					</div>
+					
+					<div class="col-md-2 form-group2">
+						<label class="control-label">Mês/Ano</label>
+						<input type="text" class="form-control" name="st_mes_ano" id="st_mes_ano" value="<?php echo date('m/Y')?>">
+					</div>
+
+					<div class="col-md-5 form-group2"><span>&nbsp;</span></div>
+
+					<div class="col-md-4 form-group2">
+						<label class="control-label">Unidade</label>
+						<input type="text" class="form-control" name="st_unidade" id="st_unidade" >
+					</div>
+						
+					<div class="col-md-4 form-group2">
+						<label class="control-label">descrição</label>
+						<input type="text" class="form-control" name="st_descricao" id="st_descricao" >
+					</div>
+	
+					<div class="col-md-4 form-group2">
+						<label class="control-label">Operador</label>
+						<input type="text" class="form-control" name="st_operador" id="st_operador" >
+					</div>
+	
+					<div class="col-md-6 form-group2">
+						<label class="control-label">Supervisor do setor</label>
+						<input type="text" class="form-control" name="st_supervisor" id="st_supervisor" >
+					</div>
+	
+					<div class="col-md-6 form-group2">
+						<label class="control-label">Engenheiro/Técnico em Segurança ou Responsável</label>
+						<input type="text" class="form-control" name="st_engenheiro" id="st_engenheiro" >
+					</div>
+
+                    <div class="col-md-12 form-group2">
+						<label class="control-label"><strong>ROTEIROS</strong></label>
+					</div>
+
+					<div class="col-md-12 form-group2"><span>&nbsp;</span></div>
+
+					<div class="col-md-12 form-group2">
+
+						<div class="col-md-12 form-group2"><label>1-Funcionabilidade do acionamento e alarme.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_funcionalidade_data" id="st_funcionalidade_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group2 group mail"><label>Situação</label>
+							<select name="st_funcionalidade_situacao" id="st_funcionalidade_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_funcionalidade_obs" id="st_funcionalidade_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>2-Existência de grades de aberturas.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_existencia_grade_data" id="st_existencia_grade_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_existencia_grade_situacao" id="st_existencia_grade_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_existencia_grade_obs" id="st_existencia_grade_obs"></textarea></div>
+					
+						<div class="col-md-12 form-group2"><label>3-Componentes do sistema de pressurização devem ser protegidos contra o fogo por no mínimo 2 horas.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_protegidos_data" id="st_protegidos_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_protegidos_situacao" id="st_protegidos_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_protegidos_obs" id="st_protegidos_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>4-Pisos escorregadios nas proximidades das portas que dão acesso aos espaços pressurizados devem ser evitados</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_piso_escorregadio_data" id="st_piso_escorregadio_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_piso_escorregadio_situacao" id="st_piso_escorregadio_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_piso_escorregadio_obs" id="st_piso_escorregadio_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>5-Portas de saída do espaço pressurizado devem ter dispositivos de fechamento capazes de mantê-las fechadas,mesmo sob a ação do sistema de pressurização.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_porta_saida_data" id="st_porta_saida_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_porta_saida_situacao" id="st_porta_saida_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_porta_saida_obs" id="st_porta_saida_obs"></textarea></div>
+						
+						<div class="col-md-12 form-group2"><label>6-Deve ser prevista uma sinalização orientativa nas portas corta-fogo, na sua face externa à escada de segurança, comos seguintes dizeres: “SAÍDA DE EMERGÊNCIA ESCADA PRESSURIZADA".</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_sinalizacao_data" id="st_sinalizacao_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_sinalizacao_situacao" id="st_sinalizacao_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_sinalizacao_obs" id="st_sinalizacao_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>7-As paredes que envolvem as escadas de segurança, bem como os dutos em alvenaria, devem ser revestidos internamente para minimizar os vazamentos não identificados.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_parede_revestido_data" id="st_parede_revestido_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_parede_revestido_situacao" id="st_parede_revestido_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_parede_revestido_obs" id="st_parede_revestido_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>8-Devem ser previstos dispositivos de fechamento automático que garantam o bloqueio da passagem de fumaça em caso de incêndio, evitando o seu alastramento para outros ambientes ou pavimentos.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_dispositivo_automatico_data" id="st_dispositivo_automatico_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_dispositivo_automatico_situacao" id="st_dispositivo_automatico_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_dispositivo_automatico_obs" id="st_dispositivo_automatico_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>9-Na situação de emergência, todos os sistemas de circulação de ar devem ter o funcionamento imediatamente interrompido.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_situacao_emergencia_data" id="st_situacao_emergencia_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_situacao_emergencia_situacao" id="st_situacao_emergencia_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_situacao_emergencia_obs" id="st_situacao_emergencia_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>10-Os dutos verticais devem estar protegidos.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_dutos_data" id="st_dutos_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_dutos_situacao" id="st_dutos_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_dutos_obs" id="st_dutos_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>11-Cabos elétricos e dutos de ar devem estar devidamente protegidos contra a ação do fogo em caso de incêndio,garantindo o acionamento e o funcionamento do sistema de pressurização por no mínimo 2 horas.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_cabo_protegido_data" id="st_cabo_protegido_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_cabo_protegido_situacao" id="st_cabo_protegido_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_cabo_protegido_obs" id="st_cabo_protegido_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>12-O ventilador, motor elétrico e componentes elétricos, eletrônicos e de controle localizados próximos ao motor devemser alojados em compartimentos de uso exclusivo, dotados de porta corta-fogo do tipo P-90, de construção resistente ao fogo, por no mínimo 2 horas.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_ventilador_resistencia_data" id="st_ventilador_resistencia_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_ventilador_resistencia_situacao" id="st_ventilador_resistencia_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_ventilador_resistencia_obs" id="st_ventilador_resistencia_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>13-Os componentes do sistema de pressurização não devem passar através de locais onde haja o armazenamento detanques e recipientes contendo líquidos ou gases inflamáveis.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_componente_data" id="st_conponente_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_componente_situacao" id="st_componente_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_componente_obs" id="st_componente_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>14-O sinal que dá início a todas as operações previstas em 5.3 deve vir da mesma fonte que aciona a pressurização, na situação de emergência.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_sinal_data" id="st_sinal_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_sinal_situacao" id="st_sinal_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_sinal_obs" id="st_sinal_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>15-Na situação de emergência, todos os sistemas de circulação de ar devem ter o funcionamento imediatamente interrompido.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_ar_interropido_data" id="st_ar_interropido_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_ar_interropido_situacao" id="st_ar_interropido_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_ar_interropido_obs" id="st_ar_interropido_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>16-Deve ser previsto um sistema de iluminação de emergência na casa de máquinas dos ventiladores de pressurizaçãodo gerador automatizado, nos locais de acionamento manual alternativos e na central do sistema de alarme e detecção.</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_iluminacao_emergencia_data" id="st_iluminacao_emergencia_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_iluminacao_emergencia_situacao" id="st_iluminacao_emergencia_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_iluminacao_emergencia_obs" id="st_iluminacao_emergencia_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>17-Todo equipamento de pressurização deve ser submetido a um processo regular de manutenção, que inclui: o sistema de detectores de fumaça ou qualquer outro tipode sistema de alarme de incêndio utilizado, o mecanismo de comutação, o grupo motoventilador, suas correias de interligação, dutos (sucção e/ou pressurização) e suas ancoragens e proteções contra incêndio, os sistemas para o fornecimento de energia em emergência, portas corta-fogo e o equipamento do sistema de escape do ar acionado automaticamente. Os cuidados com esses equipamentos devem ser incluídos no programa de manutenção anual do edifício e devem ser apresentados quando da solicitação de vistoria. Esses cuidados são de inteira responsabilidade do proprietário da edificação e/ou seu representante legal (como exemplo o síndico).</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_analise_geral_data" id="st_analise_geral_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-2 form-group1"><label>Situação</label>
+							<select name="st_analise_geral_situacao" id="st_analise_geral_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_analise_geral_obs" id="st_analise_geral_obs"></textarea></div>
+
+					</div>
+
+					<div class="col-md-12 form-group button-2">
+						<button type="submit" class="btn btn-primary">Salvar</button>
+						<a href="">
+							<button class="btn btn-red" type="button">Visualizar Cadastrados</button>
+						</a>
+					</div>
+					<div class="clearfix"> </div>
+				</form>
+			</div>
+		</div>
+	</div> 
+</div>

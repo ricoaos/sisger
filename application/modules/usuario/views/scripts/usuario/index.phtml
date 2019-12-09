@@ -1,0 +1,116 @@
+<div id="content">
+	<div class="content-wrapper">
+		<div class="row">
+			<div class="col-lg-12 heading">
+                <h1 class="page-header"><i class="ec-pencil2"></i> <strong>CADASTRO DE USUÁRIOS</strong></h1>
+                
+                <ul id="crumb" class="breadcrumb">
+                </ul>
+                <!-- End .breadcrumb -->
+                <!-- Start .option-buttons -->
+                <div class="option-buttons">
+                    <div class="btn-toolbar" role="toolbar">
+                        <div class="btn-group">
+                            <a class="btn dropdown-toggle" id="dropdownMenu1" href="<?php echo $this->baseUrl('/usuario/usuario/listagem')?>">
+								<button class="btn btn-primary" type="button"><i class="fa-eye-open"></i> VISUALIZAR CADASTROS</button>
+							</a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <!-- End .option-buttons -->
+            </div>
+		</div>
+		
+		<?php if(!empty($this->msg)):?>
+			<?php if($this->msg == 2) :?>
+				<div class="alert alert-success fade in">
+					<button class="close" aria-hidden="true" data-dismiss="alert" type="button">×</button>
+					<i class="fa-ok alert-icon s24"></i>
+					<strong>Registro gravado com sucesso!</strong>
+				</div>
+			<?php else :?>
+				<div class="alert alert-danger fade in">
+					<button class="close" aria-hidden="true" data-dismiss="alert" type="button">×</button>
+					<strong>Ocorreu um erro ao gravar!</strong>
+				</div>
+			<?php endif;?>
+		<?php endif;?>
+		
+		<form id="formCadastro" class="form-horizontal group-border hover-stripped" role="form" method="post" action="<?php echo $this->baseUrl('/usuario/usuario/index')?>">
+			<input type="hidden" id="id_usuario" name="id_usuario" value="<?php echo $this->dadospagina['id_usuario']?>">
+			<div class="row">
+				<div class="col-lg-12 col-md-12 col-sm-9 col-xs-12">
+					<div class="panel panel-default plain">
+						<div class="panel-heading white-bg"></div>
+						<div class="panel-body">
+							<div class="form-group">
+								<label class="col-lg-1 col-md-1 col-sm-12 control-label ">FUNCIONÁRIO<b style="color: red;"> *</b></label>
+								<div class="col-lg-8 col-md-8">
+									
+									<select id="id_funcionario" class="form-control select2" required name="id_funcionario">
+										<option></option>
+										<?php foreach ($this->rsFuncionario as $value):?>
+											<option value="<?php echo $value['id_funcionario']?>" <?php if($this->dadospagina['id_funcionario'] == $value['id_funcionario']) echo "selected"?>><?php echo  $value['st_nome'] ?></option>
+										<?php endforeach;?>
+									</select>
+								
+								</div>
+								<div class="col-lg-2 col-md-2">
+									<label class="checkbox-inline">
+										<input type="checkbox" value="1" <?php if($this->dadospagina['id_ativo']==1){ echo 'checked ="checked"';}?> style="position: absolute; opacity: 0;" id="id_ativo" name="id_ativo"  />ATIVO
+									</label>
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-1 col-md-1 col-sm-12 control-label">LOGIN<b style="color: red;"> *</b></label>
+								<div class="col-lg-8 col-md-8">
+									<input class="form-control" type="text" id="st_usuario" name="st_usuario" placeholder=" " maxlength="40" required value="<?php echo $this->dadospagina['st_usuario']?>" />
+								</div>
+							</div>
+							
+							<div class="form-group">
+								<label class="col-lg-1 col-md-1 col-sm-12 control-label">SENHA<b style="color: red;"> *</b></label>
+								<div class="col-lg-8 col-md-8">
+									<input class="form-control" type="password" id="password" name="password" placeholder=" " maxlength="40" required  />
+								</div>
+							</div>
+														
+							<div class="form-group">
+								<label class="col-lg-1 col-md-1 col-sm-12 control-label">PERFIL<b style="color: red;"> *</b></label>
+								<div class="col-lg-4 col-md-4">
+									<select id="id_perfil" class="form-control select2" required name="id_perfil">
+										<option></option>
+										<?php foreach ($this->perfil as $value):?>
+											<?php if($value['st_nome'] != 'root') :?>
+												<option value="<?php echo $value['id_perfil']?>" <?php if($this->dadospagina['id_perfil'] == $value['id_perfil']) echo "selected"?>><?php echo strtoupper( $value['st_nome']) ?></option>
+											<?php endif;?>
+										<?php endforeach;?>
+									</select>
+								</div>
+							</div>							
+						</div>
+					</div>
+				</div>
+							
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<div class="panel panel-default toggle">
+        				<button class="btn btn-success  ml15" type="submit"><i class="fa-ok"></i> Cadastrar</button>
+        				<a class="btn dropdown-toggle" id="dropdownMenu1" href="<?php echo $this->baseUrl('/usuario/usuario/')?>">
+        					<button class="btn btn-primary" type="button"><i class="fa-plus-sign"></i> Cadastrar Novo</button>
+        				</a>
+        			</div>	
+				</div>	
+			</div>
+		</form>
+	</div>
+	<div class="clearfix"></div>
+</div>
+
+<script type="text/javascript" src="<?php echo $this->baseUrl('/js/usuario/usuario.js')?>"> </script>
+<link href="<?php echo $this->baseUrl('/js/photobooth/page.css')?>" rel="stylesheet" />
+
+<script src="<?php echo $this->baseUrl()?>/assets/plugins/forms/maxlength/bootstrap-maxlength.js"></script>
+<script src="<?php echo $this->baseUrl()?>/assets/plugins/forms/bootstrap-filestyle/bootstrap-filestyle.js"></script>
+<script src="<?php echo $this->baseUrl()?>/assets/plugins/forms/maskedinput/jquery.maskedinput.js"></script>

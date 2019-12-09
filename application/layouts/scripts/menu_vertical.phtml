@@ -1,0 +1,44 @@
+<header class="logo">
+    <a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a>
+    <a href="<?php echo $this->baseUrl("administrativo/painel")?>"><span id="logo"><h1><strong>SISGERMA</strong></h1></span>
+    </a>
+</header>
+<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+<!--/down-->
+<div class="down">
+    <a href=""><img src="<?php echo $this->baseUrl()?>/img/fotos/usuario/<?php echo App_Identity::getIdUsuario()?>.png"></a>
+    <a href=""><span class=" name-caret"><?php echo App_Identity::get('st_usuario'); ?></span></a>
+    <ul>
+        <li><a class="tooltips" href="<?php echo $this->baseUrl("usuario/profile/index")?>"><span>Profile</span><i class="lnr lnr-user"></i></a></li>
+        <li><a class="tooltips" href=""><span>Settings</span><i class="lnr lnr-cog"></i></a></li>
+        <li>
+            <a class="tooltips" href="<?php echo $this->baseUrl('auth')?>"><i class="im-exit">
+                <span>Log out</span><i class="lnr lnr-power-switch"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+<!--//down-->
+<div class="menu">
+    <ul id="menu">
+        <?php $idmenu = null;?>
+        <?php foreach ($_SESSION['menu'] as $value) :?>
+            <?php if($value['st_nome'] != $idmenu) :?>
+                <li id="menu-academico">
+                    <?php $href = !empty($value['st_href']) ? $this->baseUrl($value['st_href']) : '#';?>
+                    <a href="<?php echo $href ?>"><i class="<?php echo $value['st_classe_ui']?>"></i><span><?php echo $value['st_nome'] ?><?php echo $value['complemento'] ?></a>
+                    <?php $idmenu = $value['st_nome']; ?>
+
+                    <ul id="menu-academico-sub">
+                <?php foreach($_SESSION['submenu'] as $submenu):?>
+                    <?php if($value['id_menu'] == $submenu['id_menu']) : ?>
+                        <?php $href2 = !empty($submenu['st_href']) ? $this->baseUrl($submenu['st_href']) : '#';?>
+                        <li id="menu-academico-avaliacoes"><a href="<?php echo $href2 ?>" ><?php echo $submenu['st_nome'] ?></a></li>
+                    <?php endif;?>
+                <?php endforeach; ?>
+            </ul>
+                </li>
+            <?php endif; ?>
+        <?php endforeach; ?>
+    </ul>
+</div>

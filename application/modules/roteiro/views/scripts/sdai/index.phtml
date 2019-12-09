@@ -1,0 +1,118 @@
+<div class="outter-wp">
+	<!--/sub-heard-part-->
+	<div class="sub-heard-part">
+		<ol class="breadcrumb m-b-0">
+            <li><a href="<?php echo $this->baseUrl('/administrativo/painel/')?>">Home</a></li>
+			<li><a href="<?php echo $this->baseUrl('/roteiro/painel/')?>">Roteiro</a></li>
+			<li class="active">Sistema de Detecção de Incêndio</li>
+		</ol>
+	</div>
+
+	<div class="forms-main">
+		<div class="graph-form">
+			<div class="validation-form">
+				<form class="form-horizontal group-border hover-stripped" role="form" method="post" action="" >
+                    <div class="col-md-6 form-group2 group mail">
+                        <label class="control-label">Cliente</label>
+                        <select name="id_cliente" id="id_cliente" required>
+                            <option></option>
+                        </select>
+					</div>
+					
+					<div class="col-md-2 form-group2">
+						<label class="control-label">Mês/Ano</label>
+						<input type="text" class="form-control" name="st_mes_ano" id="st_mes_ano" value="<?php echo date('m/Y')?>">
+					</div>
+
+					<div class="col-md-5 form-group2"><span>&nbsp;</span></div>
+
+					<div class="col-md-4 form-group2">
+						<label class="control-label">Unidade</label>
+						<input type="text" class="form-control" name="st_unidade" id="st_unidade" >
+					</div>
+						
+					<div class="col-md-4 form-group2">
+						<label class="control-label">descrição</label>
+						<input type="text" class="form-control" name="st_descricao" id="st_descricao" >
+					</div>
+	
+					<div class="col-md-4 form-group2">
+						<label class="control-label">Operador</label>
+						<input type="text" class="form-control" name="st_operador" id="st_operador" >
+					</div>
+	
+					<div class="col-md-6 form-group2">
+						<label class="control-label">Supervisor do setor</label>
+						<input type="text" class="form-control" name="st_supervisor" id="st_supervisor" >
+					</div>
+	
+					<div class="col-md-6 form-group2">
+						<label class="control-label">Engenheiro/Técnico em Segurança ou Responsável</label>
+						<input type="text" class="form-control" name="st_engenheiro" id="st_engenheiro" >
+					</div>
+
+                    <div class="col-md-12 form-group2">
+						<label class="control-label"><strong>ROTEIROS</strong></label>
+					</div>
+
+					<div class="col-md-12 form-group2"><span>&nbsp;</span></div>
+
+					<div class="col-md-12 form-group2">
+
+						<div class="col-md-12 form-group2"><label>1-Medição da corrente dos sistemas em cada ciruito de detecção, alarme e comandos, e comparação com a leitura realizada na manutenção anterior. (Mensal)</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_medicao_data" id="st_medicao_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-8 form-group1"><label>Execução</label><textarea name="st_medicao_obs" id="st_medicao_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>2-Verificação da supervisão em cada circuito de detecção, alarme e comandos. (Mensal)</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_verificacao_sup_data" id="st_verificacao_sup_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-8 form-group1"><label>Execução</label><textarea name="st_verificacao_sup_obs" id="st_verificacao_sup_obs"></textarea></div>
+					
+						<div class="col-md-12 form-group2"><label>3-Verificação visual do estado geral dos componentes e condições de operação. (Mensal)</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_verificacao_visual_data" id="st_verificacao_visual_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-8 form-group1"><label>Execução</label><textarea name="st_verificacao_visual_obs" id="st_verificacao_visual_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>4-Leitura visual dos eventos no painel da central de alarmes. (Mensal)</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_leitura_visual_data" id="st_leitura_visual_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-8 form-group1"><label>Execução</label><textarea name="st_leitura_visual_obs" id="st_leitura_visual_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>5-Verificação do estado e carga das baterias. (Mensal)</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_verificacao_estado_data" id="st_verificacao_estado_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-8 form-group1"><label>Execução</label><textarea name="st_verificacao_estado_obs" id="st_verificacao_estado_obs"></textarea></div>
+						
+						<div class="col-md-12 form-group2"><label>6-Medição de tensão da fonte primária. (Mensal)</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_medicao_tensao_data" id="st_medicao_tensao_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-8 form-group1"><label>Execução</label><textarea name="st_medicao_tensao_obs" id="st_medicao_tensao_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>7-Verificação de sinais de corrosão nos polos, e pontos de instalação das baterias. (Mensal)</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_verificacao_sinal_data" id="st_verificacao_sinal_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-8 form-group1"><label>Execução</label><textarea name="st_verificacao_sinal_obs" id="st_verificacao_sinal_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>8-Verificação da forma de alimentação elétrica do sistema com corte de corrente alternada, para teste de alimentação de emergência por bateria. (Mensal)</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_verificacao_eletrica_data" id="st_verificacao_eletrica_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-8 form-group1"><label>Execução</label><textarea name="st_verificacao_eletrica_obs" id="st_verificacao_eletrica_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>9-O estado geral dos detectores ópticos de fumaça, principalmente se encontram-se ativos e configurados na central de alarme. (Mensal)</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_estado_geral_data" id="st_estado_geral_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-8 form-group1"><label>Execução</label><textarea name="st_estado_geral_obs" id="st_estado_geral_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>10-Análise de Todos os Valores Analógicos dos Equipamentos. (Mensal)</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_analise_data" id="st_analise_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-8 form-group1"><label>Execução</label><textarea name="st_analise_obs" id="st_analise_obs"></textarea></div>
+
+						<div class="col-md-12 form-group2"><label>11-Comparativo dos Totais de Dispositivos em cada Laço. (Mensal)</label></div>
+						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" name="st_analise_data" id="st_analise_data" value="<?php echo date('d/m/Y') ?>"></div>
+						<div class="col-md-8 form-group1"><label>Execução</label><textarea name="st_analise_obs" id="st_analise_obs"></textarea></div>
+
+					</div>
+					<div class="col-md-12 form-group button-2">
+						<button type="submit" class="btn btn-primary">Salvar</button>
+						<a href="">
+							<button class="btn btn-red" type="button">Visualizar Cadastrados</button>
+						</a>
+					</div>
+					<div class="clearfix"> </div>
+				</form>
+			</div>
+		</div>
+	</div> 
+</div>

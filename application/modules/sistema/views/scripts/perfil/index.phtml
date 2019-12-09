@@ -1,0 +1,52 @@
+<div class="outter-wp">
+	<div class="sub-heard-part">
+		<ol class="breadcrumb m-b-0">
+			<li><a href="">Home</a></li>
+			<li>Cadastro</li>
+			<li class="active">Perfil</li>
+		</ol>
+	</div>
+
+	<div class="forms-main">
+		<div class="graph-form">
+			<div class="validation-form">
+				<form class="form-horizontal group-border hover-stripped" role="form" method="post" action="<?php echo $this->baseUrl('/sistema/perfil/index')?>" >
+					<div class="vali-form">
+						<div class="col-md-2 form-group1">
+							<label class="control-label">Código</label>
+							<input type="text" class="form-control" name="id_perfil" id="id_perfil">
+						</div>
+						<div class="col-md-6 form-group1">
+							<label class="control-label">Nome</label>
+							<input type="text" class="form-control" name="st_nome" id="st_nome"  required >
+						</div>
+                    </div>
+                    
+                    <div class="col-md-12 form-group1">
+						<div class="grid-1">
+							<label class="control-label"><strong style="color:red;">SELECIONAR O(S) MENU(S) ABAIXO PARA ESSE PERFIL </strong></label><br/>
+							<?php foreach($this->rsMenu as $menu) :?>
+								<div class="checkbox-inline"><label><input type="checkbox" name="id_menu[]" id="id_menu[]" value="<?php echo $menu['id_menu']?>"> <?php echo $menu['st_nome']?> </label></div>
+							<?php endforeach; ?>
+						</div>
+					</div>
+
+                    <div class="col-md-12 form-group1 ">
+                        <label class="control-label">Observação</label>
+                        <textarea name="ds_observacao" id="ds_observacao"></textarea>
+                    </div>
+                    <div class="col-md-12 form-group button-2">
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                        <a href="<?php echo $this->baseUrl('/sistema/perfil/listagem')?>">
+                            <button class="btn btn-red" type="button">Visualizar Cadastrados</button>
+                        </a>
+                    </div>
+					<div class="clearfix"> </div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="<?php echo $this->baseUrl('/js/cadastro/funcionario.js')?>"> </script>
+<script type="text/javascript" src="<?php echo $this->baseUrl('/js/plugins/util.js')?>"> </script>

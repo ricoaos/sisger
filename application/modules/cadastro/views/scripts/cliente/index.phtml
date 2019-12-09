@@ -1,0 +1,176 @@
+<div class="sub-heard-part">
+		<ol class="breadcrumb m-b-0">
+			<li><a href="">Home</a></li>
+			<li>Cadastro</li>
+			<li class="active">Clientes</li>
+		</ol>
+	</div>
+
+	<div class="forms-main">
+		<div class="graph-form">
+			<div class="validation-form">
+				<form class="form-horizontal group-border hover-stripped" role="form" method="post" action="<?php echo $this->baseUrl('/cadastro/cliente/index')?>" >
+					<div class="vali-form">
+						<div class="col-md-2 form-group1">
+							<label class="control-label">Registro</label>
+							<input type="text" class="form-control" name="id_cliente" id="id_cliente">
+						</div>
+						<div class="col-md-6 form-group2">
+							<label class="control-label">Tipo Cliente</label>
+							<select name="tp_pessoa" id="tp_pessoa" required>
+								<option></option>
+								<option value="F">Física</option>
+								<option value="J">Jurídica</option>
+							</select>
+						</div>
+						<div class="col-md-4 form-group1">
+							<label class="control-label">Situação</label>
+							<input type="text" class="form-control" name="id_ativo" id="id_ativo" >
+						</div>
+					</div>
+					<div class="vali-form">
+						<div class="col-md-8 form-group1">
+							<label class="control-label">Nome</label>
+							<input type="text" class="form-control" name="nm_pessoa" id="nm_pessoa"  required >
+						</div>
+						<div class="col-md-4 form-group1">
+							<label class="control-label">CPF/CNPJ</label>
+							<input type="text" class="form-control" name="num_cpf_cnpj" id="num_cpf_cnpj" required >
+						</div>
+					</div>
+
+					<div class="clearfix"> </div>
+											
+					<div class="col-md-6 form-group1">
+						<label class="control-label">Email</label>
+						<input type="text" class="form-control" name="ds_email" id="ds_email" required >
+					</div>
+					<div class="col-md-3 form-group1">
+						<label class="control-label">Telefone</label>
+						<input type="text" class="form-control" name="num_telefone" id="num_telefone"placeholder="DDD+número" required maxlength="15">
+					</div>
+					<div class="col-md-3 form-group1">
+						<label class="control-label">Whatsapp</label>
+						<input type="text" class="form-control" name="num_celular" id="num_celular" placeholder="DDD+número" maxlength="15">
+					</div>
+					
+					<div class="clearfix"> </div>
+
+					<div class="col-md-2 form-group1">
+						<label class="control-label">CEP</label>
+						<input type="text" class="form-control" name="num_cep" id="num_cep" required >
+					</div>
+					<div class="col-md-8 form-group1">
+						<label class="control-label">Logradouro</label>
+						<input type="text" class="form-control" name="ds_logradouro" id="ds_logradouro" required >
+					</div>
+
+					<div class="col-md-2 form-group1">
+						<label class="control-label">Nº</label>
+						<input type="text" class="form-control" name="num_logradouro" id="num_logradouro" required >
+					</div>
+
+					<div class="clearfix"> </div>
+
+					<div class="col-md-12 form-group1">
+						<label class="control-label">Complemento</label>
+						<input type="text" class="form-control" name="ds_complemento" id="ds_complemento" >
+					</div>
+
+					<div class="clearfix"> </div>
+
+					<div class="col-md-5 form-group1">
+						<label class="control-label">Bairro</label>
+						<input type="text" class="form-control" name="ds_bairro" id="ds_bairro" required >
+					</div>
+
+					<div class="col-md-5 form-group1">
+						<label class="control-label">Cidade</label>
+						<input type="text" class="form-control" name="ds_cidade" id="ds_cidade" required >
+					</div>
+
+					<div class="col-md-2 form-group1">
+						<label class="control-label">UF</label>
+						<input type="text" class="form-control" name="ds_uf" id="ds_uf" required >
+					</div>
+
+					<div class="col-md-6 form-group2">
+						<label class="control-label">Funcionario Responsável pelo Contrato (RC)</label>
+						<select name="cod_func_resp" id="cod_func_resp" required>
+							<option></option>
+						</select>
+					</div>
+
+					<div class="col-md-6 form-group1">
+						<label class="control-label">Responsável pelo Contrato (Cliente)</label>
+						<input type="text" class="form-control" name="ds_cliente_contrato" id="ds_cliente_contrato" required >
+					</div>
+
+					
+
+					<div class="col-md-7 form-group1">
+						<label class="control-label">Manutenções do Contratadas : </label>
+						<?php foreach($this->rsRoteiro as $roteiro): ?>
+							<div class="checkbox-inline"><label><input type="checkbox" value="<?php echo $roteiro['id_roteiro']?>"><?php echo $roteiro['st_sigla'] ?></label></div>
+						<?php endforeach; ?>
+					</div>
+					
+					<div class="col-md-12 form-group1">
+  						<label class="control-label">Upload da RT</label>
+    					<input type="file">
+					</div>
+
+
+					<div class="col-md-12 form-group1 ">
+						<label class="control-label">Observação</label>
+						<textarea name="ds_observacao" id="ds_observacao"></textarea>
+					</div>
+							
+					<div class="col-md-12 form-group button-2">
+						<button type="submit" class="btn btn-primary">Salvar</button>
+						<a href="<?php echo $this->baseUrl('/cadastro/cliente/listagem')?>">
+							<button class="btn btn-red" type="button">Visualizar Cadastrados</button>
+						</a>
+					</div>
+					<div class="clearfix"> </div>
+				</form>
+			</div>
+		</div>
+	</div> 
+</div>
+
+<script type="text/javascript" src="<?php echo $this->baseUrl('/js/cadastro/cliente.js')?>"> </script>
+<script type="text/javascript" src="<?php echo $this->baseUrl('/js/plugins/util.js')?>"> </script>
+<script type="text/javascript">
+	function mascara(o,f){
+		v_obj=o;
+		v_fun=f;
+		setTimeout("execmascara()",1);
+	}
+	function execmascara(){
+		v_obj.value=v_fun(v_obj.value);
+	}
+	function mtel(v){
+		v=v.replace(/\D/g,"");
+		v=v.replace(/^(\d{2})(\d)/g,"($1) $2");
+		v=v.replace(/(\d)(\d{4})$/,"$1-$2");
+		return v;
+	}
+	function data(v){
+		v=v.replace(/\D/g,"");
+		v=v.replace(/(\d{2})(\d)/,"$1/$2");
+		v=v.replace(/(\d{2})(\d)/,"$1/$2");    
+		return v;
+	}
+	function id( el ){
+		return document.getElementById( el );
+	}
+	window.onload = function(){
+		id('num_telefone').onkeypress = function(){
+			mascara( this, mtel );
+		},
+		id('num_celular').onkeypress = function(){
+			mascara( this, mtel );
+		}
+	}
+</script>
