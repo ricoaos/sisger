@@ -21,16 +21,17 @@
  * @version    $Id$
  */
 
-
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Flickr
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_Flickr_Image
 {
+
     /**
      * The URI of the image
      *
@@ -62,15 +63,15 @@ class Zend_Service_Flickr_Image
     /**
      * Parse given Flickr Image element
      *
-     * @param  DOMElement $image
+     * @param DOMElement $image            
      * @return void
      */
     public function __construct(DOMElement $image)
     {
-        $this->uri      = (string) $image->getAttribute('source');
+        $this->uri = (string) $image->getAttribute('source');
         $this->clickUri = (string) $image->getAttribute('url');
-        $this->height   = (int) $image->getAttribute('height');
-        $this->width    = (int) $image->getAttribute('width');
+        $this->height = (int) $image->getAttribute('height');
+        $this->width = (int) $image->getAttribute('width');
     }
 }
 

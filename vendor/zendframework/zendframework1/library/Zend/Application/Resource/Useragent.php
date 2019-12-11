@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -20,19 +21,22 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Application
+ *
+ * @category Zend
+ * @package Zend_Application
  * @subpackage Resource
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Application_Resource_UserAgent extends Zend_Application_Resource_ResourceAbstract
 {
+
     /**
+     *
      * @var Zend_Http_UserAgent
      */
     protected $_userAgent;
-    
+
     /**
      * Intialize resource
      *
@@ -41,7 +45,7 @@ class Zend_Application_Resource_UserAgent extends Zend_Application_Resource_Reso
     public function init()
     {
         $userAgent = $this->getUserAgent();
-
+        
         // Optionally seed the UserAgent view helper
         $bootstrap = $this->getBootstrap();
         if ($bootstrap->hasResource('view') || $bootstrap->hasPluginResource('view')) {
@@ -51,10 +55,10 @@ class Zend_Application_Resource_UserAgent extends Zend_Application_Resource_Reso
                 $view->userAgent($userAgent);
             }
         }
-
+        
         return $userAgent;
     }
-    
+
     /**
      * Get UserAgent instance
      *

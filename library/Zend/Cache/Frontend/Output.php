@@ -20,18 +20,18 @@
  * @version    $Id: Output.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-
 /**
+ *
  * @see Zend_Cache_Core
  */
 require_once 'Zend/Cache/Core.php';
 
-
 /**
- * @package    Zend_Cache
+ *
+ * @package Zend_Cache
  * @subpackage Zend_Cache_Frontend
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Cache_Frontend_Output extends Zend_Cache_Core
 {
@@ -41,7 +41,8 @@ class Zend_Cache_Frontend_Output extends Zend_Cache_Core
     /**
      * Constructor
      *
-     * @param  array $options Associative array of options
+     * @param array $options
+     *            Associative array of options
      * @return void
      */
     public function __construct(array $options = array())
@@ -53,17 +54,20 @@ class Zend_Cache_Frontend_Output extends Zend_Cache_Core
     /**
      * Start the cache
      *
-     * @param  string  $id                     Cache id
-     * @param  boolean $doNotTestCacheValidity If set to true, the cache validity won't be tested
-     * @param  boolean $echoData               If set to true, datas are sent to the browser if the cache is hit (simpy returned else)
+     * @param string $id
+     *            Cache id
+     * @param boolean $doNotTestCacheValidity
+     *            If set to true, the cache validity won't be tested
+     * @param boolean $echoData
+     *            If set to true, datas are sent to the browser if the cache is hit (simpy returned else)
      * @return mixed True if the cache is hit (false else) with $echoData=true (default) ; string else (datas)
      */
     public function start($id, $doNotTestCacheValidity = false, $echoData = true)
     {
         $data = $this->load($id, $doNotTestCacheValidity);
         if ($data !== false) {
-            if ( $echoData ) {
-                echo($data);
+            if ($echoData) {
+                echo ($data);
                 return true;
             } else {
                 return $data;
@@ -78,11 +82,16 @@ class Zend_Cache_Frontend_Output extends Zend_Cache_Core
     /**
      * Stop the cache
      *
-     * @param  array   $tags             Tags array
-     * @param  int     $specificLifetime If != false, set a specific lifetime for this cache record (null => infinite lifetime)
-     * @param  string  $forcedDatas      If not null, force written datas with this
-     * @param  boolean $echoData         If set to true, datas are sent to the browser
-     * @param  int     $priority         integer between 0 (very low priority) and 10 (maximum priority) used by some particular backends
+     * @param array $tags
+     *            Tags array
+     * @param int $specificLifetime
+     *            If != false, set a specific lifetime for this cache record (null => infinite lifetime)
+     * @param string $forcedDatas
+     *            If not null, force written datas with this
+     * @param boolean $echoData
+     *            If set to true, datas are sent to the browser
+     * @param int $priority
+     *            integer between 0 (very low priority) and 10 (maximum priority) used by some particular backends
      * @return void
      */
     public function end($tags = array(), $specificLifetime = false, $forcedDatas = null, $echoData = true, $priority = 8)
@@ -90,7 +99,7 @@ class Zend_Cache_Frontend_Output extends Zend_Cache_Core
         if ($forcedDatas === null) {
             $data = ob_get_clean();
         } else {
-            $data =& $forcedDatas;
+            $data = & $forcedDatas;
         }
         $id = array_pop($this->_idStack);
         if ($id === null) {
@@ -98,8 +107,7 @@ class Zend_Cache_Frontend_Output extends Zend_Cache_Core
         }
         $this->save($data, $id, $tags, $specificLifetime, $priority);
         if ($echoData) {
-            echo($data);
+            echo ($data);
         }
     }
-
 }

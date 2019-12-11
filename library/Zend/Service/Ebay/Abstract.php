@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,29 +22,35 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Ebay
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Service_Ebay_Abstract
 {
-    const OPTION_APP_ID    = 'app_id';
+
+    const OPTION_APP_ID = 'app_id';
+
     const OPTION_GLOBAL_ID = 'global_id';
 
     /**
+     *
      * @var array
      */
     protected $_options = array();
 
     /**
+     *
      * @var mixed
      */
     protected $_client;
 
     /**
-     * @param  Zend_Config|array $options
+     *
+     * @param Zend_Config|array $options            
      * @return void
      */
     public function __construct($options = null)
@@ -53,8 +60,9 @@ abstract class Zend_Service_Ebay_Abstract
     }
 
     /**
-     * @param  string|Zend_Config|array $name
-     * @param  mixed                    $value
+     *
+     * @param string|Zend_Config|array $name            
+     * @param mixed $value            
      * @return Zend_Service_Ebay_Abstract Provides a fluent interface
      */
     public function setOption($name, $value = null)
@@ -71,7 +79,8 @@ abstract class Zend_Service_Ebay_Abstract
     }
 
     /**
-     * @param  string $name
+     *
+     * @param string $name            
      * @return mixed
      */
     public function getOption($name = null)
@@ -86,7 +95,8 @@ abstract class Zend_Service_Ebay_Abstract
     }
 
     /**
-     * @param string $name
+     *
+     * @param string $name            
      * @return boolean
      */
     public function hasOption($name)
@@ -95,18 +105,21 @@ abstract class Zend_Service_Ebay_Abstract
     }
 
     /**
-     * @param  mixed $client
+     *
+     * @param mixed $client            
      * @return Zend_Service_Ebay_Abstract Provides a fluent interface
      */
     abstract public function setClient($client);
 
     /**
+     *
      * @return mixed
      */
     abstract public function getClient();
 
     /**
-     * @param  Zend_Config|array $options
+     *
+     * @param Zend_Config|array $options            
      * @throws Zend_Service_Ebay_Finding_Exception When $options is not an array neither a Zend_Config object
      * @return array
      */
@@ -117,15 +130,16 @@ abstract class Zend_Service_Ebay_Abstract
         } else if ($options instanceof Zend_Config) {
             $options = $options->toArray();
         }
-
-        if (!is_array($options)) {
+        
+        if (! is_array($options)) {
             /**
+             *
              * @see Zend_Service_Ebay_Exception
              */
             require_once 'Zend/Service/Ebay/Exception.php';
             throw new Zend_Service_Ebay_Exception('Invalid options provided.');
         }
-
+        
         return $options;
     }
 
@@ -135,71 +149,71 @@ abstract class Zend_Service_Ebay_Abstract
      * Example:
      *
      * array(
-     *     'paginationInput' => array(
-     *         'entriesPerPage' => 5,
-     *         'pageNumber'     => 2
-     *     ),
-     *     'itemFilter' => array(
-     *         array(
-     *             'name'       => 'MaxPrice',
-     *             'value'      => 25,
-     *             'paramName'  => 'Currency',
-     *             'paramValue' => 'USD'
-     *         ),
-     *         array(
-     *             'name'  => 'FreeShippingOnly',
-     *             'value' => true
-     *         ),
-     *         array(
-     *             'name'  => 'ListingType',
-     *             'value' => array(
-     *                 'AuctionWithBIN',
-     *                 'FixedPrice',
-     *                 'StoreInventory'
-     *             )
-     *         )
-     *     ),
-     *     'productId' => array(
-     *         ''     => 123,
-     *         'type' => 'UPC'
-     *     )
+     * 'paginationInput' => array(
+     * 'entriesPerPage' => 5,
+     * 'pageNumber' => 2
+     * ),
+     * 'itemFilter' => array(
+     * array(
+     * 'name' => 'MaxPrice',
+     * 'value' => 25,
+     * 'paramName' => 'Currency',
+     * 'paramValue' => 'USD'
+     * ),
+     * array(
+     * 'name' => 'FreeShippingOnly',
+     * 'value' => true
+     * ),
+     * array(
+     * 'name' => 'ListingType',
+     * 'value' => array(
+     * 'AuctionWithBIN',
+     * 'FixedPrice',
+     * 'StoreInventory'
+     * )
+     * )
+     * ),
+     * 'productId' => array(
+     * '' => 123,
+     * 'type' => 'UPC'
+     * )
      * )
      *
      * this above is translated to
      *
      * array(
-     *     'paginationInput.entriesPerPage' => '5',
-     *     'paginationInput.pageNumber'     => '2',
-     *     'itemFilter(0).name'             => 'MaxPrice',
-     *     'itemFilter(0).value'            => '25',
-     *     'itemFilter(0).paramName'        => 'Currency',
-     *     'itemFilter(0).paramValue'       => 'USD',
-     *     'itemFilter(1).name'             => 'FreeShippingOnly',
-     *     'itemFilter(1).value'            => '1',
-     *     'itemFilter(2).name'             => 'ListingType',
-     *     'itemFilter(2).value(0)'         => 'AuctionWithBIN',
-     *     'itemFilter(2).value(1)'         => 'FixedPrice',
-     *     'itemFilter(2).value(2)'         => 'StoreInventory',
-     *     'productId'                      => '123',
-     *     'productId.@type'                => 'UPC'
+     * 'paginationInput.entriesPerPage' => '5',
+     * 'paginationInput.pageNumber' => '2',
+     * 'itemFilter(0).name' => 'MaxPrice',
+     * 'itemFilter(0).value' => '25',
+     * 'itemFilter(0).paramName' => 'Currency',
+     * 'itemFilter(0).paramValue' => 'USD',
+     * 'itemFilter(1).name' => 'FreeShippingOnly',
+     * 'itemFilter(1).value' => '1',
+     * 'itemFilter(2).name' => 'ListingType',
+     * 'itemFilter(2).value(0)' => 'AuctionWithBIN',
+     * 'itemFilter(2).value(1)' => 'FixedPrice',
+     * 'itemFilter(2).value(2)' => 'StoreInventory',
+     * 'productId' => '123',
+     * 'productId.@type' => 'UPC'
      * )
      *
-     * @param  Zend_Config|array $options
-     * @link   http://developer.ebay.com/DevZone/finding/Concepts/MakingACall.html#nvsyntax
+     * @param Zend_Config|array $options            
+     * @link http://developer.ebay.com/DevZone/finding/Concepts/MakingACall.html#nvsyntax
      * @return array A simple array of strings
      */
     protected function _optionsToNameValueSyntax($options)
     {
-        $options  = self::optionsToArray($options);
+        $options = self::optionsToArray($options);
         ksort($options);
-        $new      = array();
+        $new = array();
         $runAgain = false;
         foreach ($options as $name => $value) {
             if (is_array($value)) {
                 // parse an array value, check if it is associative
-                $keyRaw    = array_keys($value);
+                $keyRaw = array_keys($value);
                 $keyNumber = range(0, count($value) - 1);
-                $isAssoc   = count(array_diff($keyRaw, $keyNumber)) > 0;
+                $isAssoc = count(array_diff($keyRaw, $keyNumber)) > 0;
                 // check for tag representation, like <name att="sometinhg"></value>
                 // empty key refers to text value
                 // when there is a root tag, attributes receive flags
@@ -212,7 +226,7 @@ abstract class Zend_Service_Ebay_Abstract
                         if ($subName !== '') {
                             // when $subName is empty means that current value
                             // is the main value for the main key
-                            $glue     = $hasAttribute ? '.@' : '.';
+                            $glue = $hasAttribute ? '.@' : '.';
                             $newName .= $glue . $subName;
                         }
                     } else {
@@ -247,7 +261,7 @@ abstract class Zend_Service_Ebay_Abstract
      * Boolean is translated to "0" or "1", date object generates ISO 8601,
      * everything else is translated to string.
      *
-     * @param  mixed $value
+     * @param mixed $value            
      * @return string
      */
     public static function toEbayValue($value)
@@ -267,9 +281,9 @@ abstract class Zend_Service_Ebay_Abstract
     /**
      * Translate an ebay value format to native PHP type.
      *
-     * @param  string $value
-     * @param  string $type
-     * @see    http://developer.ebay.com/DevZone/finding/CallRef/types/simpleTypes.html
+     * @param string $value            
+     * @param string $type            
+     * @see http://developer.ebay.com/DevZone/finding/CallRef/types/simpleTypes.html
      * @throws Zend_Service_Ebay_Finding_Exception When $type is not valid
      * @return mixed
      */
@@ -280,25 +294,26 @@ abstract class Zend_Service_Ebay_Abstract
             case 'boolean':
                 $value = (string) $value == 'true';
                 break;
-
+            
             // cast for: Amount, decimal, double, float, MeasureType
             case 'float':
                 $value = floatval((string) $value);
                 break;
-
+            
             // cast for: int, long
             // integer type generates a string value, because 32 bit systems
             // have an integer range of -2147483648 to 2147483647
             case 'integer':
-                // break intentionally omitted
-
+            // break intentionally omitted
+            
             // cast for: anyURI, base64Binary, dateTime, duration, string, token
             case 'string':
                 $value = (string) $value;
                 break;
-
+            
             default:
                 /**
+                 *
                  * @see Zend_Service_Ebay_Exception
                  */
                 require_once 'Zend/Service/Ebay/Exception.php';

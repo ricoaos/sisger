@@ -20,6 +20,7 @@
  */
 
 /**
+ *
  * @see Zend_Service_ShortUrl_AbstractShortener
  */
 require_once 'Zend/Service/ShortUrl/AbstractShortener.php';
@@ -27,10 +28,10 @@ require_once 'Zend/Service/ShortUrl/AbstractShortener.php';
 /**
  * Bit.ly API implementation
  *
- * @category   Zend
- * @package    Zend_Service_ShortUrl
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Service_ShortUrl
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_ShortUrl_BitLy extends Zend_Service_ShortUrl_AbstractShortener
 {
@@ -57,12 +58,15 @@ class Zend_Service_ShortUrl_BitLy extends Zend_Service_ShortUrl_AbstractShortene
     protected $_apiKey;
 
     /**
-     * @param string $login user login name or application access token
-     * @param null|string $apiKey user API key
+     *
+     * @param string $login
+     *            user login name or application access token
+     * @param null|string $apiKey
+     *            user API key
      */
     public function __construct($login, $apiKey = null)
     {
-        if(null === $apiKey) {
+        if (null === $apiKey) {
             $this->setOAuthAccessToken($login);
         } else {
             $this->setApiLogin($login, $apiKey);
@@ -72,7 +76,8 @@ class Zend_Service_ShortUrl_BitLy extends Zend_Service_ShortUrl_AbstractShortene
     /**
      * set OAuth credentials
      *
-     * @param $accessToken
+     * @param
+     *            $accessToken
      * @return Zend_Service_ShortUrl_BitLy
      */
     public function setOAuthAccessToken($accessToken)
@@ -85,8 +90,10 @@ class Zend_Service_ShortUrl_BitLy extends Zend_Service_ShortUrl_AbstractShortene
     /**
      * set login credentials
      *
-     * @param $login
-     * @param $apiKey
+     * @param
+     *            $login
+     * @param
+     *            $apiKey
      * @return Zend_Service_ShortUrl_BitLy
      */
     public function setApiLogin($login, $apiKey)
@@ -98,17 +105,18 @@ class Zend_Service_ShortUrl_BitLy extends Zend_Service_ShortUrl_AbstractShortene
 
     /**
      * prepare http client
+     * 
      * @return void
      */
     protected function _setAccessParameter()
     {
-        if(null === $this->_loginName) {
-            //OAuth login
+        if (null === $this->_loginName) {
+            // OAuth login
             $this->getHttpClient()->setParameterGet('access_token', $this->_apiKey);
         } else {
-            //login/APIKey authentication
-            $this->getHttpClient()->setParameterGet('login',$this->_loginName);
-            $this->getHttpClient()->setParameterGet('apiKey',$this->_apiKey);
+            // login/APIKey authentication
+            $this->getHttpClient()->setParameterGet('login', $this->_loginName);
+            $this->getHttpClient()->setParameterGet('apiKey', $this->_apiKey);
         }
     }
 
@@ -121,8 +129,8 @@ class Zend_Service_ShortUrl_BitLy extends Zend_Service_ShortUrl_AbstractShortene
     protected function _processRequest()
     {
         $response = $this->getHttpClient()->request();
-        if(500 == $response->getStatus()) {
-            throw new Zend_Service_ShortUrl_Exception('Bit.ly :: '.$response->getBody());
+        if (500 == $response->getStatus()) {
+            throw new Zend_Service_ShortUrl_Exception('Bit.ly :: ' . $response->getBody());
         }
         return $response->getBody();
     }
@@ -130,7 +138,8 @@ class Zend_Service_ShortUrl_BitLy extends Zend_Service_ShortUrl_AbstractShortene
     /**
      * This function shortens long url
      *
-     * @param  string $url URL to Shorten
+     * @param string $url
+     *            URL to Shorten
      * @throws Zend_Service_ShortUrl_Exception if bit.ly reports an error
      * @return string Shortened Url
      */
@@ -138,18 +147,19 @@ class Zend_Service_ShortUrl_BitLy extends Zend_Service_ShortUrl_AbstractShortene
     {
         $this->_validateUri($url);
         $this->_setAccessParameter();
-
-        $this->getHttpClient()->setUri($this->_apiUri.'/v3/shorten');
-        $this->getHttpClient()->setParameterGet('longUrl',$url);
-        $this->getHttpClient()->setParameterGet('format','txt');
-
+        
+        $this->getHttpClient()->setUri($this->_apiUri . '/v3/shorten');
+        $this->getHttpClient()->setParameterGet('longUrl', $url);
+        $this->getHttpClient()->setParameterGet('format', 'txt');
+        
         return $this->_processRequest();
     }
 
     /**
      * Reveals target for short URL
      *
-     * @param  string $shortenedUrl URL to reveal target of
+     * @param string $shortenedUrl
+     *            URL to reveal target of
      * @throws Zend_Service_ShortUrl_Exception if bit.ly reports an error
      * @return string Unshortened Url
      */
@@ -157,11 +167,11 @@ class Zend_Service_ShortUrl_BitLy extends Zend_Service_ShortUrl_AbstractShortene
     {
         $this->_validateUri($shortenedUrl);
         $this->_setAccessParameter();
-
-        $this->getHttpClient()->setUri($this->_apiUri.'/v3/expand');
-        $this->getHttpClient()->setParameterGet('shortUrl',$shortenedUrl);
-        $this->getHttpClient()->setParameterGet('format','txt');
-
+        
+        $this->getHttpClient()->setUri($this->_apiUri . '/v3/expand');
+        $this->getHttpClient()->setParameterGet('shortUrl', $shortenedUrl);
+        $this->getHttpClient()->setParameterGet('format', 'txt');
+        
         return $this->_processRequest();
     }
 }

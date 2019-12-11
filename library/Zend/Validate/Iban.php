@@ -20,6 +20,7 @@
  */
 
 /**
+ *
  * @see Zend_Validate_Abstract
  */
 require_once 'Zend/Validate/Abstract.php';
@@ -27,16 +28,19 @@ require_once 'Zend/Validate/Abstract.php';
 /**
  * Validates IBAN Numbers (International Bank Account Numbers)
  *
- * @category   Zend
- * @package    Zend_Validate
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Validate
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Validate_Iban extends Zend_Validate_Abstract
 {
+
     const NOTSUPPORTED = 'ibanNotSupported';
-    const FALSEFORMAT  = 'ibanFalseFormat';
-    const CHECKFAILED  = 'ibanCheckFailed';
+
+    const FALSEFORMAT = 'ibanFalseFormat';
+
+    const CHECKFAILED = 'ibanCheckFailed';
 
     /**
      * Validation failure message template definitions
@@ -45,8 +49,8 @@ class Zend_Validate_Iban extends Zend_Validate_Abstract
      */
     protected $_messageTemplates = array(
         self::NOTSUPPORTED => "Unknown country within the IBAN '%value%'",
-        self::FALSEFORMAT  => "'%value%' has a false IBAN format",
-        self::CHECKFAILED  => "'%value%' has failed the IBAN check",
+        self::FALSEFORMAT => "'%value%' has a false IBAN format",
+        self::CHECKFAILED => "'%value%' has failed the IBAN check"
     );
 
     /**
@@ -106,7 +110,8 @@ class Zend_Validate_Iban extends Zend_Validate_Abstract
     /**
      * Sets validator options
      *
-     * @param  string|Zend_Config|Zend_Locale $locale OPTIONAL
+     * @param string|Zend_Config|Zend_Locale $locale
+     *            OPTIONAL
      * @return void
      */
     public function __construct($locale = null)
@@ -114,7 +119,7 @@ class Zend_Validate_Iban extends Zend_Validate_Abstract
         if ($locale instanceof Zend_Config) {
             $locale = $locale->toArray();
         }
-
+        
         if (is_array($locale)) {
             if (array_key_exists('locale', $locale)) {
                 $locale = $locale['locale'];
@@ -122,14 +127,14 @@ class Zend_Validate_Iban extends Zend_Validate_Abstract
                 $locale = null;
             }
         }
-
+        
         if (empty($locale)) {
             require_once 'Zend/Registry.php';
             if (Zend_Registry::isRegistered('Zend_Locale')) {
                 $locale = Zend_Registry::get('Zend_Locale');
             }
         }
-
+        
         if ($locale !== null) {
             $this->setLocale($locale);
         }
@@ -148,7 +153,7 @@ class Zend_Validate_Iban extends Zend_Validate_Abstract
     /**
      * Sets the locale option
      *
-     * @param  string|Zend_Locale $locale
+     * @param string|Zend_Locale $locale            
      * @return Zend_Validate_Date provides a fluent interface
      */
     public function setLocale($locale = null)
@@ -161,7 +166,7 @@ class Zend_Validate_Iban extends Zend_Validate_Abstract
                 throw new Zend_Validate_Exception('Region must be given for IBAN validation');
             }
         }
-
+        
         $this->_locale = $locale;
         return $this;
     }
@@ -171,53 +176,102 @@ class Zend_Validate_Iban extends Zend_Validate_Abstract
      *
      * Returns true if $value is a valid IBAN
      *
-     * @param  string $value
+     * @param string $value            
      * @return boolean
      */
     public function isValid($value)
     {
         $value = strtoupper($value);
         $this->_setValue($value);
-
+        
         if (empty($this->_locale)) {
             $region = substr($value, 0, 2);
         } else {
             $region = new Zend_Locale($this->_locale);
             $region = $region->getRegion();
         }
-
-        if (!array_key_exists($region, $this->_ibanregex)) {
+        
+        if (! array_key_exists($region, $this->_ibanregex)) {
             $this->_setValue($region);
             $this->_error(self::NOTSUPPORTED);
             return false;
         }
-
-        if (!preg_match($this->_ibanregex[$region], $value)) {
+        
+        if (! preg_match($this->_ibanregex[$region], $value)) {
             $this->_error(self::FALSEFORMAT);
             return false;
         }
-
+        
         $format = substr($value, 4) . substr($value, 0, 4);
-        $format = str_replace(
-            array('A',  'B',  'C',  'D',  'E',  'F',  'G',  'H',  'I',  'J',  'K',  'L',  'M',
-                  'N',  'O',  'P',  'Q',  'R',  'S',  'T',  'U',  'V',  'W',  'X',  'Y',  'Z'),
-            array('10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22',
-                  '23', '24', '25', '26', '27', '28', '29', '30', '31', '32', '33', '34', '35'),
-            $format);
-
+        $format = str_replace(array(
+            'A',
+            'B',
+            'C',
+            'D',
+            'E',
+            'F',
+            'G',
+            'H',
+            'I',
+            'J',
+            'K',
+            'L',
+            'M',
+            'N',
+            'O',
+            'P',
+            'Q',
+            'R',
+            'S',
+            'T',
+            'U',
+            'V',
+            'W',
+            'X',
+            'Y',
+            'Z'
+        ), array(
+            '10',
+            '11',
+            '12',
+            '13',
+            '14',
+            '15',
+            '16',
+            '17',
+            '18',
+            '19',
+            '20',
+            '21',
+            '22',
+            '23',
+            '24',
+            '25',
+            '26',
+            '27',
+            '28',
+            '29',
+            '30',
+            '31',
+            '32',
+            '33',
+            '34',
+            '35'
+        ), $format);
+        
         $temp = intval(substr($format, 0, 1));
-        $len  = strlen($format);
-        for ($x = 1; $x < $len; ++$x) {
+        $len = strlen($format);
+        for ($x = 1; $x < $len; ++ $x) {
             $temp *= 10;
             $temp += intval(substr($format, $x, 1));
             $temp %= 97;
         }
-
+        
         if ($temp != 1) {
             $this->_error(self::CHECKFAILED);
             return false;
         }
-
+        
         return true;
     }
 }

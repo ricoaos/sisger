@@ -20,6 +20,7 @@
  */
 
 /**
+ *
  * @see Zend_Controller_Request_Http
  */
 require_once 'Zend/Controller/Request/Http.php';
@@ -35,26 +36,31 @@ require_once 'Zend/Controller/Request/Http.php';
  */
 class Zend_Controller_Request_HttpTestCase extends Zend_Controller_Request_Http
 {
+
     /**
      * Request headers
+     * 
      * @var array
      */
     protected $_headers = array();
 
     /**
      * Request method
+     * 
      * @var string
      */
     protected $_method = 'GET';
 
     /**
      * Raw POST body
+     * 
      * @var string|null
      */
     protected $_rawBody;
 
     /**
      * Valid request method types
+     * 
      * @var array
      */
     protected $_validMethodTypes = array(
@@ -64,7 +70,7 @@ class Zend_Controller_Request_HttpTestCase extends Zend_Controller_Request_Http
         'OPTIONS',
         'PATCH',
         'POST',
-        'PUT',
+        'PUT'
     );
 
     /**
@@ -92,7 +98,7 @@ class Zend_Controller_Request_HttpTestCase extends Zend_Controller_Request_Http
     /**
      * Set raw POST body
      *
-     * @param  string $content
+     * @param string $content            
      * @return Zend_Controller_Request_HttpTestCase
      */
     public function setRawBody($content)
@@ -125,8 +131,8 @@ class Zend_Controller_Request_HttpTestCase extends Zend_Controller_Request_Http
     /**
      * Set a cookie
      *
-     * @param  string $key
-     * @param  mixed $value
+     * @param string $key            
+     * @param mixed $value            
      * @return Zend_Controller_Request_HttpTestCase
      */
     public function setCookie($key, $value)
@@ -138,7 +144,7 @@ class Zend_Controller_Request_HttpTestCase extends Zend_Controller_Request_Http
     /**
      * Set multiple cookies at once
      *
-     * @param array $cookies
+     * @param array $cookies            
      * @return void
      */
     public function setCookies(array $cookies)
@@ -163,13 +169,13 @@ class Zend_Controller_Request_HttpTestCase extends Zend_Controller_Request_Http
     /**
      * Set request method
      *
-     * @param  string $type
+     * @param string $type            
      * @return Zend_Controller_Request_HttpTestCase
      */
     public function setMethod($type)
     {
         $type = strtoupper(trim((string) $type));
-        if (!in_array($type, $this->_validMethodTypes)) {
+        if (! in_array($type, $this->_validMethodTypes)) {
             require_once 'Zend/Controller/Exception.php';
             throw new Zend_Controller_Exception('Invalid request method specified');
         }
@@ -190,8 +196,8 @@ class Zend_Controller_Request_HttpTestCase extends Zend_Controller_Request_Http
     /**
      * Set a request header
      *
-     * @param  string $key
-     * @param  string $value
+     * @param string $key            
+     * @param string $value            
      * @return Zend_Controller_Request_HttpTestCase
      */
     public function setHeader($key, $value)
@@ -204,7 +210,7 @@ class Zend_Controller_Request_HttpTestCase extends Zend_Controller_Request_Http
     /**
      * Set request headers
      *
-     * @param  array $headers
+     * @param array $headers            
      * @return Zend_Controller_Request_HttpTestCase
      */
     public function setHeaders(array $headers)
@@ -218,8 +224,8 @@ class Zend_Controller_Request_HttpTestCase extends Zend_Controller_Request_Http
     /**
      * Get request header
      *
-     * @param  string $header
-     * @param  mixed $default
+     * @param string $header            
+     * @param mixed $default            
      * @return string|null
      */
     public function getHeader($header, $default = null)
@@ -265,7 +271,7 @@ class Zend_Controller_Request_HttpTestCase extends Zend_Controller_Request_Http
     /**
      * Normalize a header name for setting and retrieval
      *
-     * @param  string $name
+     * @param string $name            
      * @return string
      */
     protected function _normalizeHeaderName($name)

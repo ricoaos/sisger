@@ -21,16 +21,19 @@
  */
 
 /**
+ *
  * @see PHPUnit_Extensions_Database_DB_DefaultDatabaseConnection
  */
 require_once "PHPUnit/Extensions/Database/DB/DefaultDatabaseConnection.php";
 
 /**
+ *
  * @see Zend_Test_PHPUnit_Db_DataSet_QueryTable
  */
 require_once "Zend/Test/PHPUnit/Db/DataSet/QueryTable.php";
 
 /**
+ *
  * @see Zend_Test_PHPUnit_Db_Metadata_Generic
  */
 require_once "Zend/Test/PHPUnit/Db/Metadata/Generic.php";
@@ -38,16 +41,17 @@ require_once "Zend/Test/PHPUnit/Db/Metadata/Generic.php";
 /**
  * Generic Abstraction of Zend_Db Connections in the PHPUnit Database Extension context.
  *
- * @uses       Zend_Db_Adapter_Abstract
- * @uses       PHPUnit_Extensions_Database_DB_DefaultDatabaseConnection
- * @category   Zend
- * @package    Zend_Test
+ * @uses Zend_Db_Adapter_Abstract
+ * @uses PHPUnit_Extensions_Database_DB_DefaultDatabaseConnection
+ * @category Zend
+ * @package Zend_Test
  * @subpackage PHPUnit
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Test_PHPUnit_Db_Connection extends PHPUnit_Extensions_Database_DB_DefaultDatabaseConnection
 {
+
     /**
      * Zend_Db_Adapter_Abstract
      *
@@ -65,15 +69,15 @@ class Zend_Test_PHPUnit_Db_Connection extends PHPUnit_Extensions_Database_DB_Def
     /**
      * Metadata
      *
-     * @param PHPUnit_Extensions_Database_DB_IMetaData $db
+     * @param PHPUnit_Extensions_Database_DB_IMetaData $db            
      */
     protected $_metaData;
 
     /**
      * Construct Connection based on Zend_Db_Adapter_Abstract
      *
-     * @param Zend_Db_Adapter_Abstract $db
-     * @param string $schema
+     * @param Zend_Db_Adapter_Abstract $db            
+     * @param string $schema            
      */
     public function __construct(Zend_Db_Adapter_Abstract $db, $schema)
     {
@@ -94,8 +98,8 @@ class Zend_Test_PHPUnit_Db_Connection extends PHPUnit_Extensions_Database_DB_Def
     /**
      * Creates a table with the result of the specified SQL statement.
      *
-     * @param string $resultName
-     * @param string $sql
+     * @param string $resultName            
+     * @param string $sql            
      * @return PHPUnit_Extensions_Database_DataSet_ITable
      */
     public function createQueryTable($resultName, $sql)
@@ -121,7 +125,7 @@ class Zend_Test_PHPUnit_Db_Connection extends PHPUnit_Extensions_Database_DB_Def
      */
     public function getMetaData()
     {
-        if($this->_metaData === null) {
+        if ($this->_metaData === null) {
             $this->_metaData = new Zend_Test_PHPUnit_Db_Metadata_Generic($this->getConnection(), $this->getSchema());
         }
         return $this->_metaData;

@@ -20,33 +20,39 @@
  * @version    $Id$
  */
 
-/** @see Zend_Serializer_Adapter_AdapterAbstract */
+/**
+ *
+ * @see Zend_Serializer_Adapter_AdapterAbstract
+ */
 require_once 'Zend/Serializer/Adapter/AdapterAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Serializer
+ *
+ * @category Zend
+ * @package Zend_Serializer
  * @subpackage Adapter
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Serializer_Adapter_PhpSerialize extends Zend_Serializer_Adapter_AdapterAbstract
 {
+
     /**
-     *  @var null|string Serialized boolean false value
+     *
+     * @var null|string Serialized boolean false value
      */
     private static $_serializedFalse = null;
 
     /**
      * Constructor
      *
-     * @param  array|Zend_Config $opts
+     * @param array|Zend_Config $opts            
      * @return void
      */
     public function __construct($opts = array())
     {
         parent::__construct($opts);
-
+        
         if (self::$_serializedFalse === null) {
             self::$_serializedFalse = serialize(false);
         }
@@ -55,8 +61,8 @@ class Zend_Serializer_Adapter_PhpSerialize extends Zend_Serializer_Adapter_Adapt
     /**
      * Serialize using serialize()
      *
-     * @param  mixed $value
-     * @param  array $opts
+     * @param mixed $value            
+     * @param array $opts            
      * @return string
      * @throws Zend_Serializer_Exception On serialize error
      */
@@ -74,9 +80,9 @@ class Zend_Serializer_Adapter_PhpSerialize extends Zend_Serializer_Adapter_Adapt
     /**
      * Unserialize
      *
-     * @todo   Allow integration with unserialize_callback_func
-     * @param  string $serialized
-     * @param  array $opts
+     * @todo Allow integration with unserialize_callback_func
+     * @param string $serialized            
+     * @param array $opts            
      * @return mixed
      * @throws Zend_Serializer_Exception on unserialize error
      */

@@ -2,7 +2,7 @@
 	<!--/sub-heard-part-->
 	<div class="sub-heard-part">
 		<ol class="breadcrumb m-b-0">
-            <li><a href="<?php echo $this->baseUrl('/administrativo/painel/')?>">Home</a></li>
+			<li><a href="<?php echo $this->baseUrl('/administrativo/painel/')?>">Home</a></li>
 			<li><a href="<?php echo $this->baseUrl('/roteiro/painel/')?>">Roteiro</a></li>
 			<li class="active">Inspeção de Segurança em Porta Corta Fogo</li>
 		</ol>
@@ -11,236 +11,447 @@
 	<div class="forms-main">
 		<div class="graph-form">
 			<div class="validation-form">
-				<form class="form-horizontal group-border hover-stripped" role="form" method="post" action="" >
-                    
-                    <div class="col-md-5 form-group2">
-                        <label class="control-label">Cliente</label>
-                        <select name="id_cliente" id="id_cliente" required data-dependent="st_conformidade" class="dynamic">
-                            <option></option>
-                        </select>
-                    </div>
-                    
-                    <div class="col-md-5 form-group2">
-                        <label class="control-label">Conformidade e nº da área</label>
-                        <select name="id_conformidade" id="id_conformidade" required>
-                            <option></option>
-                            <option value=""> </option>
-                        </select>
-                    </div>
+				<form class="form-horizontal group-border hover-stripped"
+					role="form" method="post" action="">
 
-                    <div class="col-md-2 form-group2">
-                        <label class="control-label">Mês/Ano</label>
-                        <input type="text" class="form-control" name="st_mes_ano" id="st_mes_ano" value="<?php echo date('m/Y')?>">
-                    </div>
+					<div class="col-md-5 form-group2">
+						<label class="control-label">Cliente</label> <select
+							name="id_cliente" id="id_cliente" required
+							data-dependent="st_conformidade" class="dynamic">
+							<option></option>
+						</select>
+					</div>
 
-                    <div class="col-md-4 form-group2">
-                        <label class="control-label">Unidade</label>
-                        <input type="text" class="form-control" name="st_unidade" id="st_unidade" >
-                    </div>
-                    
-                    <div class="col-md-4 form-group2">
-                        <label class="control-label">descrição</label>
-                        <input type="text" class="form-control" name="st_descricao" id="st_descricao" >
-                    </div>
+					<div class="col-md-5 form-group2">
+						<label class="control-label">Conformidade e nº da área</label> <select
+							name="id_conformidade" id="id_conformidade" required>
+							<option></option>
+							<option value=""></option>
+						</select>
+					</div>
 
-                    <div class="col-md-4 form-group2">
-                        <label class="control-label">Operador</label>
-                        <input type="text" class="form-control" name="st_operador" id="st_operador" >
-                    </div>
+					<div class="col-md-2 form-group2">
+						<label class="control-label">Mês/Ano</label> <input type="text"
+							class="form-control" name="st_mes_ano" id="st_mes_ano"
+							value="<?php echo date('m/Y')?>">
+					</div>
 
-                    <div class="col-md-6 form-group2">
-                        <label class="control-label">Supervisor do setor</label>
-                        <input type="text" class="form-control" name="st_supervisor" id="st_supervisor" >
-                    </div>
+					<div class="col-md-4 form-group2">
+						<label class="control-label">Unidade</label> <input type="text"
+							class="form-control" name="st_unidade" id="st_unidade">
+					</div>
 
-                    <div class="col-md-6 form-group2">
-                        <label class="control-label">Engenheiro/Técnico em Segurança ou Responsável</label>
-                        <input type="text" class="form-control" name="st_engenheiro" id="st_engenheiro" >
-                    </div>
+					<div class="col-md-4 form-group2">
+						<label class="control-label">descrição</label> <input type="text"
+							class="form-control" name="st_descricao" id="st_descricao">
+					</div>
 
-                    <div class="col-md-12 form-group2">
-                        <label class="control-label"><strong>INSPENÇÃO DE SEGURANÇA</strong></label>
-                    </div>
+					<div class="col-md-4 form-group2">
+						<label class="control-label">Operador</label> <input type="text"
+							class="form-control" name="st_operador" id="st_operador">
+					</div>
 
-                    <div class="col-md-12 form-group2">
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Inspeção visual.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_inspencao_visual" id="st_inspencao_visual" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_inspencao_visual" id="st_inspencao_visual" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_inspencao_visual" id="st_inspencao_visual" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Existência placas numeras padronizadas pela ABNT e INMETRO.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_placas_padrao" id="st_placas_padrao" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_placas_padrao" id="st_placas_padrao" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_placas_padrao" id="st_placas_padrao" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Abre no sentido de saída da rota de fuga.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_rota_fuga" id="st_rota_fuga" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_rota_fuga" id="st_rota_fuga" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_rota_fuga" id="st_rota_fuga" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Faixa livre de pelo menos 1 m de qualquer obstáculo.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_faixa_livre" id="st_faixa_livre" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_faixa_livre" id="st_faixa_livre" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_faixa_livre" id="st_faixa_livre" value='NA'>  <label>N.A.</label></div>
-                        </div> 
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Automatismo: fechamento (fechaduras, dispositivos antipânico, selecionadores e travas, etc).</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_automatismo_fechamento" id="st_automatismo_fechamento" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_automatismo_fechamento" id="st_automatismo_fechamento" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_automatismo_fechamento" id="st_automatismo_fechamento" value='NA'>  <label>N.A.</label></div>
-                        </div> 
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Automatismo: facilidade de abertura (fechaduras, dispositivos antipânico, selecionadores e travas, etc.).</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_automatismo_facilidade" id="st_automatismo_facilidade" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_automatismo_facilidade" id="st_automatismo_facilidade" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_automatismo_facilidade" id="st_automatismo_facilidade" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Limpeza dos alojadores de trincos, no piso e batentes, com remoção de resíduos e objetos estranhos que dificultem o funcionamento das partes móveis (dobradiças, fechaduras e trincos).</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_limpeza_alojadores" id="st_limpeza_alojadores" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_limpeza_alojadores" id="st_limpeza_alojadores" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_limpeza_alojadores" id="st_limpeza_alojadores" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Localização.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_localizacao" id="st_localizacao" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_localizacao" id="st_localizacao" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_localizacao" id="st_localizacao" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Proteção intempéries.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_protecao_intemperies" id="st_protecao_intemperies" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_protecao_intemperies" id="st_protecao_intemperies" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_protecao_intemperies" id="st_protecao_intemperies" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Está bem fixada.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_fixada" id="st_fixada" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_fixada" id="st_fixada" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_fixada" id="st_fixada" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Adequado classe do fogo.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_classe_fogo" id="st_classe_fogo" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_classe_fogo" id="st_classe_fogo" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_classe_fogo" id="st_classe_fogo" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Trabalhadores aptos ao uso.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_trabalhadores_aptos" id="st_trabalhadores_aptos" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_trabalhadores_aptos" id="st_trabalhadores_aptos" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_trabalhadores_aptos" id="st_trabalhadores_aptos" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Estado de todos os componentes (molas, travas, ferrolhos e Barra antipânico). Obs: Semestral.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_estado_componentes" id="st_estado_componentes" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_estado_componentes" id="st_estado_componentes" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_estado_componentes" id="st_estado_componentes" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Lubrificação de todas as partes móveis. Obs: Semestral.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_lubrificacao" id="st_lubrificacao" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_lubrificacao" id="st_lubrificacao" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_lubrificacao" id="st_lubrificacao" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Legibilidade dos identificadores da porta. Obs: Semestral.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_legibilidade_porta" id="st_legibilidade_porta" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_legibilidade_porta" id="st_legibilidade_porta" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_legibilidade_porta" id="st_legibilidade_porta" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Pintura. Obs: Semestral.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_pintura" id="st_pintura" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_pintura" id="st_pintura" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_pintura" id="st_pintura" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Revestimento. Obs: Semestral.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_revestimento" id="st_revestimento" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_revestimento" id="st_revestimento" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_revestimento" id="st_revestimento" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Partes móveis em perfeitas condições de funcionamento. Obs: Semestral.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_partes_moveis" id="st_partes_moveis" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_partes_moveis" id="st_partes_moveis" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_partes_moveis" id="st_partes_moveis" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Corrosão, empenamento, deterioração e apresentação cantos vivos cortantes que possam provocar ferimentos ao usuário, quando em sua utilização normal. Obs: Anual.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_corrosao" id="st_corrosao" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_corrosao" id="st_corrosao" value='N'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_corrosao" id="st_corrosao" value='NA'>  <label>N.A.</label></div>
-                        </div>
-                        <div style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-                            <div class="col-md-9 form-group2">
-                                <label>Outros.</label>
-                            </div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_outros" id="st_outros" value='S'>  <label>SIM</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_outros" id="st_outros" value='S'>  <label>NÃO</label></div>
-                            <div class="col-md-1 form-group1"><input type="radio" name="st_outros" id="st_outros" value='S'>  <label>N.A.</label></div>
-                        </div>
-                    </div>
+					<div class="col-md-6 form-group2">
+						<label class="control-label">Supervisor do setor</label> <input
+							type="text" class="form-control" name="st_supervisor"
+							id="st_supervisor">
+					</div>
 
-                    <div class="col-md-12 form-group1 ">
-                        <label class="control-label">Observação</label>
-                        <textarea name="ds_observacao" id="ds_observacao"></textarea>
-                    </div>     
-                    
+					<div class="col-md-6 form-group2">
+						<label class="control-label">Engenheiro/Técnico em Segurança ou
+							Responsável</label> <input type="text" class="form-control"
+							name="st_engenheiro" id="st_engenheiro">
+					</div>
+
+					<div class="col-md-12 form-group2">
+						<label class="control-label"><strong>INSPENÇÃO DE SEGURANÇA</strong></label>
+					</div>
+
+					<div class="col-md-12 form-group2">
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Inspeção visual.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_inspencao_visual"
+									id="st_inspencao_visual" value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_inspencao_visual"
+									id="st_inspencao_visual" value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_inspencao_visual"
+									id="st_inspencao_visual" value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Existência placas numeras padronizadas pela ABNT e
+									INMETRO.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_placas_padrao"
+									id="st_placas_padrao" value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_placas_padrao"
+									id="st_placas_padrao" value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_placas_padrao"
+									id="st_placas_padrao" value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Abre no sentido de saída da rota de fuga.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_rota_fuga" id="st_rota_fuga"
+									value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_rota_fuga" id="st_rota_fuga"
+									value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_rota_fuga" id="st_rota_fuga"
+									value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Faixa livre de pelo menos 1 m de qualquer obstáculo.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_faixa_livre" id="st_faixa_livre"
+									value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_faixa_livre" id="st_faixa_livre"
+									value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_faixa_livre" id="st_faixa_livre"
+									value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Automatismo: fechamento (fechaduras, dispositivos
+									antipânico, selecionadores e travas, etc).</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_automatismo_fechamento"
+									id="st_automatismo_fechamento" value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_automatismo_fechamento"
+									id="st_automatismo_fechamento" value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_automatismo_fechamento"
+									id="st_automatismo_fechamento" value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Automatismo: facilidade de abertura (fechaduras,
+									dispositivos antipânico, selecionadores e travas, etc.).</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_automatismo_facilidade"
+									id="st_automatismo_facilidade" value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_automatismo_facilidade"
+									id="st_automatismo_facilidade" value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_automatismo_facilidade"
+									id="st_automatismo_facilidade" value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Limpeza dos alojadores de trincos, no piso e batentes,
+									com remoção de resíduos e objetos estranhos que dificultem o
+									funcionamento das partes móveis (dobradiças, fechaduras e
+									trincos).</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_limpeza_alojadores"
+									id="st_limpeza_alojadores" value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_limpeza_alojadores"
+									id="st_limpeza_alojadores" value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_limpeza_alojadores"
+									id="st_limpeza_alojadores" value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Localização.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_localizacao" id="st_localizacao"
+									value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_localizacao" id="st_localizacao"
+									value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_localizacao" id="st_localizacao"
+									value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Proteção intempéries.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_protecao_intemperies"
+									id="st_protecao_intemperies" value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_protecao_intemperies"
+									id="st_protecao_intemperies" value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_protecao_intemperies"
+									id="st_protecao_intemperies" value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Está bem fixada.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_fixada" id="st_fixada" value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_fixada" id="st_fixada" value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_fixada" id="st_fixada" value='NA'>
+								<label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Adequado classe do fogo.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_classe_fogo" id="st_classe_fogo"
+									value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_classe_fogo" id="st_classe_fogo"
+									value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_classe_fogo" id="st_classe_fogo"
+									value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Trabalhadores aptos ao uso.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_trabalhadores_aptos"
+									id="st_trabalhadores_aptos" value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_trabalhadores_aptos"
+									id="st_trabalhadores_aptos" value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_trabalhadores_aptos"
+									id="st_trabalhadores_aptos" value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Estado de todos os componentes (molas, travas, ferrolhos
+									e Barra antipânico). Obs: Semestral.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_estado_componentes"
+									id="st_estado_componentes" value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_estado_componentes"
+									id="st_estado_componentes" value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_estado_componentes"
+									id="st_estado_componentes" value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Lubrificação de todas as partes móveis. Obs: Semestral.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_lubrificacao" id="st_lubrificacao"
+									value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_lubrificacao" id="st_lubrificacao"
+									value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_lubrificacao" id="st_lubrificacao"
+									value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Legibilidade dos identificadores da porta. Obs:
+									Semestral.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_legibilidade_porta"
+									id="st_legibilidade_porta" value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_legibilidade_porta"
+									id="st_legibilidade_porta" value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_legibilidade_porta"
+									id="st_legibilidade_porta" value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Pintura. Obs: Semestral.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_pintura" id="st_pintura" value='S'>
+								<label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_pintura" id="st_pintura" value='N'>
+								<label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_pintura" id="st_pintura" value='NA'>
+								<label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Revestimento. Obs: Semestral.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_revestimento" id="st_revestimento"
+									value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_revestimento" id="st_revestimento"
+									value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_revestimento" id="st_revestimento"
+									value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Partes móveis em perfeitas condições de funcionamento.
+									Obs: Semestral.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_partes_moveis"
+									id="st_partes_moveis" value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_partes_moveis"
+									id="st_partes_moveis" value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_partes_moveis"
+									id="st_partes_moveis" value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Corrosão, empenamento, deterioração e apresentação cantos
+									vivos cortantes que possam provocar ferimentos ao usuário,
+									quando em sua utilização normal. Obs: Anual.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_corrosao" id="st_corrosao"
+									value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_corrosao" id="st_corrosao"
+									value='N'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_corrosao" id="st_corrosao"
+									value='NA'> <label>N.A.</label>
+							</div>
+						</div>
+						<div
+							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
+							<div class="col-md-9 form-group2">
+								<label>Outros.</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_outros" id="st_outros" value='S'> <label>SIM</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_outros" id="st_outros" value='S'> <label>NÃO</label>
+							</div>
+							<div class="col-md-1 form-group1">
+								<input type="radio" name="st_outros" id="st_outros" value='S'> <label>N.A.</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-12 form-group1 ">
+						<label class="control-label">Observação</label>
+						<textarea name="ds_observacao" id="ds_observacao"></textarea>
+					</div>
+
 					<div class="col-md-12 form-group button-2">
 						<button type="submit" class="btn btn-primary">Salvar</button>
 						<a href="">
 							<button class="btn btn-red" type="button">Visualizar Cadastrados</button>
 						</a>
 					</div>
-					<div class="clearfix"> </div>
+					<div class="clearfix"></div>
 				</form>
 			</div>
 		</div>
-	</div> 
+	</div>
 </div>
 
 <script src=""></script>

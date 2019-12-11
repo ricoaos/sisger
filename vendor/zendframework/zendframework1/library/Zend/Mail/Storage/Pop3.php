@@ -20,38 +20,41 @@
  * @version    $Id$
  */
 
-
 /**
+ *
  * @see Zend_Mail_Storage_Abstract
  */
 require_once 'Zend/Mail/Storage/Abstract.php';
 
 /**
+ *
  * @see Zend_Mail_Protocol_Pop3
  */
 require_once 'Zend/Mail/Protocol/Pop3.php';
 
 /**
+ *
  * @see Zend_Mail_Message
  */
 require_once 'Zend/Mail/Message.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Mail
+ *
+ * @category Zend
+ * @package Zend_Mail
  * @subpackage Storage
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
 {
+
     /**
      * protocol handler
+     * 
      * @var null|Zend_Mail_Protocol_Pop3
      */
     protected $_protocol;
-
 
     /**
      * Count messages all messages in current box
@@ -63,13 +66,14 @@ class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
     public function countMessages()
     {
         $this->_protocol->status($count, $null);
-        return (int)$count;
+        return (int) $count;
     }
 
     /**
      * get a list of messages with number and size
      *
-     * @param int $id number of message
+     * @param int $id
+     *            number of message
      * @return int|array size of given message of list with all messages as array(num => size)
      * @throws Zend_Mail_Protocol_Exception
      */
@@ -82,7 +86,8 @@ class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
     /**
      * Fetch a message
      *
-     * @param int $id number of message
+     * @param int $id
+     *            number of message
      * @return Zend_Mail_Message
      * @throws Zend_Mail_Protocol_Exception
      */
@@ -90,17 +95,21 @@ class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
     {
         $bodyLines = 0;
         $message = $this->_protocol->top($id, $bodyLines, true);
-
-        return new $this->_messageClass(array('handler' => $this, 'id' => $id, 'headers' => $message,
-                                              'noToplines' => $bodyLines < 1));
+        
+        return new $this->_messageClass(array(
+            'handler' => $this,
+            'id' => $id,
+            'headers' => $message,
+            'noToplines' => $bodyLines < 1
+        ));
     }
 
     /*
      * Get raw header of message or part
      *
-     * @param  int               $id       number of message
-     * @param  null|array|string $part     path to part or null for messsage header
-     * @param  int               $topLines include this many lines with header (after an empty line)
+     * @param int $id number of message
+     * @param null|array|string $part path to part or null for messsage header
+     * @param int $topLines include this many lines with header (after an empty line)
      * @return string raw header
      * @throws Zend_Mail_Protocol_Exception
      * @throws Zend_Mail_Storage_Exception
@@ -110,20 +119,21 @@ class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
         if ($part !== null) {
             // TODO: implement
             /**
+             *
              * @see Zend_Mail_Storage_Exception
              */
             require_once 'Zend/Mail/Storage/Exception.php';
             throw new Zend_Mail_Storage_Exception('not implemented');
         }
-
+        
         return $this->_protocol->top($id, 0, true);
     }
 
     /*
      * Get raw content of message or part
      *
-     * @param  int               $id   number of message
-     * @param  null|array|string $part path to part or null for messsage content
+     * @param int $id number of message
+     * @param null|array|string $part path to part or null for messsage content
      * @return string raw content
      * @throws Zend_Mail_Protocol_Exception
      * @throws Zend_Mail_Storage_Exception
@@ -133,12 +143,13 @@ class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
         if ($part !== null) {
             // TODO: implement
             /**
+             *
              * @see Zend_Mail_Storage_Exception
              */
             require_once 'Zend/Mail/Storage/Exception.php';
             throw new Zend_Mail_Storage_Exception('not implemented');
         }
-
+        
         $content = $this->_protocol->retrieve($id);
         // TODO: find a way to avoid decoding the headers
         Zend_Mime_Decode::splitMessage($content, $null, $body);
@@ -148,51 +159,54 @@ class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
     /**
      * create instance with parameters
      * Supported paramters are
-     *   - host hostname or ip address of POP3 server
-     *   - user username
-     *   - password password for user 'username' [optional, default = '']
-     *   - port port for POP3 server [optional, default = 110]
-     *   - ssl 'SSL' or 'TLS' for secure sockets
+     * - host hostname or ip address of POP3 server
+     * - user username
+     * - password password for user 'username' [optional, default = '']
+     * - port port for POP3 server [optional, default = 110]
+     * - ssl 'SSL' or 'TLS' for secure sockets
      *
-     * @param array $params mail reader specific parameters
+     * @param array $params
+     *            mail reader specific parameters
      * @throws Zend_Mail_Storage_Exception
      * @throws Zend_Mail_Protocol_Exception
      */
     public function __construct($params)
     {
         if (is_array($params)) {
-            $params = (object)$params;
+            $params = (object) $params;
         }
-
+        
         $this->_has['fetchPart'] = false;
-        $this->_has['top']       = null;
-        $this->_has['uniqueid']  = null;
-
+        $this->_has['top'] = null;
+        $this->_has['uniqueid'] = null;
+        
         if ($params instanceof Zend_Mail_Protocol_Pop3) {
             $this->_protocol = $params;
             return;
         }
-
-        if (!isset($params->user)) {
+        
+        if (! isset($params->user)) {
             /**
+             *
              * @see Zend_Mail_Storage_Exception
              */
             require_once 'Zend/Mail/Storage/Exception.php';
             throw new Zend_Mail_Storage_Exception('need at least user in params');
         }
-
-        $host     = isset($params->host)     ? $params->host     : 'localhost';
+        
+        $host = isset($params->host) ? $params->host : 'localhost';
         $password = isset($params->password) ? $params->password : '';
-        $port     = isset($params->port)     ? $params->port     : null;
-        $ssl      = isset($params->ssl)      ? $params->ssl      : false;
-
+        $port = isset($params->port) ? $params->port : null;
+        $ssl = isset($params->ssl) ? $params->ssl : false;
+        
         $this->_protocol = new Zend_Mail_Protocol_Pop3();
         $this->_protocol->connect($host, $port, $ssl);
         $this->_protocol->login($params->user, $password);
     }
 
     /**
-     * Close resource for mail lib. If you need to control, when the resource
+     * Close resource for mail lib.
+     * If you need to control, when the resource
      * is closed. Otherwise the destructor would call this.
      *
      * @return null
@@ -214,11 +228,13 @@ class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
     }
 
     /**
-     * Remove a message from server. If you're doing that from a web enviroment
+     * Remove a message from server.
+     * If you're doing that from a web enviroment
      * you should be careful and use a uniqueid as parameter if possible to
      * identify the message.
      *
-     * @param  int $id number of message
+     * @param int $id
+     *            number of message
      * @return null
      * @throws Zend_Mail_Protocol_Exception
      */
@@ -232,13 +248,14 @@ class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
      *
      * if storage does not support unique ids it's the same as the message number
      *
-     * @param int|null $id message number
+     * @param int|null $id
+     *            message number
      * @return array|string message number for given message or all messages as array
      * @throws Zend_Mail_Storage_Exception
      */
     public function getUniqueId($id = null)
     {
-        if (!$this->hasUniqueid) {
+        if (! $this->hasUniqueid) {
             if ($id) {
                 return $id;
             }
@@ -249,7 +266,7 @@ class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
             $range = range(1, $count);
             return array_combine($range, $range);
         }
-
+        
         return $this->_protocol->uniqueid($id);
     }
 
@@ -259,24 +276,26 @@ class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
      * I.e. if you have a webmailer that supports deleting messages you should use unique ids
      * as parameter and use this method to translate it to message number right before calling removeMessage()
      *
-     * @param string $id unique id
+     * @param string $id
+     *            unique id
      * @return int message number
      * @throws Zend_Mail_Storage_Exception
      */
     public function getNumberByUniqueId($id)
     {
-        if (!$this->hasUniqueid) {
+        if (! $this->hasUniqueid) {
             return $id;
         }
-
+        
         $ids = $this->getUniqueId();
         foreach ($ids as $k => $v) {
             if ($v == $id) {
                 return $k;
             }
         }
-
+        
         /**
+         *
          * @see Zend_Mail_Storage_Exception
          */
         require_once 'Zend/Mail/Storage/Exception.php';
@@ -284,11 +303,12 @@ class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
     }
 
     /**
-     * Special handling for hasTop and hasUniqueid. The headers of the first message is
+     * Special handling for hasTop and hasUniqueid.
+     * The headers of the first message is
      * retrieved if Top wasn't needed/tried yet.
      *
      * @see Zend_Mail_Storage_Abstract:__get()
-     * @param  string $var
+     * @param string $var            
      * @return string
      * @throws Zend_Mail_Storage_Exception
      */
@@ -298,31 +318,31 @@ class Zend_Mail_Storage_Pop3 extends Zend_Mail_Storage_Abstract
         if ($result !== null) {
             return $result;
         }
-
+        
         if (strtolower($var) == 'hastop') {
             if ($this->_protocol->hasTop === null) {
                 // need to make a real call, because not all server are honest in their capas
                 try {
                     $this->_protocol->top(1, 0, false);
-                } catch(Zend_Mail_Exception $e) {
+                } catch (Zend_Mail_Exception $e) {
                     // ignoring error
                 }
             }
             $this->_has['top'] = $this->_protocol->hasTop;
             return $this->_protocol->hasTop;
         }
-
+        
         if (strtolower($var) == 'hasuniqueid') {
             $id = null;
             try {
                 $id = $this->_protocol->uniqueid(1);
-            } catch(Zend_Mail_Exception $e) {
+            } catch (Zend_Mail_Exception $e) {
                 // ignoring error
             }
             $this->_has['uniqueid'] = $id ? true : false;
             return $this->_has['uniqueid'];
         }
-
+        
         return $result;
     }
 }

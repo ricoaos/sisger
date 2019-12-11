@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="el"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="el" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -1006,8 +1005,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<keys>
 			<key type="calendar">Ημερολόγιο</key>
 			<key type="colAlternate" draft="contributed">Ταξινόμηση με αγνόηση συμβόλων</key>
-			<key type="colBackwards" draft="contributed">Ταξινόμηση με αντεστραμμένο τονισμό</key>
-			<key type="colCaseFirst" draft="contributed">Ταξινόμηση με κεφαλαίους/πεζούς χαρακτήρες</key>
+			<key type="colBackwards" draft="contributed">Ταξινόμηση με αντεστραμμένο
+				τονισμό</key>
+			<key type="colCaseFirst" draft="contributed">Ταξινόμηση με κεφαλαίους/πεζούς
+				χαρακτήρες</key>
 			<key type="colCaseLevel" draft="contributed">Ταξινόμηση με διάκριση χαρακτήρων</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Ταξινόμηση Κάνα</key>
 			<key type="collation">Σειρά ταξινόμησης</key>
@@ -1027,19 +1028,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armn" key="numbers">Αρμενικά αριθμητικά</type>
 			<type type="armnlow" key="numbers">Πεζά αρμενικά αριθμητικά</type>
 			<type type="beng" key="numbers">Βεγγαλικά ψηφία</type>
-			<type type="big5han" key="collation">Σειρά ταξινόμησης Παραδοσιακών Κινεζικών - Big5</type>
+			<type type="big5han" key="collation">Σειρά ταξινόμησης Παραδοσιακών
+				Κινεζικών - Big5</type>
 			<type type="buddhist" key="calendar">Βουδιστικό ημερολόγιο</type>
 			<type type="chinese" key="calendar">Κινεζικό ημερολόγιο</type>
 			<type type="coptic" key="calendar" draft="contributed">Κοπτικό ημερολόγιο</type>
 			<type type="deva" key="numbers">Ψηφία Ντεβαναγκάρι</type>
-			<type type="dictionary" key="collation" draft="contributed">Σειρά ταξινόμησης ημερολογίου</type>
+			<type type="dictionary" key="collation" draft="contributed">Σειρά ταξινόμησης
+				ημερολογίου</type>
 			<type type="ducet" key="collation">Προεπιλεγμένη σειρά ταξινόμησης Unicode</type>
 			<type type="ethi" key="numbers">Αιθιοπικά αριθμητικά</type>
 			<type type="ethiopic" key="calendar" draft="contributed">Αιθιοπικό ημερολόγιο</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Αιθιοπικό ημερολόγιο Άμετ Άλεμ</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Αιθιοπικό
+				ημερολόγιο Άμετ Άλεμ</type>
 			<type type="finance" key="numbers" draft="contributed">Οικονομικά αριθμητικά</type>
 			<type type="fullwide" key="numbers">Ψηφία πλήρους πλάτους</type>
-			<type type="gb2312han" key="collation">Σειρά ταξινόμησης Απλουστευμένων Κινεζικών - GB2312</type>
+			<type type="gb2312han" key="collation">Σειρά ταξινόμησης Απλουστευμένων
+				Κινεζικών - GB2312</type>
 			<type type="geor" key="numbers">Γεωργιανά αριθμητικά</type>
 			<type type="gregorian" key="calendar">Γρηγοριανό ημερολόγιο</type>
 			<type type="grek" key="numbers">Ελληνικά αριθμητικά</type>
@@ -1048,17 +1053,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers">Ψηφία Γκουρμούκι</type>
 			<type type="hanidec" key="numbers">Κινεζικά δεκαδικά αριθμητικά</type>
 			<type type="hans" key="numbers">Απλοποιημένα κινεζικά αριθμητικά</type>
-			<type type="hansfin" key="numbers">Απλοποιημένα κινεζικά οικονομικά αριθμητικά</type>
+			<type type="hansfin" key="numbers">Απλοποιημένα κινεζικά οικονομικά
+				αριθμητικά</type>
 			<type type="hant" key="numbers">Παραδοσιακά κινεζικά αριθμητικά</type>
-			<type type="hantfin" key="numbers">Παραδοσιακά κινεζικά οικονομικά αριθμητικά</type>
+			<type type="hantfin" key="numbers">Παραδοσιακά κινεζικά οικονομικά
+				αριθμητικά</type>
 			<type type="hebr" key="numbers">Εβραϊκά αριθμητικά</type>
 			<type type="hebrew" key="calendar">Εβραϊκό ημερολόγιο</type>
 			<type type="identical" key="colStrength" draft="contributed">Ταξινόμηση όλων</type>
 			<type type="indian" key="calendar">Ινδικό εθνικό ημερολόγιο</type>
 			<type type="islamic" key="calendar">Ισλαμικό ημερολόγιο</type>
 			<type type="islamic-civil" key="calendar">Ισλαμικό αστικό ημερολόγιο</type>
-			<type type="islamic-rgsa" key="calendar" draft="contributed">Ισλαμικό ημερολόγιο (Σαουδική Αραβία, θέαση)</type>
-			<type type="islamic-tbla" key="calendar" draft="contributed">Ισλαμικό ημερολόγιο (δομημένο, αστρονομική εποχή)</type>
+			<type type="islamic-rgsa" key="calendar" draft="contributed">Ισλαμικό
+				ημερολόγιο (Σαουδική Αραβία, θέαση)</type>
+			<type type="islamic-tbla" key="calendar" draft="contributed">Ισλαμικό
+				ημερολόγιο (δομημένο, αστρονομική εποχή)</type>
 			<type type="japanese" key="calendar">Ιαπωνικό ημερολόγιο</type>
 			<type type="jpan" key="numbers">Ιαπωνικά αριθμητικά</type>
 			<type type="jpanfin" key="numbers">Ιαπωνικά οικονομικά αριθμητικά</type>
@@ -1066,51 +1075,76 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="knda" key="numbers">Ψηφία Κανάντα</type>
 			<type type="laoo" key="numbers">Λαοϊκά ψηφία</type>
 			<type type="latn" key="numbers">Ψηφία της Δύσης</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Ταξινόμηση πεζών χαρακτήρων πρώτα</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Ταξινόμηση πεζών
+				χαρακτήρων πρώτα</type>
 			<type type="mlym" key="numbers">Μαλαγιαλαμικά ψηφία</type>
 			<type type="mong" key="numbers" draft="contributed">Μογγολικά ψηφία</type>
 			<type type="mymr" key="numbers">Ψηφία Μιανμάρ</type>
 			<type type="native" key="numbers" draft="contributed">Εγγενή ψηφία</type>
-			<type type="no" key="colBackwards" draft="contributed">Κανονικά ταξινόμηση τόνων</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Κανονική ταξινόμηση χαρακτήρων</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Ταξινόμηση με διάκριση χαρακτήρων</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Ξεχωριστή ταξινόμηση χαρακτήρων Κάνα</type>
-			<type type="no" key="colNormalization" draft="contributed">Ταξινόμηση χωρίς κανονικοποίηση</type>
-			<type type="no" key="colNumeric" draft="contributed">Μεμονωμένη ταξινόμηση ψηφίων</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Ταξινόμηση συμβόλων</type>
+			<type type="no" key="colBackwards" draft="contributed">Κανονικά ταξινόμηση
+				τόνων</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Κανονική ταξινόμηση
+				χαρακτήρων</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Ταξινόμηση με διάκριση
+				χαρακτήρων</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Ξεχωριστή
+				ταξινόμηση χαρακτήρων Κάνα</type>
+			<type type="no" key="colNormalization" draft="contributed">Ταξινόμηση χωρίς
+				κανονικοποίηση</type>
+			<type type="no" key="colNumeric" draft="contributed">Μεμονωμένη ταξινόμηση
+				ψηφίων</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Ταξινόμηση
+				συμβόλων</type>
 			<type type="orya" key="numbers">Οριγικά ψηφία</type>
 			<type type="persian" key="calendar" draft="contributed">Περσικό ημερολόγιο</type>
-			<type type="phonebook" key="collation">Σειρά ταξινόμησης τηλεφωνικού καταλόγου</type>
-			<type type="phonetic" key="collation" draft="contributed">Φωνητική σειρά ταξινόμησης</type>
+			<type type="phonebook" key="collation">Σειρά ταξινόμησης τηλεφωνικού
+				καταλόγου</type>
+			<type type="phonetic" key="collation" draft="contributed">Φωνητική σειρά
+				ταξινόμησης</type>
 			<type type="pinyin" key="collation">Σειρά ταξινόμησης Πινγίν</type>
-			<type type="primary" key="colStrength" draft="contributed">Ταξινόμηση μόνο βασικών χαρακτήρων</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Ταξινόμηση τόνων/χαρακτήρων διάκρισης/χαρακτήρων μεγάλου μεγέθους/χαρακτήρων Κάνα</type>
-			<type type="reformed" key="collation" draft="contributed">Ανασχηματισμένη σειρά ταξινόμησης</type>
+			<type type="primary" key="colStrength" draft="contributed">Ταξινόμηση μόνο
+				βασικών χαρακτήρων</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Ταξινόμηση
+				τόνων/χαρακτήρων διάκρισης/χαρακτήρων μεγάλου μεγέθους/χαρακτήρων
+				Κάνα</type>
+			<type type="reformed" key="collation" draft="contributed">Ανασχηματισμένη
+				σειρά ταξινόμησης</type>
 			<type type="roc" key="calendar">Ημερολόγιο της Δημοκρατίας της Κίνας</type>
 			<type type="roman" key="numbers">Λατινικοί αριθμοί</type>
 			<type type="romanlow" key="numbers">Πεζοί λατινικοί αριθμοί</type>
 			<type type="search" key="collation">Αναζήτηση γενικού τύπου</type>
-			<type type="searchjl" key="collation" draft="contributed">Αναζήτηση κατά αρχικό σύμφωνο Χανγκούλ</type>
+			<type type="searchjl" key="collation" draft="contributed">Αναζήτηση κατά
+				αρχικό σύμφωνο Χανγκούλ</type>
 			<type type="secondary" key="colStrength" draft="contributed">Ταξινόμηση τόνων</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Ταξινόμηση με αγνόηση συμβόλων</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Ταξινόμηση με
+				αγνόηση συμβόλων</type>
 			<type type="standard" key="collation">Τυπική σειρά ταξινόμησης</type>
 			<type type="stroke" key="collation">Σειρά ταξινόμησης κινήσεων</type>
 			<type type="taml" key="numbers">Ταμιλικά αριθμητικά</type>
 			<type type="tamldec" key="numbers">Ταμιλικά ψηφία</type>
 			<type type="telu" key="numbers">Τελουγκουϊκά ψηφία</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Ταξινόμηση τόνων/χαρακτήρων διάκρισης/χαρακτήρων μεγάλου μεγέθους</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Ταξινόμηση
+				τόνων/χαρακτήρων διάκρισης/χαρακτήρων μεγάλου μεγέθους</type>
 			<type type="thai" key="numbers">Ταϊλανδικά ψηφία</type>
 			<type type="tibt" key="numbers">Θιβετανικά ψηφία</type>
 			<type type="traditional" key="collation">Παραδοσιακή σειρά ταξινόμησης</type>
-			<type type="traditional" key="numbers" draft="contributed">Παραδοσιακά αριθμητικά</type>
-			<type type="unihan" key="collation" draft="contributed">Σειρά ταξινόμησης ριζικής αρίθμησης</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Ταξινόμηση κεφαλαίων χαρακτήρων πρώτα</type>
+			<type type="traditional" key="numbers" draft="contributed">Παραδοσιακά
+				αριθμητικά</type>
+			<type type="unihan" key="collation" draft="contributed">Σειρά ταξινόμησης
+				ριζικής αρίθμησης</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Ταξινόμηση κεφαλαίων
+				χαρακτήρων πρώτα</type>
 			<type type="vaii" key="numbers" draft="contributed">Ψηφία Βάι</type>
-			<type type="yes" key="colBackwards" draft="contributed">Αντίστροφη ταξινόμηση τόνων</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Ταξινόμηση χαρακτήρων διάκρισης</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Διαφορετική ταξινόμηση Κάνα</type>
-			<type type="yes" key="colNormalization" draft="contributed">Κανονικοποιημένη ταξινόμηση Unicode</type>
-			<type type="yes" key="colNumeric" draft="contributed">Αριθμητική ταξινόμηση ψηφίων</type>
+			<type type="yes" key="colBackwards" draft="contributed">Αντίστροφη ταξινόμηση
+				τόνων</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Ταξινόμηση χαρακτήρων
+				διάκρισης</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Διαφορετική
+				ταξινόμηση Κάνα</type>
+			<type type="yes" key="colNormalization" draft="contributed">Κανονικοποιημένη
+				ταξινόμηση Unicode</type>
+			<type type="yes" key="colNumeric" draft="contributed">Αριθμητική ταξινόμηση
+				ψηφίων</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">BGN</transformName>
@@ -1142,10 +1176,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[α ά β γ δ ε έ ζ η ή θ ι ί ϊ ΐ κ λ μ ν ξ ο ό π ρ σ ς τ υ ύ ϋ ΰ φ χ ψ ω ώ]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[ἀ ἄ ἂ ἆ ἁ ἅ ἃ ἇ ὰ ᾶ ἐ ἔ ἒ ἑ ἕ ἓ ὲ ἠ ἤ ἢ ἦ ἡ ἥ ἣ ἧ ὴ ῆ ἰ ἴ ἲ ἶ ἱ ἵ ἳ ἷ ὶ ῖ ῒ ῗ ὄ ὂ ὃ ὸ ὐ ὔ ὒ ὖ ὑ ὕ ὓ ὗ ὺ ῦ ῢ ῧ ὤ ὢ ὦ ὥ ὣ ὧ ὼ ῶ]</exemplarCharacters>
-		<exemplarCharacters type="index">[Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! . … &quot; ( ) \[ \] § @ * / \\ \&amp;]</exemplarCharacters>
+		<exemplarCharacters>[α ά β γ δ ε έ ζ η ή θ ι ί ϊ ΐ κ λ μ ν ξ ο ό π ρ σ
+			ς τ υ ύ ϋ ΰ φ χ ψ ω ώ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[ἀ ἄ ἂ ἆ ἁ ἅ ἃ ἇ ὰ ᾶ ἐ ἔ ἒ
+			ἑ ἕ ἓ ὲ ἠ ἤ ἢ ἦ ἡ ἥ ἣ ἧ ὴ ῆ ἰ ἴ ἲ ἶ ἱ ἵ ἳ ἷ ὶ ῖ ῒ ῗ ὄ ὂ ὃ ὸ ὐ ὔ ὒ ὖ ὑ
+			ὕ ὓ ὗ ὺ ῦ ῢ ῧ ὤ ὢ ὦ ὥ ὣ ὧ ὼ ῶ]</exemplarCharacters>
+		<exemplarCharacters type="index">[Α Β Γ Δ Ε Ζ Η Θ Ι Κ Λ Μ Ν
+			Ξ Ο Π Ρ Σ Τ Υ Φ Χ Ψ Ω]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! . …
+			&quot; ( ) \[ \] § @ * / \\ \&amp;]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1321,9 +1360,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">dd/MM/y - dd/MM/y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, dd/MM/y - E, dd/MM/y G</greatestDifference>
-							<greatestDifference id="M">E, dd/MM/y - E, dd/MM/y G</greatestDifference>
-							<greatestDifference id="y">E, dd/MM/y - E, dd/MM/y G</greatestDifference>
+							<greatestDifference id="d">E, dd/MM/y - E, dd/MM/y
+								G</greatestDifference>
+							<greatestDifference id="M">E, dd/MM/y - E, dd/MM/y
+								G</greatestDifference>
+							<greatestDifference id="y">E, dd/MM/y - E, dd/MM/y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">LLL-LLL y</greatestDifference>
@@ -1336,8 +1378,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, dd - E, dd MMM y G</greatestDifference>
-							<greatestDifference id="M">E, dd MMM - E, dd MMM y G</greatestDifference>
-							<greatestDifference id="y">E, dd MMM y - E, dd MMM y G</greatestDifference>
+							<greatestDifference id="M">E, dd MMM - E, dd MMM y
+								G</greatestDifference>
+							<greatestDifference id="y">E, dd MMM y - E, dd MMM
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">LLLL-LLLL y G</greatestDifference>
@@ -1768,7 +1812,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, dd MMM - E, dd MMM y</greatestDifference>
 							<greatestDifference id="M">E, dd MMM - E, dd MMM y</greatestDifference>
-							<greatestDifference id="y">E, dd MMM y - E, dd MMM y</greatestDifference>
+							<greatestDifference id="y">E, dd MMM y - E, dd MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">LLLL-LLLL y</greatestDifference>
@@ -1878,8 +1923,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">Σε {0} εβδομάδες</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">Πριν από {0} εβδομάδα</relativeTimePattern>
-					<relativeTimePattern count="other">Πριν από {0} εβδομάδες</relativeTimePattern>
+					<relativeTimePattern count="one">Πριν από {0}
+						εβδομάδα</relativeTimePattern>
+					<relativeTimePattern count="other">Πριν από {0}
+						εβδομάδες</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="day">
@@ -1969,8 +2016,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">Σε {0} δευτερόλεπτα</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">Πριν από {0} δευτερόλεπτο</relativeTimePattern>
-					<relativeTimePattern count="other">Πριν από {0} δευτερόλεπτα</relativeTimePattern>
+					<relativeTimePattern count="one">Πριν από {0}
+						δευτερόλεπτο</relativeTimePattern>
+					<relativeTimePattern count="other">Πριν από {0}
+						δευτερόλεπτα</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">
@@ -4358,8 +4407,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">μετατρέψιμα μάρκα Βοσνίας-Ερζεγοβίνης</displayName>
 			</currency>
 			<currency type="BAN">
-				<displayName count="one" draft="provisional">Νέο δινάριο Βοσνίας-Ερζεγοβίνης</displayName>
-				<displayName count="other" draft="provisional">Νέα δινάρια Βοσνίας-Ερζεγοβίνης</displayName>
+				<displayName count="one" draft="provisional">Νέο δινάριο
+					Βοσνίας-Ερζεγοβίνης</displayName>
+				<displayName count="other" draft="provisional">Νέα δινάρια
+					Βοσνίας-Ερζεγοβίνης</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Δολάριο Μπαρμπάντος</displayName>
@@ -4392,8 +4443,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">μεταλλικά λεβ Βουλγαρίας</displayName>
 			</currency>
 			<currency type="BGM">
-				<displayName count="one" draft="provisional">Σοσιαλιστικό λεβ Βουλγαρίας</displayName>
-				<displayName count="other" draft="provisional">Σοσιαλιστικά λεβ Βουλγαρίας</displayName>
+				<displayName count="one" draft="provisional">Σοσιαλιστικό λεβ
+					Βουλγαρίας</displayName>
+				<displayName count="other" draft="provisional">Σοσιαλιστικά λεβ
+					Βουλγαρίας</displayName>
 			</currency>
 			<currency type="BGN">
 				<displayName>Λεβ Βουλγαρίας</displayName>
@@ -4431,7 +4484,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BOL">
 				<displayName count="one" draft="provisional">Παλαιό βολιβιάνο Βολιβίας</displayName>
-				<displayName count="other" draft="provisional">Παλαιά βολιβιάνο Βολιβίας</displayName>
+				<displayName count="other" draft="provisional">Παλαιά βολιβιάνο
+					Βολιβίας</displayName>
 			</currency>
 			<currency type="BOP">
 				<displayName>Πέσο Βολιβίας</displayName>
@@ -4475,8 +4529,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">κρουζέιρο Βραζιλίας</displayName>
 			</currency>
 			<currency type="BRZ">
-				<displayName count="one" draft="provisional">Παλαιό κρουζέιρο Βραζιλίας</displayName>
-				<displayName count="other" draft="provisional">Παλαιά κρουζέιρο Βραζιλίας</displayName>
+				<displayName count="one" draft="provisional">Παλαιό κρουζέιρο
+					Βραζιλίας</displayName>
+				<displayName count="other" draft="provisional">Παλαιά κρουζέιρο
+					Βραζιλίας</displayName>
 			</currency>
 			<currency type="BSD">
 				<displayName>Δολάριο Μπαχάμες</displayName>
@@ -4555,8 +4611,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">πέσο Χιλής</displayName>
 			</currency>
 			<currency type="CNX">
-				<displayName count="one" draft="provisional">Δολάριο Λαϊκής Τράπεζας Κίνας</displayName>
-				<displayName count="other" draft="provisional">Δολάρια Λαϊκής Τράπεζας Κίνας</displayName>
+				<displayName count="one" draft="provisional">Δολάριο Λαϊκής Τράπεζας
+					Κίνας</displayName>
+				<displayName count="other" draft="provisional">Δολάρια Λαϊκής Τράπεζας
+					Κίνας</displayName>
 			</currency>
 			<currency type="CNY">
 				<displayName>Γουάν Κίνας</displayName>
@@ -4666,7 +4724,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ESB">
 				<displayName>πεσέτα Ισπανίας (μετατρέψιμος λογαριασμός)</displayName>
-				<displayName count="one">πεσέτα Ισπανίας (μετατρέψιμος λογαριασμός)</displayName>
+				<displayName count="one">πεσέτα Ισπανίας (μετατρέψιμος
+					λογαριασμός)</displayName>
 				<displayName count="other">πεσέτες Ισπανίας (μετατρέψιμες)</displayName>
 			</currency>
 			<currency type="ESP">
@@ -5616,8 +5675,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">μετατρέψιμο δηνάριο Γιουγκοσλαβίας</displayName>
 			</currency>
 			<currency type="YUR">
-				<displayName count="one" draft="provisional">Αναμορφωμένο δηνάριο Γιουγκοσλαβίας</displayName>
-				<displayName count="other" draft="provisional">Αναμορφωμένα δηνάρια Γιουγκοσλαβίας</displayName>
+				<displayName count="one" draft="provisional">Αναμορφωμένο δηνάριο
+					Γιουγκοσλαβίας</displayName>
+				<displayName count="other" draft="provisional">Αναμορφωμένα δηνάρια
+					Γιουγκοσλαβίας</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName>Ραντ Νότιας Αφρικής (οικονομικό)</displayName>
@@ -5661,7 +5722,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ZWR">
 				<displayName count="one" draft="provisional">Δολάριο Ζιμπάμπουε (2008)</displayName>
-				<displayName count="other" draft="provisional">Δολάρια Ζιμπάμπουε (2008)</displayName>
+				<displayName count="other" draft="provisional">Δολάρια Ζιμπάμπουε
+					(2008)</displayName>
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">

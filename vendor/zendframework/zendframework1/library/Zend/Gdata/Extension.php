@@ -22,6 +22,7 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_App_Extension
  */
 require_once 'Zend/Gdata/App/Extension.php';
@@ -29,11 +30,11 @@ require_once 'Zend/Gdata/App/Extension.php';
 /**
  * Represents a Gdata extension
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Gdata
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Extension extends Zend_Gdata_App_Extension
 {
@@ -43,16 +44,11 @@ class Zend_Gdata_Extension extends Zend_Gdata_App_Extension
     public function __construct()
     {
         /* NOTE: namespaces must be registered before calling parent */
-        $this->registerNamespace('gd',
-                'http://schemas.google.com/g/2005');
-        $this->registerNamespace('openSearch',
-                'http://a9.com/-/spec/opensearchrss/1.0/', 1, 0);
-        $this->registerNamespace('openSearch',
-                'http://a9.com/-/spec/opensearch/1.1/', 2, 0);
-        $this->registerNamespace('rss',
-                'http://blogs.law.harvard.edu/tech/rss');
-
+        $this->registerNamespace('gd', 'http://schemas.google.com/g/2005');
+        $this->registerNamespace('openSearch', 'http://a9.com/-/spec/opensearchrss/1.0/', 1, 0);
+        $this->registerNamespace('openSearch', 'http://a9.com/-/spec/opensearch/1.1/', 2, 0);
+        $this->registerNamespace('rss', 'http://blogs.law.harvard.edu/tech/rss');
+        
         parent::__construct();
     }
-
 }

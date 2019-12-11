@@ -21,22 +21,25 @@
  */
 
 /**
+ *
  * @see Zend_Service_DeveloperGarden_Request_RequestAbstract
  */
 require_once 'Zend/Service/DeveloperGarden/Request/RequestAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Service_DeveloperGarden_Request_ConferenceCall_GetConferenceListRequest
-    extends Zend_Service_DeveloperGarden_Request_RequestAbstract
+class Zend_Service_DeveloperGarden_Request_ConferenceCall_GetConferenceListRequest extends Zend_Service_DeveloperGarden_Request_RequestAbstract
 {
+
     /**
+     *
      * @var integer
      */
     public $what = null;
@@ -50,7 +53,7 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_GetConferenceListReque
         0 => 'all conferences',
         1 => 'just ad-hoc conferences',
         2 => 'just planned conferences',
-        3 => 'just failed conferences',
+        3 => 'just failed conferences'
     );
 
     /**
@@ -63,26 +66,25 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_GetConferenceListReque
     /**
      * constructor
      *
-     * @param integer $environment
-     * @param integer $what
-     * @param string $ownerId
+     * @param integer $environment            
+     * @param integer $what            
+     * @param string $ownerId            
      */
     public function __construct($environment, $what = 0, $ownerId = null)
     {
         parent::__construct($environment);
-        $this->setWhat($what)
-             ->setOwnerId($ownerId);
+        $this->setWhat($what)->setOwnerId($ownerId);
     }
 
     /**
      * sets $what
      *
-     * @param integer $what
+     * @param integer $what            
      * @return Zend_Service_DeveloperGarden_Request_ConferenceCall_GetConferenceListRequest
      */
     public function setWhat($what)
     {
-        if (!array_key_exists($what, $this->_whatValues)) {
+        if (! array_key_exists($what, $this->_whatValues)) {
             require_once 'Zend/Service/DeveloperGarden/Request/Exception.php';
             throw new Zend_Service_DeveloperGarden_Request_Exception('What value not allowed.');
         }
@@ -93,7 +95,7 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_GetConferenceListReque
     /**
      * sets $ownerId
      *
-     * @param int $ownerId
+     * @param int $ownerId            
      * @return Zend_Service_DeveloperGarden_Request_ConferenceCall_GetConferenceListRequest
      */
     public function setOwnerId($ownerId)

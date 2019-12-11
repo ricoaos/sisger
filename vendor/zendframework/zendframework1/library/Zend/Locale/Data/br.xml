@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="br"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="br" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -602,7 +601,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Gwadeloup</territory>
 			<territory type="GQ">Ginea ar Cʼheheder</territory>
 			<territory type="GR">Gres</territory>
-			<territory type="GS">Inizi Georgia ar Su hag Inizi Sandwich ar Su</territory>
+			<territory type="GS">Inizi Georgia ar Su hag Inizi Sandwich ar
+				Su</territory>
 			<territory type="GT">Guatemala</territory>
 			<territory type="GU">Guam</territory>
 			<territory type="GW">Ginea-Bissau</territory>
@@ -850,7 +850,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="ducet" key="collation">urzh rummañ Unicode dre ziouer</type>
 			<type type="ethi" key="numbers">niveroù etiopiat</type>
 			<type type="ethiopic" key="calendar">deiziadur etiopiat</type>
-			<type type="ethiopic-amete-alem" key="calendar">deiziadur etiopiat Amete Alem</type>
+			<type type="ethiopic-amete-alem" key="calendar">deiziadur etiopiat Amete
+				Alem</type>
 			<type type="fullwide" key="numbers">sifroù led plaen</type>
 			<type type="gb2312han" key="collation">urzh rummañ sinaek eeunaet - GB2312</type>
 			<type type="geor" key="numbers">niveroù jorjianek</type>
@@ -908,9 +909,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</measurementSystemNames>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a b {ch} {cʼh} d e ê f g h i j k l m n ñ o p r s t u ù v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ c ç é è ĕ ë ē í ì ĭ î ï ī ó ò ŏ ô ö ø ō œ q ú ŭ û ü ū ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters>[a b {ch} {cʼh} d e ê f g h i j k l m n ñ o p r s
+			t u ù v w x y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ c ç é è
+			ĕ ë ē í ì ĭ î ï ī ó ò ŏ ô ö ø ō œ q ú ŭ û ü ū ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P R S T U V W X Y Z]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart>«</quotationStart>

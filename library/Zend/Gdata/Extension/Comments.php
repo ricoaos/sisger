@@ -22,11 +22,13 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
 
 /**
+ *
  * @see Zend_Gdata_Extension_FeedLink
  */
 require_once 'Zend/Gdata/Extension/FeedLink.php';
@@ -34,17 +36,19 @@ require_once 'Zend/Gdata/Extension/FeedLink.php';
 /**
  * Represents the gd:comments element
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Gdata
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Extension_Comments extends Zend_Gdata_Extension
 {
 
     protected $_rootElement = 'comments';
+
     protected $_rel = null;
+
     protected $_feedLink = null;
 
     public function __construct($rel = null, $feedLink = null)
@@ -70,7 +74,7 @@ class Zend_Gdata_Extension_Comments extends Zend_Gdata_Extension
     {
         $absoluteNodeName = $child->namespaceURI . ':' . $child->localName;
         switch ($absoluteNodeName) {
-            case $this->lookupNamespace('gd') . ':' . 'feedLink';
+            case $this->lookupNamespace('gd') . ':' . 'feedLink':
                 $feedLink = new Zend_Gdata_Extension_FeedLink();
                 $feedLink->transferFromDOM($child);
                 $this->_feedLink = $feedLink;
@@ -84,11 +88,11 @@ class Zend_Gdata_Extension_Comments extends Zend_Gdata_Extension
     protected function takeAttributeFromDOM($attribute)
     {
         switch ($attribute->localName) {
-        case 'rel':
-            $this->_rel = $attribute->nodeValue;
-            break;
-        default:
-            parent::takeAttributeFromDOM($attribute);
+            case 'rel':
+                $this->_rel = $attribute->nodeValue;
+                break;
+            default:
+                parent::takeAttributeFromDOM($attribute);
         }
     }
 
@@ -113,5 +117,4 @@ class Zend_Gdata_Extension_Comments extends Zend_Gdata_Extension
         $this->_feedLink = $value;
         return $this;
     }
-
 }

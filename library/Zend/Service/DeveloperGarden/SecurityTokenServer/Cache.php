@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,15 +22,17 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_DeveloperGarden_SecurityTokenServer_Cache
 {
+
     /**
      * array with stored tokens
      *
@@ -55,31 +58,29 @@ class Zend_Service_DeveloperGarden_SecurityTokenServer_Cache
      */
     private static $_wsdlCache = null;
 
-// @codeCoverageIgnoreStart
+    // @codeCoverageIgnoreStart
     /**
      * Constructor overriding - make sure that a developer cannot instantiate
      */
     protected function __construct()
-    {
-    }
-// @codeCoverageIgnoreEnd
+    {}
 
+    // @codeCoverageIgnoreEnd
+    
     /**
      * returns stored token from cache or null
      *
-     * @param string $tokenId
+     * @param string $tokenId            
      * @throws Zend_Service_DeveloperGarden_Exception
      * @return Zend_Service_DeveloperGarden_Response_SecurityTokenServer_Interface|null
      */
     public static function getTokenFromCache($tokenId)
     {
-        if (!array_key_exists($tokenId, self::$_storedToken)) {
+        if (! array_key_exists($tokenId, self::$_storedToken)) {
             require_once 'Zend/Service/DeveloperGarden/Exception.php';
-            throw new Zend_Service_DeveloperGarden_Exception(
-                'tokenID ' . $tokenId . ' unknown.'
-            );
+            throw new Zend_Service_DeveloperGarden_Exception('tokenID ' . $tokenId . ' unknown.');
         }
-
+        
         if (self::hasCache() && self::$_storedToken[$tokenId] === null) {
             $cache = self::getCache();
             $token = $cache->load(md5($tokenId));
@@ -87,33 +88,30 @@ class Zend_Service_DeveloperGarden_SecurityTokenServer_Cache
                 self::$_storedToken[$tokenId] = $token;
             }
         }
-
+        
         return self::$_storedToken[$tokenId];
     }
 
     /**
      * set new value for the given tokenId
      *
-     * @param string $tokenId
+     * @param string $tokenId            
      * @throws Zend_Service_DeveloperGarden_Exception
-     * @param Zend_Service_DeveloperGarden_Response_SecurityTokenServer_Interface $tokenValue
+     * @param Zend_Service_DeveloperGarden_Response_SecurityTokenServer_Interface $tokenValue            
      * @return void
      */
-    public static function setTokenToCache($tokenId,
-        Zend_Service_DeveloperGarden_Response_SecurityTokenServer_Interface $tokenValue
-    ) {
-        if (!array_key_exists($tokenId, self::$_storedToken)) {
+    public static function setTokenToCache($tokenId, Zend_Service_DeveloperGarden_Response_SecurityTokenServer_Interface $tokenValue)
+    {
+        if (! array_key_exists($tokenId, self::$_storedToken)) {
             require_once 'Zend/Service/DeveloperGarden/Exception.php';
-            throw new Zend_Service_DeveloperGarden_Exception(
-                'tokenID ' . $tokenId . ' unknown.'
-            );
+            throw new Zend_Service_DeveloperGarden_Exception('tokenID ' . $tokenId . ' unknown.');
         }
-
+        
         if (self::hasCache()) {
             $cache = self::getCache();
             $cache->save($tokenValue, md5($tokenId));
         }
-
+        
         self::$_storedToken[$tokenId] = $tokenValue;
     }
 
@@ -143,7 +141,8 @@ class Zend_Service_DeveloperGarden_SecurityTokenServer_Cache
     /**
      * Set a cache for token
      *
-     * @param Zend_Cache_Core $cache A cache frontend
+     * @param Zend_Cache_Core $cache
+     *            A cache frontend
      */
     public static function setCache(Zend_Cache_Core $cache)
     {
@@ -197,7 +196,7 @@ class Zend_Service_DeveloperGarden_SecurityTokenServer_Cache
     /**
      * Set a cache for wsdl file
      *
-     * @param integer $cache
+     * @param integer $cache            
      * @return void
      */
     public static function setWsdlCache($cache = null)

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9876 $"/>
-		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $"/>
-		<language type="gl"/>
+		<version number="$Revision: 9876 $" />
+		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $" />
+		<language type="gl" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -560,7 +559,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="colAlternate">Ignorar clasificación de símbolos</key>
 			<key type="colBackwards">Clasificación de acentos invertida</key>
 			<key type="colCaseFirst">Orde de maiúsculas/minúsculas</key>
-			<key type="colCaseLevel">Clasificación que distingue entre maiúsculas e minúsculas</key>
+			<key type="colCaseLevel">Clasificación que distingue entre maiúsculas e
+				minúsculas</key>
 			<key type="colHiraganaQuaternary">Clasificación Kana</key>
 			<key type="collation">Orde de clasificación</key>
 			<key type="colNormalization">Clasificación normalizada</key>
@@ -579,20 +579,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armn" key="numbers">Números armenios</type>
 			<type type="armnlow" key="numbers">Números armenios en minúscula</type>
 			<type type="beng" key="numbers">Díxitos bengalís</type>
-			<type type="big5han" key="collation">Orde de clasificación chinesa tradicional - Big5</type>
+			<type type="big5han" key="collation">Orde de clasificación chinesa
+				tradicional - Big5</type>
 			<type type="buddhist" key="calendar">Calendario budista</type>
 			<type type="chinese" key="calendar">Calendario chinés</type>
 			<type type="coptic" key="calendar">Calendario cóptico</type>
 			<type type="dangi" key="calendar">Calendario dangi</type>
 			<type type="deva" key="numbers">Díxitos devanagari</type>
 			<type type="dictionary" key="collation">Criterio de ordenación do dicionario</type>
-			<type type="ducet" key="collation">Criterio de ordenación Unicode predeterminado</type>
+			<type type="ducet" key="collation">Criterio de ordenación Unicode
+				predeterminado</type>
 			<type type="ethi" key="numbers">Números etíopes</type>
 			<type type="ethiopic" key="calendar">Calendario etíope</type>
-			<type type="ethiopic-amete-alem" key="calendar">Calendario Amete Alem etíope</type>
+			<type type="ethiopic-amete-alem" key="calendar">Calendario Amete Alem
+				etíope</type>
 			<type type="finance" key="numbers">Números financeiros</type>
 			<type type="fullwide" key="numbers">Díxitos de ancho completo</type>
-			<type type="gb2312han" key="collation">orde de clasifcación chinesa simplificada - GB2312</type>
+			<type type="gb2312han" key="collation">orde de clasifcación chinesa
+				simplificada - GB2312</type>
 			<type type="geor" key="numbers">Números xeorxianos</type>
 			<type type="gregorian" key="calendar">Calendario gregoriano</type>
 			<type type="grek" key="numbers">Números gregos</type>
@@ -601,16 +605,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers">Díxitos do gurmukhi</type>
 			<type type="hanidec" key="numbers">Números decimais chineses</type>
 			<type type="hans" key="numbers">Números chineses simplificados</type>
-			<type type="hansfin" key="numbers">Números financeiros chineses simplificados</type>
+			<type type="hansfin" key="numbers">Números financeiros chineses
+				simplificados</type>
 			<type type="hant" key="numbers">Números do chinés tradicional</type>
-			<type type="hantfin" key="numbers">Números financeiros do chinés tradicional</type>
+			<type type="hantfin" key="numbers">Números financeiros do chinés
+				tradicional</type>
 			<type type="hebr" key="numbers">Números hebreos</type>
 			<type type="hebrew" key="calendar">Calendario hebreo</type>
 			<type type="identical" key="colStrength">Clasificar todo</type>
 			<type type="indian" key="calendar">Calendario nacional indio</type>
 			<type type="islamic" key="calendar">Calendario islámico</type>
-			<type type="islamic-civil" key="calendar">Calendario islámico (civil, tabular)</type>
-			<type type="islamic-rgsa" key="calendar">Calendario islámico (Arabia Saudita,</type>
+			<type type="islamic-civil" key="calendar">Calendario islámico (civil,
+				tabular)</type>
+			<type type="islamic-rgsa" key="calendar">Calendario islámico (Arabia
+				Saudita,</type>
 			<type type="japanese" key="calendar">Calendario xaponés</type>
 			<type type="jpan" key="numbers">Números xaponeses</type>
 			<type type="jpanfin" key="numbers">Números financeiros xaponeses</type>
@@ -624,33 +632,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="mymr" key="numbers">Díxitos birmanos</type>
 			<type type="native" key="numbers">Díxitos orixinais</type>
 			<type type="no" key="colBackwards">Clasificar acentos con normalidade</type>
-			<type type="no" key="colCaseFirst">Clasificar orde de maiúsculas e minúsculas normal</type>
-			<type type="no" key="colCaseLevel">Clasificar sen distinguir entre maiúsculas e minúsculas</type>
+			<type type="no" key="colCaseFirst">Clasificar orde de maiúsculas e minúsculas
+				normal</type>
+			<type type="no" key="colCaseLevel">Clasificar sen distinguir entre maiúsculas e
+				minúsculas</type>
 			<type type="no" key="colHiraganaQuaternary">Clasificar Kana por separado</type>
 			<type type="no" key="colNormalization">Clasificar sen normalización</type>
 			<type type="no" key="colNumeric">Clasificar díxitos individualmente</type>
 			<type type="non-ignorable" key="colAlternate">Clasificar símbolos</type>
 			<type type="orya" key="numbers">Díxitos oriya</type>
 			<type type="persian" key="calendar">Calendario persa</type>
-			<type type="phonebook" key="collation">orde de clasificación da guía telefónica</type>
+			<type type="phonebook" key="collation">orde de clasificación da guía
+				telefónica</type>
 			<type type="phonetic" key="collation">Orde de clasificación fonética</type>
 			<type type="pinyin" key="collation">Orde de clasificación pinyin</type>
 			<type type="primary" key="colStrength">Clasificar só letras de base</type>
-			<type type="quaternary" key="colStrength">Clasificar acentos/maiúsculas e minúsculas/ancho/kana</type>
+			<type type="quaternary" key="colStrength">Clasificar acentos/maiúsculas e
+				minúsculas/ancho/kana</type>
 			<type type="reformed" key="collation">Criterio de ordenación reformado</type>
 			<type type="roc" key="calendar">Calendario Minguo</type>
 			<type type="roman" key="numbers">Números romanos</type>
 			<type type="romanlow" key="numbers">Números romanos en minúsculas</type>
 			<type type="search" key="collation">Busca de uso xeral</type>
-			<type type="searchjl" key="collation">Clasificar por consonante inicial hangul</type>
+			<type type="searchjl" key="collation">Clasificar por consonante inicial
+				hangul</type>
 			<type type="secondary" key="colStrength">Clasificar acentos</type>
 			<type type="shifted" key="colAlternate">Clasificar ignorando símbolos</type>
 			<type type="standard" key="collation">Criterio de ordenación estándar</type>
-			<type type="stroke" key="collation">Orde de clasificación polo número de trazos</type>
+			<type type="stroke" key="collation">Orde de clasificación polo número de
+				trazos</type>
 			<type type="taml" key="numbers">Números támil</type>
 			<type type="tamldec" key="numbers">Díxitos do támil</type>
 			<type type="telu" key="numbers">Díxitos do telugú</type>
-			<type type="tertiary" key="colStrength">Clasificar acentos/maiúsculas e minúsculas/ancho</type>
+			<type type="tertiary" key="colStrength">Clasificar acentos/maiúsculas e
+				minúsculas/ancho</type>
 			<type type="thai" key="numbers">Díxitos tailandeses</type>
 			<type type="tibt" key="numbers">Díxitos tibetanos</type>
 			<type type="traditional" key="collation">Orde de clasificación tradicional</type>
@@ -659,7 +674,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="upper" key="colCaseFirst">Clasificar primeiro as maiúsculas</type>
 			<type type="vaii" key="numbers">Díxitos Vai</type>
 			<type type="yes" key="colBackwards">Clasificar acentos invertidos</type>
-			<type type="yes" key="colCaseLevel">Clasificar distinguindo entre maiúsculas e minúsculas</type>
+			<type type="yes" key="colCaseLevel">Clasificar distinguindo entre maiúsculas e
+				minúsculas</type>
 			<type type="yes" key="colHiraganaQuaternary">Clasificar Kana de modo diferente</type>
 			<type type="yes" key="colNormalization">Clasificar Unicode normalizado</type>
 			<type type="yes" key="colNumeric">Clasificar díxitos numericamente</type>
@@ -688,10 +704,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a á b c d e é f g h i í j k l m n ñ o ó p q r s t u ú ü v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary" draft="contributed">[ª à â ä ã ç è ê ë ì î ï º ò ô ö õ ù û]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N Ñ O P Q R S T U V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters>[a á b c d e é f g h i í j k l m n ñ o ó p q r s t
+			u ú ü v w x y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary" draft="contributed">[ª à â ä
+			ã ç è ê ë ì î ï º ò ô ö õ ù û]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N Ñ O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -881,7 +901,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM – E, d MMM, y</greatestDifference>
 							<greatestDifference id="M">E, d MMM – E, d MMM, y</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y – E, d MMM, y</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y – E, d MMM,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -1324,7 +1345,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM – E, d MMM, y</greatestDifference>
 							<greatestDifference id="M">E, d MMM – E, d MMM, y</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y – E, d MMM, y</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y – E, d MMM,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -2981,8 +3003,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BEC">
 				<displayName draft="contributed">Franco belga (convertible)</displayName>
-				<displayName count="one" draft="contributed">franco belga (convertible)</displayName>
-				<displayName count="other" draft="contributed">francos belgas (convertibles)</displayName>
+				<displayName count="one" draft="contributed">franco belga
+					(convertible)</displayName>
+				<displayName count="other" draft="contributed">francos belgas
+					(convertibles)</displayName>
 			</currency>
 			<currency type="BEF">
 				<displayName draft="contributed">Franco belga</displayName>
@@ -2992,7 +3016,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BEL">
 				<displayName draft="contributed">Franco belga (financeiro)</displayName>
 				<displayName count="one" draft="contributed">franco belga (financeiro)</displayName>
-				<displayName count="other" draft="contributed">francos belgas (financeiros)</displayName>
+				<displayName count="other" draft="contributed">francos belgas
+					(financeiros)</displayName>
 			</currency>
 			<currency type="BGN">
 				<displayName>Lev búlgaro</displayName>
@@ -3025,7 +3050,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BRB">
 				<displayName draft="contributed">Cruzeiro novo brasileiro (1967–1986)</displayName>
 				<displayName count="one" draft="contributed">cruzeiro novo brasileiro</displayName>
-				<displayName count="other" draft="contributed">cruzeiros novos brasileiros</displayName>
+				<displayName count="other" draft="contributed">cruzeiros novos
+					brasileiros</displayName>
 			</currency>
 			<currency type="BRC">
 				<displayName draft="contributed">Cruzado brasileiro</displayName>
@@ -3035,7 +3061,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BRE">
 				<displayName draft="contributed">Cruzeiro brasileiro (1990–1993)</displayName>
 				<displayName count="one" draft="contributed">cruzeiro brasileiro (BRE)</displayName>
-				<displayName count="other" draft="contributed">cruzeiros brasileiros (BRE)</displayName>
+				<displayName count="other" draft="contributed">cruzeiros brasileiros
+					(BRE)</displayName>
 			</currency>
 			<currency type="BRL">
 				<displayName>Real brasileiro</displayName>
@@ -3045,7 +3072,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BRN">
 				<displayName draft="contributed">Cruzado novo brasileiro</displayName>
 				<displayName count="one" draft="contributed">cruzado novo brasileiro</displayName>
-				<displayName count="other" draft="contributed">cruzados novos brasileiros</displayName>
+				<displayName count="other" draft="contributed">cruzados novos
+					brasileiros</displayName>
 			</currency>
 			<currency type="BRR">
 				<displayName draft="contributed">Cruzeiro brasileiro</displayName>
@@ -3083,8 +3111,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="CLF">
 				<displayName draft="contributed">Unidades de fomento chilenas</displayName>
-				<displayName count="one" draft="contributed">unidade de fomento chilena</displayName>
-				<displayName count="other" draft="contributed">unidades de fomento chilenas</displayName>
+				<displayName count="one" draft="contributed">unidade de fomento
+					chilena</displayName>
+				<displayName count="other" draft="contributed">unidades de fomento
+					chilenas</displayName>
 			</currency>
 			<currency type="CLP">
 				<displayName draft="contributed">Peso chileno</displayName>
@@ -3148,7 +3178,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other" draft="contributed">sucres ecuatorianos</displayName>
 			</currency>
 			<currency type="ECV">
-				<displayName draft="contributed">Unidade de valor constante ecuatoriana</displayName>
+				<displayName draft="contributed">Unidade de valor constante
+					ecuatoriana</displayName>
 			</currency>
 			<currency type="EGP">
 				<displayName>Libra exipcia</displayName>
@@ -3616,8 +3647,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="VEB">
 				<displayName draft="contributed">Bolívar venezolano (1871–2008)</displayName>
-				<displayName count="one" draft="contributed">bolívar venezolano (1871–2008)</displayName>
-				<displayName count="other" draft="contributed">bolívares venezolanos (1871–2008)</displayName>
+				<displayName count="one" draft="contributed">bolívar venezolano
+					(1871–2008)</displayName>
+				<displayName count="other" draft="contributed">bolívares venezolanos
+					(1871–2008)</displayName>
 			</currency>
 			<currency type="VEF">
 				<displayName draft="contributed">Bolívar venezolano</displayName>
@@ -3659,8 +3692,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XXX">
 				<displayName>Unidade monetaria descoñecida ou non válida</displayName>
-				<displayName count="one">unidade monetaria descoñecida ou non válida</displayName>
-				<displayName count="other">unidades monetarias descoñecidas ou non válidas</displayName>
+				<displayName count="one">unidade monetaria descoñecida ou non
+					válida</displayName>
+				<displayName count="other">unidades monetarias descoñecidas ou
+					non válidas</displayName>
 			</currency>
 			<currency type="YER">
 				<displayName>Rial iemení</displayName>

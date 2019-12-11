@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9624 $"/>
-		<generation date="$Date: 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014) $"/>
-		<language type="es"/>
-		<territory type="419"/>
+		<version number="$Revision: 9624 $" />
+		<generation date="$Date: 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014) $" />
+		<language type="es" />
+		<territory type="419" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -25,31 +24,44 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</keys>
 		<types>
 			<type type="arab" key="numbers" draft="contributed">Dígitos arábigo-índicos</type>
-			<type type="arabext" key="numbers" draft="contributed">Dígitos árabe-hindú extendidos</type>
+			<type type="arabext" key="numbers" draft="contributed">Dígitos árabe-hindú
+				extendidos</type>
 			<type type="armn" key="numbers" draft="contributed">Números armenios</type>
-			<type type="armnlow" key="numbers" draft="contributed">Números armenios en minúscula</type>
+			<type type="armnlow" key="numbers" draft="contributed">Números armenios en
+				minúscula</type>
 			<type type="beng" key="numbers" draft="contributed">Dígitos en bengalí</type>
 			<type type="coptic" key="calendar" draft="contributed">Calendario cóptico</type>
 			<type type="deva" key="numbers" draft="contributed">Dígitos en devanagari</type>
-			<type type="dictionary" key="collation" draft="contributed">Orden de clasificación del diccionario</type>
-			<type type="ducet" key="collation" draft="contributed">Orden de clasificación de Unicode predeterminado</type>
+			<type type="dictionary" key="collation" draft="contributed">Orden de
+				clasificación del diccionario</type>
+			<type type="ducet" key="collation" draft="contributed">Orden de clasificación
+				de Unicode predeterminado</type>
 			<type type="ethi" key="numbers" draft="contributed">Números etíopes</type>
 			<type type="ethiopic" key="calendar" draft="contributed">Calendario etíope</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Calendario etíope Amete Alem</type>
-			<type type="fullwide" key="numbers" draft="contributed">Dígitos en formato completo</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Calendario
+				etíope Amete Alem</type>
+			<type type="fullwide" key="numbers" draft="contributed">Dígitos en formato
+				completo</type>
 			<type type="geor" key="numbers" draft="contributed">Números georgianos</type>
 			<type type="grek" key="numbers" draft="contributed">Números griegos</type>
-			<type type="greklow" key="numbers" draft="contributed">Números griegos en minúscula</type>
+			<type type="greklow" key="numbers" draft="contributed">Números griegos en
+				minúscula</type>
 			<type type="gujr" key="numbers" draft="contributed">Dígitos en guyaratí</type>
 			<type type="guru" key="numbers" draft="contributed">Dígitos en gurumuji</type>
-			<type type="hanidec" key="numbers" draft="contributed">Numerales decimales chinos</type>
-			<type type="hans" key="numbers" draft="contributed">Números simplificados chinos</type>
-			<type type="hansfin" key="numbers" draft="contributed">Números financieros simplificados chinos</type>
-			<type type="hant" key="numbers" draft="contributed">Números chinos tradicionales</type>
-			<type type="hantfin" key="numbers" draft="contributed">Números financieros chinos tradicionales</type>
+			<type type="hanidec" key="numbers" draft="contributed">Numerales decimales
+				chinos</type>
+			<type type="hans" key="numbers" draft="contributed">Números simplificados
+				chinos</type>
+			<type type="hansfin" key="numbers" draft="contributed">Números financieros
+				simplificados chinos</type>
+			<type type="hant" key="numbers" draft="contributed">Números chinos
+				tradicionales</type>
+			<type type="hantfin" key="numbers" draft="contributed">Números financieros
+				chinos tradicionales</type>
 			<type type="hebr" key="numbers" draft="contributed">Números hebreos</type>
 			<type type="jpan" key="numbers" draft="contributed">Números en japonés</type>
-			<type type="jpanfin" key="numbers" draft="contributed">Números financieros japoneses</type>
+			<type type="jpanfin" key="numbers" draft="contributed">Números financieros
+				japoneses</type>
 			<type type="khmr" key="numbers" draft="contributed">Dígitos en jemer</type>
 			<type type="knda" key="numbers" draft="contributed">Dígitos en canarés</type>
 			<type type="laoo" key="numbers" draft="contributed">Dígitos de Lao</type>
@@ -59,21 +71,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="mymr" key="numbers" draft="contributed">Dígitos en birmano</type>
 			<type type="orya" key="numbers" draft="contributed">Dígitos en oriya</type>
 			<type type="persian" key="calendar" draft="contributed">Calendario persa</type>
-			<type type="reformed" key="collation" draft="contributed">Orden de clasificación reformado</type>
+			<type type="reformed" key="collation" draft="contributed">Orden de
+				clasificación reformado</type>
 			<type type="roman" key="numbers" draft="contributed">Números romanos</type>
-			<type type="romanlow" key="numbers" draft="contributed">Números romanos en minúscula</type>
+			<type type="romanlow" key="numbers" draft="contributed">Números romanos en
+				minúscula</type>
 			<type type="search" key="collation" draft="contributed">Búsqueda generalizada</type>
 			<type type="taml" key="numbers" draft="contributed">Números en Tamil</type>
 			<type type="telu" key="numbers" draft="contributed">Dígitos en telugu</type>
 			<type type="thai" key="numbers" draft="contributed">Dígitos en tailandés</type>
 			<type type="tibt" key="numbers" draft="contributed">Dígitos tibetanos</type>
-			<type type="unihan" key="collation" draft="contributed">Orden de clasificación de trazos radicales</type>
+			<type type="unihan" key="collation" draft="contributed">Orden de clasificación
+				de trazos radicales</type>
 		</types>
 		<transformNames>
 			<transformName type="Numeric" draft="contributed">Numéricas</transformName>
 		</transformNames>
 		<measurementSystemNames>
-			<measurementSystemName type="UK" draft="contributed">Reino Unido</measurementSystemName>
+			<measurementSystemName type="UK" draft="contributed">Reino
+				Unido</measurementSystemName>
 		</measurementSystemNames>
 	</localeDisplayNames>
 	<dates>

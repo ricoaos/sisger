@@ -19,21 +19,22 @@
  * @version    $Id$
  */
 
-
 /**
+ *
  * @see Zend_Acl_Resource_Interface
  */
 require_once 'Zend/Acl/Resource/Interface.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Acl
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Acl
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Acl_Resource implements Zend_Acl_Resource_Interface
 {
+
     /**
      * Unique id of Resource
      *
@@ -44,7 +45,7 @@ class Zend_Acl_Resource implements Zend_Acl_Resource_Interface
     /**
      * Sets the Resource identifier
      *
-     * @param  string $resourceId
+     * @param string $resourceId            
      */
     public function __construct($resourceId)
     {

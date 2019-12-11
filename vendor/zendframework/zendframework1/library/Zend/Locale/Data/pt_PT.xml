@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="pt"/>
-		<territory type="PT"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="pt" />
+		<territory type="PT" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -540,7 +539,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MG">Madagáscar</territory>
 			<territory type="MH">Ilhas Marshall</territory>
 			<territory type="MK">Macedónia</territory>
-			<territory type="MK" alt="variant">Antiga República Jugoslava da Macedónia</territory>
+			<territory type="MK" alt="variant">Antiga República Jugoslava da
+				Macedónia</territory>
 			<territory type="ML">Mali</territory>
 			<territory type="MM">Mianmar (Birmânia)</territory>
 			<territory type="MN">Mongólia</territory>
@@ -663,11 +663,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="1959ACAD" draft="provisional">Académica</variant>
 			<variant type="AREVELA" draft="contributed">arménio oriental</variant>
 			<variant type="AREVMDA" draft="contributed">arménio ocidental</variant>
-			<variant type="BAKU1926" draft="provisional">Alfabeto latino turco unificado</variant>
+			<variant type="BAKU1926" draft="provisional">Alfabeto latino turco
+				unificado</variant>
 			<variant type="BISKE" draft="contributed">dialecto san giorgio/bila</variant>
 			<variant type="BOONT" draft="contributed">buntlingue</variant>
-			<variant type="FONIPA" draft="provisional">Fonética do Alfabeto Fonético Internacional</variant>
-			<variant type="FONUPA" draft="provisional">Fonética do Alfabeto Fonético Urálico</variant>
+			<variant type="FONIPA" draft="provisional">Fonética do Alfabeto Fonético
+				Internacional</variant>
+			<variant type="FONUPA" draft="provisional">Fonética do Alfabeto Fonético
+				Urálico</variant>
 			<variant type="KKCOR" draft="provisional">Ortografia Comum</variant>
 			<variant type="LIPAW" draft="contributed">dialecto lipovaz de Resian</variant>
 			<variant type="MONOTON" draft="contributed">monotónico</variant>
@@ -693,8 +696,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="calendar">Calendário</key>
 			<key type="colAlternate" draft="contributed">Ignorar Ordenação de Símbolos</key>
 			<key type="colBackwards" draft="contributed">Ordenação de Acentos Invertida</key>
-			<key type="colCaseFirst" draft="contributed">Disposição de Maiúsculas/Minúsculas</key>
-			<key type="colCaseLevel" draft="contributed">Ordenação Sensível a Maiúsculas e Minúsculas</key>
+			<key type="colCaseFirst" draft="contributed">Disposição de
+				Maiúsculas/Minúsculas</key>
+			<key type="colCaseLevel" draft="contributed">Ordenação Sensível a Maiúsculas e
+				Minúsculas</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Ordenação Kana</key>
 			<key type="collation">Ordenação</key>
 			<key type="colNormalization" draft="contributed">Ordenação Normalizada</key>
@@ -716,11 +721,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="chinese" key="calendar">Calendário Chinês</type>
 			<type type="coptic" key="calendar" draft="contributed">Calendário Copta</type>
 			<type type="deva" key="numbers">Algarismos Devanágaris</type>
-			<type type="dictionary" key="collation" draft="contributed">Ordenação do Dicionário</type>
+			<type type="dictionary" key="collation" draft="contributed">Ordenação do
+				Dicionário</type>
 			<type type="ducet" key="collation">Ordenação Unicode Predefinida</type>
 			<type type="ethi" key="numbers">Numeração Etíope</type>
 			<type type="ethiopic" key="calendar" draft="contributed">Calendário Etíope</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Calendário Etíope Amete Alem</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Calendário
+				Etíope Amete Alem</type>
 			<type type="finance" key="numbers" draft="contributed">Algarismos Financeiros</type>
 			<type type="fullwide" key="numbers">Algarismos de Largura Completa</type>
 			<type type="geor" key="numbers">Numeração Georgiana</type>
@@ -731,66 +738,91 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers">Algarismos Gurmukhi</type>
 			<type type="hanidec" key="numbers">Numeração Decimal Chinesa</type>
 			<type type="hans" key="numbers">Numeração Chinês Simplificado</type>
-			<type type="hansfin" key="numbers">Numeração Financeira Chinês Simplificado</type>
+			<type type="hansfin" key="numbers">Numeração Financeira Chinês
+				Simplificado</type>
 			<type type="hant" key="numbers">Numeração Chinês Tradicional</type>
 			<type type="hantfin" key="numbers">Numeração Financeira Chinês Tradicional</type>
 			<type type="hebr" key="numbers">Numeração Hebraica</type>
 			<type type="identical" key="colStrength" draft="contributed">Ordenar Tudo</type>
-			<type type="islamic-civil" key="calendar" draft="contributed">Calendário Islâmico/Civil</type>
+			<type type="islamic-civil" key="calendar" draft="contributed">Calendário
+				Islâmico/Civil</type>
 			<type type="jpan" key="numbers">Numeração Japonesa</type>
 			<type type="jpanfin" key="numbers">Numeração Financeira Japonesa</type>
 			<type type="khmr" key="numbers">Algarismos Khmer</type>
 			<type type="knda" key="numbers">Algarismos de Canarim</type>
 			<type type="laoo" key="numbers">Algarismos de Laos</type>
 			<type type="latn" key="numbers">Algarismos Ocidentais</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Ordenar Minúsculas Primeiro</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Ordenar Minúsculas
+				Primeiro</type>
 			<type type="mlym" key="numbers">Algarismos Malaiala</type>
 			<type type="mong" key="numbers" draft="contributed">Algarismos Mongóis</type>
 			<type type="mymr" key="numbers">Algarismos de Mianmar</type>
 			<type type="native" key="numbers" draft="contributed">Dígitos Nativos</type>
-			<type type="no" key="colBackwards" draft="contributed">Ordenar Acentos Normalmente</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Ordenar Disposição de Tipo de Letra Normal</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Ordenar Insensível a Maiúsculas/Minúsculas</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Ordenar Kana Separadamente</type>
-			<type type="no" key="colNormalization" draft="contributed">Ordenar Sem Normalização</type>
-			<type type="no" key="colNumeric" draft="contributed">Ordenar Dígitos Individualmente</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Ordenar Símbolos</type>
+			<type type="no" key="colBackwards" draft="contributed">Ordenar Acentos
+				Normalmente</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Ordenar Disposição de
+				Tipo de Letra Normal</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Ordenar Insensível a
+				Maiúsculas/Minúsculas</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Ordenar Kana
+				Separadamente</type>
+			<type type="no" key="colNormalization" draft="contributed">Ordenar Sem
+				Normalização</type>
+			<type type="no" key="colNumeric" draft="contributed">Ordenar Dígitos
+				Individualmente</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Ordenar
+				Símbolos</type>
 			<type type="orya" key="numbers">Algarismos Oriá</type>
 			<type type="persian" key="calendar" draft="contributed">Calendário Persa</type>
 			<type type="phonebook" key="collation">Ordem da Lista Telefónica</type>
-			<type type="phonetic" key="collation" draft="contributed">Sequência de Ordenação Fonética</type>
-			<type type="pinyin" key="collation" draft="contributed">Ordem do Chinês Simplificado Pinyin</type>
-			<type type="primary" key="colStrength" draft="contributed">Ordenar Apenas Letras Básicas</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Ordenar Acentos/Tipo de Letra/Largura/Kana</type>
+			<type type="phonetic" key="collation" draft="contributed">Sequência de
+				Ordenação Fonética</type>
+			<type type="pinyin" key="collation" draft="contributed">Ordem do Chinês
+				Simplificado Pinyin</type>
+			<type type="primary" key="colStrength" draft="contributed">Ordenar Apenas
+				Letras Básicas</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Ordenar
+				Acentos/Tipo de Letra/Largura/Kana</type>
 			<type type="reformed" key="collation" draft="contributed">Reforma da Ordenação</type>
 			<type type="roman" key="numbers">Numeração Romana</type>
 			<type type="romanlow" key="numbers">Numeração Romana Minúscula</type>
 			<type type="search" key="collation">Pesquisa de uso geral</type>
-			<type type="searchjl" key="collation" draft="contributed">Pesquisar Por Consoante Inicial Hangul</type>
+			<type type="searchjl" key="collation" draft="contributed">Pesquisar Por
+				Consoante Inicial Hangul</type>
 			<type type="secondary" key="colStrength" draft="contributed">Ordenar Acentos</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Ordenar Símbolos Ignorados</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Ordenar Símbolos
+				Ignorados</type>
 			<type type="standard" key="collation">Ordenação Predefinida</type>
 			<type type="stroke" key="collation">Ordem por traços</type>
 			<type type="taml" key="numbers">Numeração Tâmil</type>
 			<type type="tamldec" key="numbers">Algarismos Tâmil</type>
 			<type type="telu" key="numbers">Algarismos de Telugu</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Ordenar Acentos/Tipo de Letra/Largura</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Ordenar
+				Acentos/Tipo de Letra/Largura</type>
 			<type type="thai" key="numbers">Algarismos Tailandeses</type>
 			<type type="tibt" key="numbers">Algarismos Tibetanos</type>
 			<type type="traditional" key="collation" draft="contributed">Ordem tradicional</type>
-			<type type="traditional" key="numbers" draft="contributed">Algarismos Tradicionais</type>
+			<type type="traditional" key="numbers" draft="contributed">Algarismos
+				Tradicionais</type>
 			<type type="unihan" key="collation">Ordem por radical e traços</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Ordenar Maiúsculas Primeiro</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Ordenar Maiúsculas
+				Primeiro</type>
 			<type type="vaii" key="numbers" draft="contributed">Dígitos Vai</type>
-			<type type="yes" key="colBackwards" draft="contributed">Ordenar Acentos Inversamente</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Ordenar Sensível a Maiúsculas/Minúsculas</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Ordenar Kana Diferentemente</type>
-			<type type="yes" key="colNormalization" draft="contributed">Ordenar Unicode Normalizado</type>
-			<type type="yes" key="colNumeric" draft="contributed">Ordenar Dígitos Numericamente</type>
+			<type type="yes" key="colBackwards" draft="contributed">Ordenar Acentos
+				Inversamente</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Ordenar Sensível a
+				Maiúsculas/Minúsculas</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Ordenar Kana
+				Diferentemente</type>
+			<type type="yes" key="colNormalization" draft="contributed">Ordenar Unicode
+				Normalizado</type>
+			<type type="yes" key="colNumeric" draft="contributed">Ordenar Dígitos
+				Numericamente</type>
 		</types>
 		<transformNames>
 			<transformName type="x-Accents" draft="contributed">Acentos</transformName>
-			<transformName type="x-Fullwidth" draft="contributed">Largura Completa</transformName>
+			<transformName type="x-Fullwidth" draft="contributed">Largura
+				Completa</transformName>
 			<transformName type="x-Halfwidth" draft="contributed">Meia Largura</transformName>
 		</transformNames>
 		<measurementSystemNames>
@@ -805,7 +837,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' &quot; “ ” « » ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			&quot; “ ” « » ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1050,8 +1083,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M">d 'de' MMM - d 'de' MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d">E, d 'de' MMM - E, d 'de' MMM</greatestDifference>
-							<greatestDifference id="M">E, d 'de' MMM - E, d 'de' MMM</greatestDifference>
+							<greatestDifference id="d">E, d 'de' MMM - E, d
+								'de' MMM</greatestDifference>
+							<greatestDifference id="M">E, d 'de' MMM - E, d
+								'de' MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y-y G</greatestDifference>
@@ -1066,27 +1101,37 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">dd/MM/y - dd/MM/y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, dd/MM/y - E, dd/MM/y G</greatestDifference>
-							<greatestDifference id="M">E, dd/MM/y - E, dd/MM/y G</greatestDifference>
-							<greatestDifference id="y">E, dd/MM/y - E, dd/MM/y G</greatestDifference>
+							<greatestDifference id="d">E, dd/MM/y - E, dd/MM/y
+								G</greatestDifference>
+							<greatestDifference id="M">E, dd/MM/y - E, dd/MM/y
+								G</greatestDifference>
+							<greatestDifference id="y">E, dd/MM/y - E, dd/MM/y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM-MMM 'de' y G</greatestDifference>
-							<greatestDifference id="y">MMM 'de' y - MMM 'de' y G</greatestDifference>
+							<greatestDifference id="y">MMM 'de' y - MMM 'de' y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">d-d 'de' MMM 'de' y</greatestDifference>
-							<greatestDifference id="M">d 'de' MMM - d 'de' MMM 'de' y G</greatestDifference>
-							<greatestDifference id="y">d 'de' MMM 'de' y - d 'de' MMM 'de' y G</greatestDifference>
+							<greatestDifference id="M">d 'de' MMM - d 'de' MMM
+								'de' y G</greatestDifference>
+							<greatestDifference id="y">d 'de' MMM 'de' y - d
+								'de' MMM 'de' y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, d 'de' MMM - E, d 'de' MMM 'de' y G</greatestDifference>
-							<greatestDifference id="M">E, d 'de' MMM - E, d 'de' MMM 'de' y G</greatestDifference>
-							<greatestDifference id="y">E, d 'de' MMM 'de' y - E, d 'de' MMM 'de' y G</greatestDifference>
+							<greatestDifference id="d">E, d 'de' MMM - E, d
+								'de' MMM 'de' y G</greatestDifference>
+							<greatestDifference id="M">E, d 'de' MMM - E, d
+								'de' MMM 'de' y G</greatestDifference>
+							<greatestDifference id="y">E, d 'de' MMM 'de' y -
+								E, d 'de' MMM 'de' y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM - MMMM 'de' y G</greatestDifference>
-							<greatestDifference id="y">MMMM 'de' y - MMMM 'de' y G</greatestDifference>
+							<greatestDifference id="y">MMMM 'de' y - MMMM 'de'
+								y G</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -1504,8 +1549,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M">d 'de' MMM - d 'de' MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d">E, d 'de' MMM - E, d 'de' MMM</greatestDifference>
-							<greatestDifference id="M">E, d 'de' MMM - E, d 'de' MMM</greatestDifference>
+							<greatestDifference id="d">E, d 'de' MMM - E, d
+								'de' MMM</greatestDifference>
+							<greatestDifference id="M">E, d 'de' MMM - E, d
+								'de' MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y-y</greatestDifference>
@@ -1530,17 +1577,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">d-d 'de' MMM 'de' y</greatestDifference>
-							<greatestDifference id="M">d 'de' MMM - d 'de' MMM 'de' y</greatestDifference>
-							<greatestDifference id="y">d 'de' MMM 'de' y - d 'de' MMM 'de' y</greatestDifference>
+							<greatestDifference id="M">d 'de' MMM - d 'de' MMM
+								'de' y</greatestDifference>
+							<greatestDifference id="y">d 'de' MMM 'de' y - d
+								'de' MMM 'de' y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, d 'de' MMM - E, d 'de' MMM 'de' y</greatestDifference>
-							<greatestDifference id="M">E, d 'de' MMM - E, d 'de' MMM 'de' y</greatestDifference>
-							<greatestDifference id="y">E, d 'de' MMM 'de' y - E, d 'de' MMM 'de' y</greatestDifference>
+							<greatestDifference id="d">E, d 'de' MMM - E, d
+								'de' MMM 'de' y</greatestDifference>
+							<greatestDifference id="M">E, d 'de' MMM - E, d
+								'de' MMM 'de' y</greatestDifference>
+							<greatestDifference id="y">E, d 'de' MMM 'de' y -
+								E, d 'de' MMM 'de' y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM - MMMM 'de' y</greatestDifference>
-							<greatestDifference id="y">MMMM 'de' y - MMMM 'de' y</greatestDifference>
+							<greatestDifference id="y">MMMM 'de' y - MMMM 'de'
+								y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -1621,7 +1674,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="1">próxima semana</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">Dentro de {0} semana</relativeTimePattern>
-					<relativeTimePattern count="other">Dentro de {0} semanas</relativeTimePattern>
+					<relativeTimePattern count="other">Dentro de {0}
+						semanas</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">Há {0} semana</relativeTimePattern>
@@ -1700,7 +1754,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Minuto</displayName>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">Dentro de {0} minuto</relativeTimePattern>
-					<relativeTimePattern count="other">Dentro de {0} minutos</relativeTimePattern>
+					<relativeTimePattern count="other">Dentro de {0}
+						minutos</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">Há {0} minuto</relativeTimePattern>
@@ -1710,8 +1765,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="second">
 				<displayName>Segundo</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">Dentro de {0} segundo</relativeTimePattern>
-					<relativeTimePattern count="other">Dentro de {0} segundos</relativeTimePattern>
+					<relativeTimePattern count="one">Dentro de {0}
+						segundo</relativeTimePattern>
+					<relativeTimePattern count="other">Dentro de {0}
+						segundos</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">Há {0} segundo</relativeTimePattern>
@@ -4110,7 +4167,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BAM">
 				<displayName>Marco bósnio-herzegóvino conversível</displayName>
 				<displayName count="one">Marco bósnio-herzegóvino conversível</displayName>
-				<displayName count="other">Marcos bósnio-herzegóvinos conversíveis</displayName>
+				<displayName count="other">Marcos bósnio-herzegóvinos
+					conversíveis</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Dólar barbadense</displayName>
@@ -4870,7 +4928,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XDR">
 				<displayName count="one" draft="provisional">direito especial de saque</displayName>
-				<displayName count="other" draft="provisional">direitos especiais de saque</displayName>
+				<displayName count="other" draft="provisional">direitos especiais de
+					saque</displayName>
 			</currency>
 			<currency type="XEU">
 				<displayName draft="unconfirmed">Unidade da Moeda Europeia</displayName>
@@ -5541,13 +5600,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</messages>
 	</posix>
 </ldml>
-<!-- Comments without bases
-per cldrbug 2835, added from gregorian and adjusted for G	 - was on: //ldml/dates/calendars/calendar[@type="roc"]/dateTimeFormats/availableFormats/dateFormatItem[@id="yQ"]
-per
-cldrbug 2835, added from gregorian and adjusted for G	 - was on: //ldml/dates/calendars/calendar[@type="japanese"]/dateTimeFormats/availableFormats/dateFormatItem[@id="yQ"]
-per
-cldrbug 2835, added from gregorian and adjusted for G	 - was on: //ldml/dates/calendars/calendar[@type="buddhist"]/dateTimeFormats/availableFormats/dateFormatItem[@id="yQ"]
-per
-cldrbug 2835, added from gregorian and adjusted for G	 - was on: //ldml/dates/calendars/calendar[@type="islamic"]/dateTimeFormats/availableFormats/dateFormatItem[@id="yQ"]
--->
+<!-- Comments without bases per cldrbug 2835, added from gregorian and adjusted 
+	for G - was on: //ldml/dates/calendars/calendar[@type="roc"]/dateTimeFormats/availableFormats/dateFormatItem[@id="yQ"] 
+	per cldrbug 2835, added from gregorian and adjusted for G - was on: //ldml/dates/calendars/calendar[@type="japanese"]/dateTimeFormats/availableFormats/dateFormatItem[@id="yQ"] 
+	per cldrbug 2835, added from gregorian and adjusted for G - was on: //ldml/dates/calendars/calendar[@type="buddhist"]/dateTimeFormats/availableFormats/dateFormatItem[@id="yQ"] 
+	per cldrbug 2835, added from gregorian and adjusted for G - was on: //ldml/dates/calendars/calendar[@type="islamic"]/dateTimeFormats/availableFormats/dateFormatItem[@id="yQ"] -->
 

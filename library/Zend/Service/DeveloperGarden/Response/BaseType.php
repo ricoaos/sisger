@@ -21,21 +21,23 @@
  */
 
 /**
+ *
  * @see Zend_Service_DeveloperGarden_Response_ResponseAbstract
  */
 require_once 'Zend/Service/DeveloperGarden/Response/ResponseAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Service_DeveloperGarden_Response_BaseType
-    extends Zend_Service_DeveloperGarden_Response_ResponseAbstract
+class Zend_Service_DeveloperGarden_Response_BaseType extends Zend_Service_DeveloperGarden_Response_ResponseAbstract
 {
+
     /**
      * the status code
      *
@@ -59,12 +61,9 @@ class Zend_Service_DeveloperGarden_Response_BaseType
     public function parse()
     {
         if ($this->hasError()) {
-            throw new Zend_Service_DeveloperGarden_Response_Exception(
-                $this->getStatusMessage(),
-                $this->getStatusCode()
-            );
+            throw new Zend_Service_DeveloperGarden_Response_Exception($this->getStatusMessage(), $this->getStatusCode());
         }
-
+        
         return $this;
     }
 
@@ -95,8 +94,7 @@ class Zend_Service_DeveloperGarden_Response_BaseType
      */
     public function isValid()
     {
-        return ($this->statusCode === null
-             || $this->statusCode == '0000');
+        return ($this->statusCode === null || $this->statusCode == '0000');
     }
 
     /**
@@ -106,8 +104,7 @@ class Zend_Service_DeveloperGarden_Response_BaseType
      */
     public function hasError()
     {
-        return ($this->statusCode !== null
-             && $this->statusCode != '0000');
+        return ($this->statusCode !== null && $this->statusCode != '0000');
     }
 
     /**

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -19,24 +20,31 @@
  * @version    $Id$
  */
 
-
 /**
  * PDF file element implementation
  *
- * @package    Zend_Pdf
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @package Zend_Pdf
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Pdf_Element
 {
-    const TYPE_BOOL        = 1;
-    const TYPE_NUMERIC     = 2;
-    const TYPE_STRING      = 3;
-    const TYPE_NAME        = 4;
-    const TYPE_ARRAY       = 5;
-    const TYPE_DICTIONARY  = 6;
-    const TYPE_STREAM      = 7;
-    const TYPE_NULL        = 11;
+
+    const TYPE_BOOL = 1;
+
+    const TYPE_NUMERIC = 2;
+
+    const TYPE_STRING = 3;
+
+    const TYPE_NAME = 4;
+
+    const TYPE_ARRAY = 5;
+
+    const TYPE_DICTIONARY = 6;
+
+    const TYPE_STREAM = 7;
+
+    const TYPE_NULL = 11;
 
     /**
      * Reference to the top level indirect object, which contains this element.
@@ -59,24 +67,29 @@ abstract class Zend_Pdf_Element
      *
      * $factory parameter defines operation context.
      *
-     * @param Zend_Pdf_Factory $factory
+     * @param Zend_Pdf_Factory $factory            
      * @return string
      */
     abstract public function toString($factory = null);
 
-    const CLONE_MODE_SKIP_PAGES    = 1; // Do not follow pages during deep copy process
-    const CLONE_MODE_FORCE_CLONING = 2; // Force top level object cloning even it's already processed
-
+    const CLONE_MODE_SKIP_PAGES = 1;
+ // Do not follow pages during deep copy process
+    const CLONE_MODE_FORCE_CLONING = 2;
+ // Force top level object cloning even it's already processed
+    
     /**
      * Detach PDF object from the factory (if applicable), clone it and attach to new factory.
      *
      * @todo It's nevessry to check if SplObjectStorage class works faster
-     * (Needs PHP 5.3.x to attach object _with_ additional data to storage)
-     *
-     * @param Zend_Pdf_ElementFactory $factory  The factory to attach
-     * @param array &$processed List of already processed indirect objects, used to avoid objects duplication
-     * @param integer $mode  Cloning mode (defines filter for objects cloning)
-     * @returns Zend_Pdf_Element
+     *       (Needs PHP 5.3.x to attach object _with_ additional data to storage)
+     *      
+     * @param Zend_Pdf_ElementFactory $factory
+     *            The factory to attach
+     * @param
+     *            array &$processed List of already processed indirect objects, used to avoid objects duplication
+     * @param integer $mode
+     *            Cloning mode (defines filter for objects cloning)
+     *            @returns Zend_Pdf_Element
      */
     public function makeClone(Zend_Pdf_ElementFactory $factory, array &$processed, $mode)
     {
@@ -86,13 +99,12 @@ abstract class Zend_Pdf_Element
     /**
      * Set top level parent indirect object.
      *
-     * @param Zend_Pdf_Element_Object $parent
+     * @param Zend_Pdf_Element_Object $parent            
      */
     public function setParentObject(Zend_Pdf_Element_Object $parent)
     {
         $this->_parentObject = $parent;
     }
-
 
     /**
      * Get top level parent indirect object.
@@ -103,7 +115,6 @@ abstract class Zend_Pdf_Element
     {
         return $this->_parentObject;
     }
-
 
     /**
      * Mark object as modified, to include it into new PDF file segment.
@@ -139,7 +150,7 @@ abstract class Zend_Pdf_Element
     /**
      * Convert PHP value into PDF element.
      *
-     * @param mixed $input
+     * @param mixed $input            
      * @return Zend_Pdf_Element
      */
     public static function phpToPdf($input)
@@ -153,14 +164,14 @@ abstract class Zend_Pdf_Element
         } else if (is_array($input)) {
             $pdfElementsArray = array();
             $isDictionary = false;
-
+            
             foreach ($input as $key => $value) {
                 if (is_string($key)) {
                     $isDictionary = true;
                 }
                 $pdfElementsArray[$key] = Zend_Pdf_Element::phpToPdf($value);
             }
-
+            
             if ($isDictionary) {
                 require_once 'Zend/Pdf/Element/Dictionary.php';
                 return new Zend_Pdf_Element_Dictionary($pdfElementsArray);
@@ -170,7 +181,7 @@ abstract class Zend_Pdf_Element
             }
         } else {
             require_once 'Zend/Pdf/Element/String.php';
-            return new Zend_Pdf_Element_String((string)$input);
+            return new Zend_Pdf_Element_String((string) $input);
         }
     }
 }

@@ -21,11 +21,13 @@
  */
 
 /**
+ *
  * @see Zend_Db_Adapter_Abstract
  */
 require_once "Zend/Db/Adapter/Abstract.php";
 
 /**
+ *
  * @see PHPUnit_Extensions_Database_DB_IMetaData
  */
 require_once "PHPUnit/Extensions/Database/DB/IMetaData.php";
@@ -33,15 +35,16 @@ require_once "PHPUnit/Extensions/Database/DB/IMetaData.php";
 /**
  * Generic Metadata accessor for the Zend_Db adapters
  *
- * @uses       PHPUnit_Extensions_Database_DB_IMetaData
- * @category   Zend
- * @package    Zend_Test
+ * @uses PHPUnit_Extensions_Database_DB_IMetaData
+ * @category Zend
+ * @package Zend_Test
  * @subpackage PHPUnit
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Test_PHPUnit_Db_Metadata_Generic implements PHPUnit_Extensions_Database_DB_IMetaData
 {
+
     /**
      * Zend_Db Connection
      *
@@ -67,13 +70,13 @@ class Zend_Test_PHPUnit_Db_Metadata_Generic implements PHPUnit_Extensions_Databa
      * Creates a new database meta data object using the given pdo connection
      * and schema name.
      *
-     * @param PDO $pdo
-     * @param string $schema
+     * @param PDO $pdo            
+     * @param string $schema            
      */
     public final function __construct(Zend_Db_Adapter_Abstract $db, $schema)
     {
         $this->_connection = $db;
-        $this->_schema     = $schema;
+        $this->_schema = $schema;
     }
 
     /**
@@ -89,12 +92,12 @@ class Zend_Test_PHPUnit_Db_Metadata_Generic implements PHPUnit_Extensions_Databa
     /**
      * Get Table information
      *
-     * @param  string $tableName
+     * @param string $tableName            
      * @return array
      */
     protected function getTableDescription($tableName)
     {
-        if(!isset($this->_tableMetadata[$tableName])) {
+        if (! isset($this->_tableMetadata[$tableName])) {
             $this->_tableMetadata[$tableName] = $this->_connection->describeTable($tableName);
         }
         return $this->_tableMetadata[$tableName];
@@ -104,7 +107,7 @@ class Zend_Test_PHPUnit_Db_Metadata_Generic implements PHPUnit_Extensions_Databa
      * Returns an array containing the names of all the columns in the
      * $tableName table,
      *
-     * @param string $tableName
+     * @param string $tableName            
      * @return array
      */
     public function getTableColumns($tableName)
@@ -118,16 +121,16 @@ class Zend_Test_PHPUnit_Db_Metadata_Generic implements PHPUnit_Extensions_Databa
      * Returns an array containing the names of all the primary key columns in
      * the $tableName table.
      *
-     * @param string $tableName
+     * @param string $tableName            
      * @return array
      */
     public function getTablePrimaryKeys($tableName)
     {
         $tableMeta = $this->getTableDescription($tableName);
-
+        
         $primaryColumnNames = array();
-        foreach($tableMeta AS $column) {
-            if($column['PRIMARY'] == true) {
+        foreach ($tableMeta as $column) {
+            if ($column['PRIMARY'] == true) {
                 $primaryColumnNames[] = $column['COLUMN_NAME'];
             }
         }
@@ -145,9 +148,10 @@ class Zend_Test_PHPUnit_Db_Metadata_Generic implements PHPUnit_Extensions_Databa
     }
 
     /**
-     * Returns a quoted schema object. (table name, column name, etc)
+     * Returns a quoted schema object.
+     * (table name, column name, etc)
      *
-     * @param string $object
+     * @param string $object            
      * @return string
      */
     public function quoteSchemaObject($object)

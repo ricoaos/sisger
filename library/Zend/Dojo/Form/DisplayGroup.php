@@ -19,27 +19,30 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_Form_DisplayGroup */
+/**
+ * Zend_Form_DisplayGroup
+ */
 require_once 'Zend/Form/DisplayGroup.php';
 
 /**
  * Dijit-enabled DisplayGroup
  *
- * @uses       Zend_Form_DisplayGroup
- * @package    Zend_Dojo
+ * @uses Zend_Form_DisplayGroup
+ * @package Zend_Dojo
  * @subpackage Form
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: DisplayGroup.php 23775 2011-03-01 17:25:24Z ralph $
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id: DisplayGroup.php 23775 2011-03-01 17:25:24Z ralph $
  */
 class Zend_Dojo_Form_DisplayGroup extends Zend_Form_DisplayGroup
 {
+
     /**
      * Constructor
      *
-     * @param  string $name
-     * @param  Zend_Loader_PluginLoader $loader
-     * @param  array|Zend_Config|null $options
+     * @param string $name            
+     * @param Zend_Loader_PluginLoader $loader            
+     * @param array|Zend_Config|null $options            
      * @return void
      */
     public function __construct($name, Zend_Loader_PluginLoader $loader, $options = null)
@@ -53,7 +56,7 @@ class Zend_Dojo_Form_DisplayGroup extends Zend_Form_DisplayGroup
      *
      * Ensures that the view object has the dojo view helper path set.
      *
-     * @param  Zend_View_Interface $view
+     * @param Zend_View_Interface $view            
      * @return Zend_Dojo_Form_Element_Dijit
      */
     public function setView(Zend_View_Interface $view = null)

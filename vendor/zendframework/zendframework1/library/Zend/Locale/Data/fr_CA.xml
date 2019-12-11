@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9280 $"/>
-		<generation date="$Date: 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013) $"/>
-		<language type="fr"/>
-		<territory type="CA"/>
+		<version number="$Revision: 9280 $" />
+		<generation date="$Date: 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013) $" />
+		<language type="fr" />
+		<territory type="CA" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -32,7 +31,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hans" draft="contributed">idéogrammes han simplifiés</script>
 			<script type="Hans" alt="stand-alone" draft="contributed">chinois simplifié</script>
 			<script type="Hant" draft="contributed">idéogrammes han traditionnels</script>
-			<script type="Hant" alt="stand-alone" draft="contributed">chinois traditionnel</script>
+			<script type="Hant" alt="stand-alone" draft="contributed">chinois
+				traditionnel</script>
 			<script type="Mlym" draft="contributed">malayâlam</script>
 			<script type="Orya" draft="contributed">oriyâ</script>
 			<script type="Sinh" draft="contributed">cingalais</script>
@@ -44,8 +44,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BY" draft="contributed">Bélarus</territory>
 			<territory type="FM" draft="contributed">Micronésie</territory>
 			<territory type="GB" alt="short" draft="contributed">GB</territory>
-			<territory type="GS" draft="contributed">Géorgie du Sud et les îles Sandwich du Sud</territory>
-			<territory type="IO" draft="contributed">Territoire britannique de l'océan Indien</territory>
+			<territory type="GS" draft="contributed">Géorgie du Sud et les îles
+				Sandwich du Sud</territory>
+			<territory type="IO" draft="contributed">Territoire britannique de
+				l'océan Indien</territory>
 			<territory type="MF" draft="contributed">Saint-Martin</territory>
 			<territory type="PS" draft="contributed">Territoire palestinien</territory>
 			<territory type="RE" draft="contributed">Réunion</territory>
@@ -60,33 +62,47 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</keys>
 		<types>
 			<type type="arab" key="numbers" draft="contributed">Chiffres indo-arabes</type>
-			<type type="arabext" key="numbers" draft="contributed">Chiffres indo-arabes étendus</type>
+			<type type="arabext" key="numbers" draft="contributed">Chiffres indo-arabes
+				étendus</type>
 			<type type="armn" key="numbers" draft="contributed">Chiffres arméniens</type>
-			<type type="armnlow" key="numbers" draft="contributed">Chiffres minuscules arméniens</type>
+			<type type="armnlow" key="numbers" draft="contributed">Chiffres minuscules
+				arméniens</type>
 			<type type="beng" key="numbers" draft="contributed">Chiffres bengali</type>
 			<type type="deva" key="numbers" draft="contributed">Chiffres devanagari</type>
-			<type type="dictionary" key="collation" draft="contributed">Ordre de tri du dictionnaire</type>
-			<type type="ducet" key="collation" draft="contributed">Ordre de tri Unicode par défaut</type>
+			<type type="dictionary" key="collation" draft="contributed">Ordre de tri du
+				dictionnaire</type>
+			<type type="ducet" key="collation" draft="contributed">Ordre de tri Unicode
+				par défaut</type>
 			<type type="ethi" key="numbers" draft="contributed">Chiffre éthiopiens</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Calendrier éthiopien de l'An de grâce</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Calendrier
+				éthiopien de l'An de grâce</type>
 			<type type="fullwide" key="numbers" draft="contributed">Chiffre pleine largeur</type>
 			<type type="geor" key="numbers" draft="contributed">Chiffres géorgiens</type>
 			<type type="gregorian" key="calendar" draft="contributed">Calendrier grégorien</type>
 			<type type="grek" key="numbers" draft="contributed">Chiffres grecs</type>
-			<type type="greklow" key="numbers" draft="contributed">Chiffres minuscules grecs</type>
+			<type type="greklow" key="numbers" draft="contributed">Chiffres minuscules
+				grecs</type>
 			<type type="gujr" key="numbers" draft="contributed">Chiffres gujarati</type>
 			<type type="guru" key="numbers" draft="contributed">Chiffres gurmukhī</type>
-			<type type="hanidec" key="numbers" draft="contributed">Chiffres numériques chinois</type>
-			<type type="hans" key="numbers" draft="contributed">Chiffres chinois simplifiés</type>
-			<type type="hansfin" key="numbers" draft="contributed">Chiffres monétaires chinois simplifiés</type>
-			<type type="hant" key="numbers" draft="contributed">Chiffres chinois traditionnels</type>
-			<type type="hantfin" key="numbers" draft="contributed">Chiffres financiers en chinois traditionnel</type>
+			<type type="hanidec" key="numbers" draft="contributed">Chiffres numériques
+				chinois</type>
+			<type type="hans" key="numbers" draft="contributed">Chiffres chinois
+				simplifiés</type>
+			<type type="hansfin" key="numbers" draft="contributed">Chiffres monétaires
+				chinois simplifiés</type>
+			<type type="hant" key="numbers" draft="contributed">Chiffres chinois
+				traditionnels</type>
+			<type type="hantfin" key="numbers" draft="contributed">Chiffres financiers en
+				chinois traditionnel</type>
 			<type type="hebr" key="numbers" draft="contributed">Chiffre hébreux</type>
 			<type type="islamic" key="calendar" draft="contributed">Calendrier musulman</type>
-			<type type="islamic-civil" key="calendar" draft="contributed">Calendrier civil musulman</type>
-			<type type="islamic-tbla" key="calendar" draft="contributed">calendrier religieux musulman</type>
+			<type type="islamic-civil" key="calendar" draft="contributed">Calendrier civil
+				musulman</type>
+			<type type="islamic-tbla" key="calendar" draft="contributed">calendrier
+				religieux musulman</type>
 			<type type="jpan" key="numbers" draft="contributed">Chiffres japonais</type>
-			<type type="jpanfin" key="numbers" draft="contributed">Chiffres monétaires japonais</type>
+			<type type="jpanfin" key="numbers" draft="contributed">Chiffres monétaires
+				japonais</type>
 			<type type="khmr" key="numbers" draft="contributed">Chiffres khmer</type>
 			<type type="knda" key="numbers" draft="contributed">Chiffres canara</type>
 			<type type="laoo" key="numbers" draft="contributed">Chiffres laotiens</type>
@@ -98,13 +114,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="persian" key="calendar" draft="contributed">Calendrier perse</type>
 			<type type="reformed" key="collation" draft="contributed">Ordre de tri réformé</type>
 			<type type="roman" key="numbers" draft="contributed">Chiffres romains</type>
-			<type type="romanlow" key="numbers" draft="contributed">Chiffres minuscules romains</type>
+			<type type="romanlow" key="numbers" draft="contributed">Chiffres minuscules
+				romains</type>
 			<type type="search" key="collation" draft="contributed">Recherche générale</type>
 			<type type="taml" key="numbers" draft="contributed">Chiffres tamoul</type>
 			<type type="telu" key="numbers" draft="contributed">Chiffres telugu</type>
 			<type type="thai" key="numbers" draft="contributed">Chiffres thaïlandais</type>
 			<type type="tibt" key="numbers" draft="contributed">Chiffres tibétains</type>
-			<type type="unihan" key="collation" draft="contributed">Ordre de tri radical et trait</type>
+			<type type="unihan" key="collation" draft="contributed">Ordre de tri radical
+				et trait</type>
 		</types>
 		<transformNames>
 			<transformName type="Numeric" draft="contributed">Chiffres</transformName>
@@ -199,21 +217,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">G y-MM-dd – y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">'du' E y-MM-dd 'au' E y-MM-dd G</greatestDifference>
-							<greatestDifference id="M">'du' E y-MM-dd 'au' E y-MM-dd G</greatestDifference>
-							<greatestDifference id="y">'du' E y-MM-dd 'au' E y-MM-dd G</greatestDifference>
+							<greatestDifference id="d">'du' E y-MM-dd 'au' E
+								y-MM-dd G</greatestDifference>
+							<greatestDifference id="M">'du' E y-MM-dd 'au' E
+								y-MM-dd G</greatestDifference>
+							<greatestDifference id="y">'du' E y-MM-dd 'au' E
+								y-MM-dd G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="y">'de' MMM y 'à' MMM y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="M">'du' d MMM 'au' d MMM y G</greatestDifference>
-							<greatestDifference id="y">'du' d MMM y 'au' d MMM y G</greatestDifference>
+							<greatestDifference id="M">'du' d MMM 'au' d MMM y
+								G</greatestDifference>
+							<greatestDifference id="y">'du' d MMM y 'au' d MMM
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">'du' E d 'au' E d MMM y G</greatestDifference>
-							<greatestDifference id="M">'du' E d MMM 'au' E d MMM y G</greatestDifference>
-							<greatestDifference id="y">'du' E d MMM y 'au' E d MMM y G</greatestDifference>
+							<greatestDifference id="d">'du' E d 'au' E d MMM y
+								G</greatestDifference>
+							<greatestDifference id="M">'du' E d MMM 'au' E d
+								MMM y G</greatestDifference>
+							<greatestDifference id="y">'du' E d MMM y 'au' E d
+								MMM y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM – MMMM y G</greatestDifference>
@@ -312,21 +338,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">y-MM-dd – y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">'du' E y-MM-dd 'au' E y-MM-dd</greatestDifference>
-							<greatestDifference id="M">'du' E y-MM-dd 'au' E y-MM-dd</greatestDifference>
-							<greatestDifference id="y">'du' E y-MM-dd 'au' E y-MM-dd</greatestDifference>
+							<greatestDifference id="d">'du' E y-MM-dd 'au' E
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="M">'du' E y-MM-dd 'au' E
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="y">'du' E y-MM-dd 'au' E
+								y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="y">'de' MMM y 'à' MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="M">'du' d MMM 'au' d MMM y</greatestDifference>
-							<greatestDifference id="y">'du' d MMM y 'au' d MMM y</greatestDifference>
+							<greatestDifference id="y">'du' d MMM y 'au' d MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">'du' E d 'au' E d MMM y</greatestDifference>
-							<greatestDifference id="M">'du' E d MMM 'au' E d MMM y</greatestDifference>
-							<greatestDifference id="y">'du' E d MMM y 'au' E d MMM y</greatestDifference>
+							<greatestDifference id="M">'du' E d MMM 'au' E d
+								MMM y</greatestDifference>
+							<greatestDifference id="y">'du' E d MMM y 'au' E d
+								MMM y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>

@@ -20,55 +20,80 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_Registry */
+/**
+ * Zend_Registry
+ */
 require_once 'Zend/Registry.php';
 
-/** Zend_View_Helper_Abstract.php */
+/**
+ * Zend_View_Helper_Abstract.php
+ */
 require_once 'Zend/View/Helper/Abstract.php';
 
 /**
  * Helper for setting and retrieving the doctype
  *
- * @package    Zend_View
+ * @package Zend_View
  * @subpackage Helper
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_View_Helper_Doctype extends Zend_View_Helper_Abstract
 {
-    /**#@+
-     * DocType constants
-     */
-    const XHTML11             = 'XHTML11';
-    const XHTML1_STRICT       = 'XHTML1_STRICT';
-    const XHTML1_TRANSITIONAL = 'XHTML1_TRANSITIONAL';
-    const XHTML1_FRAMESET     = 'XHTML1_FRAMESET';
-    const XHTML1_RDFA         = 'XHTML1_RDFA';
-    const XHTML1_RDFA11       = 'XHTML1_RDFA11';
-    const XHTML_BASIC1        = 'XHTML_BASIC1';
-    const XHTML5              = 'XHTML5';
-    const HTML4_STRICT        = 'HTML4_STRICT';
-    const HTML4_LOOSE         = 'HTML4_LOOSE';
-    const HTML4_FRAMESET      = 'HTML4_FRAMESET';
-    const HTML5               = 'HTML5';
-    const CUSTOM_XHTML        = 'CUSTOM_XHTML';
-    const CUSTOM              = 'CUSTOM';
-    /**#@-*/
 
     /**
+     * #@+
+     * DocType constants
+     */
+    const XHTML11 = 'XHTML11';
+
+    const XHTML1_STRICT = 'XHTML1_STRICT';
+
+    const XHTML1_TRANSITIONAL = 'XHTML1_TRANSITIONAL';
+
+    const XHTML1_FRAMESET = 'XHTML1_FRAMESET';
+
+    const XHTML1_RDFA = 'XHTML1_RDFA';
+
+    const XHTML1_RDFA11 = 'XHTML1_RDFA11';
+
+    const XHTML_BASIC1 = 'XHTML_BASIC1';
+
+    const XHTML5 = 'XHTML5';
+
+    const HTML4_STRICT = 'HTML4_STRICT';
+
+    const HTML4_LOOSE = 'HTML4_LOOSE';
+
+    const HTML4_FRAMESET = 'HTML4_FRAMESET';
+
+    const HTML5 = 'HTML5';
+
+    const CUSTOM_XHTML = 'CUSTOM_XHTML';
+
+    const CUSTOM = 'CUSTOM';
+
+    /**
+     * #@-
+     */
+    
+    /**
      * Default DocType
+     * 
      * @var string
      */
     protected $_defaultDoctype = self::HTML4_LOOSE;
 
     /**
      * Registry containing current doctype and mappings
+     * 
      * @var ArrayObject
      */
     protected $_registry;
 
     /**
      * Registry key in which helper is stored
+     * 
      * @var string
      */
     protected $_regKey = 'Zend_View_Helper_Doctype';
@@ -82,21 +107,21 @@ class Zend_View_Helper_Doctype extends Zend_View_Helper_Abstract
      */
     public function __construct()
     {
-        if (!Zend_Registry::isRegistered($this->_regKey)) {
+        if (! Zend_Registry::isRegistered($this->_regKey)) {
             $this->_registry = new ArrayObject(array(
                 'doctypes' => array(
-                    self::XHTML11             => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">',
-                    self::XHTML1_STRICT       => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">',
+                    self::XHTML11 => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">',
+                    self::XHTML1_STRICT => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">',
                     self::XHTML1_TRANSITIONAL => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">',
-                    self::XHTML1_FRAMESET     => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">',
-                    self::XHTML1_RDFA         => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">',
-                    self::XHTML1_RDFA11       => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">',
-                    self::XHTML_BASIC1        => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">',
-                    self::XHTML5              => '<!DOCTYPE html>',
-                    self::HTML4_STRICT        => '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">',
-                    self::HTML4_LOOSE         => '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">',
-                    self::HTML4_FRAMESET      => '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">',
-                    self::HTML5               => '<!DOCTYPE html>',
+                    self::XHTML1_FRAMESET => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">',
+                    self::XHTML1_RDFA => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">',
+                    self::XHTML1_RDFA11 => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.1//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-2.dtd">',
+                    self::XHTML_BASIC1 => '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.0//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic10.dtd">',
+                    self::XHTML5 => '<!DOCTYPE html>',
+                    self::HTML4_STRICT => '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">',
+                    self::HTML4_LOOSE => '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">',
+                    self::HTML4_FRAMESET => '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">',
+                    self::HTML5 => '<!DOCTYPE html>'
                 )
             ));
             Zend_Registry::set($this->_regKey, $this->_registry);
@@ -109,7 +134,7 @@ class Zend_View_Helper_Doctype extends Zend_View_Helper_Abstract
     /**
      * Set or retrieve doctype
      *
-     * @param  string $doctype
+     * @param string $doctype            
      * @return Zend_View_Helper_Doctype
      */
     public function doctype($doctype = null)
@@ -147,14 +172,14 @@ class Zend_View_Helper_Doctype extends Zend_View_Helper_Abstract
                     break;
             }
         }
-
+        
         return $this;
     }
 
     /**
      * Set doctype
      *
-     * @param  string $doctype
+     * @param string $doctype            
      * @return Zend_View_Helper_Doctype
      */
     public function setDoctype($doctype)
@@ -200,32 +225,33 @@ class Zend_View_Helper_Doctype extends Zend_View_Helper_Abstract
      */
     public function isStrict()
     {
-        switch ( $this->getDoctype() )
-        {
+        switch ($this->getDoctype()) {
             case self::XHTML1_STRICT:
             case self::XHTML11:
             case self::HTML4_STRICT:
                 return true;
-            default: 
+            default:
                 return false;
         }
     }
-    
+
     /**
      * Is doctype HTML5? (HeadMeta uses this for validation)
      *
      * @return booleean
      */
-    public function isHtml5() {
+    public function isHtml5()
+    {
         return (stristr($this->doctype(), '<!DOCTYPE html>') ? true : false);
     }
-    
+
     /**
      * Is doctype RDFa?
      *
      * @return booleean
      */
-    public function isRdfa() {
+    public function isRdfa()
+    {
         return (stristr($this->getDoctype(), 'rdfa') ? true : false);
     }
 

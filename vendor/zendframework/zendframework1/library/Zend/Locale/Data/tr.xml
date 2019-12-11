@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="tr"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="tr" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -805,7 +804,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">Finlandiya</territory>
 			<territory type="FJ">Fiji</territory>
 			<territory type="FK">Falkland Adaları</territory>
-			<territory type="FK" alt="variant">Falkland Adaları (Malvinas Adaları)</territory>
+			<territory type="FK" alt="variant">Falkland Adaları (Malvinas
+				Adaları)</territory>
 			<territory type="FM">Mikronezya Federal Eyaletleri</territory>
 			<territory type="FO">Faroe Adaları</territory>
 			<territory type="FR">Fransa</territory>
@@ -1027,7 +1027,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="SOLBA">Stolvizza/Solbica Lehçesi</variant>
 			<variant type="TARASK">Taraskievica Yazım Kuralları</variant>
 			<variant type="UCCOR">Birleştirilmiş Yazım Kuralları</variant>
-			<variant type="UCRCOR">Gözden Geçirilmiş Birleştirilmiş Yazım Kuralları</variant>
+			<variant type="UCRCOR">Gözden Geçirilmiş Birleştirilmiş Yazım
+				Kuralları</variant>
 			<variant type="VALENCIA">Valensiyaca</variant>
 			<variant type="WADEGILE">Wade-Giles (Latin Alfabesinde Yazımı)</variant>
 		</variants>
@@ -1073,7 +1074,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="ethiopic-amete-alem" key="calendar">Etiyopik Amete Alem Takvimi</type>
 			<type type="finance" key="numbers">Finansal Sayılar</type>
 			<type type="fullwide" key="numbers">Tam Genişlikte Rakamlar</type>
-			<type type="gb2312han" key="collation">Basitleştirilmiş Çince Sıralaması - GB2312</type>
+			<type type="gb2312han" key="collation">Basitleştirilmiş Çince Sıralaması -
+				GB2312</type>
 			<type type="geor" key="numbers">Gürcü Rakamları</type>
 			<type type="gregorian" key="calendar">Miladi Takvim</type>
 			<type type="grek" key="numbers">Yunan Rakamları</type>
@@ -1091,9 +1093,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="indian" key="calendar">Ulusal Hint Takvimi</type>
 			<type type="islamic" key="calendar">Hicri Takvim</type>
 			<type type="islamic-civil" key="calendar">Arap Takvimi</type>
-			<type type="islamic-rgsa" key="calendar" draft="contributed">Hicri Takvim (Suudi)</type>
-			<type type="islamic-tbla" key="calendar" draft="contributed">Hicri Takvim (Astronomik Evreler)</type>
-			<type type="islamic-umalqura" key="calendar" draft="contributed">Hicri Takvim (Ümmü-l Kurra Takvimi)</type>
+			<type type="islamic-rgsa" key="calendar" draft="contributed">Hicri Takvim
+				(Suudi)</type>
+			<type type="islamic-tbla" key="calendar" draft="contributed">Hicri Takvim
+				(Astronomik Evreler)</type>
+			<type type="islamic-umalqura" key="calendar" draft="contributed">Hicri Takvim
+				(Ümmü-l Kurra Takvimi)</type>
 			<type type="iso8601" key="calendar" draft="contributed">ISO-8601 Takvimi</type>
 			<type type="japanese" key="calendar">Japon Takvimi</type>
 			<type type="java" key="numbers" draft="contributed">Cava Rakamları</type>
@@ -1103,7 +1108,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="khmr" key="numbers">Kmer Rakamları</type>
 			<type type="knda" key="numbers">Kannada Rakamları</type>
 			<type type="lana" key="numbers" draft="contributed">Tai Tham Hora Rakamları</type>
-			<type type="lanatham" key="numbers" draft="contributed">Tai Tham Tham Rakamları</type>
+			<type type="lanatham" key="numbers" draft="contributed">Tai Tham Tham
+				Rakamları</type>
 			<type type="laoo" key="numbers">Lao Rakamları</type>
 			<type type="latn" key="numbers">Batı Rakamları</type>
 			<type type="lepc" key="numbers" draft="contributed">Lepça Rakamları</type>
@@ -1130,7 +1136,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="phonetic" key="collation">Fonetik Sıralama Düzeni</type>
 			<type type="pinyin" key="collation">Basitleştirilmiş Çince Pinyin Sıralaması</type>
 			<type type="primary" key="colStrength">Yalnızca Taban Harflerini Sıralama</type>
-			<type type="quaternary" key="colStrength">Aksanları/Büyük-Küçük Harfleri/Genişliği/Kana'yı Sıralama</type>
+			<type type="quaternary" key="colStrength">Aksanları/Büyük-Küçük
+				Harfleri/Genişliği/Kana'yı Sıralama</type>
 			<type type="reformed" key="collation">Yeni Sıralama Düzeni</type>
 			<type type="roc" key="calendar">Çin Cumhuriyeti Takvimi</type>
 			<type type="roman" key="numbers">Roma Rakamları</type>
@@ -1144,7 +1151,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">Geleneksel Tamil Rakamları</type>
 			<type type="tamldec" key="numbers">Tamil Rakamları</type>
 			<type type="telu" key="numbers">Telugu Rakamları</type>
-			<type type="tertiary" key="colStrength">Aksanları/Büyük-Küçük Harfleri/Genişliği Sıralama</type>
+			<type type="tertiary" key="colStrength">Aksanları/Büyük-Küçük
+				Harfleri/Genişliği Sıralama</type>
 			<type type="thai" key="numbers">Tay Rakamları</type>
 			<type type="tibt" key="numbers">Tibet Rakamları</type>
 			<type type="traditional" key="collation">Geleneksel Sıralama</type>
@@ -1189,10 +1197,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[a b c ç d e f g ğ h ı i İ j k l m n o ö p r s ş t u ü v y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ø ō œ ö q ß ú ù ŭ û ū ü w x ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C Ç D E F G H I İ J K L M N O Ö P Q R S Ş T U Ü V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters>[a b c ç d e f g ğ h ı i İ j k l m n o ö p r s ş t
+			u ü v y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ
+			ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ø ō œ ö q ß ú ù ŭ û ū ü w x ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C Ç D E F G H I İ J K
+			L M N O Ö P Q R S Ş T U Ü V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1410,9 +1422,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">GGGGG dd.MM.y – dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">GGGGG dd.MM.y E – dd.MM.y E</greatestDifference>
-							<greatestDifference id="M">GGGGG dd.MM.y E – dd.MM.y E</greatestDifference>
-							<greatestDifference id="y">GGGGG dd.MM.y E – dd.MM.y E</greatestDifference>
+							<greatestDifference id="d">GGGGG dd.MM.y E –
+								dd.MM.y E</greatestDifference>
+							<greatestDifference id="M">GGGGG dd.MM.y E –
+								dd.MM.y E</greatestDifference>
+							<greatestDifference id="y">GGGGG dd.MM.y E –
+								dd.MM.y E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">G MMM–MMM y</greatestDifference>
@@ -1962,9 +1977,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</eras>
 			</calendar>
 			<calendar type="japanese">
-				<!-- need some non-empty element here to make inheritance work,
-					 this copy of generic dateFormats above is smaller than root japanese eras
-				-->
+				<!-- need some non-empty element here to make inheritance work, this 
+					copy of generic dateFormats above is smaller than root japanese eras -->
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>

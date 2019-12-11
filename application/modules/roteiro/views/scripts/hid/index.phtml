@@ -2,7 +2,7 @@
 	<!--/sub-heard-part-->
 	<div class="sub-heard-part">
 		<ol class="breadcrumb m-b-0">
-            <li><a href="<?php echo $this->baseUrl('/administrativo/painel/')?>">Home</a></li>
+			<li><a href="<?php echo $this->baseUrl('/administrativo/painel/')?>">Home</a></li>
 			<li><a href="<?php echo $this->baseUrl('/roteiro/painel/')?>">Roteiro</a></li>
 			<li class="active">Sistema de Hidrante</li>
 		</ol>
@@ -11,383 +11,743 @@
 	<div class="forms-main">
 		<div class="graph-form">
 			<div class="validation-form">
-				<form class="form-horizontal group-border hover-stripped" role="form" method="post" action="{{ url('hidrante/store') }}" >                  
-                    <div class="col-md-6 form-group2 group mail">
-                        <label class="control-label">Cliente</label>
-                        <select name="id_cliente" id="id_cliente" required>
-                            <option></option>
+				<form class="form-horizontal group-border hover-stripped"
+					role="form" method="post" action="{{ url('hidrante/store') }}">
+					<div class="col-md-6 form-group2 group mail">
+						<label class="control-label">Cliente</label> <select
+							name="id_cliente" id="id_cliente" required>
+							<option></option>
                             <?php foreach ($cliente as $item) : ?>
-                                <option value="<?php echo $item['id'] ?>"><?php echo $item['nm_pessoa'] ?></option>
+                                <option
+								value="<?php echo $item['id'] ?>"><?php echo $item['nm_pessoa'] ?></option>
                             <?php endforeach; ?>
                         </select>
 					</div>
-					
+
 					<div class="col-md-2 form-group2">
-						<label class="control-label">Mês/Ano</label>
-						<input type="text" class="form-control" name="st_mes_ano" id="st_mes_ano" value="<?php echo date('m/Y')?>">
+						<label class="control-label">Mês/Ano</label> <input type="text"
+							class="form-control" name="st_mes_ano" id="st_mes_ano"
+							value="<?php echo date('m/Y')?>">
 					</div>
 
-					<div class="col-md-5 form-group2"><span>&nbsp;</span></div>
+					<div class="col-md-5 form-group2">
+						<span>&nbsp;</span>
+					</div>
 
 					<div class="col-md-4 form-group2">
-						<label class="control-label">Unidade</label>
-						<input type="text" class="form-control" name="st_unidade" id="st_unidade" >
+						<label class="control-label">Unidade</label> <input type="text"
+							class="form-control" name="st_unidade" id="st_unidade">
 					</div>
-						
+
 					<div class="col-md-4 form-group2">
-						<label class="control-label">descrição</label>
-						<input type="text" class="form-control" name="st_descricao" id="st_descricao" >
+						<label class="control-label">descrição</label> <input type="text"
+							class="form-control" name="st_descricao" id="st_descricao">
 					</div>
-	
+
 					<div class="col-md-4 form-group2">
-						<label class="control-label">Operador</label>
-						<input type="text" class="form-control" name="st_operador" id="st_operador" >
+						<label class="control-label">Operador</label> <input type="text"
+							class="form-control" name="st_operador" id="st_operador">
 					</div>
-	
+
 					<div class="col-md-6 form-group2">
-						<label class="control-label">Supervisor do setor</label>
-						<input type="text" class="form-control" name="st_supervisor" id="st_supervisor" >
+						<label class="control-label">Supervisor do setor</label> <input
+							type="text" class="form-control" name="st_supervisor"
+							id="st_supervisor">
 					</div>
-	
+
 					<div class="col-md-6 form-group2">
-						<label class="control-label">Engenheiro/Técnico em Segurança ou Responsável</label>
-						<input type="text" class="form-control" name="st_engenheiro" id="st_engenheiro" >
+						<label class="control-label">Engenheiro/Técnico em Segurança ou
+							Responsável</label> <input type="text" class="form-control"
+							name="st_engenheiro" id="st_engenheiro">
 					</div>
 
 					<div class="col-md-12 form-group2">
 						<label class="control-label"><strong>ROTEIROS</strong></label>
 					</div>
 
-					<div class="col-md-12 form-group2"><span>&nbsp;</span></div>
+					<div class="col-md-12 form-group2">
+						<span>&nbsp;</span>
+					</div>
 
 					<div class="col-md-12 form-group2">
-						<div class="col-md-12 form-group2"><label>1-Inspeção visual. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_inspencao_visual_data" id="st_inspencao_visual_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_inspencao_visual_situacao" id="st_inspencao_visual_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>1-Inspeção visual. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_inspencao_visual_data" id="st_inspencao_visual_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_inspencao_visual_situacao"
+								id="st_inspencao_visual_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_inspencao_visual_obs" id="st_inspencao_visual_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_inspencao_visual_obs"
+								id="st_inspencao_visual_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>2-Acionar as bombas do sistema, verificando o funcionamento dos controles manuais e automáticos  do equipamento e dos sinalizadores. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_acionar_bombas_data" id="st_acionar_bombas_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_acionar_bombas_situacao" id="st_acionar_bombas_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>2-Acionar as bombas do sistema, verificando o
+								funcionamento dos controles manuais e automáticos do equipamento
+								e dos sinalizadores. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>" name="st_acionar_bombas_data"
+								id="st_acionar_bombas_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select name="st_acionar_bombas_situacao"
+								id="st_acionar_bombas_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_acionar_bombas_obs" id="st_acionar_bombas_obs"></textarea></div>
-					
-						<div class="col-md-12 form-group2"><label>3-Verificar se os abrigos estão secos e desobstruídos. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_abrigo_seco_data" id="st_abrigo_seco_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_abrigo_seco_situacao" id="st_abrigo_seco_situacao" required>
-								<option></option>
-								<?php foreach ($situacao as $item) : ?>
-									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
-								<?php endforeach; ?>
-							</select>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_acionar_bombas_obs" id="st_acionar_bombas_obs"></textarea>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_abrigo_seco_obs" id="st_abrigo_seco_obs"></textarea></div>
 
-						<div class="col-md-12 form-group2"><label>4-Verificar a existência de vazamentos, a estanqueidade, e/ou outros defeitos nas tubulações, válvulas, registros, esguinchos. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_vazamento_data" id="st_vazamento_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_vazamento_situacao" id="st_vazamento_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>3-Verificar se os abrigos estão secos e desobstruídos.
+								(Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>" name="st_abrigo_seco_data"
+								id="st_abrigo_seco_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select name="st_abrigo_seco_situacao"
+								id="st_abrigo_seco_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_vazamento_obs" id="st_vazamento_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_abrigo_seco_obs" id="st_abrigo_seco_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>5-Verificar o estado de conservação geral das caixas, esguinchos, registros, adaptadores, chaves de engate, puxador da porta de vidro do abrigo. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_estado_conservacao_data" id="st_estado_conservacao_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_estado_conservacao_situacao" id="st_estado_conservacao_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>4-Verificar a existência de vazamentos, a estanqueidade,
+								e/ou outros defeitos nas tubulações, válvulas, registros,
+								esguinchos. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>" name="st_vazamento_data"
+								id="st_vazamento_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select name="st_vazamento_situacao"
+								id="st_vazamento_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_estado_conservacao_obs" id="st_estado_conservacao_obs"></textarea></div>
-						
-						<div class="col-md-12 form-group2"><label>6-Verificar os nível dos reservatórios. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_nivel_data" id="st_nivel_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_nivel_situacao" id="st_nivel_situacao" required>
-								<option></option>
-								<?php foreach ($situacao as $item) : ?>
-									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
-								<?php endforeach; ?>
-							</select>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_vazamento_obs" id="st_vazamento_obs"></textarea>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_nivel_obs" id="st_nivel_obs"></textarea></div> 
-											
-						<div class="col-md-12 form-group2"><label>7-Testar o sistema, verificando as condições gerais dos registros, acoplamentos, mangueiras e demais componentes. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_teste_sistema_data" id="st_teste_sistema_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_teste_sistema_situacao" id="st_teste_sistema_situacao" required>
-								<option></option>
-								<?php foreach ($situacao as $item) : ?>
-									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
-								<?php endforeach; ?>
-							</select>
-						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_teste_sistema_obs" id="st_teste_sistema_obs"></textarea></div>
-											
-						<div class="col-md-12 form-group2"><label>8-Examinar o estado de conservação dos avisos de alerta e orientação, relantando a necessidade de reparos e/ou colocação de placas. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_estado_conservacao_data" id="st_estado_conservacao_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_estado_conservacao_situacao" id="st_estado_conservacao_situacao" required>
-								<option></option>
-								<?php foreach ($situacao as $item) : ?>
-									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
-								<?php endforeach; ?>
-							</select>
-						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_estado_conservacao_obs" id="st_estado_conservacao_obs"></textarea></div>
-												
-						<div class="col-md-12 form-group2"><label>9-Verificar se as mangueiras estão acionadas adequadamente e prontas para uso. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_mangueiras_data" id="st_mangueiras_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_mangueiras_situacao" id="st_mangueiras_situacao" required>
-								<option></option>
-								<?php foreach ($situacao as $item) : ?>
-									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
-								<?php endforeach; ?>
-							</select>
-						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_mangueiras_obs" id="st_mangueiras_obs"></textarea></div>
-							
-						<div class="col-md-12 form-group2"><label>10-Verificar o estado das mangueiras. Presença de manchas ou resíduos, fios rompidos na carcaça têxtil, deformações nas uniões, vedações das borrachas, identificações. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_estado_mangueira_data" id="st_estado_mangueira_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_estado_mangueira_situacao" id="st_estado_mangueira_situacao" required>
-								<option></option>
-								<?php foreach ($situacao as $item) : ?>
-									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
-								<?php endforeach; ?>
-							</select>
-						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_estado_mangueira_obs" id="st_estado_mangueira_obs"></textarea></div>
-						
-						<div class="col-md-12 form-group2"><label>11-Verificar eventuais anormalidades, realizando testes de funcionamento nos elementos atuadores e sensores. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_anormalidade_data" id="st_anormalidade_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_anormalidade_situacao" id="st_anormalidade_situacao" required>
-								<option></option>
-								<?php foreach ($situacao as $item) : ?>
-									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
-								<?php endforeach; ?>
-							</select>
-						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_anormalidade_obs" id="st_anormalidade_obs"></textarea></div>
 
-						<div class="col-md-12 form-group2"><label>12-Verificar as válvulas de governo e alarme, válvulas de gaveta, chaves de fluxo, os gongos hidráulicos, as pressões dos manômetros ou obstruções natubulação. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_valvula_data" id="st_valvula_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_valvula_situacao" id="st_valvula_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>5-Verificar o estado de conservação geral das caixas,
+								esguinchos, registros, adaptadores, chaves de engate, puxador da
+								porta de vidro do abrigo. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_estado_conservacao_data"
+								id="st_estado_conservacao_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_estado_conservacao_situacao"
+								id="st_estado_conservacao_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_valvula_obs" id="st_valvula_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_estado_conservacao_obs"
+								id="st_estado_conservacao_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>13-Verificar a lubrificação das válvulas de gaveta. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_lubrificacao_data" id="st_lubrificacao_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_lubrificacao_situacao" id="st_lubrificacao_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>6-Verificar os nível dos reservatórios. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>" name="st_nivel_data"
+								id="st_nivel_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select name="st_nivel_situacao"
+								id="st_nivel_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_lubrificacao_obs" id="st_lubrificacao_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_nivel_obs" id="st_nivel_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>14-Verificar as condições físicas das tubulações e suportes aparentes, com relação à corrosão, pintura e choques mecânicos. (Bimestral)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_condicao_tubulacao_data" id="st_condicao_tubulacao_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_condicao_tubulacao_situacao" id="st_condicao_tubulacao_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>7-Testar o sistema, verificando as condições gerais dos
+								registros, acoplamentos, mangueiras e demais componentes.
+								(Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>" name="st_teste_sistema_data"
+								id="st_teste_sistema_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select name="st_teste_sistema_situacao"
+								id="st_teste_sistema_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_condicao_tubulacao_obs" id="st_condicao_tubulacao_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_teste_sistema_obs" id="st_teste_sistema_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>15-Testar as tubulações com todos os seus petences. (Bimestral)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_teste_tubulacao_data" id="st_teste_tubulacao_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_teste_tubulacao_situacao" id="st_teste_tubulacao_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>8-Examinar o estado de conservação dos avisos de alerta e
+								orientação, relantando a necessidade de reparos e/ou colocação
+								de placas. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_estado_conservacao_data"
+								id="st_estado_conservacao_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_estado_conservacao_situacao"
+								id="st_estado_conservacao_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_teste_tubulacao_obs" id="st_teste_tubulacao_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_estado_conservacao_obs"
+								id="st_estado_conservacao_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>16-Fazer a redobra dos vincos das mangueiras de hidrantes. (Trimestral)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_redobra_mangueira_data" id="st_redobra_mangueira_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_redobra_mangueira_situacao" id="st_redobra_mangueira_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>9-Verificar se as mangueiras estão acionadas adequadamente
+								e prontas para uso. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>" name="st_mangueiras_data"
+								id="st_mangueiras_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select name="st_mangueiras_situacao"
+								id="st_mangueiras_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_redobra_mangueira_obs" id="st_redobra_mangueira_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_mangueiras_obs" id="st_mangueiras_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>17-Realizar ensaio hidrostático de todas as mangueiras. (Anual)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_ensaio_hidrostatico_data" id="st_ensaio_hidrostatico_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_ensaio_hidrostatico_situacao" id="st_ensaio_hidrostatico_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>10-Verificar o estado das mangueiras. Presença de manchas
+								ou resíduos, fios rompidos na carcaça têxtil, deformações nas
+								uniões, vedações das borrachas, identificações. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_estado_mangueira_data" id="st_estado_mangueira_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_estado_mangueira_situacao"
+								id="st_estado_mangueira_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_ensaio_hidrostatico_obs" id="st_ensaio_hidrostatico_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_estado_mangueira_obs"
+								id="st_estado_mangueira_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label><strong>MANGUEIRAS DO HIDRANTE</strong></label></div>
-
-						<div class="col-md-12 form-group2"><label>1-Inspensão visual. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_insp_visual_hidrante_data" id="st_insp_visual_hidrante_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_insp_visual_hidrante_situacao" id="st_insp_visual_hidrante_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>11-Verificar eventuais anormalidades, realizando testes de
+								funcionamento nos elementos atuadores e sensores. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>" name="st_anormalidade_data"
+								id="st_anormalidade_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select name="st_anormalidade_situacao"
+								id="st_anormalidade_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_insp_visual_hidrante_obs" id="st_insp_visual_hidrante_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_anormalidade_obs" id="st_anormalidade_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>2-Verificar se as mangueiras estão acondicionadas adequadamente e prontas para uso. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_mangueira_hidrante_data" id="st_mangueira_hidrante_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_mangueira_hidrante_situacao" id="st_mangueira_hidrante_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>12-Verificar as válvulas de governo e alarme, válvulas de
+								gaveta, chaves de fluxo, os gongos hidráulicos, as pressões dos
+								manômetros ou obstruções natubulação. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>" name="st_valvula_data"
+								id="st_valvula_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select name="st_valvula_situacao"
+								id="st_valvula_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_mangueira_hidrante_obs" id="st_mangueira_hidrante_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_valvula_obs" id="st_valvula_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>3-Verificar o estado das mangueiras. presença de manchas ou resíduos, fios rompidos na carcaça têxtil, deformações nas uniões, vedações das borrachas, identificações. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_est_mangueira_hid_data" id="st_est_mangueira_hid_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_est_mangueira_hid_situacao" id="st_est_mangueira_hid_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>13-Verificar a lubrificação das válvulas de gaveta.
+								(Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>" name="st_lubrificacao_data"
+								id="st_lubrificacao_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select name="st_lubrificacao_situacao"
+								id="st_lubrificacao_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_est_mangueira_hid_obs" id="st_est_mangueira_hid_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_lubrificacao_obs" id="st_lubrificacao_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label><strong>BOMBAS INFERIORES E/OU SUPERIORES</strong></label></div>
-
-						<div class="col-md-12 form-group2"><label>1-Inspensão visual. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_inspensao_visual_bombas_data" id="st_inspensao_visual_bombas_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_inspensao_visual_bombas_situacao" id="st_inspensao_visual_bombas_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>14-Verificar as condições físicas das tubulações e
+								suportes aparentes, com relação à corrosão, pintura e choques
+								mecânicos. (Bimestral)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_condicao_tubulacao_data"
+								id="st_condicao_tubulacao_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_condicao_tubulacao_situacao"
+								id="st_condicao_tubulacao_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_inspensao_visual_bombas_obs" id="st_inspensao_visual_bombas_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_condicao_tubulacao_obs"
+								id="st_condicao_tubulacao_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>2-Fiscalizar a limpeza da casa de bombas. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_limpeza_casa_bombas_data" id="st_limpeza_casa_bombas_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_limpeza_casa_bombas_situacao" id="st_limpeza_casa_bombas_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>15-Testar as tubulações com todos os seus petences.
+								(Bimestral)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_teste_tubulacao_data" id="st_teste_tubulacao_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_teste_tubulacao_situacao"
+								id="st_teste_tubulacao_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_limpeza_casa_bombas_obs" id="st_limpeza_casa_bombas_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_teste_tubulacao_obs"
+								id="st_teste_tubulacao_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>3-Verificar a operação automática do sistema de bombeamento. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_operacao_automatica_bombas_data" id="st_operacao_automatica_bombas_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_operacao_automatica_bombas_situacao" id="st_operacao_automatica_bombas_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>16-Fazer a redobra dos vincos das mangueiras de hidrantes.
+								(Trimestral)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_redobra_mangueira_data" id="st_redobra_mangueira_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_redobra_mangueira_situacao"
+								id="st_redobra_mangueira_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_operacao_automatica_bombas_obs" id="st_operacao_automatica_bombas_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_redobra_mangueira_obs"
+								id="st_redobra_mangueira_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>4-Acionar as bombas e verificar o funcionamento dos controles manuais e automáticos. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_funcionamento_controle_bombas_data" id="st_funcionamento_controle_bombas_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_funcionamento_controle_bombas_situacao" id="st_funcionamento_controle_bombas_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>17-Realizar ensaio hidrostático de todas as mangueiras.
+								(Anual)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_ensaio_hidrostatico_data"
+								id="st_ensaio_hidrostatico_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_ensaio_hidrostatico_situacao"
+								id="st_ensaio_hidrostatico_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_funcionamento_controle_bombas_obs" id="st_funcionamento_controle_bombas_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_ensaio_hidrostatico_obs"
+								id="st_ensaio_hidrostatico_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>5-Verificar o sicronismo do motor com a bomba, desalinhamento. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_sicronismo_bombas_data" id="st_sicronismo_bombas_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_sicronismo_bombas_situacao" id="st_sicronismo_bombas_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label><strong>MANGUEIRAS DO HIDRANTE</strong></label>
+						</div>
+
+						<div class="col-md-12 form-group2">
+							<label>1-Inspensão visual. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_insp_visual_hidrante_data"
+								id="st_insp_visual_hidrante_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_insp_visual_hidrante_situacao"
+								id="st_insp_visual_hidrante_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_sicronismo_bombas_obs" id="st_sicronismo_bombas_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_insp_visual_hidrante_obs"
+								id="st_insp_visual_hidrante_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>6-Verificar acoplamentos, lubrificação, rolamentos, fiação, existência de vazamentos. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_acoplamentos_bombas_data" id="st_acoplamentos_bombas_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_acoplamentos_bombas_situacao" id="st_acoplamentos_bombas_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>2-Verificar se as mangueiras estão acondicionadas
+								adequadamente e prontas para uso. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_mangueira_hidrante_data"
+								id="st_mangueira_hidrante_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_mangueira_hidrante_situacao"
+								id="st_mangueira_hidrante_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_acoplamentos_bombas_obs" id="st_acoplamentos_bombas_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_mangueira_hidrante_obs"
+								id="st_mangueira_hidrante_obs"></textarea>
+						</div>
 
-						<div class="col-md-12 form-group2"><label>7-Verificar ser a carcaça da bomba está firmamente fixada, se os dutos de entrada das frestas de ventilação estão limpos. (Mensal)</label></div>
-						<div class="col-md-2 form-group1"><label>Data</label><input type="text" class="form-control" value="<?php echo date('d/m/Y')?>" name="st_carcaca_bombas_data" id="st_carcaca_bombas_data"></div>
-						<div class="col-md-2 form-group1"><label>Situação</label>
-							<select name="st_carcaca_bombas_situacao" id="st_carcaca_bombas_situacao" required>
+						<div class="col-md-12 form-group2">
+							<label>3-Verificar o estado das mangueiras. presença de manchas
+								ou resíduos, fios rompidos na carcaça têxtil, deformações nas
+								uniões, vedações das borrachas, identificações. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_est_mangueira_hid_data" id="st_est_mangueira_hid_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_est_mangueira_hid_situacao"
+								id="st_est_mangueira_hid_situacao" required>
 								<option></option>
 								<?php foreach ($situacao as $item) : ?>
 									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
 								<?php endforeach; ?>
 							</select>
 						</div>
-						<div class="col-md-8 form-group1"><label>Obs</label><textarea name="st_carcaca_bombas_obs" id="st_carcaca_bombas_obs"></textarea></div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_est_mangueira_hid_obs"
+								id="st_est_mangueira_hid_obs"></textarea>
+						</div>
+
+						<div class="col-md-12 form-group2">
+							<label><strong>BOMBAS INFERIORES E/OU SUPERIORES</strong></label>
+						</div>
+
+						<div class="col-md-12 form-group2">
+							<label>1-Inspensão visual. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_inspensao_visual_bombas_data"
+								id="st_inspensao_visual_bombas_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_inspensao_visual_bombas_situacao"
+								id="st_inspensao_visual_bombas_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_inspensao_visual_bombas_obs"
+								id="st_inspensao_visual_bombas_obs"></textarea>
+						</div>
+
+						<div class="col-md-12 form-group2">
+							<label>2-Fiscalizar a limpeza da casa de bombas. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_limpeza_casa_bombas_data"
+								id="st_limpeza_casa_bombas_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_limpeza_casa_bombas_situacao"
+								id="st_limpeza_casa_bombas_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_limpeza_casa_bombas_obs"
+								id="st_limpeza_casa_bombas_obs"></textarea>
+						</div>
+
+						<div class="col-md-12 form-group2">
+							<label>3-Verificar a operação automática do sistema de
+								bombeamento. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_operacao_automatica_bombas_data"
+								id="st_operacao_automatica_bombas_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_operacao_automatica_bombas_situacao"
+								id="st_operacao_automatica_bombas_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_operacao_automatica_bombas_obs"
+								id="st_operacao_automatica_bombas_obs"></textarea>
+						</div>
+
+						<div class="col-md-12 form-group2">
+							<label>4-Acionar as bombas e verificar o funcionamento dos
+								controles manuais e automáticos. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_funcionamento_controle_bombas_data"
+								id="st_funcionamento_controle_bombas_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_funcionamento_controle_bombas_situacao"
+								id="st_funcionamento_controle_bombas_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_funcionamento_controle_bombas_obs"
+								id="st_funcionamento_controle_bombas_obs"></textarea>
+						</div>
+
+						<div class="col-md-12 form-group2">
+							<label>5-Verificar o sicronismo do motor com a bomba,
+								desalinhamento. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_sicronismo_bombas_data" id="st_sicronismo_bombas_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_sicronismo_bombas_situacao"
+								id="st_sicronismo_bombas_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_sicronismo_bombas_obs"
+								id="st_sicronismo_bombas_obs"></textarea>
+						</div>
+
+						<div class="col-md-12 form-group2">
+							<label>6-Verificar acoplamentos, lubrificação, rolamentos,
+								fiação, existência de vazamentos. (Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>"
+								name="st_acoplamentos_bombas_data"
+								id="st_acoplamentos_bombas_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select
+								name="st_acoplamentos_bombas_situacao"
+								id="st_acoplamentos_bombas_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_acoplamentos_bombas_obs"
+								id="st_acoplamentos_bombas_obs"></textarea>
+						</div>
+
+						<div class="col-md-12 form-group2">
+							<label>7-Verificar ser a carcaça da bomba está firmamente fixada,
+								se os dutos de entrada das frestas de ventilação estão limpos.
+								(Mensal)</label>
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Data</label><input type="text" class="form-control"
+								value="<?php echo date('d/m/Y')?>" name="st_carcaca_bombas_data"
+								id="st_carcaca_bombas_data">
+						</div>
+						<div class="col-md-2 form-group1">
+							<label>Situação</label> <select name="st_carcaca_bombas_situacao"
+								id="st_carcaca_bombas_situacao" required>
+								<option></option>
+								<?php foreach ($situacao as $item) : ?>
+									<option value="<?php echo $item['id'] ?>"><?php echo $item['st_situacao'] ?></option>
+								<?php endforeach; ?>
+							</select>
+						</div>
+						<div class="col-md-8 form-group1">
+							<label>Obs</label>
+							<textarea name="st_carcaca_bombas_obs" id="st_carcaca_bombas_obs"></textarea>
+						</div>
 					</div>
 
 					<div class="col-md-12 form-group button-2">
@@ -396,9 +756,9 @@
 							<button class="btn btn-red" type="button">Visualizar Cadastrados</button>
 						</a>
 					</div>
-					<div class="clearfix"> </div>
+					<div class="clearfix"></div>
 				</form>
 			</div>
 		</div>
-	</div> 
+	</div>
 </div>

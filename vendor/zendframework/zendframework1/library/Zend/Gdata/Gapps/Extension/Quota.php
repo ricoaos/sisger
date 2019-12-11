@@ -22,31 +22,35 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
 
 /**
+ *
  * @see Zend_Gdata_Gapps
  */
 require_once 'Zend/Gdata/Gapps.php';
 
 /**
- * Represents the apps:quota element used by the Apps data API. This is
+ * Represents the apps:quota element used by the Apps data API.
+ * This is
  * used to indicate the amount of storage space available to a user. Quotas
  * may not be able to be set, depending on the domain used. This class
  * is usually contained within an instance of Zend_Gdata_Gapps_UserEntry.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Gapps
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Gapps_Extension_Quota extends Zend_Gdata_Extension
 {
 
     protected $_rootNamespace = 'apps';
+
     protected $_rootElement = 'quota';
 
     /**
@@ -59,7 +63,8 @@ class Zend_Gdata_Gapps_Extension_Quota extends Zend_Gdata_Extension
     /**
      * Constructs a new Zend_Gdata_Gapps_Extension_Quota object.
      *
-     * @param string $limit (optional) The limit, in bytes, for this quota.
+     * @param string $limit
+     *            (optional) The limit, in bytes, for this quota.
      */
     public function __construct($limit = null)
     {
@@ -70,13 +75,15 @@ class Zend_Gdata_Gapps_Extension_Quota extends Zend_Gdata_Extension
 
     /**
      * Retrieves a DOMElement which corresponds to this element and all
-     * child properties.  This is used to build an entry back into a DOM
+     * child properties.
+     * This is used to build an entry back into a DOM
      * and eventually XML text for sending to the server upon updates, or
      * for application storage/persistence.
      *
-     * @param DOMDocument $doc The DOMDocument used to construct DOMElements
+     * @param DOMDocument $doc
+     *            The DOMDocument used to construct DOMElements
      * @return DOMElement The DOMElement representing this element and all
-     * child properties.
+     *         child properties.
      */
     public function getDOM($doc = null, $majorVersion = 1, $minorVersion = null)
     {
@@ -89,19 +96,21 @@ class Zend_Gdata_Gapps_Extension_Quota extends Zend_Gdata_Extension
 
     /**
      * Given a DOMNode representing an attribute, tries to map the data into
-     * instance members.  If no mapping is defined, the name and value are
+     * instance members.
+     * If no mapping is defined, the name and value are
      * stored in an array.
      *
-     * @param DOMNode $attribute The DOMNode attribute needed to be handled
+     * @param DOMNode $attribute
+     *            The DOMNode attribute needed to be handled
      */
     protected function takeAttributeFromDOM($attribute)
     {
         switch ($attribute->localName) {
-        case 'limit':
-            $this->_limit = $attribute->nodeValue;
-            break;
-        default:
-            parent::takeAttributeFromDOM($attribute);
+            case 'limit':
+                $this->_limit = $attribute->nodeValue;
+                break;
+            default:
+                parent::takeAttributeFromDOM($attribute);
         }
     }
 
@@ -117,11 +126,13 @@ class Zend_Gdata_Gapps_Extension_Quota extends Zend_Gdata_Extension
     }
 
     /**
-     * Set the value for this element's limit attribute. This is the amount
+     * Set the value for this element's limit attribute.
+     * This is the amount
      * of storage space, in bytes, that should be made available to
      * the associated user.
      *
-     * @param string $value The desired value for this attribute.
+     * @param string $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Gapps_Extension_Quota Provides a fluent interface.
      */
     public function setLimit($value)
@@ -138,5 +149,4 @@ class Zend_Gdata_Gapps_Extension_Quota extends Zend_Gdata_Extension
     {
         return $this->getLimit();
     }
-
 }

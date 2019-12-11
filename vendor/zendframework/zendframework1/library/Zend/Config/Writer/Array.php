@@ -20,18 +20,21 @@
  */
 
 /**
+ *
  * @see Zend_Config_Writer
  */
 require_once 'Zend/Config/Writer/FileAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Config
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Config
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Config_Writer_Array extends Zend_Config_Writer_FileAbstract
 {
+
     /**
      * Render a Zend_Config into a PHP Array config string.
      *
@@ -40,16 +43,17 @@ class Zend_Config_Writer_Array extends Zend_Config_Writer_FileAbstract
      */
     public function render()
     {
-        $data        = $this->_config->toArray();
+        $data = $this->_config->toArray();
         $sectionName = $this->_config->getSectionName();
-
+        
         if (is_string($sectionName)) {
-            $data = array($sectionName => $data);
+            $data = array(
+                $sectionName => $data
+            );
         }
-
-        $arrayString = "<?php\n"
-                     . "return " . var_export($data, true) . ";\n";
-
+        
+        $arrayString = "<?php\n" . "return " . var_export($data, true) . ";\n";
+        
         return $arrayString;
     }
 }

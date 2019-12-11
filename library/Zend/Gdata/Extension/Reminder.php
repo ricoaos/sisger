@@ -22,6 +22,7 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
@@ -29,24 +30,28 @@ require_once 'Zend/Gdata/Extension.php';
 /**
  * Implements the gd:reminder element used to set/retrieve notifications
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Gdata
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Extension_Reminder extends Zend_Gdata_Extension
 {
 
     protected $_rootElement = 'reminder';
+
     protected $_absoluteTime = null;
+
     protected $_method = null;
+
     protected $_days = null;
+
     protected $_hours = null;
+
     protected $_minutes = null;
 
-    public function __construct($absoluteTime = null, $method = null, $days = null,
-            $hours = null, $minutes = null)
+    public function __construct($absoluteTime = null, $method = null, $days = null, $hours = null, $minutes = null)
     {
         parent::__construct();
         $this->_absoluteTime = $absoluteTime;
@@ -135,6 +140,7 @@ class Zend_Gdata_Extension_Reminder extends Zend_Gdata_Extension
         $this->_days = $value;
         return $this;
     }
+
     public function getHours()
     {
         return $this->_hours;
@@ -167,5 +173,4 @@ class Zend_Gdata_Extension_Reminder extends Zend_Gdata_Extension
         $this->_method = $value;
         return $this;
     }
-
 }

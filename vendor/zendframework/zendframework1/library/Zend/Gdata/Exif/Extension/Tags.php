@@ -22,61 +22,73 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
 
 /**
+ *
  * @see Zend_Gdata_Exif
  */
 require_once 'Zend/Gdata/Exif.php';
 
 /**
+ *
  * @see Zend_Gdata_Exif_Extension_Distance
  */
 require_once 'Zend/Gdata/Exif/Extension/Distance.php';
 
 /**
+ *
  * @see Zend_Gdata_Exif_Extension_Exposure
  */
 require_once 'Zend/Gdata/Exif/Extension/Exposure.php';
 
 /**
+ *
  * @see Zend_Gdata_Exif_Extension_Flash
  */
 require_once 'Zend/Gdata/Exif/Extension/Flash.php';
 
 /**
+ *
  * @see Zend_Gdata_Exif_Extension_FocalLength
  */
 require_once 'Zend/Gdata/Exif/Extension/FocalLength.php';
 
 /**
+ *
  * @see Zend_Gdata_Exif_Extension_FStop
  */
 require_once 'Zend/Gdata/Exif/Extension/FStop.php';
 
 /**
+ *
  * @see Zend_Gdata_Exif_Extension_ImageUniqueId
  */
 require_once 'Zend/Gdata/Exif/Extension/ImageUniqueId.php';
 
 /**
+ *
  * @see Zend_Gdata_Exif_Extension_Iso
  */
 require_once 'Zend/Gdata/Exif/Extension/Iso.php';
 
 /**
+ *
  * @see Zend_Gdata_Exif_Extension_Make
  */
 require_once 'Zend/Gdata/Exif/Extension/Make.php';
 
 /**
+ *
  * @see Zend_Gdata_Exif_Extension_Model
  */
 require_once 'Zend/Gdata/Exif/Extension/Model.php';
 
 /**
+ *
  * @see Zend_Gdata_Exif_Extension_Time
  */
 require_once 'Zend/Gdata/Exif/Extension/Time.php';
@@ -84,16 +96,17 @@ require_once 'Zend/Gdata/Exif/Extension/Time.php';
 /**
  * Represents the exif:tags element used by the Gdata Exif extensions.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Exif
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
 {
 
     protected $_rootNamespace = 'exif';
+
     protected $_rootElement = 'tags';
 
     /**
@@ -169,31 +182,38 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
     /**
      * Constructs a new Zend_Gdata_Exif_Extension_Tags object.
      *
-     * @param Zend_Gdata_Exif_Extension_Distance $distance (optional) The exif:distance
-     *          value to be set in the constructed object.
-     * @param Zend_Gdata_Exif_Extension_Exposure $exposure (optional) The exif:exposure
-     *          value to be set in the constructed object.
-     * @param Zend_Gdata_Exif_Extension_Flash $flash (optional) The exif:flash
-     *          value to be set in the constructed object.
-     * @param Zend_Gdata_Exif_Extension_FocalLength$focalLength (optional) The exif:focallength
-     *          value to be set in the constructed object.
-     * @param Zend_Gdata_Exif_Extension_FStop $fStop (optional) The exif:fstop
-     *          value to be set in the constructed object.
-     * @param Zend_Gdata_Exif_Extension_ImageUniqueId $imageUniqueId (optional) The exif:imageUniqueID
-     *          value to be set in the constructed object.
-     * @param Zend_Gdata_Exif_Extension_Iso $iso (optional) The exif:iso
-     *          value to be set in the constructed object.
-     * @param Zend_Gdata_Exif_Extension_Make $make (optional) The exif:make
-     *          value to be set in the constructed object.
-     * @param Zend_Gdata_Exif_Extension_Model $model (optional) The exif:model
-     *          value to be set in the constructed object.
-     * @param Zend_Gdata_Exif_Extension_Time $time (optional) The exif:time
-     *          value to be set in the constructed object.
+     * @param Zend_Gdata_Exif_Extension_Distance $distance
+     *            (optional) The exif:distance
+     *            value to be set in the constructed object.
+     * @param Zend_Gdata_Exif_Extension_Exposure $exposure
+     *            (optional) The exif:exposure
+     *            value to be set in the constructed object.
+     * @param Zend_Gdata_Exif_Extension_Flash $flash
+     *            (optional) The exif:flash
+     *            value to be set in the constructed object.
+     * @param
+     *            Zend_Gdata_Exif_Extension_FocalLength$focalLength (optional) The exif:focallength
+     *            value to be set in the constructed object.
+     * @param Zend_Gdata_Exif_Extension_FStop $fStop
+     *            (optional) The exif:fstop
+     *            value to be set in the constructed object.
+     * @param Zend_Gdata_Exif_Extension_ImageUniqueId $imageUniqueId
+     *            (optional) The exif:imageUniqueID
+     *            value to be set in the constructed object.
+     * @param Zend_Gdata_Exif_Extension_Iso $iso
+     *            (optional) The exif:iso
+     *            value to be set in the constructed object.
+     * @param Zend_Gdata_Exif_Extension_Make $make
+     *            (optional) The exif:make
+     *            value to be set in the constructed object.
+     * @param Zend_Gdata_Exif_Extension_Model $model
+     *            (optional) The exif:model
+     *            value to be set in the constructed object.
+     * @param Zend_Gdata_Exif_Extension_Time $time
+     *            (optional) The exif:time
+     *            value to be set in the constructed object.
      */
-    public function __construct($distance = null, $exposure = null,
-            $flash = null, $focalLength = null, $fStop = null,
-            $imageUniqueId = null, $iso = null, $make = null,
-            $model = null, $time = null)
+    public function __construct($distance = null, $exposure = null, $flash = null, $focalLength = null, $fStop = null, $imageUniqueId = null, $iso = null, $make = null, $model = null, $time = null)
     {
         $this->registerAllNamespaces(Zend_Gdata_Exif::$namespaces);
         parent::__construct();
@@ -211,12 +231,14 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
 
     /**
      * Retrieves a DOMElement which corresponds to this element and all
-     * child properties.  This is used to build an entry back into a DOM
+     * child properties.
+     * This is used to build an entry back into a DOM
      * and eventually XML text for application storage/persistence.
      *
-     * @param DOMDocument $doc The DOMDocument used to construct DOMElements
+     * @param DOMDocument $doc
+     *            The DOMDocument used to construct DOMElements
      * @return DOMElement The DOMElement representing this element and all
-     *          child properties.
+     *         child properties.
      */
     public function getDOM($doc = null, $majorVersion = 1, $minorVersion = null)
     {
@@ -258,58 +280,59 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
      * Creates individual Entry objects of the appropriate type and
      * stores them as members of this entry based upon DOM data.
      *
-     * @param DOMNode $child The DOMNode to process
+     * @param DOMNode $child
+     *            The DOMNode to process
      */
     protected function takeChildFromDOM($child)
     {
         $absoluteNodeName = $child->namespaceURI . ':' . $child->localName;
         switch ($absoluteNodeName) {
-            case $this->lookupNamespace('exif') . ':' . 'distance';
+            case $this->lookupNamespace('exif') . ':' . 'distance':
                 $distance = new Zend_Gdata_Exif_Extension_Distance();
                 $distance->transferFromDOM($child);
                 $this->_distance = $distance;
                 break;
-            case $this->lookupNamespace('exif') . ':' . 'exposure';
+            case $this->lookupNamespace('exif') . ':' . 'exposure':
                 $exposure = new Zend_Gdata_Exif_Extension_Exposure();
                 $exposure->transferFromDOM($child);
                 $this->_exposure = $exposure;
                 break;
-            case $this->lookupNamespace('exif') . ':' . 'flash';
+            case $this->lookupNamespace('exif') . ':' . 'flash':
                 $flash = new Zend_Gdata_Exif_Extension_Flash();
                 $flash->transferFromDOM($child);
                 $this->_flash = $flash;
                 break;
-            case $this->lookupNamespace('exif') . ':' . 'focallength';
+            case $this->lookupNamespace('exif') . ':' . 'focallength':
                 $focalLength = new Zend_Gdata_Exif_Extension_FocalLength();
                 $focalLength->transferFromDOM($child);
                 $this->_focalLength = $focalLength;
                 break;
-            case $this->lookupNamespace('exif') . ':' . 'fstop';
+            case $this->lookupNamespace('exif') . ':' . 'fstop':
                 $fStop = new Zend_Gdata_Exif_Extension_FStop();
                 $fStop->transferFromDOM($child);
                 $this->_fStop = $fStop;
                 break;
-            case $this->lookupNamespace('exif') . ':' . 'imageUniqueID';
+            case $this->lookupNamespace('exif') . ':' . 'imageUniqueID':
                 $imageUniqueId = new Zend_Gdata_Exif_Extension_ImageUniqueId();
                 $imageUniqueId->transferFromDOM($child);
                 $this->_imageUniqueId = $imageUniqueId;
                 break;
-            case $this->lookupNamespace('exif') . ':' . 'iso';
+            case $this->lookupNamespace('exif') . ':' . 'iso':
                 $iso = new Zend_Gdata_Exif_Extension_Iso();
                 $iso->transferFromDOM($child);
                 $this->_iso = $iso;
                 break;
-            case $this->lookupNamespace('exif') . ':' . 'make';
+            case $this->lookupNamespace('exif') . ':' . 'make':
                 $make = new Zend_Gdata_Exif_Extension_Make();
                 $make->transferFromDOM($child);
                 $this->_make = $make;
                 break;
-            case $this->lookupNamespace('exif') . ':' . 'model';
+            case $this->lookupNamespace('exif') . ':' . 'model':
                 $model = new Zend_Gdata_Exif_Extension_Model();
                 $model->transferFromDOM($child);
                 $this->_model = $model;
                 break;
-            case $this->lookupNamespace('exif') . ':' . 'time';
+            case $this->lookupNamespace('exif') . ':' . 'time':
                 $time = new Zend_Gdata_Exif_Extension_Time();
                 $time->transferFromDOM($child);
                 $this->_time = $time;
@@ -331,7 +354,8 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
     /**
      * Set the value for this element's distance attribute.
      *
-     * @param Zend_Gdata_Exif_Extension_Distance $value The desired value for this attribute.
+     * @param Zend_Gdata_Exif_Extension_Distance $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Exif_Extension_Tags Provides a fluent interface
      */
     public function setDistance($value)
@@ -354,7 +378,8 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
     /**
      * Set the value for this element's exposure attribute.
      *
-     * @param Zend_Gdata_Exif_Extension_Exposure $value The desired value for this attribute.
+     * @param Zend_Gdata_Exif_Extension_Exposure $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Exif_Extension_Tags Provides a fluent interface
      */
     public function setExposure($value)
@@ -377,7 +402,8 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
     /**
      * Set the value for this element's flash attribute.
      *
-     * @param Zend_Gdata_Exif_Extension_Flash $value The desired value for this attribute.
+     * @param Zend_Gdata_Exif_Extension_Flash $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Exif_Extension_Tags Provides a fluent interface
      */
     public function setFlash($value)
@@ -400,7 +426,8 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
     /**
      * Set the value for this element's focalLength attribute.
      *
-     * @param Zend_Gdata_Exif_Extension_FocalLength $value The desired value for this attribute.
+     * @param Zend_Gdata_Exif_Extension_FocalLength $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Exif_Extension_Tags Provides a fluent interface
      */
     public function setFocalLength($value)
@@ -423,7 +450,8 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
     /**
      * Set the value for this element's fStop attribute.
      *
-     * @param Zend_Gdata_Exif_Extension_FStop $value The desired value for this attribute.
+     * @param Zend_Gdata_Exif_Extension_FStop $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Exif_Extension_Tags Provides a fluent interface
      */
     public function setFStop($value)
@@ -446,7 +474,8 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
     /**
      * Set the value for this element's imageUniqueId attribute.
      *
-     * @param Zend_Gdata_Exif_Extension_ImageUniqueId $value The desired value for this attribute.
+     * @param Zend_Gdata_Exif_Extension_ImageUniqueId $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Exif_Extension_Tags Provides a fluent interface
      */
     public function setImageUniqueId($value)
@@ -469,7 +498,8 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
     /**
      * Set the value for this element's iso attribute.
      *
-     * @param Zend_Gdata_Exif_Extension_Iso $value The desired value for this attribute.
+     * @param Zend_Gdata_Exif_Extension_Iso $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Exif_Extension_Tags Provides a fluent interface
      */
     public function setIso($value)
@@ -477,6 +507,7 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
         $this->_iso = $value;
         return $this;
     }
+
     /**
      * Get the value for this element's make attribute.
      *
@@ -491,7 +522,8 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
     /**
      * Set the value for this element's make attribute.
      *
-     * @param Zend_Gdata_Exif_Extension_Make $value The desired value for this attribute.
+     * @param Zend_Gdata_Exif_Extension_Make $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Exif_Extension_Tags Provides a fluent interface
      */
     public function setMake($value)
@@ -514,7 +546,8 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
     /**
      * Set the value for this element's model attribute.
      *
-     * @param Zend_Gdata_Exif_Extension_Model $value The desired value for this attribute.
+     * @param Zend_Gdata_Exif_Extension_Model $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Exif_Extension_Tags Provides a fluent interface
      */
     public function setModel($value)
@@ -537,7 +570,8 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
     /**
      * Set the value for this element's time attribute.
      *
-     * @param Zend_Gdata_Exif_Extension_Time $value The desired value for this attribute.
+     * @param Zend_Gdata_Exif_Extension_Time $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Exif_Extension_Tags Provides a fluent interface
      */
     public function setTime($value)
@@ -545,5 +579,4 @@ class Zend_Gdata_Exif_Extension_Tags extends Zend_Gdata_Extension
         $this->_time = $value;
         return $this;
     }
-
 }

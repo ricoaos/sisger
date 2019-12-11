@@ -22,11 +22,13 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
 
 /**
+ *
  * @see Zend_Gdata_Photos
  */
 require_once 'Zend/Gdata/Photos.php';
@@ -35,22 +37,24 @@ require_once 'Zend/Gdata/Photos.php';
  * Represents the gphoto:nickname element used by the API.
  * This class represents the nickname for a user.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Photos
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Photos_Extension_Nickname extends Zend_Gdata_Extension
 {
 
     protected $_rootNamespace = 'gphoto';
+
     protected $_rootElement = 'nickname';
 
     /**
      * Constructs a new Zend_Gdata_Photos_Extension_Nickname object.
      *
-     * @param string $text (optional) The value being represented.
+     * @param string $text
+     *            (optional) The value being represented.
      */
     public function __construct($text = null)
     {
@@ -58,5 +62,4 @@ class Zend_Gdata_Photos_Extension_Nickname extends Zend_Gdata_Extension
         parent::__construct();
         $this->setText($text);
     }
-
 }

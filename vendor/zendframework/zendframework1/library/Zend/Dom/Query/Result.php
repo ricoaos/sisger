@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,50 +22,58 @@
 /**
  * Results for DOM XPath query
  *
- * @package    Zend_Dom
+ * @package Zend_Dom
  * @subpackage Query
- * @uses       Iterator
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @uses Iterator
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id$
  */
-class Zend_Dom_Query_Result implements Iterator,Countable
+class Zend_Dom_Query_Result implements Iterator, Countable
 {
+
     /**
      * Number of results
+     * 
      * @var int
      */
     protected $_count;
 
     /**
      * CSS Selector query
+     * 
      * @var string
      */
     protected $_cssQuery;
 
     /**
+     *
      * @var DOMDocument
      */
     protected $_document;
 
     /**
+     *
      * @var DOMNodeList
      */
     protected $_nodeList;
 
     /**
      * Current iterator position
+     * 
      * @var int
      */
     protected $_position = 0;
 
     /**
+     *
      * @var DOMXPath
      */
     protected $_xpath;
 
     /**
      * XPath query
+     * 
      * @var string
      */
     protected $_xpathQuery;
@@ -72,17 +81,17 @@ class Zend_Dom_Query_Result implements Iterator,Countable
     /**
      * Constructor
      *
-     * @param  string $cssQuery
-     * @param  string|array $xpathQuery
-     * @param  DOMDocument $document
-     * @param  DOMNodeList $nodeList
+     * @param string $cssQuery            
+     * @param string|array $xpathQuery            
+     * @param DOMDocument $document            
+     * @param DOMNodeList $nodeList            
      */
-    public function  __construct($cssQuery, $xpathQuery, DOMDocument $document, DOMNodeList $nodeList)
+    public function __construct($cssQuery, $xpathQuery, DOMDocument $document, DOMNodeList $nodeList)
     {
-        $this->_cssQuery   = $cssQuery;
+        $this->_cssQuery = $cssQuery;
         $this->_xpathQuery = $xpathQuery;
-        $this->_document   = $document;
-        $this->_nodeList   = $nodeList;
+        $this->_document = $document;
+        $this->_nodeList = $nodeList;
     }
 
     /**
@@ -166,7 +175,7 @@ class Zend_Dom_Query_Result implements Iterator,Countable
      */
     public function next()
     {
-        ++$this->_position;
+        ++ $this->_position;
         return $this->_nodeList->item($this->_position);
     }
 

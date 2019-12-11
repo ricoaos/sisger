@@ -21,10 +21,12 @@
  */
 
 /**
+ *
  * @see Zend_Ldap_Node_Schema_Item
  */
 require_once 'Zend/Ldap/Node/Schema/Item.php';
 /**
+ *
  * @see Zend_Ldap_Node_Schema_ObjectClass_Interface
  */
 require_once 'Zend/Ldap/Node/Schema/ObjectClass/Interface.php';
@@ -33,28 +35,28 @@ require_once 'Zend/Ldap/Node/Schema/ObjectClass/Interface.php';
  * Zend_Ldap_Node_Schema_ObjectClass_OpenLdap provides access to the objectClass
  * schema information on an OpenLDAP server.
  *
- * @category   Zend
- * @package    Zend_Ldap
+ * @category Zend
+ * @package Zend_Ldap
  * @subpackage Schema
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Ldap_Node_Schema_ObjectClass_OpenLdap extends Zend_Ldap_Node_Schema_Item
-    implements Zend_Ldap_Node_Schema_ObjectClass_Interface
+class Zend_Ldap_Node_Schema_ObjectClass_OpenLdap extends Zend_Ldap_Node_Schema_Item implements Zend_Ldap_Node_Schema_ObjectClass_Interface
 {
+
     /**
      * All inherited "MUST" attributes
      *
      * @var array
      */
     protected $_inheritedMust = null;
+
     /**
      * All inherited "MAY" attributes
      *
      * @var array
      */
     protected $_inheritedMay = null;
-
 
     /**
      * Gets the objectClass name

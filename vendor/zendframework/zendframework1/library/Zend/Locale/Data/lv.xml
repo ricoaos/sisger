@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9967 $"/>
-		<generation date="$Date: 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014) $"/>
-		<language type="lv"/>
+		<version number="$Revision: 9967 $" />
+		<generation date="$Date: 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014) $" />
+		<language type="lv" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -957,7 +956,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armn" key="numbers">Armēņu cipari</type>
 			<type type="armnlow" key="numbers">Mazie armēņu cipari</type>
 			<type type="beng" key="numbers">Bengāļu cipari</type>
-			<type type="big5han" key="collation">tradicionālās ķīniešu valodas kārtošanas secība - Big5</type>
+			<type type="big5han" key="collation">tradicionālās ķīniešu valodas
+				kārtošanas secība - Big5</type>
 			<type type="buddhist" key="calendar">budistu kalendārs</type>
 			<type type="chinese" key="calendar">ķīniešu kalendārs</type>
 			<type type="coptic" key="calendar">Koptu kalendārs</type>
@@ -965,13 +965,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="deva" key="numbers">Devanāgarī cipari</type>
 			<type type="dictionary" key="collation">Vārdnīcas kārtošanas secība</type>
 			<type type="ducet" key="collation">Noklusējuma unikoda kārtošanas secība</type>
-			<type type="eor" key="collation" draft="unconfirmed">kārtošanas secība daudzvalodu Eiropas dokumentiem</type>
+			<type type="eor" key="collation" draft="unconfirmed">kārtošanas secība
+				daudzvalodu Eiropas dokumentiem</type>
 			<type type="ethi" key="numbers">Etiopiešu cipari</type>
 			<type type="ethiopic" key="calendar">Etiopiešu kalendārs</type>
 			<type type="ethiopic-amete-alem" key="calendar">Etiopiešu kalendārs</type>
 			<type type="finance" key="numbers">Finanšu cipari</type>
 			<type type="fullwide" key="numbers">Pilna platuma cipari</type>
-			<type type="gb2312han" key="collation">vienkāršotās ķīniešu valodas kārtošanas secība - GB2312</type>
+			<type type="gb2312han" key="collation">vienkāršotās ķīniešu valodas
+				kārtošanas secība - GB2312</type>
 			<type type="geor" key="numbers">Gruzīnu cipari</type>
 			<type type="gregorian" key="calendar">Gregora kalendārs</type>
 			<type type="grek" key="numbers">Grieķu cipari</type>
@@ -980,9 +982,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers">Gurmuki cipari</type>
 			<type type="hanidec" key="numbers">Ķīniešu decimāldaļskaitļi</type>
 			<type type="hans" key="numbers">Vienkāršotie ķīniešu cipari</type>
-			<type type="hansfin" key="numbers">Vienkāršotie ķīniešu cipari finanšu dokumentiem</type>
+			<type type="hansfin" key="numbers">Vienkāršotie ķīniešu cipari finanšu
+				dokumentiem</type>
 			<type type="hant" key="numbers">Tradicionālie ķīniešu cipari</type>
-			<type type="hantfin" key="numbers">Tradicionālie ķīniešu cipari finanšu dokumentiem</type>
+			<type type="hantfin" key="numbers">Tradicionālie ķīniešu cipari finanšu
+				dokumentiem</type>
 			<type type="hebr" key="numbers">Ivrita cipari</type>
 			<type type="hebrew" key="calendar">ebreju kalendārs</type>
 			<type type="identical" key="colStrength">Kārtot visus</type>
@@ -1015,7 +1019,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="phonetic" key="collation">Fonētiskā kārtošanas secība</type>
 			<type type="pinyin" key="collation">piņjiņa kārtošanas secība</type>
 			<type type="primary" key="colStrength">Kārtot tikai pamata burtus</type>
-			<type type="quaternary" key="colStrength">Kārtot diakritiskās zīmes/reģistrjutīgās rakstzīmes/rakstzīmes pēc platuma/Kana rakstzīmes</type>
+			<type type="quaternary" key="colStrength">Kārtot diakritiskās
+				zīmes/reģistrjutīgās rakstzīmes/rakstzīmes pēc platuma/Kana
+				rakstzīmes</type>
 			<type type="reformed" key="collation">Reformētā kārtošanas secība</type>
 			<type type="roc" key="calendar">Ķīnas Republikas kalendārs</type>
 			<type type="roman" key="numbers">Romiešu cipari</type>
@@ -1029,12 +1035,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">Tamilu tradicionālie cipari</type>
 			<type type="tamldec" key="numbers">Tamilu cipari</type>
 			<type type="telu" key="numbers">Telugu cipari</type>
-			<type type="tertiary" key="colStrength">Kārtot diakritiskās zīmes/reģistrjutīgās rakstzīmes/rakstzīmes pēc platuma</type>
+			<type type="tertiary" key="colStrength">Kārtot diakritiskās
+				zīmes/reģistrjutīgās rakstzīmes/rakstzīmes pēc platuma</type>
 			<type type="thai" key="numbers">Tajiešu cipari</type>
 			<type type="tibt" key="numbers">Tibetiešu cipari</type>
 			<type type="traditional" key="collation">tradicionālā kārtošanas secība</type>
 			<type type="traditional" key="numbers">Tradicionālā ciparu sistēma</type>
-			<type type="unihan" key="collation">Radikālā kārtošanas secība pēc vilkumu skaita</type>
+			<type type="unihan" key="collation">Radikālā kārtošanas secība pēc vilkumu
+				skaita</type>
 			<type type="upper" key="colCaseFirst">Kārtot pēc pirmā lielā burta</type>
 			<type type="vaii" key="numbers">VAI cipari</type>
 			<type type="yes" key="colBackwards">Kārtot diakritiskās zīmes apgrieztā secībā</type>
@@ -1067,10 +1075,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a ā b c č d e ē f g ģ h i ī j k ķ l ļ m n ņ o p r s š t u ū v z ž]</exemplarCharacters>
+		<exemplarCharacters>[a ā b c č d e ē f g ģ h i ī j k ķ l ļ m n ņ o p r
+			s š t u ū v z ž]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[y ō q ŗ w x]</exemplarCharacters>
-		<exemplarCharacters type="index">[A Ā B C Č D E Ē F G Ģ H I Ī Y J K Ķ L Ļ M N Ņ O P Q R S Š T U Ū V W X Z Ž]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ ‚ &quot; “ ” „ ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters type="index">[A Ā B C Č D E Ē F G Ģ H I
+			Ī Y J K Ķ L Ļ M N Ņ O P Q R S Š T U Ū V W X Z Ž]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ’ ‚ &quot; “ ” „ ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1237,27 +1248,37 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">dd.MM.y.–dd.MM.y. GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, dd.MM.y.–E, dd.MM.y. GGGGG</greatestDifference>
-							<greatestDifference id="M">E, dd.MM.y.–E, dd.MM.y. GGGGG</greatestDifference>
-							<greatestDifference id="y">E, dd.MM.y.–E, dd.MM.y. GGGGG</greatestDifference>
+							<greatestDifference id="d">E, dd.MM.y.–E, dd.MM.y.
+								GGGGG</greatestDifference>
+							<greatestDifference id="M">E, dd.MM.y.–E, dd.MM.y.
+								GGGGG</greatestDifference>
+							<greatestDifference id="y">E, dd.MM.y.–E, dd.MM.y.
+								GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">y. 'gada' MMM–MMM G</greatestDifference>
-							<greatestDifference id="y">y. 'gada' MMM–y. 'gada' MMM G</greatestDifference>
+							<greatestDifference id="y">y. 'gada' MMM–y. 'gada'
+								MMM G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">y. 'gada' d.–d. MMM G</greatestDifference>
-							<greatestDifference id="M">y. 'gada' d. MMM–d. MMM G</greatestDifference>
-							<greatestDifference id="y">y. 'gada' d. MMM–y. 'gada' d. MMM G</greatestDifference>
+							<greatestDifference id="M">y. 'gada' d. MMM–d. MMM
+								G</greatestDifference>
+							<greatestDifference id="y">y. 'gada' d. MMM–y.
+								'gada' d. MMM G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, y. 'gada' d. MMM–E, y. 'gada' d. MMM G</greatestDifference>
-							<greatestDifference id="M">E, y. 'gada' d. MMM–E, y. 'gada' d. MMM G</greatestDifference>
-							<greatestDifference id="y">E, y. 'gada' d. MMM–E, y. 'gada' d. MMM G</greatestDifference>
+							<greatestDifference id="d">E, y. 'gada' d. MMM–E,
+								y. 'gada' d. MMM G</greatestDifference>
+							<greatestDifference id="M">E, y. 'gada' d. MMM–E,
+								y. 'gada' d. MMM G</greatestDifference>
+							<greatestDifference id="y">E, y. 'gada' d. MMM–E,
+								y. 'gada' d. MMM G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">y. 'gada' MMMM–MMMM G</greatestDifference>
-							<greatestDifference id="y">y. 'gada' MMMM–y. 'gada' MMMM G</greatestDifference>
+							<greatestDifference id="y">y. 'gada' MMMM–y.
+								'gada' MMMM G</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -1675,27 +1696,37 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">dd.MM.y.–dd.MM.y.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, dd.MM.y. – E, dd.MM.y.</greatestDifference>
-							<greatestDifference id="M">E, dd.MM.y. – E, dd.MM.y.</greatestDifference>
-							<greatestDifference id="y">E, dd.MM.y. – E, dd.MM.y.</greatestDifference>
+							<greatestDifference id="d">E, dd.MM.y. – E,
+								dd.MM.y.</greatestDifference>
+							<greatestDifference id="M">E, dd.MM.y. – E,
+								dd.MM.y.</greatestDifference>
+							<greatestDifference id="y">E, dd.MM.y. – E,
+								dd.MM.y.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">y. 'gada' MMM–MMM</greatestDifference>
-							<greatestDifference id="y">y. 'gada' MMM – y. 'gada' MMM</greatestDifference>
+							<greatestDifference id="y">y. 'gada' MMM – y.
+								'gada' MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">y. 'gada' d.–d. MMM</greatestDifference>
-							<greatestDifference id="M">y. 'gada' d. MMM – d. MMM</greatestDifference>
-							<greatestDifference id="y">y. 'gada' d. MMM – y. 'gada' d. MMM</greatestDifference>
+							<greatestDifference id="M">y. 'gada' d. MMM – d.
+								MMM</greatestDifference>
+							<greatestDifference id="y">y. 'gada' d. MMM – y.
+								'gada' d. MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, y. 'gada' d. MMM – E, y. 'gada' d. MMM</greatestDifference>
-							<greatestDifference id="M">E, y. 'gada' d. MMM – E, y. 'gada' d. MMM</greatestDifference>
-							<greatestDifference id="y">E, y. 'gada' d. MMM – E, y. 'gada' d. MMM</greatestDifference>
+							<greatestDifference id="d">E, y. 'gada' d. MMM –
+								E, y. 'gada' d. MMM</greatestDifference>
+							<greatestDifference id="M">E, y. 'gada' d. MMM –
+								E, y. 'gada' d. MMM</greatestDifference>
+							<greatestDifference id="y">E, y. 'gada' d. MMM –
+								E, y. 'gada' d. MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">y. 'gada' MMMM–MMMM</greatestDifference>
-							<greatestDifference id="y">y. 'gada' MMMM – y. 'gada' MMMM</greatestDifference>
+							<greatestDifference id="y">y. 'gada' MMMM – y.
+								'gada' MMMM</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>

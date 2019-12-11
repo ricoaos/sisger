@@ -19,7 +19,9 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_Form_Decorator_Abstract */
+/**
+ * Zend_Form_Decorator_Abstract
+ */
 require_once 'Zend/Form/Decorator/Abstract.php';
 
 /**
@@ -32,29 +34,38 @@ require_once 'Zend/Form/Decorator/Abstract.php';
  *
  * Any other options passed will be used as HTML attributes of the image tag.
  *
- * @category   Zend
- * @package    Zend_Form
+ * @category Zend
+ * @package Zend_Form
  * @subpackage Decorator
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Image.php 23775 2011-03-01 17:25:24Z ralph $
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id: Image.php 23775 2011-03-01 17:25:24Z ralph $
  */
 class Zend_Form_Decorator_Image extends Zend_Form_Decorator_Abstract
 {
+
     /**
      * Attributes that should not be passed to helper
+     * 
      * @var array
      */
-    protected $_attribBlacklist = array('helper', 'placement', 'separator', 'tag');
+    protected $_attribBlacklist = array(
+        'helper',
+        'placement',
+        'separator',
+        'tag'
+    );
 
     /**
      * Default placement: append
+     * 
      * @var string
      */
     protected $_placement = 'APPEND';
 
     /**
      * HTML tag with which to surround image
+     * 
      * @var string
      */
     protected $_tag;
@@ -62,7 +73,7 @@ class Zend_Form_Decorator_Image extends Zend_Form_Decorator_Abstract
     /**
      * Set HTML tag with which to surround label
      *
-     * @param  string $tag
+     * @param string $tag            
      * @return Zend_Form_Decorator_Image
      */
     public function setTag($tag)
@@ -86,7 +97,7 @@ class Zend_Form_Decorator_Image extends Zend_Form_Decorator_Abstract
             }
             return $tag;
         }
-
+        
         return $this->_tag;
     }
 
@@ -98,51 +109,53 @@ class Zend_Form_Decorator_Image extends Zend_Form_Decorator_Abstract
     public function getAttribs()
     {
         $attribs = $this->getOptions();
-
+        
         if (null !== ($element = $this->getElement())) {
             $attribs['alt'] = $element->getLabel();
             $attribs = array_merge($attribs, $element->getAttribs());
         }
-
+        
         foreach ($this->_attribBlacklist as $key) {
             if (array_key_exists($key, $attribs)) {
                 unset($attribs[$key]);
             }
         }
-
+        
         return $attribs;
     }
 
     /**
      * Render a form image
      *
-     * @param  string $content
+     * @param string $content            
      * @return string
      */
     public function render($content)
     {
         $element = $this->getElement();
-        $view    = $element->getView();
+        $view = $element->getView();
         if (null === $view) {
             return $content;
         }
-
-        $tag           = $this->getTag();
-        $placement     = $this->getPlacement();
-        $separator     = $this->getSeparator();
-        $name          = $element->getFullyQualifiedName();
-        $attribs       = $this->getAttribs();
+        
+        $tag = $this->getTag();
+        $placement = $this->getPlacement();
+        $separator = $this->getSeparator();
+        $name = $element->getFullyQualifiedName();
+        $attribs = $this->getAttribs();
         $attribs['id'] = $element->getId();
-
+        
         $image = $view->formImage($name, $element->getImageValue(), $attribs);
-
+        
         if (null !== $tag) {
             require_once 'Zend/Form/Decorator/HtmlTag.php';
             $decorator = new Zend_Form_Decorator_HtmlTag();
-            $decorator->setOptions(array('tag' => $tag));
+            $decorator->setOptions(array(
+                'tag' => $tag
+            ));
             $image = $decorator->render($image);
         }
-
+        
         switch ($placement) {
             case self::PREPEND:
                 return $image . $separator . $content;

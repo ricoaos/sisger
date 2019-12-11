@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -19,16 +20,16 @@
  * @version    $Id$
  */
 
-
 /**
  * Container which collects updated object info.
  *
- * @package    Zend_Pdf
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @package Zend_Pdf
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Pdf_UpdateInfoContainer
 {
+
     /**
      * Object number
      *
@@ -42,7 +43,6 @@ class Zend_Pdf_UpdateInfoContainer
      * @var integer
      */
     private $_genNum;
-
 
     /**
      * Flag, which signals, that object is free
@@ -61,14 +61,14 @@ class Zend_Pdf_UpdateInfoContainer
     /**
      * Object constructor
      *
-     * @param integer $objCount
+     * @param integer $objCount            
      */
     public function __construct($objNum, $genNum, $isFree, $dump = null)
     {
         $this->_objNum = $objNum;
         $this->_genNum = $genNum;
         $this->_isFree = $isFree;
-
+        
         if ($dump !== null) {
             if (strlen($dump) > 1024) {
                 require_once 'Zend/Pdf.php';
@@ -78,7 +78,6 @@ class Zend_Pdf_UpdateInfoContainer
             }
         }
     }
-
 
     /**
      * Get object number
@@ -120,11 +119,11 @@ class Zend_Pdf_UpdateInfoContainer
         if ($this->_dump === null) {
             return '';
         }
-
+        
         if (is_string($this->_dump)) {
             return $this->_dump;
         }
-
+        
         return $this->_dump->getRef();
     }
 }

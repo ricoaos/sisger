@@ -19,29 +19,34 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_Form_Element */
+/**
+ * Zend_Form_Element
+ */
 require_once 'Zend/Form/Element.php';
 
 /**
  * Base element for dijit elements
  *
- * @category   Zend
- * @package    Zend_Dojo
+ * @category Zend
+ * @package Zend_Dojo
  * @subpackage Form_Element
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Dijit.php 23775 2011-03-01 17:25:24Z ralph $
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id: Dijit.php 23775 2011-03-01 17:25:24Z ralph $
  */
 abstract class Zend_Dojo_Form_Element_Dijit extends Zend_Form_Element
 {
+
     /**
      * Dijit parameters
+     * 
      * @var array
      */
     public $dijitParams = array();
 
     /**
      * View helper to use
+     * 
      * @var string
      */
     public $helper;
@@ -50,8 +55,8 @@ abstract class Zend_Dojo_Form_Element_Dijit extends Zend_Form_Element
      * Constructor
      *
      * @todo Should we set dojo view helper paths here?
-     * @param  mixed $spec
-     * @param  mixed $options
+     * @param mixed $spec            
+     * @param mixed $options            
      * @return void
      */
     public function __construct($spec, $options = null)
@@ -63,8 +68,8 @@ abstract class Zend_Dojo_Form_Element_Dijit extends Zend_Form_Element
     /**
      * Set a dijit parameter
      *
-     * @param  string $key
-     * @param  mixed $value
+     * @param string $key            
+     * @param mixed $value            
      * @return Zend_Dojo_Form_Element_Dijit
      */
     public function setDijitParam($key, $value)
@@ -77,7 +82,7 @@ abstract class Zend_Dojo_Form_Element_Dijit extends Zend_Form_Element
     /**
      * Set multiple dijit params at once
      *
-     * @param  array $params
+     * @param array $params            
      * @return Zend_Dojo_Form_Element_Dijit
      */
     public function setDijitParams(array $params)
@@ -89,7 +94,7 @@ abstract class Zend_Dojo_Form_Element_Dijit extends Zend_Form_Element
     /**
      * Does the given dijit parameter exist?
      *
-     * @param  string $key
+     * @param string $key            
      * @return bool
      */
     public function hasDijitParam($key)
@@ -100,7 +105,7 @@ abstract class Zend_Dojo_Form_Element_Dijit extends Zend_Form_Element
     /**
      * Get a single dijit parameter
      *
-     * @param  string $key
+     * @param string $key            
      * @return mixed
      */
     public function getDijitParam($key)
@@ -125,7 +130,7 @@ abstract class Zend_Dojo_Form_Element_Dijit extends Zend_Form_Element
     /**
      * Remove a single dijit parameter
      *
-     * @param  string $key
+     * @param string $key            
      * @return Zend_Dojo_Form_Element_Dijit
      */
     public function removeDijitParam($key)
@@ -158,14 +163,21 @@ abstract class Zend_Dojo_Form_Element_Dijit extends Zend_Form_Element
         if ($this->loadDefaultDecoratorsIsDisabled()) {
             return;
         }
-
+        
         $decorators = $this->getDecorators();
         if (empty($decorators)) {
             $this->addDecorator('DijitElement')
-                 ->addDecorator('Errors')
-                 ->addDecorator('Description', array('tag' => 'p', 'class' => 'description'))
-                 ->addDecorator('HtmlTag', array('tag' => 'dd'))
-                 ->addDecorator('Label', array('tag' => 'dt'));
+                ->addDecorator('Errors')
+                ->addDecorator('Description', array(
+                'tag' => 'p',
+                'class' => 'description'
+            ))
+                ->addDecorator('HtmlTag', array(
+                'tag' => 'dd'
+            ))
+                ->addDecorator('Label', array(
+                'tag' => 'dt'
+            ));
         }
     }
 
@@ -174,7 +186,7 @@ abstract class Zend_Dojo_Form_Element_Dijit extends Zend_Form_Element
      *
      * Ensures that the view object has the dojo view helper path set.
      *
-     * @param  Zend_View_Interface $view
+     * @param Zend_View_Interface $view            
      * @return Zend_Dojo_Form_Element_Dijit
      */
     public function setView(Zend_View_Interface $view = null)

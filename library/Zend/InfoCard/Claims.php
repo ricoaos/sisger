@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -23,13 +24,14 @@
  * Result value of the InfoCard component, contains any error messages and claims
  * from the processing of an information card.
  *
- * @category   Zend
- * @package    Zend_InfoCard
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_InfoCard
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_InfoCard_Claims
 {
+
     /**
      * Successful validation and extraion of claims
      */
@@ -50,7 +52,7 @@ class Zend_InfoCard_Claims
      *
      * @var string
      */
-    protected $_defaultNamespace  = null;
+    protected $_defaultNamespace = null;
 
     /**
      * A boolean indicating if the claims should be consider "valid" or not based on processing
@@ -104,7 +106,8 @@ class Zend_InfoCard_Claims
     }
 
     /**
-     * Retrieves the default namespace used in this information card. If a default namespace was not
+     * Retrieves the default namespace used in this information card.
+     * If a default namespace was not
      * set, it figures out which one to consider 'default' by taking the first namespace sorted by use-count
      * in claims
      *
@@ -113,29 +116,29 @@ class Zend_InfoCard_Claims
      */
     public function getDefaultNamespace()
     {
-        if($this->_defaultNamespace === null) {
+        if ($this->_defaultNamespace === null) {
             $namespaces = array();
             $leader = '';
-            foreach($this->_claims as $claim) {
-                if(!isset($namespaces[$claim['namespace']])) {
+            foreach ($this->_claims as $claim) {
+                if (! isset($namespaces[$claim['namespace']])) {
                     $namespaces[$claim['namespace']] = 1;
                 } else {
-                    $namespaces[$claim['namespace']]++;
+                    $namespaces[$claim['namespace']] ++;
                 }
-
-                if(empty($leader) || ($namespaces[$claim['namespace']] > $leader)) {
+                
+                if (empty($leader) || ($namespaces[$claim['namespace']] > $leader)) {
                     $leader = $claim['namespace'];
                 }
             }
-
-            if(empty($leader)) {
+            
+            if (empty($leader)) {
                 require_once 'Zend/InfoCard/Exception.php';
                 throw new Zend_InfoCard_Exception("Failed to determine default namespace");
             }
-
+            
             $this->setDefaultNamespace($leader);
         }
-
+        
         return $this->_defaultNamespace;
     }
 
@@ -143,19 +146,19 @@ class Zend_InfoCard_Claims
      * Set the default namespace, overriding any existing default
      *
      * @throws Zend_InfoCard_Exception
-     * @param string $namespace The default namespace to use
+     * @param string $namespace
+     *            The default namespace to use
      * @return Zend_InfoCard_Claims
      */
     public function setDefaultNamespace($namespace)
     {
-
-        foreach($this->_claims as $claim) {
-            if($namespace == $claim['namespace']) {
+        foreach ($this->_claims as $claim) {
+            if ($namespace == $claim['namespace']) {
                 $this->_defaultNamespace = $namespace;
                 return $this;
             }
         }
-
+        
         require_once 'Zend/InfoCard/Exception.php';
         throw new Zend_InfoCard_Exception("At least one claim must exist in specified namespace to make it the default namespace");
     }
@@ -173,7 +176,8 @@ class Zend_InfoCard_Claims
     /**
      * Set the error message contained within the claims object
      *
-     * @param string $error The error message
+     * @param string $error
+     *            The error message
      * @return Zend_InfoCard_Claims
      */
     public function setError($error)
@@ -194,20 +198,21 @@ class Zend_InfoCard_Claims
     }
 
     /**
-     * Set the claims for the claims object. Can only be set once and is done
+     * Set the claims for the claims object.
+     * Can only be set once and is done
      * by the component itself. Internal use only.
      *
      * @throws Zend_InfoCard_Exception
-     * @param array $claims
+     * @param array $claims            
      * @return Zend_InfoCard_Claims
      */
     public function setClaims(Array $claims)
     {
-        if($this->_claims !== null) {
+        if ($this->_claims !== null) {
             require_once 'Zend/InfoCard/Exception.php';
             throw new Zend_InfoCard_Exception("Claim objects are read-only");
         }
-
+        
         $this->_claims = $claims;
         return $this;
     }
@@ -216,19 +221,20 @@ class Zend_InfoCard_Claims
      * Set the result code of the claims object.
      *
      * @throws Zend_InfoCard_Exception
-     * @param int $code The result code
+     * @param int $code
+     *            The result code
      * @return Zend_InfoCard_Claims
      */
     public function setCode($code)
     {
-        switch($code) {
+        switch ($code) {
             case self::RESULT_PROCESSING_FAILURE:
             case self::RESULT_SUCCESS:
             case self::RESULT_VALIDATION_FAILURE:
                 $this->_code = $code;
                 return $this;
         }
-
+        
         require_once 'Zend/InfoCard/Exception.php';
         throw new Zend_InfoCard_Exception("Attempted to set unknown error code");
     }
@@ -246,22 +252,24 @@ class Zend_InfoCard_Claims
     /**
      * Get a claim by providing its complete claim URI
      *
-     * @param string $claimURI The complete claim URI to retrieve
+     * @param string $claimURI
+     *            The complete claim URI to retrieve
      * @return mixed The claim matching that specific URI or null if not found
      */
     public function getClaim($claimURI)
     {
-        if($this->claimExists($claimURI)) {
+        if ($this->claimExists($claimURI)) {
             return $this->_claims[$claimURI]['value'];
         }
-
+        
         return null;
     }
 
     /**
      * Indicates if a specific claim URI exists or not within the object
      *
-     * @param string $claimURI The complete claim URI to check
+     * @param string $claimURI
+     *            The complete claim URI to check
      * @return bool true if the claim exists, false if not found
      */
     public function claimExists($claimURI)
@@ -271,6 +279,7 @@ class Zend_InfoCard_Claims
 
     /**
      * Magic helper function
+     * 
      * @throws Zend_InfoCard_Exception
      */
     public function __unset($k)
@@ -297,6 +306,7 @@ class Zend_InfoCard_Claims
 
     /**
      * Magic helper function
+     * 
      * @throws Zend_InfoCard_Exception
      */
     public function __set($k, $v)

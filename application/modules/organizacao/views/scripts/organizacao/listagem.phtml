@@ -4,74 +4,85 @@
 	<div class="content-wrapper">
 		<div class="row">
 			<div class="col-lg-12 heading">
-                <h1 class="page-header"><i class="ec-pencil2"></i>Listar Empresas</h1>
-                <ul id="crumb" class="breadcrumb">
-                </ul>
-                <div class="option-buttons">
-                    <div class="btn-toolbar" role="toolbar">
-                        <div class="btn-group">
-                            <a class="btn dropdown-toggle" id="dropdownMenu1" href="<?php echo $this->baseUrl('/organizacao/organizacao/')?>">
+				<h1 class="page-header">
+					<i class="ec-pencil2"></i>Listar Empresas
+				</h1>
+				<ul id="crumb" class="breadcrumb">
+				</ul>
+				<div class="option-buttons">
+					<div class="btn-toolbar" role="toolbar">
+						<div class="btn-group">
+							<a class="btn dropdown-toggle" id="dropdownMenu1"
+								href="<?php echo $this->baseUrl('/organizacao/organizacao/')?>">
 								<button class="btn btn-primary" type="button">Adicionar Empresa</button>
 							</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		
 		<?php if(!empty($this->rsOrganizacao)):?>		
 			<div class="outlet">
-    			<form class="form-horizontal group-border hover-stripped" role="form">
-					<div class="row">
-    					<div class="col-lg-12">
-							<div class="panel panel-default plain toggle panelClose panelRefresh">
-								<div class="panel-heading">
-									<h4 class="panel-title">Relatório</h4>
-								</div>
-								<div class="panel-body">
-									<table id="responsive-datatables" class="table table-bordered table-striped table-hover dt-responsive non-responsive">
-										<thead>
-											<tr>
-												<th>Registro</th>
-                                                <th>Nome</th>
-                                                <th>CNPJ</th>
-                                                <th>CNES</th>
-                                                <th>E-mail</th>
-                                                <th>Status</th>
-                                                <th>Ação</th>
-											</tr>
-										</thead>
-										<tbody>
+			<form class="form-horizontal group-border hover-stripped" role="form">
+				<div class="row">
+					<div class="col-lg-12">
+						<div
+							class="panel panel-default plain toggle panelClose panelRefresh">
+							<div class="panel-heading">
+								<h4 class="panel-title">Relatório</h4>
+							</div>
+							<div class="panel-body">
+								<table id="responsive-datatables"
+									class="table table-bordered table-striped table-hover dt-responsive non-responsive">
+									<thead>
+										<tr>
+											<th>Registro</th>
+											<th>Nome</th>
+											<th>CNPJ</th>
+											<th>CNES</th>
+											<th>E-mail</th>
+											<th>Status</th>
+											<th>Ação</th>
+										</tr>
+									</thead>
+									<tbody>
 											<?php foreach ($this->rsOrganizacao as $rsOrganizacao) : ?>
                                                 <tr>
-                                                	<td>
+											<td>
                                                 		<?php $imagem = !file_exists('../public/img/logo/'.$rsOrganizacao['st_logo']) || empty($rsOrganizacao['st_logo']) ?'/assets/img/user.png' : '/img/logo/'.$rsOrganizacao['st_logo'];?>
-                                                    	<img width="45" height="45" class="chat-avatar" src="<?php  echo $this->baseUrl($imagem)?>"><br/>
-                                                	</td>
-                                                    <td><?php echo $rsOrganizacao['st_nome_fantasia'] ?></td>
-                                                    <td><?php echo $rsOrganizacao['st_cnpj'] ?></td>
-                                                    <td><?php echo $rsOrganizacao['st_cnes'] ?></td>
-                                                    <td><?php echo $rsOrganizacao['st_email'] ?></td>
-                                                    <td><?php echo $rsOrganizacao['id_ativo'] ==1 ? 'ATIVO':'INATIVO';?></td>
-                                                    <td style="text-align: center;">
-                										<a href="<?php echo $this->baseUrl('/organizacao/organizacao/index/id/'.base64_encode($rsOrganizacao['id_organizacao']))?>"><span class="fa-edit s20" title="Editar Registro"></span></a> | 
-                										<a href="<?php echo $this->baseUrl('/organizacao/organizacao/inativarregistro/id/'.base64_encode($rsOrganizacao['id_organizacao']))?>"><span class="fa-remove s20" title="Inativar Registro"></span></a>
-                                                    </td>
-                                                </tr>
+                                                    	<img width="45"
+												height="45" class="chat-avatar"
+												src="<?php  echo $this->baseUrl($imagem)?>"><br />
+											</td>
+											<td><?php echo $rsOrganizacao['st_nome_fantasia'] ?></td>
+											<td><?php echo $rsOrganizacao['st_cnpj'] ?></td>
+											<td><?php echo $rsOrganizacao['st_cnes'] ?></td>
+											<td><?php echo $rsOrganizacao['st_email'] ?></td>
+											<td><?php echo $rsOrganizacao['id_ativo'] ==1 ? 'ATIVO':'INATIVO';?></td>
+											<td style="text-align: center;"><a
+												href="<?php echo $this->baseUrl('/organizacao/organizacao/index/id/'.base64_encode($rsOrganizacao['id_organizacao']))?>"><span
+													class="fa-edit s20" title="Editar Registro"></span></a> | <a
+												href="<?php echo $this->baseUrl('/organizacao/organizacao/inativarregistro/id/'.base64_encode($rsOrganizacao['id_organizacao']))?>"><span
+													class="fa-remove s20" title="Inativar Registro"></span></a>
+											</td>
+										</tr>
                                             <?php endforeach; ?>
 										</tbody>
-									</table>
-								</div>
+								</table>
 							</div>
 						</div>
-    				</div>
-    			</form>
-    		</div>
+					</div>
+				</div>
+			</form>
+		</div>
 		<?php else :?>
 		
-            <div class="alert alert-info fade in" style="text-align: center;">
-                <strong>NÃO EXISTEM EMPRESAS CADASTRADAS, CLIQUE NO BOTÃO "LISTAR EMPRESA" PARA REALIZAR OS CADASTROS</strong>
-            </div>
+            <div class="alert alert-info fade in"
+			style="text-align: center;">
+			<strong>NÃO EXISTEM EMPRESAS CADASTRADAS, CLIQUE NO BOTÃO "LISTAR
+				EMPRESA" PARA REALIZAR OS CADASTROS</strong>
+		</div>
 		 
 		<?php endif;?>
 	</div>

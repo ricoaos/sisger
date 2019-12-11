@@ -28,14 +28,15 @@ require_once 'Zend/InfoCard/Cipher/Pki/Interface.php';
 /**
  * An abstract class for public-key ciphers
  *
- * @category   Zend
- * @package    Zend_InfoCard
+ * @category Zend
+ * @package Zend_InfoCard
  * @subpackage Zend_InfoCard_Cipher
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_InfoCard_Cipher_Pki_Adapter_Abstract implements Zend_InfoCard_Cipher_Pki_Interface
 {
+
     /**
      * OAEP Padding public key encryption
      */
@@ -57,12 +58,13 @@ abstract class Zend_InfoCard_Cipher_Pki_Adapter_Abstract implements Zend_InfoCar
      * Set the padding of the public key encryption
      *
      * @throws Zend_InfoCard_Cipher_Exception
-     * @param integer $padding One of the constnats in this class
+     * @param integer $padding
+     *            One of the constnats in this class
      * @return Zend_InfoCard_Pki_Adapter_Abstract
      */
     public function setPadding($padding)
     {
-        switch($padding) {
+        switch ($padding) {
             case self::OAEP_PADDING:
             case self::NO_PADDING:
                 $this->_padding = $padding;
@@ -72,7 +74,7 @@ abstract class Zend_InfoCard_Cipher_Pki_Adapter_Abstract implements Zend_InfoCar
                 throw new Zend_InfoCard_Cipher_Exception("Invalid Padding Type Provided");
                 break;
         }
-
+        
         return $this;
     }
 

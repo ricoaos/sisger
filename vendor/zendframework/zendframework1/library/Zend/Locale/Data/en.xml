@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2014 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2014 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9876 $"/>
-		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $"/>
-		<language type="en"/>
+		<version number="$Revision: 9876 $" />
+		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $" />
+		<language type="en" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -1026,7 +1025,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="FONIPA">IPA Phonetics</variant>
 			<variant type="FONUPA">UPA Phonetics</variant>
 			<variant type="HEPBURN">Hepburn romanization</variant>
-			<variant type="HEPLOC">Hepburn romanization, Library of Congress method</variant>
+			<variant type="HEPLOC">Hepburn romanization, Library of Congress
+				method</variant>
 			<variant type="IJEKAVSK">Serbian with Ijekavian pronunciation</variant>
 			<variant type="KKCOR">Common Orthography</variant>
 			<variant type="KSCOR">Standard Orthography</variant>
@@ -1098,10 +1098,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="eor" key="collation">European Ordering Rules</type>
 			<type type="ethi" key="numbers">Ethiopic Numerals</type>
 			<type type="ethiopic" key="calendar">Ethiopic Calendar</type>
-			<type type="ethiopic-amete-alem" key="calendar">Ethiopic Amete Alem Calendar</type>
+			<type type="ethiopic-amete-alem" key="calendar">Ethiopic Amete Alem
+				Calendar</type>
 			<type type="finance" key="numbers">Financial Numerals</type>
 			<type type="fullwide" key="numbers">Full Width Digits</type>
-			<type type="gb2312han" key="collation">Simplified Chinese Sort Order - GB2312</type>
+			<type type="gb2312han" key="collation">Simplified Chinese Sort Order -
+				GB2312</type>
 			<type type="geor" key="numbers">Georgian Numerals</type>
 			<type type="gregorian" key="calendar">Gregorian Calendar</type>
 			<type type="grek" key="numbers">Greek Numerals</type>
@@ -1119,9 +1121,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="identical" key="colStrength">Sort All</type>
 			<type type="indian" key="calendar">Indian National Calendar</type>
 			<type type="islamic" key="calendar">Islamic Calendar</type>
-			<type type="islamic-civil" key="calendar">Islamic Calendar (tabular, civil epoch)</type>
-			<type type="islamic-rgsa" key="calendar">Islamic Calendar (Saudi Arabia, sighting)</type>
-			<type type="islamic-tbla" key="calendar">Islamic Calendar (tabular, astronomical epoch)</type>
+			<type type="islamic-civil" key="calendar">Islamic Calendar (tabular, civil
+				epoch)</type>
+			<type type="islamic-rgsa" key="calendar">Islamic Calendar (Saudi Arabia,
+				sighting)</type>
+			<type type="islamic-tbla" key="calendar">Islamic Calendar (tabular,
+				astronomical epoch)</type>
 			<type type="islamic-umalqura" key="calendar">Islamic Calendar (Umm al-Qura)</type>
 			<type type="iso8601" key="calendar">ISO-8601 Calendar</type>
 			<type type="japanese" key="calendar">Japanese Calendar</type>
@@ -1238,10 +1243,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s t u v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ö ø ō œ ú ù ŭ û ü ū ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s t u v w x y
+			z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ
+			ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ö ø ō œ ú ù ŭ û ü ū ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart>“</quotationStart>
@@ -1478,7 +1487,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, MMM d – E, MMM d, U</greatestDifference>
 							<greatestDifference id="M">E, MMM d – E, MMM d, U</greatestDifference>
-							<greatestDifference id="y">E, MMM d, U – E, MMM d, U</greatestDifference>
+							<greatestDifference id="y">E, MMM d, U – E, MMM d,
+								U</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM – MMMM U</greatestDifference>
@@ -1651,9 +1661,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">M/d/y – M/d/y GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, M/d/y – E, M/d/y GGGGG</greatestDifference>
-							<greatestDifference id="M">E, M/d/y – E, M/d/y GGGGG</greatestDifference>
-							<greatestDifference id="y">E, M/d/y – E, M/d/y GGGGG</greatestDifference>
+							<greatestDifference id="d">E, M/d/y – E, M/d/y
+								GGGGG</greatestDifference>
+							<greatestDifference id="M">E, M/d/y – E, M/d/y
+								GGGGG</greatestDifference>
+							<greatestDifference id="y">E, M/d/y – E, M/d/y
+								GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM – MMM y G</greatestDifference>
@@ -1665,9 +1678,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">MMM d, y – MMM d, y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, MMM d – E, MMM d, y G</greatestDifference>
-							<greatestDifference id="M">E, MMM d – E, MMM d, y G</greatestDifference>
-							<greatestDifference id="y">E, MMM d, y – E, MMM d, y G</greatestDifference>
+							<greatestDifference id="d">E, MMM d – E, MMM d, y
+								G</greatestDifference>
+							<greatestDifference id="M">E, MMM d – E, MMM d, y
+								G</greatestDifference>
+							<greatestDifference id="y">E, MMM d, y – E, MMM d,
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM – MMMM y G</greatestDifference>
@@ -2025,7 +2041,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, MMM d – E, MMM d, y</greatestDifference>
 							<greatestDifference id="M">E, MMM d – E, MMM d, y</greatestDifference>
-							<greatestDifference id="y">E, MMM d, y – E, MMM d, y</greatestDifference>
+							<greatestDifference id="y">E, MMM d, y – E, MMM d,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM – MMMM y</greatestDifference>
@@ -2049,9 +2066,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</eras>
 			</calendar>
 			<calendar type="japanese">
-				<!-- need some non-empty element here to make inheritance work,
-					 this copy of generic dateFormats above is smaller than root japanese eras
-				-->
+				<!-- need some non-empty element here to make inheritance work, this 
+					copy of generic dateFormats above is smaller than root japanese eras -->
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -3418,7 +3434,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="AOR">
 				<displayName>Angolan Readjusted Kwanza (1995–1999)</displayName>
 				<displayName count="one">Angolan readjusted kwanza (1995–1999)</displayName>
-				<displayName count="other">Angolan readjusted kwanzas (1995–1999)</displayName>
+				<displayName count="other">Angolan readjusted kwanzas
+					(1995–1999)</displayName>
 			</currency>
 			<currency type="ARA">
 				<displayName>Argentine Austral</displayName>
@@ -3482,8 +3499,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAN">
 				<displayName>Bosnia-Herzegovina New Dinar (1994–1997)</displayName>
-				<displayName count="one">Bosnia-Herzegovina new dinar (1994–1997)</displayName>
-				<displayName count="other">Bosnia-Herzegovina new dinars (1994–1997)</displayName>
+				<displayName count="one">Bosnia-Herzegovina new dinar
+					(1994–1997)</displayName>
+				<displayName count="other">Bosnia-Herzegovina new dinars
+					(1994–1997)</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Barbadian Dollar</displayName>
@@ -4794,13 +4813,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="YUN">
 				<displayName>Yugoslavian Convertible Dinar (1990–1992)</displayName>
-				<displayName count="one">Yugoslavian convertible dinar (1990–1992)</displayName>
-				<displayName count="other">Yugoslavian convertible dinars (1990–1992)</displayName>
+				<displayName count="one">Yugoslavian convertible dinar
+					(1990–1992)</displayName>
+				<displayName count="other">Yugoslavian convertible dinars
+					(1990–1992)</displayName>
 			</currency>
 			<currency type="YUR">
 				<displayName>Yugoslavian Reformed Dinar (1992–1993)</displayName>
-				<displayName count="one">Yugoslavian reformed dinar (1992–1993)</displayName>
-				<displayName count="other">Yugoslavian reformed dinars (1992–1993)</displayName>
+				<displayName count="one">Yugoslavian reformed dinar
+					(1992–1993)</displayName>
+				<displayName count="other">Yugoslavian reformed dinars
+					(1992–1993)</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName>South African Rand (financial)</displayName>

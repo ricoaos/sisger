@@ -22,11 +22,13 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
 
 /**
+ *
  * @see Zend_Gdata_Photos
  */
 require_once 'Zend/Gdata/Photos.php';
@@ -36,22 +38,24 @@ require_once 'Zend/Gdata/Photos.php';
  * This is an optional field that can be used to store a photo's
  * checksum to ease duplicate checking.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Photos
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Photos_Extension_Checksum extends Zend_Gdata_Extension
 {
 
     protected $_rootNamespace = 'gphoto';
+
     protected $_rootElement = 'checksum';
 
     /**
      * Constructs a new Zend_Gdata_Photos_Extension_Checksum object.
      *
-     * @param string $text (optional) The value to represent.
+     * @param string $text
+     *            (optional) The value to represent.
      */
     public function __construct($text = null)
     {
@@ -59,5 +63,4 @@ class Zend_Gdata_Photos_Extension_Checksum extends Zend_Gdata_Extension
         parent::__construct();
         $this->setText($text);
     }
-
 }

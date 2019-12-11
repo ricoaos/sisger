@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -23,21 +24,25 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Service_Console
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @copyright  Copyright (c) 2009 - 2011, RealDolmen (http://www.realdolmen.com)
- * @license    http://phpazure.codeplex.com/license
+ *
+ * @category Zend
+ * @package Zend_Service_Console
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @copyright Copyright (c) 2009 - 2011, RealDolmen (http://www.realdolmen.com)
+ * @license http://phpazure.codeplex.com/license
  */
 interface Zend_Service_Console_Command_ParameterSource_ParameterSourceInterface
 {
-	/**
-	 * Get value for a named parameter.
-	 *
-	 * @param mixed $parameter Parameter to get a value for
-	 * @param array $argv Argument values passed to the script when run in console.
-	 * @return mixed
-	 */
-	public function getValueForParameter($parameter, $argv = array());
+
+    /**
+     * Get value for a named parameter.
+     *
+     * @param mixed $parameter
+     *            Parameter to get a value for
+     * @param array $argv
+     *            Argument values passed to the script when run in console.
+     * @return mixed
+     */
+    public function getValueForParameter($parameter, $argv = array());
 }

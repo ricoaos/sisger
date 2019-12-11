@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -22,15 +23,16 @@
 /**
  * Zend_Service_ReCaptcha_Response
  *
- * @category   Zend
- * @package    Zend_Service
+ * @category Zend
+ * @package Zend_Service
  * @subpackage ReCaptcha
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Response.php 23775 2011-03-01 17:25:24Z ralph $
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id: Response.php 23775 2011-03-01 17:25:24Z ralph $
  */
 class Zend_Service_ReCaptcha_Response
 {
+
     /**
      * Status
      *
@@ -53,20 +55,21 @@ class Zend_Service_ReCaptcha_Response
     /**
      * Class constructor used to construct a response
      *
-     * @param string $status
-     * @param string $errorCode
-     * @param Zend_Http_Response $httpResponse If this is set the content will override $status and $errorCode
+     * @param string $status            
+     * @param string $errorCode            
+     * @param Zend_Http_Response $httpResponse
+     *            If this is set the content will override $status and $errorCode
      */
     public function __construct($status = null, $errorCode = null, Zend_Http_Response $httpResponse = null)
     {
         if ($status !== null) {
             $this->setStatus($status);
         }
-
+        
         if ($errorCode !== null) {
             $this->setErrorCode($errorCode);
         }
-
+        
         if ($httpResponse !== null) {
             $this->setFromHttpResponse($httpResponse);
         }
@@ -75,7 +78,7 @@ class Zend_Service_ReCaptcha_Response
     /**
      * Set the status
      *
-     * @param string $status
+     * @param string $status            
      * @return Zend_Service_ReCaptcha_Response
      */
     public function setStatus($status)
@@ -85,7 +88,7 @@ class Zend_Service_ReCaptcha_Response
         } else {
             $this->_status = false;
         }
-
+        
         return $this;
     }
 
@@ -112,13 +115,13 @@ class Zend_Service_ReCaptcha_Response
     /**
      * Set the error code
      *
-     * @param string $errorCode
+     * @param string $errorCode            
      * @return Zend_Service_ReCaptcha_Response
      */
     public function setErrorCode($errorCode)
     {
         $this->_errorCode = $errorCode;
-
+        
         return $this;
     }
 
@@ -135,25 +138,25 @@ class Zend_Service_ReCaptcha_Response
     /**
      * Populate this instance based on a Zend_Http_Response object
      *
-     * @param Zend_Http_Response $response
+     * @param Zend_Http_Response $response            
      * @return Zend_Service_ReCaptcha_Response
      */
     public function setFromHttpResponse(Zend_Http_Response $response)
     {
         $body = $response->getBody();
-
+        
         $parts = explode("\n", $body, 2);
-
+        
         if (count($parts) !== 2) {
             $status = 'false';
             $errorCode = '';
         } else {
-            list($status, $errorCode) = $parts;
+            list ($status, $errorCode) = $parts;
         }
-
+        
         $this->setStatus($status);
         $this->setErrorCode($errorCode);
-
+        
         return $this;
     }
 }

@@ -21,16 +21,17 @@
  * @version    $Id$
  */
 
-
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Yahoo
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_Yahoo_Image
 {
+
     /**
      * Image URL
      *
@@ -52,12 +53,11 @@ class Zend_Service_Yahoo_Image
      */
     public $Width;
 
-
     /**
      * Initializes the image
      *
-     * @param  DOMNode $dom
-     * @param  string  $namespace
+     * @param DOMNode $dom            
+     * @param string $namespace            
      * @return void
      */
     public function __construct(DOMNode $dom, $namespace)

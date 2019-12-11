@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="ca"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="ca" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -770,7 +769,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CA">Canadà</territory>
 			<territory type="CC">Illes Cocos</territory>
 			<territory type="CD">Congo - Kinshasa</territory>
-			<territory type="CD" alt="variant">Congo (República Democràtica del Congo)</territory>
+			<territory type="CD" alt="variant">Congo (República Democràtica del
+				Congo)</territory>
 			<territory type="CF">República Centreafricana</territory>
 			<territory type="CG">Congo - Brazzaville</territory>
 			<territory type="CG" alt="variant">Congo (República del Congo)</territory>
@@ -884,7 +884,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MG">Madagascar</territory>
 			<territory type="MH">Illes Marshall</territory>
 			<territory type="MK">Macedònia</territory>
-			<territory type="MK" alt="variant">Macedònia (Exrepública Iugoslava de Macedònia)</territory>
+			<territory type="MK" alt="variant">Macedònia (Exrepública Iugoslava
+				de Macedònia)</territory>
 			<territory type="ML">Mali</territory>
 			<territory type="MM">Myanmar (Birmània)</territory>
 			<territory type="MN">Mongòlia</territory>
@@ -1005,7 +1006,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="1606NICT">francès mitjà tardà fins el 1606</variant>
 			<variant type="1694ACAD">francès modern primerenc</variant>
 			<variant type="1959ACAD" draft="contributed">acadèmica</variant>
-			<variant type="ALALC97" draft="contributed">romanització ALA/LC, edició de 1997</variant>
+			<variant type="ALALC97" draft="contributed">romanització ALA/LC, edició de
+				1997</variant>
 			<variant type="ALUKU" draft="contributed">dialecte aluku</variant>
 			<variant type="AREVELA">armeni oriental</variant>
 			<variant type="AREVMDA">armeni occidental</variant>
@@ -1058,10 +1060,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</variants>
 		<keys>
 			<key type="calendar">calendari</key>
-			<key type="colAlternate" draft="contributed">Ordenació sense tenir en compte els símbols</key>
+			<key type="colAlternate" draft="contributed">Ordenació sense tenir en compte
+				els símbols</key>
 			<key type="colBackwards" draft="contributed">Ordenació per accents invertida</key>
-			<key type="colCaseFirst" draft="contributed">Ordenació per majúscules i minúscules</key>
-			<key type="colCaseLevel" draft="contributed">Ordenació per detecció de majúscules</key>
+			<key type="colCaseFirst" draft="contributed">Ordenació per majúscules i
+				minúscules</key>
+			<key type="colCaseLevel" draft="contributed">Ordenació per detecció de
+				majúscules</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Ordenació per kana</key>
 			<key type="collation">ordenació</key>
 			<key type="colNormalization" draft="contributed">Ordenació normalitzada</key>
@@ -1087,12 +1092,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="chinese" key="calendar">calendari xinès</type>
 			<type type="coptic" key="calendar" draft="contributed">calendari copte</type>
 			<type type="deva" key="numbers">dígits devanagaris</type>
-			<type type="dictionary" key="collation" draft="contributed">ordenació de diccionari</type>
+			<type type="dictionary" key="collation" draft="contributed">ordenació de
+				diccionari</type>
 			<type type="ducet" key="collation">ordenació Unicode predeterminada</type>
-			<type type="eor" key="collation" draft="contributed">normes europees d'ordenació</type>
+			<type type="eor" key="collation" draft="contributed">normes europees
+				d'ordenació</type>
 			<type type="ethi" key="numbers">numerals etiòpics</type>
 			<type type="ethiopic" key="calendar" draft="contributed">calendari etíop</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">calendari etíop amete-alem</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">calendari
+				etíop amete-alem</type>
 			<type type="finance" key="numbers" draft="contributed">Numerals financers</type>
 			<type type="fullwide" key="numbers">dígits d'amplada completa</type>
 			<type type="gb2312han" key="collation">ordre del xinès simplificat - GB2312</type>
@@ -1126,7 +1134,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="latn" key="numbers">dígits aràbics</type>
 			<type type="lepc" key="numbers" draft="contributed">dígits lepcha</type>
 			<type type="limb" key="numbers" draft="contributed">dígits limbu</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Mostra primer les minúscules</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Mostra primer les
+				minúscules</type>
 			<type type="mlym" key="numbers">dígits malaiàlam</type>
 			<type type="mong" key="numbers" draft="contributed">dígits mongols</type>
 			<type type="mtei" key="numbers" draft="contributed">dígits meitei mayek</type>
@@ -1134,30 +1143,42 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="mymrshan" key="numbers" draft="contributed">dígits shan de Myanmar</type>
 			<type type="native" key="numbers" draft="contributed">Dígits natius</type>
 			<type type="nkoo" key="numbers" draft="contributed">dígits n'ko</type>
-			<type type="no" key="colBackwards" draft="contributed">Ordena els accents de manera normal</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Ordena per tipus de lletra normal</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Ordena sense distingir majúscules i minúscules</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Ordena els caràcters kana de manera independent</type>
-			<type type="no" key="colNormalization" draft="contributed">Ordena sense normalització</type>
-			<type type="no" key="colNumeric" draft="contributed">Ordena els dígits individualment</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Ordena els símbols</type>
+			<type type="no" key="colBackwards" draft="contributed">Ordena els accents de
+				manera normal</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Ordena per tipus de
+				lletra normal</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Ordena sense distingir
+				majúscules i minúscules</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Ordena els
+				caràcters kana de manera independent</type>
+			<type type="no" key="colNormalization" draft="contributed">Ordena sense
+				normalització</type>
+			<type type="no" key="colNumeric" draft="contributed">Ordena els dígits
+				individualment</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Ordena els
+				símbols</type>
 			<type type="olck" key="numbers" draft="contributed">dígits ol chiki</type>
 			<type type="orya" key="numbers">dígits oriya</type>
 			<type type="persian" key="calendar" draft="contributed">calendari persa</type>
 			<type type="phonebook" key="collation">ordre de la guia telefònica</type>
 			<type type="phonetic" key="collation" draft="contributed">Ordenació fonètica</type>
 			<type type="pinyin" key="collation">ordre pinyin</type>
-			<type type="primary" key="colStrength" draft="contributed">Ordena només les lletres de base</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Ordena per accents/majúscules/amplada/kana</type>
+			<type type="primary" key="colStrength" draft="contributed">Ordena només les
+				lletres de base</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Ordena per
+				accents/majúscules/amplada/kana</type>
 			<type type="reformed" key="collation" draft="contributed">ordenació reformada</type>
 			<type type="roc" key="calendar">calendari de la República de Xina</type>
 			<type type="roman" key="numbers">numerals romans</type>
 			<type type="romanlow" key="numbers">numerals romans en minúscules</type>
 			<type type="saur" key="numbers" draft="contributed">dígits saurashtra</type>
 			<type type="search" key="collation">cerca de propòsit general</type>
-			<type type="searchjl" key="collation" draft="contributed">cerca per consonant inicial del hangul</type>
-			<type type="secondary" key="colStrength" draft="contributed">Ordena els accents</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Ordena sense tenir en compte els símbols</type>
+			<type type="searchjl" key="collation" draft="contributed">cerca per consonant
+				inicial del hangul</type>
+			<type type="secondary" key="colStrength" draft="contributed">Ordena els
+				accents</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Ordena sense tenir
+				en compte els símbols</type>
 			<type type="standard" key="collation">ordenació estàndard</type>
 			<type type="stroke" key="collation">ordre dels traços</type>
 			<type type="sund" key="numbers" draft="contributed">dígits sudanesos</type>
@@ -1165,19 +1186,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">numerals tamils tradicionals</type>
 			<type type="tamldec" key="numbers">dígits tamils</type>
 			<type type="telu" key="numbers">dígits telugu</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Ordena per accent/majúscules/amplada</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Ordena per
+				accent/majúscules/amplada</type>
 			<type type="thai" key="numbers">dígits thai</type>
 			<type type="tibt" key="numbers">dígits tibetans</type>
 			<type type="traditional" key="collation">ordre tradicional</type>
-			<type type="traditional" key="numbers" draft="contributed">Numerals tradicionals</type>
-			<type type="unihan" key="collation" draft="contributed">ordenació per quantitat de traços radicals</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Ordena amb majúscules primer</type>
+			<type type="traditional" key="numbers" draft="contributed">Numerals
+				tradicionals</type>
+			<type type="unihan" key="collation" draft="contributed">ordenació per
+				quantitat de traços radicals</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Ordena amb
+				majúscules primer</type>
 			<type type="vaii" key="numbers" draft="contributed">dígits vai</type>
-			<type type="yes" key="colBackwards" draft="contributed">Ordena amb ordre invers dels accents</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Ordena amb detecció de majúscules i minúscules</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Ordena els caràcters kana de manera diferent</type>
-			<type type="yes" key="colNormalization" draft="contributed">Ordena per caràcters Unicode normalitzats</type>
-			<type type="yes" key="colNumeric" draft="contributed">Ordena els dígits numèricament</type>
+			<type type="yes" key="colBackwards" draft="contributed">Ordena amb ordre
+				invers dels accents</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Ordena amb detecció de
+				majúscules i minúscules</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Ordena els
+				caràcters kana de manera diferent</type>
+			<type type="yes" key="colNormalization" draft="contributed">Ordena per
+				caràcters Unicode normalitzats</type>
+			<type type="yes" key="colNumeric" draft="contributed">Ordena els dígits
+				numèricament</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">BGN</transformName>
@@ -1185,7 +1215,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<transformName type="Tone" draft="contributed">To</transformName>
 			<transformName type="UNGEGN" draft="contributed">UNGEGN</transformName>
 			<transformName type="x-Accents" draft="contributed">Accents</transformName>
-			<transformName type="x-Fullwidth" draft="contributed">Amplada completa</transformName>
+			<transformName type="x-Fullwidth" draft="contributed">Amplada
+				completa</transformName>
 			<transformName type="x-Halfwidth" draft="contributed">Amplada mitjana</transformName>
 			<transformName type="x-Jamo" draft="contributed">Jamo</transformName>
 			<transformName type="x-Pinyin" draft="contributed">Pinyin</transformName>
@@ -1203,10 +1234,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[· a à b c ç d e é è f g h i í ï j k l m n o ó ò p q r s t u ú ü v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á ă â å ä ã ā æ ĕ ê ë ē ì ĭ î ī ŀ ñ º ŏ ô ö ø ō œ ù ŭ û ū ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ¡ ? ¿ . … ' ‘ ’ &quot; “ ” « » ( ) \[ \] § @ * / \\ \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters>[· a à b c ç d e é è f g h i í ï j k l m n o ó ò p
+			q r s t u ú ü v w x y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á ă â å ä ã ā æ ĕ ê ë ē ì
+			ĭ î ī ŀ ñ º ŏ ô ö ø ō œ ù ŭ û ū ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ¡ ? ¿ .
+			… ' ‘ ’ &quot; “ ” « » ( ) \[ \] § @ * / \\ \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1633,27 +1668,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">dd/MM/y - dd/MM/y GGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E dd/MM/y - E dd/MM/y GGGG</greatestDifference>
-							<greatestDifference id="M">E dd/MM/y - E dd/MM/y GGGG</greatestDifference>
-							<greatestDifference id="y">E dd/MM/y - E dd/MM/y GGGG</greatestDifference>
+							<greatestDifference id="d">E dd/MM/y - E dd/MM/y
+								GGGG</greatestDifference>
+							<greatestDifference id="M">E dd/MM/y - E dd/MM/y
+								GGGG</greatestDifference>
+							<greatestDifference id="y">E dd/MM/y - E dd/MM/y
+								GGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM-MMM 'de' y G</greatestDifference>
-							<greatestDifference id="y">MMM 'de' y - MMM 'de' y G</greatestDifference>
+							<greatestDifference id="y">MMM 'de' y - MMM 'de' y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">d-d MMM 'de' y G</greatestDifference>
 							<greatestDifference id="M">d MMM - d MMM 'de' y G</greatestDifference>
-							<greatestDifference id="y">d MMM 'de' y - d MMM 'de' y G</greatestDifference>
+							<greatestDifference id="y">d MMM 'de' y - d MMM
+								'de' y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E d MMM - E d MMM 'de' y G</greatestDifference>
-							<greatestDifference id="M">E d MMM - E d MMM 'de' y G</greatestDifference>
-							<greatestDifference id="y">E d MMM 'de' y - E d MMM 'de' y G</greatestDifference>
+							<greatestDifference id="d">E d MMM - E d MMM 'de'
+								y G</greatestDifference>
+							<greatestDifference id="M">E d MMM - E d MMM 'de'
+								y G</greatestDifference>
+							<greatestDifference id="y">E d MMM 'de' y - E d
+								MMM 'de' y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM-MMMM 'de' y G</greatestDifference>
-							<greatestDifference id="y">MMMM 'de' y - MMMM 'de' y G</greatestDifference>
+							<greatestDifference id="y">MMMM 'de' y - MMMM 'de'
+								y G</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -2088,16 +2132,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">d-d MMM 'de' y</greatestDifference>
 							<greatestDifference id="M">d MMM - d MMM 'de' y</greatestDifference>
-							<greatestDifference id="y">d MMM 'de' y - d MMM 'de' y</greatestDifference>
+							<greatestDifference id="y">d MMM 'de' y - d MMM
+								'de' y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E d - E d MMM 'de' y</greatestDifference>
-							<greatestDifference id="M">E d MMM - E d MMM 'de' y</greatestDifference>
-							<greatestDifference id="y">E d MMM 'de' y - E d MMM 'de' y</greatestDifference>
+							<greatestDifference id="M">E d MMM - E d MMM 'de'
+								y</greatestDifference>
+							<greatestDifference id="y">E d MMM 'de' y - E d
+								MMM 'de' y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">LLLL-LLLL 'de' y</greatestDifference>
-							<greatestDifference id="y">LLLL 'de' y - LLLL 'de' y</greatestDifference>
+							<greatestDifference id="y">LLLL 'de' y - LLLL 'de'
+								y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -2166,7 +2214,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="1">la setmana que ve</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">D'aquí a {0} setmana</relativeTimePattern>
-					<relativeTimePattern count="other">D'aquí a {0} setmanes</relativeTimePattern>
+					<relativeTimePattern count="other">D'aquí a {0}
+						setmanes</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">Fa {0} setmana</relativeTimePattern>
@@ -3163,8 +3212,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="Kamchatka">
 				<long>
 					<generic draft="contributed">Hora de Kamtxatka</generic>
-					<standard draft="contributed">Hora estàndard de Petropavlovsk de Kamtxatka</standard>
-					<daylight draft="contributed">Horari d'estiu de Petropavlovsk de Kamtxatka</daylight>
+					<standard draft="contributed">Hora estàndard de Petropavlovsk de
+						Kamtxatka</standard>
+					<daylight draft="contributed">Horari d'estiu de Petropavlovsk de
+						Kamtxatka</daylight>
 				</long>
 			</metazone>
 			<metazone type="Kazakhstan_Eastern">
@@ -3752,8 +3803,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ARM">
 				<displayName draft="contributed">peso argentí (1981–1970)</displayName>
-				<displayName count="one" draft="contributed">peso argentí moneda nacional</displayName>
-				<displayName count="other" draft="contributed">pesos argentins moneda nacional</displayName>
+				<displayName count="one" draft="contributed">peso argentí moneda
+					nacional</displayName>
+				<displayName count="other" draft="contributed">pesos argentins moneda
+					nacional</displayName>
 			</currency>
 			<currency type="ARP">
 				<displayName>peso argentí (1983–1985)</displayName>
@@ -3793,18 +3846,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAD">
 				<displayName>dinar de Bòsnia i Hercegovina (1992–1994)</displayName>
-				<displayName count="one">dinar de Bòsnia i Hercegovina (1992–1994)</displayName>
-				<displayName count="other">dinars de Bòsnia i Hercegovina (1992–1994)</displayName>
+				<displayName count="one">dinar de Bòsnia i Hercegovina
+					(1992–1994)</displayName>
+				<displayName count="other">dinars de Bòsnia i Hercegovina
+					(1992–1994)</displayName>
 			</currency>
 			<currency type="BAM">
 				<displayName>marc convertible de Bòsnia i Hercegovina</displayName>
-				<displayName count="one">marc convertible de Bòsnia i Hercegovina</displayName>
-				<displayName count="other">marcs convertibles de Bòsnia i Hercegovina</displayName>
+				<displayName count="one">marc convertible de Bòsnia i
+					Hercegovina</displayName>
+				<displayName count="other">marcs convertibles de Bòsnia i
+					Hercegovina</displayName>
 			</currency>
 			<currency type="BAN">
 				<displayName>nou dinar de Bòsnia i Hercegovina (1994–1997)</displayName>
-				<displayName count="one">nou dinar de Bòsnia i Hercegovina (1994–1997)</displayName>
-				<displayName count="other">nous dinars de Bòsnia i Hercegovina (1994–1997)</displayName>
+				<displayName count="one">nou dinar de Bòsnia i Hercegovina
+					(1994–1997)</displayName>
+				<displayName count="other">nous dinars de Bòsnia i Hercegovina
+					(1994–1997)</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>dòlar de Barbados</displayName>
@@ -3925,7 +3984,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BRZ">
 				<displayName draft="contributed">antic cruzeiro brasiler</displayName>
 				<displayName count="one" draft="contributed">antic cruzeiro brasiler</displayName>
-				<displayName count="other" draft="contributed">antics cruzeiros brasilers</displayName>
+				<displayName count="other" draft="contributed">antics cruzeiros
+					brasilers</displayName>
 			</currency>
 			<currency type="BSD">
 				<displayName>dòlar de les Bahames</displayName>
@@ -4004,8 +4064,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">pesos xilens</displayName>
 			</currency>
 			<currency type="CNX">
-				<displayName count="one" draft="contributed">dòlar del Banc Popular Xinès</displayName>
-				<displayName count="other" draft="contributed">dòlars del Banc Popular Xinès</displayName>
+				<displayName count="one" draft="contributed">dòlar del Banc Popular
+					Xinès</displayName>
+				<displayName count="other" draft="contributed">dòlars del Banc Popular
+					Xinès</displayName>
 			</currency>
 			<currency type="CNY">
 				<displayName>iuan xinès</displayName>
@@ -4100,8 +4162,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ECV">
 				<displayName>unidad de valor constante (UVC) equatoriana</displayName>
-				<displayName count="one">unidad de valor constante (UVC) equatoriana</displayName>
-				<displayName count="other">unidades de valor constante (UVC) equatorianes</displayName>
+				<displayName count="one">unidad de valor constante (UVC)
+					equatoriana</displayName>
+				<displayName count="other">unidades de valor constante (UVC)
+					equatorianes</displayName>
 			</currency>
 			<currency type="EEK">
 				<displayName>corona estoniana</displayName>
@@ -4125,8 +4189,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ESB">
 				<displayName>pesseta espanyola (compte convertible)</displayName>
-				<displayName count="one">pesseta espanyola (compte convertible)</displayName>
-				<displayName count="other">pessetes espanyoles (compte convertible)</displayName>
+				<displayName count="one">pesseta espanyola (compte
+					convertible)</displayName>
+				<displayName count="other">pessetes espanyoles (compte
+					convertible)</displayName>
 			</currency>
 			<currency type="ESP">
 				<pattern>¤ #,##0.00</pattern>
@@ -4942,7 +5008,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="USN">
 				<displayName>dòlar dels Estats Units (dia següent)</displayName>
 				<displayName count="one">dòlar dels Estats Units (dia següent)</displayName>
-				<displayName count="other">dòlars dels Estats Units (dia següent)</displayName>
+				<displayName count="other">dòlars dels Estats Units (dia
+					següent)</displayName>
 			</currency>
 			<currency type="USS">
 				<displayName>dòlar dels Estats Units (mateix dia)</displayName>
@@ -5127,7 +5194,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="YUR">
 				<displayName draft="contributed">dinar iugoslau reformat (1992–1993)</displayName>
 				<displayName count="one" draft="contributed">dinar reformat iugoslau</displayName>
-				<displayName count="other" draft="contributed">dinars reformats iugoslaus</displayName>
+				<displayName count="other" draft="contributed">dinars reformats
+					iugoslaus</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName>rand sud-africà (financer)</displayName>

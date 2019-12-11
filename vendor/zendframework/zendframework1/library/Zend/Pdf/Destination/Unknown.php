@@ -20,17 +20,18 @@
  * @version    $Id$
  */
 
-/** Zend_Pdf_Destination_Explicit */
+/**
+ * Zend_Pdf_Destination_Explicit
+ */
 require_once 'Zend/Pdf/Destination/Explicit.php';
-
 
 /**
  * Unrecognized explicit destination representation class
  *
- * @package    Zend_Pdf
+ * @package Zend_Pdf
  * @subpackage Destination
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Pdf_Destination_Unknown extends Zend_Pdf_Destination_Explicit
 {

@@ -1,0 +1,48 @@
+<div class="outter-wp">
+	<div class="sub-heard-part">
+		<ol class="breadcrumb m-b-0">
+			<li><a href="">Home</a></li>
+			<li>Configuração</li>
+			<li class="active">Cargo/Função</li>
+		</ol>
+	</div>
+
+	<div class="forms-main">
+		<div class="graph-form">
+			<div class="validation-form">
+				<form class="form-horizontal group-border hover-stripped" role="form" method="post" action="<?php echo $this->baseUrl('/sistema/cargo/index')?>">
+					<div class="vali-form">
+						<div class="col-md-2 form-group1">
+							<label class="control-label">Registro</label> 
+							<input type="text" class="form-control" name="id_cargo" id="id_cargo" value="<?php echo $this->dadospagina['id_cargo']?>">
+						</div>
+						<div class="col-md-10 form-group1">
+							<label class="control-label">Nome</label> 
+							<input type="text" class="form-control" name="st_nome" id="st_nome" required value="<?php echo $this->dadospagina['st_nome']?>">
+						</div>
+					</div>
+					<div class="col-md-12 form-group1 ">
+						<label class="control-label">Observação</label>
+						<textarea name="ds_observacao" id="ds_observacao"><?php echo $this->dadospagina['ds_observacao']?></textarea>
+					</div>
+					<div class="col-md-12 form-group button-2">
+						<button type="submit" class="btn btn-primary">Salvar</button>
+						<a
+							href="<?php echo $this->baseUrl('/sistema/cargo/listagem')?>">
+							<button class="btn btn-red" type="button">Visualizar Cadastrados</button>
+						</a>
+					</div>
+					<div class="clearfix"></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#id_cargo").attr('readonly',true).css({'background':'#F0F0F0'});
+});
+</script>
+
+

@@ -22,34 +22,37 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
 
 /**
+ *
  * @see Zend_Gdata_Geo
  */
 require_once 'Zend/Gdata/Geo.php';
 
 /**
+ *
  * @see Zend_Gdata_Geo_Extension_GmlPos
  */
 require_once 'Zend/Gdata/Geo/Extension/GmlPos.php';
 
-
 /**
  * Represents the gml:point element used by the Gdata Geo extensions.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Geo
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Geo_Extension_GmlPoint extends Zend_Gdata_Extension
 {
 
     protected $_rootNamespace = 'gml';
+
     protected $_rootElement = 'Point';
 
     /**
@@ -62,8 +65,9 @@ class Zend_Gdata_Geo_Extension_GmlPoint extends Zend_Gdata_Extension
     /**
      * Create a new instance.
      *
-     * @param Zend_Gdata_Geo_Extension_GmlPos $pos (optional) Pos to which this
-     *          object should be initialized.
+     * @param Zend_Gdata_Geo_Extension_GmlPos $pos
+     *            (optional) Pos to which this
+     *            object should be initialized.
      */
     public function __construct($pos = null)
     {
@@ -74,12 +78,14 @@ class Zend_Gdata_Geo_Extension_GmlPoint extends Zend_Gdata_Extension
 
     /**
      * Retrieves a DOMElement which corresponds to this element and all
-     * child properties.  This is used to build an entry back into a DOM
+     * child properties.
+     * This is used to build an entry back into a DOM
      * and eventually XML text for application storage/persistence.
      *
-     * @param DOMDocument $doc The DOMDocument used to construct DOMElements
+     * @param DOMDocument $doc
+     *            The DOMDocument used to construct DOMElements
      * @return DOMElement The DOMElement representing this element and all
-     *          child properties.
+     *         child properties.
      */
     public function getDOM($doc = null, $majorVersion = 1, $minorVersion = null)
     {
@@ -94,14 +100,15 @@ class Zend_Gdata_Geo_Extension_GmlPoint extends Zend_Gdata_Extension
      * Creates individual Entry objects of the appropriate type and
      * stores them as members of this entry based upon DOM data.
      *
-     * @param DOMNode $child The DOMNode to process
+     * @param DOMNode $child
+     *            The DOMNode to process
      */
     protected function takeChildFromDOM($child)
     {
         $absoluteNodeName = $child->namespaceURI . ':' . $child->localName;
-
+        
         switch ($absoluteNodeName) {
-            case $this->lookupNamespace('gml') . ':' . 'pos';
+            case $this->lookupNamespace('gml') . ':' . 'pos':
                 $pos = new Zend_Gdata_Geo_Extension_GmlPos();
                 $pos->transferFromDOM($child);
                 $this->_pos = $pos;
@@ -123,7 +130,8 @@ class Zend_Gdata_Geo_Extension_GmlPoint extends Zend_Gdata_Extension
     /**
      * Set the value for this element's distance attribute.
      *
-     * @param Zend_Gdata_Geo_Extension_GmlPos $value The desired value for this attribute
+     * @param Zend_Gdata_Geo_Extension_GmlPos $value
+     *            The desired value for this attribute
      * @return Zend_Gdata_Geo_Extension_GmlPoint Provides a fluent interface
      */
     public function setPos($value)
@@ -131,6 +139,4 @@ class Zend_Gdata_Geo_Extension_GmlPoint extends Zend_Gdata_Extension
         $this->_pos = $value;
         return $this;
     }
-
-
 }

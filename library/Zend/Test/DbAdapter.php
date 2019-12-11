@@ -21,16 +21,19 @@
  */
 
 /**
+ *
  * @see Zend_Db_Adapter_Abstract
  */
 require_once "Zend/Db/Adapter/Abstract.php";
 
 /**
+ *
  * @see Zend_Test_DbStatement
  */
 require_once "Zend/Test/DbStatement.php";
 
 /**
+ *
  * @see Zend_Db_Profiler
  */
 require_once 'Zend/Db/Profiler.php';
@@ -38,40 +41,47 @@ require_once 'Zend/Db/Profiler.php';
 /**
  * Testing Database Adapter which acts as a stack for SQL Results
  *
- * @category   Zend
- * @package    Zend_Test
+ * @category Zend
+ * @package Zend_Test
  * @subpackage PHPUnit
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Test_DbAdapter extends Zend_Db_Adapter_Abstract
 {
+
     /**
+     *
      * @var array
      */
     protected $_statementStack = array();
 
     /**
+     *
      * @var boolean
      */
     protected $_connected = false;
 
     /**
+     *
      * @var array
      */
     protected $_listTables = array();
 
     /**
+     *
      * @var array
      */
     protected $_lastInsertIdStack = array();
 
     /**
+     *
      * @var array
      */
     protected $_describeTables = array();
 
     /**
+     *
      * @var string
      */
     protected $_quoteIdentifierSymbol = '';
@@ -89,7 +99,7 @@ class Zend_Test_DbAdapter extends Zend_Db_Adapter_Abstract
     /**
      * Append a new Statement to the SQL Result Stack.
      *
-     * @param  Zend_Test_DbStatement $stmt
+     * @param Zend_Test_DbStatement $stmt            
      * @return Zend_Test_DbAdapter
      */
     public function appendStatementToStack(Zend_Test_DbStatement $stmt)
@@ -101,7 +111,7 @@ class Zend_Test_DbAdapter extends Zend_Db_Adapter_Abstract
     /**
      * Append a new Insert Id to the {@see lastInsertId}.
      *
-     * @param  int|string $id
+     * @param int|string $id            
      * @return Zend_Test_DbAdapter
      */
     public function appendLastInsertIdToStack($id)
@@ -111,6 +121,7 @@ class Zend_Test_DbAdapter extends Zend_Db_Adapter_Abstract
     }
 
     /**
+     *
      * @var string
      */
     public function setQuoteIdentifierSymbol($symbol)
@@ -131,7 +142,7 @@ class Zend_Test_DbAdapter extends Zend_Db_Adapter_Abstract
     /**
      * Set the result from {@see listTables()}.
      *
-     * @param array $listTables
+     * @param array $listTables            
      */
     public function setListTables(array $listTables)
     {
@@ -145,13 +156,13 @@ class Zend_Test_DbAdapter extends Zend_Db_Adapter_Abstract
      */
     public function listTables()
     {
-       return $this->_listTables;
+        return $this->_listTables;
     }
 
     /**
      *
-     * @param  string $table
-     * @param  array $tableInfo
+     * @param string $table            
+     * @param array $tableInfo            
      * @return Zend_Test_DbAdapter
      */
     public function setDescribeTable($table, $tableInfo)
@@ -170,26 +181,27 @@ class Zend_Test_DbAdapter extends Zend_Db_Adapter_Abstract
      * with the following keys:
      *
      * SCHEMA_NAME => string; name of database or schema
-     * TABLE_NAME  => string;
+     * TABLE_NAME => string;
      * COLUMN_NAME => string; column name
      * COLUMN_POSITION => number; ordinal position of column in table
-     * DATA_TYPE   => string; SQL datatype name of column
-     * DEFAULT     => string; default expression of column, null if none
-     * NULLABLE    => boolean; true if column can have nulls
-     * LENGTH      => number; length of CHAR/VARCHAR
-     * SCALE       => number; scale of NUMERIC/DECIMAL
-     * PRECISION   => number; precision of NUMERIC/DECIMAL
-     * UNSIGNED    => boolean; unsigned property of an integer type
-     * PRIMARY     => boolean; true if column is part of the primary key
+     * DATA_TYPE => string; SQL datatype name of column
+     * DEFAULT => string; default expression of column, null if none
+     * NULLABLE => boolean; true if column can have nulls
+     * LENGTH => number; length of CHAR/VARCHAR
+     * SCALE => number; scale of NUMERIC/DECIMAL
+     * PRECISION => number; precision of NUMERIC/DECIMAL
+     * UNSIGNED => boolean; unsigned property of an integer type
+     * PRIMARY => boolean; true if column is part of the primary key
      * PRIMARY_POSITION => integer; position of column in primary key
      *
-     * @param string $tableName
-     * @param string $schemaName OPTIONAL
+     * @param string $tableName            
+     * @param string $schemaName
+     *            OPTIONAL
      * @return array
      */
     public function describeTable($tableName, $schemaName = null)
     {
-        if(isset($this->_describeTables[$tableName])) {
+        if (isset($this->_describeTables[$tableName])) {
             return $this->_describeTables[$tableName];
         } else {
             return array();
@@ -229,24 +241,25 @@ class Zend_Test_DbAdapter extends Zend_Db_Adapter_Abstract
     /**
      * Prepare a statement and return a PDOStatement-like object.
      *
-     * @param string|Zend_Db_Select $sql SQL query
+     * @param string|Zend_Db_Select $sql
+     *            SQL query
      * @return Zend_Db_Statment|PDOStatement
      */
     public function prepare($sql)
     {
         $queryId = $this->getProfiler()->queryStart($sql);
-
-        if(count($this->_statementStack)) {
+        
+        if (count($this->_statementStack)) {
             $stmt = array_pop($this->_statementStack);
         } else {
             $stmt = new Zend_Test_DbStatement();
         }
-
-        if($this->getProfiler()->getEnabled() == true) {
+        
+        if ($this->getProfiler()->getEnabled() == true) {
             $qp = $this->getProfiler()->getQueryProfile($queryId);
             $stmt->setQueryProfile($qp);
         }
-
+        
         return $stmt;
     }
 
@@ -260,13 +273,15 @@ class Zend_Test_DbAdapter extends Zend_Db_Adapter_Abstract
      * returns the last value generated for such a column, and the table name
      * argument is disregarded.
      *
-     * @param string $tableName   OPTIONAL Name of table.
-     * @param string $primaryKey  OPTIONAL Name of primary key column.
+     * @param string $tableName
+     *            OPTIONAL Name of table.
+     * @param string $primaryKey
+     *            OPTIONAL Name of primary key column.
      * @return string
      */
     public function lastInsertId($tableName = null, $primaryKey = null)
     {
-        if(count($this->_lastInsertIdStack)) {
+        if (count($this->_lastInsertIdStack)) {
             return array_pop($this->_lastInsertIdStack);
         } else {
             return false;
@@ -293,14 +308,12 @@ class Zend_Test_DbAdapter extends Zend_Db_Adapter_Abstract
      * Roll-back a transaction.
      */
     protected function _rollBack()
-    {
-
-    }
+    {}
 
     /**
      * Set the fetch mode.
      *
-     * @param integer $mode
+     * @param integer $mode            
      * @return void
      * @throws Zend_Db_Adapter_Exception
      */
@@ -312,9 +325,9 @@ class Zend_Test_DbAdapter extends Zend_Db_Adapter_Abstract
     /**
      * Adds an adapter-specific LIMIT clause to the SELECT statement.
      *
-     * @param mixed $sql
-     * @param integer $count
-     * @param integer $offset
+     * @param mixed $sql            
+     * @param integer $count            
+     * @param integer $offset            
      * @return string
      */
     public function limit($sql, $count, $offset = 0)
@@ -325,7 +338,8 @@ class Zend_Test_DbAdapter extends Zend_Db_Adapter_Abstract
     /**
      * Check if the adapter supports real SQL parameters.
      *
-     * @param string $type 'positional' or 'named'
+     * @param string $type
+     *            'positional' or 'named'
      * @return bool
      */
     public function supportsParameters($type)

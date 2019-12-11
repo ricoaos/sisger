@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="gsw"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="gsw" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -712,7 +711,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Guadälup</territory>
 			<territory type="GQ">Äquatoriaalgineea</territory>
 			<territory type="GR">Griecheland</territory>
-			<territory type="GS">Süüdgeorgie und d’süüdlichi Sändwitsch-Insle</territory>
+			<territory type="GS">Süüdgeorgie und d’süüdlichi
+				Sändwitsch-Insle</territory>
 			<territory type="GT">Guatemaala</territory>
 			<territory type="GU">Guam</territory>
 			<territory type="GW">Gineea-Bissau</territory>
@@ -941,9 +941,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a ä b c d e f g h i j k l m n o ö p q r s t u ü v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à ă â å ā æ ç é è ĕ ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ø ō œ ú ù ŭ û ū ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="unconfirmed">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters>[a ä b c d e f g h i j k l m n o ö p q r s t u ü v
+			w x y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à ă â å ā æ ç é è ĕ ê ë
+			ē í ì ĭ î ï ī ñ ó ò ŏ ô ø ō œ ú ù ŭ û ū ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="unconfirmed">[A B C D E F
+			G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart>«</quotationStart>
@@ -1122,7 +1125,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d. - E, d. MMM y</greatestDifference>
 							<greatestDifference id="M">E, d. MMM - E, d. MMM y</greatestDifference>
-							<greatestDifference id="y">E, d. MMM y - E, d. MMM y</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y - E, d. MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MM – MM.y</greatestDifference>
@@ -1250,9 +1254,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<eras>
 					<eraNames>
 						<era type="0">v. Chr.</era>
-						<era type="0" alt="variant" draft="unconfirmed">vor der gewöhnlichen Zeitrechnung</era>
+						<era type="0" alt="variant" draft="unconfirmed">vor der gewöhnlichen
+							Zeitrechnung</era>
 						<era type="1">n. Chr.</era>
-						<era type="1" alt="variant" draft="unconfirmed">der gewöhnlichen Zeitrechnung</era>
+						<era type="1" alt="variant" draft="unconfirmed">der gewöhnlichen
+							Zeitrechnung</era>
 					</eraNames>
 					<eraAbbr>
 						<era type="0">v. Chr.</era>
@@ -1433,7 +1439,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d. - E, d. MMM y</greatestDifference>
 							<greatestDifference id="M">E, d. MMM - E, d. MMM y</greatestDifference>
-							<greatestDifference id="y">E, d. MMM y - E, d. MMM y</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y - E, d. MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MM – MM.y</greatestDifference>
@@ -1922,15 +1929,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<pattern type="1000000000" count="one" draft="unconfirmed">0 Milliarde</pattern>
 					<pattern type="1000000000" count="other" draft="unconfirmed">0 Milliarden</pattern>
 					<pattern type="10000000000" count="one" draft="unconfirmed">00 Milliarde</pattern>
-					<pattern type="10000000000" count="other" draft="unconfirmed">00 Milliarden</pattern>
-					<pattern type="100000000000" count="one" draft="unconfirmed">000 Milliarde</pattern>
-					<pattern type="100000000000" count="other" draft="unconfirmed">000 Milliarden</pattern>
+					<pattern type="10000000000" count="other" draft="unconfirmed">00
+						Milliarden</pattern>
+					<pattern type="100000000000" count="one" draft="unconfirmed">000
+						Milliarde</pattern>
+					<pattern type="100000000000" count="other" draft="unconfirmed">000
+						Milliarden</pattern>
 					<pattern type="1000000000000" count="one" draft="unconfirmed">0 Billion</pattern>
-					<pattern type="1000000000000" count="other" draft="unconfirmed">0 Billionen</pattern>
+					<pattern type="1000000000000" count="other" draft="unconfirmed">0
+						Billionen</pattern>
 					<pattern type="10000000000000" count="one" draft="unconfirmed">00 Billion</pattern>
-					<pattern type="10000000000000" count="other" draft="unconfirmed">00 Billionen</pattern>
-					<pattern type="100000000000000" count="one" draft="unconfirmed">000 Billion</pattern>
-					<pattern type="100000000000000" count="other" draft="unconfirmed">000 Billionen</pattern>
+					<pattern type="10000000000000" count="other" draft="unconfirmed">00
+						Billionen</pattern>
+					<pattern type="100000000000000" count="one" draft="unconfirmed">000
+						Billion</pattern>
+					<pattern type="100000000000000" count="other" draft="unconfirmed">000
+						Billionen</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 			<decimalFormatLength type="short">
@@ -2158,8 +2172,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BRB">
 				<displayName>Brasilianische Cruzeiro Novo (1967–1986)</displayName>
-				<displayName count="one">Brasilianischi Cruzeiro Novo (1967–1986)</displayName>
-				<displayName count="other">Brasilianischi Cruzeiro Novo (1967–1986)</displayName>
+				<displayName count="one">Brasilianischi Cruzeiro Novo
+					(1967–1986)</displayName>
+				<displayName count="other">Brasilianischi Cruzeiro Novo
+					(1967–1986)</displayName>
 			</currency>
 			<currency type="BRC">
 				<displayName>Brasilianische Cruzado</displayName>
@@ -2767,8 +2783,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MXV">
 				<displayName>Mexikanische Unidad de Inversion (UDI)</displayName>
-				<displayName count="one">Mexikanischi Unidad de Inversion (UDI)</displayName>
-				<displayName count="other">Mexikanischi Unidad de Inversion (UDI)</displayName>
+				<displayName count="one">Mexikanischi Unidad de Inversion
+					(UDI)</displayName>
+				<displayName count="other">Mexikanischi Unidad de Inversion
+					(UDI)</displayName>
 			</currency>
 			<currency type="MYR">
 				<displayName>Malaysische Ringgit</displayName>
@@ -3327,8 +3345,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<compoundUnitPattern draft="unconfirmed">{0} pro {1}</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
-				<unitPattern count="one" draft="unconfirmed">{0}-fachi Erdbeschlünigung</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0}-fachi Erdbeschlünigung</unitPattern>
+				<unitPattern count="one" draft="unconfirmed">{0}-fachi
+					Erdbeschlünigung</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0}-fachi
+					Erdbeschlünigung</unitPattern>
 			</unit>
 			<unit type="angle-arc-minute">
 				<unitPattern count="one" draft="unconfirmed">{0} Winkelminute</unitPattern>
@@ -3472,7 +3492,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="pressure-inch-hg">
 				<unitPattern count="one" draft="unconfirmed">{0} Zoll Quecksilbersüüle</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} Zoll Quecksilbersüüle</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} Zoll
+					Quecksilbersüüle</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
 				<unitPattern count="one" draft="unconfirmed">{0} Millibar</unitPattern>

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,15 +22,17 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Service_DeveloperGarden_Request_RequestAbstract
 {
+
     /**
      * environment value
      *
@@ -40,7 +43,7 @@ abstract class Zend_Service_DeveloperGarden_Request_RequestAbstract
     /**
      * constructor give them the environment
      *
-     * @param integer $environment
+     * @param integer $environment            
      * @return Zend_Service_DeveloperGarden_Request_RequestAbstract
      */
     public function __construct($environment)
@@ -51,7 +54,7 @@ abstract class Zend_Service_DeveloperGarden_Request_RequestAbstract
     /**
      * sets a new moduleId
      *
-     * @param integer $environment
+     * @param integer $environment            
      * @return Zend_Service_DeveloperGarden_Request_RequestAbstract
      */
     public function setEnvironment($environment)

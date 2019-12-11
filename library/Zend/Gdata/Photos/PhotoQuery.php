@@ -22,9 +22,10 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Gapps_Picasa_AlbumQuery
  */
-require_once('Zend/Gdata/Photos/AlbumQuery.php');
+require_once ('Zend/Gdata/Photos/AlbumQuery.php');
 
 /**
  * Assists in constructing queries for comment/tag entries.
@@ -34,11 +35,11 @@ require_once('Zend/Gdata/Photos/AlbumQuery.php');
  * For information on submitting queries to a server, see the
  * service class, Zend_Gdata_Photos.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Photos
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Photos_PhotoQuery extends Zend_Gdata_Photos_AlbumQuery
 {
@@ -51,17 +52,19 @@ class Zend_Gdata_Photos_PhotoQuery extends Zend_Gdata_Photos_AlbumQuery
     protected $_photoId = null;
 
     /**
-     * Set the photo ID to query for. When set, this photo's comments/tags
+     * Set the photo ID to query for.
+     * When set, this photo's comments/tags
      * will be returned. If not set or null, the default user's feed will be
      * returned instead.
      *
-     * @param string $value The ID of the photo to retrieve, or null to
-     *          clear.
+     * @param string $value
+     *            The ID of the photo to retrieve, or null to
+     *            clear.
      */
-     public function setPhotoId($value)
-     {
-         $this->_photoId = $value;
-     }
+    public function setPhotoId($value)
+    {
+        $this->_photoId = $value;
+    }
 
     /**
      * Get the photo ID which is to be returned.
@@ -88,11 +91,9 @@ class Zend_Gdata_Photos_PhotoQuery extends Zend_Gdata_Photos_AlbumQuery
             $uri .= '/photoid/' . $this->getPhotoId();
         } else {
             require_once 'Zend/Gdata/App/InvalidArgumentException.php';
-            throw new Zend_Gdata_App_InvalidArgumentException(
-                    'PhotoId cannot be null');
+            throw new Zend_Gdata_App_InvalidArgumentException('PhotoId cannot be null');
         }
         $uri .= $incomingUri;
         return parent::getQueryUrl($uri);
     }
-
 }

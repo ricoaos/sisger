@@ -22,6 +22,7 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_App_Extension_Text
  */
 require_once 'Zend/Gdata/App/Extension/Text.php';
@@ -29,16 +30,17 @@ require_once 'Zend/Gdata/App/Extension/Text.php';
 /**
  * Represents the atom:content element
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage App
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_App_Extension_Content extends Zend_Gdata_App_Extension_Text
 {
 
     protected $_rootElement = 'content';
+
     protected $_src = null;
 
     public function __construct($text = null, $type = 'text', $src = null)
@@ -59,15 +61,16 @@ class Zend_Gdata_App_Extension_Content extends Zend_Gdata_App_Extension_Text
     protected function takeAttributeFromDOM($attribute)
     {
         switch ($attribute->localName) {
-        case 'src':
-            $this->_src = $attribute->nodeValue;
-            break;
-        default:
-            parent::takeAttributeFromDOM($attribute);
+            case 'src':
+                $this->_src = $attribute->nodeValue;
+                break;
+            default:
+                parent::takeAttributeFromDOM($attribute);
         }
     }
 
     /**
+     *
      * @return string
      */
     public function getSrc()
@@ -76,7 +79,8 @@ class Zend_Gdata_App_Extension_Content extends Zend_Gdata_App_Extension_Text
     }
 
     /**
-     * @param string $value
+     *
+     * @param string $value            
      * @return Zend_Gdata_App_Entry Provides a fluent interface
      */
     public function setSrc($value)
@@ -84,5 +88,4 @@ class Zend_Gdata_App_Extension_Content extends Zend_Gdata_App_Extension_Text
         $this->_src = $value;
         return $this;
     }
-
 }

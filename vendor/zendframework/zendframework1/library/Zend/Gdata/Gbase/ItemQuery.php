@@ -22,29 +22,31 @@
  */
 
 /**
+ *
  * @see Zend_Exception
  */
 require_once 'Zend/Exception.php';
 
 /**
+ *
  * @see Zend_Gdata_Gbase_Query
  */
 require_once 'Zend/Gdata/Gbase/Query.php';
-
 
 /**
  * Assists in constructing queries for Google Base Customer Items Feed
  *
  * @link http://code.google.com/apis/base/
- *
- * @category   Zend
- * @package    Zend_Gdata
+ *      
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Gbase
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Gbase_ItemQuery extends Zend_Gdata_Gbase_Query
 {
+
     /**
      * Path to the customer items feeds on the Google Base server.
      */

@@ -19,58 +19,82 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-
-/** Zend_Locale */
+/**
+ * Zend_Locale
+ */
 require_once 'Zend/Locale.php';
 
-/** Zend_Translate_Adapter */
+/**
+ * Zend_Translate_Adapter
+ */
 require_once 'Zend/Translate/Adapter.php';
 
-/** @see Zend_Xml_Security */
+/**
+ *
+ * @see Zend_Xml_Security
+ */
 require_once 'Zend/Xml/Security.php';
 
-/** @See Zend_Xml_Exception */
+/**
+ *
+ * @see Zend_Xml_Exception
+ */
 require_once 'Zend/Xml/Exception.php';
 
 /**
- * @category   Zend
- * @package    Zend_Translate
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Translate
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Translate_Adapter_Qt extends Zend_Translate_Adapter {
+class Zend_Translate_Adapter_Qt extends Zend_Translate_Adapter
+{
+
     // Internal variables
-    private $_file        = false;
-    private $_cleared     = array();
-    private $_transunit   = null;
-    private $_source      = null;
-    private $_target      = null;
-    private $_scontent    = null;
-    private $_tcontent    = null;
-    private $_stag        = false;
-    private $_ttag        = true;
-    private $_data        = array();
+    private $_file = false;
+
+    private $_cleared = array();
+
+    private $_transunit = null;
+
+    private $_source = null;
+
+    private $_target = null;
+
+    private $_scontent = null;
+
+    private $_tcontent = null;
+
+    private $_stag = false;
+
+    private $_ttag = true;
+
+    private $_data = array();
 
     /**
      * Load translation data (QT file reader)
      *
-     * @param  string  $locale    Locale/Language to add data for, identical with locale identifier,
-     *                            see Zend_Locale for more information
-     * @param  string  $filename  QT file to add, full path must be given for access
-     * @param  array   $option    OPTIONAL Options to use
+     * @param string $locale
+     *            Locale/Language to add data for, identical with locale identifier,
+     *            see Zend_Locale for more information
+     * @param string $filename
+     *            QT file to add, full path must be given for access
+     * @param array $option
+     *            OPTIONAL Options to use
      * @throws Zend_Translation_Exception
      * @return array
      */
     protected function _loadTranslationData($filename, $locale, array $options = array())
     {
         $this->_data = array();
-        if (!is_readable($filename)) {
+        if (! is_readable($filename)) {
             require_once 'Zend/Translate/Exception.php';
             throw new Zend_Translate_Exception('Translation file \'' . $filename . '\' is not readable.');
         }
-
+        
         $this->_target = $locale;
-
+        
         $encoding = $this->_findEncoding($filename);
         $this->_file = xml_parser_create($encoding);
         xml_set_object($this->_file, $this);
@@ -82,27 +106,22 @@ class Zend_Translate_Adapter_Qt extends Zend_Translate_Adapter {
             Zend_Xml_Security::scanFile($filename);
         } catch (Zend_Xml_Exception $e) {
             require_once 'Zend/Translate/Exception.php';
-            throw new Zend_Translate_Exception(
-                $e->getMessage()
-            );
+            throw new Zend_Translate_Exception($e->getMessage());
         }
-
-        if (!xml_parse($this->_file, file_get_contents($filename))) {
-            $ex = sprintf('XML error: %s at line %d of file %s',
-                          xml_error_string(xml_get_error_code($this->_file)),
-                          xml_get_current_line_number($this->_file),
-                          $filename);
+        
+        if (! xml_parse($this->_file, file_get_contents($filename))) {
+            $ex = sprintf('XML error: %s at line %d of file %s', xml_error_string(xml_get_error_code($this->_file)), xml_get_current_line_number($this->_file), $filename);
             xml_parser_free($this->_file);
             require_once 'Zend/Translate/Exception.php';
             throw new Zend_Translate_Exception($ex);
         }
-
+        
         return $this->_data;
     }
 
     private function _startElement($file, $name, $attrib)
     {
-        switch(strtolower($name)) {
+        switch (strtolower($name)) {
             case 'message':
                 $this->_source = null;
                 $this->_stag = false;
@@ -127,15 +146,14 @@ class Zend_Translate_Adapter_Qt extends Zend_Translate_Adapter {
             case 'source':
                 $this->_stag = false;
                 break;
-
+            
             case 'translation':
-                if (!empty($this->_scontent) and !empty($this->_tcontent) or
-                    (isset($this->_data[$this->_target][$this->_scontent]) === false)) {
+                if (! empty($this->_scontent) and ! empty($this->_tcontent) or (isset($this->_data[$this->_target][$this->_scontent]) === false)) {
                     $this->_data[$this->_target][$this->_scontent] = $this->_tcontent;
                 }
                 $this->_ttag = false;
                 break;
-
+            
             default:
                 break;
         }
@@ -146,7 +164,7 @@ class Zend_Translate_Adapter_Qt extends Zend_Translate_Adapter {
         if ($this->_stag === true) {
             $this->_scontent .= $data;
         }
-
+        
         if ($this->_ttag === true) {
             $this->_tcontent .= $data;
         }

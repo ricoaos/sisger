@@ -20,22 +20,22 @@
  * @version    $Id: Phrase.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-
 /**
  * Zend_Search_Lucene_Search_Weight
  */
 require_once 'Zend/Search/Lucene/Search/Weight.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Search_Lucene
+ *
+ * @category Zend
+ * @package Zend_Search_Lucene
  * @subpackage Search
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Search_Lucene_Search_Weight_Phrase extends Zend_Search_Lucene_Search_Weight
 {
+
     /**
      * IndexReader.
      *
@@ -60,13 +60,12 @@ class Zend_Search_Lucene_Search_Weight_Phrase extends Zend_Search_Lucene_Search_
     /**
      * Zend_Search_Lucene_Search_Weight_Phrase constructor
      *
-     * @param Zend_Search_Lucene_Search_Query_Phrase $query
-     * @param Zend_Search_Lucene_Interface           $reader
+     * @param Zend_Search_Lucene_Search_Query_Phrase $query            
+     * @param Zend_Search_Lucene_Interface $reader            
      */
-    public function __construct(Zend_Search_Lucene_Search_Query_Phrase $query,
-                                Zend_Search_Lucene_Interface           $reader)
+    public function __construct(Zend_Search_Lucene_Search_Query_Phrase $query, Zend_Search_Lucene_Interface $reader)
     {
-        $this->_query  = $query;
+        $this->_query = $query;
         $this->_reader = $reader;
     }
 
@@ -79,27 +78,26 @@ class Zend_Search_Lucene_Search_Weight_Phrase extends Zend_Search_Lucene_Search_
     {
         // compute idf
         $this->_idf = $this->_reader->getSimilarity()->idf($this->_query->getTerms(), $this->_reader);
-
+        
         // compute query weight
         $this->_queryWeight = $this->_idf * $this->_query->getBoost();
-
+        
         // square it
         return $this->_queryWeight * $this->_queryWeight;
     }
 
-
     /**
      * Assigns the query normalization factor to this.
      *
-     * @param float $queryNorm
+     * @param float $queryNorm            
      */
     public function normalize($queryNorm)
     {
         $this->_queryNorm = $queryNorm;
-
+        
         // normalize query weight
         $this->_queryWeight *= $queryNorm;
-
+        
         // idf for documents
         $this->_value = $this->_queryWeight * $this->_idf;
     }

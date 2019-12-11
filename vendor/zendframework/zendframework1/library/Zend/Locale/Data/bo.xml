@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9287 $"/>
-		<generation date="$Date: 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013) $"/>
-		<language type="bo"/>
+		<version number="$Revision: 9287 $" />
+		<generation date="$Date: 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013) $" />
+		<language type="bo" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -19,7 +18,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="dz">རྫོང་ཁ</language>
 			<language type="en" draft="unconfirmed">དབིན་ཇིའི་སྐད།</language>
 			<language type="en_CA" draft="unconfirmed">དབིན་ཇིའི་སྐད། (ཁེ་ན་ཌ་)</language>
-			<language type="en_GB" draft="unconfirmed">དབིན་ཇིའི་སྐད། (དབིན་ཇིའི་རྒྱལ་ཁབ་)</language>
+			<language type="en_GB" draft="unconfirmed">དབིན་ཇིའི་སྐད།
+				(དབིན་ཇིའི་རྒྱལ་ཁབ་)</language>
 			<language type="en_US" draft="unconfirmed">དབིན་ཇིའི་སྐད། (ཨ་རི་)</language>
 			<language type="es" draft="provisional">ཞི་པན་ཡའི།</language>
 			<language type="fr" draft="provisional">ཧྥ་རན་སིའི་།</language>
@@ -53,7 +53,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="tr" draft="unconfirmed">ཐུར་ཁེའི་སྐད།</language>
 			<language type="ug" draft="unconfirmed">ཡུ་གུར་སྐད།</language>
 			<language type="uk" draft="unconfirmed">ཡུ་ཀྲ་ནི་སྐད།</language>
-			<language type="und" draft="provisional">མིའི་ཤེས་རྟོགས་མ་བྱུང་བ། ཡང་ན་ཆད་ལྷག་ཅན་གྱི་སྐད་བརྡ།</language>
+			<language type="und" draft="provisional">མིའི་ཤེས་རྟོགས་མ་བྱུང་བ།
+				ཡང་ན་ཆད་ལྷག་ཅན་གྱི་སྐད་བརྡ།</language>
 			<language type="ur" draft="unconfirmed">ཝུའུ་ཏུའུ་སྐད།</language>
 			<language type="vi" draft="unconfirmed">ཡོ་ནན་སྐད།</language>
 			<language type="zen" draft="unconfirmed">ཟེ་ན་གཱ་སྐད།</language>
@@ -74,8 +75,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Latn" draft="provisional">ལ་ཏིན་སྐད་ཡིག་།</script>
 			<script type="Mymr" draft="unconfirmed">འབར་མའི་སྐད་ཡིག</script>
 			<script type="Tibt">བོད་ཡིག་</script>
-			<script type="Zxxx" draft="provisional">སྙན་བརྒྱུད། ཡིག་རིགས་སུ་མ་བཀོད་པའི་ཟིན་ཐོ།་</script>
-			<script type="Zzzz" draft="provisional">མིའི་ཤེས་རྟོགས་མ་བྱུང་བ། ཡང་ན་ཆད་ལྷག་ཅན་གྱི་ཟིན་བྲིས།</script>
+			<script type="Zxxx" draft="provisional">སྙན་བརྒྱུད།
+				ཡིག་རིགས་སུ་མ་བཀོད་པའི་ཟིན་ཐོ།་</script>
+			<script type="Zzzz" draft="provisional">མིའི་ཤེས་རྟོགས་མ་བྱུང་བ།
+				ཡང་ན་ཆད་ལྷག་ཅན་གྱི་ཟིན་བྲིས།</script>
 		</scripts>
 		<territories>
 			<territory type="001">འཛམ་གླིང་།</territory>
@@ -84,7 +87,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="142" draft="unconfirmed">ཨེ་ཤི་ཡ།</territory>
 			<territory type="150" draft="unconfirmed">ཡུ་རོབ།</territory>
 			<territory type="AD" draft="unconfirmed">ཨེན་ཌོ་ར།</territory>
-			<territory type="AE" draft="unconfirmed">ཨ་རབ། ཨི་མི་རཊ྄། ཆིག་སྒྲིལ་རྒྱལ་ཁབ།</territory>
+			<territory type="AE" draft="unconfirmed">ཨ་རབ། ཨི་མི་རཊ྄།
+				ཆིག་སྒྲིལ་རྒྱལ་ཁབ།</territory>
 			<territory type="AF" draft="unconfirmed">ཨཕ་ག་ནི་སྟཱན།</territory>
 			<territory type="AG" draft="unconfirmed">ཨེན་ཊི་གུ་དང་། བྷར་བུ་ཌ།</territory>
 			<territory type="AI" draft="unconfirmed">ཨང་གུའི་ལ།</territory>
@@ -276,10 +280,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</measurementSystemNames>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[\u0F7E ཿ ཀ {ཀ\u0FB5} \u0F90 {\u0F90\u0FB5} ཁ \u0F91 ག {ག\u0FB7} \u0F92 {\u0F92\u0FB7} ང \u0F94 ཅ \u0F95 ཆ \u0F96 ཇ \u0F97 ཉ \u0F99 ཊ \u0F9A ཋ \u0F9B ཌ {ཌ\u0FB7} \u0F9C {\u0F9C\u0FB7} ཎ \u0F9E ཏ \u0F9F ཐ \u0FA0 ད {ད\u0FB7} \u0FA1 {\u0FA1\u0FB7} ན \u0FA3 པ \u0FA4 ཕ \u0FA5 བ {བ\u0FB7} \u0FA6 {\u0FA6\u0FB7} མ \u0FA8 ཙ \u0FA9 ཚ \u0FAA ཛ {ཛ\u0FB7} \u0FAB {\u0FAB\u0FB7} ཝ \u0FAD \u0FBA ཞ \u0FAE ཟ \u0FAF འ \u0FB0 ཡ \u0FB1 \u0FBB ར ཪ \u0FB2 \u0FBC ལ \u0FB3 ཤ \u0FB4 ཥ \u0FB5 ས \u0FB6 ཧ \u0FB7 ཨ \u0FB8 \u0F72 {\u0F71\u0F72} \u0F80 {\u0F71\u0F80} \u0F74 {\u0F71\u0F74} {\u0FB2\u0F80} \u0F77 {\u0FB3\u0F80} \u0F79 \u0F7A \u0F7B \u0F7C \u0F7D \u0F84]</exemplarCharacters>
+		<exemplarCharacters>[\u0F7E ཿ ཀ {ཀ\u0FB5} \u0F90 {\u0F90\u0FB5} ཁ
+			\u0F91 ག {ག\u0FB7} \u0F92 {\u0F92\u0FB7} ང \u0F94 ཅ \u0F95 ཆ \u0F96 ཇ
+			\u0F97 ཉ \u0F99 ཊ \u0F9A ཋ \u0F9B ཌ {ཌ\u0FB7} \u0F9C {\u0F9C\u0FB7} ཎ
+			\u0F9E ཏ \u0F9F ཐ \u0FA0 ད {ད\u0FB7} \u0FA1 {\u0FA1\u0FB7} ན \u0FA3 པ
+			\u0FA4 ཕ \u0FA5 བ {བ\u0FB7} \u0FA6 {\u0FA6\u0FB7} མ \u0FA8 ཙ \u0FA9 ཚ
+			\u0FAA ཛ {ཛ\u0FB7} \u0FAB {\u0FAB\u0FB7} ཝ \u0FAD \u0FBA ཞ \u0FAE ཟ
+			\u0FAF འ \u0FB0 ཡ \u0FB1 \u0FBB ར ཪ \u0FB2 \u0FBC ལ \u0FB3 ཤ \u0FB4 ཥ
+			\u0FB5 ས \u0FB6 ཧ \u0FB7 ཨ \u0FB8 \u0F72 {\u0F71\u0F72} \u0F80
+			{\u0F71\u0F80} \u0F74 {\u0F71\u0F74} {\u0FB2\u0F80} \u0F77
+			{\u0FB3\u0F80} \u0F79 \u0F7A \u0F7B \u0F7C \u0F7D \u0F84]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[ༀ]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[ཀ ཁ ག ང ཅ ཆ ཇ ཉ ཏ ཐ ད ན པ ཕ བ མ ཙ ཚ ཛ ཝ ཞ ཟ འ ཡ ར ལ ཤ ས ཧ ཨ]</exemplarCharacters>
-		<exemplarCharacters type="punctuation" draft="unconfirmed">[\: ་ །]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[ཀ ཁ ག ང ཅ ཆ
+			ཇ ཉ ཏ ཐ ད ན པ ཕ བ མ ཙ ཚ ཛ ཝ ཞ ཟ འ ཡ ར ལ ཤ ས ཧ ཨ]</exemplarCharacters>
+		<exemplarCharacters type="punctuation" draft="unconfirmed">[\: ་
+			།]</exemplarCharacters>
 	</characters>
 	<dates>
 		<calendars>

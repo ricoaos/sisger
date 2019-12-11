@@ -28,11 +28,11 @@ require_once 'Zend/InfoCard/Xml/EncryptedData/Abstract.php';
 /**
  * An XmlEnc formatted EncryptedData XML block
  *
- * @category   Zend
- * @package    Zend_InfoCard
+ * @category Zend
+ * @package Zend_InfoCard
  * @subpackage Zend_InfoCard_Xml
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_InfoCard_Xml_EncryptedData_XmlEnc extends Zend_InfoCard_Xml_EncryptedData_Abstract
 {
@@ -46,19 +46,19 @@ class Zend_InfoCard_Xml_EncryptedData_XmlEnc extends Zend_InfoCard_Xml_Encrypted
     public function getCipherValue()
     {
         $this->registerXPathNamespace('enc', 'http://www.w3.org/2001/04/xmlenc#');
-
-        list(,$cipherdata) = $this->xpath("//enc:CipherData");
-
-        if(!($cipherdata instanceof Zend_InfoCard_Xml_Element)) {
+        
+        list ($cipherdata) = $this->xpath("//enc:CipherData");
+        
+        if (! ($cipherdata instanceof Zend_InfoCard_Xml_Element)) {
             throw new Zend_InfoCard_Xml_Exception("Unable to find the enc:CipherData block");
         }
         $cipherdata->registerXPathNamespace('enc', 'http://www.w3.org/2001/04/xmlenc#');
-        list(,$ciphervalue) = $cipherdata->xpath("//enc:CipherValue");
-
-        if(!($ciphervalue instanceof Zend_InfoCard_Xml_Element)) {
+        list ($ciphervalue) = $cipherdata->xpath("//enc:CipherValue");
+        
+        if (! ($ciphervalue instanceof Zend_InfoCard_Xml_Element)) {
             throw new Zend_InfoCard_Xml_Exception("Unable to fidn the enc:CipherValue block");
         }
-
-        return (string)$ciphervalue;
+        
+        return (string) $ciphervalue;
     }
 }

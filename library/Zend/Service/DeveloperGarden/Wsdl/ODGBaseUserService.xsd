@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xsd:schema 
-	xmlns="http://odg.tonline.de/ODGBaseUserService/"
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-	xmlns:tns="http://odg.tonline.de/ODGBaseUserService/"
+<xsd:schema xmlns="http://odg.tonline.de/ODGBaseUserService/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://odg.tonline.de/ODGBaseUserService/"
 	targetNamespace="http://odg.tonline.de/ODGBaseUserService/"
-	elementFormDefault="unqualified" 
-	attributeFormDefault="unqualified" version="1.1">
-	
-	
-	
-	
-	
+	elementFormDefault="unqualified" attributeFormDefault="unqualified"
+	version="1.1">
+
+
+
+
+
 	<xsd:complexType name="AccountBalance">
 		<xsd:sequence>
 			<xsd:element name="Account" type="xsd:string"></xsd:element>
@@ -21,16 +19,18 @@
 	<xsd:element name="getAccountBalance">
 		<xsd:complexType>
 			<xsd:sequence>
-				<xsd:element name="Account" type="xsd:string" maxOccurs="unbounded" minOccurs="0"></xsd:element>
+				<xsd:element name="Account" type="xsd:string" maxOccurs="unbounded"
+					minOccurs="0"></xsd:element>
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
 	<xsd:element name="getAccountBalanceResponse">
 		<xsd:complexType>
 			<xsd:sequence>
-				<xsd:element name="Account" type="tns:AccountBalance" maxOccurs="unbounded" minOccurs="1"></xsd:element>
+				<xsd:element name="Account" type="tns:AccountBalance"
+					maxOccurs="unbounded" minOccurs="1"></xsd:element>
 				<xsd:element name="errorCode" type="xsd:string" />
-                <xsd:element name="errorMessage" type="xsd:string" />
+				<xsd:element name="errorMessage" type="xsd:string" />
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
@@ -63,7 +63,8 @@
 				<xsd:element name="errorCode" type="xsd:string" />
 				<xsd:element name="errorMessage" type="xsd:string" />
 				<xsd:element name="maxQuota" type="xsd:int" />
-				<xsd:element name="maxUserQuota" type="xsd:int"	nillable="true" minOccurs="0" maxOccurs="1" />
+				<xsd:element name="maxUserQuota" type="xsd:int"
+					nillable="true" minOccurs="0" maxOccurs="1" />
 				<xsd:element name="quotaLevel" type="xsd:int" />
 			</xsd:sequence>
 		</xsd:complexType>

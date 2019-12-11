@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9287 $"/>
-		<generation date="$Date: 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013) $"/>
-		<language type="kln"/>
+		<version number="$Revision: 9287 $" />
+		<generation date="$Date: 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013) $" />
+		<language type="kln" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -150,7 +149,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IE">Emetab Ireland</territory>
 			<territory type="IL">Emetab Israel</territory>
 			<territory type="IN">Emetab India</territory>
-			<territory type="IO">Kebebertab araraitab indian Ocean nebo Uingeresa</territory>
+			<territory type="IO">Kebebertab araraitab indian Ocean nebo
+				Uingeresa</territory>
 			<territory type="IQ">Emetab Iraq</territory>
 			<territory type="IR">Emetab Iran</territory>
 			<territory type="IS">Emetab Iceland</territory>
@@ -289,7 +289,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 	<characters>
 		<exemplarCharacters>[a b c d e g h i j k l m n o p r s t u w y]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[f q v x z]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E G H I J K L M N O P R S T U W Y]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E G H I J K L M N
+			O P R S T U W Y]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart>“</quotationStart>

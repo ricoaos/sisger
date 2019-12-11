@@ -20,22 +20,27 @@
  * @version    $Id: Error.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-/** @see Zend_Barcode_Object_ObjectAbstract */
+/**
+ *
+ * @see Zend_Barcode_Object_ObjectAbstract
+ */
 require_once 'Zend/Barcode/Object/ObjectAbstract.php';
 
 /**
  * Class for generate Barcode
  *
- * @category   Zend
- * @package    Zend_Barcode
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Barcode
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Barcode_Object_Error extends Zend_Barcode_Object_ObjectAbstract
 {
+
     /**
      * All texts are accepted
-     * @param string $value
+     * 
+     * @param string $value            
      * @return boolean
      */
     public function validateText($value)
@@ -45,6 +50,7 @@ class Zend_Barcode_Object_Error extends Zend_Barcode_Object_ObjectAbstract
 
     /**
      * Height is forced
+     * 
      * @return integer
      */
     public function getHeight($recalculate = false)
@@ -54,6 +60,7 @@ class Zend_Barcode_Object_Error extends Zend_Barcode_Object_ObjectAbstract
 
     /**
      * Width is forced
+     * 
      * @return integer
      */
     public function getWidth($recalculate = false)
@@ -64,37 +71,44 @@ class Zend_Barcode_Object_Error extends Zend_Barcode_Object_ObjectAbstract
     /**
      * Reset precedent instructions
      * and draw the error message
+     * 
      * @return array
      */
     public function draw()
     {
         $this->_instructions = array();
-        $this->_addText('ERROR:', 10, array(5 , 18), $this->_font, 0, 'left');
-        $this->_addText($this->_text, 10, array(5 , 32), $this->_font, 0, 'left');
+        $this->_addText('ERROR:', 10, array(
+            5,
+            18
+        ), $this->_font, 0, 'left');
+        $this->_addText($this->_text, 10, array(
+            5,
+            32
+        ), $this->_font, 0, 'left');
         return $this->_instructions;
     }
 
     /**
      * For compatibility reason
+     * 
      * @return void
      */
     protected function _prepareBarcode()
-    {
-    }
+    {}
 
     /**
      * For compatibility reason
+     * 
      * @return void
      */
     protected function _checkParams()
-    {
-    }
+    {}
 
     /**
      * For compatibility reason
+     * 
      * @return void
      */
     protected function _calculateBarcodeWidth()
-    {
-    }
+    {}
 }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,15 +22,17 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_DeveloperGarden_Request_BaseUserService_ChangeQuotaPool
 {
+
     /**
      * string module id
      *
@@ -47,20 +50,19 @@ class Zend_Service_DeveloperGarden_Request_BaseUserService_ChangeQuotaPool
     /**
      * constructor give them the module id
      *
-     * @param string $moduleId
-     * @param integer $quotaMax
+     * @param string $moduleId            
+     * @param integer $quotaMax            
      * @return Zend_Service_Developergarde_Request_ChangeQuotaPool
      */
     public function __construct($moduleId = null, $quotaMax = 0)
     {
-        $this->setModuleId($moduleId)
-             ->setQuotaMax($quotaMax);
+        $this->setModuleId($moduleId)->setQuotaMax($quotaMax);
     }
 
     /**
      * sets a new moduleId
      *
-     * @param integer $moduleId
+     * @param integer $moduleId            
      * @return Zend_Service_Developergarde_Request_ChangeQuotaPool
      */
     public function setModuleId($moduleId = null)
@@ -82,7 +84,7 @@ class Zend_Service_DeveloperGarden_Request_BaseUserService_ChangeQuotaPool
     /**
      * sets new QuotaMax value
      *
-     * @param integer $quotaMax
+     * @param integer $quotaMax            
      * @return Zend_Service_Developergarde_Request_ChangeQuotaPool
      */
     public function setQuotaMax($quotaMax = 0)

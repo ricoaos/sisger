@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="mn"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="mn" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -319,7 +318,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">Финланд</territory>
 			<territory type="FJ">Фижи</territory>
 			<territory type="FK">Фолькландын Арлууд</territory>
-			<territory type="FK" alt="variant">Фолькландын Арлууд (Ислас Мальвинас)</territory>
+			<territory type="FK" alt="variant">Фолькландын Арлууд (Ислас
+				Мальвинас)</territory>
 			<territory type="FM">Микронези</territory>
 			<territory type="FO">Фароэ Арлууд</territory>
 			<territory type="FR">Франц</territory>
@@ -356,7 +356,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IL">Израиль</territory>
 			<territory type="IM">Мэн Арал</territory>
 			<territory type="IN">Энэтхэг</territory>
-			<territory type="IO">Британийн харьяа Энэтхэгийн далай дахь нутаг дэвсгэрүүд</territory>
+			<territory type="IO">Британийн харьяа Энэтхэгийн далай дахь
+				нутаг дэвсгэрүүд</territory>
 			<territory type="IQ">Ирак</territory>
 			<territory type="IR">Иран</territory>
 			<territory type="IS">Исланд</territory>
@@ -395,7 +396,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MG">Мадагаскар</territory>
 			<territory type="MH">Маршаллын Арлууд</territory>
 			<territory type="MK">Македон</territory>
-			<territory type="MK" alt="variant">Македон (Хуучин Югославын бүрэлдэхүүний Македон)</territory>
+			<territory type="MK" alt="variant">Македон (Хуучин Югославын
+				бүрэлдэхүүний Македон)</territory>
 			<territory type="ML">Мали</territory>
 			<territory type="MM">Мьянмар (Бурма)</territory>
 			<territory type="MN">Монгол</territory>
@@ -570,10 +572,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[а б в г д е ё ж з и й к л м н о ө п р с т у ү ф х ц ч ш щ ъ ы ь э ю я]</exemplarCharacters>
+		<exemplarCharacters>[а б в г д е ё ж з и й к л м н о ө п р с т у ү ф х
+			ц ч ш щ ъ ы ь э ю я]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[ә җ ӊ һ]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="unconfirmed">[А Б В Г Д Е Ж З И Й К Л М Н О Ө П Р С Т У Ү Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="unconfirmed">[А Б В Г Д Е
+			Ж З И Й К Л М Н О Ө П Р С Т У Ү Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -737,9 +742,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">G y/MM/dd - y/MM/dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, G y/MM/dd – E, y/MM/dd</greatestDifference>
-							<greatestDifference id="M">E, G y/MM/dd – E, y/MM/dd</greatestDifference>
-							<greatestDifference id="y">E, G y/MM/dd – E, y/MM/dd</greatestDifference>
+							<greatestDifference id="d">E, G y/MM/dd – E,
+								y/MM/dd</greatestDifference>
+							<greatestDifference id="M">E, G y/MM/dd – E,
+								y/MM/dd</greatestDifference>
+							<greatestDifference id="y">E, G y/MM/dd – E,
+								y/MM/dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">G y/MM-MM</greatestDifference>
@@ -751,12 +759,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">G y/MM/dd - y/MM/dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, G y/MM/dd – E, y/MM/dd</greatestDifference>
-							<greatestDifference id="M">E, G y/MM/dd – E, y/MM/dd</greatestDifference>
-							<greatestDifference id="y">E, G y/MM/dd – E, y/MM/dd</greatestDifference>
+							<greatestDifference id="d">E, G y/MM/dd – E,
+								y/MM/dd</greatestDifference>
+							<greatestDifference id="M">E, G y/MM/dd – E,
+								y/MM/dd</greatestDifference>
+							<greatestDifference id="y">E, G y/MM/dd – E,
+								y/MM/dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
-							<greatestDifference id="M">G y 'оны' MM-MM-'р' 'сар'</greatestDifference>
+							<greatestDifference id="M">G y 'оны' MM-MM-'р'
+								'сар'</greatestDifference>
 							<greatestDifference id="y">G y/MM -y/MM</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
@@ -1235,12 +1247,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="0">энэ долоо хоног</relative>
 				<relative type="1">ирэх долоо хоног</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">{0} долоо хоногийн дараа</relativeTimePattern>
-					<relativeTimePattern count="other">{0} долоо хоногийн дараа</relativeTimePattern>
+					<relativeTimePattern count="one">{0} долоо хоногийн
+						дараа</relativeTimePattern>
+					<relativeTimePattern count="other">{0} долоо хоногийн
+						дараа</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} долоо хоногийн өмнө</relativeTimePattern>
-					<relativeTimePattern count="other">{0} долоо хоногийн өмнө</relativeTimePattern>
+					<relativeTimePattern count="one">{0} долоо хоногийн
+						өмнө</relativeTimePattern>
+					<relativeTimePattern count="other">{0} долоо хоногийн
+						өмнө</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="day">

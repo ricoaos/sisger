@@ -22,6 +22,7 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
@@ -29,16 +30,17 @@ require_once 'Zend/Gdata/Extension.php';
 /**
  * Represents the gd:eventStatus element
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Gdata
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Extension_EventStatus extends Zend_Gdata_Extension
 {
 
     protected $_rootElement = 'eventStatus';
+
     protected $_value = null;
 
     public function __construct($value = null)
@@ -59,11 +61,11 @@ class Zend_Gdata_Extension_EventStatus extends Zend_Gdata_Extension
     protected function takeAttributeFromDOM($attribute)
     {
         switch ($attribute->localName) {
-        case 'value':
-            $this->_value = $attribute->nodeValue;
-            break;
-        default:
-            parent::takeAttributeFromDOM($attribute);
+            case 'value':
+                $this->_value = $attribute->nodeValue;
+                break;
+            default:
+                parent::takeAttributeFromDOM($attribute);
         }
     }
 
@@ -80,7 +82,8 @@ class Zend_Gdata_Extension_EventStatus extends Zend_Gdata_Extension
     /**
      * Set the value for this element's Value attribute.
      *
-     * @param string $value The desired value for this attribute.
+     * @param string $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Extension_Visibility The element being modified.
      */
     public function setValue($value)
@@ -97,5 +100,4 @@ class Zend_Gdata_Extension_EventStatus extends Zend_Gdata_Extension
     {
         return $this->getValue();
     }
-
 }

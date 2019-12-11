@@ -20,50 +20,60 @@
  */
 
 /**
+ *
  * @see Zend_Http_Client
  */
 require_once 'Zend/Http/Client.php';
 
 /**
+ *
  * @see Zend_Uri
  */
 require_once 'Zend/Uri.php';
 
 /**
+ *
  * @see Zend_Version
  */
 require_once 'Zend/Version.php';
 
 /**
+ *
  * @see Zend_Feed_Reader
  */
 require_once 'Zend/Feed/Reader.php';
 
 /**
+ *
  * @see Zend_Feed_Abstract
  */
 require_once 'Zend/Feed/Abstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Feed_Pubsubhubbub
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Feed_Pubsubhubbub
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Feed_Pubsubhubbub
 {
+
     /**
      * Verification Modes
      */
-    const VERIFICATION_MODE_SYNC  = 'sync';
+    const VERIFICATION_MODE_SYNC = 'sync';
+
     const VERIFICATION_MODE_ASYNC = 'async';
 
     /**
      * Subscription States
      */
-    const SUBSCRIPTION_VERIFIED    = 'verified';
+    const SUBSCRIPTION_VERIFIED = 'verified';
+
     const SUBSCRIPTION_NOTVERIFIED = 'not_verified';
-    const SUBSCRIPTION_TODELETE    = 'to_delete';
+
+    const SUBSCRIPTION_TODELETE = 'to_delete';
 
     /**
      * Singleton instance if required of the HTTP client
@@ -74,11 +84,12 @@ class Zend_Feed_Pubsubhubbub
 
     /**
      * Simple utility function which imports any feed URL and
-     * determines the existence of Hub Server endpoints. This works
+     * determines the existence of Hub Server endpoints.
+     * This works
      * best if directly given an instance of Zend_Feed_Reader_Atom|Rss
      * to leverage off.
      *
-     * @param  Zend_Feed_Reader_FeedAbstract|Zend_Feed_Abstract|string $source
+     * @param Zend_Feed_Reader_FeedAbstract|Zend_Feed_Abstract|string $source            
      * @return array
      */
     public static function detectHubs($source)
@@ -91,9 +102,7 @@ class Zend_Feed_Pubsubhubbub
             $feed = Zend_Feed_Reader::importFeed($source);
         } else {
             require_once 'Zend/Feed/Pubsubhubbub/Exception.php';
-            throw new Zend_Feed_Pubsubhubbub_Exception('The source parameter was'
-            . ' invalid, i.e. not a URL string or an instance of type'
-            . ' Zend_Feed_Reader_FeedAbstract or Zend_Feed_Abstract');
+            throw new Zend_Feed_Pubsubhubbub_Exception('The source parameter was' . ' invalid, i.e. not a URL string or an instance of type' . ' Zend_Feed_Reader_FeedAbstract or Zend_Feed_Abstract');
         }
         return $feed->getHubs();
     }
@@ -102,7 +111,7 @@ class Zend_Feed_Pubsubhubbub
      * Allows the external environment to make Zend_Oauth use a specific
      * Client instance.
      *
-     * @param  Zend_Http_Client $httpClient
+     * @param Zend_Http_Client $httpClient            
      * @return void
      */
     public static function setHttpClient(Zend_Http_Client $httpClient)
@@ -111,7 +120,8 @@ class Zend_Feed_Pubsubhubbub
     }
 
     /**
-     * Return the singleton instance of the HTTP Client. Note that
+     * Return the singleton instance of the HTTP Client.
+     * Note that
      * the instance is reset and cleared of previous parameters GET/POST.
      * Headers are NOT reset but handled by this component if applicable.
      *
@@ -119,9 +129,9 @@ class Zend_Feed_Pubsubhubbub
      */
     public static function getHttpClient()
     {
-        if (!isset(self::$httpClient)):
-            self::$httpClient = new Zend_Http_Client;
-        else:
+        if (! isset(self::$httpClient)) :
+            self::$httpClient = new Zend_Http_Client();
+        else :
             self::$httpClient->resetParameters();
         endif;
         return self::$httpClient;
@@ -141,7 +151,7 @@ class Zend_Feed_Pubsubhubbub
     /**
      * RFC 3986 safe url encoding method
      *
-     * @param  string $string
+     * @param string $string            
      * @return string
      */
     public static function urlencode($string)

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="ar"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="ar" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -137,7 +136,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="en_GB">الإنجليزية البريطانية</language>
 			<language type="en_GB" alt="short">الإنجليزية المملكة المتحدة</language>
 			<language type="en_US">الإنجليزية الولايات المتحدة</language>
-			<language type="en_US" alt="short" draft="contributed">الإنجليزية الولايات المتحدة</language>
+			<language type="en_US" alt="short" draft="contributed">الإنجليزية الولايات
+				المتحدة</language>
 			<language type="enm">الإنجليزية الوسطى</language>
 			<language type="eo">الإسبرانتو</language>
 			<language type="es">الإسبانية</language>
@@ -819,7 +819,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MG">مدغشقر</territory>
 			<territory type="MH">جزر المارشال</territory>
 			<territory type="MK">مقدونيا</territory>
-			<territory type="MK" alt="variant">مقدونيا- جمهورية مقدونيا اليوغسلافية السابقة</territory>
+			<territory type="MK" alt="variant">مقدونيا- جمهورية مقدونيا
+				اليوغسلافية السابقة</territory>
 			<territory type="ML">مالي</territory>
 			<territory type="MM">ميانمار -بورما</territory>
 			<territory type="MN">منغوليا</territory>
@@ -947,7 +948,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="POLYTON">متعدد النغمات</variant>
 			<variant type="POSIX">حاسوب</variant>
 			<variant type="REVISED">تهجئة تمت مراجعتها</variant>
-			<variant type="SCOTLAND" draft="contributed">الإنجليزية الأسكتلندنية الرسمية</variant>
+			<variant type="SCOTLAND" draft="contributed">الإنجليزية الأسكتلندنية
+				الرسمية</variant>
 			<variant type="UCCOR" draft="contributed">التهجئة الموحدة</variant>
 			<variant type="UCRCOR" draft="contributed">التهجئة المراجعة الموحدة</variant>
 			<variant type="VALENCIA">بلنسية</variant>
@@ -957,7 +959,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="calendar">التقويم</key>
 			<key type="colAlternate" draft="contributed">التصنيف بحسب تجاهل الرموز</key>
 			<key type="colBackwards" draft="contributed">التصنيف بحسب اللكنة المعكوسة</key>
-			<key type="colCaseFirst" draft="contributed">الترتيب بحسب الأحرف الكبيرة/الصغيرة</key>
+			<key type="colCaseFirst" draft="contributed">الترتيب بحسب الأحرف
+				الكبيرة/الصغيرة</key>
 			<key type="colCaseLevel" draft="contributed">التصنيف بحسب حساسية حالة الأحرف</key>
 			<key type="colHiraganaQuaternary" draft="contributed">التصنيف بحسب الكانا</key>
 			<key type="collation">ترتيب الفرز</key>
@@ -1007,8 +1010,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="indian" key="calendar">التقويم القومي الهندي</type>
 			<type type="islamic" key="calendar">التقويم الهجري</type>
 			<type type="islamic-civil" key="calendar">التقويم الإسلامي المدني</type>
-			<type type="islamic-rgsa" key="calendar" draft="contributed">التقويم الإسلامي (مستخدم بالسعودية)</type>
-			<type type="islamic-tbla" key="calendar">التقويم الإسلامي (مجدول، العصر الفلكي)</type>
+			<type type="islamic-rgsa" key="calendar" draft="contributed">التقويم الإسلامي
+				(مستخدم بالسعودية)</type>
+			<type type="islamic-tbla" key="calendar">التقويم الإسلامي (مجدول، العصر
+				الفلكي)</type>
 			<type type="islamic-umalqura" key="calendar">التقويم الإسلامي (أم القرى)</type>
 			<type type="japanese" key="calendar">التقويم الياباني</type>
 			<type type="jpan" key="numbers">الأرقام اليابانية</type>
@@ -1017,15 +1022,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="knda" key="numbers">أرقام الكانادا</type>
 			<type type="laoo" key="numbers">الأرقام اللاوية</type>
 			<type type="latn" key="numbers">الأرقام الغربية</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">تصنيف الأحرف الصغيرة أولاً</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">تصنيف الأحرف الصغيرة
+				أولاً</type>
 			<type type="mlym" key="numbers">الأرقام الملايلامية</type>
 			<type type="mong" key="numbers">الأرقام المغولية</type>
 			<type type="mymr" key="numbers">أرقام ميانمار</type>
 			<type type="native" key="numbers" draft="contributed">الأرقام الأصلية</type>
 			<type type="no" key="colBackwards" draft="contributed">تصنيف اللكنات بشكل عادي</type>
-			<type type="no" key="colCaseFirst" draft="contributed">ترتيب تصنيف حالة الأحرف الطبيعية</type>
-			<type type="no" key="colCaseLevel" draft="contributed">تصنيف بحسب الأحرف غير الحساسة لحالة الأحرف</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">تصنيف الكانا بشكل منفصل</type>
+			<type type="no" key="colCaseFirst" draft="contributed">ترتيب تصنيف حالة الأحرف
+				الطبيعية</type>
+			<type type="no" key="colCaseLevel" draft="contributed">تصنيف بحسب الأحرف غير
+				الحساسة لحالة الأحرف</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">تصنيف الكانا
+				بشكل منفصل</type>
 			<type type="no" key="colNormalization" draft="contributed">التصفية بدون تسوية</type>
 			<type type="no" key="colNumeric" draft="contributed">تصنيف الأرقام على حدة</type>
 			<type type="non-ignorable" key="colAlternate" draft="contributed">تصنيف الرموز</type>
@@ -1034,14 +1043,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="phonebook" key="collation">ترتيب فرز دليل الهاتف</type>
 			<type type="phonetic" key="collation" draft="contributed">ترتيب الفرز الصوتي</type>
 			<type type="pinyin" key="collation">الترتيب الصيني بنيين المبسط</type>
-			<type type="primary" key="colStrength" draft="contributed">تصنيف الحروف الأساسية فقط</type>
-			<type type="quaternary" key="colStrength" draft="contributed">تصنيف اللكنات/الحالة/العرض/الكانا</type>
+			<type type="primary" key="colStrength" draft="contributed">تصنيف الحروف
+				الأساسية فقط</type>
+			<type type="quaternary" key="colStrength" draft="contributed">تصنيف
+				اللكنات/الحالة/العرض/الكانا</type>
 			<type type="reformed" key="collation">ترتيب فرز محسَّن</type>
 			<type type="roc" key="calendar">تقويم مينجو</type>
 			<type type="roman" key="numbers">الأرقام الرومانية</type>
 			<type type="romanlow" key="numbers">الأرقام الرومانية الصغيرة</type>
 			<type type="search" key="collation">بحث لأغراض عامة</type>
-			<type type="searchjl" key="collation" draft="contributed">بحث باستخدام حرف الهانغول الساكن الأول</type>
+			<type type="searchjl" key="collation" draft="contributed">بحث باستخدام حرف
+				الهانغول الساكن الأول</type>
 			<type type="secondary" key="colStrength" draft="contributed">تصنيف اللكنات</type>
 			<type type="shifted" key="colAlternate" draft="contributed">تصنيف تجاهل الرموز</type>
 			<type type="standard" key="collation">ترتيب الفرز القياسي</type>
@@ -1049,18 +1061,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">الأرقام التاميلية التقليدية</type>
 			<type type="tamldec" key="numbers">الأرقام التاميلية</type>
 			<type type="telu" key="numbers">الأرقام التيلوغوية</type>
-			<type type="tertiary" key="colStrength" draft="contributed">تصنيف اللكنات/الحالة/العرض</type>
+			<type type="tertiary" key="colStrength" draft="contributed">تصنيف
+				اللكنات/الحالة/العرض</type>
 			<type type="thai" key="numbers">الأرقام التايلاندية</type>
 			<type type="tibt" key="numbers">الأرقام التبتية</type>
 			<type type="traditional" key="collation">ترتيب تقليدي</type>
 			<type type="traditional" key="numbers" draft="contributed">أرقام تقليدية</type>
 			<type type="unihan" key="collation">ترتيب تصنيف الجذر والضغطات</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">تصنيف الأحرف الكبيرة أولاً</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">تصنيف الأحرف الكبيرة
+				أولاً</type>
 			<type type="vaii" key="numbers" draft="contributed">أرقام فاي</type>
 			<type type="yes" key="colBackwards" draft="contributed">تصنيف اللكنات معكوسة</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">تصنيف بحسب حساسية الأحرف</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">تصنيف الكانا بشكل مختلف</type>
-			<type type="yes" key="colNormalization" draft="contributed">تصنيف Unicode طبيعي</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">تصنيف بحسب حساسية
+				الأحرف</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">تصنيف الكانا
+				بشكل مختلف</type>
+			<type type="yes" key="colNormalization" draft="contributed">تصنيف Unicode
+				طبيعي</type>
 			<type type="yes" key="colNumeric" draft="contributed">تصنيف الأرقام بالعدد</type>
 		</types>
 		<transformNames>
@@ -1092,10 +1109,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</orientation>
 	</layout>
 	<characters>
-		<exemplarCharacters>[\u064B \u064C \u064D \u064E \u064F \u0650 \u0651 \u0652 \u0670 ء آ أ ؤ إ ئ ا ب ت ة ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي ى]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[\u200C\u200D\u200E\u200F پ چ ژ ڜ ڢ ڤ ڥ ٯ ڧ ڨ ک گ ی]</exemplarCharacters>
-		<exemplarCharacters type="index">[ا ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن ه و ي]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — ، ؛ \: ! ؟ . ' &quot; ( ) \[ \]]</exemplarCharacters>
+		<exemplarCharacters>[\u064B \u064C \u064D \u064E \u064F \u0650 \u0651
+			\u0652 \u0670 ء آ أ ؤ إ ئ ا ب ت ة ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق
+			ك ل م ن ه و ي ى]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u200C\u200D\u200E\u200F
+			پ چ ژ ڜ ڢ ڤ ڥ ٯ ڧ ڨ ک گ ی]</exemplarCharacters>
+		<exemplarCharacters type="index">[ا ب ت ث ج ح خ د ذ ر ز س ش
+			ص ض ط ظ ع غ ف ق ك ل م ن ه و ي]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — ، ؛ \: ! ؟ . '
+			&quot; ( ) \[ \]]</exemplarCharacters>
 		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
 		<ellipsis type="medial" draft="contributed">{0}…{1}</ellipsis>
@@ -1341,9 +1363,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">d‏/M‏/y – d‏/M‏/y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E، dd‏/MM‏/y – E، dd‏/MM‏/y G</greatestDifference>
-							<greatestDifference id="M">E، d‏/M‏/y – E، d‏/M‏/y G</greatestDifference>
-							<greatestDifference id="y">E، d‏/M‏/y – E، d‏/M‏/y G</greatestDifference>
+							<greatestDifference id="d">E، dd‏/MM‏/y – E،
+								dd‏/MM‏/y G</greatestDifference>
+							<greatestDifference id="M">E، d‏/M‏/y – E، d‏/M‏/y
+								G</greatestDifference>
+							<greatestDifference id="y">E، d‏/M‏/y – E، d‏/M‏/y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM – MMM، y G</greatestDifference>
@@ -1356,8 +1381,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E، d – E، d MMM، y G</greatestDifference>
-							<greatestDifference id="M">E، d MMM – E، d MMM، y G</greatestDifference>
-							<greatestDifference id="y">E، d MMM، y – E، d MMM، y G</greatestDifference>
+							<greatestDifference id="M">E، d MMM – E، d MMM، y
+								G</greatestDifference>
+							<greatestDifference id="y">E، d MMM، y – E، d MMM،
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM – MMMM، y G</greatestDifference>
@@ -1777,7 +1804,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">d‏/M‏/y – d‏/M‏/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E، dd‏/MM‏/y – E، dd‏/MM‏/y</greatestDifference>
+							<greatestDifference id="d">E، dd‏/MM‏/y – E،
+								dd‏/MM‏/y</greatestDifference>
 							<greatestDifference id="M">E، d‏/M‏/y – E، d‏/M‏/y</greatestDifference>
 							<greatestDifference id="y">E، d‏/M‏/y – E، d‏/M‏/y</greatestDifference>
 						</intervalFormatItem>
@@ -1793,7 +1821,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E، d – E، d MMM، y</greatestDifference>
 							<greatestDifference id="M">E، d MMM – E، d MMM، y</greatestDifference>
-							<greatestDifference id="y">E، d MMM، y – E، d MMM، y</greatestDifference>
+							<greatestDifference id="y">E، d MMM، y – E، d MMM،
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM – MMMM، y</greatestDifference>
@@ -4029,7 +4058,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</metazone>
 			<metazone type="French_Southern">
 				<long>
-					<standard draft="contributed">توقيت المقاطعات الفرنسية الجنوبية والأنتارتيكية</standard>
+					<standard draft="contributed">توقيت المقاطعات الفرنسية الجنوبية
+						والأنتارتيكية</standard>
 				</long>
 			</metazone>
 			<metazone type="Galapagos">
@@ -4842,10 +4872,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unitPattern count="many">{0} {1}</unitPattern>
 			<unitPattern count="other">{0} {1}</unitPattern>
 		</currencyFormats>
-		<!-- Please note that the Arabic translated currency symbols include the Right to
-			 Left Marker <RLM> to position the dot properly on the boundary between
-			 Arabic and English XML tags.
-		-->
+		<!-- Please note that the Arabic translated currency symbols include the 
+			Right to Left Marker <RLM> to position the dot properly on the boundary between 
+			Arabic and English XML tags. -->
 		<currencies>
 			<currency type="ADP">
 				<displayName>بيستا أندوري</displayName>
@@ -4977,12 +5006,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>مارك البوسنة والهرسك قابل للتحويل</displayName>
-				<displayName count="zero" draft="contributed">مارك البوسنة والهرسك قابل للتحويل</displayName>
-				<displayName count="one" draft="contributed">مارك البوسنة والهرسك قابل للتحويل</displayName>
-				<displayName count="two" draft="contributed">مارك البوسنة والهرسك قابل للتحويل</displayName>
-				<displayName count="few" draft="contributed">مارك البوسنة والهرسك قابل للتحويل</displayName>
-				<displayName count="many" draft="contributed">مارك البوسنة والهرسك قابل للتحويل</displayName>
-				<displayName count="other" draft="contributed">مارك البوسنة والهرسك قابل للتحويل</displayName>
+				<displayName count="zero" draft="contributed">مارك البوسنة والهرسك
+					قابل للتحويل</displayName>
+				<displayName count="one" draft="contributed">مارك البوسنة والهرسك قابل
+					للتحويل</displayName>
+				<displayName count="two" draft="contributed">مارك البوسنة والهرسك قابل
+					للتحويل</displayName>
+				<displayName count="few" draft="contributed">مارك البوسنة والهرسك قابل
+					للتحويل</displayName>
+				<displayName count="many" draft="contributed">مارك البوسنة والهرسك
+					قابل للتحويل</displayName>
+				<displayName count="other" draft="contributed">مارك البوسنة والهرسك
+					قابل للتحويل</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>دولار بربادوسي</displayName>
@@ -6101,7 +6136,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="two" draft="contributed">كينا بابوا غينيا الجديدة</displayName>
 				<displayName count="few" draft="contributed">كينا بابوا غينيا الجديدة</displayName>
 				<displayName count="many" draft="contributed">كينا بابوا غينيا الجديدة</displayName>
-				<displayName count="other" draft="contributed">كينا بابوا غينيا الجديدة</displayName>
+				<displayName count="other" draft="contributed">كينا بابوا غينيا
+					الجديدة</displayName>
 			</currency>
 			<currency type="PHP">
 				<displayName>بيزو فلبيني</displayName>
@@ -6361,7 +6397,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="two" draft="contributed">دوبرا ساو تومي وبرينسيبي</displayName>
 				<displayName count="few" draft="contributed">دوبرا ساو تومي وبرينسيبي</displayName>
 				<displayName count="many" draft="contributed">دوبرا ساو تومي وبرينسيبي</displayName>
-				<displayName count="other" draft="contributed">دوبرا ساو تومي وبرينسيبي</displayName>
+				<displayName count="other" draft="contributed">دوبرا ساو تومي
+					وبرينسيبي</displayName>
 			</currency>
 			<currency type="SUR">
 				<displayName>روبل سوفيتي</displayName>
@@ -6599,7 +6636,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="two" draft="provisional">الوحدة الأوروبية المركبة</displayName>
 				<displayName count="few" draft="provisional">الوحدة الأوروبية المركبة</displayName>
 				<displayName count="many" draft="provisional">الوحدة الأوروبية المركبة</displayName>
-				<displayName count="other" draft="provisional">الوحدة الأوروبية المركبة</displayName>
+				<displayName count="other" draft="provisional">الوحدة الأوروبية
+					المركبة</displayName>
 			</currency>
 			<currency type="XBB">
 				<displayName>الوحدة المالية الأوروبية</displayName>
@@ -6608,16 +6646,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="two" draft="provisional">الوحدة المالية الأوروبية</displayName>
 				<displayName count="few" draft="provisional">الوحدة المالية الأوروبية</displayName>
 				<displayName count="many" draft="provisional">الوحدة المالية الأوروبية</displayName>
-				<displayName count="other" draft="provisional">الوحدة المالية الأوروبية</displayName>
+				<displayName count="other" draft="provisional">الوحدة المالية
+					الأوروبية</displayName>
 			</currency>
 			<currency type="XBC">
 				<displayName>الوحدة الحسابية الأوروبية</displayName>
-				<displayName count="zero" draft="provisional">الوحدة الحسابية الأوروبية</displayName>
+				<displayName count="zero" draft="provisional">الوحدة الحسابية
+					الأوروبية</displayName>
 				<displayName count="one" draft="provisional">الوحدة الحسابية الأوروبية</displayName>
 				<displayName count="two" draft="provisional">الوحدة الحسابية الأوروبية</displayName>
 				<displayName count="few" draft="provisional">الوحدة الحسابية الأوروبية</displayName>
-				<displayName count="many" draft="provisional">الوحدة الحسابية الأوروبية</displayName>
-				<displayName count="other" draft="provisional">الوحدة الحسابية الأوروبية</displayName>
+				<displayName count="many" draft="provisional">الوحدة الحسابية
+					الأوروبية</displayName>
+				<displayName count="other" draft="provisional">الوحدة الحسابية
+					الأوروبية</displayName>
 			</currency>
 			<currency type="XBD">
 				<displayName>(XBD)وحدة الحساب الأوروبية</displayName>

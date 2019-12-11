@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -20,18 +21,18 @@
  * @version    $Id: TermInfo.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-
 /**
  * A Zend_Search_Lucene_Index_TermInfo represents a record of information stored for a term.
  *
- * @category   Zend
- * @package    Zend_Search_Lucene
+ * @category Zend
+ * @package Zend_Search_Lucene
  * @subpackage Index
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Search_Lucene_Index_TermInfo
 {
+
     /**
      * The number of documents which contain the term.
      *
@@ -70,10 +71,10 @@ class Zend_Search_Lucene_Index_TermInfo
 
     public function __construct($docFreq, $freqPointer, $proxPointer, $skipOffset, $indexPointer = null)
     {
-        $this->docFreq      = $docFreq;
-        $this->freqPointer  = $freqPointer;
-        $this->proxPointer  = $proxPointer;
-        $this->skipOffset   = $skipOffset;
+        $this->docFreq = $docFreq;
+        $this->freqPointer = $freqPointer;
+        $this->proxPointer = $proxPointer;
+        $this->skipOffset = $skipOffset;
         $this->indexPointer = $indexPointer;
     }
 }

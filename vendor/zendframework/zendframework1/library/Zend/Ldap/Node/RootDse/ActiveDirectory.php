@@ -21,6 +21,7 @@
  */
 
 /**
+ *
  * @see Zend_Ldap_Node_RootDse
  */
 require_once 'Zend/Ldap/Node/RootDse.php';
@@ -29,14 +30,15 @@ require_once 'Zend/Ldap/Node/RootDse.php';
  * Zend_Ldap_Node_RootDse provides a simple data-container for the RootDSE node of
  * an Active Directory server.
  *
- * @category   Zend
- * @package    Zend_Ldap
+ * @category Zend
+ * @package Zend_Ldap
  * @subpackage RootDSE
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Ldap_Node_RootDse_ActiveDirectory extends Zend_Ldap_Node_RootDse
 {
+
     /**
      * Gets the configurationNamingContext.
      *
@@ -190,7 +192,8 @@ class Zend_Ldap_Node_RootDse_ActiveDirectory extends Zend_Ldap_Node_RootDse
     /**
      * Determines if the capability is supported
      *
-     * @param string|string|array $oids capability(s) to check
+     * @param string|string|array $oids
+     *            capability(s) to check
      * @return boolean
      */
     public function supportsCapability($oids)
@@ -201,7 +204,8 @@ class Zend_Ldap_Node_RootDse_ActiveDirectory extends Zend_Ldap_Node_RootDse
     /**
      * Determines if the control is supported
      *
-     * @param string|array $oids control oid(s) to check
+     * @param string|array $oids
+     *            control oid(s) to check
      * @return boolean
      */
     public function supportsControl($oids)
@@ -212,7 +216,8 @@ class Zend_Ldap_Node_RootDse_ActiveDirectory extends Zend_Ldap_Node_RootDse
     /**
      * Determines if the version is supported
      *
-     * @param string|array $policies policy(s) to check
+     * @param string|array $policies
+     *            policy(s) to check
      * @return boolean
      */
     public function supportsPolicy($policies)
@@ -239,6 +244,7 @@ class Zend_Ldap_Node_RootDse_ActiveDirectory extends Zend_Ldap_Node_RootDse
     {
         $schemaDn = $this->getSchemaNamingContext();
         /**
+         *
          * @see Zend_Ldap_Dn
          */
         require_once 'Zend/Ldap/Dn.php';

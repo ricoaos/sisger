@@ -26,12 +26,12 @@
 require_once 'Zend/Db/Statement/Exception.php';
 
 /**
- * @package    Zend_Db
+ *
+ * @package Zend_Db
  * @subpackage Statement
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-
 class Zend_Db_Statement_Mysqli_Exception extends Zend_Db_Statement_Exception
 {
 }

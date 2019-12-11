@@ -21,57 +21,67 @@
  * @version    $Id$
  */
 
-
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_Amazon_OfferSet
 {
+
     /**
+     *
      * @var string
      */
     public $LowestNewPrice;
 
     /**
+     *
      * @var string
      */
     public $LowestNewPriceCurrency;
 
     /**
+     *
      * @var string
      */
     public $LowestUsedPrice;
 
     /**
+     *
      * @var string
      */
     public $LowestUsedPriceCurrency;
 
     /**
+     *
      * @var int
      */
     public $TotalNew;
 
     /**
+     *
      * @var int
      */
     public $TotalUsed;
 
     /**
+     *
      * @var int
      */
     public $TotalCollectible;
 
     /**
+     *
      * @var int
      */
     public $TotalRefurbished;
 
     /**
+     *
      * @var Zend_Service_Amazon_Offer[]
      */
     public $Offers;
@@ -79,14 +89,14 @@ class Zend_Service_Amazon_OfferSet
     /**
      * Parse the given Offer Set Element
      *
-     * @param  DOMElement $dom
+     * @param DOMElement $dom            
      * @return void
      */
     public function __construct(DOMElement $dom)
     {
         $xpath = new DOMXPath($dom->ownerDocument);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/2011-08-01');
-
+        
         $offer = $xpath->query('./az:OfferSummary', $dom);
         if ($offer->length == 1) {
             $lowestNewPrice = $xpath->query('./az:OfferSummary/az:LowestNewPrice/az:Amount', $dom);
@@ -107,6 +117,7 @@ class Zend_Service_Amazon_OfferSet
         $offers = $xpath->query('./az:Offers/az:Offer', $dom);
         if ($offers->length >= 1) {
             /**
+             *
              * @see Zend_Service_Amazon_Offer
              */
             require_once 'Zend/Service/Amazon/Offer.php';

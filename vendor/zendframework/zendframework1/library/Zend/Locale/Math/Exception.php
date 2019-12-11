@@ -19,23 +19,25 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-
 /**
  * Zend_Exception
  */
 require_once 'Zend/Locale/Exception.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Locale
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Locale
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Locale_Math_Exception extends Zend_Locale_Exception
 {
+
     protected $op1 = null;
+
     protected $op2 = null;
+
     protected $result = null;
 
     public function __construct($message, $op1 = null, $op2 = null, $result = null)
@@ -48,6 +50,10 @@ class Zend_Locale_Math_Exception extends Zend_Locale_Exception
 
     public function getResults()
     {
-        return array($this->op1, $this->op2, $this->result);
+        return array(
+            $this->op1,
+            $this->op2,
+            $this->result
+        );
     }
 }

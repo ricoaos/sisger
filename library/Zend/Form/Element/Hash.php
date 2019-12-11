@@ -19,23 +19,27 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_Form_Element_Xhtml */
+/**
+ * Zend_Form_Element_Xhtml
+ */
 require_once 'Zend/Form/Element/Xhtml.php';
 
 /**
  * CSRF form protection
  *
- * @category   Zend
- * @package    Zend_Form
+ * @category Zend
+ * @package Zend_Form
  * @subpackage Element
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Hash.php 23775 2011-03-01 17:25:24Z ralph $
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id: Hash.php 23775 2011-03-01 17:25:24Z ralph $
  */
 class Zend_Form_Element_Hash extends Zend_Form_Element_Xhtml
 {
+
     /**
      * Use formHidden view helper by default
+     * 
      * @var string
      */
     public $helper = 'formHidden';
@@ -49,17 +53,20 @@ class Zend_Form_Element_Hash extends Zend_Form_Element_Xhtml
 
     /**
      * Salt for CSRF token
+     * 
      * @var string
      */
     protected $_salt = 'salt';
 
     /**
+     *
      * @var Zend_Session_Namespace
      */
     protected $_session;
 
     /**
      * TTL for CSRF token
+     * 
      * @var int
      */
     protected $_timeout = 300;
@@ -70,23 +77,23 @@ class Zend_Form_Element_Hash extends Zend_Form_Element_Xhtml
      * Creates session namespace for CSRF token, and adds validator for CSRF
      * token.
      *
-     * @param  string|array|Zend_Config $spec
-     * @param  array|Zend_Config $options
+     * @param string|array|Zend_Config $spec            
+     * @param array|Zend_Config $options            
      * @return void
      */
     public function __construct($spec, $options = null)
     {
         parent::__construct($spec, $options);
-
+        
         $this->setAllowEmpty(false)
-             ->setRequired(true)
-             ->initCsrfValidator();
+            ->setRequired(true)
+            ->initCsrfValidator();
     }
 
     /**
      * Set session object
      *
-     * @param  Zend_Session_Namespace $session
+     * @param Zend_Session_Namespace $session            
      * @return Zend_Form_Element_Hash
      */
     public function setSession($session)
@@ -127,15 +134,17 @@ class Zend_Form_Element_Hash extends Zend_Form_Element_Xhtml
         } else {
             $rightHash = null;
         }
-
-        $this->addValidator('Identical', true, array($rightHash));
+        
+        $this->addValidator('Identical', true, array(
+            $rightHash
+        ));
         return $this;
     }
 
     /**
      * Salt for CSRF token
      *
-     * @param  string $salt
+     * @param string $salt            
      * @return Zend_Form_Element_Hash
      */
     public function setSalt($salt)
@@ -184,7 +193,7 @@ class Zend_Form_Element_Hash extends Zend_Form_Element_Xhtml
     /**
      * Set timeout for CSRF session token
      *
-     * @param  int $ttl
+     * @param int $ttl            
      * @return Zend_Form_Element_Hash
      */
     public function setTimeout($ttl)
@@ -229,7 +238,7 @@ class Zend_Form_Element_Hash extends Zend_Form_Element_Xhtml
     /**
      * Render CSRF token in form
      *
-     * @param  Zend_View_Interface $view
+     * @param Zend_View_Interface $view            
      * @return string
      */
     public function render(Zend_View_Interface $view = null)
@@ -248,12 +257,7 @@ class Zend_Form_Element_Hash extends Zend_Form_Element_Xhtml
      */
     protected function _generateHash()
     {
-        $this->_hash = md5(
-            mt_rand(1,1000000)
-            .  $this->getSalt()
-            .  $this->getName()
-            .  mt_rand(1,1000000)
-        );
+        $this->_hash = md5(mt_rand(1, 1000000) . $this->getSalt() . $this->getName() . mt_rand(1, 1000000));
         $this->setValue($this->_hash);
     }
 }

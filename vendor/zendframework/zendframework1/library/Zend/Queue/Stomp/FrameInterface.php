@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -23,14 +24,15 @@
 /**
  * This class represents a Stomp Frame Interface
  *
- * @category   Zend
- * @package    Zend_Queue
+ * @category Zend
+ * @package Zend_Queue
  * @subpackage Stomp
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 interface Zend_Queue_Stomp_FrameInterface
 {
+
     /**
      * Get the status of the auto content length
      *
@@ -48,7 +50,7 @@ interface Zend_Queue_Stomp_FrameInterface
      *
      * Set the value on or off.
      *
-     * @param boolean $auto
+     * @param boolean $auto            
      * @return $this;
      * @throws Zend_Queue_Exception
      */
@@ -66,7 +68,7 @@ interface Zend_Queue_Stomp_FrameInterface
      *
      * Throws an exception if the array values are not strings.
      *
-     * @param array $headers
+     * @param array $headers            
      * @return $this
      * @throws Zend_Queue_Exception
      */
@@ -76,7 +78,7 @@ interface Zend_Queue_Stomp_FrameInterface
      * Returns a value for a header
      * returns false if the header does not exist
      *
-     * @param string $header
+     * @param string $header            
      * @return $string
      * @throws Zend_Queue_Exception
      */
@@ -86,8 +88,8 @@ interface Zend_Queue_Stomp_FrameInterface
      * Returns a value for a header
      * returns false if the header does not exist
      *
-     * @param string $header
-     * @param string $value
+     * @param string $header            
+     * @param string $value            
      * @return $this
      * @throws Zend_Queue_Exception
      */
@@ -107,7 +109,7 @@ interface Zend_Queue_Stomp_FrameInterface
      *
      * Set to null for no body.
      *
-     * @param string|null $body
+     * @param string|null $body            
      * @return $this
      * @throws Zend_Queue_Exception
      */
@@ -130,7 +132,6 @@ interface Zend_Queue_Stomp_FrameInterface
      */
     public function setCommand($command);
 
-
     /**
      * Takes the current parameters and returns a Stomp Frame
      *
@@ -140,6 +141,7 @@ interface Zend_Queue_Stomp_FrameInterface
     public function toFrame();
 
     /**
+     *
      * @see toFrame()
      */
     public function __toString();
@@ -147,7 +149,8 @@ interface Zend_Queue_Stomp_FrameInterface
     /**
      * Accepts a frame and deconstructs the frame into its' component parts
      *
-     * @param string $frame - a stomp frame
+     * @param string $frame
+     *            - a stomp frame
      * @return $this
      */
     public function fromFrame($frame);

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="ksh"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="ksh" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -53,10 +52,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="en_GB" draft="unconfirmed">Änglesch uß Jruußbrettannije</language>
 			<language type="en_GB" alt="short" draft="unconfirmed">Brittesch Änglesch</language>
 			<language type="en_US" draft="unconfirmed">Amärrekaanesch Änglesch</language>
-			<language type="en_US" alt="short" draft="unconfirmed">Amärrekaanesch Änglesch</language>
+			<language type="en_US" alt="short" draft="unconfirmed">Amärrekaanesch
+				Änglesch</language>
 			<language type="eo" draft="unconfirmed">Esperanto</language>
 			<language type="es" draft="unconfirmed">Schpaanesch</language>
-			<language type="es_419" draft="unconfirmed">Schpaanesch uß Latting-Ammärrika</language>
+			<language type="es_419" draft="unconfirmed">Schpaanesch uß
+				Latting-Ammärrika</language>
 			<language type="es_ES" draft="unconfirmed">Schpaanesch uß Schpaaneje</language>
 			<language type="et" draft="unconfirmed">Äßnesch</language>
 			<language type="eu" draft="unconfirmed">Baskesch</language>
@@ -188,8 +189,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="yo" draft="unconfirmed">Joruuba</language>
 			<language type="yue" draft="unconfirmed">Kanton-Schineesesch</language>
 			<language type="zh" draft="unconfirmed">Schineesesch</language>
-			<language type="zh_Hans" draft="unconfirmed">Schineesesch en de eijfacher Schreff</language>
-			<language type="zh_Hant" draft="unconfirmed">Schineesesch en de tradizjonälle Schreff</language>
+			<language type="zh_Hans" draft="unconfirmed">Schineesesch en de eijfacher
+				Schreff</language>
+			<language type="zh_Hant" draft="unconfirmed">Schineesesch en de
+				tradizjonälle Schreff</language>
 			<language type="zu" draft="unconfirmed">Suulu</language>
 			<language type="zxx" draft="unconfirmed">kein Schprooch</language>
 		</languages>
@@ -209,16 +212,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hang" draft="unconfirmed">korrejaanesche Schreff</script>
 			<script type="Hani" draft="unconfirmed">en schineesesche Schreff</script>
 			<script type="Hans" draft="unconfirmed">eijfacher</script>
-			<script type="Hans" alt="stand-alone" draft="unconfirmed">eijfacher schineesesche Schreff</script>
+			<script type="Hans" alt="stand-alone" draft="unconfirmed">eijfacher
+				schineesesche Schreff</script>
 			<script type="Hant" draft="unconfirmed">tradizjonäll</script>
-			<script type="Hant" alt="stand-alone" draft="unconfirmed">tradizjonäll schineesesche Schreff</script>
+			<script type="Hant" alt="stand-alone" draft="unconfirmed">tradizjonäll
+				schineesesche Schreff</script>
 			<script type="Hebr" draft="unconfirmed">hebrääjesche Schreff</script>
 			<script type="Hira" draft="unconfirmed">japaanesche Hiddajaana-Schreff</script>
 			<script type="Jpan" draft="unconfirmed">en japaanesche Schreff</script>
 			<script type="Kana" draft="unconfirmed">japaanesche Kattakaana-Schreff</script>
 			<script type="Khmr" draft="unconfirmed">Khmer-Schreff</script>
 			<script type="Knda" draft="unconfirmed">indesche Kannada-Schreff</script>
-			<script type="Kore" draft="unconfirmed">korrejaanesche Schreff udder en schineesesche Schreff</script>
+			<script type="Kore" draft="unconfirmed">korrejaanesche Schreff udder en
+				schineesesche Schreff</script>
 			<script type="Laoo" draft="unconfirmed">lahootesche Schreff</script>
 			<script type="Latn" draft="unconfirmed">lateinesche Schreff</script>
 			<script type="Mlym" draft="unconfirmed">indesche Malajalam-Schreff</script>
@@ -309,8 +315,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CA" draft="unconfirmed">Kanada</territory>
 			<territory type="CC" draft="unconfirmed">de Kokkos-Enselle</territory>
 			<territory type="CD" draft="unconfirmed">dä Konggo (Kinschasa)</territory>
-			<territory type="CD" alt="variant" draft="unconfirmed">de Demmokraatesche Republik Konggo</territory>
-			<territory type="CF" draft="unconfirmed">de Zäntraalaffrikaanesche Republik</territory>
+			<territory type="CD" alt="variant" draft="unconfirmed">de Demmokraatesche
+				Republik Konggo</territory>
+			<territory type="CF" draft="unconfirmed">de Zäntraalaffrikaanesche
+				Republik</territory>
 			<territory type="CG" draft="unconfirmed">dä Konggo (Brassavill)</territory>
 			<territory type="CG" alt="variant" draft="unconfirmed">de Republik Konggo</territory>
 			<territory type="CH" draft="unconfirmed">de Schweiz</territory>
@@ -348,7 +356,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI" draft="unconfirmed">Finnland</territory>
 			<territory type="FJ" draft="unconfirmed">de Fidschi-Endelle</territory>
 			<territory type="FK" draft="unconfirmed">de Falkland-Enselle</territory>
-			<territory type="FK" alt="variant" draft="unconfirmed">de malleviinesche Enselle</territory>
+			<territory type="FK" alt="variant" draft="unconfirmed">de malleviinesche
+				Enselle</territory>
 			<territory type="FM" draft="unconfirmed">Mikroneesije</territory>
 			<territory type="FO" draft="unconfirmed">de Färrör-Enselle</territory>
 			<territory type="FR" draft="unconfirmed">Frankrisch</territory>
@@ -367,14 +376,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP" draft="unconfirmed">Juadelupp</territory>
 			<territory type="GQ" draft="unconfirmed">Äquatorial Jineeja</territory>
 			<territory type="GR" draft="unconfirmed">Jriescheland</territory>
-			<territory type="GS" draft="unconfirmed">Söd-Jeorjie un de södlijje Botteramms-Enselle</territory>
+			<territory type="GS" draft="unconfirmed">Söd-Jeorjie un de södlijje
+				Botteramms-Enselle</territory>
 			<territory type="GT" draft="unconfirmed">Juwatemaala</territory>
 			<territory type="GU" draft="unconfirmed">Juham</territory>
 			<territory type="GW" draft="unconfirmed">Jinneha_Bißau</territory>
 			<territory type="GY" draft="unconfirmed">Jujaana</territory>
 			<territory type="HK" draft="unconfirmed">Hongkong</territory>
 			<territory type="HK" alt="short" draft="unconfirmed">Hongkong</territory>
-			<territory type="HM" draft="unconfirmed">de Heart Ensel un de McDonald-Enselle</territory>
+			<territory type="HM" draft="unconfirmed">de Heart Ensel un de
+				McDonald-Enselle</territory>
 			<territory type="HN" draft="unconfirmed">Honduras</territory>
 			<territory type="HR" draft="unconfirmed">Krowazije</territory>
 			<territory type="HT" draft="unconfirmed">Ha'itti</territory>
@@ -385,7 +396,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IL" draft="unconfirmed">Ißraäl</territory>
 			<territory type="IM" draft="unconfirmed">de Ensel Män</territory>
 			<territory type="IN" draft="unconfirmed">Indije</territory>
-			<territory type="IO" draft="unconfirmed">Brettesche Besezunge em indesche Oozejahn</territory>
+			<territory type="IO" draft="unconfirmed">Brettesche Besezunge em indesche
+				Oozejahn</territory>
 			<territory type="IQ" draft="unconfirmed">Irak</territory>
 			<territory type="IR" draft="unconfirmed">Persije</territory>
 			<territory type="IS" draft="unconfirmed">Ißland</territory>
@@ -424,7 +436,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MG" draft="unconfirmed">Maddajaska</territory>
 			<territory type="MH" draft="unconfirmed">de Machschall-Enselle</territory>
 			<territory type="MK" draft="unconfirmed">Mazedoonije</territory>
-			<territory type="MK" alt="variant" draft="unconfirmed">de vörmaals ens jugoßlaawesch jewääse Republik Mazedoonije</territory>
+			<territory type="MK" alt="variant" draft="unconfirmed">de vörmaals ens
+				jugoßlaawesch jewääse Republik Mazedoonije</territory>
 			<territory type="ML" draft="unconfirmed">Maali</territory>
 			<territory type="MM" draft="unconfirmed">Birma</territory>
 			<territory type="MN" draft="unconfirmed">Mongjolei</territory>
@@ -515,16 +528,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ" draft="unconfirmed">Tansanija</territory>
 			<territory type="UA" draft="unconfirmed">de Ukra'iine</territory>
 			<territory type="UG" draft="unconfirmed">Ujanda</territory>
-			<territory type="UM" draft="unconfirmed">de Vereineschte Schtaate vun Amärrika ier ußerhallef jelääje Enselsche</territory>
-			<territory type="US" draft="unconfirmed">de vereineschte Schtaate vun Ammärrika</territory>
+			<territory type="UM" draft="unconfirmed">de Vereineschte Schtaate vun
+				Amärrika ier ußerhallef jelääje Enselsche</territory>
+			<territory type="US" draft="unconfirmed">de vereineschte Schtaate vun
+				Ammärrika</territory>
 			<territory type="US" alt="short" draft="unconfirmed">USA</territory>
 			<territory type="UY" draft="unconfirmed">Urrujwai</territory>
 			<territory type="UZ" draft="unconfirmed">Ußbeekistahn</territory>
 			<territory type="VA" draft="unconfirmed">der Vattikahn</territory>
-			<territory type="VC" draft="unconfirmed">Zint Vinzänz un de Jrenadines-Enselle</territory>
+			<territory type="VC" draft="unconfirmed">Zint Vinzänz un de
+				Jrenadines-Enselle</territory>
 			<territory type="VE" draft="unconfirmed">Venezuela</territory>
 			<territory type="VG" draft="unconfirmed">de brettesche Juffer-Enselle</territory>
-			<territory type="VI" draft="unconfirmed">de ammärrikahnesche Juffer-Enselle</territory>
+			<territory type="VI" draft="unconfirmed">de ammärrikahnesche
+				Juffer-Enselle</territory>
 			<territory type="VN" draft="unconfirmed">Vijätnamm</territory>
 			<territory type="VU" draft="unconfirmed">Vanuatu</territory>
 			<territory type="WF" draft="unconfirmed">Wallis un Futuna</territory>
@@ -539,28 +556,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</territories>
 		<variants>
 			<variant type="1901" draft="unconfirmed">Schriefwiiß vun 1901 aff</variant>
-			<variant type="1994" draft="unconfirmed">resijanesch schtandatt Schriefwiiß vun 1994</variant>
+			<variant type="1994" draft="unconfirmed">resijanesch schtandatt Schriefwiiß
+				vun 1994</variant>
 			<variant type="1996" draft="unconfirmed">Schriefwiiß vun 1996 aff</variant>
-			<variant type="1606NICT" draft="unconfirmed">späätmeddelfranzüüsesch vör 1606</variant>
+			<variant type="1606NICT" draft="unconfirmed">späätmeddelfranzüüsesch vör
+				1606</variant>
 			<variant type="1694ACAD" draft="unconfirmed">fröhneufranzüüsesch aff 1694</variant>
-			<variant type="1959ACAD" draft="unconfirmed">akademesche Schriefwiiß vun 1959</variant>
-			<variant type="ALALC97" draft="unconfirmed">de lateinesche Ömschreff ALA-LC vun 1997</variant>
+			<variant type="1959ACAD" draft="unconfirmed">akademesche Schriefwiiß vun
+				1959</variant>
+			<variant type="ALALC97" draft="unconfirmed">de lateinesche Ömschreff ALA-LC
+				vun 1997</variant>
 			<variant type="AREVELA" draft="unconfirmed">oß-armeensch</variant>
 			<variant type="AREVMDA" draft="unconfirmed">wäß-armeenesch</variant>
-			<variant type="BAKU1926" draft="unconfirmed">eijheijtlesch törkesch lateijnesch Allfabeet</variant>
-			<variant type="BISKE" draft="unconfirmed">zint jorjo'sche uder bila'sche reijanesche Dijaläk</variant>
+			<variant type="BAKU1926" draft="unconfirmed">eijheijtlesch törkesch
+				lateijnesch Allfabeet</variant>
+			<variant type="BISKE" draft="unconfirmed">zint jorjo'sche uder bila'sche
+				reijanesche Dijaläk</variant>
 			<variant type="BOONT" draft="unconfirmed">boontlingsche Dijaläk</variant>
 			<variant type="FONIPA" draft="unconfirmed">IPA-Loutschreff</variant>
 			<variant type="FONUPA" draft="unconfirmed">UPA-Loutschreff</variant>
-			<variant type="HEPBURN" draft="unconfirmed">De Lateinesche Ömschreff noh Hepburn</variant>
+			<variant type="HEPBURN" draft="unconfirmed">De Lateinesche Ömschreff noh
+				Hepburn</variant>
 			<variant type="HOGNORSK" draft="unconfirmed">Huhnorrweejesch</variant>
-			<variant type="KKCOR" draft="unconfirmed">jemeinsam widderbeläf kornesche Schriefwiiß</variant>
+			<variant type="KKCOR" draft="unconfirmed">jemeinsam widderbeläf kornesche
+				Schriefwiiß</variant>
 			<variant type="LIPAW" draft="unconfirmed">lipovazesch resijanesche Dijaläk</variant>
 			<variant type="MONOTON" draft="unconfirmed">monnotoonesch</variant>
 			<variant type="NDYUKA" draft="unconfirmed">ndyukanesche Dijaläk</variant>
 			<variant type="NEDIS" draft="unconfirmed">natisonesche Dijaläk</variant>
-			<variant type="NJIVA" draft="unconfirmed">gniva'sche uder njiva'sche reijanesche Dijaläk</variant>
-			<variant type="OSOJS" draft="unconfirmed">oseacco'sche uder osojanesche reijanesche Dijaläk</variant>
+			<variant type="NJIVA" draft="unconfirmed">gniva'sche uder njiva'sche
+				reijanesche Dijaläk</variant>
+			<variant type="OSOJS" draft="unconfirmed">oseacco'sche uder osojanesche
+				reijanesche Dijaläk</variant>
 			<variant type="PAMAKA" draft="unconfirmed">pamakanesche Dijaläk</variant>
 			<variant type="PINYIN" draft="unconfirmed">Pinjin-Ömschreff</variant>
 			<variant type="POLYTON" draft="unconfirmed">pollütoonesch</variant>
@@ -568,12 +595,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="ROZAJ" draft="unconfirmed">resijanesche Dijaläk</variant>
 			<variant type="SCOTLAND" draft="unconfirmed">schottesche Dijaläk</variant>
 			<variant type="SCOUSE" draft="unconfirmed">scouse Dijaläk</variant>
-			<variant type="SOLBA" draft="unconfirmed">stolvizanesche uder solbizanesch reijanesche Dijaläk</variant>
+			<variant type="SOLBA" draft="unconfirmed">stolvizanesche uder solbizanesch
+				reijanesche Dijaläk</variant>
 			<variant type="TARASK" draft="unconfirmed">Taraskijeviza-Schriefwiiß</variant>
 			<variant type="UCCOR" draft="unconfirmed">eijheijtlesch Schriefwiiß</variant>
-			<variant type="UCRCOR" draft="unconfirmed">eijheijtlesch, neu opjelate Schriefwiiß</variant>
+			<variant type="UCRCOR" draft="unconfirmed">eijheijtlesch, neu opjelate
+				Schriefwiiß</variant>
 			<variant type="VALENCIA" draft="unconfirmed">valenzijaanesche Dijaläk</variant>
-			<variant type="WADEGILE" draft="unconfirmed">lateijnesche Ömschreff noh Wade-Giles</variant>
+			<variant type="WADEGILE" draft="unconfirmed">lateijnesche Ömschreff noh
+				Wade-Giles</variant>
 		</variants>
 		<keys>
 			<key type="calendar" draft="unconfirmed">dä Kalländer</key>
@@ -582,39 +612,56 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="numbers" draft="unconfirmed">de Nummere</key>
 		</keys>
 		<types>
-			<type type="arab" key="numbers" draft="unconfirmed">araabesche un indesche Zeffere</type>
-			<type type="arabext" key="numbers" draft="unconfirmed">ußjedehnt araabesche un indesche Zeffere</type>
+			<type type="arab" key="numbers" draft="unconfirmed">araabesche un indesche
+				Zeffere</type>
+			<type type="arabext" key="numbers" draft="unconfirmed">ußjedehnt araabesche un
+				indesche Zeffere</type>
 			<type type="armn" key="numbers" draft="unconfirmed">armeenesche Zahle</type>
-			<type type="armnlow" key="numbers" draft="unconfirmed">klein jeschrevve armeenesche Zahle</type>
+			<type type="armnlow" key="numbers" draft="unconfirmed">klein jeschrevve
+				armeenesche Zahle</type>
 			<type type="beng" key="numbers" draft="unconfirmed">bängjaalesche Zeffere</type>
-			<type type="big5han" key="collation" draft="unconfirmed">zoteert nohm tradizjonäll schineesesch Big5</type>
+			<type type="big5han" key="collation" draft="unconfirmed">zoteert nohm
+				tradizjonäll schineesesch Big5</type>
 			<type type="buddhist" key="calendar" draft="unconfirmed">buddistesche Kaländer</type>
 			<type type="chinese" key="calendar" draft="unconfirmed">schineesesche Kaländer</type>
 			<type type="coptic" key="calendar" draft="unconfirmed">kopttesche Kaländer</type>
 			<type type="deva" key="numbers" draft="unconfirmed">Devanagari-Zeffere</type>
-			<type type="dictionary" key="collation" draft="unconfirmed">zoteert wi em Wööterbooch</type>
-			<type type="ducet" key="collation" draft="unconfirmed">standattmääßesch zoteert nohm Unicode</type>
+			<type type="dictionary" key="collation" draft="unconfirmed">zoteert wi em
+				Wööterbooch</type>
+			<type type="ducet" key="collation" draft="unconfirmed">standattmääßesch
+				zoteert nohm Unicode</type>
 			<type type="ethi" key="numbers" draft="unconfirmed">ätejoopesche Zahle</type>
 			<type type="ethiopic" key="calendar" draft="unconfirmed">ätejoopesche Kaländer</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="unconfirmed">ätejoopesche Amete Alem Kaländer</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="unconfirmed">ätejoopesche
+				Amete Alem Kaländer</type>
 			<type type="fullwide" key="numbers" draft="unconfirmed">janz breede Zeffere</type>
-			<type type="gb2312han" key="collation" draft="unconfirmed">zoteert nohm eijfacher schineesesch GB2312</type>
+			<type type="gb2312han" key="collation" draft="unconfirmed">zoteert nohm
+				eijfacher schineesesch GB2312</type>
 			<type type="geor" key="numbers" draft="unconfirmed">jeorjeesche Zahle</type>
-			<type type="gregorian" key="calendar" draft="unconfirmed">jrejorejaanesche Kaländer</type>
+			<type type="gregorian" key="calendar" draft="unconfirmed">jrejorejaanesche
+				Kaländer</type>
 			<type type="grek" key="numbers" draft="unconfirmed">jriischesche Zahle</type>
-			<type type="greklow" key="numbers" draft="unconfirmed">klein jeschrevve jriischesche Zahle</type>
+			<type type="greklow" key="numbers" draft="unconfirmed">klein jeschrevve
+				jriischesche Zahle</type>
 			<type type="gujr" key="numbers" draft="unconfirmed">Jujarati-Zeffere</type>
 			<type type="guru" key="numbers" draft="unconfirmed">Jurmukhi-Zeffere</type>
-			<type type="hanidec" key="numbers" draft="unconfirmed">schineesesche Zehnerzahle</type>
-			<type type="hans" key="numbers" draft="unconfirmed">eijfache schineesesche Zahle</type>
-			<type type="hansfin" key="numbers" draft="unconfirmed">eijfache schineesesche Finanzzahle</type>
-			<type type="hant" key="numbers" draft="unconfirmed">tradizjonälle schineesesche Zahle</type>
-			<type type="hantfin" key="numbers" draft="unconfirmed">tradizjonälle schineesesche Finanzzahle</type>
+			<type type="hanidec" key="numbers" draft="unconfirmed">schineesesche
+				Zehnerzahle</type>
+			<type type="hans" key="numbers" draft="unconfirmed">eijfache schineesesche
+				Zahle</type>
+			<type type="hansfin" key="numbers" draft="unconfirmed">eijfache schineesesche
+				Finanzzahle</type>
+			<type type="hant" key="numbers" draft="unconfirmed">tradizjonälle
+				schineesesche Zahle</type>
+			<type type="hantfin" key="numbers" draft="unconfirmed">tradizjonälle
+				schineesesche Finanzzahle</type>
 			<type type="hebr" key="numbers" draft="unconfirmed">hebräjesche Zahle</type>
 			<type type="hebrew" key="calendar" draft="unconfirmed">jüdesche Kaländer</type>
-			<type type="indian" key="calendar" draft="unconfirmed">indesche Nazjonahl-Kaländer</type>
+			<type type="indian" key="calendar" draft="unconfirmed">indesche
+				Nazjonahl-Kaländer</type>
 			<type type="islamic" key="calendar" draft="unconfirmed">ißlaamesche Kaländer</type>
-			<type type="islamic-civil" key="calendar" draft="unconfirmed">wältlesche islaamesche Kaländer</type>
+			<type type="islamic-civil" key="calendar" draft="unconfirmed">wältlesche
+				islaamesche Kaländer</type>
 			<type type="japanese" key="calendar" draft="unconfirmed">japaanesche Kaländer</type>
 			<type type="jpan" key="numbers" draft="unconfirmed">japanesche Zahle</type>
 			<type type="jpanfin" key="numbers" draft="unconfirmed">japaanesche Finazzahle</type>
@@ -627,21 +674,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="mymr" key="numbers" draft="unconfirmed">Myanmar-Zeffere</type>
 			<type type="orya" key="numbers" draft="unconfirmed">Oriya-Zeffere</type>
 			<type type="persian" key="calendar" draft="unconfirmed">pärsesche Kaländer</type>
-			<type type="phonebook" key="collation" draft="unconfirmed">zoteert wi em Tollefoonbooch</type>
-			<type type="pinyin" key="collation" draft="unconfirmed">zoteert noh de Pinjin Ömschreff vum Schineesesch</type>
+			<type type="phonebook" key="collation" draft="unconfirmed">zoteert wi em
+				Tollefoonbooch</type>
+			<type type="pinyin" key="collation" draft="unconfirmed">zoteert noh de Pinjin
+				Ömschreff vum Schineesesch</type>
 			<type type="roc" key="calendar" draft="unconfirmed">rotschineesesche Kaländer</type>
 			<type type="roman" key="numbers" draft="unconfirmed">römesche Zahle</type>
-			<type type="romanlow" key="numbers" draft="unconfirmed">klein jeschrevve römesche Zahle</type>
+			<type type="romanlow" key="numbers" draft="unconfirmed">klein jeschrevve
+				römesche Zahle</type>
 			<type type="search" key="collation" draft="unconfirmed">Söhke</type>
 			<type type="standard" key="collation" draft="unconfirmed">Schtandatt</type>
-			<type type="stroke" key="collation" draft="unconfirmed">zoteert noh de Stresche vum tradizjonäll schineesesch</type>
-			<type type="taml" key="numbers" draft="unconfirmed">tradizjonälle tamilesche Zahle</type>
+			<type type="stroke" key="collation" draft="unconfirmed">zoteert noh de
+				Stresche vum tradizjonäll schineesesch</type>
+			<type type="taml" key="numbers" draft="unconfirmed">tradizjonälle tamilesche
+				Zahle</type>
 			<type type="tamldec" key="numbers" draft="unconfirmed">tamiilesche Zeffere</type>
 			<type type="telu" key="numbers" draft="unconfirmed">Teluju-Zeffere</type>
 			<type type="thai" key="numbers" draft="unconfirmed">thailändesche Zeffere</type>
 			<type type="tibt" key="numbers" draft="unconfirmed">tibetaanesche Zeffere</type>
-			<type type="traditional" key="collation" draft="unconfirmed">tradizjonäll zoteert</type>
-			<type type="unihan" key="collation" draft="unconfirmed">zoteert noh de Radikaale un Stresche vum Schineesesch</type>
+			<type type="traditional" key="collation" draft="unconfirmed">tradizjonäll
+				zoteert</type>
+			<type type="unihan" key="collation" draft="unconfirmed">zoteert noh de
+				Radikaale un Stresche vum Schineesesch</type>
 		</types>
 		<measurementSystemNames>
 			<measurementSystemName type="metric" draft="unconfirmed">SI</measurementSystemName>
@@ -649,16 +703,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<measurementSystemName type="US" draft="unconfirmed">ammärekaanesch</measurementSystemName>
 		</measurementSystemNames>
 		<codePatterns>
-			<codePattern type="language" draft="unconfirmed">de Schprooch afjekööz met „{0}“</codePattern>
-			<codePattern type="script" draft="unconfirmed">de Schreff afjekööz met „{0}“</codePattern>
-			<codePattern type="territory" draft="unconfirmed">de Jääjend afjekööz met „{0}“</codePattern>
+			<codePattern type="language" draft="unconfirmed">de Schprooch afjekööz
+				met „{0}“</codePattern>
+			<codePattern type="script" draft="unconfirmed">de Schreff afjekööz met
+				„{0}“</codePattern>
+			<codePattern type="territory" draft="unconfirmed">de Jääjend afjekööz
+				met „{0}“</codePattern>
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a å ä æ b c d e ë ė f g h i j k l m n o ö œ p q r s ß t u ů ü v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ ê ë ē ğ í ì ĭ î ï ī ĳ ı ł ñ ó ò ŏ ô ö ø ō œ ú ù ŭ û ü ū ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[_ ‐ – — ⸗ , ; \: ! ? . … ' ‘ ‚ &quot; “ „ ( ) \[ \] \{ \} § @ * / \&amp; # % † ‡ ° &lt; = &gt; ~ \$]</exemplarCharacters>
+		<exemplarCharacters>[a å ä æ b c d e ë ė f g h i j k l m n o ö œ p q r
+			s ß t u ů ü v w x y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ
+			ê ë ē ğ í ì ĭ î ï ī ĳ ı ł ñ ó ò ŏ ô ö ø ō œ ú ù ŭ û ü ū ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[_ ‐ – — ⸗ , ; \: ! ? . …
+			' ‘ ‚ &quot; “ „ ( ) \[ \] \{ \} § @ * / \&amp; # % † ‡ ° &lt; = &gt;
+			~ \$]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart draft="unconfirmed">„</quotationStart>
@@ -731,7 +793,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="d" draft="unconfirmed">d–d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm
+								a</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm–h:mm a</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm–h:mm a</greatestDifference>
 						</intervalFormatItem>
@@ -748,22 +811,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="unconfirmed">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E y-MM-dd – E
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E y-MM-dd – E
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E y-MM-dd – E
+								y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM–MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">MMM. y – MMM. y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">MMM. y – MMM.
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E y-MM-dd – E
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E y-MM-dd – E
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E y-MM-dd – E
+								y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMMM–MMMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">MMMM y – MMMM y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">MMMM y – MMMM
+								y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -919,9 +990,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<eras>
 					<eraNames>
 						<era type="0" draft="unconfirmed">vür Chrestus</era>
-						<era type="0" alt="variant" draft="unconfirmed">vür der gewöhnlichen Zeitrechnung</era>
+						<era type="0" alt="variant" draft="unconfirmed">vür der gewöhnlichen
+							Zeitrechnung</era>
 						<era type="1" draft="unconfirmed">noh Chrestus</era>
-						<era type="1" alt="variant" draft="unconfirmed">der gewöhnlichen Zeitrechnung</era>
+						<era type="1" alt="variant" draft="unconfirmed">der gewöhnlichen
+							Zeitrechnung</era>
 					</eraNames>
 					<eraAbbr>
 						<era type="0" draft="unconfirmed">v. Chr.</era>
@@ -1011,7 +1084,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="d" draft="unconfirmed">d–d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm
+								a</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm–h:mm a</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm–h:mm a</greatestDifference>
 						</intervalFormatItem>
@@ -1028,22 +1102,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="unconfirmed">y–y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E y-MM-dd – E
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E y-MM-dd – E
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E y-MM-dd – E
+								y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM–MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">MMM. y – MMM. y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">MMM. y – MMM.
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E y-MM-dd – E y-MM-dd</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E y-MM-dd – E
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E y-MM-dd – E
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E y-MM-dd – E
+								y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMMM–MMMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">MMMM y – MMMM y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">MMMM y – MMMM
+								y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -1138,7 +1220,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<gmtFormat draft="unconfirmed">GMT{0}</gmtFormat>
 			<regionFormat draft="unconfirmed">Zick vun {0}</regionFormat>
 			<regionFormat type="daylight" draft="unconfirmed">Summerzick vun {0}</regionFormat>
-			<regionFormat type="standard" draft="unconfirmed">Schtandattzick vun {0}</regionFormat>
+			<regionFormat type="standard" draft="unconfirmed">Schtandattzick vun
+				{0}</regionFormat>
 			<fallbackFormat draft="unconfirmed">{1} ({0})</fallbackFormat>
 			<zone type="Etc/Unknown">
 				<exemplarCity draft="unconfirmed">- weße mer nit -</exemplarCity>
@@ -1150,7 +1233,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<exemplarCity draft="unconfirmed">Eriwan</exemplarCity>
 			</zone>
 			<zone type="Antarctica/Syowa">
-				<exemplarCity draft="unconfirmed">Schoowa-Schtazjohn op dä Ensel Onjul</exemplarCity>
+				<exemplarCity draft="unconfirmed">Schoowa-Schtazjohn op dä Ensel
+					Onjul</exemplarCity>
 			</zone>
 			<zone type="Antarctica/Vostok">
 				<exemplarCity draft="unconfirmed">Wostok</exemplarCity>
@@ -1565,19 +1649,29 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<pattern type="1000000000" count="other" draft="unconfirmed">0 Milljarde</pattern>
 					<pattern type="10000000000" count="zero" draft="unconfirmed">00 Milljarde</pattern>
 					<pattern type="10000000000" count="one" draft="unconfirmed">00 Milljarde</pattern>
-					<pattern type="10000000000" count="other" draft="unconfirmed">00 Milliarden</pattern>
-					<pattern type="100000000000" count="zero" draft="unconfirmed">000 Milljarde</pattern>
-					<pattern type="100000000000" count="one" draft="unconfirmed">000 Milliarde</pattern>
-					<pattern type="100000000000" count="other" draft="unconfirmed">000 Milliarden</pattern>
+					<pattern type="10000000000" count="other" draft="unconfirmed">00
+						Milliarden</pattern>
+					<pattern type="100000000000" count="zero" draft="unconfirmed">000
+						Milljarde</pattern>
+					<pattern type="100000000000" count="one" draft="unconfirmed">000
+						Milliarde</pattern>
+					<pattern type="100000000000" count="other" draft="unconfirmed">000
+						Milliarden</pattern>
 					<pattern type="1000000000000" count="zero" draft="unconfirmed">0 Billjuhn</pattern>
 					<pattern type="1000000000000" count="one" draft="unconfirmed">0 Billjuhn</pattern>
-					<pattern type="1000000000000" count="other" draft="unconfirmed">0 Billjuhn</pattern>
-					<pattern type="10000000000000" count="zero" draft="unconfirmed">00 Billjuhn</pattern>
+					<pattern type="1000000000000" count="other" draft="unconfirmed">0
+						Billjuhn</pattern>
+					<pattern type="10000000000000" count="zero" draft="unconfirmed">00
+						Billjuhn</pattern>
 					<pattern type="10000000000000" count="one" draft="unconfirmed">00 Billion</pattern>
-					<pattern type="10000000000000" count="other" draft="unconfirmed">00 Billionen</pattern>
-					<pattern type="100000000000000" count="zero" draft="unconfirmed">000 Billjuhn</pattern>
-					<pattern type="100000000000000" count="one" draft="unconfirmed">000 Billion</pattern>
-					<pattern type="100000000000000" count="other" draft="unconfirmed">000 Billionen</pattern>
+					<pattern type="10000000000000" count="other" draft="unconfirmed">00
+						Billionen</pattern>
+					<pattern type="100000000000000" count="zero" draft="unconfirmed">000
+						Billjuhn</pattern>
+					<pattern type="100000000000000" count="one" draft="unconfirmed">000
+						Billion</pattern>
+					<pattern type="100000000000000" count="other" draft="unconfirmed">000
+						Billionen</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 			<decimalFormatLength type="short">
@@ -1647,7 +1741,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</currencyFormats>
 		<currencies>
 			<currency type="AED">
-				<displayName draft="unconfirmed">de vereineschte arraabesche Emiraate ier Dirham</displayName>
+				<displayName draft="unconfirmed">de vereineschte arraabesche Emiraate
+					ier Dirham</displayName>
 			</currency>
 			<currency type="AFN">
 				<displayName draft="unconfirmed">Afjahni</displayName>
@@ -1683,10 +1778,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName draft="unconfirmed">Asserbaidschaani Manat</displayName>
 			</currency>
 			<currency type="BAM">
-				<displayName draft="unconfirmed">ömtuuschbaa Mark us Boßnije un dä Hächejovvina</displayName>
-				<displayName count="zero">öpmtuuschbaa Mark us Boßnije un dä Hächejovvina</displayName>
-				<displayName count="one">öpmtuuschbaa Mark us Boßnije un dä Hächejovvina</displayName>
-				<displayName count="other">öpmtuuschbaa Mark us Boßnije un dä Hächejovvina</displayName>
+				<displayName draft="unconfirmed">ömtuuschbaa Mark us Boßnije un dä
+					Hächejovvina</displayName>
+				<displayName count="zero">öpmtuuschbaa Mark us Boßnije un dä
+					Hächejovvina</displayName>
+				<displayName count="one">öpmtuuschbaa Mark us Boßnije un dä
+					Hächejovvina</displayName>
+				<displayName count="other">öpmtuuschbaa Mark us Boßnije un dä
+					Hächejovvina</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName draft="unconfirmed">Barbados-Dollaa</displayName>
@@ -2179,9 +2278,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="TTD">
 				<displayName draft="unconfirmed">Dollaa uß Trinidad un Tobääjo</displayName>
-				<displayName count="zero" draft="unconfirmed">Dollaa uß Trinidad un Tobääjo</displayName>
-				<displayName count="one" draft="unconfirmed">Dollaa uß Trinidad un Tobääjo</displayName>
-				<displayName count="other" draft="unconfirmed">Dollaa uß Trinidad un Tobääjo</displayName>
+				<displayName count="zero" draft="unconfirmed">Dollaa uß Trinidad un
+					Tobääjo</displayName>
+				<displayName count="one" draft="unconfirmed">Dollaa uß Trinidad un
+					Tobääjo</displayName>
+				<displayName count="other" draft="unconfirmed">Dollaa uß Trinidad un
+					Tobääjo</displayName>
 			</currency>
 			<currency type="TWD">
 				<displayName draft="unconfirmed">neu taiwaneesesche Dollaa</displayName>
@@ -2287,9 +2389,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<compoundUnitPattern draft="unconfirmed">{0} pro {1}</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
-				<unitPattern count="zero" draft="unconfirmed">{0}-fache Erdbeschleunigung</unitPattern>
-				<unitPattern count="one" draft="unconfirmed">{0}-fache Erdbeschleunigung</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0}-fache Erdbeschleunigung</unitPattern>
+				<unitPattern count="zero" draft="unconfirmed">{0}-fache
+					Erdbeschleunigung</unitPattern>
+				<unitPattern count="one" draft="unconfirmed">{0}-fache
+					Erdbeschleunigung</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0}-fache
+					Erdbeschleunigung</unitPattern>
 			</unit>
 			<unit type="angle-arc-minute">
 				<unitPattern count="zero" draft="unconfirmed">{0} Winkelmenutte</unitPattern>
@@ -2307,9 +2412,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other" draft="unconfirmed">{0} Graad</unitPattern>
 			</unit>
 			<unit type="area-acre">
-				<unitPattern count="zero" draft="unconfirmed">{0} angloamerikanischen Acre</unitPattern>
-				<unitPattern count="one" draft="unconfirmed">{0} angloamerikanische Acre</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} angloamerikanischen Acre</unitPattern>
+				<unitPattern count="zero" draft="unconfirmed">{0} angloamerikanischen
+					Acre</unitPattern>
+				<unitPattern count="one" draft="unconfirmed">{0} angloamerikanische
+					Acre</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} angloamerikanischen
+					Acre</unitPattern>
 			</unit>
 			<unit type="area-hectare">
 				<unitPattern count="zero" draft="unconfirmed">{0} hektar</unitPattern>
@@ -2332,9 +2440,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other" draft="unconfirmed">{0} Quadratmeter</unitPattern>
 			</unit>
 			<unit type="area-square-mile">
-				<unitPattern count="zero" draft="unconfirmed">{0} englischen Quadratmeilen</unitPattern>
-				<unitPattern count="one" draft="unconfirmed">{0} englische Quadratmeile</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} englischen Quadratmeilen</unitPattern>
+				<unitPattern count="zero" draft="unconfirmed">{0} englischen
+					Quadratmeilen</unitPattern>
+				<unitPattern count="one" draft="unconfirmed">{0} englische
+					Quadratmeile</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} englischen
+					Quadratmeilen</unitPattern>
 			</unit>
 			<unit type="duration-day">
 				<unitPattern count="zero">{0} Dääsch</unitPattern>
@@ -2457,9 +2568,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other" draft="unconfirmed">{0} Hektopascal</unitPattern>
 			</unit>
 			<unit type="pressure-inch-hg">
-				<unitPattern count="zero" draft="unconfirmed">{0} Dumm Quecksilbersäule</unitPattern>
+				<unitPattern count="zero" draft="unconfirmed">{0} Dumm
+					Quecksilbersäule</unitPattern>
 				<unitPattern count="one" draft="unconfirmed">{0} Dumm Quecksilbersäule</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} Dumm Quecksilbersäule</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} Dumm
+					Quecksilbersäule</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
 				<unitPattern count="zero" draft="unconfirmed">{0} Millibar</unitPattern>
@@ -2467,9 +2580,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other" draft="unconfirmed">{0} Millibar</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
-				<unitPattern count="zero" draft="unconfirmed">{0} Kilometer pro Schtunde</unitPattern>
-				<unitPattern count="one" draft="unconfirmed">{0} Kilometer pro Schtunde</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} Kilometer pro Schtunde</unitPattern>
+				<unitPattern count="zero" draft="unconfirmed">{0} Kilometer pro
+					Schtunde</unitPattern>
+				<unitPattern count="one" draft="unconfirmed">{0} Kilometer pro
+					Schtunde</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} Kilometer pro
+					Schtunde</unitPattern>
 			</unit>
 			<unit type="speed-meter-per-second">
 				<unitPattern count="zero" draft="unconfirmed">{0} Meter pro Sekunde</unitPattern>
@@ -2477,9 +2593,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other" draft="unconfirmed">{0} Meter pro Sekunde</unitPattern>
 			</unit>
 			<unit type="speed-mile-per-hour">
-				<unitPattern count="zero" draft="unconfirmed">{0} englischen Meilen pro Schtunde</unitPattern>
-				<unitPattern count="one" draft="unconfirmed">{0} englische Meile pro Schtunde</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} englischen Meilen pro Schtunde</unitPattern>
+				<unitPattern count="zero" draft="unconfirmed">{0} englischen Meilen
+					pro Schtunde</unitPattern>
+				<unitPattern count="one" draft="unconfirmed">{0} englische Meile pro
+					Schtunde</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} englischen Meilen
+					pro Schtunde</unitPattern>
 			</unit>
 			<unit type="temperature-celsius">
 				<unitPattern count="zero" draft="unconfirmed">{0} Graad Celsius</unitPattern>
@@ -2497,9 +2616,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other" draft="unconfirmed">{0} Kubikkilometer</unitPattern>
 			</unit>
 			<unit type="volume-cubic-mile">
-				<unitPattern count="zero" draft="unconfirmed">{0} englischen Kubikmeilen</unitPattern>
+				<unitPattern count="zero" draft="unconfirmed">{0} englischen
+					Kubikmeilen</unitPattern>
 				<unitPattern count="one" draft="unconfirmed">{0} englische Kubikmeile</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} englischen Kubikmeilen</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} englischen
+					Kubikmeilen</unitPattern>
 			</unit>
 			<unit type="volume-liter">
 				<unitPattern count="zero" draft="unconfirmed">{0} Liter</unitPattern>

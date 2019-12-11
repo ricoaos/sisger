@@ -18,17 +18,16 @@
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-
 require_once 'Zend/Http/UserAgent/AbstractDevice.php';
 
 /**
  * Mobile browser type matcher
  *
- * @category   Zend
- * @package    Zend_Http
+ * @category Zend
+ * @package Zend_Http
  * @subpackage UserAgent
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Http_UserAgent_Mobile extends Zend_Http_UserAgent_AbstractDevice
 {
@@ -165,6 +164,7 @@ class Zend_Http_UserAgent_Mobile extends Zend_Http_UserAgent_AbstractDevice
     );
 
     /**
+     *
      * @var array
      */
     protected static $_haTerms = array(
@@ -172,7 +172,7 @@ class Zend_Http_UserAgent_Mobile extends Zend_Http_UserAgent_AbstractDevice
         'wml',
         'vnd.rim',
         'vnd.wap',
-        'j2me',
+        'j2me'
     );
 
     /**
@@ -265,58 +265,59 @@ class Zend_Http_UserAgent_Mobile extends Zend_Http_UserAgent_AbstractDevice
         'winw',
         'winw',
         'xda',
-        'xda-',
+        'xda-'
     );
 
     /**
      * Comparison of the UserAgent chain and User Agent signatures
      *
-     * @param  string $userAgent User Agent chain
-     * @param  array $server $_SERVER like param
+     * @param string $userAgent
+     *            User Agent chain
+     * @param array $server
+     *            $_SERVER like param
      * @return bool
      */
     public static function match($userAgent, $server)
     {
-        //  To have a quick identification, try light-weight tests first
+        // To have a quick identification, try light-weight tests first
         if (isset($server['all_http'])) {
             if (strpos(strtolower(str_replace(' ', '', $server['all_http'])), 'operam') !== false) {
                 // Opera Mini or Opera Mobi
                 return true;
             }
         }
-
+        
         if (isset($server['http_x_wap_profile']) || isset($server['http_profile'])) {
             return true;
         }
-
+        
         if (isset($server['http_accept'])) {
             if (self::_matchAgentAgainstSignatures($server['http_accept'], self::$_haTerms)) {
                 return true;
             }
         }
-
+        
         if (self::userAgentStart($userAgent)) {
             return true;
         }
-
+        
         if (self::_matchAgentAgainstSignatures($userAgent, self::$_uaSignatures)) {
             return true;
         }
-
+        
         return false;
     }
 
     /**
      * Retrieve beginning clause of user agent
      *
-     * @param  string $userAgent
+     * @param string $userAgent            
      * @return string
      */
     public static function userAgentStart($userAgent)
     {
-
         $mobile_ua = strtolower(substr($userAgent, 0, 4));
-
+        
         return (in_array($mobile_ua, self::$_uaBegin));
     }
 
@@ -329,7 +330,7 @@ class Zend_Http_UserAgent_Mobile extends Zend_Http_UserAgent_AbstractDevice
     {
         // For mobile detection, an adapter must be defined
         if (empty($config['mobile']['features'])) {
-            $config['mobile']['features']['path']      = self::DEFAULT_FEATURES_ADAPTER_PATH;
+            $config['mobile']['features']['path'] = self::DEFAULT_FEATURES_ADAPTER_PATH;
             $config['mobile']['features']['classname'] = self::DEFAULT_FEATURES_ADAPTER_CLASSNAME;
         }
         parent::__construct($userAgent, $server, $config);
@@ -353,9 +354,9 @@ class Zend_Http_UserAgent_Mobile extends Zend_Http_UserAgent_AbstractDevice
     protected function _defineFeatures()
     {
         $this->setFeature('is_wireless_device', false, 'product_info');
-
+        
         parent::_defineFeatures();
-
+        
         if (isset($this->_aFeatures["mobile_browser"])) {
             $this->setFeature("browser_name", $this->_aFeatures["mobile_browser"]);
             $this->_browser = $this->_aFeatures["mobile_browser"];
@@ -364,19 +365,17 @@ class Zend_Http_UserAgent_Mobile extends Zend_Http_UserAgent_AbstractDevice
             $this->setFeature("browser_version", $this->_aFeatures["mobile_browser_version"]);
             $this->_browserVersion = $this->_aFeatures["mobile_browser_version"];
         }
-
+        
         // markup
-        if ($this->getFeature('device_os') == 'iPhone OS'
-            || $this->getFeature('device_os_token') == 'iPhone OS'
-        ) {
+        if ($this->getFeature('device_os') == 'iPhone OS' || $this->getFeature('device_os_token') == 'iPhone OS') {
             $this->setFeature('markup', 'iphone');
         } else {
             $this->setFeature('markup', $this->getMarkupLanguage($this->getFeature('preferred_markup')));
         }
-
+        
         // image format
         $this->_images = array();
-
+        
         if ($this->getFeature('png')) {
             $this->_images[] = 'png';
         }
@@ -389,7 +388,7 @@ class Zend_Http_UserAgent_Mobile extends Zend_Http_UserAgent_AbstractDevice
         if ($this->getFeature('wbmp')) {
             $this->_images[] = 'wbmp';
         }
-
+        
         return $this->_aFeatures;
     }
 
@@ -406,19 +405,19 @@ class Zend_Http_UserAgent_Mobile extends Zend_Http_UserAgent_AbstractDevice
             case 'wml_1_1':
             case 'wml_1_2':
             case 'wml_1_3':
-                $return = 'wml'; //text/vnd.wap.wml encoding="ISO-8859-15"
+                $return = 'wml'; // text/vnd.wap.wml encoding="ISO-8859-15"
             case 'html_wi_imode_compact_generic':
             case 'html_wi_imode_html_1':
             case 'html_wi_imode_html_2':
             case 'html_wi_imode_html_3':
             case 'html_wi_imode_html_4':
             case 'html_wi_imode_html_5':
-                $return = 'chtml'; //text/html
-            case 'html_wi_oma_xhtmlmp_1_0': //application/vnd.wap.xhtml+xml
-            case 'html_wi_w3_xhtmlbasic': //application/xhtml+xml DTD XHTML Basic 1.0
+                $return = 'chtml'; // text/html
+            case 'html_wi_oma_xhtmlmp_1_0': // application/vnd.wap.xhtml+xml
+            case 'html_wi_w3_xhtmlbasic': // application/xhtml+xml DTD XHTML Basic 1.0
                 $return = 'xhtml';
-            case 'html_web_3_2': //text/html DTD Html 3.2 Final
-            case 'html_web_4_0': //text/html DTD Html 4.01 Transitional
+            case 'html_web_3_2': // text/html DTD Html 3.2 Final
+            case 'html_web_4_0': // text/html DTD Html 4.01 Transitional
                 $return = '';
         }
         return $return;

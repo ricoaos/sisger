@@ -20,25 +20,29 @@
  */
 
 /**
+ *
  * @see Zend_Validate_Abstract
  */
 require_once 'Zend/Validate/Abstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Validate
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Validate
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Validate_InArray extends Zend_Validate_Abstract
 {
+
     const NOT_IN_ARRAY = 'notInArray';
 
     /**
+     *
      * @var array
      */
     protected $_messageTemplates = array(
-        self::NOT_IN_ARRAY => "'%value%' was not found in the haystack",
+        self::NOT_IN_ARRAY => "'%value%' was not found in the haystack"
     );
 
     /**
@@ -65,26 +69,27 @@ class Zend_Validate_InArray extends Zend_Validate_Abstract
     /**
      * Sets validator options
      *
-     * @param array|Zend_Config $options Validator options
+     * @param array|Zend_Config $options
+     *            Validator options
      * @throws Zend_Validate_Exception
      */
     public function __construct($options)
     {
         if ($options instanceof Zend_Config) {
             $options = $options->toArray();
-        } else if (!is_array($options)) {
+        } else if (! is_array($options)) {
             require_once 'Zend/Validate/Exception.php';
             throw new Zend_Validate_Exception('Array expected as parameter');
         } else {
             $count = func_num_args();
-            $temp  = array();
+            $temp = array();
             if ($count > 1) {
                 $temp['haystack'] = func_get_arg(0);
-                $temp['strict']   = func_get_arg(1);
+                $temp['strict'] = func_get_arg(1);
                 $options = $temp;
             } else {
                 $temp = func_get_arg(0);
-                if (!array_key_exists('haystack', $options)) {
+                if (! array_key_exists('haystack', $options)) {
                     $options = array();
                     $options['haystack'] = $temp;
                 } else {
@@ -92,12 +97,12 @@ class Zend_Validate_InArray extends Zend_Validate_Abstract
                 }
             }
         }
-
+        
         $this->setHaystack($options['haystack']);
         if (array_key_exists('strict', $options)) {
             $this->setStrict($options['strict']);
         }
-
+        
         if (array_key_exists('recursive', $options)) {
             $this->setRecursive($options['recursive']);
         }
@@ -116,7 +121,7 @@ class Zend_Validate_InArray extends Zend_Validate_Abstract
     /**
      * Sets the haystack option
      *
-     * @param  mixed $haystack
+     * @param mixed $haystack            
      * @return Zend_Validate_InArray Provides a fluent interface
      */
     public function setHaystack(array $haystack)
@@ -138,7 +143,7 @@ class Zend_Validate_InArray extends Zend_Validate_Abstract
     /**
      * Sets the strict option
      *
-     * @param  boolean $strict
+     * @param boolean $strict            
      * @return Zend_Validate_InArray Provides a fluent interface
      */
     public function setStrict($strict)
@@ -160,7 +165,7 @@ class Zend_Validate_InArray extends Zend_Validate_Abstract
     /**
      * Sets the recursive option
      *
-     * @param  boolean $recursive
+     * @param boolean $recursive            
      * @return Zend_Validate_InArray Provides a fluent interface
      */
     public function setRecursive($recursive)
@@ -175,7 +180,7 @@ class Zend_Validate_InArray extends Zend_Validate_Abstract
      * Returns true if and only if $value is contained in the haystack option. If the strict
      * option is true, then the type of $value is also checked.
      *
-     * @param  mixed $value
+     * @param mixed $value            
      * @return boolean
      */
     public function isValid($value)
@@ -183,7 +188,7 @@ class Zend_Validate_InArray extends Zend_Validate_Abstract
         $this->_setValue($value);
         if ($this->getRecursive()) {
             $iterator = new RecursiveIteratorIterator(new RecursiveArrayIterator($this->_haystack));
-            foreach($iterator as $element) {
+            foreach ($iterator as $element) {
                 if ($this->_strict) {
                     if ($element === $value) {
                         return true;
@@ -197,7 +202,7 @@ class Zend_Validate_InArray extends Zend_Validate_Abstract
                 return true;
             }
         }
-
+        
         $this->_error(self::NOT_IN_ARRAY);
         return false;
     }

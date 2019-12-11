@@ -22,22 +22,28 @@
  */
 
 /**
+ *
  * @see Zend_Rest_Client
  */
 require_once 'Zend/Rest/Client.php';
 
-/** @see Zend_Xml_Security */
+/**
+ *
+ * @see Zend_Xml_Security
+ */
 require_once 'Zend/Xml/Security.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_Amazon
 {
+
     /**
      * Amazon Web Services Access Key ID
      *
@@ -46,11 +52,13 @@ class Zend_Service_Amazon
     public $appId;
 
     /**
+     *
      * @var string
      */
     protected $_secretKey = null;
 
     /**
+     *
      * @var string
      */
     protected $_baseUri = null;
@@ -60,12 +68,14 @@ class Zend_Service_Amazon
      *
      * @var array
      */
-    protected $_baseUriList = array('US' => 'http://webservices.amazon.com',
-                                    'UK' => 'http://webservices.amazon.co.uk',
-                                    'DE' => 'http://webservices.amazon.de',
-                                    'JP' => 'http://webservices.amazon.co.jp',
-                                    'FR' => 'http://webservices.amazon.fr',
-                                    'CA' => 'http://webservices.amazon.ca');
+    protected $_baseUriList = array(
+        'US' => 'http://webservices.amazon.com',
+        'UK' => 'http://webservices.amazon.co.uk',
+        'DE' => 'http://webservices.amazon.de',
+        'JP' => 'http://webservices.amazon.co.jp',
+        'FR' => 'http://webservices.amazon.fr',
+        'CA' => 'http://webservices.amazon.ca'
+    );
 
     /**
      * Reference to REST client object
@@ -74,12 +84,13 @@ class Zend_Service_Amazon
      */
     protected $_rest = null;
 
-
     /**
      * Constructs a new Amazon Web Services Client
      *
-     * @param  string $appId       Developer's Amazon appid
-     * @param  string $countryCode Country code for Amazon service; may be US, UK, DE, JP, FR, CA
+     * @param string $appId
+     *            Developer's Amazon appid
+     * @param string $countryCode
+     *            Country code for Amazon service; may be US, UK, DE, JP, FR, CA
      * @throws Zend_Service_Exception
      * @return Zend_Service_Amazon
      */
@@ -87,24 +98,25 @@ class Zend_Service_Amazon
     {
         $this->appId = (string) $appId;
         $this->_secretKey = $secretKey;
-
+        
         $countryCode = (string) $countryCode;
-        if (!isset($this->_baseUriList[$countryCode])) {
+        if (! isset($this->_baseUriList[$countryCode])) {
             /**
+             *
              * @see Zend_Service_Exception
              */
             require_once 'Zend/Service/Exception.php';
             throw new Zend_Service_Exception("Unknown country code: $countryCode");
         }
-
+        
         $this->_baseUri = $this->_baseUriList[$countryCode];
     }
-
 
     /**
      * Search for Items
      *
-     * @param  array $options Options to use for the Search Query
+     * @param array $options
+     *            Options to use for the Search Query
      * @throws Zend_Service_Exception
      * @return Zend_Service_Amazon_ResultSet
      * @see http://www.amazon.com/gp/aws/sdk/main.html/102-9041115-9057709?s=AWSEcommerceService&v=2011-08-01&p=ApiReference/ItemSearchOperation
@@ -113,38 +125,42 @@ class Zend_Service_Amazon
     {
         $client = $this->getRestClient();
         $client->setUri($this->_baseUri);
-
-        $defaultOptions = array('ResponseGroup' => 'Small');
+        
+        $defaultOptions = array(
+            'ResponseGroup' => 'Small'
+        );
         $options = $this->_prepareOptions('ItemSearch', $options, $defaultOptions);
         $client->getHttpClient()->resetParameters();
         $response = $client->restGet('/onca/xml', $options);
-
+        
         if ($response->isError()) {
             /**
+             *
              * @see Zend_Service_Exception
              */
             require_once 'Zend/Service/Exception.php';
-            throw new Zend_Service_Exception('An error occurred sending request. Status code: '
-                                           . $response->getStatus());
+            throw new Zend_Service_Exception('An error occurred sending request. Status code: ' . $response->getStatus());
         }
-
+        
         $dom = new DOMDocument();
         $dom = Zend_Xml_Security::scan($response->getBody(), $dom);
         self::_checkErrors($dom);
-
+        
         /**
+         *
          * @see Zend_Service_Amazon_ResultSet
          */
         require_once 'Zend/Service/Amazon/ResultSet.php';
         return new Zend_Service_Amazon_ResultSet($dom);
     }
 
-
     /**
      * Look up item(s) by ASIN
      *
-     * @param  string $asin    Amazon ASIN ID
-     * @param  array  $options Query Options
+     * @param string $asin
+     *            Amazon ASIN ID
+     * @param array $options
+     *            Query Options
      * @see http://www.amazon.com/gp/aws/sdk/main.html/102-9041115-9057709?s=AWSEcommerceService&v=2011-08-01&p=ApiReference/ItemLookupOperation
      * @throws Zend_Service_Exception
      * @return Zend_Service_Amazon_Item|Zend_Service_Amazon_ResultSet
@@ -154,44 +170,46 @@ class Zend_Service_Amazon
         $client = $this->getRestClient();
         $client->setUri($this->_baseUri);
         $client->getHttpClient()->resetParameters();
-
-        $defaultOptions = array('ResponseGroup' => 'Small');
+        
+        $defaultOptions = array(
+            'ResponseGroup' => 'Small'
+        );
         $options['ItemId'] = (string) $asin;
         $options = $this->_prepareOptions('ItemLookup', $options, $defaultOptions);
         $response = $client->restGet('/onca/xml', $options);
-
+        
         if ($response->isError()) {
             /**
+             *
              * @see Zend_Service_Exception
              */
             require_once 'Zend/Service/Exception.php';
-            throw new Zend_Service_Exception(
-                'An error occurred sending request. Status code: ' . $response->getStatus()
-            );
+            throw new Zend_Service_Exception('An error occurred sending request. Status code: ' . $response->getStatus());
         }
-
+        
         $dom = new DOMDocument();
         $dom = Zend_Xml_Security::scan($response->getBody(), $dom);
         self::_checkErrors($dom);
         $xpath = new DOMXPath($dom);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/2011-08-01');
         $items = $xpath->query('//az:Items/az:Item');
-
+        
         if ($items->length == 1) {
             /**
+             *
              * @see Zend_Service_Amazon_Item
              */
             require_once 'Zend/Service/Amazon/Item.php';
             return new Zend_Service_Amazon_Item($items->item(0));
         }
-
+        
         /**
+         *
          * @see Zend_Service_Amazon_ResultSet
          */
         require_once 'Zend/Service/Amazon/ResultSet.php';
         return new Zend_Service_Amazon_ResultSet($dom);
     }
-
 
     /**
      * Returns a reference to the REST client
@@ -200,7 +218,7 @@ class Zend_Service_Amazon
      */
     public function getRestClient()
     {
-        if($this->_rest === null) {
+        if ($this->_rest === null) {
             $this->_rest = new Zend_Rest_Client();
         }
         return $this->_rest;
@@ -209,7 +227,8 @@ class Zend_Service_Amazon
     /**
      * Set REST client
      *
-     * @param Zend_Rest_Client
+     * @param
+     *            Zend_Rest_Client
      * @return Zend_Service_Amazon
      */
     public function setRestClient(Zend_Rest_Client $client)
@@ -218,87 +237,84 @@ class Zend_Service_Amazon
         return $this;
     }
 
-
     /**
      * Prepare options for request
      *
-     * @param  string $query          Action to perform
-     * @param  array  $options        User supplied options
-     * @param  array  $defaultOptions Default options
+     * @param string $query
+     *            Action to perform
+     * @param array $options
+     *            User supplied options
+     * @param array $defaultOptions
+     *            Default options
      * @return array
      */
     protected function _prepareOptions($query, array $options, array $defaultOptions)
     {
         $options['AWSAccessKeyId'] = $this->appId;
-        $options['Service']        = 'AWSECommerceService';
-        $options['Operation']      = (string) $query;
-        $options['Version']        = '2011-08-01';
-
+        $options['Service'] = 'AWSECommerceService';
+        $options['Operation'] = (string) $query;
+        $options['Version'] = '2011-08-01';
+        
         // de-canonicalize out sort key
         if (isset($options['ResponseGroup'])) {
             $responseGroup = explode(',', $options['ResponseGroup']);
-
-            if (!in_array('Request', $responseGroup)) {
+            
+            if (! in_array('Request', $responseGroup)) {
                 $responseGroup[] = 'Request';
                 $options['ResponseGroup'] = implode(',', $responseGroup);
             }
         }
-
+        
         $options = array_merge($defaultOptions, $options);
-
-        if($this->_secretKey !== null) {
-            $options['Timestamp'] = gmdate("Y-m-d\TH:i:s\Z");;
+        
+        if ($this->_secretKey !== null) {
+            $options['Timestamp'] = gmdate("Y-m-d\TH:i:s\Z");
+            ;
             ksort($options);
             $options['Signature'] = self::computeSignature($this->_baseUri, $this->_secretKey, $options);
         }
-
+        
         return $options;
     }
 
     /**
      * Compute Signature for Authentication with Amazon Product Advertising Webservices
      *
-     * @param  string $baseUri
-     * @param  string $secretKey
-     * @param  array $options
+     * @param string $baseUri            
+     * @param string $secretKey            
+     * @param array $options            
      * @return string
      */
     static public function computeSignature($baseUri, $secretKey, array $options)
     {
         require_once "Zend/Crypt/Hmac.php";
-
+        
         $signature = self::buildRawSignature($baseUri, $options);
-        return base64_encode(
-            Zend_Crypt_Hmac::compute($secretKey, 'sha256', $signature, Zend_Crypt_Hmac::BINARY)
-        );
+        return base64_encode(Zend_Crypt_Hmac::compute($secretKey, 'sha256', $signature, Zend_Crypt_Hmac::BINARY));
     }
 
     /**
      * Build the Raw Signature Text
      *
-     * @param  string $baseUri
-     * @param  array $options
+     * @param string $baseUri            
+     * @param array $options            
      * @return string
      */
     static public function buildRawSignature($baseUri, $options)
     {
         ksort($options);
         $params = array();
-        foreach($options AS $k => $v) {
-            $params[] = $k."=".rawurlencode($v);
+        foreach ($options as $k => $v) {
+            $params[] = $k . "=" . rawurlencode($v);
         }
-
-        return sprintf("GET\n%s\n/onca/xml\n%s",
-            str_replace('http://', '', $baseUri),
-            implode("&", $params)
-        );
+        
+        return sprintf("GET\n%s\n/onca/xml\n%s", str_replace('http://', '', $baseUri), implode("&", $params));
     }
-
 
     /**
      * Check result for errors
      *
-     * @param  DOMDocument $dom
+     * @param DOMDocument $dom            
      * @throws Zend_Service_Exception
      * @return void
      */
@@ -306,16 +322,17 @@ class Zend_Service_Amazon
     {
         $xpath = new DOMXPath($dom);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/2011-08-01');
-
+        
         if ($xpath->query('//az:Error')->length >= 1) {
             $code = $xpath->query('//az:Error/az:Code/text()')->item(0)->data;
             $message = $xpath->query('//az:Error/az:Message/text()')->item(0)->data;
-
-            switch($code) {
+            
+            switch ($code) {
                 case 'AWS.ECommerceService.NoExactMatches':
                     break;
                 default:
                     /**
+                     *
                      * @see Zend_Service_Exception
                      */
                     require_once 'Zend/Service/Exception.php';

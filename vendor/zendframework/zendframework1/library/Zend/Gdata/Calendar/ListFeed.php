@@ -22,11 +22,13 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Feed
  */
 require_once 'Zend/Gdata/Feed.php';
 
 /**
+ *
  * @see Zend_Gdata_Extension_Timezone
  */
 require_once 'Zend/Gdata/Calendar/Extension/Timezone.php';
@@ -34,14 +36,15 @@ require_once 'Zend/Gdata/Calendar/Extension/Timezone.php';
 /**
  * Represents the meta-feed list of calendars
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Calendar
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Calendar_ListFeed extends Zend_Gdata_Feed
 {
+
     protected $_timezone = null;
 
     /**
@@ -77,14 +80,14 @@ class Zend_Gdata_Calendar_ListFeed extends Zend_Gdata_Feed
     {
         $absoluteNodeName = $child->namespaceURI . ':' . $child->localName;
         switch ($absoluteNodeName) {
-        case $this->lookupNamespace('gCal') . ':' . 'timezone';
-            $timezone = new Zend_Gdata_Calendar_Extension_Timezone();
-            $timezone->transferFromDOM($child);
-            $this->_timezone = $timezone;
-            break;
-        default:
-            parent::takeChildFromDOM($child);
-            break;
+            case $this->lookupNamespace('gCal') . ':' . 'timezone':
+                $timezone = new Zend_Gdata_Calendar_Extension_Timezone();
+                $timezone->transferFromDOM($child);
+                $this->_timezone = $timezone;
+                break;
+            default:
+                parent::takeChildFromDOM($child);
+                break;
         }
     }
 
@@ -94,7 +97,8 @@ class Zend_Gdata_Calendar_ListFeed extends Zend_Gdata_Feed
     }
 
     /**
-     * @param Zend_Gdata_Calendar_Extension_Timezone $value
+     *
+     * @param Zend_Gdata_Calendar_Extension_Timezone $value            
      * @return Zend_Gdata_Extension_ListEntry Provides a fluent interface
      */
     public function setTimezone($value)
@@ -102,5 +106,4 @@ class Zend_Gdata_Calendar_ListFeed extends Zend_Gdata_Feed
         $this->_timezone = $value;
         return $this;
     }
-
 }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -26,32 +27,34 @@
  * A profile is a hierarchical set of resources that keep track of
  * items within a specific project.
  *
- * @category   Zend
- * @package    Zend_Tool
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Tool
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Tool_Project_Context_Zf_ControllerFile extends Zend_Tool_Project_Context_Filesystem_File
 {
 
     /**
+     *
      * @var string
      */
     protected $_controllerName = 'index';
 
     /**
+     *
      * @var string
      */
     protected $_moduleName = null;
 
     /**
+     *
      * @var string
      */
     protected $_filesystemName = 'controllerName';
 
     /**
      * init()
-     *
      */
     public function init()
     {
@@ -70,7 +73,7 @@ class Zend_Tool_Project_Context_Zf_ControllerFile extends Zend_Tool_Project_Cont
     {
         return array(
             'controllerName' => $this->getControllerName()
-            );
+        );
     }
 
     /**
@@ -104,7 +107,7 @@ class Zend_Tool_Project_Context_Zf_ControllerFile extends Zend_Tool_Project_Cont
         
         $className = ($this->_moduleName) ? $filter->filter(ucfirst($this->_moduleName)) . '_' : '';
         $className .= ucfirst($this->_controllerName) . 'Controller';
-
+        
         $codeGenFile = new Zend_CodeGenerator_Php_File(array(
             'fileName' => $this->getPath(),
             'classes' => array(
@@ -114,16 +117,15 @@ class Zend_Tool_Project_Context_Zf_ControllerFile extends Zend_Tool_Project_Cont
                     'methods' => array(
                         new Zend_CodeGenerator_Php_Method(array(
                             'name' => 'init',
-                            'body' => '/* Initialize action controller here */',
-                            ))
-                        )
-                    ))
-                )
-            ));
-
-
+                            'body' => '/* Initialize action controller here */'
+                        ))
+                    )
+                ))
+            )
+        ));
+        
         if ($className == 'ErrorController') {
-
+            
             $codeGenFile = new Zend_CodeGenerator_Php_File(array(
                 'fileName' => $this->getPath(),
                 'classes' => array(
@@ -171,7 +173,8 @@ if (\$this->getInvokeArg('displayExceptions') == true) {
 
 \$this->view->request   = \$errors->request;
 EOS
-                                )),
+
+                            )),
                             new Zend_CodeGenerator_Php_Method(array(
                                 'name' => 'getLog',
                                 'body' => <<<EOS
@@ -182,14 +185,14 @@ if (!\$bootstrap->hasResource('Log')) {
 \$log = \$bootstrap->getResource('Log');
 return \$log;
 EOS
-                                )),
-                            )
-                        ))
-                    )
-                ));
 
+                            ))
+                        )
+                    ))
+                )
+            ));
         }
-
+        
         // store the generator into the registry so that the addAction command can use the same object later
         Zend_CodeGenerator_Php_File::registerFileCodeGenerator($codeGenFile); // REQUIRES filename to be set
         return $codeGenFile->generate();
@@ -198,12 +201,15 @@ EOS
     /**
      * addAction()
      *
-     * @param string $actionName
+     * @param string $actionName            
      */
     public function addAction($actionName)
     {
         $classCodeGen = $this->getCodeGenerator();
-        $classCodeGen->setMethod(array('name' => $actionName . 'Action', 'body' => '        // action body here'));
+        $classCodeGen->setMethod(array(
+            'name' => $actionName . 'Action',
+            'body' => '        // action body here'
+        ));
         file_put_contents($this->getPath(), $classCodeGen->generate());
     }
 
@@ -219,5 +225,4 @@ EOS
         $class = array_shift($codeGenFileClasses);
         return $class;
     }
-
 }

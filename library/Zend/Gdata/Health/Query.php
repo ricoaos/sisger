@@ -22,34 +22,34 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Query
  */
-require_once('Zend/Gdata/Query.php');
+require_once ('Zend/Gdata/Query.php');
 
 /**
  * Assists in constructing queries for Google Health
  *
  * @link http://code.google.com/apis/health
- *
- * @category   Zend
- * @package    Zend_Gdata
+ *      
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Health
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Health_Query extends Zend_Gdata_Query
 {
+
     /**
      * URI of a user's profile feed.
      */
-    const HEALTH_PROFILE_FEED_URI =
-        'https://www.google.com/health/feeds/profile/default';
+    const HEALTH_PROFILE_FEED_URI = 'https://www.google.com/health/feeds/profile/default';
 
     /**
      * URI of register (notices) feed.
      */
-    const HEALTH_REGISTER_FEED_URI =
-        'https://www.google.com/health/feeds/register/default';
+    const HEALTH_REGISTER_FEED_URI = 'https://www.google.com/health/feeds/register/default';
 
     /**
      * Namespace for an item category
@@ -66,7 +66,7 @@ class Zend_Gdata_Health_Query extends Zend_Gdata_Query
     /**
      * Sets the digest parameter's value.
      *
-     * @param string $value
+     * @param string $value            
      * @return Zend_Gdata_Health_Query Provides a fluent interface
      */
     public function setDigest($value)
@@ -94,15 +94,16 @@ class Zend_Gdata_Health_Query extends Zend_Gdata_Query
     /**
      * Setter for category queries.
      *
-     * @param string $item A category to query.
-     * @param string $name (optional) A specific item to search a category for.
-     *     An example would be 'Lipitor' if $item is set to 'medication'.
+     * @param string $item
+     *            A category to query.
+     * @param string $name
+     *            (optional) A specific item to search a category for.
+     *            An example would be 'Lipitor' if $item is set to 'medication'.
      * @return Zend_Gdata_Health_Query Provides a fluent interface
      */
     public function setCategory($item, $name = null)
     {
-        $this->_category = $item .
-            ($name ? '/' . urlencode('{' . self::ITEM_CATEGORY_NS . '}' . $name) : null);
+        $this->_category = $item . ($name ? '/' . urlencode('{' . self::ITEM_CATEGORY_NS . '}' . $name) : null);
         return $this;
     }
 
@@ -119,7 +120,8 @@ class Zend_Gdata_Health_Query extends Zend_Gdata_Query
     /**
      * Setter for the grouped parameter.
      *
-     * @param string $value setting a count of results per group.
+     * @param string $value
+     *            setting a count of results per group.
      * @return Zend_Gdata_Health_Query Provides a fluent interface
      */
     public function setGrouped($value)
@@ -147,9 +149,10 @@ class Zend_Gdata_Health_Query extends Zend_Gdata_Query
     /**
      * Setter for the max-results-group parameter.
      *
-     * @param int $value Specifies the maximum number of groups to be
-     *     retrieved. Must be an integer value greater than zero. This parameter
-     *     is only valid if grouped=true.
+     * @param int $value
+     *            Specifies the maximum number of groups to be
+     *            retrieved. Must be an integer value greater than zero. This parameter
+     *            is only valid if grouped=true.
      * @return Zend_Gdata_Health_Query Provides a fluent interface
      */
     public function setMaxResultsGroup($value)
@@ -157,18 +160,17 @@ class Zend_Gdata_Health_Query extends Zend_Gdata_Query
         if ($value !== null) {
             if ($value <= 0 || $this->getGrouped() !== 'true') {
                 require_once 'Zend/Gdata/App/InvalidArgumentException.php';
-                throw new Zend_Gdata_App_InvalidArgumentException(
-                    'The max-results-group parameter must be set to a value
+                throw new Zend_Gdata_App_InvalidArgumentException('The max-results-group parameter must be set to a value
                     greater than 0 and can only be used if grouped=true');
             } else {
-              $this->_params['max-results-group'] = $value;
+                $this->_params['max-results-group'] = $value;
             }
         }
         return $this;
     }
 
     /**
-     *  Returns the value set for max-results-group.
+     * Returns the value set for max-results-group.
      *
      * @return int Returns max-results-group parameter.
      */
@@ -182,30 +184,30 @@ class Zend_Gdata_Health_Query extends Zend_Gdata_Query
     }
 
     /**
-     *  Setter for the max-results-group parameter.
+     * Setter for the max-results-group parameter.
      *
-     * @param int $value Specifies the maximum number of records to be
-     *     retrieved from each group.  The limits that you specify with this
-     *     parameter apply to all groups. Must be an integer value greater than
-     *     zero. This parameter is only valid if grouped=true.
+     * @param int $value
+     *            Specifies the maximum number of records to be
+     *            retrieved from each group. The limits that you specify with this
+     *            parameter apply to all groups. Must be an integer value greater than
+     *            zero. This parameter is only valid if grouped=true.
      * @return Zend_Gdata_Health_Query Provides a fluent interface
      */
     public function setMaxResultsInGroup($value)
     {
         if ($value !== null) {
             if ($value <= 0 || $this->getGrouped() !== 'true') {
-              throw new Zend_Gdata_App_InvalidArgumentException(
-                  'The max-results-in-group parameter must be set to a value
+                throw new Zend_Gdata_App_InvalidArgumentException('The max-results-in-group parameter must be set to a value
                   greater than 0 and can only be used if grouped=true');
             } else {
-              $this->_params['max-results-in-group'] = $value;
+                $this->_params['max-results-in-group'] = $value;
             }
         }
         return $this;
     }
 
     /**
-     *  Returns the value set for max-results-in-group.
+     * Returns the value set for max-results-in-group.
      *
      * @return int Returns max-results-in-group parameter.
      */
@@ -221,25 +223,25 @@ class Zend_Gdata_Health_Query extends Zend_Gdata_Query
     /**
      * Setter for the start-index-group parameter.
      *
-     * @param int $value Retrieves only items whose group ranking is at
-     *     least start-index-group. This should be set to a 1-based index of the
-     *     first group to be retrieved. The range is applied per category.
-     *     This parameter is only valid if grouped=true.
+     * @param int $value
+     *            Retrieves only items whose group ranking is at
+     *            least start-index-group. This should be set to a 1-based index of the
+     *            first group to be retrieved. The range is applied per category.
+     *            This parameter is only valid if grouped=true.
      * @return Zend_Gdata_Health_Query Provides a fluent interface
      */
     public function setStartIndexGroup($value)
     {
         if ($value !== null && $this->getGrouped() !== 'true') {
-            throw new Zend_Gdata_App_InvalidArgumentException(
-                'The start-index-group can only be used if grouped=true');
+            throw new Zend_Gdata_App_InvalidArgumentException('The start-index-group can only be used if grouped=true');
         } else {
-          $this->_params['start-index-group'] = $value;
+            $this->_params['start-index-group'] = $value;
         }
         return $this;
     }
 
     /**
-     *  Returns the value set for start-index-group.
+     * Returns the value set for start-index-group.
      *
      * @return int Returns start-index-group parameter.
      */
@@ -253,10 +255,11 @@ class Zend_Gdata_Health_Query extends Zend_Gdata_Query
     }
 
     /**
-     *  Setter for the start-index-in-group parameter.
+     * Setter for the start-index-in-group parameter.
      *
-     * @param int $value  A 1-based index of the records to be retrieved from
-     *     each group. This parameter is only valid if grouped=true.
+     * @param int $value
+     *            A 1-based index of the records to be retrieved from
+     *            each group. This parameter is only valid if grouped=true.
      * @return Zend_Gdata_Health_Query Provides a fluent interface
      */
     public function setStartIndexInGroup($value)
@@ -264,7 +267,7 @@ class Zend_Gdata_Health_Query extends Zend_Gdata_Query
         if ($value !== null && $this->getGrouped() !== 'true') {
             throw new Zend_Gdata_App_InvalidArgumentException('start-index-in-group');
         } else {
-          $this->_params['start-index-in-group'] = $value;
+            $this->_params['start-index-in-group'] = $value;
         }
         return $this;
     }

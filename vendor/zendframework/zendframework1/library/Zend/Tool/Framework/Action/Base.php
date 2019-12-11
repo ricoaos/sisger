@@ -21,20 +21,23 @@
  */
 
 /**
+ *
  * @see Zend_Tool_Framework_Action_Interface
  */
 require_once 'Zend/Tool/Framework/Action/Interface.php';
 
 /**
- * @category   Zend
- * @package    Zend_Tool
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Tool
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Tool_Framework_Action_Base implements Zend_Tool_Framework_Action_Interface
 {
 
     /**
+     *
      * @var string
      */
     protected $_name = null;
@@ -42,7 +45,7 @@ class Zend_Tool_Framework_Action_Base implements Zend_Tool_Framework_Action_Inte
     /**
      * constructor -
      *
-     * @param unknown_type $options
+     * @param unknown_type $options            
      */
     public function __construct($options = null)
     {
@@ -57,7 +60,7 @@ class Zend_Tool_Framework_Action_Base implements Zend_Tool_Framework_Action_Inte
     /**
      * setName()
      *
-     * @param string $name
+     * @param string $name            
      * @return Zend_Tool_Framework_Action_Base
      */
     public function setName($name)
@@ -82,14 +85,13 @@ class Zend_Tool_Framework_Action_Base implements Zend_Tool_Framework_Action_Inte
     /**
      * _parseName - internal method to determine the name of an action when one is not explicity provided.
      *
-     * @param Zend_Tool_Framework_Action_Interface $action
+     * @param Zend_Tool_Framework_Action_Interface $action            
      * @return string
      */
     protected function _parseName()
     {
         $className = get_class($this);
-        $actionName = substr($className, strrpos($className, '_')+1);
+        $actionName = substr($className, strrpos($className, '_') + 1);
         return $actionName;
     }
-
 }

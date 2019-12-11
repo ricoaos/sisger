@@ -18,7 +18,9 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_Form_Decorator_Abstract */
+/**
+ * Zend_Form_Decorator_Abstract
+ */
 require_once 'Zend/Form/Decorator/Abstract.php';
 
 /**
@@ -29,32 +31,35 @@ require_once 'Zend/Form/Decorator/Abstract.php';
  * Accepts the following options:
  * - separator: string with which to separate passed in content and generated content
  * - placement: whether to append or prepend the generated content to the passed in content
- * - helper:    the name of the view helper to use
+ * - helper: the name of the view helper to use
  *
  * Assumes the view helper accepts three parameters, the name, value, and
  * optional attributes; these will be provided by the element.
  *
- * @category   Zend
- * @package    Zend_Form
+ * @category Zend
+ * @package Zend_Form
  * @subpackage Decorator
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: ViewHelper.php 23775 2011-03-01 17:25:24Z ralph $
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id: ViewHelper.php 23775 2011-03-01 17:25:24Z ralph $
  */
 class Zend_Form_Decorator_ViewHelper extends Zend_Form_Decorator_Abstract
 {
+
     /**
      * Element types that represent buttons
+     * 
      * @var array
      */
     protected $_buttonTypes = array(
         'Zend_Form_Element_Button',
         'Zend_Form_Element_Reset',
-        'Zend_Form_Element_Submit',
+        'Zend_Form_Element_Submit'
     );
 
     /**
      * View helper to use when rendering
+     * 
      * @var string
      */
     protected $_helper;
@@ -62,7 +67,7 @@ class Zend_Form_Decorator_ViewHelper extends Zend_Form_Decorator_Abstract
     /**
      * Set view helper to use when rendering
      *
-     * @param  string $helper
+     * @param string $helper            
      * @return Zend_Form_Decorator_Element_ViewHelper
      */
     public function setHelper($helper)
@@ -98,7 +103,7 @@ class Zend_Form_Decorator_ViewHelper extends Zend_Form_Decorator_Abstract
                 }
             }
         }
-
+        
         return $this->_helper;
     }
 
@@ -115,23 +120,21 @@ class Zend_Form_Decorator_ViewHelper extends Zend_Form_Decorator_Abstract
         if (null === ($element = $this->getElement())) {
             return '';
         }
-
+        
         $name = $element->getName();
-
-        if (!$element instanceof Zend_Form_Element) {
+        
+        if (! $element instanceof Zend_Form_Element) {
             return $name;
         }
-
+        
         if (null !== ($belongsTo = $element->getBelongsTo())) {
-            $name = $belongsTo . '['
-                  . $name
-                  . ']';
+            $name = $belongsTo . '[' . $name . ']';
         }
-
+        
         if ($element->isArray()) {
             $name .= '[]';
         }
-
+        
         return $name;
     }
 
@@ -147,34 +150,34 @@ class Zend_Form_Decorator_ViewHelper extends Zend_Form_Decorator_Abstract
         if (null === ($element = $this->getElement())) {
             return null;
         }
-
+        
         $attribs = $element->getAttribs();
         if (isset($attribs['helper'])) {
             unset($attribs['helper']);
         }
-
+        
         if (method_exists($element, 'getSeparator')) {
             if (null !== ($listsep = $element->getSeparator())) {
                 $attribs['listsep'] = $listsep;
             }
         }
-
+        
         if (isset($attribs['id'])) {
             return $attribs;
         }
-
+        
         $id = $element->getName();
-
+        
         if ($element instanceof Zend_Form_Element) {
             if (null !== ($belongsTo = $element->getBelongsTo())) {
                 $belongsTo = preg_replace('/\[([^\]]+)\]/', '-$1', $belongsTo);
                 $id = $belongsTo . '-' . $id;
             }
         }
-
+        
         $element->setAttrib('id', $id);
         $attribs['id'] = $id;
-
+        
         return $attribs;
     }
 
@@ -183,15 +186,15 @@ class Zend_Form_Decorator_ViewHelper extends Zend_Form_Decorator_Abstract
      *
      * If element type is one of the button types, returns the label.
      *
-     * @param  Zend_Form_Element $element
+     * @param Zend_Form_Element $element            
      * @return string|null
      */
     public function getValue($element)
     {
-        if (!$element instanceof Zend_Form_Element) {
+        if (! $element instanceof Zend_Form_Element) {
             return null;
         }
-
+        
         foreach ($this->_buttonTypes as $type) {
             if ($element instanceof $type) {
                 if (stristr($type, 'button')) {
@@ -201,7 +204,7 @@ class Zend_Form_Decorator_ViewHelper extends Zend_Form_Decorator_Abstract
                 return $element->getLabel();
             }
         }
-
+        
         return $element->getValue();
     }
 
@@ -212,37 +215,37 @@ class Zend_Form_Decorator_ViewHelper extends Zend_Form_Decorator_Abstract
      * the element type. Then call as
      * helper($element->getName(), $element->getValue(), $element->getAttribs())
      *
-     * @param  string $content
+     * @param string $content            
      * @return string
      * @throws Zend_Form_Decorator_Exception if element or view are not registered
      */
     public function render($content)
     {
         $element = $this->getElement();
-
+        
         $view = $element->getView();
         if (null === $view) {
             require_once 'Zend/Form/Decorator/Exception.php';
             throw new Zend_Form_Decorator_Exception('ViewHelper decorator cannot render without a registered view object');
         }
-
+        
         if (method_exists($element, 'getMultiOptions')) {
             $element->getMultiOptions();
         }
-
-        $helper        = $this->getHelper();
-        $separator     = $this->getSeparator();
-        $value         = $this->getValue($element);
-        $attribs       = $this->getElementAttribs();
-        $name          = $element->getFullyQualifiedName();
-        $id            = $element->getId();
+        
+        $helper = $this->getHelper();
+        $separator = $this->getSeparator();
+        $value = $this->getValue($element);
+        $attribs = $this->getElementAttribs();
+        $name = $element->getFullyQualifiedName();
+        $id = $element->getId();
         $attribs['id'] = $id;
-
-        $helperObject  = $view->getHelper($helper);
+        
+        $helperObject = $view->getHelper($helper);
         if (method_exists($helperObject, 'setTranslator')) {
             $helperObject->setTranslator($element->getTranslator());
         }
-
+        
         $elementContent = $view->$helper($name, $value, $attribs, $element->options);
         switch ($this->getPlacement()) {
             case self::APPEND:

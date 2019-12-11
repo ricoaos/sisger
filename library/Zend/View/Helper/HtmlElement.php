@@ -21,19 +21,22 @@
  */
 
 /**
+ *
  * @see Zend_View_Helper_Abstract
  */
 require_once 'Zend/View/Helper/Abstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_View
+ *
+ * @category Zend
+ * @package Zend_View
  * @subpackage Helper
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_View_Helper_HtmlElement extends Zend_View_Helper_Abstract
 {
+
     /**
      * EOL character
      */
@@ -53,14 +56,14 @@ abstract class Zend_View_Helper_HtmlElement extends Zend_View_Helper_Abstract
      */
     public function getClosingBracket()
     {
-        if (!$this->_closingBracket) {
+        if (! $this->_closingBracket) {
             if ($this->_isXhtml()) {
                 $this->_closingBracket = ' />';
             } else {
                 $this->_closingBracket = '>';
             }
         }
-
+        
         return $this->_closingBracket;
     }
 
@@ -85,15 +88,16 @@ abstract class Zend_View_Helper_HtmlElement extends Zend_View_Helper_Abstract
         $doctype = $this->view->doctype();
         return $doctype->isStrict();
     }
-    
+
     /**
      * Converts an associative array to a string of tag attributes.
      *
      * @access public
-     *
-     * @param array $attribs From this array, each key-value pair is
-     * converted to an attribute name and value.
-     *
+     *        
+     * @param array $attribs
+     *            From this array, each key-value pair is
+     *            converted to an attribute name and value.
+     *            
      * @return string The XHTML for the attributes.
      */
     protected function _htmlAttribs($attribs)
@@ -101,10 +105,10 @@ abstract class Zend_View_Helper_HtmlElement extends Zend_View_Helper_Abstract
         $xhtml = '';
         foreach ((array) $attribs as $key => $val) {
             $key = $this->view->escape($key);
-
+            
             if (('on' == substr($key, 0, 2)) || ('constraints' == $key)) {
                 // Don't escape event attributes; _do_ substitute double quotes with singles
-                if (!is_scalar($val)) {
+                if (! is_scalar($val)) {
                     // non-scalar data should be cast to JSON first
                     require_once 'Zend/Json.php';
                     $val = Zend_Json::encode($val);
@@ -120,17 +124,16 @@ abstract class Zend_View_Helper_HtmlElement extends Zend_View_Helper_Abstract
                 }
                 $val = $this->view->escape($val);
             }
-
+            
             if ('id' == $key) {
                 $val = $this->_normalizeId($val);
             }
-
+            
             if (strpos($val, '"') !== false) {
                 $xhtml .= " $key='$val'";
             } else {
                 $xhtml .= " $key=\"$val\"";
             }
-
         }
         return $xhtml;
     }
@@ -138,13 +141,13 @@ abstract class Zend_View_Helper_HtmlElement extends Zend_View_Helper_Abstract
     /**
      * Normalize an ID
      *
-     * @param  string $value
+     * @param string $value            
      * @return string
      */
     protected function _normalizeId($value)
     {
         if (strstr($value, '[')) {
-            if ('[]' == substr($value, -2)) {
+            if ('[]' == substr($value, - 2)) {
                 $value = substr($value, 0, strlen($value) - 2);
             }
             $value = trim($value, ']');

@@ -21,42 +21,46 @@
  */
 
 /**
+ *
  * @see Zend_Db_Statement_Pdo
  */
 require_once 'Zend/Db/Statement/Pdo.php';
 
 /**
  * Proxy class to wrap a PDOStatement object for IBM Databases.
- * Matches the interface of PDOStatement.  All methods simply proxy to the
- * matching method in PDOStatement.  PDOExceptions thrown by PDOStatement
+ * Matches the interface of PDOStatement. All methods simply proxy to the
+ * matching method in PDOStatement. PDOExceptions thrown by PDOStatement
  * are re-thrown as Zend_Db_Statement_Exception.
  *
- * @category   Zend
- * @package    Zend_Db
+ * @category Zend
+ * @package Zend_Db
  * @subpackage Statement
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Db_Statement_Pdo_Ibm extends Zend_Db_Statement_Pdo
 {
+
     /**
-    * Returns an array containing all of the result set rows.
-    *
-    * Behaves like parent, but if limit()
-    * is used, the final result removes the extra column
-    * 'zend_db_rownum'
-    *
-    * @param int $style OPTIONAL Fetch mode.
-    * @param int $col   OPTIONAL Column number, if fetch mode is by column.
-    * @return array Collection of rows, each in a format by the fetch mode.
-    * @throws Zend_Db_Statement_Exception
-    */
+     * Returns an array containing all of the result set rows.
+     *
+     * Behaves like parent, but if limit()
+     * is used, the final result removes the extra column
+     * 'zend_db_rownum'
+     *
+     * @param int $style
+     *            OPTIONAL Fetch mode.
+     * @param int $col
+     *            OPTIONAL Column number, if fetch mode is by column.
+     * @return array Collection of rows, each in a format by the fetch mode.
+     * @throws Zend_Db_Statement_Exception
+     */
     public function fetchAll($style = null, $col = null)
     {
         $data = parent::fetchAll($style, $col);
         $results = array();
         $remove = $this->_adapter->foldCase('ZEND_DB_ROWNUM');
-
+        
         foreach ($data as $row) {
             if (is_array($row) && array_key_exists($remove, $row)) {
                 unset($row[$remove]);
@@ -69,11 +73,16 @@ class Zend_Db_Statement_Pdo_Ibm extends Zend_Db_Statement_Pdo
     /**
      * Binds a parameter to the specified variable name.
      *
-     * @param mixed $parameter Name the parameter, either integer or string.
-     * @param mixed $variable  Reference to PHP variable containing the value.
-     * @param mixed $type      OPTIONAL Datatype of SQL parameter.
-     * @param mixed $length    OPTIONAL Length of SQL parameter.
-     * @param mixed $options   OPTIONAL Other options.
+     * @param mixed $parameter
+     *            Name the parameter, either integer or string.
+     * @param mixed $variable
+     *            Reference to PHP variable containing the value.
+     * @param mixed $type
+     *            OPTIONAL Datatype of SQL parameter.
+     * @param mixed $length
+     *            OPTIONAL Length of SQL parameter.
+     * @param mixed $options
+     *            OPTIONAL Other options.
      * @return bool
      * @throws Zend_Db_Statement_Exception
      */
@@ -90,5 +99,4 @@ class Zend_Db_Statement_Pdo_Ibm extends Zend_Db_Statement_Pdo
             throw new Zend_Db_Statement_Exception($e->getMessage(), $e->getCode(), $e);
         }
     }
-
 }

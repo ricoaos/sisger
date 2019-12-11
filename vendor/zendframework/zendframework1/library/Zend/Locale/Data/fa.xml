@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9876 $"/>
-		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $"/>
-		<language type="fa"/>
+		<version number="$Revision: 9876 $" />
+		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $" />
+		<language type="fa" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -974,7 +973,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="phonetic" key="collation">مرتب کردن بر اساس آوایی</type>
 			<type type="pinyin" key="collation">ترتیب پین‌یین</type>
 			<type type="primary" key="colStrength">مرتب‌سازی فقط حروف پایه</type>
-			<type type="quaternary" key="colStrength">مرتب‌سازی بر اساس آکسان/اندازه حروف/عرض/کانا</type>
+			<type type="quaternary" key="colStrength">مرتب‌سازی بر اساس آکسان/اندازه
+				حروف/عرض/کانا</type>
 			<type type="reformed" key="collation">ترتیب اصلاح‌شده</type>
 			<type type="roc" key="calendar">تقویم جمهوری چین (تایوان)</type>
 			<type type="roman" key="numbers">اعداد رومی</type>
@@ -1031,10 +1031,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</orientation>
 	</layout>
 	<characters>
-		<exemplarCharacters>[\u064B \u064D \u064C \u0651 \u0654 آ ا ء أ ؤ ئ ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ه ة ی]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[\u200C\u200D\u200E\u200F \u064E \u0650 \u064F \u0652 \u0656 \u0670 إ ك ى ي]</exemplarCharacters>
-		<exemplarCharacters type="index">[آ ا ب پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ه ی]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ ، ٫ ٬ ؛ \: ! ؟ . … ‹ › « » ( ) \[ \] * / \\]</exemplarCharacters>
+		<exemplarCharacters>[\u064B \u064D \u064C \u0651 \u0654 آ ا ء أ ؤ ئ ب
+			پ ت ث ج چ ح خ د ذ ر ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ه ة ی]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u200C\u200D\u200E\u200F
+			\u064E \u0650 \u064F \u0652 \u0656 \u0670 إ ك ى ي]</exemplarCharacters>
+		<exemplarCharacters type="index">[آ ا ب پ ت ث ج چ ح خ د ذ ر
+			ز ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن و ه ی]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ ، ٫ ٬ ؛ \: ! ؟ . … ‹
+			› « » ( ) \[ \] * / \\]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1243,7 +1247,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E d LLL تا E d MMM y G</greatestDifference>
 							<greatestDifference id="M">E d LLL تا E d MMM y G</greatestDifference>
-							<greatestDifference id="y">E d MMM y تا E d MMM y G</greatestDifference>
+							<greatestDifference id="y">E d MMM y تا E d MMM y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">LLLL تا MMMM y G</greatestDifference>

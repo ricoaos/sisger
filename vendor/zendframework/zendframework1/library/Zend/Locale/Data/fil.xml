@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9791 $"/>
-		<generation date="$Date: 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014) $"/>
-		<language type="fil"/>
+		<version number="$Revision: 9791 $" />
+		<generation date="$Date: 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014) $" />
+		<language type="fil" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -383,7 +382,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Guadeloupe</territory>
 			<territory type="GQ">Equatorial Guinea</territory>
 			<territory type="GR">Greece</territory>
-			<territory type="GS">South Georgia and the South Sandwich Islands</territory>
+			<territory type="GS">South Georgia and the South Sandwich
+				Islands</territory>
 			<territory type="GT">Guatemala</territory>
 			<territory type="GU">Guam</territory>
 			<territory type="GW">Guinea-Bissau</territory>
@@ -583,19 +583,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armn" key="numbers">Armenian Numerals</type>
 			<type type="armnlow" key="numbers">Armenian Lowercase Numerals</type>
 			<type type="beng" key="numbers">Bengali Digits</type>
-			<type type="big5han" key="collation">Pagkakasunod-sunod ng Pag-uuri ng Tradisyunal na Chinese - Big5</type>
+			<type type="big5han" key="collation">Pagkakasunod-sunod ng Pag-uuri ng
+				Tradisyunal na Chinese - Big5</type>
 			<type type="buddhist" key="calendar">Kalendaryo ng Buddhist</type>
 			<type type="chinese" key="calendar">Kalendaryong Chinese</type>
 			<type type="coptic" key="calendar">Coptic Calendar</type>
 			<type type="deva" key="numbers">Devanagari Digits</type>
-			<type type="dictionary" key="collation">Pagkakasunud-sunod ng Pag-uuri ng Diksyunaryo</type>
+			<type type="dictionary" key="collation">Pagkakasunud-sunod ng Pag-uuri ng
+				Diksyunaryo</type>
 			<type type="ducet" key="collation">Default na Ayos ng Pag-uuri ng Unicode</type>
 			<type type="ethi" key="numbers">Ethiopic Numerals</type>
 			<type type="ethiopic" key="calendar">Kalendaryong Ethiopic</type>
-			<type type="ethiopic-amete-alem" key="calendar">Kalendaryong Ethiopic Amete Alem</type>
+			<type type="ethiopic-amete-alem" key="calendar">Kalendaryong Ethiopic Amete
+				Alem</type>
 			<type type="finance" key="numbers">Mga Pampinansyang Numeral</type>
 			<type type="fullwide" key="numbers">Full Width Digits</type>
-			<type type="gb2312han" key="collation">Pagkakasunud-sunod ng Pag-uuri ng Pinasimpleng Chinese - GB2312</type>
+			<type type="gb2312han" key="collation">Pagkakasunud-sunod ng Pag-uuri ng
+				Pinasimpleng Chinese - GB2312</type>
 			<type type="geor" key="numbers">Georgian Numerals</type>
 			<type type="gregorian" key="calendar">Kalendaryong Gregorian</type>
 			<type type="grek" key="numbers">Greek Numerals</type>
@@ -634,17 +638,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="non-ignorable" key="colAlternate">Pag-uri-uriin ang Mga Simbolo</type>
 			<type type="orya" key="numbers">Oriya Digits</type>
 			<type type="persian" key="calendar">Kalendaryong Persian</type>
-			<type type="phonebook" key="collation">Pagkakasunud-sunod ng Pag-uuri ng Phonebook</type>
+			<type type="phonebook" key="collation">Pagkakasunud-sunod ng Pag-uuri ng
+				Phonebook</type>
 			<type type="phonetic" key="collation">Phonetic na Ayos ng Pag-uuri-uri</type>
 			<type type="pinyin" key="collation">Pagkakasunud-sunod ng Pag-uuri ng Pinyin</type>
-			<type type="primary" key="colStrength">Mga Base na Titik Lang ang Pag-uri-uriin</type>
-			<type type="quaternary" key="colStrength">Pag-uri-uriin ang Mga Accent/Case/Lapad/Kana</type>
-			<type type="reformed" key="collation">Pagkakasunud-sunod ng Pag-uuri ng Na-reform</type>
+			<type type="primary" key="colStrength">Mga Base na Titik Lang ang
+				Pag-uri-uriin</type>
+			<type type="quaternary" key="colStrength">Pag-uri-uriin ang Mga
+				Accent/Case/Lapad/Kana</type>
+			<type type="reformed" key="collation">Pagkakasunud-sunod ng Pag-uuri ng
+				Na-reform</type>
 			<type type="roc" key="calendar">Kalendaryong Minguo</type>
 			<type type="roman" key="numbers">Roman Numerals</type>
 			<type type="romanlow" key="numbers">Roman Lowercase Numerals</type>
 			<type type="search" key="collation">Paghahanap na May Layuning Pangkalahatan</type>
-			<type type="searchjl" key="collation">Maghanap Ayon sa Unang Katinig ng Hangul</type>
+			<type type="searchjl" key="collation">Maghanap Ayon sa Unang Katinig ng
+				Hangul</type>
 			<type type="secondary" key="colStrength">Pag-uri-uriin ang Mga Accent</type>
 			<type type="shifted" key="colAlternate">Pag-uri-uriin ang Mga Ignoring Symbol</type>
 			<type type="standard" key="collation">Karaniwang Ayos ng Pag-uuri-uri</type>
@@ -652,12 +661,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">Tamil Numerals</type>
 			<type type="tamldec" key="numbers">Tamil Digits</type>
 			<type type="telu" key="numbers">Telugu Digits</type>
-			<type type="tertiary" key="colStrength">Pag-uri-uriin ang Mga Accent/Case/Lapad</type>
+			<type type="tertiary" key="colStrength">Pag-uri-uriin ang Mga
+				Accent/Case/Lapad</type>
 			<type type="thai" key="numbers">Thai Digits</type>
 			<type type="tibt" key="numbers">Tibetan Digits</type>
-			<type type="traditional" key="collation">Tradisyunal na Pagkakasunud-sunod ng Pag-uuri</type>
+			<type type="traditional" key="collation">Tradisyunal na Pagkakasunud-sunod
+				ng Pag-uuri</type>
 			<type type="traditional" key="numbers">Mga Tradisyunal na Numeral</type>
-			<type type="unihan" key="collation">Pagkakasunud-sunod ng Pag-uuri ng Radical-Stroke</type>
+			<type type="unihan" key="collation">Pagkakasunud-sunod ng Pag-uuri ng
+				Radical-Stroke</type>
 			<type type="upper" key="colCaseFirst">Uppercase Muna ang Pag-uri-uriin</type>
 			<type type="vaii" key="numbers">Mga Vai na Digit</type>
 			<type type="yes" key="colBackwards">Pag-uri-uriin ang Mga Accent nang Baliktad</type>
@@ -690,9 +702,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a b c d e f g h i j k l m n ñ {ng} o p q r s t u v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à â é è ê í ì î ó ò ô ú ù û]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters>[a b c d e f g h i j k l m n ñ {ng} o p q r s t u
+			v w x y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à â é è ê í ì î ó ò ô ú
+			ù û]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S T U V W X Y Z]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -860,9 +875,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">M/d/y – M/d/y GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, M/d/y – E, M/d/y GGGGG</greatestDifference>
-							<greatestDifference id="M">E, M/d/y – E, M/d/y GGGGG</greatestDifference>
-							<greatestDifference id="y">E, M/d/y – E, M/d/y GGGGG</greatestDifference>
+							<greatestDifference id="d">E, M/d/y – E, M/d/y
+								GGGGG</greatestDifference>
+							<greatestDifference id="M">E, M/d/y – E, M/d/y
+								GGGGG</greatestDifference>
+							<greatestDifference id="y">E, M/d/y – E, M/d/y
+								GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM–MMM y G</greatestDifference>
@@ -874,9 +892,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">MMM d, y – MMM d, y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, MMM d – E, MMM d, y G</greatestDifference>
-							<greatestDifference id="M">E, MMM d – E, MMM d, y G</greatestDifference>
-							<greatestDifference id="y">E, MMM d, y – E, MMM d, y G</greatestDifference>
+							<greatestDifference id="d">E, MMM d – E, MMM d, y
+								G</greatestDifference>
+							<greatestDifference id="M">E, MMM d – E, MMM d, y
+								G</greatestDifference>
+							<greatestDifference id="y">E, MMM d, y – E, MMM d,
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y G</greatestDifference>
@@ -1314,7 +1335,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, MMM d – E, MMM d, y</greatestDifference>
 							<greatestDifference id="M">E, MMM d – E, MMM d, y</greatestDifference>
-							<greatestDifference id="y">E, MMM d, y – E, MMM d, y</greatestDifference>
+							<greatestDifference id="y">E, MMM d, y – E, MMM d,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -1338,8 +1360,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">Sa loob ng {0} taon</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} taon ang nakalipas</relativeTimePattern>
-					<relativeTimePattern count="other">{0} taon ang nakalipas</relativeTimePattern>
+					<relativeTimePattern count="one">{0} taon ang
+						nakalipas</relativeTimePattern>
+					<relativeTimePattern count="other">{0} taon ang
+						nakalipas</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="month">
@@ -1352,8 +1376,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">Sa loob ng {0} buwan</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} buwan ang nakalipas</relativeTimePattern>
-					<relativeTimePattern count="other">{0} buwan ang nakalipas</relativeTimePattern>
+					<relativeTimePattern count="one">{0} buwan ang
+						nakalipas</relativeTimePattern>
+					<relativeTimePattern count="other">{0} buwan ang
+						nakalipas</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -1362,12 +1388,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="0">ngayong linggo</relative>
 				<relative type="1">susunod na linggo</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">Sa loob ng {0} linggo</relativeTimePattern>
-					<relativeTimePattern count="other">Sa loob ng {0} linggo</relativeTimePattern>
+					<relativeTimePattern count="one">Sa loob ng {0}
+						linggo</relativeTimePattern>
+					<relativeTimePattern count="other">Sa loob ng {0}
+						linggo</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} na linggo ang nakalipas</relativeTimePattern>
-					<relativeTimePattern count="other">{0} linggo ang nakalipas</relativeTimePattern>
+					<relativeTimePattern count="one">{0} na linggo ang
+						nakalipas</relativeTimePattern>
+					<relativeTimePattern count="other">{0} linggo ang
+						nakalipas</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="day">
@@ -1382,8 +1412,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">Sa loob ng {0} araw</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} araw ang nakalipas</relativeTimePattern>
-					<relativeTimePattern count="other">{0} araw ang nakalipas</relativeTimePattern>
+					<relativeTimePattern count="one">{0} araw ang
+						nakalipas</relativeTimePattern>
+					<relativeTimePattern count="other">{0} araw ang
+						nakalipas</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="weekday">
@@ -1434,31 +1466,41 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">Sa loob ng {0} oras</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} oras ang nakalipas</relativeTimePattern>
-					<relativeTimePattern count="other">{0} oras ang nakalipas</relativeTimePattern>
+					<relativeTimePattern count="one">{0} oras ang
+						nakalipas</relativeTimePattern>
+					<relativeTimePattern count="other">{0} oras ang
+						nakalipas</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="minute">
 				<displayName>Minuto</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">Sa loob ng {0} minuto</relativeTimePattern>
-					<relativeTimePattern count="other">Sa loob ng {0} minuto</relativeTimePattern>
+					<relativeTimePattern count="one">Sa loob ng {0}
+						minuto</relativeTimePattern>
+					<relativeTimePattern count="other">Sa loob ng {0}
+						minuto</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} minuto ang nakalipas</relativeTimePattern>
-					<relativeTimePattern count="other">{0} minuto ang nakalipas</relativeTimePattern>
+					<relativeTimePattern count="one">{0} minuto ang
+						nakalipas</relativeTimePattern>
+					<relativeTimePattern count="other">{0} minuto ang
+						nakalipas</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">
 				<displayName>Segundo</displayName>
 				<relative type="0">ngayon</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">Sa loob ng {0} segundo</relativeTimePattern>
-					<relativeTimePattern count="other">Sa loob ng {0} segundo</relativeTimePattern>
+					<relativeTimePattern count="one">Sa loob ng {0}
+						segundo</relativeTimePattern>
+					<relativeTimePattern count="other">Sa loob ng {0}
+						segundo</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} segundo ang nakalipas</relativeTimePattern>
-					<relativeTimePattern count="other">{0} segundo ang nakalipas</relativeTimePattern>
+					<relativeTimePattern count="one">{0} segundo ang
+						nakalipas</relativeTimePattern>
+					<relativeTimePattern count="other">{0} segundo ang
+						nakalipas</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">

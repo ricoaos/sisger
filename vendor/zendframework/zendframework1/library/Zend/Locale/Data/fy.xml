@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2014 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2014 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="fy"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="fy" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -551,7 +550,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Bugi" draft="unconfirmed">Bugineesk</script>
 			<script type="Buhd" draft="unconfirmed">Buhid</script>
 			<script type="Cakm" draft="unconfirmed">Chakma</script>
-			<script type="Cans" draft="unconfirmed">Verenigde Canadese Aboriginal-symbolen</script>
+			<script type="Cans" draft="unconfirmed">Verenigde Canadese
+				Aboriginal-symbolen</script>
 			<script type="Cari" draft="unconfirmed">Karysk</script>
 			<script type="Cham" draft="unconfirmed">Cham</script>
 			<script type="Cher" draft="unconfirmed">Cherokee</script>
@@ -579,9 +579,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hani" draft="unconfirmed">Han</script>
 			<script type="Hano" draft="unconfirmed">Hanunoo</script>
 			<script type="Hans" draft="unconfirmed">Ferienfâldigd</script>
-			<script type="Hans" alt="stand-alone" draft="unconfirmed">Ferienfâldigd Sineesk</script>
+			<script type="Hans" alt="stand-alone" draft="unconfirmed">Ferienfâldigd
+				Sineesk</script>
 			<script type="Hant" draft="unconfirmed">Traditjoneel</script>
-			<script type="Hant" alt="stand-alone" draft="unconfirmed">Traditjoneel Sineesk</script>
+			<script type="Hant" alt="stand-alone" draft="unconfirmed">Traditjoneel
+				Sineesk</script>
 			<script type="Hebr" draft="unconfirmed">Hebreeuwsk</script>
 			<script type="Hira" draft="unconfirmed">Hiragana</script>
 			<script type="Hluw" draft="unconfirmed">Anatolyske hiërogliefen</script>
@@ -805,7 +807,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI" draft="unconfirmed">Finlân</territory>
 			<territory type="FJ" draft="unconfirmed">Fiji</territory>
 			<territory type="FK" draft="unconfirmed">Falklâneilannen</territory>
-			<territory type="FK" alt="variant" draft="unconfirmed">Falklâneilannen (Islas Malvinas)</territory>
+			<territory type="FK" alt="variant" draft="unconfirmed">Falklâneilannen
+				(Islas Malvinas)</territory>
 			<territory type="FM" draft="unconfirmed">Micronesië</territory>
 			<territory type="FO" draft="unconfirmed">Faeröer</territory>
 			<territory type="FR" draft="unconfirmed">Frankrijk</territory>
@@ -824,7 +827,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP" draft="unconfirmed">Guadeloupe</territory>
 			<territory type="GQ" draft="unconfirmed">Equatoriaal-Guinea</territory>
 			<territory type="GR" draft="unconfirmed">Grikelân</territory>
-			<territory type="GS" draft="unconfirmed">Sûd-Georgia en Sûdlike Sandwicheilannen</territory>
+			<territory type="GS" draft="unconfirmed">Sûd-Georgia en Sûdlike
+				Sandwicheilannen</territory>
 			<territory type="GT" draft="unconfirmed">Guatemala</territory>
 			<territory type="GU" draft="unconfirmed">Guam</territory>
 			<territory type="GW" draft="unconfirmed">Guinee-Bissau</territory>
@@ -842,7 +846,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IL" draft="unconfirmed">Israël</territory>
 			<territory type="IM" draft="unconfirmed">Isle of Man</territory>
 			<territory type="IN" draft="unconfirmed">India</territory>
-			<territory type="IO" draft="unconfirmed">Britse Gebieden yn de Indyske Oseaan</territory>
+			<territory type="IO" draft="unconfirmed">Britse Gebieden yn de Indyske
+				Oseaan</territory>
 			<territory type="IQ" draft="unconfirmed">Irak</territory>
 			<territory type="IR" draft="unconfirmed">Iran</territory>
 			<territory type="IS" draft="unconfirmed">Yslân</territory>
@@ -958,7 +963,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TA" draft="unconfirmed">Tristan da Cunha</territory>
 			<territory type="TC" draft="unconfirmed">Turks- en Caicoseilannen</territory>
 			<territory type="TD" draft="unconfirmed">Tsjaad</territory>
-			<territory type="TF" draft="unconfirmed">Franse Gebieden in de zuidelijke Indyske Oseaan</territory>
+			<territory type="TF" draft="unconfirmed">Franse Gebieden in de zuidelijke
+				Indyske Oseaan</territory>
 			<territory type="TG" draft="unconfirmed">Togo</territory>
 			<territory type="TH" draft="unconfirmed">Thailân</territory>
 			<territory type="TJ" draft="unconfirmed">Tadzjikistan</territory>
@@ -975,7 +981,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ" draft="unconfirmed">Tanzania</territory>
 			<territory type="UA" draft="unconfirmed">Oekraïne</territory>
 			<territory type="UG" draft="unconfirmed">Oeganda</territory>
-			<territory type="UM" draft="unconfirmed">Lyts ôflizzen eilannen fan de Ferienigde Staten</territory>
+			<territory type="UM" draft="unconfirmed">Lyts ôflizzen eilannen fan de
+				Ferienigde Staten</territory>
 			<territory type="US" draft="unconfirmed">Ferienigde Staten</territory>
 			<territory type="US" alt="short" draft="unconfirmed">VS</territory>
 			<territory type="UY" draft="unconfirmed">Uruguay</territory>
@@ -998,16 +1005,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</territories>
 		<variants>
 			<variant type="1901" draft="unconfirmed">Tradisjonele Dútske stavering</variant>
-			<variant type="1994" draft="unconfirmed">Standerdisearre Resiaansk stavering</variant>
+			<variant type="1994" draft="unconfirmed">Standerdisearre Resiaansk
+				stavering</variant>
 			<variant type="1996" draft="unconfirmed">Dútske stavering van 1996</variant>
 			<variant type="1606NICT" draft="unconfirmed">Let Middelfrânske oant 1606</variant>
 			<variant type="1694ACAD" draft="unconfirmed">Betiit modern Frâns</variant>
 			<variant type="1959ACAD" draft="unconfirmed">Akademysk</variant>
-			<variant type="ALALC97" draft="unconfirmed">Romanisering ALA-LC, editie 1997</variant>
+			<variant type="ALALC97" draft="unconfirmed">Romanisering ALA-LC, editie
+				1997</variant>
 			<variant type="ALUKU" draft="unconfirmed">Aloekoe dialekt</variant>
 			<variant type="AREVELA" draft="unconfirmed">East-Armeensk</variant>
 			<variant type="AREVMDA" draft="unconfirmed">West-Armeensk</variant>
-			<variant type="BAKU1926" draft="unconfirmed">Eenvormig Turkse Latynse alfabet</variant>
+			<variant type="BAKU1926" draft="unconfirmed">Eenvormig Turkse Latynse
+				alfabet</variant>
 			<variant type="BAUDDHA" draft="unconfirmed">Bauddha</variant>
 			<variant type="BISCAYAN" draft="unconfirmed">Biskajaansk</variant>
 			<variant type="BISKE" draft="unconfirmed">San Giorgio/Bila-dialekt</variant>
@@ -1025,7 +1035,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="KKCOR" draft="unconfirmed">Algemiene stavering</variant>
 			<variant type="KSCOR" draft="unconfirmed">Standert stavering</variant>
 			<variant type="LAUKIKA" draft="unconfirmed">Laukika</variant>
-			<variant type="LIPAW" draft="unconfirmed">Het Lipovaz-dialekt van het Resiaansk</variant>
+			<variant type="LIPAW" draft="unconfirmed">Het Lipovaz-dialekt van het
+				Resiaansk</variant>
 			<variant type="LUNA1918" draft="unconfirmed">Luna1918</variant>
 			<variant type="MONOTON" draft="unconfirmed">Monotonaal</variant>
 			<variant type="NDYUKA" draft="unconfirmed">Ndyuka</variant>
@@ -1079,93 +1090,133 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</keys>
 		<types>
 			<type type="arab" key="numbers" draft="unconfirmed">Arabysk-Indyske sifers</type>
-			<type type="arabext" key="numbers" draft="unconfirmed">Utwreide Arabysk-Indyske sifers</type>
+			<type type="arabext" key="numbers" draft="unconfirmed">Utwreide
+				Arabysk-Indyske sifers</type>
 			<type type="armn" key="numbers" draft="unconfirmed">Armeense sifers</type>
 			<type type="armnlow" key="numbers" draft="unconfirmed">Kleine Armeense sifers</type>
 			<type type="bali" key="numbers" draft="unconfirmed">Balinese sifers</type>
 			<type type="beng" key="numbers" draft="unconfirmed">Bengaalse sifers</type>
-			<type type="big5han" key="collation" draft="unconfirmed">Tradisjonele-Sineeske soartear oarder - Big5</type>
-			<type type="buddhist" key="calendar" draft="unconfirmed">Boeddhistyske kalinder</type>
+			<type type="big5han" key="collation" draft="unconfirmed">Tradisjonele-Sineeske
+				soartear oarder - Big5</type>
+			<type type="buddhist" key="calendar" draft="unconfirmed">Boeddhistyske
+				kalinder</type>
 			<type type="chinese" key="calendar" draft="unconfirmed">Sineeske kalinder</type>
 			<type type="coptic" key="calendar" draft="unconfirmed">Koptyske kalinder</type>
 			<type type="deva" key="numbers" draft="unconfirmed">Devanagari sifers</type>
 			<type type="dictionary" key="collation" draft="unconfirmed">Wurdboeksortearfolgorde</type>
-			<type type="ducet" key="collation" draft="unconfirmed">Standert Unikoade-sortearfolgorde</type>
+			<type type="ducet" key="collation" draft="unconfirmed">Standert
+				Unikoade-sortearfolgorde</type>
 			<type type="ethi" key="numbers" draft="unconfirmed">Ethiopyske sifers</type>
 			<type type="ethiopic" key="calendar" draft="unconfirmed">Ethiopyske kalinder</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="unconfirmed">Ethiopyske Amete Alem-kalinder</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="unconfirmed">Ethiopyske
+				Amete Alem-kalinder</type>
 			<type type="finance" key="numbers" draft="unconfirmed">Finansjele sifers</type>
-			<type type="fullwide" key="numbers" draft="unconfirmed">sifers met volledige breedte</type>
-			<type type="gb2312han" key="collation" draft="unconfirmed">Ferienfâldigde-Sineeske sortearfolgorde - GB2312</type>
+			<type type="fullwide" key="numbers" draft="unconfirmed">sifers met volledige
+				breedte</type>
+			<type type="gb2312han" key="collation" draft="unconfirmed">Ferienfâldigde-Sineeske
+				sortearfolgorde - GB2312</type>
 			<type type="geor" key="numbers" draft="unconfirmed">Georgyske sifers</type>
-			<type type="gregorian" key="calendar" draft="unconfirmed">Gregoriaanske kalinder</type>
+			<type type="gregorian" key="calendar" draft="unconfirmed">Gregoriaanske
+				kalinder</type>
 			<type type="grek" key="numbers" draft="unconfirmed">Griekse sifers</type>
 			<type type="greklow" key="numbers" draft="unconfirmed">Kleine Griekse sifers</type>
 			<type type="gujr" key="numbers" draft="unconfirmed">Gujarati sifers</type>
 			<type type="guru" key="numbers" draft="unconfirmed">Gurmukhi sifers</type>
-			<type type="hanidec" key="numbers" draft="unconfirmed">Sineeske desimale tallen</type>
-			<type type="hans" key="numbers" draft="unconfirmed">Ferienfâldigde Sineeske sifers</type>
-			<type type="hansfin" key="numbers" draft="unconfirmed">Ferienfâldigde Sineeske finansjele sifers</type>
-			<type type="hant" key="numbers" draft="unconfirmed">Traditjonele Sineeske sifers</type>
-			<type type="hantfin" key="numbers" draft="unconfirmed">Traditjonele Sineeske finansjele sifers</type>
+			<type type="hanidec" key="numbers" draft="unconfirmed">Sineeske desimale
+				tallen</type>
+			<type type="hans" key="numbers" draft="unconfirmed">Ferienfâldigde Sineeske
+				sifers</type>
+			<type type="hansfin" key="numbers" draft="unconfirmed">Ferienfâldigde Sineeske
+				finansjele sifers</type>
+			<type type="hant" key="numbers" draft="unconfirmed">Traditjonele Sineeske
+				sifers</type>
+			<type type="hantfin" key="numbers" draft="unconfirmed">Traditjonele Sineeske
+				finansjele sifers</type>
 			<type type="hebr" key="numbers" draft="unconfirmed">Hebreeuwse sifers</type>
 			<type type="hebrew" key="calendar" draft="unconfirmed">Hebreeuwse kalinder</type>
 			<type type="identical" key="colStrength" draft="unconfirmed">Alles sortearje</type>
-			<type type="indian" key="calendar" draft="unconfirmed">Indiase natjonale kalinder</type>
+			<type type="indian" key="calendar" draft="unconfirmed">Indiase natjonale
+				kalinder</type>
 			<type type="islamic" key="calendar" draft="unconfirmed">Islamityske kalinder</type>
-			<type type="islamic-civil" key="calendar" draft="unconfirmed">Islamityske kalinder (cyclysk)</type>
+			<type type="islamic-civil" key="calendar" draft="unconfirmed">Islamityske
+				kalinder (cyclysk)</type>
 			<type type="japanese" key="calendar" draft="unconfirmed">Japanske kalinder</type>
 			<type type="java" key="numbers" draft="unconfirmed">Javaanske sifers</type>
 			<type type="jpan" key="numbers" draft="unconfirmed">Japanske sifers</type>
-			<type type="jpanfin" key="numbers" draft="unconfirmed">Japanske finansjele sifers</type>
+			<type type="jpanfin" key="numbers" draft="unconfirmed">Japanske finansjele
+				sifers</type>
 			<type type="khmr" key="numbers" draft="unconfirmed">Khmer sifers</type>
 			<type type="knda" key="numbers" draft="unconfirmed">Kannada sifers</type>
 			<type type="laoo" key="numbers" draft="unconfirmed">Laotiaanske sifers</type>
 			<type type="latn" key="numbers" draft="unconfirmed">Westerse sifers</type>
-			<type type="lower" key="colCaseFirst" draft="unconfirmed">Eerst sortearje op kleine letters</type>
+			<type type="lower" key="colCaseFirst" draft="unconfirmed">Eerst sortearje op
+				kleine letters</type>
 			<type type="mlym" key="numbers" draft="unconfirmed">Malayalam sifers</type>
 			<type type="mong" key="numbers" draft="unconfirmed">Mongoolse sifers</type>
 			<type type="mymr" key="numbers" draft="unconfirmed">Myanmarese sifers</type>
 			<type type="native" key="numbers" draft="unconfirmed">Binnenlânse sifers</type>
-			<type type="no" key="colBackwards" draft="unconfirmed">Normaal sortearje neffens accenten</type>
-			<type type="no" key="colCaseFirst" draft="unconfirmed">Sortearfolgorde algemien haadletterbrûkme</type>
-			<type type="no" key="colCaseLevel" draft="unconfirmed">Net haadlettergefoelich sortearje</type>
-			<type type="no" key="colHiraganaQuaternary" draft="unconfirmed">Kana apart sortearje</type>
-			<type type="no" key="colNormalization" draft="unconfirmed">Sûnder normalisaasje sortearje</type>
+			<type type="no" key="colBackwards" draft="unconfirmed">Normaal sortearje
+				neffens accenten</type>
+			<type type="no" key="colCaseFirst" draft="unconfirmed">Sortearfolgorde
+				algemien haadletterbrûkme</type>
+			<type type="no" key="colCaseLevel" draft="unconfirmed">Net haadlettergefoelich
+				sortearje</type>
+			<type type="no" key="colHiraganaQuaternary" draft="unconfirmed">Kana apart
+				sortearje</type>
+			<type type="no" key="colNormalization" draft="unconfirmed">Sûnder
+				normalisaasje sortearje</type>
 			<type type="no" key="colNumeric" draft="unconfirmed">Sifers apart sortearje</type>
-			<type type="non-ignorable" key="colAlternate" draft="unconfirmed">Symbolen sortearje</type>
+			<type type="non-ignorable" key="colAlternate" draft="unconfirmed">Symbolen
+				sortearje</type>
 			<type type="orya" key="numbers" draft="unconfirmed">Oriya sifers</type>
 			<type type="persian" key="calendar" draft="unconfirmed">Perzyske kalinder</type>
 			<type type="phonebook" key="collation" draft="unconfirmed">Telefoanboeksortearfolgorde</type>
-			<type type="phonetic" key="collation" draft="unconfirmed">Fonetyske sortearfolgorde</type>
+			<type type="phonetic" key="collation" draft="unconfirmed">Fonetyske
+				sortearfolgorde</type>
 			<type type="pinyin" key="collation" draft="unconfirmed">Pinyinvolgorde</type>
-			<type type="primary" key="colStrength" draft="unconfirmed">Allime sortearje neffens letters</type>
-			<type type="quaternary" key="colStrength" draft="unconfirmed">sortearje neffens aksinten/haadletterbrûkme/breedte/Kana</type>
-			<type type="reformed" key="collation" draft="unconfirmed">Hersjoen sortearfolgorde</type>
-			<type type="roc" key="calendar" draft="unconfirmed">Kalinder fan de Sineeske Republyk</type>
+			<type type="primary" key="colStrength" draft="unconfirmed">Allime sortearje
+				neffens letters</type>
+			<type type="quaternary" key="colStrength" draft="unconfirmed">sortearje
+				neffens aksinten/haadletterbrûkme/breedte/Kana</type>
+			<type type="reformed" key="collation" draft="unconfirmed">Hersjoen
+				sortearfolgorde</type>
+			<type type="roc" key="calendar" draft="unconfirmed">Kalinder fan de Sineeske
+				Republyk</type>
 			<type type="roman" key="numbers" draft="unconfirmed">Romeinske sifers</type>
 			<type type="romanlow" key="numbers" draft="unconfirmed">Lytse Romeinske sifers</type>
 			<type type="search" key="collation" draft="unconfirmed">Algemien sykje</type>
-			<type type="searchjl" key="collation" draft="unconfirmed">Sykje op earste Hangul-medeklinker</type>
-			<type type="secondary" key="colStrength" draft="unconfirmed">Sortearje op accenten</type>
-			<type type="shifted" key="colAlternate" draft="unconfirmed">Sortearje zonder symbolen</type>
-			<type type="standard" key="collation" draft="unconfirmed">standert sortearfolgorde</type>
+			<type type="searchjl" key="collation" draft="unconfirmed">Sykje op earste
+				Hangul-medeklinker</type>
+			<type type="secondary" key="colStrength" draft="unconfirmed">Sortearje op
+				accenten</type>
+			<type type="shifted" key="colAlternate" draft="unconfirmed">Sortearje zonder
+				symbolen</type>
+			<type type="standard" key="collation" draft="unconfirmed">standert
+				sortearfolgorde</type>
 			<type type="stroke" key="collation" draft="unconfirmed">Streeksortearfolgorde</type>
 			<type type="taml" key="numbers" draft="unconfirmed">Tradisjonele Tamil sifers</type>
 			<type type="tamldec" key="numbers" draft="unconfirmed">Tamil sifers</type>
 			<type type="telu" key="numbers" draft="unconfirmed">Telugu sifers</type>
-			<type type="tertiary" key="colStrength" draft="unconfirmed">sortearje neffens aksinten/haadletterbrûkme/breedte</type>
+			<type type="tertiary" key="colStrength" draft="unconfirmed">sortearje neffens
+				aksinten/haadletterbrûkme/breedte</type>
 			<type type="thai" key="numbers" draft="unconfirmed">Thaise sifers</type>
 			<type type="tibt" key="numbers" draft="unconfirmed">Tibetaanske sifers</type>
-			<type type="traditional" key="collation" draft="unconfirmed">Tradisjonele sortearfolgorde</type>
+			<type type="traditional" key="collation" draft="unconfirmed">Tradisjonele
+				sortearfolgorde</type>
 			<type type="traditional" key="numbers" draft="unconfirmed">Tradisjonele sifers</type>
-			<type type="unihan" key="collation" draft="unconfirmed">Sortearfolgorde radicalen/strepen</type>
-			<type type="upper" key="colCaseFirst" draft="unconfirmed">Eerst sortearje op haadletters</type>
+			<type type="unihan" key="collation" draft="unconfirmed">Sortearfolgorde
+				radicalen/strepen</type>
+			<type type="upper" key="colCaseFirst" draft="unconfirmed">Eerst sortearje op
+				haadletters</type>
 			<type type="vaii" key="numbers" draft="unconfirmed">Vai-sifers</type>
-			<type type="yes" key="colBackwards" draft="unconfirmed">Omgekeerd sortearje op accenten</type>
-			<type type="yes" key="colCaseLevel" draft="unconfirmed">Hoofdlettergevoelig sortearje</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="unconfirmed">Kana oars sortearje</type>
-			<type type="yes" key="colNormalization" draft="unconfirmed">Unicode genormaliseerd sortearje</type>
+			<type type="yes" key="colBackwards" draft="unconfirmed">Omgekeerd sortearje op
+				accenten</type>
+			<type type="yes" key="colCaseLevel" draft="unconfirmed">Hoofdlettergevoelig
+				sortearje</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="unconfirmed">Kana oars
+				sortearje</type>
+			<type type="yes" key="colNormalization" draft="unconfirmed">Unicode
+				genormaliseerd sortearje</type>
 			<type type="yes" key="colNumeric" draft="unconfirmed">Sifers numeryk sortearje</type>
 		</types>
 		<transformNames>
@@ -1174,7 +1225,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<transformName type="Tone" draft="unconfirmed">Toon</transformName>
 			<transformName type="UNGEGN" draft="unconfirmed">UNGEGN</transformName>
 			<transformName type="x-Accents" draft="unconfirmed">Accenten</transformName>
-			<transformName type="x-Fullwidth" draft="unconfirmed">Volledige breedte</transformName>
+			<transformName type="x-Fullwidth" draft="unconfirmed">Volledige
+				breedte</transformName>
 			<transformName type="x-Halfwidth" draft="unconfirmed">Halve breedte</transformName>
 			<transformName type="x-Jamo" draft="unconfirmed">Jamo</transformName>
 			<transformName type="x-Pinyin" draft="unconfirmed">Pinyin</transformName>
@@ -1214,10 +1266,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[a á ä b c d e é ë f g h i ì ï {ij} {íj\u0301} j k l m n o ò ö p r s t u ú ü v w y ỳ z]</exemplarCharacters>
+		<exemplarCharacters>[a á ä b c d e é ë f g h i ì ï {ij} {íj\u0301} j k
+			l m n o ò ö p r s t u ú ü v w y ỳ z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[à â æ è ê ô ù û]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P R S T U V W Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P R S T U V W Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final" draft="unconfirmed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="unconfirmed">…{0}</ellipsis>
 		<ellipsis type="medial" draft="unconfirmed">{0}…{1}</ellipsis>
@@ -1936,7 +1991,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="H" draft="unconfirmed">HH-HH</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm a</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm
+								a</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm-h:mm a</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm-h:mm a</greatestDifference>
 						</intervalFormatItem>
@@ -1945,7 +2001,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="m" draft="unconfirmed">HH:mm-HH:mm</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm a v</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm
+								a v</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm-h:mm a v</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm-h:mm a v</greatestDifference>
 						</intervalFormatItem>
@@ -1968,8 +2025,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="unconfirmed">dd-MM - dd-MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d" draft="unconfirmed">E dd-MM - E dd-MM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E dd-MM - E dd-MM</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E dd-MM - E
+								dd-MM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E dd-MM - E
+								dd-MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM-MMM</greatestDifference>
@@ -1980,7 +2039,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
 							<greatestDifference id="d" draft="unconfirmed">E d - E d MMM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E d MMM - E d MMM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E d MMM - E d
+								MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMMM–MMMM</greatestDifference>
@@ -1993,32 +2053,45 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="unconfirmed">MM-y - MM-y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="unconfirmed">dd-MM-y - dd-MM-y G</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">dd-MM-y - dd-MM-y G</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">dd-MM-y - dd-MM-y G</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">dd-MM-y -
+								dd-MM-y G</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">dd-MM-y -
+								dd-MM-y G</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">dd-MM-y -
+								dd-MM-y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="unconfirmed">E dd-MM-y - E dd-MM-y G</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E dd-MM-y - E dd-MM-y G</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E dd-MM-y - E dd-MM-y G</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E dd-MM-y - E
+								dd-MM-y G</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E dd-MM-y - E
+								dd-MM-y G</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E dd-MM-y - E
+								dd-MM-y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM-MMM y G</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">MMM y - MMM y G</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">MMM y - MMM y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d" draft="unconfirmed">d-d MMM y G</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">d MMM - d MMM y G</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">d MMM y - d MMM y G</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">d MMM - d MMM
+								y G</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">d MMM y - d
+								MMM y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E d - E d MMM y G</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E d MMM - E d MMM y G</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E d MMM y - E d MMM y G</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E d - E d MMM
+								y G</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E d MMM - E d
+								MMM y G</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E d MMM y - E
+								d MMM y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMMM-MMMM y G</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">MMMM y - MMMM y G</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">MMMM y - MMMM
+								y G</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -2398,7 +2471,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="H" draft="unconfirmed">HH-HH</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm a</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm
+								a</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm-h:mm a</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm-h:mm a</greatestDifference>
 						</intervalFormatItem>
@@ -2407,7 +2481,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="m" draft="unconfirmed">HH:mm-HH:mm</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm a v</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm
+								a v</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm-h:mm a v</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm-h:mm a v</greatestDifference>
 						</intervalFormatItem>
@@ -2430,8 +2505,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="unconfirmed">dd-MM - dd-MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d" draft="unconfirmed">E dd-MM - E dd-MM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E dd-MM - E dd-MM</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E dd-MM - E
+								dd-MM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E dd-MM - E
+								dd-MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM-MMM</greatestDifference>
@@ -2442,7 +2519,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
 							<greatestDifference id="d" draft="unconfirmed">E d - E d MMM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E d MMM - E d MMM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E d MMM - E d
+								MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMMM–MMMM</greatestDifference>
@@ -2455,14 +2533,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="unconfirmed">MM-y - MM-y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="unconfirmed">dd-MM-y - dd-MM-y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">dd-MM-y - dd-MM-y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">dd-MM-y - dd-MM-y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">dd-MM-y -
+								dd-MM-y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">dd-MM-y -
+								dd-MM-y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">dd-MM-y -
+								dd-MM-y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="unconfirmed">E dd-MM-y - E dd-MM-y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E dd-MM-y - E dd-MM-y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E dd-MM-y - E dd-MM-y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E dd-MM-y - E
+								dd-MM-y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E dd-MM-y - E
+								dd-MM-y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E dd-MM-y - E
+								dd-MM-y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM-MMM y</greatestDifference>
@@ -2470,17 +2554,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d" draft="unconfirmed">d-d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">d MMM - d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">d MMM y - d MMM y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">d MMM - d MMM
+								y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">d MMM y - d
+								MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E d - E d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E d MMM - E d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E d MMM y - E d MMM y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E d - E d MMM
+								y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E d MMM - E d
+								MMM y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E d MMM y - E
+								d MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMMM-MMMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">MMMM y - MMMM y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">MMMM y - MMMM
+								y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -3069,9 +3159,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<era type="235" draft="unconfirmed">Heisei</era>
 					</eraAbbr>
 				</eras>
-				<!-- need some non-empty element here to make inheritance work,
-					 this copy of generic dateFormats above is smaller than root japanese eras
-				-->
+				<!-- need some non-empty element here to make inheritance work, this 
+					copy of generic dateFormats above is smaller than root japanese eras -->
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -3309,12 +3398,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="0" draft="unconfirmed">dit jier</relative>
 				<relative type="1" draft="unconfirmed">folgjend jier</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="unconfirmed">Oer {0} jier</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">Oer {0} jier</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">Oer {0}
+						jier</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">Oer
+						{0} jier</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="unconfirmed">{0} jier lyn</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">{0} jier lyn</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">{0} jier
+						lyn</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">{0}
+						jier lyn</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="month">
@@ -3323,12 +3416,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="0" draft="unconfirmed">dizze moanne</relative>
 				<relative type="1" draft="unconfirmed">folgjende moanne</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="unconfirmed">Oer {0} moanne</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">Oer {0} moannen</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">Oer {0}
+						moanne</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">Oer
+						{0} moannen</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="unconfirmed">{0} moanne lyn</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">{0} moannen lyn</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">{0}
+						moanne lyn</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">{0}
+						moannen lyn</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -3337,12 +3434,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="0" draft="unconfirmed">dizze wike</relative>
 				<relative type="1" draft="unconfirmed">folgjende wike</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="unconfirmed">Oer {0} wike</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">Oer {0} wiken</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">Oer {0}
+						wike</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">Oer
+						{0} wiken</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="unconfirmed">{0} wike lyn</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">{0} wiken lyn</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">{0} wike
+						lyn</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">{0}
+						wiken lyn</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="day">
@@ -3353,12 +3454,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="1" draft="unconfirmed">morgen</relative>
 				<relative type="2" draft="unconfirmed">Oermorgen</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="unconfirmed">Oer {0} dei</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">Oer {0} deien</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">Oer {0}
+						dei</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">Oer
+						{0} deien</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="unconfirmed">{0} dei lyn</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">{0} deien lyn</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">{0} dei
+						lyn</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">{0}
+						deien lyn</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="weekday">
@@ -3405,35 +3510,47 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="hour">
 				<displayName draft="unconfirmed">oere</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="unconfirmed">Oer {0} oere</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">Oer {0} oere</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">Oer {0}
+						oere</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">Oer
+						{0} oere</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="unconfirmed">{0} oere lyn</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">{0} oere lyn</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">{0} oere
+						lyn</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">{0}
+						oere lyn</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="minute">
 				<displayName draft="unconfirmed">Minút</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="unconfirmed">Oer {0} minút</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">Oer {0} minuten</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">Oer {0}
+						minút</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">Oer
+						{0} minuten</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="unconfirmed">{0} minút lyn</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">{0} minuten lyn</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">{0}
+						minút lyn</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">{0}
+						minuten lyn</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">
 				<displayName draft="unconfirmed">Sekonde</displayName>
 				<relative type="0" draft="unconfirmed">nu</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="unconfirmed">Oer {0} sekonde</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">Oer {0} sekonden</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">Oer {0}
+						sekonde</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">Oer
+						{0} sekonden</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="unconfirmed">{0} sekonde lyn</relativeTimePattern>
-					<relativeTimePattern count="other" draft="unconfirmed">{0} sekonden lyn</relativeTimePattern>
+					<relativeTimePattern count="one" draft="unconfirmed">{0}
+						sekonde lyn</relativeTimePattern>
+					<relativeTimePattern count="other" draft="unconfirmed">{0}
+						sekonden lyn</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">
@@ -4786,13 +4903,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<pattern type="10000000000" count="one" draft="unconfirmed">00 miljard</pattern>
 					<pattern type="10000000000" count="other" draft="unconfirmed">00 miljard</pattern>
 					<pattern type="100000000000" count="one" draft="unconfirmed">000 miljard</pattern>
-					<pattern type="100000000000" count="other" draft="unconfirmed">000 miljard</pattern>
+					<pattern type="100000000000" count="other" draft="unconfirmed">000
+						miljard</pattern>
 					<pattern type="1000000000000" count="one" draft="unconfirmed">0 biljoen</pattern>
 					<pattern type="1000000000000" count="other" draft="unconfirmed">0 biljoen</pattern>
 					<pattern type="10000000000000" count="one" draft="unconfirmed">00 biljoen</pattern>
-					<pattern type="10000000000000" count="other" draft="unconfirmed">00 biljoen</pattern>
-					<pattern type="100000000000000" count="one" draft="unconfirmed">000 biljoen</pattern>
-					<pattern type="100000000000000" count="other" draft="unconfirmed">000 biljoen</pattern>
+					<pattern type="10000000000000" count="other" draft="unconfirmed">00
+						biljoen</pattern>
+					<pattern type="100000000000000" count="one" draft="unconfirmed">000
+						biljoen</pattern>
+					<pattern type="100000000000000" count="other" draft="unconfirmed">000
+						biljoen</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 			<decimalFormatLength type="short">
@@ -4883,8 +5004,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ANG">
 				<displayName draft="unconfirmed">Nederlânsk-Antilliaanske gûne</displayName>
-				<displayName count="one" draft="unconfirmed">Nederlânsk-Antilliaanske gûne</displayName>
-				<displayName count="other" draft="unconfirmed">Nederlânsk-Antilliaanske gûne</displayName>
+				<displayName count="one" draft="unconfirmed">Nederlânsk-Antilliaanske
+					gûne</displayName>
+				<displayName count="other" draft="unconfirmed">Nederlânsk-Antilliaanske
+					gûne</displayName>
 			</currency>
 			<currency type="AOA">
 				<displayName draft="unconfirmed">Angolese kwanza</displayName>
@@ -4893,18 +5016,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AOK">
 				<displayName draft="unconfirmed">Angolese kwanza (1977–1990)</displayName>
-				<displayName count="one" draft="unconfirmed">Angolese kwanza (1977–1990)</displayName>
-				<displayName count="other" draft="unconfirmed">Angolese kwanza (1977–1990)</displayName>
+				<displayName count="one" draft="unconfirmed">Angolese kwanza
+					(1977–1990)</displayName>
+				<displayName count="other" draft="unconfirmed">Angolese kwanza
+					(1977–1990)</displayName>
 			</currency>
 			<currency type="AON">
 				<displayName draft="unconfirmed">Angolese nieuwe kwanza (1990–2000)</displayName>
-				<displayName count="one" draft="unconfirmed">Angolese nieuwe kwanza (1990–2000)</displayName>
-				<displayName count="other" draft="unconfirmed">Angolese nieuwe kwanza (1990–2000)</displayName>
+				<displayName count="one" draft="unconfirmed">Angolese nieuwe kwanza
+					(1990–2000)</displayName>
+				<displayName count="other" draft="unconfirmed">Angolese nieuwe kwanza
+					(1990–2000)</displayName>
 			</currency>
 			<currency type="AOR">
-				<displayName draft="unconfirmed">Angolese kwanza reajustado (1995–1999)</displayName>
-				<displayName count="one" draft="unconfirmed">Angolese kwanza reajustado (1995–1999)</displayName>
-				<displayName count="other" draft="unconfirmed">Angolese kwanza reajustado (1995–1999)</displayName>
+				<displayName draft="unconfirmed">Angolese kwanza reajustado
+					(1995–1999)</displayName>
+				<displayName count="one" draft="unconfirmed">Angolese kwanza
+					reajustado (1995–1999)</displayName>
+				<displayName count="other" draft="unconfirmed">Angolese kwanza
+					reajustado (1995–1999)</displayName>
 			</currency>
 			<currency type="ARA">
 				<displayName draft="unconfirmed">Argentynske austral</displayName>
@@ -4913,18 +5043,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ARL">
 				<displayName draft="unconfirmed">Argentynske peso ley (1970–1983)</displayName>
-				<displayName count="one" draft="unconfirmed">Argentynske peso ley (1970–1983)</displayName>
-				<displayName count="other" draft="unconfirmed">Argentynske peso ley (1970–1983)</displayName>
+				<displayName count="one" draft="unconfirmed">Argentynske peso ley
+					(1970–1983)</displayName>
+				<displayName count="other" draft="unconfirmed">Argentynske peso ley
+					(1970–1983)</displayName>
 			</currency>
 			<currency type="ARM">
 				<displayName draft="unconfirmed">Argentynske peso (1881–1970)</displayName>
-				<displayName count="one" draft="unconfirmed">Argentynske peso (1881–1970)</displayName>
-				<displayName count="other" draft="unconfirmed">Argentynske peso (1881–1970)</displayName>
+				<displayName count="one" draft="unconfirmed">Argentynske peso
+					(1881–1970)</displayName>
+				<displayName count="other" draft="unconfirmed">Argentynske peso
+					(1881–1970)</displayName>
 			</currency>
 			<currency type="ARP">
 				<displayName draft="unconfirmed">Argentynske peso (1983–1985)</displayName>
-				<displayName count="one" draft="unconfirmed">Argentynske peso (1983–1985)</displayName>
-				<displayName count="other" draft="unconfirmed">Argentynske peso (1983–1985)</displayName>
+				<displayName count="one" draft="unconfirmed">Argentynske peso
+					(1983–1985)</displayName>
+				<displayName count="other" draft="unconfirmed">Argentynske peso
+					(1983–1985)</displayName>
 			</currency>
 			<currency type="ARS">
 				<displayName draft="unconfirmed">Argentynske peso</displayName>
@@ -4949,8 +5085,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AZM">
 				<displayName draft="unconfirmed">Azerbeidzjaanske manat (1993–2006)</displayName>
-				<displayName count="one" draft="unconfirmed">Azerbeidzjaanske manat (1993–2006)</displayName>
-				<displayName count="other" draft="unconfirmed">Azerbeidzjaanske manat (1993–2006)</displayName>
+				<displayName count="one" draft="unconfirmed">Azerbeidzjaanske manat
+					(1993–2006)</displayName>
+				<displayName count="other" draft="unconfirmed">Azerbeidzjaanske manat
+					(1993–2006)</displayName>
 			</currency>
 			<currency type="AZN">
 				<displayName draft="unconfirmed">Azerbeidzjaanske manat</displayName>
@@ -4964,13 +5102,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName draft="unconfirmed">Bosnyske convertibele mark</displayName>
-				<displayName count="one" draft="unconfirmed">Bosnyske convertibele mark</displayName>
-				<displayName count="other" draft="unconfirmed">Bosnyske convertibele mark</displayName>
+				<displayName count="one" draft="unconfirmed">Bosnyske convertibele
+					mark</displayName>
+				<displayName count="other" draft="unconfirmed">Bosnyske convertibele
+					mark</displayName>
 			</currency>
 			<currency type="BAN">
 				<displayName draft="unconfirmed">Nije Bosnyske dinar (1994–1997)</displayName>
-				<displayName count="one" draft="unconfirmed">Nije Bosnyske dinar (1994–1997)</displayName>
-				<displayName count="other" draft="unconfirmed">Nije Bosnyske dinar (1994–1997)</displayName>
+				<displayName count="one" draft="unconfirmed">Nije Bosnyske dinar
+					(1994–1997)</displayName>
+				<displayName count="other" draft="unconfirmed">Nije Bosnyske dinar
+					(1994–1997)</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName draft="unconfirmed">Barbadaanske dollar</displayName>
@@ -4984,8 +5126,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BEC">
 				<displayName draft="unconfirmed">Belgyske frank (convertibel)</displayName>
-				<displayName count="one" draft="unconfirmed">Belgyske frank (convertibel)</displayName>
-				<displayName count="other" draft="unconfirmed">Belgyske frank (convertibel)</displayName>
+				<displayName count="one" draft="unconfirmed">Belgyske frank
+					(convertibel)</displayName>
+				<displayName count="other" draft="unconfirmed">Belgyske frank
+					(convertibel)</displayName>
 			</currency>
 			<currency type="BEF">
 				<displayName draft="unconfirmed">Belgyske frank</displayName>
@@ -4994,8 +5138,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BEL">
 				<displayName draft="unconfirmed">Belgyske frank (finansjeel)</displayName>
-				<displayName count="one" draft="unconfirmed">Belgyske frank (finansjeel)</displayName>
-				<displayName count="other" draft="unconfirmed">Belgyske frank (finansjeel)</displayName>
+				<displayName count="one" draft="unconfirmed">Belgyske frank
+					(finansjeel)</displayName>
+				<displayName count="other" draft="unconfirmed">Belgyske frank
+					(finansjeel)</displayName>
 			</currency>
 			<currency type="BGL">
 				<displayName draft="unconfirmed">Bulgaarse harde lev</displayName>
@@ -5004,8 +5150,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BGM">
 				<displayName draft="unconfirmed">Bulgaarse socialistyske lev</displayName>
-				<displayName count="one" draft="unconfirmed">Bulgaarse socialistyske lev</displayName>
-				<displayName count="other" draft="unconfirmed">Bulgaarse socialistyske lev</displayName>
+				<displayName count="one" draft="unconfirmed">Bulgaarse socialistyske
+					lev</displayName>
+				<displayName count="other" draft="unconfirmed">Bulgaarse socialistyske
+					lev</displayName>
 			</currency>
 			<currency type="BGN">
 				<displayName draft="unconfirmed">Bulgaarse lev</displayName>
@@ -5015,7 +5163,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BGO">
 				<displayName draft="unconfirmed">Bulgaarse lev (1879–1952)</displayName>
 				<displayName count="one" draft="unconfirmed">Bulgaarse lev (1879–1952)</displayName>
-				<displayName count="other" draft="unconfirmed">Bulgaarse lev (1879–1952)</displayName>
+				<displayName count="other" draft="unconfirmed">Bulgaarse lev
+					(1879–1952)</displayName>
 			</currency>
 			<currency type="BHD">
 				<displayName draft="unconfirmed">Bahreinse dinar</displayName>
@@ -5044,8 +5193,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BOL">
 				<displayName draft="unconfirmed">Boliviaanske boliviano (1863–1963)</displayName>
-				<displayName count="one" draft="unconfirmed">Boliviaanske boliviano (1863–1963)</displayName>
-				<displayName count="other" draft="unconfirmed">Boliviaanske boliviano (1863–1963)</displayName>
+				<displayName count="one" draft="unconfirmed">Boliviaanske boliviano
+					(1863–1963)</displayName>
+				<displayName count="other" draft="unconfirmed">Boliviaanske boliviano
+					(1863–1963)</displayName>
 			</currency>
 			<currency type="BOP">
 				<displayName draft="unconfirmed">Boliviaanske peso</displayName>
@@ -5058,9 +5209,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other" draft="unconfirmed">Boliviaanske mvdol</displayName>
 			</currency>
 			<currency type="BRB">
-				<displayName draft="unconfirmed">Braziliaanske cruzeiro novo (1967–1986)</displayName>
-				<displayName count="one" draft="unconfirmed">Braziliaanske cruzeiro novo (1967–1986)</displayName>
-				<displayName count="other" draft="unconfirmed">Braziliaanske cruzeiro novo (1967–1986)</displayName>
+				<displayName draft="unconfirmed">Braziliaanske cruzeiro novo
+					(1967–1986)</displayName>
+				<displayName count="one" draft="unconfirmed">Braziliaanske cruzeiro
+					novo (1967–1986)</displayName>
+				<displayName count="other" draft="unconfirmed">Braziliaanske cruzeiro
+					novo (1967–1986)</displayName>
 			</currency>
 			<currency type="BRC">
 				<displayName draft="unconfirmed">Braziliaanske cruzado</displayName>
@@ -5069,8 +5223,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BRE">
 				<displayName draft="unconfirmed">Braziliaanske cruzeiro (1990–1993)</displayName>
-				<displayName count="one" draft="unconfirmed">Braziliaanske cruzeiro (1990–1993)</displayName>
-				<displayName count="other" draft="unconfirmed">Braziliaanske cruzeiro (1990–1993)</displayName>
+				<displayName count="one" draft="unconfirmed">Braziliaanske cruzeiro
+					(1990–1993)</displayName>
+				<displayName count="other" draft="unconfirmed">Braziliaanske cruzeiro
+					(1990–1993)</displayName>
 			</currency>
 			<currency type="BRL">
 				<displayName draft="unconfirmed">Braziliaanske real</displayName>
@@ -5080,8 +5236,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BRN">
 				<displayName draft="unconfirmed">Braziliaanske cruzado novo</displayName>
-				<displayName count="one" draft="unconfirmed">Braziliaanske cruzado novo</displayName>
-				<displayName count="other" draft="unconfirmed">Braziliaanske cruzado novo</displayName>
+				<displayName count="one" draft="unconfirmed">Braziliaanske cruzado
+					novo</displayName>
+				<displayName count="other" draft="unconfirmed">Braziliaanske cruzado
+					novo</displayName>
 			</currency>
 			<currency type="BRR">
 				<displayName draft="unconfirmed">Braziliaanske cruzeiro</displayName>
@@ -5090,8 +5248,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BRZ">
 				<displayName draft="unconfirmed">Braziliaanske cruzeiro (1942–1967)</displayName>
-				<displayName count="one" draft="unconfirmed">Braziliaanske cruzeiro (1942–1967)</displayName>
-				<displayName count="other" draft="unconfirmed">Braziliaanske cruzeiro (1942–1967)</displayName>
+				<displayName count="one" draft="unconfirmed">Braziliaanske cruzeiro
+					(1942–1967)</displayName>
+				<displayName count="other" draft="unconfirmed">Braziliaanske cruzeiro
+					(1942–1967)</displayName>
 			</currency>
 			<currency type="BSD">
 				<displayName draft="unconfirmed">Bahamaanske dollar</displayName>
@@ -5114,9 +5274,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other" draft="unconfirmed">Botswaanske pula</displayName>
 			</currency>
 			<currency type="BYB">
-				<displayName draft="unconfirmed">Wit-Russyske nieuwe roebel (1994–1999)</displayName>
-				<displayName count="one" draft="unconfirmed">Wit-Russyske nieuwe roebel (1994–1999)</displayName>
-				<displayName count="other" draft="unconfirmed">Wit-Russyske nieuwe roebel (1994–1999)</displayName>
+				<displayName draft="unconfirmed">Wit-Russyske nieuwe roebel
+					(1994–1999)</displayName>
+				<displayName count="one" draft="unconfirmed">Wit-Russyske nieuwe
+					roebel (1994–1999)</displayName>
+				<displayName count="other" draft="unconfirmed">Wit-Russyske nieuwe
+					roebel (1994–1999)</displayName>
 			</currency>
 			<currency type="BYR">
 				<displayName draft="unconfirmed">Wit-Russyske roebel</displayName>
@@ -5161,8 +5324,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="CLF">
 				<displayName draft="unconfirmed">Sileenske unidades de fomento</displayName>
-				<displayName count="one" draft="unconfirmed">Sileenske unidades de fomento</displayName>
-				<displayName count="other" draft="unconfirmed">Sileenske unidades de fomento</displayName>
+				<displayName count="one" draft="unconfirmed">Sileenske unidades de
+					fomento</displayName>
+				<displayName count="other" draft="unconfirmed">Sileenske unidades de
+					fomento</displayName>
 			</currency>
 			<currency type="CLP">
 				<displayName draft="unconfirmed">Sileenske peso</displayName>
@@ -5197,13 +5362,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="CSK">
 				<displayName draft="unconfirmed">Tsjechoslowaakse harde koruna</displayName>
-				<displayName count="one" draft="unconfirmed">Tsjechoslowaakse harde koruna</displayName>
-				<displayName count="other" draft="unconfirmed">Tsjechoslowaakse harde koruna</displayName>
+				<displayName count="one" draft="unconfirmed">Tsjechoslowaakse harde
+					koruna</displayName>
+				<displayName count="other" draft="unconfirmed">Tsjechoslowaakse harde
+					koruna</displayName>
 			</currency>
 			<currency type="CUC">
 				<displayName draft="unconfirmed">Kubaanske convertibele peso</displayName>
-				<displayName count="one" draft="unconfirmed">Kubaanske convertibele peso</displayName>
-				<displayName count="other" draft="unconfirmed">Kubaanske convertibele peso</displayName>
+				<displayName count="one" draft="unconfirmed">Kubaanske convertibele
+					peso</displayName>
+				<displayName count="other" draft="unconfirmed">Kubaanske convertibele
+					peso</displayName>
 			</currency>
 			<currency type="CUP">
 				<displayName draft="unconfirmed">Kubaanske peso</displayName>
@@ -5261,9 +5430,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other" draft="unconfirmed">Ecuadoraanske sucre</displayName>
 			</currency>
 			<currency type="ECV">
-				<displayName draft="unconfirmed">Ecuadoraanske unidad de valor constante (UVC)</displayName>
-				<displayName count="one" draft="unconfirmed">Ecuadoraanske unidad de valor constante (UVC)</displayName>
-				<displayName count="other" draft="unconfirmed">Ecuadoraanske unidad de valor constante (UVC)</displayName>
+				<displayName draft="unconfirmed">Ecuadoraanske unidad de valor
+					constante (UVC)</displayName>
+				<displayName count="one" draft="unconfirmed">Ecuadoraanske unidad de
+					valor constante (UVC)</displayName>
+				<displayName count="other" draft="unconfirmed">Ecuadoraanske unidad de
+					valor constante (UVC)</displayName>
 			</currency>
 			<currency type="EEK">
 				<displayName draft="unconfirmed">Estlânske kroon</displayName>
@@ -5282,13 +5454,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ESA">
 				<displayName draft="unconfirmed">Spaanske peseta (account A)</displayName>
-				<displayName count="one" draft="unconfirmed">Spaanske peseta (account A)</displayName>
-				<displayName count="other" draft="unconfirmed">Spaanske peseta (account A)</displayName>
+				<displayName count="one" draft="unconfirmed">Spaanske peseta (account
+					A)</displayName>
+				<displayName count="other" draft="unconfirmed">Spaanske peseta
+					(account A)</displayName>
 			</currency>
 			<currency type="ESB">
-				<displayName draft="unconfirmed">Spaanske peseta (convertibele account)</displayName>
-				<displayName count="one" draft="unconfirmed">Spaanske peseta (convertibele account)</displayName>
-				<displayName count="other" draft="unconfirmed">Spaanske peseta (convertibele account)</displayName>
+				<displayName draft="unconfirmed">Spaanske peseta (convertibele
+					account)</displayName>
+				<displayName count="one" draft="unconfirmed">Spaanske peseta
+					(convertibele account)</displayName>
+				<displayName count="other" draft="unconfirmed">Spaanske peseta
+					(convertibele account)</displayName>
 			</currency>
 			<currency type="ESP">
 				<displayName draft="unconfirmed">Spaanske peseta</displayName>
@@ -5346,7 +5523,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="GHC">
 				<displayName draft="unconfirmed">Ghanese cedi (1979–2007)</displayName>
 				<displayName count="one" draft="unconfirmed">Ghanese cedi (1979–2007)</displayName>
-				<displayName count="other" draft="unconfirmed">Ghanese cedi (1979–2007)</displayName>
+				<displayName count="other" draft="unconfirmed">Ghanese cedi
+					(1979–2007)</displayName>
 			</currency>
 			<currency type="GHS">
 				<displayName draft="unconfirmed">Ghanese cedi</displayName>
@@ -5375,8 +5553,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="GQE">
 				<displayName draft="unconfirmed">Equatoriaal-Guinese ekwele guineana</displayName>
-				<displayName count="one" draft="unconfirmed">Equatoriaal-Guinese ekwele guineana</displayName>
-				<displayName count="other" draft="unconfirmed">Equatoriaal-Guinese ekwele guineana</displayName>
+				<displayName count="one" draft="unconfirmed">Equatoriaal-Guinese
+					ekwele guineana</displayName>
+				<displayName count="other" draft="unconfirmed">Equatoriaal-Guinese
+					ekwele guineana</displayName>
 			</currency>
 			<currency type="GRD">
 				<displayName draft="unconfirmed">Grykse drachme</displayName>
@@ -5391,7 +5571,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="GWE">
 				<displayName draft="unconfirmed">Portugees-Guinese escudo</displayName>
 				<displayName count="one" draft="unconfirmed">Portugees-Guinese escudo</displayName>
-				<displayName count="other" draft="unconfirmed">Portugees-Guinese escudo</displayName>
+				<displayName count="other" draft="unconfirmed">Portugees-Guinese
+					escudo</displayName>
 			</currency>
 			<currency type="GWP">
 				<displayName draft="unconfirmed">Guinee-Bissause peso</displayName>
@@ -5452,7 +5633,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="ILS">
 				<displayName draft="unconfirmed">Israëlyske nieuwe shekel</displayName>
 				<displayName count="one" draft="unconfirmed">Israëlyske nieuwe shekel</displayName>
-				<displayName count="other" draft="unconfirmed">Israëlyske nieuwe shekel</displayName>
+				<displayName count="other" draft="unconfirmed">Israëlyske nieuwe
+					shekel</displayName>
 				<symbol draft="unconfirmed">₪</symbol>
 			</currency>
 			<currency type="INR">
@@ -5524,13 +5706,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="KRH">
 				<displayName draft="unconfirmed">Sûd-Koreaanske hwan (1953–1962)</displayName>
-				<displayName count="one" draft="unconfirmed">Sûd-Koreaanske hwan (1953–1962)</displayName>
-				<displayName count="other" draft="unconfirmed">Sûd-Koreaanske hwan (1953–1962)</displayName>
+				<displayName count="one" draft="unconfirmed">Sûd-Koreaanske hwan
+					(1953–1962)</displayName>
+				<displayName count="other" draft="unconfirmed">Sûd-Koreaanske hwan
+					(1953–1962)</displayName>
 			</currency>
 			<currency type="KRO">
 				<displayName draft="unconfirmed">Alde Sûd-Koreaanske won (1945–1953)</displayName>
-				<displayName count="one" draft="unconfirmed">Alde Sûd-Koreaanske won (1945–1953)</displayName>
-				<displayName count="other" draft="unconfirmed">Alde Sûd-Koreaanske won (1945–1953)</displayName>
+				<displayName count="one" draft="unconfirmed">Alde Sûd-Koreaanske won
+					(1945–1953)</displayName>
+				<displayName count="other" draft="unconfirmed">Alde Sûd-Koreaanske won
+					(1945–1953)</displayName>
 			</currency>
 			<currency type="KRW">
 				<displayName draft="unconfirmed">Sûd-Koreaanske won</displayName>
@@ -5590,8 +5776,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="LUC">
 				<displayName draft="unconfirmed">Lúksemboargske convertibele franc</displayName>
-				<displayName count="one" draft="unconfirmed">Lúksemboargske convertibele franc</displayName>
-				<displayName count="other" draft="unconfirmed">Lúksemboargske convertibele franc</displayName>
+				<displayName count="one" draft="unconfirmed">Lúksemboargske
+					convertibele franc</displayName>
+				<displayName count="other" draft="unconfirmed">Lúksemboargske
+					convertibele franc</displayName>
 			</currency>
 			<currency type="LUF">
 				<displayName draft="unconfirmed">Lúksemboargske frank</displayName>
@@ -5600,8 +5788,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="LUL">
 				<displayName draft="unconfirmed">Lúksemboargske finansjele franc</displayName>
-				<displayName count="one" draft="unconfirmed">Lúksemboargske finansjele franc</displayName>
-				<displayName count="other" draft="unconfirmed">Lúksemboargske finansjele franc</displayName>
+				<displayName count="one" draft="unconfirmed">Lúksemboargske finansjele
+					franc</displayName>
+				<displayName count="other" draft="unconfirmed">Lúksemboargske
+					finansjele franc</displayName>
 			</currency>
 			<currency type="LVL">
 				<displayName draft="unconfirmed">Letse lats</displayName>
@@ -5660,8 +5850,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MKN">
 				<displayName draft="unconfirmed">Macedonyske denar (1992–1993)</displayName>
-				<displayName count="one" draft="unconfirmed">Macedonyske denar (1992–1993)</displayName>
-				<displayName count="other" draft="unconfirmed">Macedonyske denar (1992–1993)</displayName>
+				<displayName count="one" draft="unconfirmed">Macedonyske denar
+					(1992–1993)</displayName>
+				<displayName count="other" draft="unconfirmed">Macedonyske denar
+					(1992–1993)</displayName>
 			</currency>
 			<currency type="MLF">
 				<displayName draft="unconfirmed">Malinese franc</displayName>
@@ -5720,14 +5912,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<symbol draft="unconfirmed">MX$</symbol>
 			</currency>
 			<currency type="MXP">
-				<displayName draft="unconfirmed">Meksikaanske sulveren peso (1861–1992)</displayName>
-				<displayName count="one" draft="unconfirmed">Meksikaanske sulveren peso (1861–1992)</displayName>
-				<displayName count="other" draft="unconfirmed">Meksikaanske sulveren peso (1861–1992)</displayName>
+				<displayName draft="unconfirmed">Meksikaanske sulveren peso
+					(1861–1992)</displayName>
+				<displayName count="one" draft="unconfirmed">Meksikaanske sulveren
+					peso (1861–1992)</displayName>
+				<displayName count="other" draft="unconfirmed">Meksikaanske sulveren
+					peso (1861–1992)</displayName>
 			</currency>
 			<currency type="MXV">
-				<displayName draft="unconfirmed">Meksikaanske unidad de inversion (UDI)</displayName>
-				<displayName count="one" draft="unconfirmed">Meksikaanske unidad de inversion (UDI)</displayName>
-				<displayName count="other" draft="unconfirmed">Meksikaanske unidad de inversion (UDI)</displayName>
+				<displayName draft="unconfirmed">Meksikaanske unidad de inversion
+					(UDI)</displayName>
+				<displayName count="one" draft="unconfirmed">Meksikaanske unidad de
+					inversion (UDI)</displayName>
+				<displayName count="other" draft="unconfirmed">Meksikaanske unidad de
+					inversion (UDI)</displayName>
 			</currency>
 			<currency type="MYR">
 				<displayName draft="unconfirmed">Maleisyske ringgit</displayName>
@@ -5741,8 +5939,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MZM">
 				<displayName draft="unconfirmed">Alde Mozambikaanske metical</displayName>
-				<displayName count="one" draft="unconfirmed">Alde Mozambikaanske metical</displayName>
-				<displayName count="other" draft="unconfirmed">Alde Mozambikaanske metical</displayName>
+				<displayName count="one" draft="unconfirmed">Alde Mozambikaanske
+					metical</displayName>
+				<displayName count="other" draft="unconfirmed">Alde Mozambikaanske
+					metical</displayName>
 			</currency>
 			<currency type="MZN">
 				<displayName draft="unconfirmed">Mozambikaanske metical</displayName>
@@ -5761,8 +5961,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="NIC">
 				<displayName draft="unconfirmed">Nicaraguaanske córdoba (1988–1991)</displayName>
-				<displayName count="one" draft="unconfirmed">Nicaraguaanske córdoba (1988–1991)</displayName>
-				<displayName count="other" draft="unconfirmed">Nicaraguaanske córdoba (1988–1991)</displayName>
+				<displayName count="one" draft="unconfirmed">Nicaraguaanske córdoba
+					(1988–1991)</displayName>
+				<displayName count="other" draft="unconfirmed">Nicaraguaanske córdoba
+					(1988–1991)</displayName>
 			</currency>
 			<currency type="NIO">
 				<displayName draft="unconfirmed">Nicaraguaanske córdoba</displayName>
@@ -5838,7 +6040,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="PLZ">
 				<displayName draft="unconfirmed">Poalske zloty (1950–1995)</displayName>
 				<displayName count="one" draft="unconfirmed">Poalske zloty (1950–1995)</displayName>
-				<displayName count="other" draft="unconfirmed">Poalske zloty (1950–1995)</displayName>
+				<displayName count="other" draft="unconfirmed">Poalske zloty
+					(1950–1995)</displayName>
 			</currency>
 			<currency type="PTE">
 				<displayName draft="unconfirmed">Portugeeske escudo</displayName>
@@ -5882,8 +6085,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="RUR">
 				<displayName draft="unconfirmed">Russyske roebel (1991–1998)</displayName>
-				<displayName count="one" draft="unconfirmed">Russyske roebel (1991–1998)</displayName>
-				<displayName count="other" draft="unconfirmed">Russyske roebel (1991–1998)</displayName>
+				<displayName count="one" draft="unconfirmed">Russyske roebel
+					(1991–1998)</displayName>
+				<displayName count="other" draft="unconfirmed">Russyske roebel
+					(1991–1998)</displayName>
 			</currency>
 			<currency type="RWF">
 				<displayName draft="unconfirmed">Rwandese frank</displayName>
@@ -5918,8 +6123,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="SDP">
 				<displayName draft="unconfirmed">Soedaneeske pûn (1957–1998)</displayName>
-				<displayName count="one" draft="unconfirmed">Soedaneeske pûn (1957–1998)</displayName>
-				<displayName count="other" draft="unconfirmed">Soedaneeske pûn (1957–1998)</displayName>
+				<displayName count="one" draft="unconfirmed">Soedaneeske pûn
+					(1957–1998)</displayName>
+				<displayName count="other" draft="unconfirmed">Soedaneeske pûn
+					(1957–1998)</displayName>
 			</currency>
 			<currency type="SEK">
 				<displayName draft="unconfirmed">Sweedske kroon</displayName>
@@ -6014,8 +6221,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="TMM">
 				<displayName draft="unconfirmed">Turkmeense manat (1993–2009)</displayName>
-				<displayName count="one" draft="unconfirmed">Turkmeense manat (1993–2009)</displayName>
-				<displayName count="other" draft="unconfirmed">Turkmeense manat (1993–2009)</displayName>
+				<displayName count="one" draft="unconfirmed">Turkmeense manat
+					(1993–2009)</displayName>
+				<displayName count="other" draft="unconfirmed">Turkmeense manat
+					(1993–2009)</displayName>
 			</currency>
 			<currency type="TMT">
 				<displayName draft="unconfirmed">Turkmeense manat</displayName>
@@ -6050,7 +6259,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="TTD">
 				<displayName draft="unconfirmed">Trinidad en Tobago-dollar</displayName>
 				<displayName count="one" draft="unconfirmed">Trinidad en Tobago-dollar</displayName>
-				<displayName count="other" draft="unconfirmed">Trinidad en Tobago-dollar</displayName>
+				<displayName count="other" draft="unconfirmed">Trinidad en
+					Tobago-dollar</displayName>
 			</currency>
 			<currency type="TWD">
 				<displayName draft="unconfirmed">Nije Taiwanese dollar</displayName>
@@ -6075,8 +6285,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="UGS">
 				<displayName draft="unconfirmed">Oegandese shilling (1966–1987)</displayName>
-				<displayName count="one" draft="unconfirmed">Oegandese shilling (1966–1987)</displayName>
-				<displayName count="other" draft="unconfirmed">Oegandese shilling (1966–1987)</displayName>
+				<displayName count="one" draft="unconfirmed">Oegandese shilling
+					(1966–1987)</displayName>
+				<displayName count="other" draft="unconfirmed">Oegandese shilling
+					(1966–1987)</displayName>
 			</currency>
 			<currency type="UGX">
 				<displayName draft="unconfirmed">Oegandese shilling</displayName>
@@ -6091,23 +6303,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="USN">
 				<displayName draft="unconfirmed">Amerikaanske dollar (folgjende dei)</displayName>
-				<displayName count="one" draft="unconfirmed">Amerikaanske dollar (folgjende dei)</displayName>
-				<displayName count="other" draft="unconfirmed">Amerikaanske dollar (folgjende dei)</displayName>
+				<displayName count="one" draft="unconfirmed">Amerikaanske dollar
+					(folgjende dei)</displayName>
+				<displayName count="other" draft="unconfirmed">Amerikaanske dollar
+					(folgjende dei)</displayName>
 			</currency>
 			<currency type="USS">
 				<displayName draft="unconfirmed">Amerikaanske dollar (zelfde dei)</displayName>
-				<displayName count="one" draft="unconfirmed">Amerikaanske dollar (Selfde dei)</displayName>
-				<displayName count="other" draft="unconfirmed">Amerikaanske dollar (Selfde dei)</displayName>
+				<displayName count="one" draft="unconfirmed">Amerikaanske dollar
+					(Selfde dei)</displayName>
+				<displayName count="other" draft="unconfirmed">Amerikaanske dollar
+					(Selfde dei)</displayName>
 			</currency>
 			<currency type="UYI">
-				<displayName draft="unconfirmed">Uruguayaanske peso en geïndexeerde eenheden</displayName>
-				<displayName count="one" draft="unconfirmed">Uruguayaanske peso en geïndexeerde eenheden</displayName>
-				<displayName count="other" draft="unconfirmed">Uruguayaanske peso en geïndexeerde eenheden</displayName>
+				<displayName draft="unconfirmed">Uruguayaanske peso en geïndexeerde
+					eenheden</displayName>
+				<displayName count="one" draft="unconfirmed">Uruguayaanske peso en
+					geïndexeerde eenheden</displayName>
+				<displayName count="other" draft="unconfirmed">Uruguayaanske peso en
+					geïndexeerde eenheden</displayName>
 			</currency>
 			<currency type="UYP">
 				<displayName draft="unconfirmed">Uruguayaanske peso (1975–1993)</displayName>
-				<displayName count="one" draft="unconfirmed">Uruguayaanske peso (1975–1993)</displayName>
-				<displayName count="other" draft="unconfirmed">Uruguayaanske peso (1975–1993)</displayName>
+				<displayName count="one" draft="unconfirmed">Uruguayaanske peso
+					(1975–1993)</displayName>
+				<displayName count="other" draft="unconfirmed">Uruguayaanske peso
+					(1975–1993)</displayName>
 			</currency>
 			<currency type="UYU">
 				<displayName draft="unconfirmed">Uruguayaanske peso</displayName>
@@ -6121,8 +6342,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="VEB">
 				<displayName draft="unconfirmed">Fenezolaanske bolivar (1871–2008)</displayName>
-				<displayName count="one" draft="unconfirmed">Fenezolaanske bolivar (1871–2008)</displayName>
-				<displayName count="other" draft="unconfirmed">Fenezolaanske bolivar (1871–2008)</displayName>
+				<displayName count="one" draft="unconfirmed">Fenezolaanske bolivar
+					(1871–2008)</displayName>
+				<displayName count="other" draft="unconfirmed">Fenezolaanske bolivar
+					(1871–2008)</displayName>
 			</currency>
 			<currency type="VEF">
 				<displayName draft="unconfirmed">Fenezolaanske bolivar</displayName>
@@ -6137,8 +6360,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="VNN">
 				<displayName draft="unconfirmed">Alde Fietnameeske dong (1978–1985)</displayName>
-				<displayName count="one" draft="unconfirmed">Alde Fietnameeske dong (1978–1985)</displayName>
-				<displayName count="other" draft="unconfirmed">Alde Fietnameeske dong (1978–1985)</displayName>
+				<displayName count="one" draft="unconfirmed">Alde Fietnameeske dong
+					(1978–1985)</displayName>
+				<displayName count="other" draft="unconfirmed">Alde Fietnameeske dong
+					(1978–1985)</displayName>
 			</currency>
 			<currency type="VUV">
 				<displayName draft="unconfirmed">Vanuatuaanske vatu</displayName>
@@ -6168,23 +6393,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XBA">
 				<displayName draft="unconfirmed">Europeeske gearfoege ienheid</displayName>
-				<displayName count="one" draft="unconfirmed">Europeeske gearfoege ienheid</displayName>
-				<displayName count="other" draft="unconfirmed">Europeeske gearfoege ienheid</displayName>
+				<displayName count="one" draft="unconfirmed">Europeeske gearfoege
+					ienheid</displayName>
+				<displayName count="other" draft="unconfirmed">Europeeske gearfoege
+					ienheid</displayName>
 			</currency>
 			<currency type="XBB">
 				<displayName draft="unconfirmed">Europeeske monetaire ienheid</displayName>
-				<displayName count="one" draft="unconfirmed">Europeeske monetaire ienheid</displayName>
-				<displayName count="other" draft="unconfirmed">Europeeske monetaire ienheid</displayName>
+				<displayName count="one" draft="unconfirmed">Europeeske monetaire
+					ienheid</displayName>
+				<displayName count="other" draft="unconfirmed">Europeeske monetaire
+					ienheid</displayName>
 			</currency>
 			<currency type="XBC">
 				<displayName draft="unconfirmed">Europeeske rekkenienheid (XBC)</displayName>
-				<displayName count="one" draft="unconfirmed">Europeeske rekkenienheid (XBC)</displayName>
-				<displayName count="other" draft="unconfirmed">Europeeske rekkenienheid (XBC)</displayName>
+				<displayName count="one" draft="unconfirmed">Europeeske rekkenienheid
+					(XBC)</displayName>
+				<displayName count="other" draft="unconfirmed">Europeeske
+					rekkenienheid (XBC)</displayName>
 			</currency>
 			<currency type="XBD">
 				<displayName draft="unconfirmed">Europeeske rekkenienheid (XBD)</displayName>
-				<displayName count="one" draft="unconfirmed">Europeeske rekkenienheid (XBD)</displayName>
-				<displayName count="other" draft="unconfirmed">Europeeske rekkenienheid (XBD)</displayName>
+				<displayName count="one" draft="unconfirmed">Europeeske rekkenienheid
+					(XBD)</displayName>
+				<displayName count="other" draft="unconfirmed">Europeeske
+					rekkenienheid (XBD)</displayName>
 			</currency>
 			<currency type="XCD">
 				<displayName draft="unconfirmed">East-Karibyske dollar</displayName>
@@ -6246,8 +6479,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XTS">
 				<displayName draft="unconfirmed">Valutacode voor testdoeleinden</displayName>
-				<displayName count="one" draft="unconfirmed">Valutacode voor testdoeleinden</displayName>
-				<displayName count="other" draft="unconfirmed">Valutacode voor testdoeleinden</displayName>
+				<displayName count="one" draft="unconfirmed">Valutacode voor
+					testdoeleinden</displayName>
+				<displayName count="other" draft="unconfirmed">Valutacode voor
+					testdoeleinden</displayName>
 			</currency>
 			<currency type="XUA">
 				<displayName draft="unconfirmed">ADB-rekkenienheid</displayName>
@@ -6272,27 +6507,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="YUD">
 				<displayName draft="unconfirmed">Joegoslavyske harde dinar</displayName>
 				<displayName count="one" draft="unconfirmed">Joegoslavyske harde dinar</displayName>
-				<displayName count="other" draft="unconfirmed">Joegoslavyske harde dinar</displayName>
+				<displayName count="other" draft="unconfirmed">Joegoslavyske harde
+					dinar</displayName>
 			</currency>
 			<currency type="YUM">
 				<displayName draft="unconfirmed">Joegoslavyske noviy-dinar</displayName>
 				<displayName count="one" draft="unconfirmed">Joegoslavyske noviy-dinar</displayName>
-				<displayName count="other" draft="unconfirmed">Joegoslavyske noviy-dinar</displayName>
+				<displayName count="other" draft="unconfirmed">Joegoslavyske
+					noviy-dinar</displayName>
 			</currency>
 			<currency type="YUN">
 				<displayName draft="unconfirmed">Joegoslavyske convertibele dinar</displayName>
-				<displayName count="one" draft="unconfirmed">Joegoslavyske convertibele dinar</displayName>
-				<displayName count="other" draft="unconfirmed">Joegoslavyske convertibele dinar</displayName>
+				<displayName count="one" draft="unconfirmed">Joegoslavyske
+					convertibele dinar</displayName>
+				<displayName count="other" draft="unconfirmed">Joegoslavyske
+					convertibele dinar</displayName>
 			</currency>
 			<currency type="YUR">
-				<displayName draft="unconfirmed">Joegoslavyske herfoarme dinar (1992–1993)</displayName>
-				<displayName count="one" draft="unconfirmed">Joegoslavyske herfoarme dinar (1992–1993)</displayName>
-				<displayName count="other" draft="unconfirmed">Joegoslavyske herfoarme dinar (1992–1993)</displayName>
+				<displayName draft="unconfirmed">Joegoslavyske herfoarme dinar
+					(1992–1993)</displayName>
+				<displayName count="one" draft="unconfirmed">Joegoslavyske herfoarme
+					dinar (1992–1993)</displayName>
+				<displayName count="other" draft="unconfirmed">Joegoslavyske herfoarme
+					dinar (1992–1993)</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName draft="unconfirmed">Sûd-Afrikaanske rand (finansjeel)</displayName>
-				<displayName count="one" draft="unconfirmed">Sûd-Afrikaanske rand (finansjeel)</displayName>
-				<displayName count="other" draft="unconfirmed">Sûd-Afrikaanske rand (finansjeel)</displayName>
+				<displayName count="one" draft="unconfirmed">Sûd-Afrikaanske rand
+					(finansjeel)</displayName>
+				<displayName count="other" draft="unconfirmed">Sûd-Afrikaanske rand
+					(finansjeel)</displayName>
 			</currency>
 			<currency type="ZAR">
 				<displayName draft="unconfirmed">Sûd-Afrikaanske rand</displayName>
@@ -6301,8 +6545,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ZMK">
 				<displayName draft="unconfirmed">Sambiaanske kwacha (1968–2012)</displayName>
-				<displayName count="one" draft="unconfirmed">Sambiaanske kwacha (1968–2012)</displayName>
-				<displayName count="other" draft="unconfirmed">Sambiaanske kwacha (1968–2012)</displayName>
+				<displayName count="one" draft="unconfirmed">Sambiaanske kwacha
+					(1968–2012)</displayName>
+				<displayName count="other" draft="unconfirmed">Sambiaanske kwacha
+					(1968–2012)</displayName>
 			</currency>
 			<currency type="ZMW">
 				<displayName draft="unconfirmed">Sambiaanske kwacha</displayName>
@@ -6326,13 +6572,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ZWL">
 				<displayName draft="unconfirmed">Simbabwaanske dollar (2009)</displayName>
-				<displayName count="one" draft="unconfirmed">Simbabwaanske dollar (2009)</displayName>
-				<displayName count="other" draft="unconfirmed">Simbabwaanske dollar (2009)</displayName>
+				<displayName count="one" draft="unconfirmed">Simbabwaanske dollar
+					(2009)</displayName>
+				<displayName count="other" draft="unconfirmed">Simbabwaanske dollar
+					(2009)</displayName>
 			</currency>
 			<currency type="ZWR">
 				<displayName draft="unconfirmed">Simbabwaanske dollar (2008)</displayName>
-				<displayName count="one" draft="unconfirmed">Simbabwaanske dollar (2008)</displayName>
-				<displayName count="other" draft="unconfirmed">Simbabwaanske dollar (2008)</displayName>
+				<displayName count="one" draft="unconfirmed">Simbabwaanske dollar
+					(2008)</displayName>
+				<displayName count="other" draft="unconfirmed">Simbabwaanske dollar
+					(2008)</displayName>
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">
@@ -6374,8 +6624,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other" draft="unconfirmed">{0} fjouwerkante foet</unitPattern>
 			</unit>
 			<unit type="area-square-kilometer">
-				<unitPattern count="one" draft="unconfirmed">{0} fjouwerkante kilometer</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} fjouwerkante kilometer</unitPattern>
+				<unitPattern count="one" draft="unconfirmed">{0} fjouwerkante
+					kilometer</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} fjouwerkante
+					kilometer</unitPattern>
 			</unit>
 			<unit type="area-square-meter">
 				<unitPattern count="one" draft="unconfirmed">{0} fjouwerkante meter</unitPattern>

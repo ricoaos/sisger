@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="cs"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="cs" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -984,8 +983,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="colAlternate" draft="contributed">Ignorovat řazení symbolů</key>
 			<key type="colBackwards" draft="contributed">Obrácené řazení akcentů</key>
 			<key type="colCaseFirst" draft="contributed">Řazení velkých a malých písmen</key>
-			<key type="colCaseLevel" draft="contributed">Rozlišovaní velkých a malých písmen při řazení</key>
-			<key type="colHiraganaQuaternary" draft="contributed">Řazení podle slabičných písem (kana)</key>
+			<key type="colCaseLevel" draft="contributed">Rozlišovaní velkých a malých
+				písmen při řazení</key>
+			<key type="colHiraganaQuaternary" draft="contributed">Řazení podle slabičných
+				písem (kana)</key>
 			<key type="collation">Řazení</key>
 			<key type="colNormalization" draft="contributed">Normalizované řazení</key>
 			<key type="colNumeric" draft="contributed">Číselné řazení</key>
@@ -1012,10 +1013,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="ducet" key="collation">Výchozí řazení Unicode</type>
 			<type type="ethi" key="numbers">Etiopské číslice</type>
 			<type type="ethiopic" key="calendar">Etiopský kalendář</type>
-			<type type="ethiopic-amete-alem" key="calendar">Etiopský kalendář (Amete-Alem)</type>
+			<type type="ethiopic-amete-alem" key="calendar">Etiopský kalendář
+				(Amete-Alem)</type>
 			<type type="finance" key="numbers" draft="contributed">Finančnický zápis čísel</type>
 			<type type="fullwide" key="numbers">Číslice – plná šířka</type>
-			<type type="gb2312han" key="collation">Řazení pro zjednodušenou čínštinu – GB2312</type>
+			<type type="gb2312han" key="collation">Řazení pro zjednodušenou čínštinu –
+				GB2312</type>
 			<type type="geor" key="numbers">Gruzínské číslice</type>
 			<type type="gregorian" key="calendar">Gregoriánský kalendář</type>
 			<type type="grek" key="numbers">Řecké číslice</type>
@@ -1040,50 +1043,65 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="knda" key="numbers">Kannadské číslice</type>
 			<type type="laoo" key="numbers">Laoské číslice</type>
 			<type type="latn" key="numbers">Západní číslice</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Nejdříve řadit malá písmena</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Nejdříve řadit malá
+				písmena</type>
 			<type type="mlym" key="numbers">Malajálamské číslice</type>
 			<type type="mong" key="numbers">Mongolské číslice</type>
 			<type type="mymr" key="numbers">Myanmarské číslice</type>
 			<type type="native" key="numbers" draft="contributed">Nativní číslice</type>
 			<type type="no" key="colBackwards" draft="contributed">Normální řazení akcentů</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Normální řazení velkých a malých písmen</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Nerozlišovat při řazení velká a malá písmena</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Řadit slabičná písma (kana) samostatně</type>
-			<type type="no" key="colNormalization" draft="contributed">Řadit bez normalizace</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Normální řazení velkých
+				a malých písmen</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Nerozlišovat při řazení
+				velká a malá písmena</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Řadit slabičná
+				písma (kana) samostatně</type>
+			<type type="no" key="colNormalization" draft="contributed">Řadit bez
+				normalizace</type>
 			<type type="no" key="colNumeric" draft="contributed">Řadit číslice jednotlivě</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Řadit symboly</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Řadit
+				symboly</type>
 			<type type="orya" key="numbers">Urijské číslice</type>
 			<type type="persian" key="calendar">Perský kalendář</type>
 			<type type="phonebook" key="collation">Řazení jako v telefonním seznamu</type>
 			<type type="phonetic" key="collation" draft="contributed">Fonetické řazení</type>
 			<type type="pinyin" key="collation">Řazení podle pchin-jinu</type>
-			<type type="primary" key="colStrength" draft="contributed">Řadit pouze základní písmena</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Řadit akcenty/velká a malá písmena/šířku/kana</type>
+			<type type="primary" key="colStrength" draft="contributed">Řadit pouze
+				základní písmena</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Řadit
+				akcenty/velká a malá písmena/šířku/kana</type>
 			<type type="reformed" key="collation">Reformované řazení</type>
 			<type type="roc" key="calendar" draft="contributed">Kalendář Čínské republiky</type>
 			<type type="roman" key="numbers">Římské číslice</type>
 			<type type="romanlow" key="numbers">Malé římské číslice</type>
 			<type type="search" key="collation">Obecné hledání</type>
-			<type type="searchjl" key="collation" draft="contributed">Vyhledávat podle počáteční souhlásky písma hangul</type>
+			<type type="searchjl" key="collation" draft="contributed">Vyhledávat podle
+				počáteční souhlásky písma hangul</type>
 			<type type="secondary" key="colStrength" draft="contributed">Řadit akcenty</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Při řazení ignorovat symboly</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Při řazení
+				ignorovat symboly</type>
 			<type type="standard" key="collation">Standardní řazení</type>
 			<type type="stroke" key="collation">Řazení podle tahů</type>
 			<type type="taml" key="numbers">Tamilské tradiční číslice</type>
 			<type type="tamldec" key="numbers">Tamilské číslice</type>
 			<type type="telu" key="numbers">Telugské číslice</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Řadit akcenty/velká a malá písmena/šířku</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Řadit
+				akcenty/velká a malá písmena/šířku</type>
 			<type type="thai" key="numbers">Thajské číslice</type>
 			<type type="tibt" key="numbers">Tibetské číslice</type>
 			<type type="traditional" key="collation">Tradiční řazení</type>
 			<type type="traditional" key="numbers" draft="contributed">Tradiční číslovky</type>
 			<type type="unihan" key="collation">Řazení podle radikálů</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Nejdříve řadit velká písmena</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Nejdříve řadit velká
+				písmena</type>
 			<type type="vaii" key="numbers" draft="contributed">Vaiské číslice</type>
 			<type type="yes" key="colBackwards" draft="contributed">Řadit akcenty opačně</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Rozlišovat při řazení velká a malá písmena</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Řadit jednotlivé typy slabičných písem (kana) různě</type>
-			<type type="yes" key="colNormalization" draft="contributed">Řazení podle normalizovaného kódování Unicode</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Rozlišovat při řazení
+				velká a malá písmena</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Řadit
+				jednotlivé typy slabičných písem (kana) různě</type>
+			<type type="yes" key="colNormalization" draft="contributed">Řazení podle
+				normalizovaného kódování Unicode</type>
 			<type type="yes" key="colNumeric" draft="contributed">Numerické řazení číslic</type>
 			<type type="zhuyin" key="collation">Ču-jin</type>
 		</types>
@@ -1133,10 +1151,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[a á b c č d ď e é ě f g h {ch} i í j k l m n ň o ó p q r ř s š t ť u ú ů v w x y ý z ž]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ ê ë ē í ì ĭ î ï ī ľ ł ñ ó ò ŏ ô ö ø ō œ ŕ ú ù ŭ û ü ū ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[A B C Č D E F G H {CH} I J K L M N O P Q R Ř S Š T U V W X Y Z Ž]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – , ; \: ! ? . … ‘ ‚ “ „ ( ) \[ \] § @ * / \&amp;]</exemplarCharacters>
+		<exemplarCharacters>[a á b c č d ď e é ě f g h {ch} i í j k l m n ň o
+			ó p q r ř s š t ť u ú ů v w x y ý z ž]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ
+			ê ë ē í ì ĭ î ï ī ľ ł ñ ó ò ŏ ô ö ø ō œ ŕ ú ù ŭ û ü ū ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[A B C Č D E
+			F G H {CH} I J K L M N O P Q R Ř S Š T U V W X Y Z Ž]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – , ; \: ! ? . … ‘ ‚
+			“ „ ( ) \[ \] § @ * / \&amp;]</exemplarCharacters>
 		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="contributed">… {0}</ellipsis>
 		<ellipsis type="medial" draft="contributed">{0}… {1}</ellipsis>
@@ -1818,9 +1840,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</eras>
 			</calendar>
 			<calendar type="japanese">
-				<!-- need some non-empty element here to make inheritance work,
-					 this copy of generic dateFormats above is smaller than root japanese eras
-				-->
+				<!-- need some non-empty element here to make inheritance work, this 
+					copy of generic dateFormats above is smaller than root japanese eras -->
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -4097,7 +4118,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one">španělská peseta (konvertibilní účet)</displayName>
 				<displayName count="few">španělské pesety (konvertibilní účet)</displayName>
 				<displayName count="many">španělské pesety (konvertibilní účet)</displayName>
-				<displayName count="other">španělských peset (konvertibilní účet)</displayName>
+				<displayName count="other">španělských peset (konvertibilní
+					účet)</displayName>
 			</currency>
 			<currency type="ESP">
 				<displayName>španělská peseta</displayName>
@@ -5365,10 +5387,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XTS">
 				<displayName>kód zvlášť vyhrazený pro testovací účely</displayName>
-				<displayName count="one">kód zvlášť vyhrazený pro testovací účely</displayName>
-				<displayName count="few">kódy zvlášť vyhrazené pro testovací účely</displayName>
-				<displayName count="many">kódů zvlášť vyhrazených pro testovací účely</displayName>
-				<displayName count="other">kódů zvlášť vyhrazených pro testovací účely</displayName>
+				<displayName count="one">kód zvlášť vyhrazený pro testovací
+					účely</displayName>
+				<displayName count="few">kódy zvlášť vyhrazené pro testovací
+					účely</displayName>
+				<displayName count="many">kódů zvlášť vyhrazených pro testovací
+					účely</displayName>
+				<displayName count="other">kódů zvlášť vyhrazených pro testovací
+					účely</displayName>
 			</currency>
 			<currency type="XXX">
 				<displayName>neznámá měna</displayName>
@@ -5402,15 +5428,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>jugoslávský nový dinár (1994–2002)</displayName>
 				<displayName count="one">jugoslávský nový dinár (1994–2002)</displayName>
 				<displayName count="few">jugoslávské nové dináry (1994–2002)</displayName>
-				<displayName count="many">jugoslávského nového dináru (1994–2002)</displayName>
-				<displayName count="other">jugoslávských nových dinárů (1994–2002)</displayName>
+				<displayName count="many">jugoslávského nového dináru
+					(1994–2002)</displayName>
+				<displayName count="other">jugoslávských nových dinárů
+					(1994–2002)</displayName>
 			</currency>
 			<currency type="YUN">
 				<displayName>jugoslávský konvertibilní dinár (1990–1992)</displayName>
-				<displayName count="one">jugoslávský konvertibilní dinár (1990–1992)</displayName>
-				<displayName count="few">jugoslávské konvertibilní dináry (1990–1992)</displayName>
-				<displayName count="many">jugoslávského konvertibilního dináru (1990–1992)</displayName>
-				<displayName count="other">jugoslávských konvertibilních dinárů (1990–1992)</displayName>
+				<displayName count="one">jugoslávský konvertibilní dinár
+					(1990–1992)</displayName>
+				<displayName count="few">jugoslávské konvertibilní dináry
+					(1990–1992)</displayName>
+				<displayName count="many">jugoslávského konvertibilního dináru
+					(1990–1992)</displayName>
+				<displayName count="other">jugoslávských konvertibilních dinárů
+					(1990–1992)</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName>jihoafrický finanční rand</displayName>

@@ -20,7 +20,9 @@
  * @version    $Id$
  */
 
-/** Zend_Amf_Util_BinaryStream */
+/**
+ * Zend_Amf_Util_BinaryStream
+ */
 require_once 'Zend/Amf/Util/BinaryStream.php';
 
 /**
@@ -29,10 +31,10 @@ require_once 'Zend/Amf/Util/BinaryStream.php';
  * InputStream extends BinaryStream as eventually BinaryStream could be placed
  * outside of Zend_Amf in order to allow other packages to use the class.
  *
- * @package    Zend_Amf
+ * @package Zend_Amf
  * @subpackage Parse
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Amf_Parse_InputStream extends Zend_Amf_Util_BinaryStream
 {

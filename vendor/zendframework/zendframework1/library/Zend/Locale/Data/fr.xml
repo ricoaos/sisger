@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="fr"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="fr" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -1029,7 +1028,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="KSCOR" draft="unconfirmed">orthographe standard</variant>
 			<variant type="LAUKIKA" draft="unconfirmed">variante classique</variant>
 			<variant type="LIPAW">dialecte lipovaz de Resia</variant>
-			<variant type="LUNA1918" draft="unconfirmed">orthographe russe réformée de 1918</variant>
+			<variant type="LUNA1918" draft="unconfirmed">orthographe russe réformée de
+				1918</variant>
 			<variant type="METELKO" draft="unconfirmed">alphabet Metelko</variant>
 			<variant type="MONOTON">monotonique</variant>
 			<variant type="NDYUKA" draft="unconfirmed">dialecte ndyuka</variant>
@@ -1065,9 +1065,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</variants>
 		<keys>
 			<key type="calendar">calendrier</key>
-			<key type="colAlternate" draft="contributed">Tri ne tenant pas compte des symboles</key>
-			<key type="colBackwards" draft="contributed">Tri inversé des caractères accentués</key>
-			<key type="colCaseFirst" draft="contributed">Classement basé sur les majuscules et les minuscules</key>
+			<key type="colAlternate" draft="contributed">Tri ne tenant pas compte des
+				symboles</key>
+			<key type="colBackwards" draft="contributed">Tri inversé des caractères
+				accentués</key>
+			<key type="colCaseFirst" draft="contributed">Classement basé sur les majuscules
+				et les minuscules</key>
 			<key type="colCaseLevel" draft="contributed">Tri sensible à la casse</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Tri des caractères Kana</key>
 			<key type="collation">ordre de tri</key>
@@ -1099,10 +1102,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="deva" key="numbers">chiffres devanagaris</type>
 			<type type="dictionary" key="collation">Ordre du dictionnaire</type>
 			<type type="ducet" key="collation">ordre de tri Unicode par défaut</type>
-			<type type="eor" key="collation" draft="unconfirmed">ordre de tri multilingue européen</type>
+			<type type="eor" key="collation" draft="unconfirmed">ordre de tri multilingue
+				européen</type>
 			<type type="ethi" key="numbers">chiffres éthiopiens</type>
 			<type type="ethiopic" key="calendar">Calendrier éthiopien</type>
-			<type type="ethiopic-amete-alem" key="calendar">Calendrier éthiopien Amete Alem</type>
+			<type type="ethiopic-amete-alem" key="calendar">Calendrier éthiopien Amete
+				Alem</type>
 			<type type="finance" key="numbers" draft="contributed">Chiffres financiers</type>
 			<type type="fullwide" key="numbers">chiffres pleine chasse</type>
 			<type type="gb2312han" key="collation">Ordre chinois simplifié - GB2312</type>
@@ -1114,18 +1119,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers">chiffres gourmoukhîs</type>
 			<type type="hanidec" key="numbers">nombres décimaux chinois</type>
 			<type type="hans" key="numbers">chiffres en chinois simplifié</type>
-			<type type="hansfin" key="numbers">chiffres financiers en chinois simplifié</type>
+			<type type="hansfin" key="numbers">chiffres financiers en chinois
+				simplifié</type>
 			<type type="hant" key="numbers">chiffres en chinois traditionnel</type>
-			<type type="hantfin" key="numbers">chiffres financiers en chinois traditionnel</type>
+			<type type="hantfin" key="numbers">chiffres financiers en chinois
+				traditionnel</type>
 			<type type="hebr" key="numbers">chiffres hébreux</type>
 			<type type="hebrew" key="calendar">Calendrier hébraïque</type>
 			<type type="identical" key="colStrength" draft="contributed">Tout trier</type>
 			<type type="indian" key="calendar">Calendrier indien</type>
 			<type type="islamic" key="calendar">calendrier musulman</type>
-			<type type="islamic-civil" key="calendar">calendrier musulman (tabulaire, époque civile)</type>
-			<type type="islamic-rgsa" key="calendar" draft="unconfirmed">calendrier musulman (observé, Arabie Saoudite)</type>
-			<type type="islamic-tbla" key="calendar">calendrier musulman (tabulaire, époque astronomique)</type>
-			<type type="islamic-umalqura" key="calendar" draft="unconfirmed">calendrier musulman (calculé, Umm al-Qura)</type>
+			<type type="islamic-civil" key="calendar">calendrier musulman (tabulaire,
+				époque civile)</type>
+			<type type="islamic-rgsa" key="calendar" draft="unconfirmed">calendrier
+				musulman (observé, Arabie Saoudite)</type>
+			<type type="islamic-tbla" key="calendar">calendrier musulman (tabulaire,
+				époque astronomique)</type>
+			<type type="islamic-umalqura" key="calendar" draft="unconfirmed">calendrier
+				musulman (calculé, Umm al-Qura)</type>
 			<type type="iso8601" key="calendar" draft="unconfirmed">calendrier ISO 8601</type>
 			<type type="japanese" key="calendar">Calendrier japonais</type>
 			<type type="java" key="numbers" draft="unconfirmed">chiffres javanais</type>
@@ -1140,7 +1151,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="latn" key="numbers">chiffres occidentaux</type>
 			<type type="lepc" key="numbers" draft="unconfirmed">chiffres lepchas</type>
 			<type type="limb" key="numbers" draft="unconfirmed">chiffres limbous</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Trier avec les minuscules d'abord</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Trier avec les
+				minuscules d'abord</type>
 			<type type="mlym" key="numbers">chiffres malayâlams</type>
 			<type type="mong" key="numbers" draft="contributed">chiffres mongols</type>
 			<type type="mtei" key="numbers" draft="unconfirmed">chiffres meitei-mayeks</type>
@@ -1148,31 +1160,45 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="mymrshan" key="numbers" draft="unconfirmed">chiffres birmans shans</type>
 			<type type="native" key="numbers" draft="contributed">Chiffres natifs</type>
 			<type type="nkoo" key="numbers" draft="unconfirmed">chiffres n’kos</type>
-			<type type="no" key="colBackwards" draft="contributed">Trier les caractères accentués normalement</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Trier sans ordre lié à la casse</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Trier sans tenir compte de la casse</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Trier les caractères Kana séparément</type>
-			<type type="no" key="colNormalization" draft="contributed">Trier sans normalisation</type>
-			<type type="no" key="colNumeric" draft="contributed">Trier les chiffres individuellement</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Trier les symboles</type>
+			<type type="no" key="colBackwards" draft="contributed">Trier les caractères
+				accentués normalement</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Trier sans ordre lié à
+				la casse</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Trier sans tenir compte
+				de la casse</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Trier les
+				caractères Kana séparément</type>
+			<type type="no" key="colNormalization" draft="contributed">Trier sans
+				normalisation</type>
+			<type type="no" key="colNumeric" draft="contributed">Trier les chiffres
+				individuellement</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Trier les
+				symboles</type>
 			<type type="olck" key="numbers" draft="unconfirmed">chiffres ol-tchikis</type>
 			<type type="orya" key="numbers">chiffres oriyas</type>
 			<type type="osma" key="numbers" draft="unconfirmed">chiffres osmanyas</type>
 			<type type="persian" key="calendar">Calendrier persan</type>
 			<type type="phonebook" key="collation">Ordre de l’annuaire</type>
-			<type type="phonetic" key="collation" draft="contributed">Ordre de tri phonétique</type>
+			<type type="phonetic" key="collation" draft="contributed">Ordre de tri
+				phonétique</type>
 			<type type="pinyin" key="collation">Ordre pinyin</type>
-			<type type="primary" key="colStrength" draft="contributed">Ne trier que les lettres de base</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Trier en tenant compte des caractères accentués, de la casse, de la largeur et des caractères Kana</type>
+			<type type="primary" key="colStrength" draft="contributed">Ne trier que les
+				lettres de base</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Trier en tenant
+				compte des caractères accentués, de la casse, de la largeur et des
+				caractères Kana</type>
 			<type type="reformed" key="collation">Ordre réformé</type>
 			<type type="roc" key="calendar">Calendrier républicain chinois</type>
 			<type type="roman" key="numbers">chiffres romains</type>
 			<type type="romanlow" key="numbers">chiffres romains minuscules</type>
 			<type type="saur" key="numbers" draft="unconfirmed">chiffres saurashtras</type>
 			<type type="search" key="collation">recherche générique</type>
-			<type type="searchjl" key="collation" draft="contributed">Rechercher par consonne initiale en hangeul</type>
-			<type type="secondary" key="colStrength" draft="contributed">Trier en tenant compte des caractères accentués</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Trier en ignorant les symboles</type>
+			<type type="searchjl" key="collation" draft="contributed">Rechercher par
+				consonne initiale en hangeul</type>
+			<type type="secondary" key="colStrength" draft="contributed">Trier en tenant
+				compte des caractères accentués</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Trier en ignorant
+				les symboles</type>
 			<type type="shrd" key="numbers" draft="unconfirmed">chiffres sharadas</type>
 			<type type="sora" key="numbers" draft="unconfirmed">chiffres sora-sompengs</type>
 			<type type="standard" key="collation">ordre de tri standard</type>
@@ -1183,19 +1209,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">chiffres tamouls</type>
 			<type type="tamldec" key="numbers">chiffres tamouls</type>
 			<type type="telu" key="numbers">chiffres télougous</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Trier en tenant compte des caractères accentués, de la casse et de la largeur</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Trier en tenant
+				compte des caractères accentués, de la casse et de la largeur</type>
 			<type type="thai" key="numbers">chiffres thaïs</type>
 			<type type="tibt" key="numbers">chiffres tibétains</type>
 			<type type="traditional" key="collation">Ordre traditionnel</type>
-			<type type="traditional" key="numbers" draft="contributed">Chiffres traditionnels</type>
+			<type type="traditional" key="numbers" draft="contributed">Chiffres
+				traditionnels</type>
 			<type type="unihan" key="collation">Ordre par radical et nombre de traits</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Trier avec les majuscules d'abord</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Trier avec les
+				majuscules d'abord</type>
 			<type type="vaii" key="numbers" draft="contributed">Chiffres en vaï</type>
-			<type type="yes" key="colBackwards" draft="contributed">Trier les caractères accentués dans l'ordre inverse</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Trier en tenant compte de la casse</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Trier les caractères Kana différemment</type>
-			<type type="yes" key="colNormalization" draft="contributed">Trier avec normalisation Unicode</type>
-			<type type="yes" key="colNumeric" draft="contributed">Trier les chiffres par ordre numérique</type>
+			<type type="yes" key="colBackwards" draft="contributed">Trier les caractères
+				accentués dans l'ordre inverse</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Trier en tenant compte
+				de la casse</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Trier les
+				caractères Kana différemment</type>
+			<type type="yes" key="colNormalization" draft="contributed">Trier avec
+				normalisation Unicode</type>
+			<type type="yes" key="colNumeric" draft="contributed">Trier les chiffres par
+				ordre numérique</type>
 			<type type="zhuyin" key="collation" draft="unconfirmed">ordre zhuyin</type>
 		</types>
 		<transformNames>
@@ -1239,10 +1273,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[a à â æ b c ç d e é è ê ë f g h i î ï j k l m n o ô œ p q r s t u ù û ü v w x y ÿ z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á å ä ã ā ē í ì ī ñ ó ò ö ø ú ǔ]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ’ &quot; “ ” « » ( ) \[ \] § @ * / \&amp; # † ‡]</exemplarCharacters>
+		<exemplarCharacters>[a à â æ b c ç d e é è ê ë f g h i î ï j k l m n o
+			ô œ p q r s t u ù û ü v w x y ÿ z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á å ä ã ā ē í ì ī ñ ó ò ö
+			ø ú ǔ]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[A B C D E F
+			G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ’
+			&quot; “ ” « » ( ) \[ \] § @ * / \&amp; # † ‡]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">… {0}</ellipsis>
 		<ellipsis type="medial">{0}… {1}</ellipsis>
@@ -2966,9 +3004,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<era type="235" draft="unconfirmed">Heisei</era>
 					</eraAbbr>
 				</eras>
-				<!-- need some non-empty element here to make inheritance work,
-					 this copy of generic dateFormats above is smaller than root japanese eras
-				-->
+				<!-- need some non-empty element here to make inheritance work, this 
+					copy of generic dateFormats above is smaller than root japanese eras -->
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -4753,7 +4790,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="AOR">
 				<displayName>kwanza angolais réajusté (1995–1999)</displayName>
 				<displayName count="one">kwanza angolais réajusté (1995–1999)</displayName>
-				<displayName count="other">kwanzas angolais réajustés (1995–1999)</displayName>
+				<displayName count="other">kwanzas angolais réajustés
+					(1995–1999)</displayName>
 			</currency>
 			<currency type="ARA">
 				<displayName>austral argentin</displayName>
@@ -4762,13 +4800,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ARL">
 				<displayName draft="unconfirmed">peso lourd argentin (1970–1983)</displayName>
-				<displayName count="one" draft="unconfirmed">peso lourd argentin (1970–1983)</displayName>
-				<displayName count="other" draft="unconfirmed">pesos lourds argentins (1970–1983)</displayName>
+				<displayName count="one" draft="unconfirmed">peso lourd argentin
+					(1970–1983)</displayName>
+				<displayName count="other" draft="unconfirmed">pesos lourds argentins
+					(1970–1983)</displayName>
 			</currency>
 			<currency type="ARM">
 				<displayName draft="unconfirmed">peso argentin (1881–1970)</displayName>
 				<displayName count="one" draft="unconfirmed">peso argentin (1881–1970)</displayName>
-				<displayName count="other" draft="unconfirmed">pesos argentins (1881–1970)</displayName>
+				<displayName count="other" draft="unconfirmed">pesos argentins
+					(1881–1970)</displayName>
 			</currency>
 			<currency type="ARP">
 				<displayName>peso argentin (1983–1985)</displayName>
@@ -4882,8 +4923,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BOL">
 				<displayName draft="unconfirmed">boliviano bolivien (1863–1963)</displayName>
-				<displayName count="one" draft="unconfirmed">boliviano bolivien (1863–1963)</displayName>
-				<displayName count="other" draft="unconfirmed">bolivianos boliviens (1863–1963)</displayName>
+				<displayName count="one" draft="unconfirmed">boliviano bolivien
+					(1863–1963)</displayName>
+				<displayName count="other" draft="unconfirmed">bolivianos boliviens
+					(1863–1963)</displayName>
 			</currency>
 			<currency type="BOP">
 				<displayName>peso bolivien</displayName>
@@ -4897,8 +4940,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BRB">
 				<displayName>nouveau cruzeiro brésilien (1967–1986)</displayName>
-				<displayName count="one">nouveau cruzeiro brésilien (1967–1986)</displayName>
-				<displayName count="other">nouveaux cruzeiros brésiliens (1967–1986)</displayName>
+				<displayName count="one">nouveau cruzeiro brésilien
+					(1967–1986)</displayName>
+				<displayName count="other">nouveaux cruzeiros brésiliens
+					(1967–1986)</displayName>
 			</currency>
 			<currency type="BRC">
 				<displayName>cruzado brésilien (1986–1989)</displayName>
@@ -4918,17 +4963,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BRN">
 				<displayName>nouveau cruzado</displayName>
 				<displayName count="one">nouveau cruzado brésilien (1989–1990)</displayName>
-				<displayName count="other">nouveaux cruzados brésiliens (1989–1990)</displayName>
+				<displayName count="other">nouveaux cruzados brésiliens
+					(1989–1990)</displayName>
 			</currency>
 			<currency type="BRR">
 				<displayName>cruzeiro</displayName>
 				<displayName count="one">cruzeiro réal brésilien (1993–1994)</displayName>
-				<displayName count="other">cruzeiros réals brésiliens (1993–1994)</displayName>
+				<displayName count="other">cruzeiros réals brésiliens
+					(1993–1994)</displayName>
 			</currency>
 			<currency type="BRZ">
 				<displayName draft="unconfirmed">cruzeiro brésilien (1942–1967)</displayName>
-				<displayName count="one" draft="unconfirmed">cruzeiro brésilien (1942–1967)</displayName>
-				<displayName count="other" draft="unconfirmed">cruzeiros brésiliens (1942–1967)</displayName>
+				<displayName count="one" draft="unconfirmed">cruzeiro brésilien
+					(1942–1967)</displayName>
+				<displayName count="other" draft="unconfirmed">cruzeiros brésiliens
+					(1942–1967)</displayName>
 			</currency>
 			<currency type="BSD">
 				<displayName>dollar bahaméen</displayName>
@@ -4954,7 +5003,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BYB">
 				<displayName>nouveau rouble biélorusse (1994–1999)</displayName>
 				<displayName count="one">nouveau rouble biélorusse (1994–1999)</displayName>
-				<displayName count="other">nouveaux roubles biélorusses (1994–1999)</displayName>
+				<displayName count="other">nouveaux roubles biélorusses
+					(1994–1999)</displayName>
 			</currency>
 			<currency type="BYR">
 				<displayName>rouble biélorusse</displayName>
@@ -5105,8 +5155,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ECV">
 				<displayName>unité de valeur constante équatoriale (UVC)</displayName>
-				<displayName count="one">unité de valeur constante équatorienne (UVC)</displayName>
-				<displayName count="other">unités de valeur constante équatoriennes (UVC)</displayName>
+				<displayName count="one">unité de valeur constante
+					équatorienne (UVC)</displayName>
+				<displayName count="other">unités de valeur constante
+					équatoriennes (UVC)</displayName>
 			</currency>
 			<currency type="EEK">
 				<displayName>couronne estonienne</displayName>
@@ -5132,7 +5184,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="ESB">
 				<displayName>peseta espagnole (compte convertible)</displayName>
 				<displayName count="one">peseta espagnole (compte convertible)</displayName>
-				<displayName count="other">pesetas espagnoles (compte convertible)</displayName>
+				<displayName count="other">pesetas espagnoles (compte
+					convertible)</displayName>
 			</currency>
 			<currency type="ESP">
 				<displayName>peseta espagnole</displayName>
@@ -6001,23 +6054,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XBA">
 				<displayName>unité européenne composée</displayName>
-				<displayName count="one" draft="contributed">unité composée européenne (EURCO)</displayName>
-				<displayName count="other" draft="contributed">unités composées européennes (EURCO)</displayName>
+				<displayName count="one" draft="contributed">unité composée européenne
+					(EURCO)</displayName>
+				<displayName count="other" draft="contributed">unités composées
+					européennes (EURCO)</displayName>
 			</currency>
 			<currency type="XBB">
 				<displayName>unité monétaire européenne</displayName>
-				<displayName count="one" draft="contributed">unité monétaire européenne (UME–6)</displayName>
-				<displayName count="other" draft="contributed">unités monétaires européennes (UME–6)</displayName>
+				<displayName count="one" draft="contributed">unité monétaire
+					européenne (UME–6)</displayName>
+				<displayName count="other" draft="contributed">unités monétaires
+					européennes (UME–6)</displayName>
 			</currency>
 			<currency type="XBC">
 				<displayName>unité de compte européenne (XBC)</displayName>
-				<displayName count="one" draft="contributed">unité de compte 9 européenne (UEC–9)</displayName>
-				<displayName count="other" draft="contributed">unités de compte 9 européennes (UEC–9)</displayName>
+				<displayName count="one" draft="contributed">unité de compte 9
+					européenne (UEC–9)</displayName>
+				<displayName count="other" draft="contributed">unités de compte 9
+					européennes (UEC–9)</displayName>
 			</currency>
 			<currency type="XBD">
 				<displayName>unité de compte européenne (XBD)</displayName>
-				<displayName count="one" draft="contributed">unité de compte 17 européenne (UEC–17)</displayName>
-				<displayName count="other" draft="contributed">unités de compte 17 européennes (UEC–17)</displayName>
+				<displayName count="one" draft="contributed">unité de compte 17
+					européenne (UEC–17)</displayName>
+				<displayName count="other" draft="contributed">unités de compte 17
+					européennes (UEC–17)</displayName>
 			</currency>
 			<currency type="XCD">
 				<displayName>dollar des Caraïbes orientales</displayName>
@@ -6031,8 +6092,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XEU">
 				<displayName>unité de compte européenne (ECU)</displayName>
-				<displayName count="one" draft="provisional">unité de compte européenne (ECU)</displayName>
-				<displayName count="other" draft="provisional">unités de compte européennes (ECU)</displayName>
+				<displayName count="one" draft="provisional">unité de compte
+					européenne (ECU)</displayName>
+				<displayName count="other" draft="provisional">unités de compte
+					européennes (ECU)</displayName>
 			</currency>
 			<currency type="XFO">
 				<displayName>franc or</displayName>
@@ -6099,12 +6162,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="YUM">
 				<displayName>dinar yougoslave Noviy</displayName>
 				<displayName count="one">nouveau dinar yougoslave (1994–2003)</displayName>
-				<displayName count="other">nouveaux dinars yougoslaves (1994–2003)</displayName>
+				<displayName count="other">nouveaux dinars yougoslaves
+					(1994–2003)</displayName>
 			</currency>
 			<currency type="YUN">
 				<displayName>dinar yougoslave convertible</displayName>
-				<displayName count="one">dinar convertible yougoslave (1990–1992)</displayName>
-				<displayName count="other">dinars convertibles yougoslaves (1990–1992)</displayName>
+				<displayName count="one">dinar convertible yougoslave
+					(1990–1992)</displayName>
+				<displayName count="other">dinars convertibles yougoslaves
+					(1990–1992)</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName>rand sud-africain (financier)</displayName>
@@ -6144,12 +6210,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="ZWL">
 				<displayName draft="contributed">dollar zimbabwéen (2009)</displayName>
 				<displayName count="one" draft="contributed">dollar zimbabwéen (2009)</displayName>
-				<displayName count="other" draft="contributed">dollars zimbabwéens (2009)</displayName>
+				<displayName count="other" draft="contributed">dollars zimbabwéens
+					(2009)</displayName>
 			</currency>
 			<currency type="ZWR">
 				<displayName draft="contributed">dollar zimbabwéen (2008)</displayName>
 				<displayName count="one" draft="contributed">dollar zimbabwéen (2008)</displayName>
-				<displayName count="other" draft="contributed">dollars zimbabwéens (2008)</displayName>
+				<displayName count="other" draft="contributed">dollars zimbabwéens
+					(2008)</displayName>
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">

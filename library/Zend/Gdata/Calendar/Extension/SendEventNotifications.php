@@ -22,6 +22,7 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
@@ -29,21 +30,26 @@ require_once 'Zend/Gdata/Extension.php';
 /**
  * Data model class to represent an entry's sendEventNotifications
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Calendar
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Calendar_Extension_SendEventNotifications extends Zend_Gdata_Extension
 {
+
     protected $_rootNamespace = 'gCal';
+
     protected $_rootElement = 'sendEventNotifications';
+
     protected $_value = null;
 
     /**
      * Constructs a new Zend_Gdata_Extension_SendEventNotifications object.
-     * @param bool $value (optional) SendEventNotifications value as URI.
+     * 
+     * @param bool $value
+     *            (optional) SendEventNotifications value as URI.
      */
     public function __construct($value = null)
     {
@@ -54,13 +60,15 @@ class Zend_Gdata_Calendar_Extension_SendEventNotifications extends Zend_Gdata_Ex
 
     /**
      * Retrieves a DOMElement which corresponds to this element and all
-     * child properties.  This is used to build an entry back into a DOM
+     * child properties.
+     * This is used to build an entry back into a DOM
      * and eventually XML text for sending to the server upon updates, or
      * for application storage/persistence.
      *
-     * @param DOMDocument $doc The DOMDocument used to construct DOMElements
+     * @param DOMDocument $doc
+     *            The DOMDocument used to construct DOMElements
      * @return DOMElement The DOMElement representing this element and all
-     * child properties.
+     *         child properties.
      */
     public function getDOM($doc = null, $majorVersion = 1, $minorVersion = null)
     {
@@ -73,27 +81,27 @@ class Zend_Gdata_Calendar_Extension_SendEventNotifications extends Zend_Gdata_Ex
 
     /**
      * Given a DOMNode representing an attribute, tries to map the data into
-     * instance members.  If no mapping is defined, the name and value are
+     * instance members.
+     * If no mapping is defined, the name and value are
      * stored in an array.
      *
-     * @param DOMNode $attribute The DOMNode attribute needed to be handled
+     * @param DOMNode $attribute
+     *            The DOMNode attribute needed to be handled
      */
     protected function takeAttributeFromDOM($attribute)
     {
         switch ($attribute->localName) {
-        case 'value':
-            if ($attribute->nodeValue == "true") {
-                $this->_value = true;
-            }
-            else if ($attribute->nodeValue == "false") {
-                $this->_value = false;
-            }
-            else {
-                throw new Zend_Gdata_App_InvalidArgumentException("Expected 'true' or 'false' for gCal:selected#value.");
-            }
-            break;
-        default:
-            parent::takeAttributeFromDOM($attribute);
+            case 'value':
+                if ($attribute->nodeValue == "true") {
+                    $this->_value = true;
+                } else if ($attribute->nodeValue == "false") {
+                    $this->_value = false;
+                } else {
+                    throw new Zend_Gdata_App_InvalidArgumentException("Expected 'true' or 'false' for gCal:selected#value.");
+                }
+                break;
+            default:
+                parent::takeAttributeFromDOM($attribute);
         }
     }
 
@@ -110,7 +118,8 @@ class Zend_Gdata_Calendar_Extension_SendEventNotifications extends Zend_Gdata_Ex
     /**
      * Set the value for this element's Value attribute.
      *
-     * @param string $value The desired value for this attribute.
+     * @param string $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Extension_SendEventNotifications The element being modified.
      */
     public function setValue($value)
@@ -127,6 +136,5 @@ class Zend_Gdata_Calendar_Extension_SendEventNotifications extends Zend_Gdata_Ex
     {
         return $this->getValue();
     }
-
 }
 

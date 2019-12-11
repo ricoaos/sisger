@@ -20,18 +20,19 @@
  * @version    $Id$
  */
 
-/** Zend_Pdf_Action */
+/**
+ * Zend_Pdf_Action
+ */
 require_once 'Zend/Pdf/Action.php';
-
 
 /**
  * PDF 'Play a sound' action representation class
  * PDF 1.2+ feature
  *
- * @package    Zend_Pdf
+ * @package Zend_Pdf
  * @subpackage Actions
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Pdf_Action_Sound extends Zend_Pdf_Action
 {

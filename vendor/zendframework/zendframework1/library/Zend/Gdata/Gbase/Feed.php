@@ -22,11 +22,13 @@
  */
 
 /**
+ *
  * @see Zend_Exception
  */
 require_once 'Zend/Exception.php';
 
 /**
+ *
  * @see Zend_Gdata_Feed
  */
 require_once 'Zend/Gdata/Feed.php';
@@ -35,27 +37,25 @@ require_once 'Zend/Gdata/Feed.php';
  * Base class for the Google Base Feed
  *
  * @link http://code.google.com/apis/base/
- *
- * @category   Zend
- * @package    Zend_Gdata
+ *      
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Gbase
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Gbase_Feed extends Zend_Gdata_Feed
 {
+
     /**
      * Create a new instance.
      *
-     * @param DOMElement $element (optional) DOMElement from which this
-     *          object should be constructed.
+     * @param DOMElement $element
+     *            (optional) DOMElement from which this
+     *            object should be constructed.
      */
     public function __construct($element = null)
     {
-        throw new Zend_Exception(
-            'Google Base API has been discontinued by Google and was removed'
-            . ' from Zend Framework in 1.12.0.  For more information see: '
-            . 'http://googlemerchantblog.blogspot.ca/2010/12/new-shopping-apis-and-deprecation-of.html'
-        );    
+        throw new Zend_Exception('Google Base API has been discontinued by Google and was removed' . ' from Zend Framework in 1.12.0.  For more information see: ' . 'http://googlemerchantblog.blogspot.ca/2010/12/new-shopping-apis-and-deprecation-of.html');
     }
 }

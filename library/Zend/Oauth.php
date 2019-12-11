@@ -19,25 +19,36 @@
  * @version    $Id: Oauth.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-/** Zend_Http_Client */
+/**
+ * Zend_Http_Client
+ */
 require_once 'Zend/Http/Client.php';
 
 /**
- * @category   Zend
- * @package    Zend_Oauth
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Oauth
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Oauth
 {
-    const REQUEST_SCHEME_HEADER      = 'header';
-    const REQUEST_SCHEME_POSTBODY    = 'postbody';
+
+    const REQUEST_SCHEME_HEADER = 'header';
+
+    const REQUEST_SCHEME_POSTBODY = 'postbody';
+
     const REQUEST_SCHEME_QUERYSTRING = 'querystring';
-    const GET                        = 'GET';
-    const POST                       = 'POST';
-    const PUT                        = 'PUT';
-    const DELETE                     = 'DELETE';
-    const HEAD                       = 'HEAD';
+
+    const GET = 'GET';
+
+    const POST = 'POST';
+
+    const PUT = 'PUT';
+
+    const DELETE = 'DELETE';
+
+    const HEAD = 'HEAD';
 
     /**
      * Singleton instance if required of the HTTP client
@@ -50,7 +61,7 @@ class Zend_Oauth
      * Allows the external environment to make Zend_Oauth use a specific
      * Client instance.
      *
-     * @param Zend_Http_Client $httpClient
+     * @param Zend_Http_Client $httpClient            
      * @return void
      */
     public static function setHttpClient(Zend_Http_Client $httpClient)
@@ -59,7 +70,8 @@ class Zend_Oauth
     }
 
     /**
-     * Return the singleton instance of the HTTP Client. Note that
+     * Return the singleton instance of the HTTP Client.
+     * Note that
      * the instance is reset and cleared of previous parameters and
      * Authorization header values.
      *
@@ -67,8 +79,8 @@ class Zend_Oauth
      */
     public static function getHttpClient()
     {
-        if (!isset(self::$httpClient)) {
-            self::$httpClient = new Zend_Http_Client;
+        if (! isset(self::$httpClient)) {
+            self::$httpClient = new Zend_Http_Client();
         } else {
             self::$httpClient->setHeaders('Authorization', null);
             self::$httpClient->resetParameters();

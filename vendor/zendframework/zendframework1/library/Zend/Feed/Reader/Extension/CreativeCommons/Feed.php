@@ -20,19 +20,21 @@
  */
 
 /**
+ *
  * @see Zend_Feed_Reader_Extension_FeedAbstract
  */
 require_once 'Zend/Feed/Reader/Extension/FeedAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Feed_Reader
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Feed_Reader
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Feed_Reader_Extension_CreativeCommons_Feed
-    extends Zend_Feed_Reader_Extension_FeedAbstract
+class Zend_Feed_Reader_Extension_CreativeCommons_Feed extends Zend_Feed_Reader_Extension_FeedAbstract
 {
+
     /**
      * Get the entry license
      *
@@ -41,11 +43,11 @@ class Zend_Feed_Reader_Extension_CreativeCommons_Feed
     public function getLicense($index = 0)
     {
         $licenses = $this->getLicenses();
-
+        
         if (isset($licenses[$index])) {
             return $licenses[$index];
         }
-
+        
         return null;
     }
 
@@ -60,20 +62,20 @@ class Zend_Feed_Reader_Extension_CreativeCommons_Feed
         if (array_key_exists($name, $this->_data)) {
             return $this->_data[$name];
         }
-
+        
         $licenses = array();
         $list = $this->_xpath->evaluate('channel/cc:license');
-
+        
         if ($list->length) {
             foreach ($list as $license) {
                 $licenses[] = $license->nodeValue;
             }
-
+            
             $licenses = array_unique($licenses);
         }
-
+        
         $this->_data[$name] = $licenses;
-
+        
         return $this->_data[$name];
     }
 

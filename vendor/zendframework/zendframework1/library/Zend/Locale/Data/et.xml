@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="et"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="et" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -1001,10 +1000,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="deva" key="numbers">Devanagari numbrid</type>
 			<type type="dictionary" key="collation">Sõnastiku sortimisjärjestus</type>
 			<type type="ducet" key="collation">Unicode'i sortimise vaikejärjestus</type>
-			<type type="eor" key="collation" draft="unconfirmed">sortimisjärjestuse mitmekeelne Euroopa dokumendid</type>
+			<type type="eor" key="collation" draft="unconfirmed">sortimisjärjestuse
+				mitmekeelne Euroopa dokumendid</type>
 			<type type="ethi" key="numbers">Etioopia numbrid</type>
 			<type type="ethiopic" key="calendar">Etioopia kalender</type>
-			<type type="ethiopic-amete-alem" key="calendar">Etioopia amete alemi kalender</type>
+			<type type="ethiopic-amete-alem" key="calendar">Etioopia amete alemi
+				kalender</type>
 			<type type="finance" key="numbers">Finantsarvud</type>
 			<type type="fullwide" key="numbers">Täislaiusega numbrid</type>
 			<type type="gb2312han" key="collation">hiina lihtsustatud - GB2312</type>
@@ -1018,7 +1019,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="hans" key="numbers">Lihtsustatud hiina keele numbrid</type>
 			<type type="hansfin" key="numbers">Lihtsustatud hiina keele finantsnumbrid</type>
 			<type type="hant" key="numbers">Traditsioonilise hiina keele numbrid</type>
-			<type type="hantfin" key="numbers">Traditsioonilise hiina keele finantsnumbrid</type>
+			<type type="hantfin" key="numbers">Traditsioonilise hiina keele
+				finantsnumbrid</type>
 			<type type="hebr" key="numbers">Heebrea numbrid</type>
 			<type type="hebrew" key="calendar">juudi kalender</type>
 			<type type="identical" key="colStrength">Sordi kõik</type>
@@ -1050,7 +1052,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="phonetic" key="collation">Foneetiline sortimisjärjestus</type>
 			<type type="pinyin" key="collation">hiina lihtsustatud - pinyin järjekorras</type>
 			<type type="primary" key="colStrength">Ainult põhitähestiku alusel sortimine</type>
-			<type type="quaternary" key="colStrength">Rõhumärkide/algustähe/laiuse/kana-süsteemi alusel sortimine</type>
+			<type type="quaternary" key="colStrength">Rõhumärkide/algustähe/laiuse/kana-süsteemi
+				alusel sortimine</type>
 			<type type="reformed" key="collation">Reformitud sortimisjärjestus</type>
 			<type type="roc" key="calendar">Hiina Vabariigi kalender</type>
 			<type type="roman" key="numbers">Rooma numbrid</type>
@@ -1064,7 +1067,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">Tamili numbrid</type>
 			<type type="tamldec" key="numbers">Tamili numbrid</type>
 			<type type="telu" key="numbers">Telugu numbrid</type>
-			<type type="tertiary" key="colStrength">Rõhumärkide/algustähe/laiuse alusel sortimine</type>
+			<type type="tertiary" key="colStrength">Rõhumärkide/algustähe/laiuse alusel
+				sortimine</type>
 			<type type="thai" key="numbers">Tai numbrid</type>
 			<type type="tibt" key="numbers">Tiibeti numbrid</type>
 			<type type="traditional" key="collation">traditsiooniline</type>
@@ -1102,9 +1106,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s š z ž t u v w õ ä ö ü x y]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à â å ā æ ç é è ê ë ē í ì î ï ī ñ ó ò ŏ ô ø ō œ ú ù û ū]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S Š Z Ž T U V Õ Ä Ö Ü X Y]</exemplarCharacters>
+		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s š z ž t u v
+			w õ ä ö ü x y]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à â å ā æ ç é è ê ë ē í
+			ì î ï ī ñ ó ò ŏ ô ø ō œ ú ù û ū]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S Š Z Ž T U V Õ Ä Ö Ü X Y]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0} … {1}</ellipsis>
@@ -1288,7 +1295,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d. MMM–E, d. MMM y G</greatestDifference>
 							<greatestDifference id="M">E, d. MMM–E, d. MMM y G</greatestDifference>
-							<greatestDifference id="y">E, d. MMM y–E, d. MMM y G</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y–E, d. MMM y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y G</greatestDifference>

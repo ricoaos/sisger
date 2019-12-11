@@ -21,47 +21,50 @@
  */
 
 /**
+ *
  * @see Zend_Service_Ebay_Finding_Abstract
  */
 require_once 'Zend/Service/Ebay/Finding/Abstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Ebay
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @uses       Zend_Service_Ebay_Finding_Abstract
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @uses Zend_Service_Ebay_Finding_Abstract
  */
 abstract class Zend_Service_Ebay_Finding_Response_Abstract extends Zend_Service_Ebay_Finding_Abstract
 {
+
     /**
      * Indicates whether or not errors or warnings were generated during the
      * processing of the request.
      *
      * Applicable values:
      *
-     *     Failure
-     *     eBay encountered a fatal error during the processing of the request,
-     *     causing the request to fail. When a serious application-level error
-     *     occurs, the error is returned instead of the business data.
+     * Failure
+     * eBay encountered a fatal error during the processing of the request,
+     * causing the request to fail. When a serious application-level error
+     * occurs, the error is returned instead of the business data.
      *
-     *     PartialFailure
-     *     eBay successfully processed the request, but one or more non-fatal
-     *     errors occurred during the processing. For best results, requests
-     *     should return without warning messages. Inspect the message details
-     *     and resolve any problems before resubmitting the request.
+     * PartialFailure
+     * eBay successfully processed the request, but one or more non-fatal
+     * errors occurred during the processing. For best results, requests
+     * should return without warning messages. Inspect the message details
+     * and resolve any problems before resubmitting the request.
      *
-     *     Success
-     *     eBay successfully processed the request and the business data is
-     *     returned in the response. Note that it is possible for a response to
-     *     return Success, but still not contain the expected data in the result.
+     * Success
+     * eBay successfully processed the request and the business data is
+     * returned in the response. Note that it is possible for a response to
+     * return Success, but still not contain the expected data in the result.
      *
-     *     Warning
-     *     The request was successfully processed, but eBay encountered a
-     *     non-fatal error during the processing. For best results, requests
-     *     should return without warnings. Inspect the warning details and
-     *     resolve the problem before resubmitting the request.
+     * Warning
+     * The request was successfully processed, but eBay encountered a
+     * non-fatal error during the processing. For best results, requests
+     * should return without warnings. Inspect the warning details and
+     * resolve the problem before resubmitting the request.
      *
      * @var string
      */
@@ -101,30 +104,34 @@ abstract class Zend_Service_Ebay_Finding_Response_Abstract extends Zend_Service_
     public $version;
 
     /**
+     *
      * @var string
      */
     protected $_operation;
 
     /**
+     *
      * @var array
      */
     protected $_options = array();
 
     /**
+     *
      * @return void
      */
     protected function _init()
     {
         parent::_init();
         $ns = Zend_Service_Ebay_Finding::XMLNS_FINDING;
-
-        $this->ack       = $this->_query(".//$ns:ack[1]", 'string');
+        
+        $this->ack = $this->_query(".//$ns:ack[1]", 'string');
         $this->timestamp = $this->_query(".//$ns:timestamp[1]", 'string');
-        $this->version   = $this->_query(".//$ns:version[1]", 'string');
-
+        $this->version = $this->_query(".//$ns:version[1]", 'string');
+        
         $node = $this->_xPath->query(".//$ns:errorMessage[1]", $this->_dom)->item(0);
         if ($node) {
             /**
+             *
              * @see Zend_Service_Ebay_Finding_Error_Message
              */
             require_once 'Zend/Service/Ebay/Finding/Error/Message.php';
@@ -133,7 +140,8 @@ abstract class Zend_Service_Ebay_Finding_Response_Abstract extends Zend_Service_
     }
 
     /**
-     * @param  string $operation
+     *
+     * @param string $operation            
      * @return Zend_Service_Ebay_Finding_Response_Abstract Provides a fluent interface
      */
     public function setOperation($operation)
@@ -143,6 +151,7 @@ abstract class Zend_Service_Ebay_Finding_Response_Abstract extends Zend_Service_
     }
 
     /**
+     *
      * @return string
      */
     public function getOperation()
@@ -151,8 +160,9 @@ abstract class Zend_Service_Ebay_Finding_Response_Abstract extends Zend_Service_
     }
 
     /**
-     * @param  string|Zend_Config|array $name
-     * @param  mixed                    $value
+     *
+     * @param string|Zend_Config|array $name            
+     * @param mixed $value            
      * @return Zend_Service_Ebay_Finding_Response_Abstract Provides a fluent interface
      */
     public function setOption($name, $value = null)
@@ -169,7 +179,8 @@ abstract class Zend_Service_Ebay_Finding_Response_Abstract extends Zend_Service_
     }
 
     /**
-     * @param  string $name
+     *
+     * @param string $name            
      * @return mixed
      */
     public function getOption($name = null)

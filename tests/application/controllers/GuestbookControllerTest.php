@@ -1,5 +1,4 @@
 <?php
-
 require_once 'PHPUnit/Framework/TestCase.php';
 
 class GuestbookControllerTest extends PHPUnit_Framework_TestCase
@@ -14,7 +13,5 @@ class GuestbookControllerTest extends PHPUnit_Framework_TestCase
     {
         /* Tear Down Routine */
     }
-
-
 }
 

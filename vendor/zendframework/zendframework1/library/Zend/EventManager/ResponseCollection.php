@@ -17,10 +17,11 @@
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-
 if (version_compare(PHP_VERSION, '5.3.0', '<')) {
+
     class SplStack implements Iterator, ArrayAccess, Countable
     {
+
         /**
          * Delete items during iteration
          */
@@ -33,27 +34,28 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 
         /**
          * Mode used when iterating
+         * 
          * @var int
          */
         protected $mode = self::IT_MODE_KEEP;
 
         /**
-         * Count of elements in the stack 
-         * 
+         * Count of elements in the stack
+         *
          * @var int
          */
         protected $count = 0;
 
         /**
          * Data represented by this stack
-         * 
+         *
          * @var array
          */
         protected $data = array();
 
         /**
          * Sorted stack of values
-         * 
+         *
          * @var false|array
          */
         protected $stack = false;
@@ -62,9 +64,9 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
          * Set the iterator mode
          *
          * Must be set to one of IT_MODE_DELETE or IT_MODE_KEEP
-         * 
-         * @todo   Currently, IteratorMode is ignored, as we use the default (keep); should this be implemented?
-         * @param  int $mode 
+         *
+         * @todo Currently, IteratorMode is ignored, as we use the default (keep); should this be implemented?
+         * @param int $mode            
          * @return void
          * @throws InvalidArgumentException
          */
@@ -72,19 +74,19 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
         {
             $expected = array(
                 self::IT_MODE_DELETE => true,
-                self::IT_MODE_KEEP => true,
+                self::IT_MODE_KEEP => true
             );
-
-            if (!isset($expected[$mode])) {
+            
+            if (! isset($expected[$mode])) {
                 throw new InvalidArgumentException(sprintf('Invalid iterator mode specified ("%s")', $mode));
             }
-
+            
             $this->mode = $mode;
         }
 
         /**
          * Return last element in the stack
-         * 
+         *
          * @return mixed
          */
         public function bottom()
@@ -97,7 +99,7 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 
         /**
          * Countable: return count of items in the stack
-         * 
+         *
          * @return int
          */
         public function count()
@@ -107,12 +109,12 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 
         /**
          * Iterator: return current item in the stack
-         * 
+         *
          * @return mixed
          */
         public function current()
         {
-            if (!$this->stack) {
+            if (! $this->stack) {
                 $this->rewind();
             }
             return current($this->stack);
@@ -120,7 +122,7 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 
         /**
          * Get iteration mode
-         * 
+         *
          * @return int
          */
         public function getIteratorMode()
@@ -145,7 +147,7 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
          */
         public function key()
         {
-            if (!$this->stack) {
+            if (! $this->stack) {
                 $this->rewind();
             }
             return key($this->stack);
@@ -153,12 +155,12 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 
         /**
          * Iterator: advance pointer to next item in the stack
-         * 
+         *
          * @return void
          */
         public function next()
         {
-            if (!$this->stack) {
+            if (! $this->stack) {
                 $this->rewind();
             }
             return next($this->stack);
@@ -166,8 +168,8 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 
         /**
          * ArrayAccess: does an item exist at the specified offset?
-         * 
-         * @param  mixed $index 
+         *
+         * @param mixed $index            
          * @return bool
          */
         public function offsetExists($index)
@@ -177,14 +179,14 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 
         /**
          * ArrayAccess: get the item at the specified offset
-         * 
-         * @param  mixed $index 
+         *
+         * @param mixed $index            
          * @return mixed
          * @throws OutOfRangeException
          */
         public function offsetGet($index)
         {
-            if (!$this->offsetExists($index)) {
+            if (! $this->offsetExists($index)) {
                 throw OutOfRangeException(sprintf('Invalid index ("%s") specified', $index));
             }
             return $this->data[$index];
@@ -192,33 +194,33 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 
         /**
          * ArrayAccess: add an item at the specified offset
-         * 
-         * @param  mixed $index 
-         * @param  mixed $newval 
+         *
+         * @param mixed $index            
+         * @param mixed $newval            
          * @return void
          */
         public function offsetSet($index, $newval)
         {
             $this->data[$index] = $newval;
             $this->stack = false;
-            $this->count++;
+            $this->count ++;
         }
 
         /**
          * ArrayAccess: unset the item at the specified offset
-         * 
-         * @param  mixed $index 
+         *
+         * @param mixed $index            
          * @return void
          * @throws OutOfRangeException
          */
         public function offsetUnset($index)
         {
-            if (!$this->offsetExists($index)) {
+            if (! $this->offsetExists($index)) {
                 throw OutOfRangeException(sprintf('Invalid index ("%s") specified', $index));
             }
             unset($this->data[$index]);
             $this->stack = false;
-            $this->count--;
+            $this->count --;
         }
 
         /**
@@ -229,38 +231,37 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
          */
         public function pop()
         {
-            $val         = array_pop($this->data);
+            $val = array_pop($this->data);
             $this->stack = false;
-            $this->count--;
+            $this->count --;
             return $val;
         }
 
         /**
          * Move the iterator to the previous node
          *
-         * @todo   Does this need to be implemented?
+         * @todo Does this need to be implemented?
          * @return void
          */
         public function prev()
-        {
-        }
+        {}
 
         /**
          * Push an element to the list
-         * 
-         * @param  mixed $value 
+         *
+         * @param mixed $value            
          * @return void
          */
         public function push($value)
         {
             array_push($this->data, $value);
-            $this->count++;
-            $this->stack  = false;
+            $this->count ++;
+            $this->stack = false;
         }
 
         /**
          * Iterator: rewind to beginning of stack
-         * 
+         *
          * @return void
          */
         public function rewind()
@@ -289,15 +290,15 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
          */
         public function shift()
         {
-            $val         = array_shift($this->data);
+            $val = array_shift($this->data);
             $this->stack = false;
-            $this->count--;
+            $this->count --;
             return $val;
         }
 
         /**
          * Peek at the top node of the stack
-         * 
+         *
          * @return mixed
          */
         public function top()
@@ -311,28 +312,29 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
         /**
          * Unserialize the storage
          *
-         * @param  string
+         * @param
+         *            string
          * @return void
          */
         public function unserialize($serialized)
         {
-            $this->data  = unserialize($serialized);
+            $this->data = unserialize($serialized);
             $this->stack = false;
         }
 
         /**
          * Unshift a node onto the beginning of the list
          *
-         * @param  mixed $value
+         * @param mixed $value            
          * @return void
          */
         public function unshift($value)
         {
             array_unshift($this->data, $value);
-            $this->count++;
-            $this->stack  = false;
+            $this->count ++;
+            $this->stack = false;
         }
-        
+
         /**
          * Iterator: is the current pointer valid?
          *
@@ -350,18 +352,19 @@ if (version_compare(PHP_VERSION, '5.3.0', '<')) {
 /**
  * Collection of signal handler return values
  *
- * @category   Zend
- * @package    Zend_EventManager
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_EventManager
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_EventManager_ResponseCollection extends SplStack 
+class Zend_EventManager_ResponseCollection extends SplStack
 {
+
     protected $stopped = false;
 
     /**
      * Did the last response provided trigger a short circuit of the stack?
-     * 
+     *
      * @return bool
      */
     public function stopped()
@@ -371,8 +374,8 @@ class Zend_EventManager_ResponseCollection extends SplStack
 
     /**
      * Mark the collection as stopped (or its opposite)
-     * 
-     * @param  bool $flag 
+     *
+     * @param bool $flag            
      * @return Zend_EventManager_ResponseCollection
      */
     public function setStopped($flag)
@@ -410,7 +413,8 @@ class Zend_EventManager_ResponseCollection extends SplStack
     /**
      * Check if any of the responses match the given value.
      *
-     * @param  mixed $value The value to look for among responses
+     * @param mixed $value
+     *            The value to look for among responses
      */
     public function contains($value)
     {

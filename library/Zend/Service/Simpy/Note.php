@@ -21,16 +21,17 @@
  * @version    $Id: Note.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Simpy
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_Simpy_Note
 {
+
     /**
      * Private access type
      *
@@ -43,7 +44,7 @@ class Zend_Service_Simpy_Note
      *
      * @var string
      */
-    const ACCESSTYPE_PUBLIC  = 'public';
+    const ACCESSTYPE_PUBLIC = 'public';
 
     /**
      * Access type assigned to the note
@@ -104,29 +105,30 @@ class Zend_Service_Simpy_Note
     /**
      * Constructor to initialize the object with data
      *
-     * @param  DOMNode $node Individual <link> node from a parsed response from
-     *                       a GetLinks operation
+     * @param DOMNode $node
+     *            Individual <link> node from a parsed response from
+     *            a GetLinks operation
      * @return void
      */
     public function __construct($node)
     {
         $this->_accessType = $node->attributes->getNamedItem('accessType')->nodeValue;
-
+        
         $doc = new DOMDocument();
         $doc->appendChild($doc->importNode($node, true));
         $xpath = new DOMXPath($doc);
-
+        
         $this->_uri = $xpath->evaluate('/note/uri')->item(0)->nodeValue;
         $this->_id = substr($this->_uri, strrpos($this->_uri, '=') + 1);
         $this->_modDate = trim($xpath->evaluate('/note/modDate')->item(0)->nodeValue);
         $this->_addDate = trim($xpath->evaluate('/note/addDate')->item(0)->nodeValue);
         $this->_title = $xpath->evaluate('/note/title')->item(0)->nodeValue;
         $this->_description = $xpath->evaluate('/note/description')->item(0)->nodeValue;
-
+        
         $list = $xpath->query('/note/tags/tag');
         $this->_tags = array();
-
-        for ($x = 0; $x < $list->length; $x++) {
+        
+        for ($x = 0; $x < $list->length; $x ++) {
             $this->_tags[$x] = $list->item($x)->nodeValue;
         }
     }
@@ -134,8 +136,8 @@ class Zend_Service_Simpy_Note
     /**
      * Returns the access type assigned to the note
      *
-     * @see    ACCESSTYPE_PRIVATE
-     * @see    ACCESSTYPE_PUBLIC
+     * @see ACCESSTYPE_PRIVATE
+     * @see ACCESSTYPE_PUBLIC
      * @return string
      */
     public function getAccessType()

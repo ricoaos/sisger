@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="da"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="da" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -845,7 +844,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IL">Israel</territory>
 			<territory type="IM">Isle of Man</territory>
 			<territory type="IN">Indien</territory>
-			<territory type="IO">Det britiske territorium i Det Indiske Ocean</territory>
+			<territory type="IO">Det britiske territorium i Det Indiske
+				Ocean</territory>
 			<territory type="IQ">Irak</territory>
 			<territory type="IR">Iran</territory>
 			<territory type="IS">Island</territory>
@@ -884,7 +884,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MG">Madagaskar</territory>
 			<territory type="MH">Marshalløerne</territory>
 			<territory type="MK">Makedonien</territory>
-			<territory type="MK" alt="variant">Makedonien (Den Tidligere Jugoslaviske Republik Makedonien)</territory>
+			<territory type="MK" alt="variant">Makedonien (Den Tidligere
+				Jugoslaviske Republik Makedonien)</territory>
 			<territory type="ML">Mali</territory>
 			<territory type="MM">Myanmar (Burma)</territory>
 			<territory type="MN">Mongoliet</territory>
@@ -960,7 +961,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TA">Tristan da Cunha</territory>
 			<territory type="TC">Turks- og Caicosøerne</territory>
 			<territory type="TD">Tchad</territory>
-			<territory type="TF">De franske besiddelser i Det Sydlige Indiske Ocean</territory>
+			<territory type="TF">De franske besiddelser i Det Sydlige
+				Indiske Ocean</territory>
 			<territory type="TG">Togo</territory>
 			<territory type="TH">Thailand</territory>
 			<territory type="TJ">Tadsjikistan</territory>
@@ -1010,7 +1012,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="ALUKU" draft="contributed">aluku-dialekt</variant>
 			<variant type="AREVELA">østarmensk</variant>
 			<variant type="AREVMDA" draft="contributed">vestarmensk</variant>
-			<variant type="BAKU1926" draft="contributed">forenet tyrkisk-latinsk alfabet</variant>
+			<variant type="BAKU1926" draft="contributed">forenet tyrkisk-latinsk
+				alfabet</variant>
 			<variant type="BAUDDHA" draft="contributed">bauddha</variant>
 			<variant type="BISCAYAN" draft="contributed">biscayisk</variant>
 			<variant type="BISKE" draft="contributed">San Giorgio-/Bila-dialekt</variant>
@@ -1063,8 +1066,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="calendar">Kalender</key>
 			<key type="colAlternate" draft="contributed">Ignorer symboler under sortering</key>
 			<key type="colBackwards" draft="contributed">Omvendt sortering efter accenter</key>
-			<key type="colCaseFirst" draft="contributed">Sortering efter store/små bogstaver</key>
-			<key type="colCaseLevel" draft="contributed">Sortering med forskel på små og store bogstaver</key>
+			<key type="colCaseFirst" draft="contributed">Sortering efter store/små
+				bogstaver</key>
+			<key type="colCaseLevel" draft="contributed">Sortering med forskel på små og
+				store bogstaver</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Sortering efter kana</key>
 			<key type="collation">Sortering</key>
 			<key type="colNormalization" draft="contributed">Normaliseret sortering</key>
@@ -1084,7 +1089,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armnlow" key="numbers">Armenske tal i små bogstaver</type>
 			<type type="bali" key="numbers" draft="contributed">Balinesiske tal</type>
 			<type type="beng" key="numbers">Bengalske tal</type>
-			<type type="big5han" key="collation">sorteringsrækkefølge uforkortet kinesisk - Big5</type>
+			<type type="big5han" key="collation">sorteringsrækkefølge uforkortet
+				kinesisk - Big5</type>
 			<type type="brah" key="numbers" draft="contributed">Brahmi-tal</type>
 			<type type="buddhist" key="calendar">buddhistisk kalender</type>
 			<type type="cakm" key="numbers" draft="contributed">Chakma-tal</type>
@@ -1095,13 +1101,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="deva" key="numbers">Devanagariske tal</type>
 			<type type="dictionary" key="collation">sorteringsrækkefølge for ordbog</type>
 			<type type="ducet" key="collation">Unicode-standardsortering</type>
-			<type type="eor" key="collation" draft="contributed">europæisk sorteringsrækkefølge</type>
+			<type type="eor" key="collation" draft="contributed">europæisk
+				sorteringsrækkefølge</type>
 			<type type="ethi" key="numbers">Etiopiske tal</type>
 			<type type="ethiopic" key="calendar">etiopisk kalender</type>
-			<type type="ethiopic-amete-alem" key="calendar">etiopisk amete-alem-kalender</type>
+			<type type="ethiopic-amete-alem" key="calendar">etiopisk
+				amete-alem-kalender</type>
 			<type type="finance" key="numbers" draft="contributed">Finansielle tal</type>
 			<type type="fullwide" key="numbers">Tal i fuld bredde</type>
-			<type type="gb2312han" key="collation">sorteringsrækkefølge forkortet kinesisk - GB2312</type>
+			<type type="gb2312han" key="collation">sorteringsrækkefølge forkortet
+				kinesisk - GB2312</type>
 			<type type="geor" key="numbers">Georgiske tal</type>
 			<type type="gregorian" key="calendar">gregoriansk kalender</type>
 			<type type="grek" key="numbers">Græske tal</type>
@@ -1119,9 +1128,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="indian" key="calendar">indisk nationalkalender</type>
 			<type type="islamic" key="calendar">islamisk kalender</type>
 			<type type="islamic-civil" key="calendar">verdslig islamisk kalender</type>
-			<type type="islamic-rgsa" key="calendar" draft="contributed">islamisk kalender (Saudi-Arabien, observation)</type>
-			<type type="islamic-tbla" key="calendar" draft="contributed">islamisk kalender (tabellarisk, astronomisk epoke)</type>
-			<type type="islamic-umalqura" key="calendar" draft="contributed">islamisk kalender (Umm al-Qura)</type>
+			<type type="islamic-rgsa" key="calendar" draft="contributed">islamisk kalender
+				(Saudi-Arabien, observation)</type>
+			<type type="islamic-tbla" key="calendar" draft="contributed">islamisk kalender
+				(tabellarisk, astronomisk epoke)</type>
+			<type type="islamic-umalqura" key="calendar" draft="contributed">islamisk
+				kalender (Umm al-Qura)</type>
 			<type type="iso8601" key="calendar" draft="contributed">ISO-8601-kalender</type>
 			<type type="japanese" key="calendar">japansk kalender</type>
 			<type type="java" key="numbers" draft="contributed">Javanesiske tal</type>
@@ -1136,7 +1148,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="latn" key="numbers">Arabertal</type>
 			<type type="lepc" key="numbers" draft="contributed">Lepcha-tal</type>
 			<type type="limb" key="numbers" draft="contributed">Limbu-tal</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Sortér med små bogstaver først</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Sortér med små
+				bogstaver først</type>
 			<type type="mlym" key="numbers">Malayalamske tal</type>
 			<type type="mong" key="numbers" draft="contributed">Mongolske tal</type>
 			<type type="mtei" key="numbers" draft="contributed">Meetei Mayek-tal</type>
@@ -1144,31 +1157,44 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="mymrshan" key="numbers" draft="contributed">Myanmar Shan-tal</type>
 			<type type="native" key="numbers" draft="contributed">Nationale cifre</type>
 			<type type="nkoo" key="numbers" draft="contributed">N'Ko-tal</type>
-			<type type="no" key="colBackwards" draft="contributed">Sortér efter accenter i normal rækkefølge</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Sortér efter store og små bogstaver i almindelig rækkefølge</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Sortér uden forskel på store og små bogstaver</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Sortér kana separat</type>
-			<type type="no" key="colNormalization" draft="contributed">Sortér uden normalisering</type>
-			<type type="no" key="colNumeric" draft="contributed">Sortér efter individuelle cifre</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Sortér efter symboler</type>
+			<type type="no" key="colBackwards" draft="contributed">Sortér efter accenter i
+				normal rækkefølge</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Sortér efter store og
+				små bogstaver i almindelig rækkefølge</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Sortér uden forskel på
+				store og små bogstaver</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Sortér kana
+				separat</type>
+			<type type="no" key="colNormalization" draft="contributed">Sortér uden
+				normalisering</type>
+			<type type="no" key="colNumeric" draft="contributed">Sortér efter individuelle
+				cifre</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Sortér efter
+				symboler</type>
 			<type type="olck" key="numbers" draft="contributed">Ol Chiki-tal</type>
 			<type type="orya" key="numbers">Oriya tal</type>
 			<type type="osma" key="numbers" draft="contributed">Osmanya-tal</type>
 			<type type="persian" key="calendar">persisk kalender</type>
 			<type type="phonebook" key="collation">sorteringsrækkefølge i telefonbøger</type>
-			<type type="phonetic" key="collation" draft="contributed">fonetisk sorteringsrækkefølge</type>
+			<type type="phonetic" key="collation" draft="contributed">fonetisk
+				sorteringsrækkefølge</type>
 			<type type="pinyin" key="collation">pinyin-baseret sorteringsrækkefølge</type>
-			<type type="primary" key="colStrength" draft="contributed">Sortér kun efter basisbogstaver</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Sortér efter accenter/små og store bogstaver/bredde/kana</type>
+			<type type="primary" key="colStrength" draft="contributed">Sortér kun efter
+				basisbogstaver</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Sortér efter
+				accenter/små og store bogstaver/bredde/kana</type>
 			<type type="reformed" key="collation">ny sorteringsrækkefølge</type>
 			<type type="roc" key="calendar">kalender for Republikken Kina</type>
 			<type type="roman" key="numbers">Romertal</type>
 			<type type="romanlow" key="numbers">Romertal i små bogstaver</type>
 			<type type="saur" key="numbers" draft="contributed">Saurashtra-tal</type>
 			<type type="search" key="collation">generel søgning</type>
-			<type type="searchjl" key="collation" draft="contributed">sortér efter den første konsonant i hangul</type>
-			<type type="secondary" key="colStrength" draft="contributed">Sortér efter accenter</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Sortér, og ignorer symboler</type>
+			<type type="searchjl" key="collation" draft="contributed">sortér efter den
+				første konsonant i hangul</type>
+			<type type="secondary" key="colStrength" draft="contributed">Sortér efter
+				accenter</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Sortér, og ignorer
+				symboler</type>
 			<type type="shrd" key="numbers" draft="contributed">Sharada-tal</type>
 			<type type="sora" key="numbers" draft="contributed">Sora Sompeng-tal</type>
 			<type type="standard" key="collation" draft="contributed">standardsorteringsrækkefølge</type>
@@ -1179,18 +1205,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">Traditionelle tamilske tal</type>
 			<type type="tamldec" key="numbers">Tamilske tal</type>
 			<type type="telu" key="numbers">Telugu tal</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Sortér efter accenter/store og små bogstaver/bredde</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Sortér efter
+				accenter/store og små bogstaver/bredde</type>
 			<type type="thai" key="numbers">Thailandske tal</type>
 			<type type="tibt" key="numbers">Tibetanske tal</type>
 			<type type="traditional" key="collation">traditionel sorteringsrækkefølge</type>
 			<type type="traditional" key="numbers" draft="contributed">Traditionelle tal</type>
 			<type type="unihan" key="collation">sortering efter streger i rodtegn</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Sortér med store bogstaver først</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Sortér med store
+				bogstaver først</type>
 			<type type="vaii" key="numbers" draft="contributed">Vai-tal</type>
-			<type type="yes" key="colBackwards" draft="contributed">Sortér efter accenter i omvendt rækkefølge</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Sortér med skelnen mellem store og små bogstaver</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Sortér kana med forskel på varianter</type>
-			<type type="yes" key="colNormalization" draft="contributed">Sortér Unicode efter første normalisering</type>
+			<type type="yes" key="colBackwards" draft="contributed">Sortér efter accenter
+				i omvendt rækkefølge</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Sortér med skelnen
+				mellem store og små bogstaver</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Sortér kana
+				med forskel på varianter</type>
+			<type type="yes" key="colNormalization" draft="contributed">Sortér Unicode
+				efter første normalisering</type>
 			<type type="yes" key="colNumeric" draft="contributed">Sortér tal numerisk</type>
 			<type type="zhuyin" key="collation" draft="contributed">zhuyin-sorteringsrækkefølge</type>
 		</types>
@@ -1208,8 +1240,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</transformNames>
 		<measurementSystemNames>
 			<measurementSystemName type="metric">Det metriske system</measurementSystemName>
-			<measurementSystemName type="UK">De britiske målesystemer</measurementSystemName>
-			<measurementSystemName type="US">De amerikanske målesystemer</measurementSystemName>
+			<measurementSystemName type="UK">De britiske
+				målesystemer</measurementSystemName>
+			<measurementSystemName type="US">De amerikanske
+				målesystemer</measurementSystemName>
 		</measurementSystemNames>
 		<codePatterns>
 			<codePattern type="language">Sprog: {0}</codePattern>
@@ -1223,10 +1257,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s t u v w x y z æ ø å]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à â ç é è ê ë í î ï ñ ó ô ú ù û ÿ ü ä ǿ ö œ]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ′ ″]</exemplarCharacters>
+		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s t u v w x y
+			z æ ø å]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à â ç é è ê ë í î ï ñ ó
+			ô ú ù û ÿ ü ä ǿ ö œ]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S T U V W X Y Z Æ Ø Å]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – , ; \: ! ? . … ' ‘
+			’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ′ ″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1382,8 +1420,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M">d. MMM – d. MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d">E 'den' d. – E 'den' d. MMM</greatestDifference>
-							<greatestDifference id="M">E 'den' d. MMM – E 'den' d. MMM</greatestDifference>
+							<greatestDifference id="d">E 'den' d. – E 'den' d.
+								MMM</greatestDifference>
+							<greatestDifference id="M">E 'den' d. MMM – E
+								'den' d. MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y–y G</greatestDifference>
@@ -1412,9 +1452,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">d. MMM y – d. MMM y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E 'den' d. – E 'den' d. MMM y G</greatestDifference>
-							<greatestDifference id="M">E 'den' d. MMM – E 'den' d. MMM y G</greatestDifference>
-							<greatestDifference id="y">E 'den' d. MMM y – E 'den' d. MMM y G</greatestDifference>
+							<greatestDifference id="d">E 'den' d. – E 'den' d.
+								MMM y G</greatestDifference>
+							<greatestDifference id="M">E 'den' d. MMM – E
+								'den' d. MMM y G</greatestDifference>
+							<greatestDifference id="y">E 'den' d. MMM y – E
+								'den' d. MMM y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y G</greatestDifference>
@@ -1836,8 +1879,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M">d. MMM – d. MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d">E 'den' d. – E 'den' d. MMM</greatestDifference>
-							<greatestDifference id="M">E 'den' d. MMM – E 'den' d. MMM</greatestDifference>
+							<greatestDifference id="d">E 'den' d. – E 'den' d.
+								MMM</greatestDifference>
+							<greatestDifference id="M">E 'den' d. MMM – E
+								'den' d. MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y–y</greatestDifference>
@@ -1866,9 +1911,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">d. MMM y – d. MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E 'den' d. – E 'den' d. MMM y</greatestDifference>
-							<greatestDifference id="M">E 'den' d. MMM – E 'den' d. MMM y</greatestDifference>
-							<greatestDifference id="y">E 'den' d. MMM y – E 'den' d. MMM y</greatestDifference>
+							<greatestDifference id="d">E 'den' d. – E 'den' d.
+								MMM y</greatestDifference>
+							<greatestDifference id="M">E 'den' d. MMM – E
+								'den' d. MMM y</greatestDifference>
+							<greatestDifference id="y">E 'den' d. MMM y – E
+								'den' d. MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -1892,9 +1940,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</eras>
 			</calendar>
 			<calendar type="japanese">
-				<!-- need some non-empty element here to make inheritance work,
-					 this copy of generic dateFormats above is smaller than root japanese eras
-				-->
+				<!-- need some non-empty element here to make inheritance work, this 
+					copy of generic dateFormats above is smaller than root japanese eras -->
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -1956,7 +2003,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">for {0} måned siden</relativeTimePattern>
-					<relativeTimePattern count="other">for {0} måneder siden</relativeTimePattern>
+					<relativeTimePattern count="other">for {0} måneder
+						siden</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -2049,7 +2097,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">for {0} minut siden</relativeTimePattern>
-					<relativeTimePattern count="other">for {0} minutter siden</relativeTimePattern>
+					<relativeTimePattern count="other">for {0} minutter
+						siden</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">
@@ -2061,7 +2110,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">for {0} sekund siden</relativeTimePattern>
-					<relativeTimePattern count="other">for {0} sekunder siden</relativeTimePattern>
+					<relativeTimePattern count="other">for {0} sekunder
+						siden</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">
@@ -3426,7 +3476,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BAM">
 				<displayName>Bosnien-Hercegovinsk konvertibel mark</displayName>
 				<displayName count="one">Bosnien-Hercegovinsk konvertibel mark</displayName>
-				<displayName count="other">Bosnien-Hercegovinske konvertible mark</displayName>
+				<displayName count="other">Bosnien-Hercegovinske konvertible
+					mark</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Barbadisk dollar</displayName>
@@ -3501,7 +3552,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BRB">
 				<displayName>Brasiliansk cruzeiro novo (1967–1986)</displayName>
 				<displayName count="one">Brasiliansk cruzeiro novo (1967–1986)</displayName>
-				<displayName count="other">Brasilianske cruzeiro novo (1967–1986)</displayName>
+				<displayName count="other">Brasilianske cruzeiro novo
+					(1967–1986)</displayName>
 			</currency>
 			<currency type="BRC">
 				<displayName>Brasiliansk cruzado (1986–1989)</displayName>
@@ -4613,8 +4665,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="YUN">
 				<displayName>Jugoslavisk konvertibel dinar (1990–1992)</displayName>
-				<displayName count="one">Jugoslavisk konvertibel dinar (1990–1992)</displayName>
-				<displayName count="other">Jugoslaviske konvertibel dinar (1990–1992)</displayName>
+				<displayName count="one">Jugoslavisk konvertibel dinar
+					(1990–1992)</displayName>
+				<displayName count="other">Jugoslaviske konvertibel dinar
+					(1990–1992)</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName>Sydafrikansk rand (financial)</displayName>

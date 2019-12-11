@@ -2,6 +2,7 @@
 
 class App_Controller_Action extends Zend_Controller_Action
 {
+
     /**
      * Pre-dispatch routines
      *
@@ -14,14 +15,14 @@ class App_Controller_Action extends Zend_Controller_Action
      */
     public function preDispatch()
     {
-    	define('BASE_URL', $this->view->baseUrl());
-    	
+        define('BASE_URL', $this->view->baseUrl());
+        
         $sResource = $this->getRequest()->getControllerName();
         if ('auth' == $sResource) {
             return;
         }
-
-        if (!Zend_Auth::getInstance()->hasIdentity()) {
+        
+        if (! Zend_Auth::getInstance()->hasIdentity()) {
             return $this->_redirect('auth');
         }
     }

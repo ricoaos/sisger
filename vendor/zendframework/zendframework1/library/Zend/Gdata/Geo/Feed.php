@@ -22,16 +22,19 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_eed
  */
 require_once 'Zend/Gdata/Feed.php';
 
 /**
+ *
  * @see Zend_Gdata_Geo
  */
 require_once 'Zend/Gdata/Geo.php';
 
 /**
+ *
  * @see Zend_Gdata_Geo_Entry
  */
 require_once 'Zend/Gdata/Geo/Entry.php';
@@ -39,11 +42,11 @@ require_once 'Zend/Gdata/Geo/Entry.php';
 /**
  * Feed for Gdata Geographic data entries.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Geo
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Geo_Feed extends Zend_Gdata_Feed
 {
@@ -60,5 +63,4 @@ class Zend_Gdata_Geo_Feed extends Zend_Gdata_Feed
         $this->registerAllNamespaces(Zend_Gdata_Geo::$namespaces);
         parent::__construct($element);
     }
-
 }

@@ -21,23 +21,25 @@
  */
 
 /**
+ *
  * @see Zend_Application_Resource_ResourceAbstract
  */
 require_once 'Zend/Application/Resource/ResourceAbstract.php';
 
-
 /**
  * Front Controller resource
  *
- * @category   Zend
- * @package    Zend_Application
+ * @category Zend
+ * @package Zend_Application
  * @subpackage Resource
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Application_Resource_Frontcontroller extends Zend_Application_Resource_ResourceAbstract
 {
+
     /**
+     *
      * @var Zend_Controller_Front
      */
     protected $_front;
@@ -51,7 +53,7 @@ class Zend_Application_Resource_Frontcontroller extends Zend_Application_Resourc
     public function init()
     {
         $front = $this->getFrontController();
-
+        
         foreach ($this->getOptions() as $key => $value) {
             switch (strtolower($key)) {
                 case 'controllerdirectory':
@@ -63,11 +65,11 @@ class Zend_Application_Resource_Frontcontroller extends Zend_Application_Resourc
                         }
                     }
                     break;
-
+                
                 case 'modulecontrollerdirectoryname':
                     $front->setModuleControllerDirectoryName($value);
                     break;
-
+                
                 case 'moduledirectory':
                     if (is_string($value)) {
                         $front->addModuleDirectory($value);
@@ -77,29 +79,29 @@ class Zend_Application_Resource_Frontcontroller extends Zend_Application_Resourc
                         }
                     }
                     break;
-
+                
                 case 'defaultcontrollername':
                     $front->setDefaultControllerName($value);
                     break;
-
+                
                 case 'defaultaction':
                     $front->setDefaultAction($value);
                     break;
-
+                
                 case 'defaultmodule':
                     $front->setDefaultModule($value);
                     break;
-
+                
                 case 'baseurl':
-                    if (!empty($value)) {
+                    if (! empty($value)) {
                         $front->setBaseUrl($value);
                     }
                     break;
-
+                
                 case 'params':
                     $front->setParams($value);
                     break;
-
+                
                 case 'plugins':
                     foreach ((array) $value as $pluginClass) {
                         $stackIndex = null;
@@ -109,24 +111,24 @@ class Zend_Application_Resource_Frontcontroller extends Zend_Application_Resourc
                                 if (isset($pluginClass['stackindex'])) {
                                     $stackIndex = $pluginClass['stackindex'];
                                 }
-
+                                
                                 $pluginClass = $pluginClass['class'];
                             }
                         }
-
+                        
                         $plugin = new $pluginClass();
                         $front->registerPlugin($plugin, $stackIndex);
                     }
                     break;
-
+                
                 case 'returnresponse':
                     $front->returnResponse((bool) $value);
                     break;
-
+                
                 case 'throwexceptions':
                     $front->throwExceptions((bool) $value);
                     break;
-
+                
                 case 'actionhelperpaths':
                     if (is_array($value)) {
                         foreach ($value as $helperPrefix => $helperPath) {
@@ -134,33 +136,33 @@ class Zend_Application_Resource_Frontcontroller extends Zend_Application_Resourc
                         }
                     }
                     break;
-
+                
                 case 'dispatcher':
-                    if (!isset($value['class'])) {
+                    if (! isset($value['class'])) {
                         require_once 'Zend/Application/Exception.php';
                         throw new Zend_Application_Exception('You must specify both ');
                     }
-                    if (!isset($value['params'])) {
+                    if (! isset($value['params'])) {
                         $value['params'] = array();
                     }
                     
                     $dispatchClass = $value['class'];
-                    if (!class_exists($dispatchClass)) {
+                    if (! class_exists($dispatchClass)) {
                         require_once 'Zend/Application/Exception.php';
                         throw new Zend_Application_Exception('Dispatcher class not found!');
                     }
-                    $front->setDispatcher(new $dispatchClass((array)$value['params']));
+                    $front->setDispatcher(new $dispatchClass((array) $value['params']));
                     break;
                 default:
                     $front->setParam($key, $value);
                     break;
             }
         }
-
+        
         if (null !== ($bootstrap = $this->getBootstrap())) {
             $this->getBootstrap()->frontController = $front;
         }
-
+        
         return $front;
     }
 

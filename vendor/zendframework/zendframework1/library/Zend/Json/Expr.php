@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -30,11 +31,11 @@
  * Example:
  * <code>
  * $foo = array(
- *     'integer'  =>9,
- *     'string'   =>'test string',
- *     'function' => Zend_Json_Expr(
- *         'function(){ window.alert("javascript function encoded by Zend_Json") }'
- *     ),
+ * 'integer' =>9,
+ * 'string' =>'test string',
+ * 'function' => Zend_Json_Expr(
+ * 'function(){ window.alert("javascript function encoded by Zend_Json") }'
+ * ),
  * );
  *
  * Zend_Json::encode($foo, false, array('enableJsonExprFinder' => true));
@@ -42,14 +43,15 @@
  * // {"integer":9,"string":"test string","function":function(){window.alert("javascript function encoded by Zend_Json")}}
  * </code>
  *
- * @category   Zend
- * @package    Zend_Json
+ * @category Zend
+ * @package Zend_Json
  * @subpackage Expr
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Json_Expr
 {
+
     /**
      * Storage for javascript expression.
      *
@@ -60,7 +62,8 @@ class Zend_Json_Expr
     /**
      * Constructor
      *
-     * @param  string $expression the expression to hold.
+     * @param string $expression
+     *            the expression to hold.
      * @return void
      */
     public function __construct($expression)

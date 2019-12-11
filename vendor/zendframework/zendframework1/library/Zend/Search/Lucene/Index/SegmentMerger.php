@@ -20,19 +20,22 @@
  * @version    $Id$
  */
 
-/** Zend_Search_Lucene_Index_SegmentInfo */
+/**
+ * Zend_Search_Lucene_Index_SegmentInfo
+ */
 require_once 'Zend/Search/Lucene/Index/SegmentInfo.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Search_Lucene
+ *
+ * @category Zend
+ * @package Zend_Search_Lucene
  * @subpackage Index
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Search_Lucene_Index_SegmentMerger
 {
+
     /**
      * Target segment writer
      *
@@ -69,35 +72,33 @@ class Zend_Search_Lucene_Index_SegmentMerger
      */
     private $_fieldsMap = array();
 
-
-
     /**
      * Object constructor.
      *
      * Creates new segment merger with $directory as target to merge segments into
      * and $name as a name of new segment
      *
-     * @param Zend_Search_Lucene_Storage_Directory $directory
-     * @param string $name
+     * @param Zend_Search_Lucene_Storage_Directory $directory            
+     * @param string $name            
      */
     public function __construct($directory, $name)
     {
-        /** Zend_Search_Lucene_Index_SegmentWriter_StreamWriter */
+        /**
+         * Zend_Search_Lucene_Index_SegmentWriter_StreamWriter
+         */
         require_once 'Zend/Search/Lucene/Index/SegmentWriter/StreamWriter.php';
         $this->_writer = new Zend_Search_Lucene_Index_SegmentWriter_StreamWriter($directory, $name);
     }
 
-
     /**
      * Add segmnet to a collection of segments to be merged
      *
-     * @param Zend_Search_Lucene_Index_SegmentInfo $segment
+     * @param Zend_Search_Lucene_Index_SegmentInfo $segment            
      */
     public function addSource(Zend_Search_Lucene_Index_SegmentInfo $segmentInfo)
     {
         $this->_segmentInfos[$segmentInfo->getName()] = $segmentInfo;
     }
-
 
     /**
      * Do merge.
@@ -113,24 +114,21 @@ class Zend_Search_Lucene_Index_SegmentMerger
             require_once 'Zend/Search/Lucene/Exception.php';
             throw new Zend_Search_Lucene_Exception('Merge is already done.');
         }
-
+        
         if (count($this->_segmentInfos) < 1) {
             require_once 'Zend/Search/Lucene/Exception.php';
-            throw new Zend_Search_Lucene_Exception('Wrong number of segments to be merged ('
-                                                 . count($this->_segmentInfos)
-                                                 . ').');
+            throw new Zend_Search_Lucene_Exception('Wrong number of segments to be merged (' . count($this->_segmentInfos) . ').');
         }
-
+        
         $this->_mergeFields();
         $this->_mergeNorms();
         $this->_mergeStoredFields();
         $this->_mergeTerms();
-
+        
         $this->_mergeDone = true;
-
+        
         return $this->_writer->close();
     }
-
 
     /**
      * Merge fields information
@@ -154,10 +152,10 @@ class Zend_Search_Lucene_Index_SegmentMerger
                 foreach ($this->_segmentInfos as $segName => $segmentInfo) {
                     if ($segmentInfo->hasDeletions()) {
                         $srcNorm = $segmentInfo->normVector($fieldInfo->name);
-                        $norm    = '';
-                        $docs    = $segmentInfo->count();
-                        for ($count = 0; $count < $docs; $count++) {
-                            if (!$segmentInfo->isDeleted($count)) {
+                        $norm = '';
+                        $docs = $segmentInfo->count();
+                        for ($count = 0; $count < $docs; $count ++) {
+                            if (! $segmentInfo->isDeleted($count)) {
                                 $norm .= $srcNorm[$count];
                             }
                         }
@@ -176,88 +174,76 @@ class Zend_Search_Lucene_Index_SegmentMerger
     private function _mergeStoredFields()
     {
         $this->_docCount = 0;
-
+        
         foreach ($this->_segmentInfos as $segName => $segmentInfo) {
             $fdtFile = $segmentInfo->openCompoundFile('.fdt');
-
-            for ($count = 0; $count < $segmentInfo->count(); $count++) {
+            
+            for ($count = 0; $count < $segmentInfo->count(); $count ++) {
                 $fieldCount = $fdtFile->readVInt();
                 $storedFields = array();
-
-                for ($count2 = 0; $count2 < $fieldCount; $count2++) {
+                
+                for ($count2 = 0; $count2 < $fieldCount; $count2 ++) {
                     $fieldNum = $fdtFile->readVInt();
                     $bits = $fdtFile->readByte();
                     $fieldInfo = $segmentInfo->getField($fieldNum);
-
-                    if (!($bits & 2)) { // Text data
-                        $storedFields[] =
-                                 new Zend_Search_Lucene_Field($fieldInfo->name,
-                                                              $fdtFile->readString(),
-                                                              'UTF-8',
-                                                              true,
-                                                              $fieldInfo->isIndexed,
-                                                              $bits & 1 );
-                    } else {            // Binary data
-                        $storedFields[] =
-                                 new Zend_Search_Lucene_Field($fieldInfo->name,
-                                                              $fdtFile->readBinary(),
-                                                              '',
-                                                              true,
-                                                              $fieldInfo->isIndexed,
-                                                              $bits & 1,
-                                                              true);
+                    
+                    if (! ($bits & 2)) { // Text data
+                        $storedFields[] = new Zend_Search_Lucene_Field($fieldInfo->name, $fdtFile->readString(), 'UTF-8', true, $fieldInfo->isIndexed, $bits & 1);
+                    } else { // Binary data
+                        $storedFields[] = new Zend_Search_Lucene_Field($fieldInfo->name, $fdtFile->readBinary(), '', true, $fieldInfo->isIndexed, $bits & 1, true);
                     }
                 }
-
-                if (!$segmentInfo->isDeleted($count)) {
-                    $this->_docCount++;
+                
+                if (! $segmentInfo->isDeleted($count)) {
+                    $this->_docCount ++;
                     $this->_writer->addStoredFields($storedFields);
                 }
             }
         }
     }
 
-
     /**
      * Merge fields information
      */
     private function _mergeTerms()
     {
-        /** Zend_Search_Lucene_Index_TermsPriorityQueue */
+        /**
+         * Zend_Search_Lucene_Index_TermsPriorityQueue
+         */
         require_once 'Zend/Search/Lucene/Index/TermsPriorityQueue.php';
-
+        
         $segmentInfoQueue = new Zend_Search_Lucene_Index_TermsPriorityQueue();
-
+        
         $segmentStartId = 0;
         foreach ($this->_segmentInfos as $segName => $segmentInfo) {
             $segmentStartId = $segmentInfo->resetTermsStream($segmentStartId, Zend_Search_Lucene_Index_SegmentInfo::SM_MERGE_INFO);
-
+            
             // Skip "empty" segments
             if ($segmentInfo->currentTerm() !== null) {
                 $segmentInfoQueue->put($segmentInfo);
             }
         }
-
+        
         $this->_writer->initializeDictionaryFiles();
-
+        
         $termDocs = array();
         while (($segmentInfo = $segmentInfoQueue->pop()) !== null) {
             // Merge positions array
             $termDocs += $segmentInfo->currentTermPositions();
-
-            if ($segmentInfoQueue->top() === null ||
-                $segmentInfoQueue->top()->currentTerm()->key() !=
-                            $segmentInfo->currentTerm()->key()) {
+            
+            if ($segmentInfoQueue->top() === null || $segmentInfoQueue->top()
+                ->currentTerm()
+                ->key() != $segmentInfo->currentTerm()->key()) {
                 // We got new term
                 ksort($termDocs, SORT_NUMERIC);
-
+                
                 // Add term if it's contained in any document
                 if (count($termDocs) > 0) {
                     $this->_writer->addTerm($segmentInfo->currentTerm(), $termDocs);
                 }
                 $termDocs = array();
             }
-
+            
             $segmentInfo->nextTerm();
             // check, if segment dictionary is finished
             if ($segmentInfo->currentTerm() !== null) {
@@ -265,7 +251,7 @@ class Zend_Search_Lucene_Index_SegmentMerger
                 $segmentInfoQueue->put($segmentInfo);
             }
         }
-
+        
         $this->_writer->closeDictionaryFiles();
     }
 }

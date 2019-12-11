@@ -21,17 +21,20 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Feed
  */
 require_once 'Zend/Gdata/Feed.php';
 
 /**
- * @category   Zend
- * @package    Zend_Gdata
+ *
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Analytics
  */
 class Zend_Gdata_Analytics_AccountFeed extends Zend_Gdata_Feed
 {
+
     /**
      * The classname for individual feed elements.
      *
@@ -47,6 +50,7 @@ class Zend_Gdata_Analytics_AccountFeed extends Zend_Gdata_Feed
     protected $_feedClassName = 'Zend_Gdata_Analytics_AccountFeed';
 
     /**
+     *
      * @see Zend_GData_Feed::__construct()
      */
     public function __construct($element = null)

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,40 +22,47 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Json
+ *
+ * @category Zend
+ * @package Zend_Json
  * @subpackage Server
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Json_Server_Response
 {
+
     /**
      * Response error
+     * 
      * @var null|Zend_Json_Server_Error
      */
     protected $_error;
 
     /**
      * Request ID
+     * 
      * @var mixed
      */
     protected $_id;
 
     /**
      * Result
+     * 
      * @var mixed
      */
     protected $_result;
 
     /**
      * Service map
+     * 
      * @var Zend_Json_Server_Smd
      */
     protected $_serviceMap;
 
     /**
      * JSON-RPC version
+     * 
      * @var string
      */
     protected $_version;
@@ -62,7 +70,7 @@ class Zend_Json_Server_Response
     /**
      * Set result
      *
-     * @param  mixed $value
+     * @param mixed $value            
      * @return Zend_Json_Server_Response
      */
     public function setResult($value)
@@ -85,7 +93,7 @@ class Zend_Json_Server_Response
     /**
      * Set result error
      *
-     * @param  Zend_Json_Server_Error $error
+     * @param Zend_Json_Server_Error $error            
      * @return Zend_Json_Server_Response
      */
     public function setError(Zend_Json_Server_Error $error)
@@ -117,7 +125,7 @@ class Zend_Json_Server_Response
     /**
      * Set request ID
      *
-     * @param  mixed $name
+     * @param mixed $name            
      * @return Zend_Json_Server_Response
      */
     public function setId($name)
@@ -139,7 +147,7 @@ class Zend_Json_Server_Response
     /**
      * Set JSON-RPC version
      *
-     * @param  string $version
+     * @param string $version            
      * @return Zend_Json_Server_Response
      */
     public function setVersion($version)
@@ -150,7 +158,7 @@ class Zend_Json_Server_Response
         } else {
             $this->_version = null;
         }
-
+        
         return $this;
     }
 
@@ -173,20 +181,20 @@ class Zend_Json_Server_Response
     {
         if ($this->isError()) {
             $response = array(
-                'error'  => $this->getError()->toArray(),
-                'id'     => $this->getId(),
+                'error' => $this->getError()->toArray(),
+                'id' => $this->getId()
             );
         } else {
             $response = array(
                 'result' => $this->getResult(),
-                'id'     => $this->getId(),
+                'id' => $this->getId()
             );
         }
-
+        
         if (null !== ($version = $this->getVersion())) {
             $response['jsonrpc'] = $version;
         }
-
+        
         require_once 'Zend/Json.php';
         return Zend_Json::encode($response);
     }
@@ -204,7 +212,7 @@ class Zend_Json_Server_Response
     /**
      * Set args
      *
-     * @param mixed $args
+     * @param mixed $args            
      * @return self
      */
     public function setArgs($args)
@@ -216,7 +224,7 @@ class Zend_Json_Server_Response
     /**
      * Set service map object
      *
-     * @param  Zend_Json_Server_Smd $serviceMap
+     * @param Zend_Json_Server_Smd $serviceMap            
      * @return Zend_Json_Server_Response
      */
     public function setServiceMap($serviceMap)

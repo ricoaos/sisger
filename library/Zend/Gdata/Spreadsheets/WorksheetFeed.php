@@ -22,24 +22,27 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Feed
  */
 require_once 'Zend/Gdata/Feed.php';
 
 /**
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Spreadsheets
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Spreadsheets_WorksheetFeed extends Zend_Gdata_Feed
 {
 
     /**
      * Constructs a new Zend_Gdata_Spreadsheets_WorksheetFeed object.
-     * @param DOMElement $element (optional) The DOMElement on whick to base this element.
+     * 
+     * @param DOMElement $element
+     *            (optional) The DOMElement on whick to base this element.
      */
     public function __construct($element = null)
     {
@@ -60,5 +63,4 @@ class Zend_Gdata_Spreadsheets_WorksheetFeed extends Zend_Gdata_Feed
      * @var string
      */
     protected $_feedClassName = 'Zend_Gdata_Spreadsheets_WorksheetFeed';
-
 }

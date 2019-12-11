@@ -31,21 +31,24 @@ require_once 'Zend/XmlRpc/Request.php';
  * request is declared a fault.
  *
  * @category Zend
- * @package  Zend_XmlRpc
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @package Zend_XmlRpc
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  * @version $Id: Http.php 23775 2011-03-01 17:25:24Z ralph $
  */
 class Zend_XmlRpc_Request_Http extends Zend_XmlRpc_Request
 {
+
     /**
      * Array of headers
+     * 
      * @var array
      */
     protected $_headers;
 
     /**
      * Raw XML as received via request
+     * 
      * @var string
      */
     protected $_xml;
@@ -62,14 +65,14 @@ class Zend_XmlRpc_Request_Http extends Zend_XmlRpc_Request
     public function __construct()
     {
         $xml = @file_get_contents('php://input');
-        if (!$xml) {
+        if (! $xml) {
             require_once 'Zend/XmlRpc/Fault.php';
             $this->_fault = new Zend_XmlRpc_Fault(630);
             return;
         }
-
+        
         $this->_xml = $xml;
-
+        
         $this->loadXml($xml);
     }
 
@@ -101,7 +104,7 @@ class Zend_XmlRpc_Request_Http extends Zend_XmlRpc_Request
                 }
             }
         }
-
+        
         return $this->_headers;
     }
 
@@ -116,9 +119,9 @@ class Zend_XmlRpc_Request_Http extends Zend_XmlRpc_Request
         foreach ($this->getHeaders() as $key => $value) {
             $request .= $key . ': ' . $value . "\n";
         }
-
+        
         $request .= $this->_xml;
-
+        
         return $request;
     }
 }

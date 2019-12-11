@@ -21,21 +21,23 @@
  */
 
 /**
+ *
  * @see Zend_Service_DeveloperGarden_Request_RequestAbstract
  */
 require_once 'Zend/Service/DeveloperGarden/Request/RequestAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Service_DeveloperGarden_Request_ConferenceCall_RemoveConferenceRequest
-    extends Zend_Service_DeveloperGarden_Request_RequestAbstract
+class Zend_Service_DeveloperGarden_Request_ConferenceCall_RemoveConferenceRequest extends Zend_Service_DeveloperGarden_Request_RequestAbstract
 {
+
     /**
      * the conference id
      *
@@ -46,8 +48,8 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_RemoveConferenceReques
     /**
      * constructor
      *
-     * @param integer $environment
-     * @param string $conferenceId
+     * @param integer $environment            
+     * @param string $conferenceId            
      */
     public function __construct($environment, $conferenceId)
     {
@@ -58,7 +60,7 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_RemoveConferenceReques
     /**
      * set the conference id
      *
-     * @param string $conferenceId
+     * @param string $conferenceId            
      * @return Zend_Service_DeveloperGarden_Request_ConferenceCall_RemoveConferenceRequest
      */
     public function setConferenceId($conferenceId)

@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9280 $"/>
-		<generation date="$Date: 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013) $"/>
-		<language type="en"/>
-		<territory type="ZW"/>
+		<version number="$Revision: 9280 $" />
+		<generation date="$Date: 2013-08-27 13:07:13 -0500 (Tue, 27 Aug 2013) $" />
+		<language type="en" />
+		<territory type="ZW" />
 	</identity>
 	<dates>
 		<calendars>
@@ -57,12 +56,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="h" draft="unconfirmed">h-h a</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm a</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm
+								a</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm-h:mm a</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm-h:mm a</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm a v</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm
+								a v</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm-h:mm a v</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm-h:mm a v</greatestDifference>
 						</intervalFormatItem>
@@ -86,11 +87,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
 							<greatestDifference id="d" draft="unconfirmed">dd-dd MMM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">dd MMM - dd MMM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">dd MMM - dd
+								MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E dd - E dd MMM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E dd MMM - E dd MMM</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E dd - E dd
+								MMM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E dd MMM - E
+								dd MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="unconfirmed">y-y G</greatestDifference>
@@ -100,28 +104,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="unconfirmed">M/y - M/y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="unconfirmed">d/M/y - d/M/y G</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">d/M/y - d/M/y G</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">d/M/y - d/M/y G</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">d/M/y - d/M/y
+								G</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">d/M/y - d/M/y
+								G</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">d/M/y - d/M/y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="unconfirmed">E d/M/y - E d/M/y G</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E d/M/y - E d/M/y G</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E d/M/y - E d/M/y G</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E d/M/y - E
+								d/M/y G</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E d/M/y - E
+								d/M/y G</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E d/M/y - E
+								d/M/y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM-MMM y G</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">MMM y - MMM y G</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">MMM y - MMM y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d" draft="unconfirmed">dd-dd MMM y G</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">dd MMM - dd MMM y G</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">dd MMM y - dd MMM y G</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">dd MMM - dd
+								MMM y G</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">dd MMM y - dd
+								MMM y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E dd - E dd MMM y G</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E dd MMM - E dd MMM y G</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E dd MMM y - E dd MMM y G</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E dd - E dd
+								MMM y G</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E dd MMM - E
+								dd MMM y G</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E dd MMM y -
+								E dd MMM y G</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -170,12 +186,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="h" draft="unconfirmed">h-h a</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm a</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm
+								a</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm-h:mm a</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm-h:mm a</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm a v</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a - h:mm
+								a v</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm-h:mm a v</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm-h:mm a v</greatestDifference>
 						</intervalFormatItem>
@@ -199,11 +217,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
 							<greatestDifference id="d" draft="unconfirmed">dd-dd MMM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">dd MMM - dd MMM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">dd MMM - dd
+								MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E dd - E dd MMM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E dd MMM - E dd MMM</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E dd - E dd
+								MMM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E dd MMM - E
+								dd MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="unconfirmed">y-y</greatestDifference>
@@ -218,9 +239,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="unconfirmed">d/M/y - d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="unconfirmed">E d/M/y - E d/M/y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E d/M/y - E d/M/y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E d/M/y - E d/M/y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E d/M/y - E
+								d/M/y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E d/M/y - E
+								d/M/y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E d/M/y - E
+								d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM-MMM y</greatestDifference>
@@ -228,13 +252,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d" draft="unconfirmed">dd-dd MMM y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">dd MMM - dd MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">dd MMM y - dd MMM y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">dd MMM - dd
+								MMM y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">dd MMM y - dd
+								MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E dd - E dd MMM y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E dd MMM - E dd MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E dd MMM y - E dd MMM y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E dd - E dd
+								MMM y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E dd MMM - E
+								dd MMM y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E dd MMM y -
+								E dd MMM y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>

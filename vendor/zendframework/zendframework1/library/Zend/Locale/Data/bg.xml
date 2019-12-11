@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="bg"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="bg" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -488,7 +487,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Copt">Коптска</script>
 			<script type="Cprt">Кипърска</script>
 			<script type="Cyrl">кирилица</script>
-			<script type="Cyrs" draft="provisional">Стар църковно-славянски вариант Кирилица</script>
+			<script type="Cyrs" draft="provisional">Стар църковно-славянски вариант
+				Кирилица</script>
 			<script type="Deva">деванагари</script>
 			<script type="Dsrt">Дезерет</script>
 			<script type="Egyd">Египетско демотично писмо</script>
@@ -700,7 +700,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">Финландия</territory>
 			<territory type="FJ">Фиджи</territory>
 			<territory type="FK">Фолклендски острови</territory>
-			<territory type="FK" alt="variant">Фолклендски острови (Малвински острови)</territory>
+			<territory type="FK" alt="variant">Фолклендски острови (Малвински
+				острови)</territory>
 			<territory type="FM">Федерални щати на Микронезия</territory>
 			<territory type="FO">Фарьорски острови</territory>
 			<territory type="FR">Франция</territory>
@@ -925,10 +926,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</variants>
 		<keys>
 			<key type="calendar">календар</key>
-			<key type="colAlternate" draft="contributed">Пренебрегване на сортирането по символи</key>
-			<key type="colBackwards" draft="contributed">Сортиране по диакритични знаци в обратен ред</key>
+			<key type="colAlternate" draft="contributed">Пренебрегване на сортирането по
+				символи</key>
+			<key type="colBackwards" draft="contributed">Сортиране по диакритични знаци в
+				обратен ред</key>
 			<key type="colCaseFirst" draft="contributed">Подреждане по горен/долен регистър</key>
-			<key type="colCaseLevel" draft="contributed">Сортиране с различаване на регистъра на буквите</key>
+			<key type="colCaseLevel" draft="contributed">Сортиране с различаване на
+				регистъра на буквите</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Сортиране на кана</key>
 			<key type="collation">ред на сортиране</key>
 			<key type="colNormalization" draft="contributed">Нормализирано сортиране</key>
@@ -952,11 +956,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="chinese" key="calendar">Китайски календар</type>
 			<type type="coptic" key="calendar" draft="contributed">Коптски календар</type>
 			<type type="deva" key="numbers">цифри в деванагари</type>
-			<type type="dictionary" key="collation" draft="contributed">Речников ред на сортиране</type>
+			<type type="dictionary" key="collation" draft="contributed">Речников ред на
+				сортиране</type>
 			<type type="ducet" key="collation">стандартен ред на сортиране в уникод</type>
 			<type type="ethi" key="numbers">етиопски цифри</type>
 			<type type="ethiopic" key="calendar" draft="contributed">Етиопски календар</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Етиопски календар Амит Алем</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Етиопски
+				календар Амит Алем</type>
 			<type type="finance" key="numbers" draft="contributed">Финансови цифри</type>
 			<type type="fullwide" key="numbers">цифри с пълна ширина</type>
 			<type type="gb2312han" key="collation">Опростен китайски (GB2312)</type>
@@ -973,7 +979,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="hantfin" key="numbers">финансови цифри в традиционния китайски</type>
 			<type type="hebr" key="numbers">цифри в иврит</type>
 			<type type="hebrew" key="calendar">Еврейски календар</type>
-			<type type="identical" key="colStrength" draft="contributed">Сортиране на всички</type>
+			<type type="identical" key="colStrength" draft="contributed">Сортиране на
+				всички</type>
 			<type type="indian" key="calendar">Индийски граждански календар</type>
 			<type type="islamic" key="calendar">Ислямски календар</type>
 			<type type="islamic-civil" key="calendar">Ислямски цивилен календар</type>
@@ -984,51 +991,74 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="knda" key="numbers">цифри в каннада</type>
 			<type type="laoo" key="numbers">лаоски цифри</type>
 			<type type="latn" key="numbers">западни цифри</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Сортиране първо по долен регистър</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Сортиране първо по
+				долен регистър</type>
 			<type type="mlym" key="numbers">цифри в малаялам</type>
 			<type type="mong" key="numbers" draft="contributed">Монголски цифри</type>
 			<type type="mymr" key="numbers">мианмарски цифри</type>
 			<type type="native" key="numbers" draft="contributed">Местни цифри</type>
-			<type type="no" key="colBackwards" draft="contributed">Нормално сортиране по диакритични знаци</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Сортиране с нормален ред за регистъра</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Сортиране без различаване на регистъра на буквите</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Сортиране на кана отделно</type>
-			<type type="no" key="colNormalization" draft="contributed">Сортиране без нормализиране</type>
-			<type type="no" key="colNumeric" draft="contributed">Сортиране на цифрите индивидуално</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Сортиране по символи</type>
+			<type type="no" key="colBackwards" draft="contributed">Нормално сортиране по
+				диакритични знаци</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Сортиране с нормален
+				ред за регистъра</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Сортиране без
+				различаване на регистъра на буквите</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Сортиране на
+				кана отделно</type>
+			<type type="no" key="colNormalization" draft="contributed">Сортиране без
+				нормализиране</type>
+			<type type="no" key="colNumeric" draft="contributed">Сортиране на цифрите
+				индивидуално</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Сортиране по
+				символи</type>
 			<type type="orya" key="numbers">цифри в ория</type>
 			<type type="persian" key="calendar" draft="contributed">Персийски календар</type>
 			<type type="phonebook" key="collation">Азбучен ред</type>
-			<type type="phonetic" key="collation" draft="contributed">Фонетичен ред на сортиране</type>
+			<type type="phonetic" key="collation" draft="contributed">Фонетичен ред на
+				сортиране</type>
 			<type type="pinyin" key="collation">Сортиране Пинин</type>
-			<type type="primary" key="colStrength" draft="contributed">Сортиране само по основни букви</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Сортиране по диакритични знаци/регистър/ширина/кана</type>
-			<type type="reformed" key="collation" draft="contributed">Следреформен ред на сортиране</type>
+			<type type="primary" key="colStrength" draft="contributed">Сортиране само по
+				основни букви</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Сортиране по
+				диакритични знаци/регистър/ширина/кана</type>
+			<type type="reformed" key="collation" draft="contributed">Следреформен ред на
+				сортиране</type>
 			<type type="roc" key="calendar">Календар на Република Китай</type>
 			<type type="roman" key="numbers">римски цифри</type>
 			<type type="romanlow" key="numbers">римски цифри в долен регистър</type>
 			<type type="search" key="collation">търсене с общо предназначение</type>
-			<type type="searchjl" key="collation" draft="contributed">Търсене по първоначални съгласни в хангул</type>
-			<type type="secondary" key="colStrength" draft="contributed">Сортиране по диакритични знаци</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Сортиране с пренебрегване на символи</type>
+			<type type="searchjl" key="collation" draft="contributed">Търсене по
+				първоначални съгласни в хангул</type>
+			<type type="secondary" key="colStrength" draft="contributed">Сортиране по
+				диакритични знаци</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Сортиране с
+				пренебрегване на символи</type>
 			<type type="standard" key="collation">стандартен ред на сортиране</type>
 			<type type="stroke" key="collation">Сортиране по щрих</type>
 			<type type="taml" key="numbers">традиционни тамилски цифри</type>
 			<type type="tamldec" key="numbers">тамилски цифри</type>
 			<type type="telu" key="numbers">цифри в телугу</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Сортиране по диакритични знаци/регистър/ширина</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Сортиране по
+				диакритични знаци/регистър/ширина</type>
 			<type type="thai" key="numbers">тайландски цифри</type>
 			<type type="tibt" key="numbers">тибетски цифри</type>
 			<type type="traditional" key="collation">Традиционно</type>
 			<type type="traditional" key="numbers" draft="contributed">Традиционни цифри</type>
-			<type type="unihan" key="collation" draft="contributed">Ред на сортиране по ключове и черти</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Сортиране първо по горен регистър</type>
+			<type type="unihan" key="collation" draft="contributed">Ред на сортиране по
+				ключове и черти</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Сортиране първо по
+				горен регистър</type>
 			<type type="vaii" key="numbers" draft="contributed">Цифри във ваи</type>
-			<type type="yes" key="colBackwards" draft="contributed">Обратно сортиране по диакритични знаци</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Сортиране с различаване на регистъра на буквите</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Сортиране на кана по различен начин</type>
-			<type type="yes" key="colNormalization" draft="contributed">Нормализирано сортиране в Уникод</type>
-			<type type="yes" key="colNumeric" draft="contributed">Сортиране на цифрите по числена стойност</type>
+			<type type="yes" key="colBackwards" draft="contributed">Обратно сортиране по
+				диакритични знаци</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Сортиране с
+				различаване на регистъра на буквите</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Сортиране на
+				кана по различен начин</type>
+			<type type="yes" key="colNormalization" draft="contributed">Нормализирано
+				сортиране в Уникод</type>
+			<type type="yes" key="colNumeric" draft="contributed">Сортиране на цифрите по
+				числена стойност</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">АКГН (BGN)</transformName>
@@ -1037,7 +1067,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<transformName type="UNGEGN" draft="contributed">ГЕСГИООН (UNGEGN)</transformName>
 			<transformName type="x-Accents" draft="contributed">Диакритични знаци</transformName>
 			<transformName type="x-Fullwidth" draft="contributed">С пълна ширина</transformName>
-			<transformName type="x-Halfwidth" draft="contributed">С половин ширина</transformName>
+			<transformName type="x-Halfwidth" draft="contributed">С половин
+				ширина</transformName>
 			<transformName type="x-Jamo" draft="contributed">Джамо</transformName>
 			<transformName type="x-Pinyin" draft="contributed">Пинин</transformName>
 			<transformName type="x-Publishing" draft="contributed">Типографски</transformName>
@@ -1054,10 +1085,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ь ю я]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[{а\u0300} ѐ ё ѝ {о\u0300} {у\u0300} {ъ\u0300} ы ѣ э {ю\u0300} {я\u0300} ѫ]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[А Б В Г Д Е Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ю Я]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ‚ &quot; “ „ ( ) \[ \] § * / ″ №]</exemplarCharacters>
+		<exemplarCharacters>[а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш
+			щ ъ ь ю я]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[{а\u0300} ѐ ё ѝ {о\u0300}
+			{у\u0300} {ъ\u0300} ы ѣ э {ю\u0300} {я\u0300} ѫ]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[А Б В Г Д Е
+			Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ю Я]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ‚ &quot; “ „ ( ) \[ \] § * / ″ №]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}… {1}</ellipsis>
@@ -1171,7 +1206,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="H">HH-HH</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="contributed">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="a" draft="contributed">h:mm a – h:mm
+								a</greatestDifference>
 							<greatestDifference id="h">h:mm-h:mm a</greatestDifference>
 							<greatestDifference id="m">h:mm-h:mm a</greatestDifference>
 						</intervalFormatItem>
@@ -1180,7 +1216,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="m">HH:mm-HH:mm</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a" draft="contributed">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="a" draft="contributed">h:mm a – h:mm
+								a v</greatestDifference>
 							<greatestDifference id="h">h:mm-h:mm a v</greatestDifference>
 							<greatestDifference id="m">h:mm-h:mm a v</greatestDifference>
 						</intervalFormatItem>
@@ -1238,12 +1275,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMd">
 							<greatestDifference id="d">d.MM – d.MM.y 'г'. G</greatestDifference>
 							<greatestDifference id="M">d.MM – d.MM.y 'г'. G</greatestDifference>
-							<greatestDifference id="y">d.MM.y 'г'. – d.MM.y 'г'. G</greatestDifference>
+							<greatestDifference id="y">d.MM.y 'г'. – d.MM.y
+								'г'. G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, d.MM – E, d.MM.y 'г'. G</greatestDifference>
-							<greatestDifference id="M">E, d.MM – E, d.MM.y 'г'. G</greatestDifference>
-							<greatestDifference id="y">E, d.MM.y 'г'. – E, d.MM.y 'г'. G</greatestDifference>
+							<greatestDifference id="d">E, d.MM – E, d.MM.y
+								'г'. G</greatestDifference>
+							<greatestDifference id="M">E, d.MM – E, d.MM.y
+								'г'. G</greatestDifference>
+							<greatestDifference id="y">E, d.MM.y 'г'. – E,
+								d.MM.y 'г'. G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MM – MM.y 'г'. G</greatestDifference>
@@ -1252,26 +1293,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">d.MM – d.MM.y 'г'. G</greatestDifference>
 							<greatestDifference id="M">d.MM – d.MM.y 'г'. G</greatestDifference>
-							<greatestDifference id="y">d.MM.y 'г'. – d.MM.y 'г'. G</greatestDifference>
+							<greatestDifference id="y">d.MM.y 'г'. – d.MM.y
+								'г'. G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, d.MM – E, d.MM.y 'г'. G</greatestDifference>
-							<greatestDifference id="M">E, d.MM – E, d.MM.y 'г'. G</greatestDifference>
-							<greatestDifference id="y">E, d.MM.y 'г'. – E, d.MM.y 'г'. G</greatestDifference>
+							<greatestDifference id="d">E, d.MM – E, d.MM.y
+								'г'. G</greatestDifference>
+							<greatestDifference id="M">E, d.MM – E, d.MM.y
+								'г'. G</greatestDifference>
+							<greatestDifference id="y">E, d.MM.y 'г'. – E,
+								d.MM.y 'г'. G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM – MMMM y 'г'. G</greatestDifference>
-							<greatestDifference id="y">MMMM y 'г'. – MMMM y 'г'. G</greatestDifference>
+							<greatestDifference id="y">MMMM y 'г'. – MMMM y
+								'г'. G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMMd">
 							<greatestDifference id="d">d – d MMMM y 'г'. G</greatestDifference>
-							<greatestDifference id="M">d MMMM – d MMMM y 'г'. G</greatestDifference>
-							<greatestDifference id="y">d MMMM y 'г'. – d MMMM y 'г'. G</greatestDifference>
+							<greatestDifference id="M">d MMMM – d MMMM y 'г'.
+								G</greatestDifference>
+							<greatestDifference id="y">d MMMM y 'г'. – d MMMM
+								y 'г'. G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMMEd">
-							<greatestDifference id="d">E, d MMMM – E, d MMMM y 'г'. G</greatestDifference>
-							<greatestDifference id="M">E, d MMMM – E, d MMMM y 'г'. G</greatestDifference>
-							<greatestDifference id="y">E, d MMMM y 'г'. – E, d MMMM y 'г'. G</greatestDifference>
+							<greatestDifference id="d">E, d MMMM – E, d MMMM y
+								'г'. G</greatestDifference>
+							<greatestDifference id="M">E, d MMMM – E, d MMMM y
+								'г'. G</greatestDifference>
+							<greatestDifference id="y">E, d MMMM y 'г'. – E, d
+								MMMM y 'г'. G</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -1702,12 +1753,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMd">
 							<greatestDifference id="d">d.MM – d.MM.y 'г'.</greatestDifference>
 							<greatestDifference id="M">d.MM – d.MM.y 'г'.</greatestDifference>
-							<greatestDifference id="y">d.MM.y 'г'. – d.MM.y 'г'.</greatestDifference>
+							<greatestDifference id="y">d.MM.y 'г'. – d.MM.y
+								'г'.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, d.MM – E, d.MM.y 'г'.</greatestDifference>
-							<greatestDifference id="M">E, d.MM – E, d.MM.y 'г'.</greatestDifference>
-							<greatestDifference id="y">E, d.MM.y 'г'. – E, d.MM.y 'г'.</greatestDifference>
+							<greatestDifference id="d">E, d.MM – E, d.MM.y
+								'г'.</greatestDifference>
+							<greatestDifference id="M">E, d.MM – E, d.MM.y
+								'г'.</greatestDifference>
+							<greatestDifference id="y">E, d.MM.y 'г'. – E,
+								d.MM.y 'г'.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MM.y 'г'. – MM.y 'г'.</greatestDifference>
@@ -1716,26 +1771,35 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">d.MM – d.MM.y 'г'.</greatestDifference>
 							<greatestDifference id="M">d.MM – d.MM.y 'г'.</greatestDifference>
-							<greatestDifference id="y">d.MM.y 'г'. – d.MM.y 'г'.</greatestDifference>
+							<greatestDifference id="y">d.MM.y 'г'. – d.MM.y
+								'г'.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, d.MM – E, d.MM.y 'г'.</greatestDifference>
-							<greatestDifference id="M">E, d.MM – E, d.MM.y 'г'.</greatestDifference>
-							<greatestDifference id="y">E, d.MM.y 'г'. – E, d.MM.y 'г'.</greatestDifference>
+							<greatestDifference id="d">E, d.MM – E, d.MM.y
+								'г'.</greatestDifference>
+							<greatestDifference id="M">E, d.MM – E, d.MM.y
+								'г'.</greatestDifference>
+							<greatestDifference id="y">E, d.MM.y 'г'. – E,
+								d.MM.y 'г'.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM – MMMM y 'г'.</greatestDifference>
-							<greatestDifference id="y">MMMM y 'г'. – MMMM y 'г'.</greatestDifference>
+							<greatestDifference id="y">MMMM y 'г'. – MMMM y
+								'г'.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMMd">
 							<greatestDifference id="d">d – d MMMM y 'г'.</greatestDifference>
 							<greatestDifference id="M">d MMMM – d MMMM y 'г'.</greatestDifference>
-							<greatestDifference id="y">d MMMM y 'г'. – d MMMM y 'г'.</greatestDifference>
+							<greatestDifference id="y">d MMMM y 'г'. – d MMMM
+								y 'г'.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMMEd">
-							<greatestDifference id="d">E, d MMMM – E, d MMMM y 'г'.</greatestDifference>
-							<greatestDifference id="M">E, d MMMM – E, d MMMM y 'г'.</greatestDifference>
-							<greatestDifference id="y">E, d MMMM y 'г'. – E, d MMMM y 'г'.</greatestDifference>
+							<greatestDifference id="d">E, d MMMM – E, d MMMM y
+								'г'.</greatestDifference>
+							<greatestDifference id="M">E, d MMMM – E, d MMMM y
+								'г'.</greatestDifference>
+							<greatestDifference id="y">E, d MMMM y 'г'. – E, d
+								MMMM y 'г'.</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -4185,8 +4249,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AED">
 				<displayName>Дирхам на Обединените арабски емирства</displayName>
-				<displayName count="one">дирхам на Обединените арабски емирства</displayName>
-				<displayName count="other">дирхама на Обединените арабски емирства</displayName>
+				<displayName count="one">дирхам на Обединените арабски
+					емирства</displayName>
+				<displayName count="other">дирхама на Обединените арабски
+					емирства</displayName>
 			</currency>
 			<currency type="AFA">
 				<displayName>Афганистански афган (1927–2002)</displayName>

@@ -21,6 +21,7 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_App_Extension_Element
  */
 require_once 'Zend/Gdata/App/Extension/Element.php';
@@ -28,23 +29,27 @@ require_once 'Zend/Gdata/App/Extension/Element.php';
 /**
  * Concrete class for working with CCR elements.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Health
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Health_Extension_Ccr extends Zend_Gdata_App_Extension_Element
 {
+
     protected $_rootNamespace = 'ccr';
+
     protected $_rootElement = 'ContinuityOfCareRecord';
+
     protected $_ccrDom = null;
 
     /**
      * Creates a Zend_Gdata_Health_Extension_Ccr entry, representing CCR data
      *
-     * @param DOMElement $element (optional) DOMElement from which this
-     *          object should be constructed.
+     * @param DOMElement $element
+     *            (optional) DOMElement from which this
+     *            object should be constructed.
      */
     public function __construct($element = null)
     {
@@ -58,7 +63,8 @@ class Zend_Gdata_Health_Extension_Ccr extends Zend_Gdata_App_Extension_Element
      * This is called when XML is received over the wire and the data
      * model needs to be built to represent this XML.
      *
-     * @param DOMNode $node The DOMNode that represents this object's data
+     * @param DOMNode $node
+     *            The DOMNode that represents this object's data
      */
     public function transferFromDOM($node)
     {
@@ -67,13 +73,15 @@ class Zend_Gdata_Health_Extension_Ccr extends Zend_Gdata_App_Extension_Element
 
     /**
      * Retrieves a DOMElement which corresponds to this element and all
-     * child properties.  This is used to build an entry back into a DOM
+     * child properties.
+     * This is used to build an entry back into a DOM
      * and eventually XML text for sending to the server upon updates, or
      * for application storage/persistence.
      *
-     * @param DOMDocument $doc The DOMDocument used to construct DOMElements
+     * @param DOMDocument $doc
+     *            The DOMDocument used to construct DOMElements
      * @return DOMElement The DOMElement representing this element and all
-     * child properties.
+     *         child properties.
      */
     public function getDOM($doc = null, $majorVersion = 1, $minorVersion = null)
     {
@@ -86,20 +94,22 @@ class Zend_Gdata_Health_Extension_Ccr extends Zend_Gdata_App_Extension_Element
 
     /**
      * Magic helper that allows drilling down and returning specific elements
-     * in the CCR. For example, to retrieve the users medications
+     * in the CCR.
+     * For example, to retrieve the users medications
      * (/ContinuityOfCareRecord/Body/Medications) from the entry's CCR, call
-     * $entry->getCcr()->getMedications().  Similarly, getConditions() would
+     * $entry->getCcr()->getMedications(). Similarly, getConditions() would
      * return extract the user's conditions.
      *
-     * @param string $name Name of the function to call
-     * @param unknown $args
+     * @param string $name
+     *            Name of the function to call
+     * @param unknown $args            
      * @return array.<DOMElement> A list of the appropriate CCR data
      */
     public function __call($name, $args)
     {
         if (substr($name, 0, 3) === 'get') {
             $category = substr($name, 3);
-
+            
             switch ($category) {
                 case 'Conditions':
                     $category = 'Problems';
@@ -108,14 +118,14 @@ class Zend_Gdata_Health_Extension_Ccr extends Zend_Gdata_App_Extension_Element
                     $category = 'Alerts';
                     break;
                 case 'TestResults':
-                    // TestResults is an alias for LabResults
+                // TestResults is an alias for LabResults
                 case 'LabResults':
                     $category = 'Results';
                     break;
                 default:
-                    // $category is already well formatted
+                // $category is already well formatted
             }
-
+            
             return $this->_ccrDom->getElementsByTagNameNS($this->lookupNamespace('ccr'), $category);
         } else {
             return null;

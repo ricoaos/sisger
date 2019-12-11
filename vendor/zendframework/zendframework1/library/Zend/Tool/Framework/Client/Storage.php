@@ -21,20 +21,23 @@
  */
 
 /**
+ *
  * @see Zend_Tool_Framework_Client_Storage_AdapterInterface
  */
 require_once 'Zend/Tool/Framework/Client/Storage/AdapterInterface.php';
 
 /**
- * @category   Zend
- * @package    Zend_Tool
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Tool
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Tool_Framework_Client_Storage
 {
 
     /**
+     *
      * @var Zend_Tool_Framework_Client_Storage_AdapterInterface
      */
     protected $_adapter = null;
@@ -63,55 +66,54 @@ class Zend_Tool_Framework_Client_Storage
 
     public function put($name, $value)
     {
-        if (!$this->_adapter) {
+        if (! $this->_adapter) {
             return false;
         }
-
+        
         $this->_adapter->put($name, $value);
-
+        
         return $this;
     }
 
     public function get($name, $defaultValue = false)
     {
-        if (!$this->_adapter) {
+        if (! $this->_adapter) {
             return false;
         }
-
+        
         if ($this->_adapter->has($name)) {
             return $this->_adapter->get($name);
         } else {
             return $defaultValue;
         }
-
     }
 
     public function has($name)
     {
-        if (!$this->_adapter) {
+        if (! $this->_adapter) {
             return false;
         }
-
+        
         return $this->_adapter->has($name);
     }
 
     public function remove($name)
     {
-        if (!$this->_adapter) {
+        if (! $this->_adapter) {
             return false;
         }
-
+        
         $this->_adapter->remove($name);
-
+        
         return $this;
     }
 
     public function getStreamUri($name)
     {
-        if (!$this->_adapter) {
+        if (! $this->_adapter) {
             return false;
         }
-
+        
         return $this->_adapter->getStreamUri($name);
     }
 }

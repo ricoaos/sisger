@@ -20,32 +20,39 @@
  */
 
 /**
+ *
  * @see Zend_Validate_Abstract
  */
 require_once 'Zend/Validate/Abstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Validate
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Validate
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Validate_Regex extends Zend_Validate_Abstract
 {
-    const INVALID   = 'regexInvalid';
+
+    const INVALID = 'regexInvalid';
+
     const NOT_MATCH = 'regexNotMatch';
-    const ERROROUS  = 'regexErrorous';
+
+    const ERROROUS = 'regexErrorous';
 
     /**
+     *
      * @var array
      */
     protected $_messageTemplates = array(
-        self::INVALID   => "Invalid type given. String, integer or float expected",
+        self::INVALID => "Invalid type given. String, integer or float expected",
         self::NOT_MATCH => "'%value%' does not match against pattern '%pattern%'",
-        self::ERROROUS  => "There was an internal error while using the pattern '%pattern%'",
+        self::ERROROUS => "There was an internal error while using the pattern '%pattern%'"
     );
 
     /**
+     *
      * @var array
      */
     protected $_messageVariables = array(
@@ -62,7 +69,7 @@ class Zend_Validate_Regex extends Zend_Validate_Abstract
     /**
      * Sets validator options
      *
-     * @param  string|Zend_Config $pattern
+     * @param string|Zend_Config $pattern            
      * @throws Zend_Validate_Exception On missing 'pattern' parameter
      */
     public function __construct($pattern)
@@ -70,7 +77,7 @@ class Zend_Validate_Regex extends Zend_Validate_Abstract
         if ($pattern instanceof Zend_Config) {
             $pattern = $pattern->toArray();
         }
-
+        
         if (is_array($pattern)) {
             if (array_key_exists('pattern', $pattern)) {
                 $pattern = $pattern['pattern'];
@@ -79,7 +86,7 @@ class Zend_Validate_Regex extends Zend_Validate_Abstract
                 throw new Zend_Validate_Exception("Missing option 'pattern'");
             }
         }
-
+        
         $this->setPattern($pattern);
     }
 
@@ -96,20 +103,20 @@ class Zend_Validate_Regex extends Zend_Validate_Abstract
     /**
      * Sets the pattern option
      *
-     * @param  string $pattern
+     * @param string $pattern            
      * @throws Zend_Validate_Exception if there is a fatal error in pattern matching
      * @return Zend_Validate_Regex Provides a fluent interface
      */
     public function setPattern($pattern)
     {
         $this->_pattern = (string) $pattern;
-        $status         = @preg_match($this->_pattern, "Test");
-
+        $status = @preg_match($this->_pattern, "Test");
+        
         if (false === $status) {
             require_once 'Zend/Validate/Exception.php';
             throw new Zend_Validate_Exception("Internal error while using the pattern '$this->_pattern'");
         }
-
+        
         return $this;
     }
 
@@ -118,29 +125,29 @@ class Zend_Validate_Regex extends Zend_Validate_Abstract
      *
      * Returns true if and only if $value matches against the pattern option
      *
-     * @param  string $value
+     * @param string $value            
      * @return boolean
      */
     public function isValid($value)
     {
-        if (!is_string($value) && !is_int($value) && !is_float($value)) {
+        if (! is_string($value) && ! is_int($value) && ! is_float($value)) {
             $this->_error(self::INVALID);
             return false;
         }
-
+        
         $this->_setValue($value);
-
+        
         $status = @preg_match($this->_pattern, $value);
         if (false === $status) {
             $this->_error(self::ERROROUS);
             return false;
         }
-
-        if (!$status) {
+        
+        if (! $status) {
             $this->_error(self::NOT_MATCH);
             return false;
         }
-
+        
         return true;
     }
 }

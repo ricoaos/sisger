@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="hi"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="hi" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -717,7 +716,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">फ़िनलैंड</territory>
 			<territory type="FJ">फ़िजी</territory>
 			<territory type="FK">फ़ॉकलैंड द्वीपसमूह</territory>
-			<territory type="FK" alt="variant">फ़ॉकलैंड द्वीपसमूह (इज़्लास माल्विनास)</territory>
+			<territory type="FK" alt="variant">फ़ॉकलैंड द्वीपसमूह (इज़्लास
+				माल्विनास)</territory>
 			<territory type="FM">माइक्रोनेशिया</territory>
 			<territory type="FO">फ़ेरो द्वीपसमूह</territory>
 			<territory type="FR">फ़्रांस</territory>
@@ -949,11 +949,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="chinese" key="calendar">चीनी पंचांग</type>
 			<type type="coptic" key="calendar" draft="contributed">कोप्टिक कैलेंडर</type>
 			<type type="deva" key="numbers">देवनागरी अंक</type>
-			<type type="dictionary" key="collation" draft="contributed">शब्दकोश क्रम विन्यास</type>
+			<type type="dictionary" key="collation" draft="contributed">शब्दकोश क्रम
+				विन्यास</type>
 			<type type="ducet" key="collation">डिफ़ॉल्ट यूनिकोड सॉर्ट क्रम</type>
 			<type type="ethi" key="numbers">इथियोपिक संख्याएँ</type>
 			<type type="ethiopic" key="calendar" draft="contributed">इथियोपिक कैलेंडर</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">इथियोपिक अमेते अलेम कैलेंडर</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">इथियोपिक
+				अमेते अलेम कैलेंडर</type>
 			<type type="finance" key="numbers" draft="contributed">वित्तीय अंक</type>
 			<type type="fullwide" key="numbers">पूर्ण चौड़ाई अंक</type>
 			<type type="gb2312han" key="collation">सरलीकृत चीनी वर्गीकरण</type>
@@ -981,51 +983,73 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="knda" key="numbers">कन्नड़ अंक</type>
 			<type type="laoo" key="numbers">लाओ अंक</type>
 			<type type="latn" key="numbers">पश्चिमी अंक</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">पहले लोअरकेस क्रमित करें</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">पहले लोअरकेस क्रमित
+				करें</type>
 			<type type="mlym" key="numbers">मलयालम अंक</type>
 			<type type="mong" key="numbers" draft="contributed">मंगोलियाई अंक</type>
 			<type type="mymr" key="numbers">म्यांमार अंक</type>
 			<type type="native" key="numbers" draft="contributed">स्थानीय अंक</type>
-			<type type="no" key="colBackwards" draft="contributed">उच्‍चारणों को सामान्‍य रूप से क्रमित करें</type>
-			<type type="no" key="colCaseFirst" draft="contributed">सामान्‍य केस क्रम में क्रमित करें</type>
+			<type type="no" key="colBackwards" draft="contributed">उच्‍चारणों को सामान्‍य
+				रूप से क्रमित करें</type>
+			<type type="no" key="colCaseFirst" draft="contributed">सामान्‍य केस क्रम में
+				क्रमित करें</type>
 			<type type="no" key="colCaseLevel" draft="contributed">केस असंवेदी क्रमित करें</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">काना को अलग से क्रमित करें</type>
-			<type type="no" key="colNormalization" draft="contributed">बिना सामान्‍यीकरण के क्रमित करें</type>
-			<type type="no" key="colNumeric" draft="contributed">अंको को अलग-अलग क्रमित करें</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">प्रतीकों को क्रमित करें</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">काना को अलग से
+				क्रमित करें</type>
+			<type type="no" key="colNormalization" draft="contributed">बिना सामान्‍यीकरण
+				के क्रमित करें</type>
+			<type type="no" key="colNumeric" draft="contributed">अंको को अलग-अलग क्रमित
+				करें</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">प्रतीकों को
+				क्रमित करें</type>
 			<type type="orya" key="numbers">उड़िया अंक</type>
 			<type type="persian" key="calendar" draft="contributed">फ़ारसी कैलेंडर</type>
 			<type type="phonebook" key="collation">दूरभाष निर्देशिका वर्गीकरण</type>
-			<type type="phonetic" key="collation" draft="contributed">ध्‍वन्यात्मक क्रमित करने का क्रम</type>
+			<type type="phonetic" key="collation" draft="contributed">ध्‍वन्यात्मक क्रमित
+				करने का क्रम</type>
 			<type type="pinyin" key="collation">पिनयीन वर्गीकरण</type>
-			<type type="primary" key="colStrength" draft="contributed">केवल आधार अक्षरों को क्रमित करें</type>
-			<type type="quaternary" key="colStrength" draft="contributed">उच्‍चारणों/केस/चौड़ाई/काना क्रमित करें</type>
-			<type type="reformed" key="collation" draft="contributed">पुनर्निर्मित क्रम विन्यास</type>
+			<type type="primary" key="colStrength" draft="contributed">केवल आधार अक्षरों
+				को क्रमित करें</type>
+			<type type="quaternary" key="colStrength" draft="contributed">उच्‍चारणों/केस/चौड़ाई/काना
+				क्रमित करें</type>
+			<type type="reformed" key="collation" draft="contributed">पुनर्निर्मित क्रम
+				विन्यास</type>
 			<type type="roc" key="calendar">चीनी गणतंत्र पंचांग</type>
 			<type type="roman" key="numbers">रोमन संख्याएँ</type>
 			<type type="romanlow" key="numbers">रोमन लोअरकेस संख्याएँ</type>
 			<type type="search" key="collation">सामान्य-उद्देश्य खोज</type>
-			<type type="searchjl" key="collation" draft="contributed">हांगुल आरंभिक व्‍यंजन द्वारा खोजें</type>
-			<type type="secondary" key="colStrength" draft="contributed">उच्‍चारण क्रमित करें</type>
-			<type type="shifted" key="colAlternate" draft="contributed">प्रतीकों पर ध्यान न देकर क्रमित करें</type>
+			<type type="searchjl" key="collation" draft="contributed">हांगुल आरंभिक
+				व्‍यंजन द्वारा खोजें</type>
+			<type type="secondary" key="colStrength" draft="contributed">उच्‍चारण क्रमित
+				करें</type>
+			<type type="shifted" key="colAlternate" draft="contributed">प्रतीकों पर ध्यान
+				न देकर क्रमित करें</type>
 			<type type="standard" key="collation">मानक सॉर्ट क्रम</type>
 			<type type="stroke" key="collation">स्ट्रोक वर्गीकरण</type>
 			<type type="taml" key="numbers">पारंपरिक तमिल संख्याएँ</type>
 			<type type="tamldec" key="numbers">तमिल अंक</type>
 			<type type="telu" key="numbers">तेलुगू अंक</type>
-			<type type="tertiary" key="colStrength" draft="contributed">उच्‍चारणों/केस/चौड़ाई क्रमित करें</type>
+			<type type="tertiary" key="colStrength" draft="contributed">उच्‍चारणों/केस/चौड़ाई
+				क्रमित करें</type>
 			<type type="thai" key="numbers">थाई अंक</type>
 			<type type="tibt" key="numbers">तिब्बती अंक</type>
 			<type type="traditional" key="collation">पारम्पारिक वर्गीकरण</type>
 			<type type="traditional" key="numbers" draft="contributed">परंपरागत अंक</type>
-			<type type="unihan" key="collation" draft="contributed">रेडिकल-स्ट्रोक क्रम विन्यास</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">पहले अपरकेस क्रमित करें</type>
+			<type type="unihan" key="collation" draft="contributed">रेडिकल-स्ट्रोक क्रम
+				विन्यास</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">पहले अपरकेस क्रमित
+				करें</type>
 			<type type="vaii" key="numbers" draft="contributed">वाई अंक</type>
-			<type type="yes" key="colBackwards" draft="contributed">उच्‍चारण के उलट क्रमित करें</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">केस संवेदी को क्रमित करें</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">काना को भिन्‍न रूप में क्रमित करें</type>
-			<type type="yes" key="colNormalization" draft="contributed">यूनिकोड सामान्‍यीकृत क्रमित करें</type>
-			<type type="yes" key="colNumeric" draft="contributed">अंकों को अंकीय रूप से क्रमित करें</type>
+			<type type="yes" key="colBackwards" draft="contributed">उच्‍चारण के उलट क्रमित
+				करें</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">केस संवेदी को क्रमित
+				करें</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">काना को
+				भिन्‍न रूप में क्रमित करें</type>
+			<type type="yes" key="colNormalization" draft="contributed">यूनिकोड
+				सामान्‍यीकृत क्रमित करें</type>
+			<type type="yes" key="colNumeric" draft="contributed">अंकों को अंकीय रूप से
+				क्रमित करें</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">BGN</transformName>
@@ -1051,9 +1075,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[\u093C ॐ \u0902 \u0901 ः अ आ इ ई उ ऊ ऋ ऌ ऍ ए ऐ ऑ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल ळ व श ष स ह ऽ ा ि ी \u0941 \u0942 \u0943 \u0944 \u0945 \u0947 \u0948 ॉ ो ौ \u094D]</exemplarCharacters>
+		<exemplarCharacters>[\u093C ॐ \u0902 \u0901 ः अ आ इ ई उ ऊ ऋ ऌ ऍ ए ऐ ऑ
+			ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल ळ व श ष स
+			ह ऽ ा ि ी \u0941 \u0942 \u0943 \u0944 \u0945 \u0947 \u0948 ॉ ो ौ
+			\u094D]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[\u200C\u200D]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[अ आ इ ई उ ऊ ऋ ए ऐ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स ह]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[अ आ इ ई उ ऊ
+			ऋ ए ऐ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श
+			ष स ह]</exemplarCharacters>
 		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
 		<ellipsis type="medial" draft="contributed">{0}…{1}</ellipsis>
@@ -1181,7 +1210,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="H" draft="contributed">HH–HH</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="contributed">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="a" draft="contributed">h:mm a – h:mm
+								a</greatestDifference>
 							<greatestDifference id="h" draft="contributed">h:mm–h:mm a</greatestDifference>
 							<greatestDifference id="m" draft="contributed">h:mm–h:mm a</greatestDifference>
 						</intervalFormatItem>
@@ -1190,7 +1220,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="m" draft="contributed">HH:mm–HH:mm</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a" draft="contributed">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="a" draft="contributed">h:mm a – h:mm
+								a v</greatestDifference>
 							<greatestDifference id="h" draft="contributed">h:mm–h:mm a v</greatestDifference>
 							<greatestDifference id="m" draft="contributed">h:mm–h:mm a v</greatestDifference>
 						</intervalFormatItem>
@@ -1235,28 +1266,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="contributed">M/y – M/y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="contributed">d/M/y – d/M/y G</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d/M/y – d/M/y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">d/M/y – d/M/y G</greatestDifference>
+							<greatestDifference id="d" draft="contributed">d/M/y – d/M/y
+								G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d/M/y – d/M/y
+								G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">d/M/y – d/M/y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="contributed">E, d/M/y – E, d/M/y G</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, d/M/y – E, d/M/y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E, d/M/y – E, d/M/y G</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, d/M/y – E,
+								d/M/y G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, d/M/y – E,
+								d/M/y G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E, d/M/y – E,
+								d/M/y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="contributed">MMM–MMM Gy</greatestDifference>
-							<greatestDifference id="y" draft="contributed">MMM Gy – MMM y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMM Gy – MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d" draft="contributed">d MMM–d, Gy</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d MMM – d MMM, Gy</greatestDifference>
-							<greatestDifference id="y" draft="contributed">d MMM, Gy – d MMM, y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d MMM – d
+								MMM, Gy</greatestDifference>
+							<greatestDifference id="y" draft="contributed">d MMM, Gy – d
+								MMM, y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="contributed">E, d MMM – E, d MMM, Gy</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, d MMM – E, d MMM, Gy</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E, d MMM, Gy – E, d MMM, y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, d MMM – E,
+								d MMM, Gy</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, d MMM – E,
+								d MMM, Gy</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E, d MMM, Gy
+								– E, d MMM, y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="contributed">MMMM–MMMM Gy</greatestDifference>
@@ -1663,7 +1706,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
 							<greatestDifference id="d">E, d MMM – E, d MMM</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, d MMM – E, d MMM</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, d MMM – E,
+								d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y–y</greatestDifference>
@@ -1694,7 +1738,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM – E, d MMM, y</greatestDifference>
 							<greatestDifference id="M">E, d MMM – E, d MMM, y</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y – E, d MMM, y</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y – E, d MMM,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM – MMMM y</greatestDifference>
@@ -4521,8 +4566,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>बोस्निया हर्ज़ेगोविना परिवर्तनीय मार्क</displayName>
-				<displayName count="one">बोस्निया हर्ज़ेगोविना परिवर्तनीय मार्क</displayName>
-				<displayName count="other">बोस्निया हर्ज़ेगोविना परिवर्तनीय मार्क</displayName>
+				<displayName count="one">बोस्निया हर्ज़ेगोविना परिवर्तनीय
+					मार्क</displayName>
+				<displayName count="other">बोस्निया हर्ज़ेगोविना परिवर्तनीय
+					मार्क</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>बार्बेडियन डॉलर</displayName>

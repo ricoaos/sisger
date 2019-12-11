@@ -20,7 +20,10 @@
  * @version    $Id: Http.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-/** @see Zend_Amf_Request */
+/**
+ *
+ * @see Zend_Amf_Request
+ */
 require_once 'Zend/Amf/Request.php';
 
 /**
@@ -30,15 +33,17 @@ require_once 'Zend/Amf/Request.php';
  * built at construction time using a raw POST; if no data is available, the
  * request is declared a fault.
  *
- * @package    Zend_Amf
+ * @package Zend_Amf
  * @subpackage Request
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Amf_Request_Http extends Zend_Amf_Request
 {
+
     /**
      * Raw AMF request
+     * 
      * @var string
      */
     protected $_rawRequest;
@@ -58,13 +63,13 @@ class Zend_Amf_Request_Http extends Zend_Amf_Request
         // intensive alternative to $HTTP_RAW_POST_DATA and does not need any
         // special php.ini directives
         $amfRequest = file_get_contents('php://input');
-
+        
         // Check to make sure that we have data on the input stream.
         if ($amfRequest != '') {
             $this->_rawRequest = $amfRequest;
             $this->initialize($amfRequest);
         } else {
-            echo '<p>Zend Amf Endpoint</p>' ;
+            echo '<p>Zend Amf Endpoint</p>';
         }
     }
 

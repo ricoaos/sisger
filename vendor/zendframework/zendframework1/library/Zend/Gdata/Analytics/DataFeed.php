@@ -21,23 +21,27 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Feed
  */
 require_once 'Zend/Gdata/Feed.php';
 
 /**
+ *
  * @see Zend_Gdata_Analytics
  */
 require_once 'Zend/Gdata/Analytics.php';
 
 /**
+ *
  * @see Zend_Gdata_Geo_Entry
  */
 require_once 'Zend/Gdata/Analytics/DataEntry.php';
 
 /**
- * @category   Zend
- * @package    Zend_Gdata
+ *
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Analytics
  */
 class Zend_Gdata_Analytics_DataFeed extends Zend_Gdata_Feed
@@ -49,6 +53,7 @@ class Zend_Gdata_Analytics_DataFeed extends Zend_Gdata_Feed
      * @var string
      */
     protected $_entryClassName = 'Zend_Gdata_Analytics_DataEntry';
+
     /**
      * The classname for the feed.
      *

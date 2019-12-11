@@ -21,6 +21,7 @@
  */
 
 /**
+ *
  * @see Zend_Tool_Project_Context_Filesystem_File
  */
 require_once 'Zend/Tool/Project/Context/Filesystem/File.php';
@@ -31,15 +32,16 @@ require_once 'Zend/Tool/Project/Context/Filesystem/File.php';
  * A profile is a hierarchical set of resources that keep track of
  * items within a specific project.
  *
- * @category   Zend
- * @package    Zend_Tool
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Tool
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Tool_Project_Context_Zf_TestApplicationControllerFile extends Zend_Tool_Project_Context_Filesystem_File
 {
 
     /**
+     *
      * @var string
      */
     protected $_forControllerName = '';
@@ -75,19 +77,19 @@ class Zend_Tool_Project_Context_Zf_TestApplicationControllerFile extends Zend_To
     public function getPersistentAttributes()
     {
         $attributes = array();
-
+        
         if ($this->_forControllerName) {
             $attributes['forControllerName'] = $this->getForControllerName();
         }
-
+        
         return $attributes;
     }
-    
+
     public function getForControllerName()
     {
         return $this->_forControllerName;
     }
-    
+
     /**
      * getContents()
      *
@@ -95,17 +97,16 @@ class Zend_Tool_Project_Context_Zf_TestApplicationControllerFile extends Zend_To
      */
     public function getContents()
     {
-
         $filter = new Zend_Filter_Word_DashToCamelCase();
-
+        
         $className = $filter->filter($this->_forControllerName) . 'ControllerTest';
         
         /* @var $controllerDirectoryResource Zend_Tool_Project_Profile_Resource */
         $controllerDirectoryResource = $this->_resource->getParentResource();
         if ($controllerDirectoryResource->getParentResource()->getName() == 'TestApplicationModuleDirectory') {
-            $className = $filter->filter(ucfirst($controllerDirectoryResource->getParentResource()->getForModuleName()))
-                . '_' . $className;
-        }        
+            $className = $filter->filter(ucfirst($controllerDirectoryResource->getParentResource()
+                ->getForModuleName())) . '_' . $className;
+        }
         
         $codeGenFile = new Zend_CodeGenerator_Php_File(array(
             'classes' => array(
@@ -119,13 +120,13 @@ class Zend_Tool_Project_Context_Zf_TestApplicationControllerFile extends Zend_To
 \$this->bootstrap = new Zend_Application(APPLICATION_ENV, APPLICATION_PATH . '/configs/application.ini');
 parent::setUp();
 EOS
-                            ))
-                        )
-                    ))
-                )
-            ));
 
+                        ))
+                    )
+                ))
+            )
+        ));
+        
         return $codeGenFile->generate();
     }
-
 }

@@ -22,36 +22,43 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Photos
  */
 require_once 'Zend/Gdata/Photos.php';
 
 /**
+ *
  * @see Zend_Gdata_Feed
  */
 require_once 'Zend/Gdata/Feed.php';
 
 /**
+ *
  * @see Zend_Gdata_Photos_UserEntry
  */
 require_once 'Zend/Gdata/Photos/UserEntry.php';
 
 /**
+ *
  * @see Zend_Gdata_Photos_AlbumEntry
  */
 require_once 'Zend/Gdata/Photos/AlbumEntry.php';
 
 /**
+ *
  * @see Zend_Gdata_Photos_PhotoEntry
  */
 require_once 'Zend/Gdata/Photos/PhotoEntry.php';
 
 /**
+ *
  * @see Zend_Gdata_Photos_TagEntry
  */
 require_once 'Zend/Gdata/Photos/TagEntry.php';
 
 /**
+ *
  * @see Zend_Gdata_Photos_CommentEntry
  */
 require_once 'Zend/Gdata/Photos/CommentEntry.php';
@@ -63,11 +70,11 @@ require_once 'Zend/Gdata/Photos/CommentEntry.php';
  * For information on requesting this feed from a server, see the
  * service class, Zend_Gdata_Photos.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Photos
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Photos_UserFeed extends Zend_Gdata_Feed
 {
@@ -94,6 +101,7 @@ class Zend_Gdata_Photos_UserFeed extends Zend_Gdata_Feed
     protected $_gphotoNickname = null;
 
     protected $_entryClassName = 'Zend_Gdata_Photos_UserEntry';
+
     protected $_feedClassName = 'Zend_Gdata_Photos_UserFeed';
 
     protected $_entryKindClassMapping = array(
@@ -113,23 +121,24 @@ class Zend_Gdata_Photos_UserFeed extends Zend_Gdata_Feed
      * Creates individual Entry objects of the appropriate type and
      * stores them in the $_entry array based upon DOM data.
      *
-     * @param DOMNode $child The DOMNode to process
+     * @param DOMNode $child
+     *            The DOMNode to process
      */
     protected function takeChildFromDOM($child)
     {
         $absoluteNodeName = $child->namespaceURI . ':' . $child->localName;
         switch ($absoluteNodeName) {
-            case $this->lookupNamespace('gphoto') . ':' . 'user';
+            case $this->lookupNamespace('gphoto') . ':' . 'user':
                 $user = new Zend_Gdata_Photos_Extension_User();
                 $user->transferFromDOM($child);
                 $this->_gphotoUser = $user;
                 break;
-            case $this->lookupNamespace('gphoto') . ':' . 'nickname';
+            case $this->lookupNamespace('gphoto') . ':' . 'nickname':
                 $nickname = new Zend_Gdata_Photos_Extension_Nickname();
                 $nickname->transferFromDOM($child);
                 $this->_gphotoNickname = $nickname;
                 break;
-            case $this->lookupNamespace('gphoto') . ':' . 'thumbnail';
+            case $this->lookupNamespace('gphoto') . ':' . 'thumbnail':
                 $thumbnail = new Zend_Gdata_Photos_Extension_Thumbnail();
                 $thumbnail->transferFromDOM($child);
                 $this->_gphotoThumbnail = $thumbnail;
@@ -139,16 +148,15 @@ class Zend_Gdata_Photos_UserFeed extends Zend_Gdata_Feed
                 $tmpEntry = new Zend_Gdata_App_Entry($child);
                 $categories = $tmpEntry->getCategory();
                 foreach ($categories as $category) {
-                    if ($category->scheme == Zend_Gdata_Photos::KIND_PATH &&
-                        $this->_entryKindClassMapping[$category->term] != "") {
-                            $entryClassName = $this->_entryKindClassMapping[$category->term];
-                            break;
+                    if ($category->scheme == Zend_Gdata_Photos::KIND_PATH && $this->_entryKindClassMapping[$category->term] != "") {
+                        $entryClassName = $this->_entryKindClassMapping[$category->term];
+                        break;
                     } else {
                         require_once 'Zend/Gdata/App/Exception.php';
                         throw new Zend_Gdata_App_Exception('Entry is missing kind declaration.');
                     }
                 }
-
+                
                 $newEntry = new $entryClassName($child);
                 $newEntry->setHttpClient($this->getHttpClient());
                 $this->_entry[] = $newEntry;
@@ -171,7 +179,7 @@ class Zend_Gdata_Photos_UserFeed extends Zend_Gdata_Feed
         if ($this->_gphotoThumbnail != null) {
             $element->appendChild($this->_gphotoThumbnail->getDOM($element->ownerDocument));
         }
-
+        
         return $element;
     }
 
@@ -189,7 +197,8 @@ class Zend_Gdata_Photos_UserFeed extends Zend_Gdata_Feed
     /**
      * Set the value for this element's gphoto:user attribute.
      *
-     * @param string $value The desired value for this attribute.
+     * @param string $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Photos_Extension_User The element being modified.
      */
     public function setGphotoUser($value)
@@ -212,7 +221,8 @@ class Zend_Gdata_Photos_UserFeed extends Zend_Gdata_Feed
     /**
      * Set the value for this element's gphoto:nickname attribute.
      *
-     * @param string $value The desired value for this attribute.
+     * @param string $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Photos_Extension_Nickname The element being modified.
      */
     public function setGphotoNickname($value)
@@ -235,7 +245,8 @@ class Zend_Gdata_Photos_UserFeed extends Zend_Gdata_Feed
     /**
      * Set the value for this element's gphoto:thumbnail attribute.
      *
-     * @param string $value The desired value for this attribute.
+     * @param string $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Photos_Extension_Thumbnail The element being modified.
      */
     public function setGphotoThumbnail($value)
@@ -243,5 +254,4 @@ class Zend_Gdata_Photos_UserFeed extends Zend_Gdata_Feed
         $this->_gphotoThumbnail = $value;
         return $this;
     }
-
 }

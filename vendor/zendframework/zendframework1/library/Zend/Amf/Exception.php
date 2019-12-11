@@ -20,14 +20,16 @@
  */
 
 /**
+ *
  * @see Zend_Exception
  */
 require_once 'Zend/Exception.php';
 
 /**
- * @package    Zend_Amf
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @package Zend_Amf
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Amf_Exception extends Zend_Exception
 {

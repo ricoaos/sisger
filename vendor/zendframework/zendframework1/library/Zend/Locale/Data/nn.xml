@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="nn"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="nn" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -953,33 +952,46 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="numbers">tal</key>
 		</keys>
 		<types>
-			<type type="arab" key="numbers" draft="unconfirmed">hindu-arabiske siffer (vestlige)</type>
-			<type type="arabext" key="numbers" draft="unconfirmed">hindu-arabiske siffer (østlige)</type>
+			<type type="arab" key="numbers" draft="unconfirmed">hindu-arabiske siffer
+				(vestlige)</type>
+			<type type="arabext" key="numbers" draft="unconfirmed">hindu-arabiske siffer
+				(østlige)</type>
 			<type type="armn" key="numbers" draft="unconfirmed">armenske numeraler</type>
-			<type type="armnlow" key="numbers" draft="unconfirmed">armenske numeraler i små bogstaver</type>
+			<type type="armnlow" key="numbers" draft="unconfirmed">armenske numeraler i
+				små bogstaver</type>
 			<type type="beng" key="numbers" draft="unconfirmed">bengalske siffer</type>
 			<type type="big5han" key="collation">tradisjonell kinesisk sortering</type>
 			<type type="buddhist" key="calendar">buddhistisk kalender</type>
 			<type type="chinese" key="calendar">kinesisk kalender</type>
 			<type type="deva" key="numbers" draft="unconfirmed">devanagariske siffer</type>
-			<type type="ducet" key="collation">grunnleggjande Unicode-sorteringsrekkjefølgje</type>
-			<type type="eor" key="collation" draft="unconfirmed">sorteringsrekkefølge for flerspråklige europeiske dokumenter</type>
+			<type type="ducet" key="collation">grunnleggjande
+				Unicode-sorteringsrekkjefølgje</type>
+			<type type="eor" key="collation" draft="unconfirmed">sorteringsrekkefølge for
+				flerspråklige europeiske dokumenter</type>
 			<type type="ethi" key="numbers" draft="unconfirmed">etiopiske numeraler</type>
 			<type type="ethiopic" key="calendar">etiopisk kalender</type>
-			<type type="ethiopic-amete-alem" key="calendar">etiopisk amete-alem-kalender</type>
-			<type type="fullwide" key="numbers" draft="unconfirmed">vesterlandske siffer i fuld bredde</type>
+			<type type="ethiopic-amete-alem" key="calendar">etiopisk
+				amete-alem-kalender</type>
+			<type type="fullwide" key="numbers" draft="unconfirmed">vesterlandske siffer i
+				fuld bredde</type>
 			<type type="gb2312han" key="collation">forenkla kinesisk sortering</type>
 			<type type="geor" key="numbers" draft="unconfirmed">georgiske numeraler</type>
 			<type type="gregorian" key="calendar">gregoriansk kalender</type>
 			<type type="grek" key="numbers" draft="unconfirmed">græske numeraler</type>
-			<type type="greklow" key="numbers" draft="unconfirmed">græske numeraler i små bogstaver</type>
+			<type type="greklow" key="numbers" draft="unconfirmed">græske numeraler i små
+				bogstaver</type>
 			<type type="gujr" key="numbers" draft="unconfirmed">gujaratiske siffer</type>
 			<type type="guru" key="numbers" draft="unconfirmed">gurmukhiske siffer</type>
-			<type type="hanidec" key="numbers" draft="unconfirmed">kinesiskt stavede siffer</type>
-			<type type="hans" key="numbers" draft="unconfirmed">forenklet stavede kinesiske numeraler</type>
-			<type type="hansfin" key="numbers" draft="unconfirmed">forenklet stavede kinesiske financielle numeraler</type>
-			<type type="hant" key="numbers" draft="unconfirmed">traditionelt stavede kinesiske numeraler</type>
-			<type type="hantfin" key="numbers" draft="unconfirmed">traditionelt stavede kinesiske financielle numeraler</type>
+			<type type="hanidec" key="numbers" draft="unconfirmed">kinesiskt stavede
+				siffer</type>
+			<type type="hans" key="numbers" draft="unconfirmed">forenklet stavede
+				kinesiske numeraler</type>
+			<type type="hansfin" key="numbers" draft="unconfirmed">forenklet stavede
+				kinesiske financielle numeraler</type>
+			<type type="hant" key="numbers" draft="unconfirmed">traditionelt stavede
+				kinesiske numeraler</type>
+			<type type="hantfin" key="numbers" draft="unconfirmed">traditionelt stavede
+				kinesiske financielle numeraler</type>
 			<type type="hebr" key="numbers" draft="unconfirmed">hebæiske numeraler</type>
 			<type type="hebrew" key="calendar">hebraisk kalender</type>
 			<type type="indian" key="calendar">indisk nasjonalkalender</type>
@@ -988,7 +1000,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="japanese" key="calendar">japansk kalender</type>
 			<type type="java" key="numbers" draft="unconfirmed">javanesiske siffer</type>
 			<type type="jpan" key="numbers" draft="unconfirmed">japanskt stavede numeraler</type>
-			<type type="jpanfin" key="numbers" draft="unconfirmed">japanskt stavede financielle numeraler</type>
+			<type type="jpanfin" key="numbers" draft="unconfirmed">japanskt stavede
+				financielle numeraler</type>
 			<type type="khmr" key="numbers" draft="unconfirmed">kambodiske siffer</type>
 			<type type="knda" key="numbers" draft="unconfirmed">kannadiske siffer</type>
 			<type type="laoo" key="numbers" draft="unconfirmed">laotiske siffer</type>
@@ -1001,10 +1014,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="pinyin" key="collation">pinyin-sortering</type>
 			<type type="roc" key="calendar">kalender for Republikken Kina</type>
 			<type type="roman" key="numbers" draft="unconfirmed">romernumeraler</type>
-			<type type="romanlow" key="numbers" draft="unconfirmed">romernumeraler i små bogstaver</type>
+			<type type="romanlow" key="numbers" draft="unconfirmed">romernumeraler i små
+				bogstaver</type>
 			<type type="search" key="collation">søksorteringsrekkjefølgje etter CLDR</type>
 			<type type="stroke" key="collation">streksortering</type>
-			<type type="taml" key="numbers" draft="unconfirmed">traditionelle tamilske numeraler</type>
+			<type type="taml" key="numbers" draft="unconfirmed">traditionelle tamilske
+				numeraler</type>
 			<type type="tamldec" key="numbers" draft="unconfirmed">tamilske siffer</type>
 			<type type="telu" key="numbers" draft="unconfirmed">telugiske siffer</type>
 			<type type="thai" key="numbers" draft="unconfirmed">thailandske siffer</type>
@@ -1023,9 +1038,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a à b c d e é f g h i j k l m n o ó ò ô p q r s t u v w x y z æ ø å]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á ǎ č ç đ è ê ń ñ ŋ š ŧ ü ž ä ö]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å]</exemplarCharacters>
+		<exemplarCharacters>[a à b c d e é f g h i j k l m n o ó ò ô p q r s t
+			u v w x y z æ ø å]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á ǎ č ç đ è ê ń ñ ŋ š ŧ ü
+			ž ä ö]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S T U V W X Y Z Æ Ø Å]</exemplarCharacters>
 		<ellipsis type="final" draft="unconfirmed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="unconfirmed">…{0}</ellipsis>
 		<ellipsis type="medial" draft="unconfirmed">{0}…{1}</ellipsis>
@@ -1564,7 +1582,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">for {0} måned siden</relativeTimePattern>
-					<relativeTimePattern count="other">for {0} måneder siden</relativeTimePattern>
+					<relativeTimePattern count="other">for {0} måneder
+						siden</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -1657,7 +1676,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">for {0} minutt siden</relativeTimePattern>
-					<relativeTimePattern count="other">for {0} minutter siden</relativeTimePattern>
+					<relativeTimePattern count="other">for {0} minutter
+						siden</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">
@@ -1668,7 +1688,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">for {0} sekund siden</relativeTimePattern>
-					<relativeTimePattern count="other">for {0} sekunder siden</relativeTimePattern>
+					<relativeTimePattern count="other">for {0} sekunder
+						siden</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">
@@ -1880,15 +1901,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<pattern type="1000000000" count="one" draft="unconfirmed">0 milliard</pattern>
 					<pattern type="1000000000" count="other" draft="unconfirmed">0 milliarder</pattern>
 					<pattern type="10000000000" count="one" draft="unconfirmed">00 milliard</pattern>
-					<pattern type="10000000000" count="other" draft="unconfirmed">00 milliarder</pattern>
+					<pattern type="10000000000" count="other" draft="unconfirmed">00
+						milliarder</pattern>
 					<pattern type="100000000000" count="one" draft="unconfirmed">000 milliard</pattern>
-					<pattern type="100000000000" count="other" draft="unconfirmed">000 milliarder</pattern>
+					<pattern type="100000000000" count="other" draft="unconfirmed">000
+						milliarder</pattern>
 					<pattern type="1000000000000" count="one" draft="unconfirmed">0 billion</pattern>
-					<pattern type="1000000000000" count="other" draft="unconfirmed">0 billioner</pattern>
+					<pattern type="1000000000000" count="other" draft="unconfirmed">0
+						billioner</pattern>
 					<pattern type="10000000000000" count="one" draft="unconfirmed">00 billion</pattern>
-					<pattern type="10000000000000" count="other" draft="unconfirmed">00 billioner</pattern>
-					<pattern type="100000000000000" count="one" draft="unconfirmed">000 billion</pattern>
-					<pattern type="100000000000000" count="other" draft="unconfirmed">000 billioner</pattern>
+					<pattern type="10000000000000" count="other" draft="unconfirmed">00
+						billioner</pattern>
+					<pattern type="100000000000000" count="one" draft="unconfirmed">000
+						billion</pattern>
+					<pattern type="100000000000000" count="other" draft="unconfirmed">000
+						billioner</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 			<decimalFormatLength type="short">
@@ -2162,8 +2189,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">tsjekkoslovakiske koruna (hard)</displayName>
 			</currency>
 			<currency type="CUC">
-				<displayName count="one" draft="unconfirmed">kubansk peso (konvertibel)</displayName>
-				<displayName count="other" draft="unconfirmed">kubanska pesos (konvertibla)</displayName>
+				<displayName count="one" draft="unconfirmed">kubansk peso
+					(konvertibel)</displayName>
+				<displayName count="other" draft="unconfirmed">kubanska pesos
+					(konvertibla)</displayName>
 			</currency>
 			<currency type="CUP">
 				<displayName>kubansk peso</displayName>
@@ -2220,8 +2249,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ECV">
 				<displayName>ecuadoriansk unidad de valor constante (UVC)</displayName>
-				<displayName count="one">ecuadoriansk unidad de valor constante (UVC)</displayName>
-				<displayName count="other">ecuadorianske unidad de valor constante (UVC)</displayName>
+				<displayName count="one">ecuadoriansk unidad de valor
+					constante (UVC)</displayName>
+				<displayName count="other">ecuadorianske unidad de valor
+					constante (UVC)</displayName>
 			</currency>
 			<currency type="EEK">
 				<displayName>estisk kroon</displayName>
@@ -3007,8 +3038,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="UYI">
 				<displayName>uruguayansk peso en unidades indexadas</displayName>
-				<displayName count="one">uruguayansk peso en unidades indexadas</displayName>
-				<displayName count="other">uruguayanske peso en unidades indexadas</displayName>
+				<displayName count="one">uruguayansk peso en unidades
+					indexadas</displayName>
+				<displayName count="other">uruguayanske peso en unidades
+					indexadas</displayName>
 			</currency>
 			<currency type="UYP">
 				<displayName>uruguayansk peso (1975–1993)</displayName>
@@ -3221,7 +3254,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="area-acre">
 				<unitPattern count="one" draft="unconfirmed">{0} amerikanskt tønneland</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} amerikanske tønneland</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} amerikanske
+					tønneland</unitPattern>
 			</unit>
 			<unit type="area-hectare">
 				<unitPattern count="one" draft="unconfirmed">{0} hektar</unitPattern>
@@ -3241,7 +3275,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="area-square-mile">
 				<unitPattern count="one" draft="unconfirmed">{0} kvadrat-engelsk mil</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} kvadrat-engelske mil</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} kvadrat-engelske
+					mil</unitPattern>
 			</unit>
 			<unit type="duration-day">
 				<unitPattern count="one" draft="unconfirmed">{0} døgn</unitPattern>
@@ -3365,7 +3400,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="speed-mile-per-hour">
 				<unitPattern count="one" draft="unconfirmed">{0} engelsk mil per time</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} engelske mil per time</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} engelske mil per
+					time</unitPattern>
 			</unit>
 			<unit type="temperature-celsius">
 				<unitPattern count="one" draft="unconfirmed">{0} grad Celsius</unitPattern>

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -23,16 +24,17 @@
 /**
  * Class for SQL table interface.
  *
- * @category   Zend
- * @package    Zend_Db
+ * @category Zend
+ * @package Zend_Db
  * @subpackage Table
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Db_Table_Definition
 {
 
     /**
+     *
      * @var array
      */
     protected $_tableConfigs = array();
@@ -40,7 +42,7 @@ class Zend_Db_Table_Definition
     /**
      * __construct()
      *
-     * @param array|Zend_Config $options
+     * @param array|Zend_Config $options            
      */
     public function __construct($options = null)
     {
@@ -54,7 +56,7 @@ class Zend_Db_Table_Definition
     /**
      * setConfig()
      *
-     * @param Zend_Config $config
+     * @param Zend_Config $config            
      * @return Zend_Db_Table_Definition
      */
     public function setConfig(Zend_Config $config)
@@ -66,7 +68,7 @@ class Zend_Db_Table_Definition
     /**
      * setOptions()
      *
-     * @param array $options
+     * @param array $options            
      * @return Zend_Db_Table_Definition
      */
     public function setOptions(Array $options)
@@ -78,8 +80,9 @@ class Zend_Db_Table_Definition
     }
 
     /**
-     * @param string $tableName
-     * @param array  $tableConfig
+     *
+     * @param string $tableName            
+     * @param array $tableConfig            
      * @return Zend_Db_Table_Definition
      */
     public function setTableConfig($tableName, array $tableConfig)
@@ -87,11 +90,11 @@ class Zend_Db_Table_Definition
         // @todo logic here
         $tableConfig[Zend_Db_Table::DEFINITION_CONFIG_NAME] = $tableName;
         $tableConfig[Zend_Db_Table::DEFINITION] = $this;
-
-        if (!isset($tableConfig[Zend_Db_Table::NAME])) {
+        
+        if (! isset($tableConfig[Zend_Db_Table::NAME])) {
             $tableConfig[Zend_Db_Table::NAME] = $tableName;
         }
-
+        
         $this->_tableConfigs[$tableName] = $tableConfig;
         return $this;
     }
@@ -99,7 +102,7 @@ class Zend_Db_Table_Definition
     /**
      * getTableConfig()
      *
-     * @param string $tableName
+     * @param string $tableName            
      * @return array
      */
     public function getTableConfig($tableName)
@@ -110,7 +113,7 @@ class Zend_Db_Table_Definition
     /**
      * removeTableConfig()
      *
-     * @param string $tableName
+     * @param string $tableName            
      */
     public function removeTableConfig($tableName)
     {
@@ -120,12 +123,11 @@ class Zend_Db_Table_Definition
     /**
      * hasTableConfig()
      *
-     * @param string $tableName
+     * @param string $tableName            
      * @return bool
      */
     public function hasTableConfig($tableName)
     {
         return (isset($this->_tableConfigs[$tableName]));
     }
-
 }

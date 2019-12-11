@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -23,25 +24,26 @@
 /**
  * Interface for bootstrap classes
  *
- * @category   Zend
- * @package    Zend_Application
+ * @category Zend
+ * @package Zend_Application
  * @subpackage Bootstrap
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 interface Zend_Application_Bootstrap_Bootstrapper
 {
+
     /**
      * Constructor
      *
-     * @param  Zend_Application $application
+     * @param Zend_Application $application            
      */
     public function __construct($application);
 
     /**
      * Set bootstrap options
      *
-     * @param  array $options
+     * @param array $options            
      * @return Zend_Application_Bootstrap_Bootstrapper
      */
     public function setOptions(array $options);
@@ -61,7 +63,8 @@ interface Zend_Application_Bootstrap_Bootstrapper
     public function getEnvironment();
 
     /**
-     * Retrieve list of class resource initializers (_init* methods). Returns
+     * Retrieve list of class resource initializers (_init* methods).
+     * Returns
      * as resource/method pairs.
      *
      * @return array
@@ -79,7 +82,7 @@ interface Zend_Application_Bootstrap_Bootstrapper
     /**
      * Bootstrap application or individual resource
      *
-     * @param  null|string $resource
+     * @param null|string $resource            
      * @return mixed
      */
     public function bootstrap($resource = null);

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9624 $"/>
-		<generation date="$Date: 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014) $"/>
-		<language type="ast"/>
+		<version number="$Revision: 9624 $" />
+		<generation date="$Date: 2014-01-08 23:02:40 -0600 (Wed, 08 Jan 2014) $" />
+		<language type="ast" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -317,7 +316,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP" draft="unconfirmed">Guadalupe</territory>
 			<territory type="GQ" draft="unconfirmed">Guinea Ecuatorial</territory>
 			<territory type="GR" draft="unconfirmed">Grecia</territory>
-			<territory type="GS" draft="unconfirmed">Islles Xeorxa del Sur y Sandwich del Sur</territory>
+			<territory type="GS" draft="unconfirmed">Islles Xeorxa del Sur y Sandwich
+				del Sur</territory>
 			<territory type="GT" draft="unconfirmed">Guatemala</territory>
 			<territory type="GU" draft="unconfirmed">Guam</territory>
 			<territory type="GW" draft="unconfirmed">Guinea-Bisáu</territory>
@@ -335,7 +335,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IL" draft="unconfirmed">Israel</territory>
 			<territory type="IM" draft="unconfirmed">Islla de Man</territory>
 			<territory type="IN" draft="unconfirmed">India</territory>
-			<territory type="IO" draft="unconfirmed">Territoriu Británicu del Océanu Índicu</territory>
+			<territory type="IO" draft="unconfirmed">Territoriu Británicu del Océanu
+				Índicu</territory>
 			<territory type="IQ" draft="unconfirmed">Iraq</territory>
 			<territory type="IR" draft="unconfirmed">Irán</territory>
 			<territory type="IS" draft="unconfirmed">Islandia</territory>
@@ -466,7 +467,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ" draft="unconfirmed">Tanzania</territory>
 			<territory type="UA" draft="unconfirmed">Ucraína</territory>
 			<territory type="UG" draft="unconfirmed">Uganda</territory>
-			<territory type="UM" draft="unconfirmed">Islles Perifériques Menores de los EE.XX.</territory>
+			<territory type="UM" draft="unconfirmed">Islles Perifériques Menores de
+				los EE.XX.</territory>
 			<territory type="US" draft="unconfirmed">Estaos Xuníos</territory>
 			<territory type="UY" draft="unconfirmed">Uruguay</territory>
 			<territory type="UZ" draft="unconfirmed">Uzbequistán</territory>
@@ -499,7 +501,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armnlow" key="numbers" draft="unconfirmed">armenios en minúscules</type>
 			<type type="beng" key="numbers" draft="unconfirmed">bengalinos</type>
 			<type type="deva" key="numbers" draft="unconfirmed">devanagari</type>
-			<type type="ducet" key="collation" draft="unconfirmed">orde de clasificación predetermináu d'Unicode</type>
+			<type type="ducet" key="collation" draft="unconfirmed">orde de clasificación
+				predetermináu d'Unicode</type>
 			<type type="ethi" key="numbers" draft="unconfirmed">etíopes</type>
 			<type type="fullwide" key="numbers" draft="unconfirmed">anchu completu</type>
 			<type type="geor" key="numbers" draft="unconfirmed">xeorxanos</type>
@@ -510,9 +513,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers" draft="unconfirmed">gurmukhi</type>
 			<type type="hanidec" key="numbers" draft="unconfirmed">chinos decimales</type>
 			<type type="hans" key="numbers" draft="unconfirmed">chinos simplificaos</type>
-			<type type="hansfin" key="numbers" draft="unconfirmed">chinos simplificaos financieros</type>
+			<type type="hansfin" key="numbers" draft="unconfirmed">chinos simplificaos
+				financieros</type>
 			<type type="hant" key="numbers" draft="unconfirmed">chinos tradicionales</type>
-			<type type="hantfin" key="numbers" draft="unconfirmed">chinos tradicionales financieros</type>
+			<type type="hantfin" key="numbers" draft="unconfirmed">chinos tradicionales
+				financieros</type>
 			<type type="hebr" key="numbers" draft="unconfirmed">hebreos</type>
 			<type type="jpan" key="numbers" draft="unconfirmed">xaponeses</type>
 			<type type="jpanfin" key="numbers" draft="unconfirmed">xaponeses financieros</type>
@@ -534,7 +539,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</types>
 		<measurementSystemNames>
 			<measurementSystemName type="metric" draft="unconfirmed">Métricu</measurementSystemName>
-			<measurementSystemName type="UK" draft="unconfirmed">Reinu Xuníu</measurementSystemName>
+			<measurementSystemName type="UK" draft="unconfirmed">Reinu
+				Xuníu</measurementSystemName>
 			<measurementSystemName type="US" draft="unconfirmed">EE.XX.</measurementSystemName>
 		</measurementSystemNames>
 		<codePatterns>
@@ -544,10 +550,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a á b c d e é f g h ḥ i í l ḷ m n ñ o ó p q r s t u ú ü v x y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[ª à ă â å ä ã ā æ ç è ĕ ê ë ē ì ĭ î ï ī j k º ò ŏ ô ö ø ō œ ù ŭ û ū w ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I L M N Ñ O P Q R S T U V X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ¡ ? ¿ . … ' ‘ ’ &quot; “ ” « » ( ) \[ \] § @ * / \\ \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters>[a á b c d e é f g h ḥ i í l ḷ m n ñ o ó p q r s t
+			u ú ü v x y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[ª à ă â å ä ã ā æ ç è ĕ ê
+			ë ē ì ĭ î ï ī j k º ò ŏ ô ö ø ō œ ù ŭ û ū w ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I L M N Ñ
+			O P Q R S T U V X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ¡ ? ¿ .
+			… ' ‘ ’ &quot; “ ” « » ( ) \[ \] § @ * / \\ \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final" draft="unconfirmed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="unconfirmed">… {0}</ellipsis>
 		<ellipsis type="medial" draft="unconfirmed">{0}… {1}</ellipsis>
@@ -644,7 +654,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="H" draft="unconfirmed">HH–HH</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm
+								a</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm–h:mm a</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm–h:mm a</greatestDifference>
 						</intervalFormatItem>
@@ -653,7 +664,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="m" draft="unconfirmed">HH:mm–HH:mm</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm
+								a v</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm–h:mm a v</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm–h:mm a v</greatestDifference>
 						</intervalFormatItem>
@@ -676,8 +688,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="unconfirmed">dd/MM – dd/MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d" draft="unconfirmed">E, dd – E, dd/MM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, dd/MM – E, dd/MM</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, dd – E,
+								dd/MM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, dd/MM – E,
+								dd/MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M" draft="unconfirmed">LLL–LLL</greatestDifference>
@@ -687,8 +701,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="unconfirmed">d/MM – d/MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E, d MMM – E, d MMM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, d MMM – E, d MMM</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, d MMM – E,
+								d MMM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, d MMM – E,
+								d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="unconfirmed">y-y</greatestDifference>
@@ -703,9 +719,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="unconfirmed">d/M/y – d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="unconfirmed">E, d/M/y – E, d/M/y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, d/M/y – E, d/M/y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E, d/M/y – E, d/M/y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, d/M/y – E,
+								d/M/y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, d/M/y – E,
+								d/M/y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E, d/M/y – E,
+								d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM – MMM y</greatestDifference>
@@ -713,17 +732,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d" draft="unconfirmed">d – d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">d MMM – d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">d MMM y – d MMM y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">d MMM – d MMM
+								y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">d MMM y – d
+								MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E, d MMM – E, d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, d MMM – E, d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E, d MMM y – E, d MMM y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, d MMM – E,
+								d MMM y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, d MMM – E,
+								d MMM y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E, d MMM y –
+								E, d MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="unconfirmed">LLLL – LLLL y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">LLLL y – LLLL y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">LLLL y – LLLL
+								y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -1047,7 +1072,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="H" draft="unconfirmed">HH–HH</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm
+								a</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm–h:mm a</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm–h:mm a</greatestDifference>
 						</intervalFormatItem>
@@ -1056,7 +1082,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="m" draft="unconfirmed">HH:mm–HH:mm</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm a v</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h:mm a – h:mm
+								a v</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h:mm–h:mm a v</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h:mm–h:mm a v</greatestDifference>
 						</intervalFormatItem>
@@ -1079,8 +1106,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="unconfirmed">dd/MM – dd/MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d" draft="unconfirmed">E, dd – E, dd/MM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, dd/MM – E, dd/MM</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, dd – E,
+								dd/MM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, dd/MM – E,
+								dd/MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M" draft="unconfirmed">LLL–LLL</greatestDifference>
@@ -1090,8 +1119,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="unconfirmed">d/MM – d/MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E, d MMM – E, d MMM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, d MMM – E, d MMM</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, d MMM – E,
+								d MMM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, d MMM – E,
+								d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="unconfirmed">y-y</greatestDifference>
@@ -1106,9 +1137,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="unconfirmed">d/M/y – d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="unconfirmed">E, d/M/y – E, d/M/y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, d/M/y – E, d/M/y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E, d/M/y – E, d/M/y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, d/M/y – E,
+								d/M/y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, d/M/y – E,
+								d/M/y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E, d/M/y – E,
+								d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM – MMM y</greatestDifference>
@@ -1116,17 +1150,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d" draft="unconfirmed">d – d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">d MMM – d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">d MMM y – d MMM y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">d MMM – d MMM
+								y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">d MMM y – d
+								MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E, d MMM – E, d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, d MMM – E, d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E, d MMM y – E, d MMM y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, d MMM – E,
+								d MMM y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, d MMM – E,
+								d MMM y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E, d MMM y –
+								E, d MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="unconfirmed">LLLL – LLLL y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">LLLL y – LLLL y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">LLLL y – LLLL
+								y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -1467,8 +1507,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="America_Mountain">
 				<long>
 					<generic draft="unconfirmed">Hora de les montañes norteamericanes</generic>
-					<standard draft="unconfirmed">Hora estándar de les montañes norteamericanes</standard>
-					<daylight draft="unconfirmed">Hora de branu de les montañes norteamericanes</daylight>
+					<standard draft="unconfirmed">Hora estándar de les montañes
+						norteamericanes</standard>
+					<daylight draft="unconfirmed">Hora de branu de les montañes
+						norteamericanes</daylight>
 				</long>
 			</metazone>
 			<metazone type="America_Pacific">
@@ -1742,8 +1784,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ANG">
 				<displayName draft="unconfirmed">guilder de les Antilles Neerlandeses</displayName>
-				<displayName count="one" draft="unconfirmed">guilder de les Antilles Neerlandeses</displayName>
-				<displayName count="other" draft="unconfirmed">guilders de les Antilles Neerlandeses</displayName>
+				<displayName count="one" draft="unconfirmed">guilder de les Antilles
+					Neerlandeses</displayName>
+				<displayName count="other" draft="unconfirmed">guilders de les
+					Antilles Neerlandeses</displayName>
 			</currency>
 			<currency type="AOA">
 				<displayName draft="unconfirmed">kwanza angolanu</displayName>
@@ -1772,9 +1816,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other" draft="unconfirmed">manats azerbaixanos</displayName>
 			</currency>
 			<currency type="BAM">
-				<displayName draft="unconfirmed">marcu convertible de Bosnia-Herzegovina</displayName>
-				<displayName count="one" draft="unconfirmed">marcu convertible de Bosnia-Herzegovina</displayName>
-				<displayName count="other" draft="unconfirmed">marcos convertibles de Bosnia-Herzegovina</displayName>
+				<displayName draft="unconfirmed">marcu convertible de
+					Bosnia-Herzegovina</displayName>
+				<displayName count="one" draft="unconfirmed">marcu convertible de
+					Bosnia-Herzegovina</displayName>
+				<displayName count="other" draft="unconfirmed">marcos convertibles de
+					Bosnia-Herzegovina</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName draft="unconfirmed">dólar barbadianu</displayName>
@@ -1887,7 +1934,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="CUC">
 				<displayName draft="unconfirmed">pesu convertible cubanu</displayName>
 				<displayName count="one" draft="unconfirmed">pesu convertible cubanu</displayName>
-				<displayName count="other" draft="unconfirmed">pesos convertibles cubanos</displayName>
+				<displayName count="other" draft="unconfirmed">pesos convertibles
+					cubanos</displayName>
 			</currency>
 			<currency type="CUP">
 				<displayName draft="unconfirmed">pesu cubanu</displayName>
@@ -2375,8 +2423,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="STD">
 				<displayName draft="unconfirmed">dobra de Santu Tomé y Príncipe</displayName>
-				<displayName count="one" draft="unconfirmed">dobra de Santu Tomé y Príncipe</displayName>
-				<displayName count="other" draft="unconfirmed">dobras de Santu Tomé y Príncipe</displayName>
+				<displayName count="one" draft="unconfirmed">dobra de Santu Tomé y
+					Príncipe</displayName>
+				<displayName count="other" draft="unconfirmed">dobras de Santu Tomé y
+					Príncipe</displayName>
 			</currency>
 			<currency type="SYP">
 				<displayName draft="unconfirmed">llibra siria</displayName>
@@ -2386,7 +2436,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="SZL">
 				<displayName draft="unconfirmed">lilangeni suazilandés</displayName>
 				<displayName count="one" draft="unconfirmed">lilangeni suazilandés</displayName>
-				<displayName count="other" draft="unconfirmed">lilangenis suazilandeses</displayName>
+				<displayName count="other" draft="unconfirmed">lilangenis
+					suazilandeses</displayName>
 			</currency>
 			<currency type="THB">
 				<displayName draft="unconfirmed">baht tailandés</displayName>
@@ -2422,12 +2473,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="TTD">
 				<displayName draft="unconfirmed">dólar de Trinidá y Tobagu</displayName>
 				<displayName count="one" draft="unconfirmed">dólar de Trinidá y Tobagu</displayName>
-				<displayName count="other" draft="unconfirmed">dólares de Trinidá y Tobagu</displayName>
+				<displayName count="other" draft="unconfirmed">dólares de Trinidá y
+					Tobagu</displayName>
 			</currency>
 			<currency type="TWD">
 				<displayName draft="unconfirmed">dólar nuevu taiwanés</displayName>
 				<displayName count="one" draft="unconfirmed">dólar nuevu taiwanés</displayName>
-				<displayName count="other" draft="unconfirmed">dólares nuevos taiwaneses</displayName>
+				<displayName count="other" draft="unconfirmed">dólares nuevos
+					taiwaneses</displayName>
 				<symbol draft="unconfirmed">NT$</symbol>
 			</currency>
 			<currency type="TZS">
@@ -2447,8 +2500,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="USD">
 				<displayName draft="unconfirmed">dólar de los Estaos Xuníos</displayName>
-				<displayName count="one" draft="unconfirmed">dólar de los Estaos Xuníos</displayName>
-				<displayName count="other" draft="unconfirmed">dólares de los Estaos Xuníos</displayName>
+				<displayName count="one" draft="unconfirmed">dólar de los Estaos
+					Xuníos</displayName>
+				<displayName count="other" draft="unconfirmed">dólares de los Estaos
+					Xuníos</displayName>
 				<symbol draft="unconfirmed">$</symbol>
 			</currency>
 			<currency type="UYU">
@@ -2491,7 +2546,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="XCD">
 				<displayName draft="unconfirmed">dólar del Caribe Oriental</displayName>
 				<displayName count="one" draft="unconfirmed">dólar del Caribe Oriental</displayName>
-				<displayName count="other" draft="unconfirmed">dólares del Caribe Oriental</displayName>
+				<displayName count="other" draft="unconfirmed">dólares del Caribe
+					Oriental</displayName>
 				<symbol draft="unconfirmed">EC$</symbol>
 			</currency>
 			<currency type="XOF">
@@ -2523,8 +2579,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ZMK">
 				<displayName draft="unconfirmed">kwacha zambianu (1968–2012)</displayName>
-				<displayName count="one" draft="unconfirmed">kwacha zambianu (1968–2012)</displayName>
-				<displayName count="other" draft="unconfirmed">kwachas zambianos (1968–2012)</displayName>
+				<displayName count="one" draft="unconfirmed">kwacha zambianu
+					(1968–2012)</displayName>
+				<displayName count="other" draft="unconfirmed">kwachas zambianos
+					(1968–2012)</displayName>
 			</currency>
 			<currency type="ZMW">
 				<displayName draft="unconfirmed">kwacha zambianu</displayName>

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="is"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="is" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -779,7 +778,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MG">Madagaskar</territory>
 			<territory type="MH">Marshalleyjar</territory>
 			<territory type="MK">Makedónía</territory>
-			<territory type="MK" alt="variant">Makedónía (Fyrrverandi lýðveldi Júgóslavíu)</territory>
+			<territory type="MK" alt="variant">Makedónía (Fyrrverandi lýðveldi
+				Júgóslavíu)</territory>
 			<territory type="ML">Malí</territory>
 			<territory type="MM">Mjanmar (Búrma)</territory>
 			<territory type="MN">Mongólía</territory>
@@ -924,20 +924,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armn" key="numbers">Armenskir tölustafir</type>
 			<type type="armnlow" key="numbers">Armenskar lágstafatölur</type>
 			<type type="beng" key="numbers">Bengalskar tölur</type>
-			<type type="big5han" key="collation" draft="contributed">hefðbundin kínversk röðun - Big5</type>
+			<type type="big5han" key="collation" draft="contributed">hefðbundin kínversk
+				röðun - Big5</type>
 			<type type="buddhist" key="calendar">Búddískt dagatal</type>
 			<type type="chinese" key="calendar">Kínverskt dagatal</type>
 			<type type="coptic" key="calendar">Koptískt tímatal</type>
 			<type type="deva" key="numbers">Tölur í devanagari</type>
 			<type type="dictionary" key="collation">Orðabókarröð</type>
 			<type type="ducet" key="collation">Sjálfgefin Unicode-röðun</type>
-			<type type="eor" key="collation" draft="unconfirmed">röðina fyrir fjöltyngi evrópskum skjölum</type>
+			<type type="eor" key="collation" draft="unconfirmed">röðina fyrir fjöltyngi
+				evrópskum skjölum</type>
 			<type type="ethi" key="numbers">Eþíópískir tölustafir</type>
 			<type type="ethiopic" key="calendar">Eþíópískt tímatal</type>
-			<type type="ethiopic-amete-alem" key="calendar">Eþíópískt 'amete alem' tímatal</type>
+			<type type="ethiopic-amete-alem" key="calendar">Eþíópískt 'amete alem'
+				tímatal</type>
 			<type type="finance" key="numbers">Viðskiptafræðileg töluorð</type>
 			<type type="fullwide" key="numbers">Tölur með fullri breidd</type>
-			<type type="gb2312han" key="collation" draft="contributed">einfölduð kínversk röðun - GB2312</type>
+			<type type="gb2312han" key="collation" draft="contributed">einfölduð kínversk
+				röðun - GB2312</type>
 			<type type="geor" key="numbers">Tölustafir í georgísku</type>
 			<type type="gregorian" key="calendar">Gregorískt dagatal</type>
 			<type type="grek" key="numbers">Grískir tölustafir</type>
@@ -980,7 +984,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="phonetic" key="collation">Hljóðfræðileg röð</type>
 			<type type="pinyin" key="collation">Pinyin-röðun</type>
 			<type type="primary" key="colStrength">Raða aðeins grunnstöfum</type>
-			<type type="quaternary" key="colStrength">Raða áherslum/hástaf eða lágstaf/breidd/Kana</type>
+			<type type="quaternary" key="colStrength">Raða áherslum/hástaf eða
+				lágstaf/breidd/Kana</type>
 			<type type="reformed" key="collation">Endurbætt röð</type>
 			<type type="roc" key="calendar" draft="contributed">kínverskt dagatal</type>
 			<type type="roman" key="numbers">Rómverskir tölustafir</type>
@@ -994,7 +999,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">Tamílskir tölustafir</type>
 			<type type="tamldec" key="numbers">Tamílskar tölur</type>
 			<type type="telu" key="numbers">Tölur í telúgú</type>
-			<type type="tertiary" key="colStrength">Raða áherslum/hástaf eða lágstaf/breidd</type>
+			<type type="tertiary" key="colStrength">Raða áherslum/hástaf eða
+				lágstaf/breidd</type>
 			<type type="thai" key="numbers">Tælenskar tölur</type>
 			<type type="tibt" key="numbers">Tíbeskir tölustafir</type>
 			<type type="traditional" key="collation">Hefðbundin</type>
@@ -1032,10 +1038,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a á b d ð e é f g h i í j k l m n o ó p r s t u ú v y ý þ æ ö]</exemplarCharacters>
+		<exemplarCharacters>[a á b d ð e é f g h i í j k l m n o ó p r s t u ú
+			v y ý þ æ ö]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[c q w x z]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[A Á B C D Ð E É F G H I Í J K L M N O Ó P Q R S T U Ú V W X Y Ý Z Þ Æ Ö]</exemplarCharacters>
-		<exemplarCharacters type="punctuation" draft="contributed">[\- ‐ – — , ; \: ! ? . … ' ‘ ‚ &quot; “ „ ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[A Á B C D Ð
+			E É F G H I Í J K L M N O Ó P Q R S T U Ú V W X Y Ý Z Þ Æ Ö]</exemplarCharacters>
+		<exemplarCharacters type="punctuation" draft="contributed">[\- ‐
+			– — , ; \: ! ? . … ' ‘ ‚ &quot; “ „ ( ) \[ \] § @ * / \&amp; # † ‡ ′
+			″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1220,8 +1230,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d. – E, d. MMM y G</greatestDifference>
-							<greatestDifference id="M">E, d. MMM – E, d. MMM y G</greatestDifference>
-							<greatestDifference id="y">E, d. MMM y – E, d. MMM y G</greatestDifference>
+							<greatestDifference id="M">E, d. MMM – E, d. MMM y
+								G</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y – E, d. MMM
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y G</greatestDifference>
@@ -1675,7 +1687,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d. – E, d. MMM y</greatestDifference>
 							<greatestDifference id="M">E, d. MMM – E, d. MMM y</greatestDifference>
-							<greatestDifference id="y">E, d. MMM y – E, d. MMM y</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y – E, d. MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -1791,12 +1804,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="hour">
 				<displayName>klukkustund</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">eftir {0} klukkustund</relativeTimePattern>
-					<relativeTimePattern count="other">eftir {0} klukkustundir</relativeTimePattern>
+					<relativeTimePattern count="one">eftir {0}
+						klukkustund</relativeTimePattern>
+					<relativeTimePattern count="other">eftir {0}
+						klukkustundir</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">fyrir {0} klukkustund</relativeTimePattern>
-					<relativeTimePattern count="other">fyrir {0} klukkustundum</relativeTimePattern>
+					<relativeTimePattern count="one">fyrir {0}
+						klukkustund</relativeTimePattern>
+					<relativeTimePattern count="other">fyrir {0}
+						klukkustundum</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="minute">
@@ -3247,7 +3264,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>Skiptanlegt Bosníu og Hersegóvínu-mark</displayName>
-				<displayName count="one">skiptanlegt Bosníu og Hersegóvínu-mark</displayName>
+				<displayName count="one">skiptanlegt Bosníu og
+					Hersegóvínu-mark</displayName>
 				<displayName count="other">skiptanleg Bosníu og Hersegóvínu-mörk</displayName>
 			</currency>
 			<currency type="BBD">
@@ -3802,8 +3820,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="NIC">
 				<displayName draft="unconfirmed">Níkarögsk kordóva (1988–1991)</displayName>
-				<displayName count="one" draft="unconfirmed">Níkarögsk kordóva (1988–1991)</displayName>
-				<displayName count="other" draft="unconfirmed">Níkaragskar kordóvur (1988–1991)</displayName>
+				<displayName count="one" draft="unconfirmed">Níkarögsk kordóva
+					(1988–1991)</displayName>
+				<displayName count="other" draft="unconfirmed">Níkaragskar kordóvur
+					(1988–1991)</displayName>
 			</currency>
 			<currency type="NIO">
 				<displayName>Níkarögsk kordóva</displayName>

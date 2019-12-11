@@ -20,27 +20,35 @@
  * @version    $Id$
  */
 
-/** Zend_Http_Client **/
+/**
+ * Zend_Http_Client *
+ */
 require_once 'Zend/Http/Client.php';
 
-/** Zend_Mobile_Push_Abstract **/
+/**
+ * Zend_Mobile_Push_Abstract *
+ */
 require_once 'Zend/Mobile/Push/Abstract.php';
 
-/** Zend_Mobile_Push_Message_Gcm **/
+/**
+ * Zend_Mobile_Push_Message_Gcm *
+ */
 require_once 'Zend/Mobile/Push/Message/Gcm.php';
 
-/** Zend_Mobile_Push_Response_Gcm **/
+/**
+ * Zend_Mobile_Push_Response_Gcm *
+ */
 require_once 'Zend/Mobile/Push/Response/Gcm.php';
 
 /**
  * GCM Push
  *
- * @category   Zend
- * @package    Zend_Mobile
+ * @category Zend
+ * @package Zend_Mobile
  * @subpackage Zend_Mobile_Push
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id$
  */
 class Zend_Mobile_Push_Gcm extends Zend_Mobile_Push_Abstract
 {
@@ -77,13 +85,13 @@ class Zend_Mobile_Push_Gcm extends Zend_Mobile_Push_Abstract
     /**
      * Set API Key
      *
-     * @param  string $key
+     * @param string $key            
      * @return Zend_Mobile_Push_Gcm
      * @throws Zend_Mobile_Push_Exception
      */
     public function setApiKey($key)
     {
-        if (!is_string($key) || empty($key)) {
+        if (! is_string($key) || empty($key)) {
             throw new Zend_Mobile_Push_Exception('The api key must be a string and not empty');
         }
         $this->_apiKey = $key;
@@ -97,10 +105,10 @@ class Zend_Mobile_Push_Gcm extends Zend_Mobile_Push_Abstract
      */
     public function getHttpClient()
     {
-        if (!$this->_httpClient) {
+        if (! $this->_httpClient) {
             $this->_httpClient = new Zend_Http_Client();
             $this->_httpClient->setConfig(array(
-                'strictredirects' => true,
+                'strictredirects' => true
             ));
         }
         return $this->_httpClient;
@@ -120,7 +128,7 @@ class Zend_Mobile_Push_Gcm extends Zend_Mobile_Push_Abstract
     /**
      * Send Message
      *
-     * @param  Zend_Mobile_Push_Message_Abstract $message
+     * @param Zend_Mobile_Push_Message_Abstract $message            
      * @throws Zend_Http_Client_Exception
      * @throws Zend_Mobile_Push_Exception
      * @throws Zend_Mobile_Push_Exception_InvalidAuthToken
@@ -130,22 +138,21 @@ class Zend_Mobile_Push_Gcm extends Zend_Mobile_Push_Abstract
      */
     public function send(Zend_Mobile_Push_Message_Abstract $message)
     {
-        if (!$message->validate()) {
+        if (! $message->validate()) {
             throw new Zend_Mobile_Push_Exception('The message is not valid.');
         }
-
+        
         $this->connect();
-
+        
         $client = $this->getHttpClient();
         $client->setUri(self::SERVER_URI);
         $client->setHeaders('Authorization', 'key=' . $this->getApiKey());
-
+        
         $response = $client->setRawData($message->toJson(), 'application/json')
-                           ->request('POST');
+            ->request('POST');
         $this->close();
-
-        switch ($response->getStatus())
-        {
+        
+        switch ($response->getStatus()) {
             case 500:
                 require_once 'Zend/Mobile/Push/Exception/ServerUnavailable.php';
                 throw new Zend_Mobile_Push_Exception_ServerUnavailable('The server encountered an internal error, try again');

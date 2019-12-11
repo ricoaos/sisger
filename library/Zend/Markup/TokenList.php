@@ -20,15 +20,17 @@
  */
 
 /**
+ *
  * @see Zend_Markup_Token
  */
 require_once 'Zend/Markup/Token.php';
 
 /**
- * @category   Zend
- * @package    Zend_Markup
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Markup
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Markup_TokenList implements RecursiveIterator
 {
@@ -63,7 +65,7 @@ class Zend_Markup_TokenList implements RecursiveIterator
     /**
      * Add a new child token
      *
-     * @param Zend_Markup_Token $child
+     * @param Zend_Markup_Token $child            
      *
      * @return void
      */

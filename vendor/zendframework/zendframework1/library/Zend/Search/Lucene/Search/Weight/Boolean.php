@@ -20,20 +20,22 @@
  * @version    $Id$
  */
 
-
-/** Zend_Search_Lucene_Search_Weight */
+/**
+ * Zend_Search_Lucene_Search_Weight
+ */
 require_once 'Zend/Search/Lucene/Search/Weight.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Search_Lucene
+ *
+ * @category Zend
+ * @package Zend_Search_Lucene
  * @subpackage Search
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Search_Lucene_Search_Weight_Boolean extends Zend_Search_Lucene_Search_Weight
 {
+
     /**
      * IndexReader.
      *
@@ -56,31 +58,28 @@ class Zend_Search_Lucene_Search_Weight_Boolean extends Zend_Search_Lucene_Search
      */
     private $_weights;
 
-
     /**
      * Zend_Search_Lucene_Search_Weight_Boolean constructor
      * query - the query that this concerns.
      * reader - index reader
      *
-     * @param Zend_Search_Lucene_Search_Query $query
-     * @param Zend_Search_Lucene_Interface    $reader
+     * @param Zend_Search_Lucene_Search_Query $query            
+     * @param Zend_Search_Lucene_Interface $reader            
      */
-    public function __construct(Zend_Search_Lucene_Search_Query $query,
-                                Zend_Search_Lucene_Interface    $reader)
+    public function __construct(Zend_Search_Lucene_Search_Query $query, Zend_Search_Lucene_Interface $reader)
     {
-        $this->_query   = $query;
-        $this->_reader  = $reader;
+        $this->_query = $query;
+        $this->_reader = $reader;
         $this->_weights = array();
-
+        
         $signs = $query->getSigns();
-
+        
         foreach ($query->getSubqueries() as $num => $subquery) {
             if ($signs === null || $signs[$num] === null || $signs[$num]) {
                 $this->_weights[$num] = $subquery->createWeight($reader);
             }
         }
     }
-
 
     /**
      * The weight for this query
@@ -92,7 +91,6 @@ class Zend_Search_Lucene_Search_Weight_Boolean extends Zend_Search_Lucene_Search
     {
         return $this->_query->getBoost();
     }
-
 
     /**
      * The sum of squared weights of contained query clauses.
@@ -106,10 +104,10 @@ class Zend_Search_Lucene_Search_Weight_Boolean extends Zend_Search_Lucene_Search
             // sum sub weights
             $sum += $weight->sumOfSquaredWeights();
         }
-
+        
         // boost each sub-weight
         $sum *= $this->_query->getBoost() * $this->_query->getBoost();
-
+        
         // check for empty query (like '-something -another')
         if ($sum == 0) {
             $sum = 1.0;
@@ -117,17 +115,16 @@ class Zend_Search_Lucene_Search_Weight_Boolean extends Zend_Search_Lucene_Search
         return $sum;
     }
 
-
     /**
      * Assigns the query normalization factor to this.
      *
-     * @param float $queryNorm
+     * @param float $queryNorm            
      */
     public function normalize($queryNorm)
     {
         // incorporate boost
         $queryNorm *= $this->_query->getBoost();
-
+        
         foreach ($this->_weights as $weight) {
             $weight->normalize($queryNorm);
         }

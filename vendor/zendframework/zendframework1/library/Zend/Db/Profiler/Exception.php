@@ -20,19 +20,19 @@
  * @version    $Id$
  */
 
-
 /**
+ *
  * @see Zend_Db_Exception
  */
 require_once 'Zend/Db/Exception.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Db
+ *
+ * @category Zend
+ * @package Zend_Db
  * @subpackage Profiler
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Db_Profiler_Exception extends Zend_Db_Exception
 {

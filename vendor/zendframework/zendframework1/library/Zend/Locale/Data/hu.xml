@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="hu"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="hu" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -777,7 +776,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">Finnország</territory>
 			<territory type="FJ">Fidzsi-szigetek</territory>
 			<territory type="FK">Falkland-szigetek</territory>
-			<territory type="FK" alt="variant">Falkland-szigetek (Malvin-szigetek)</territory>
+			<territory type="FK" alt="variant">Falkland-szigetek
+				(Malvin-szigetek)</territory>
 			<territory type="FM">Mikronézia</territory>
 			<territory type="FO">Feröer-szigetek</territory>
 			<territory type="FR">Franciaország</territory>
@@ -974,7 +974,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="1606NICT">Késői közép francia 1606-ig</variant>
 			<variant type="1694ACAD" draft="contributed">Korai modern francia</variant>
 			<variant type="1959ACAD" draft="contributed">Akadémiai</variant>
-			<variant type="ALALC97" draft="contributed">ALA-LC romanizáció, 1997-es kiadás</variant>
+			<variant type="ALALC97" draft="contributed">ALA-LC romanizáció, 1997-es
+				kiadás</variant>
 			<variant type="ALUKU" draft="contributed">Aluku dialektus</variant>
 			<variant type="AREVELA">Keleti örmény</variant>
 			<variant type="AREVMDA">Nyugati örmény</variant>
@@ -1018,7 +1019,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="SUTSILV" draft="contributed">Sutsilv</variant>
 			<variant type="TARASK">Taraskijevica helyesírás</variant>
 			<variant type="UCCOR" draft="contributed">Egyesített helyesírás</variant>
-			<variant type="UCRCOR" draft="contributed">Egyesített átdolgozott helyesírás</variant>
+			<variant type="UCRCOR" draft="contributed">Egyesített átdolgozott
+				helyesírás</variant>
 			<variant type="ULSTER" draft="contributed">Ulster</variant>
 			<variant type="VAIDIKA" draft="contributed">Vaidika</variant>
 			<variant type="VALENCIA">Valencia</variant>
@@ -1027,9 +1029,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</variants>
 		<keys>
 			<key type="calendar">Naptár</key>
-			<key type="colAlternate" draft="contributed">Szimbólumokat figyelmen kívül hagyó rendezés</key>
+			<key type="colAlternate" draft="contributed">Szimbólumokat figyelmen kívül
+				hagyó rendezés</key>
 			<key type="colBackwards" draft="contributed">Ékezetek fordított rendezése</key>
-			<key type="colCaseFirst" draft="contributed">Rendezés nagy- vagy kisbetűk szerint</key>
+			<key type="colCaseFirst" draft="contributed">Rendezés nagy- vagy kisbetűk
+				szerint</key>
 			<key type="colCaseLevel" draft="contributed">Kisbetű-nagybetű érzékeny rendezés</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Kanák szerinti rendezés</key>
 			<key type="collation">Rendezési sorrend</key>
@@ -1086,51 +1090,72 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="knda" key="numbers">Kannada számjegyek</type>
 			<type type="laoo" key="numbers">Lao számjegyek</type>
 			<type type="latn" key="numbers">Nyugati számjegyek</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Kisbetűs szavak rendezése előre</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Kisbetűs szavak
+				rendezése előre</type>
 			<type type="mlym" key="numbers">Malajálam számjegyek</type>
 			<type type="mong" key="numbers">Mongol számjegyek</type>
 			<type type="mymr" key="numbers">Mianmari számjegyek</type>
 			<type type="native" key="numbers" draft="contributed">Natív számjegyek</type>
-			<type type="no" key="colBackwards" draft="contributed">Ékezetek normál rendezése</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Kisbetűs-nagybetűs szavak normál rendezése</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Kis- és nagybetűket meg nem különböztető rendezés</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Kanák rendezése külön</type>
-			<type type="no" key="colNormalization" draft="contributed">Rendezés normalizálás nélkül</type>
-			<type type="no" key="colNumeric" draft="contributed">Számjegyek egyedi rendezése</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Szimbólumok rendezése</type>
+			<type type="no" key="colBackwards" draft="contributed">Ékezetek normál
+				rendezése</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Kisbetűs-nagybetűs
+				szavak normál rendezése</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Kis- és nagybetűket meg
+				nem különböztető rendezés</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Kanák
+				rendezése külön</type>
+			<type type="no" key="colNormalization" draft="contributed">Rendezés
+				normalizálás nélkül</type>
+			<type type="no" key="colNumeric" draft="contributed">Számjegyek egyedi
+				rendezése</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Szimbólumok
+				rendezése</type>
 			<type type="orya" key="numbers">Orija számjegyek</type>
 			<type type="persian" key="calendar">Perzsa naptár</type>
 			<type type="phonebook" key="collation">Telefonkönyv sorrend</type>
-			<type type="phonetic" key="collation" draft="contributed">Fonetikus rendezési sorrend</type>
+			<type type="phonetic" key="collation" draft="contributed">Fonetikus rendezési
+				sorrend</type>
 			<type type="pinyin" key="collation">Pinyin sorrend</type>
-			<type type="primary" key="colStrength" draft="contributed">Csak az alapbetűk rendezése</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Ékezetek/kisbetű-nagybetű/szélesség/kanák rendezése</type>
+			<type type="primary" key="colStrength" draft="contributed">Csak az alapbetűk
+				rendezése</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Ékezetek/kisbetű-nagybetű/szélesség/kanák
+				rendezése</type>
 			<type type="reformed" key="collation">Átalakított rendezési elv</type>
 			<type type="roc" key="calendar">Kínai köztársasági naptár</type>
 			<type type="roman" key="numbers">Római számok</type>
 			<type type="romanlow" key="numbers">Római kisbetűs számok</type>
 			<type type="search" key="collation">Általános célú keresés</type>
-			<type type="searchjl" key="collation" draft="contributed">Keresés hangul kezdő mássalhangzó szerint</type>
-			<type type="secondary" key="colStrength" draft="contributed">Ékezetek rendezése</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Rendezés szimbólumok figyelmen kívül hagyásával</type>
+			<type type="searchjl" key="collation" draft="contributed">Keresés hangul kezdő
+				mássalhangzó szerint</type>
+			<type type="secondary" key="colStrength" draft="contributed">Ékezetek
+				rendezése</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Rendezés
+				szimbólumok figyelmen kívül hagyásával</type>
 			<type type="standard" key="collation">Normál rendezési sorrend</type>
 			<type type="stroke" key="collation">Vonássorrend</type>
 			<type type="taml" key="numbers">Tamil hagyományos számok</type>
 			<type type="tamldec" key="numbers">Tamil számjegyek</type>
 			<type type="telu" key="numbers">Telugu számjegyek</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Ékezetek/kisbetű-nagybetű/szélesség rendezése</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Ékezetek/kisbetű-nagybetű/szélesség
+				rendezése</type>
 			<type type="thai" key="numbers">Thai számjegyek</type>
 			<type type="tibt" key="numbers">Tibeti számjegyek</type>
 			<type type="traditional" key="collation">Hagyományos</type>
 			<type type="traditional" key="numbers" draft="contributed">Hagyományos számok</type>
 			<type type="unihan" key="collation">Szótővonás rendezési sorrend</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Nagybetűs szavak rendezése előre</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Nagybetűs szavak
+				rendezése előre</type>
 			<type type="vaii" key="numbers" draft="contributed">Vai számjegyek</type>
-			<type type="yes" key="colBackwards" draft="contributed">Ékezetek szerinti fordított rendezés</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Rendezés kisbetű-nagybetű szerint</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Kanák megkülönböztető rendezése</type>
-			<type type="yes" key="colNormalization" draft="contributed">Unicode szerinti normalizált rendezés</type>
-			<type type="yes" key="colNumeric" draft="contributed">Számjegyek numerikus rendezése</type>
+			<type type="yes" key="colBackwards" draft="contributed">Ékezetek szerinti
+				fordított rendezés</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Rendezés
+				kisbetű-nagybetű szerint</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Kanák
+				megkülönböztető rendezése</type>
+			<type type="yes" key="colNormalization" draft="contributed">Unicode szerinti
+				normalizált rendezés</type>
+			<type type="yes" key="colNumeric" draft="contributed">Számjegyek numerikus
+				rendezése</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">BGN</transformName>
@@ -1138,7 +1163,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<transformName type="Tone" draft="contributed">Hangsúly</transformName>
 			<transformName type="UNGEGN" draft="contributed">UNGEGN</transformName>
 			<transformName type="x-Accents" draft="contributed">Ékezetek</transformName>
-			<transformName type="x-Fullwidth" draft="contributed">Teljes szélesség</transformName>
+			<transformName type="x-Fullwidth" draft="contributed">Teljes
+				szélesség</transformName>
 			<transformName type="x-Halfwidth" draft="contributed">Fél szélesség</transformName>
 			<transformName type="x-Jamo" draft="contributed">Jamo</transformName>
 			<transformName type="x-Pinyin" draft="contributed">Pinjin</transformName>
@@ -1156,10 +1182,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a á b c {cs} {ccs} d {dz} {ddz} {dzs} {ddzs} e é f g {gy} {ggy} h i í j k l {ly} {lly} m n {ny} {nny} o ó ö ő p r s {sz} {ssz} t {ty} {tty} u ú ü ű v z {zs} {zzs}]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[à ă â å ä ã ā æ ç è ĕ ê ë ē ì ĭ î ï ī ñ ò ŏ ô ø ō œ q ù ŭ û ū w x y ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index">[A Á B C {CS} D {DZ} {DZS} E É F G {GY} H I Í J K L {LY} M N {NY} O Ó Ö Ő P Q R S {SZ} T {TY} U Ú Ü Ű V W X Y Z {ZS}]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- – , ; \: ! ? . … ' ’ &quot; ” „ « » ( ) \[ \] \{ \} ⟨ ⟩ § @ * / \&amp; # ~ ⁒]</exemplarCharacters>
+		<exemplarCharacters>[a á b c {cs} {ccs} d {dz} {ddz} {dzs} {ddzs} e é
+			f g {gy} {ggy} h i í j k l {ly} {lly} m n {ny} {nny} o ó ö ő p r s
+			{sz} {ssz} t {ty} {tty} u ú ü ű v z {zs} {zzs}]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[à ă â å ä ã ā æ ç è ĕ ê ë
+			ē ì ĭ î ï ī ñ ò ŏ ô ø ō œ q ù ŭ û ū w x y ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index">[A Á B C {CS} D {DZ} {DZS}
+			E É F G {GY} H I Í J K L {LY} M N {NY} O Ó Ö Ő P Q R S {SZ} T {TY} U
+			Ú Ü Ű V W X Y Z {ZS}]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- – , ; \: ! ? . … ' ’
+			&quot; ” „ « » ( ) \[ \] \{ \} ⟨ ⟩ § @ * / \&amp; # ~ ⁒]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1529,12 +1561,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMd">
 							<greatestDifference id="d">G y. MM. dd–dd.</greatestDifference>
 							<greatestDifference id="M">G y. MM. dd. – MM. dd.</greatestDifference>
-							<greatestDifference id="y">G y. MM. dd. – y. MM. dd.</greatestDifference>
+							<greatestDifference id="y">G y. MM. dd. – y. MM.
+								dd.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">G y. MM. dd., E – dd., E</greatestDifference>
-							<greatestDifference id="M">G y. MM. dd., E – MM. dd., E</greatestDifference>
-							<greatestDifference id="y">G y. MM. dd., E – y. MM. dd., E</greatestDifference>
+							<greatestDifference id="d">G y. MM. dd., E – dd.,
+								E</greatestDifference>
+							<greatestDifference id="M">G y. MM. dd., E – MM.
+								dd., E</greatestDifference>
+							<greatestDifference id="y">G y. MM. dd., E – y.
+								MM. dd., E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">G y. MMM–MMM</greatestDifference>
@@ -1546,9 +1582,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">G y. MMM d. – y. MMM d.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">G y. MMM d., E – MMM d., E</greatestDifference>
-							<greatestDifference id="M">G y. MMM d., E – MMM d., E</greatestDifference>
-							<greatestDifference id="y">G y. MMM d., E – y. MMM d., E</greatestDifference>
+							<greatestDifference id="d">G y. MMM d., E – MMM
+								d., E</greatestDifference>
+							<greatestDifference id="M">G y. MMM d., E – MMM
+								d., E</greatestDifference>
+							<greatestDifference id="y">G y. MMM d., E – y. MMM
+								d., E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">G y. MMMM–MMMM</greatestDifference>
@@ -1974,8 +2013,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
 							<greatestDifference id="d">y. MM. dd., E – dd., E</greatestDifference>
-							<greatestDifference id="M">y. MM. dd., E – MM. dd., E</greatestDifference>
-							<greatestDifference id="y">y. MM. dd., E – y. MM. dd., E</greatestDifference>
+							<greatestDifference id="M">y. MM. dd., E – MM.
+								dd., E</greatestDifference>
+							<greatestDifference id="y">y. MM. dd., E – y. MM.
+								dd., E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">y. MMM–MMM</greatestDifference>
@@ -1988,8 +2029,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">y. MMM d., E – d., E</greatestDifference>
-							<greatestDifference id="M">y. MMM d., E – MMM d., E</greatestDifference>
-							<greatestDifference id="y">y. MMM d., E – y. MMM d., E</greatestDifference>
+							<greatestDifference id="M">y. MMM d., E – MMM d.,
+								E</greatestDifference>
+							<greatestDifference id="y">y. MMM d., E – y. MMM
+								d., E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">y. MMMM–MMMM</greatestDifference>
@@ -2209,9 +2252,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</eras>
 			</calendar>
 			<calendar type="japanese">
-				<!-- need some non-empty element here to make inheritance work,
-					 this copy of generic dateFormats above is smaller than root japanese eras
-				-->
+				<!-- need some non-empty element here to make inheritance work, this 
+					copy of generic dateFormats above is smaller than root japanese eras -->
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -2440,8 +2482,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">{0} másodperc múlva</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} másodperccel ezelőtt</relativeTimePattern>
-					<relativeTimePattern count="other">{0} másodperccel ezelőtt</relativeTimePattern>
+					<relativeTimePattern count="one">{0} másodperccel
+						ezelőtt</relativeTimePattern>
+					<relativeTimePattern count="other">{0} másodperccel
+						ezelőtt</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">
@@ -4139,13 +4183,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAD">
 				<displayName>Bosznia-hercegovinai dínár (1992–1994)</displayName>
-				<displayName count="one">Bosznia-hercegovinai dínár (1992–1994)</displayName>
-				<displayName count="other">Bosznia-hercegovinai dínár (1992–1994)</displayName>
+				<displayName count="one">Bosznia-hercegovinai dínár
+					(1992–1994)</displayName>
+				<displayName count="other">Bosznia-hercegovinai dínár
+					(1992–1994)</displayName>
 			</currency>
 			<currency type="BAM">
 				<displayName>bosznia-hercegovinai konvertibilis márka</displayName>
-				<displayName count="one">bosznia-hercegovinai konvertibilis márka</displayName>
-				<displayName count="other">bosznia-hercegovinai konvertibilis márka</displayName>
+				<displayName count="one">bosznia-hercegovinai konvertibilis
+					márka</displayName>
+				<displayName count="other">bosznia-hercegovinai konvertibilis
+					márka</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>barbadosi dollár</displayName>

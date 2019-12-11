@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,14 +22,17 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Crypt
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Crypt
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Crypt_Rsa_Key implements Countable
 {
+
     /**
+     *
      * @var string
      */
     protected $_pemString = null;
@@ -58,17 +62,19 @@ class Zend_Crypt_Rsa_Key implements Countable
     }
 
     /**
+     *
      * @return string
      * @throws Zend_Crypt_Exception
      */
     public function toString()
     {
-        if (!empty($this->_pemString)) {
+        if (! empty($this->_pemString)) {
             return $this->_pemString;
-        } elseif (!empty($this->_certificateString)) {
+        } elseif (! empty($this->_certificateString)) {
             return $this->_certificateString;
         }
         /**
+         *
          * @see Zend_Crypt_Exception
          */
         require_once 'Zend/Crypt/Exception.php';
@@ -76,6 +82,7 @@ class Zend_Crypt_Rsa_Key implements Countable
     }
 
     /**
+     *
      * @return string
      */
     public function __toString()

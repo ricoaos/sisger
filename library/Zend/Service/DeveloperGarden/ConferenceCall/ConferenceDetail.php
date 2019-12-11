@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,15 +22,17 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail
 {
+
     /**
      * name of this conference
      *
@@ -54,9 +57,9 @@ class Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail
     /**
      * create object
      *
-     * @param string $name
-     * @param string $description
-     * @param integer $duration
+     * @param string $name            
+     * @param string $description            
+     * @param integer $duration            
      *
      * @return Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail
      */
@@ -70,7 +73,7 @@ class Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail
     /**
      * sets new duration for this conference in seconds
      *
-     * @param integer $duration
+     * @param integer $duration            
      * @return Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail
      */
     public function setDuration($duration)
@@ -80,6 +83,7 @@ class Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail
     }
 
     /**
+     *
      * @return string
      */
     public function getDuration()
@@ -90,7 +94,8 @@ class Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail
     /**
      * set the description of this conference
      *
-     * @param string $description the $description to set
+     * @param string $description
+     *            the $description to set
      * @return Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail
      */
     public function setDescription($description)
@@ -100,6 +105,7 @@ class Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail
     }
 
     /**
+     *
      * @return string
      */
     public function getDescription()
@@ -110,7 +116,7 @@ class Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail
     /**
      * sets the name of this conference
      *
-     * @param string $name
+     * @param string $name            
      * @return Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail
      */
     public function setName($name)
@@ -120,6 +126,7 @@ class Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail
     }
 
     /**
+     *
      * @return string
      */
     public function getName()

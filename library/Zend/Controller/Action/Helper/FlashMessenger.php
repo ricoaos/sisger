@@ -20,11 +20,13 @@
  */
 
 /**
+ *
  * @see Zend_Session
  */
 require_once 'Zend/Session.php';
 
 /**
+ *
  * @see Zend_Controller_Action_Helper_Abstract
  */
 require_once 'Zend/Controller/Action/Helper/Abstract.php';
@@ -32,36 +34,37 @@ require_once 'Zend/Controller/Action/Helper/Abstract.php';
 /**
  * Flash Messenger - implement session-based messages
  *
- * @uses       Zend_Controller_Action_Helper_Abstract
- * @category   Zend
- * @package    Zend_Controller
+ * @uses Zend_Controller_Action_Helper_Abstract
+ * @category Zend
+ * @package Zend_Controller
  * @subpackage Zend_Controller_Action_Helper
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: FlashMessenger.php 23775 2011-03-01 17:25:24Z ralph $
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id: FlashMessenger.php 23775 2011-03-01 17:25:24Z ralph $
  */
 class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Action_Helper_Abstract implements IteratorAggregate, Countable
 {
+
     /**
      * $_messages - Messages from previous request
      *
      * @var array
      */
-    static protected $_messages = array();
+    protected static $_messages = array();
 
     /**
      * $_session - Zend_Session storage object
      *
      * @var Zend_Session
      */
-    static protected $_session = null;
+    protected static $_session = null;
 
     /**
      * $_messageAdded - Wether a message has been previously added
      *
      * @var boolean
      */
-    static protected $_messageAdded = false;
+    protected static $_messageAdded = false;
 
     /**
      * $_namespace - Instance namespace, default is 'default'
@@ -73,12 +76,12 @@ class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Actio
     /**
      * __construct() - Instance constructor, needed to get iterators, etc
      *
-     * @param  string $namespace
+     * @param string $namespace            
      * @return void
      */
     public function __construct()
     {
-        if (!self::$_session instanceof Zend_Session_Namespace) {
+        if (! self::$_session instanceof Zend_Session_Namespace) {
             self::$_session = new Zend_Session_Namespace($this->getName());
             foreach (self::$_session as $namespace => $messages) {
                 self::$_messages[$namespace] = $messages;
@@ -104,7 +107,7 @@ class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Actio
      * setNamespace() - change the namespace messages are added to, useful for
      * per action controller messaging between requests
      *
-     * @param  string $namespace
+     * @param string $namespace            
      * @return Zend_Controller_Action_Helper_FlashMessenger Provides a fluent interface
      */
     public function setNamespace($namespace = 'default')
@@ -127,7 +130,7 @@ class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Actio
     /**
      * addMessage() - Add a message to flash message
      *
-     * @param  string $message
+     * @param string $message            
      * @return Zend_Controller_Action_Helper_FlashMessenger Provides a fluent interface
      */
     public function addMessage($message)
@@ -135,13 +138,13 @@ class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Actio
         if (self::$_messageAdded === false) {
             self::$_session->setExpirationHops(1, null, true);
         }
-
-        if (!is_array(self::$_session->{$this->_namespace})) {
+        
+        if (! is_array(self::$_session->{$this->_namespace})) {
             self::$_session->{$this->_namespace} = array();
         }
-
+        
         self::$_session->{$this->_namespace}[] = $message;
-
+        
         return $this;
     }
 
@@ -165,7 +168,7 @@ class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Actio
         if ($this->hasMessages()) {
             return self::$_messages[$this->_namespace];
         }
-
+        
         return array();
     }
 
@@ -180,7 +183,7 @@ class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Actio
             unset(self::$_messages[$this->_namespace]);
             return true;
         }
-
+        
         return false;
     }
 
@@ -206,7 +209,7 @@ class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Actio
         if ($this->hasCurrentMessages()) {
             return self::$_session->{$this->_namespace};
         }
-
+        
         return array();
     }
 
@@ -221,7 +224,7 @@ class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Actio
             unset(self::$_session->{$this->_namespace});
             return true;
         }
-
+        
         return false;
     }
 
@@ -235,7 +238,7 @@ class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Actio
         if ($this->hasMessages()) {
             return new ArrayObject($this->getMessages());
         }
-
+        
         return new ArrayObject();
     }
 
@@ -249,14 +252,14 @@ class Zend_Controller_Action_Helper_FlashMessenger extends Zend_Controller_Actio
         if ($this->hasMessages()) {
             return count($this->getMessages());
         }
-
+        
         return 0;
     }
 
     /**
      * Strategy pattern: proxy to addMessage()
      *
-     * @param  string $message
+     * @param string $message            
      * @return void
      */
     public function direct($message)

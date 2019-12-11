@@ -22,30 +22,34 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
 
 /**
+ *
  * @see Zend_Gdata_Gapps
  */
 require_once 'Zend/Gdata/Gapps.php';
 
 /**
- * Represents the apps:name element used by the Apps data API. This is used
+ * Represents the apps:name element used by the Apps data API.
+ * This is used
  * to represent a user's full name. This class is usually contained within
  * instances of Zend_Gdata_Gapps_UserEntry.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Gapps
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Gapps_Extension_Name extends Zend_Gdata_Extension
 {
 
     protected $_rootNamespace = 'apps';
+
     protected $_rootElement = 'name';
 
     /**
@@ -65,10 +69,12 @@ class Zend_Gdata_Gapps_Extension_Name extends Zend_Gdata_Extension
     /**
      * Constructs a new Zend_Gdata_Gapps_Extension_Name object.
      *
-     * @param string $familyName (optional) The familyName to be set for this
-     *          object.
-     * @param string $givenName (optional) The givenName to be set for this
-     *          object.
+     * @param string $familyName
+     *            (optional) The familyName to be set for this
+     *            object.
+     * @param string $givenName
+     *            (optional) The givenName to be set for this
+     *            object.
      */
     public function __construct($familyName = null, $givenName = null)
     {
@@ -80,13 +86,15 @@ class Zend_Gdata_Gapps_Extension_Name extends Zend_Gdata_Extension
 
     /**
      * Retrieves a DOMElement which corresponds to this element and all
-     * child properties.  This is used to build an entry back into a DOM
+     * child properties.
+     * This is used to build an entry back into a DOM
      * and eventually XML text for sending to the server upon updates, or
      * for application storage/persistence.
      *
-     * @param DOMDocument $doc The DOMDocument used to construct DOMElements
+     * @param DOMDocument $doc
+     *            The DOMDocument used to construct DOMElements
      * @return DOMElement The DOMElement representing this element and all
-     * child properties.
+     *         child properties.
      */
     public function getDOM($doc = null, $majorVersion = 1, $minorVersion = null)
     {
@@ -102,22 +110,24 @@ class Zend_Gdata_Gapps_Extension_Name extends Zend_Gdata_Extension
 
     /**
      * Given a DOMNode representing an attribute, tries to map the data into
-     * instance members.  If no mapping is defined, the name and value are
+     * instance members.
+     * If no mapping is defined, the name and value are
      * stored in an array.
      *
-     * @param DOMNode $attribute The DOMNode attribute needed to be handled
+     * @param DOMNode $attribute
+     *            The DOMNode attribute needed to be handled
      */
     protected function takeAttributeFromDOM($attribute)
     {
         switch ($attribute->localName) {
-        case 'familyName':
-            $this->_familyName = $attribute->nodeValue;
-            break;
-        case 'givenName':
-            $this->_givenName = $attribute->nodeValue;
-            break;
-        default:
-            parent::takeAttributeFromDOM($attribute);
+            case 'familyName':
+                $this->_familyName = $attribute->nodeValue;
+                break;
+            case 'givenName':
+                $this->_givenName = $attribute->nodeValue;
+                break;
+            default:
+                parent::takeAttributeFromDOM($attribute);
         }
     }
 
@@ -133,10 +143,12 @@ class Zend_Gdata_Gapps_Extension_Name extends Zend_Gdata_Extension
     }
 
     /**
-     * Set the value for this element's familyName attribute. This
+     * Set the value for this element's familyName attribute.
+     * This
      * represents a user's family name.
      *
-     * @param string $value The desired value for this attribute.
+     * @param string $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Gapps_Extension_Name Provides a fluent interface..
      */
     public function setFamilyName($value)
@@ -157,10 +169,12 @@ class Zend_Gdata_Gapps_Extension_Name extends Zend_Gdata_Extension
     }
 
     /**
-     * Set the value for this element's givenName attribute. This
+     * Set the value for this element's givenName attribute.
+     * This
      * represents a user's given name.
      *
-     * @param string $value The desired value for this attribute.
+     * @param string $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Gapps_Extension_Name Provides a fluent interface.
      */
     public function setGivenName($value)
@@ -177,5 +191,4 @@ class Zend_Gdata_Gapps_Extension_Name extends Zend_Gdata_Extension
     {
         return $this->getGivenName() . ' ' . $this->getFamilyName();
     }
-
 }

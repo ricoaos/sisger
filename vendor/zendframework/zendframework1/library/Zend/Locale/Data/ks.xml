@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="ks"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="ks" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -833,7 +832,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ">تَنجانِیا</territory>
 			<territory type="UA">یوٗرِکین</territory>
 			<territory type="UG">یوٗگانٛڑا</territory>
-			<territory type="UM">یوٗنایٹِڑ سِٹیٹِس ماینَر آوُٹلییِنٛگ جٔزیٖرٕ</territory>
+			<territory type="UM">یوٗنایٹِڑ سِٹیٹِس ماینَر آوُٹلییِنٛگ
+				جٔزیٖرٕ</territory>
 			<territory type="US">یوٗنایٹِڑ سِٹیٹِس</territory>
 			<territory type="UY">یوٗروگے</territory>
 			<territory type="UZ">اُزبِکِستان</territory>
@@ -913,7 +913,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</orientation>
 	</layout>
 	<characters>
-		<exemplarCharacters>[\u06EA\u06ED \u064E \u064F \u0650 \u0654 \u0655 \u0656 \u0657 \u065A \u065B ء آ أ ٲ ؤ ا ٮ ب پ ت ث ٹ ج چ ح خ د ذ ڈ ر ز ڑ ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن ں ھ ہ و ۄ ی ۍ ے]</exemplarCharacters>
+		<exemplarCharacters>[\u06EA\u06ED \u064E \u064F \u0650 \u0654 \u0655
+			\u0656 \u0657 \u065A \u065B ء آ أ ٲ ؤ ا ٮ ب پ ت ث ٹ ج چ ح خ د ذ ڈ ر ز
+			ڑ ژ س ش ص ض ط ظ ع غ ف ق ک گ ل م ن ں ھ ہ و ۄ ی ۍ ے]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[\u200E\u200F]</exemplarCharacters>
 	</characters>
 	<dates>

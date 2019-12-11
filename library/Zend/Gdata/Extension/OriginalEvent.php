@@ -22,16 +22,19 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
 
 /**
+ *
  * @see Zend_Gdata_Feed
  */
 require_once 'Zend/Gdata/Feed.php';
 
 /**
+ *
  * @see Zend_Gdata_When
  */
 require_once 'Zend/Gdata/Extension/When.php';
@@ -39,18 +42,21 @@ require_once 'Zend/Gdata/Extension/When.php';
 /**
  * Represents the gd:originalEvent element
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Gdata
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Extension_OriginalEvent extends Zend_Gdata_Extension
 {
 
     protected $_rootElement = 'originalEvent';
+
     protected $_id = null;
+
     protected $_href = null;
+
     protected $_when = null;
 
     public function __construct($id = null, $href = null, $when = null)
@@ -79,14 +85,14 @@ class Zend_Gdata_Extension_OriginalEvent extends Zend_Gdata_Extension
     protected function takeAttributeFromDOM($attribute)
     {
         switch ($attribute->localName) {
-        case 'id':
-            $this->_id = $attribute->nodeValue;
-            break;
-        case 'href':
-            $this->_href = $attribute->nodeValue;
-            break;
-        default:
-            parent::takeAttributeFromDOM($attribute);
+            case 'id':
+                $this->_id = $attribute->nodeValue;
+                break;
+            case 'href':
+                $this->_href = $attribute->nodeValue;
+                break;
+            default:
+                parent::takeAttributeFromDOM($attribute);
         }
     }
 
@@ -94,14 +100,14 @@ class Zend_Gdata_Extension_OriginalEvent extends Zend_Gdata_Extension
     {
         $absoluteNodeName = $child->namespaceURI . ':' . $child->localName;
         switch ($absoluteNodeName) {
-            case $this->lookupNamespace('gd') . ':' . 'when';
+            case $this->lookupNamespace('gd') . ':' . 'when':
                 $when = new Zend_Gdata_Extension_When();
                 $when->transferFromDOM($child);
                 $this->_when = $when;
                 break;
-        default:
-            parent::takeChildFromDOM($child);
-            break;
+            default:
+                parent::takeChildFromDOM($child);
+                break;
         }
     }
 
@@ -137,6 +143,4 @@ class Zend_Gdata_Extension_OriginalEvent extends Zend_Gdata_Extension
         $this->_when = $value;
         return $this;
     }
-
-
 }

@@ -21,22 +21,23 @@
  * @version    $Id: Query.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-
 /**
+ *
  * @see Zend_Service_Amazon
  */
 require_once 'Zend/Service/Amazon.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_Amazon_Query extends Zend_Service_Amazon
 {
+
     /**
      * Search parameters
      *
@@ -54,8 +55,8 @@ class Zend_Service_Amazon_Query extends Zend_Service_Amazon
     /**
      * Prepares query parameters
      *
-     * @param  string $method
-     * @param  array  $args
+     * @param string $method            
+     * @param array $args            
      * @throws Zend_Service_Exception
      * @return Zend_Service_Amazon_Query Provides a fluent interface
      */
@@ -66,7 +67,7 @@ class Zend_Service_Amazon_Query extends Zend_Service_Amazon
             $this->_search['ItemId'] = $args[0];
             return $this;
         }
-
+        
         if (strtolower($method) === 'category') {
             $this->_searchIndex = $args[0];
             $this->_search['SearchIndex'] = $args[0];
@@ -74,12 +75,13 @@ class Zend_Service_Amazon_Query extends Zend_Service_Amazon
             $this->_search[$method] = $args[0];
         } else {
             /**
+             *
              * @see Zend_Service_Exception
              */
             require_once 'Zend/Service/Exception.php';
             throw new Zend_Service_Exception('You must set a category before setting the search parameters');
         }
-
+        
         return $this;
     }
 

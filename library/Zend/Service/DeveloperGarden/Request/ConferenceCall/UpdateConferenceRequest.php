@@ -21,21 +21,23 @@
  */
 
 /**
+ *
  * @see Zend_Service_DeveloperGarden_Request_RequestAbstract
  */
 require_once 'Zend/Service/DeveloperGarden/Request/RequestAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateConferenceRequest
-    extends Zend_Service_DeveloperGarden_Request_RequestAbstract
+class Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateConferenceRequest extends Zend_Service_DeveloperGarden_Request_RequestAbstract
 {
+
     /**
      * conference id
      *
@@ -74,47 +76,43 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateConferenceReques
     /**
      * constructor
      *
-     * @param integer $environment
-     * @param string $conferenceId
-     * @param string $ownerId
-     * @param Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail $conferenceDetails
-     * @param Zend_Service_DeveloperGarden_ConferenceCall_ConferenceSchedule $conferenceSchedule
-     * @param integer $account
+     * @param integer $environment            
+     * @param string $conferenceId            
+     * @param string $ownerId            
+     * @param Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail $conferenceDetails            
+     * @param Zend_Service_DeveloperGarden_ConferenceCall_ConferenceSchedule $conferenceSchedule            
+     * @param integer $account            
      */
-    public function __construct($environment, $conferenceId, $ownerId = null,
-        Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail $conferenceDetails = null,
-        Zend_Service_DeveloperGarden_ConferenceCall_ConferenceSchedule $conferenceSchedule = null,
-        $account = null
-    ) {
+    public function __construct($environment, $conferenceId, $ownerId = null, Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail $conferenceDetails = null, Zend_Service_DeveloperGarden_ConferenceCall_ConferenceSchedule $conferenceSchedule = null, $account = null)
+    {
         parent::__construct($environment);
         $this->setConferenceId($conferenceId)
-             ->setOwnerId($ownerId)
-             ->setDetail($conferenceDetails)
-             ->setSchedule($conferenceSchedule)
-             ->setAccount($account);
+            ->setOwnerId($ownerId)
+            ->setDetail($conferenceDetails)
+            ->setSchedule($conferenceSchedule)
+            ->setAccount($account);
     }
 
     /**
      * sets $conferenceId
      *
-     * @param string $conferenceId
+     * @param string $conferenceId            
      * @return Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateConferenceRequest
      */
     public function setConferenceId($conferenceId)
     {
-        $this->conferenceId= $conferenceId;
+        $this->conferenceId = $conferenceId;
         return $this;
     }
 
     /**
      * sets $schedule
      *
-     * @param Zend_Service_DeveloperGarden_ConferenceCall_ConferenceSchedule $schedule
+     * @param Zend_Service_DeveloperGarden_ConferenceCall_ConferenceSchedule $schedule            
      * @return Zend_Service_DeveloperGarden_Request_ConferenceCall_CreateConferenceRequest
      */
-    public function setSchedule(
-        Zend_Service_DeveloperGarden_ConferenceCall_ConferenceSchedule $schedule = null
-    ) {
+    public function setSchedule(Zend_Service_DeveloperGarden_ConferenceCall_ConferenceSchedule $schedule = null)
+    {
         $this->schedule = $schedule;
         return $this;
     }
@@ -122,12 +120,11 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateConferenceReques
     /**
      * sets $detail
      *
-     * @param Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail $detail
+     * @param Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail $detail            
      * @return Zend_Service_DeveloperGarden_Request_ConferenceCall_CreateConferenceRequest
      */
-    public function setDetail(
-        Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail $detail = null
-    ) {
+    public function setDetail(Zend_Service_DeveloperGarden_ConferenceCall_ConferenceDetail $detail = null)
+    {
         $this->detail = $detail;
         return $this;
     }
@@ -135,7 +132,7 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateConferenceReques
     /**
      * sets $ownerId
      *
-     * @param string $ownerId
+     * @param string $ownerId            
      * @return Zend_Service_DeveloperGarden_Request_ConferenceCall_CreateConferenceRequest
      */
     public function setOwnerId($ownerId = null)
@@ -147,7 +144,7 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateConferenceReques
     /**
      * sets $account
      *
-     * @param int $account
+     * @param int $account            
      * @return Zend_Service_DeveloperGarden_Request_ConferenceCall_CreateConferenceRequest
      */
     public function setAccount($account = null)

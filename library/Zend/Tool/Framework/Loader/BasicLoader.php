@@ -21,16 +21,19 @@
  */
 
 /**
+ *
  * @see Zend_Tool_Framework_Loader_Abstract
  */
 require_once 'Zend/Tool/Framework/Loader/Interface.php';
 
 /**
+ *
  * @see Zend_Tool_Framework_Registry_EnabledInterface
  */
 require_once 'Zend/Tool/Framework/Registry/EnabledInterface.php';
 
 /**
+ *
  * @see Zend_Loader
  */
 require_once 'Zend/Loader.php';
@@ -38,20 +41,23 @@ require_once 'Zend/Tool/Framework/Manifest/Interface.php';
 require_once 'Zend/Tool/Framework/Provider/Interface.php';
 
 /**
- * @category   Zend
- * @package    Zend_Tool
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Tool
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Tool_Framework_Loader_BasicLoader
-    implements Zend_Tool_Framework_Loader_Interface, Zend_Tool_Framework_Registry_EnabledInterface
+class Zend_Tool_Framework_Loader_BasicLoader implements Zend_Tool_Framework_Loader_Interface, Zend_Tool_Framework_Registry_EnabledInterface
 {
+
     /**
+     *
      * @var Zend_Tool_Framework_Repository_Interface
      */
     protected $_registry = null;
 
     /**
+     *
      * @var array
      */
     protected $_classesToLoad = array();
@@ -77,7 +83,7 @@ class Zend_Tool_Framework_Loader_BasicLoader
      * setRegistry() - required by the enabled interface to get an instance of
      * the registry
      *
-     * @param Zend_Tool_Framework_Registry_Interface $registry
+     * @param Zend_Tool_Framework_Registry_Interface $registry            
      * @return Zend_Tool_Framework_Loader_Abstract
      */
     public function setRegistry(Zend_Tool_Framework_Registry_Interface $registry)
@@ -87,7 +93,8 @@ class Zend_Tool_Framework_Loader_BasicLoader
     }
 
     /**
-     * @param  array $classesToLoad
+     *
+     * @param array $classesToLoad            
      * @return Zend_Tool_Framework_Loader_Abstract
      */
     public function setClassesToLoad(array $classesToLoad)
@@ -100,58 +107,51 @@ class Zend_Tool_Framework_Loader_BasicLoader
     {
         $manifestRegistry = $this->_registry->getManifestRepository();
         $providerRegistry = $this->_registry->getProviderRepository();
-
+        
         $loadedClasses = array();
-
+        
         // loop through the loaded classes and ensure that
         foreach ($this->_classesToLoad as $class) {
-
-            if (!class_exists($class)) {
+            
+            if (! class_exists($class)) {
                 Zend_Loader::loadClass($class);
             }
-
+            
             // reflect class to see if its something we want to load
             $reflectionClass = new ReflectionClass($class);
             if ($this->_isManifestImplementation($reflectionClass)) {
                 $manifestRegistry->addManifest($reflectionClass->newInstance());
                 $loadedClasses[] = $class;
             }
-
+            
             if ($this->_isProviderImplementation($reflectionClass)) {
                 $providerRegistry->addProvider($reflectionClass->newInstance());
                 $loadedClasses[] = $class;
             }
-
         }
-
+        
         return $loadedClasses;
     }
 
     /**
-     * @param  ReflectionClass $reflectionClass
+     *
+     * @param ReflectionClass $reflectionClass            
      * @return bool
      */
     private function _isManifestImplementation($reflectionClass)
     {
-        return (
-            $reflectionClass->implementsInterface('Zend_Tool_Framework_Manifest_Interface')
-                && !$reflectionClass->isAbstract()
-        );
+        return ($reflectionClass->implementsInterface('Zend_Tool_Framework_Manifest_Interface') && ! $reflectionClass->isAbstract());
     }
 
     /**
-     * @param  ReflectionClass $reflectionClass
+     *
+     * @param ReflectionClass $reflectionClass            
      * @return bool
      */
     private function _isProviderImplementation($reflectionClass)
     {
         $providerRegistry = $this->_registry->getProviderRepository();
-
-        return (
-            $reflectionClass->implementsInterface('Zend_Tool_Framework_Provider_Interface')
-                && !$reflectionClass->isAbstract()
-                && !$providerRegistry->hasProvider($reflectionClass->getName(), false)
-        );
+        
+        return ($reflectionClass->implementsInterface('Zend_Tool_Framework_Provider_Interface') && ! $reflectionClass->isAbstract() && ! $providerRegistry->hasProvider($reflectionClass->getName(), false));
     }
-
 }

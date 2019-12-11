@@ -20,15 +20,18 @@
  * @version    $Id$
  */
 
-/** Zend_Controller_Request_Abstract */
+/**
+ * Zend_Controller_Request_Abstract
+ */
 require_once 'Zend/Controller/Request/Abstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Controller
+ *
+ * @category Zend
+ * @package Zend_Controller
  * @subpackage Request
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Controller_Request_Simple extends Zend_Controller_Request_Abstract
 {
@@ -38,18 +41,17 @@ class Zend_Controller_Request_Simple extends Zend_Controller_Request_Abstract
         if ($action) {
             $this->setActionName($action);
         }
-
+        
         if ($controller) {
             $this->setControllerName($controller);
         }
-
+        
         if ($module) {
             $this->setModuleName($module);
         }
-
+        
         if ($params) {
             $this->setParams($params);
         }
     }
-
 }

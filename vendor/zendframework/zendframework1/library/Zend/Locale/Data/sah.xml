@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9196 $"/>
-		<generation date="$Date: 2013-08-10 01:39:57 -0500 (Sat, 10 Aug 2013) $"/>
-		<language type="sah"/>
+		<version number="$Revision: 9196 $" />
+		<generation date="$Date: 2013-08-10 01:39:57 -0500 (Sat, 10 Aug 2013) $" />
+		<language type="sah" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -84,9 +83,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</measurementSystemNames>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[а б г ҕ д {дь} и й к л м н {нь} ҥ о ө п р с т у ү х һ ч ы э]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[в е ё ж з ф ц ш щ ъ ь ю я]</exemplarCharacters>
-		<exemplarCharacters type="index">[А Б Г Ҕ Д {Дь} И Й К Л М Н {Нь} Ҥ О Ө П Р С Т У Ү Х Һ Ч Ы Э]</exemplarCharacters>
+		<exemplarCharacters>[а б г ҕ д {дь} и й к л м н {нь} ҥ о ө п р с т у ү
+			х һ ч ы э]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[в е ё ж з ф ц ш щ ъ ь ю
+			я]</exemplarCharacters>
+		<exemplarCharacters type="index">[А Б Г Ҕ Д {Дь} И Й К Л М
+			Н {Нь} Ҥ О Ө П Р С Т У Ү Х Һ Ч Ы Э]</exemplarCharacters>
 		<exemplarCharacters type="punctuation" draft="unconfirmed">[\:]</exemplarCharacters>
 	</characters>
 	<dates>
@@ -308,7 +310,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">{0} сылынан</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">{0} сыл ынараа өттүгэр</relativeTimePattern>
+					<relativeTimePattern count="other">{0} сыл ынараа
+						өттүгэр</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="month">
@@ -317,7 +320,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">{0} ыйынан</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">{0} ый ынараа өттүгэр</relativeTimePattern>
+					<relativeTimePattern count="other">{0} ый ынараа
+						өттүгэр</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -326,7 +330,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">{0} нэдиэлэннэн</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">{0} нэдиэлэ ынараа өттүгэр</relativeTimePattern>
+					<relativeTimePattern count="other">{0} нэдиэлэ ынараа
+						өттүгэр</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="day">
@@ -340,7 +345,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">{0} күнүнэн</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">{0} күн ынараа өттүгэр</relativeTimePattern>
+					<relativeTimePattern count="other">{0} күн ынараа
+						өттүгэр</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="weekday">
@@ -355,7 +361,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">{0} чааһынан</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">{0} чаас ынараа өттүгэр</relativeTimePattern>
+					<relativeTimePattern count="other">{0} чаас ынараа
+						өттүгэр</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="minute">
@@ -364,7 +371,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">{0} мүнүүтэннэн</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">{0} мүнүүтэ ынараа өттүгэр</relativeTimePattern>
+					<relativeTimePattern count="other">{0} мүнүүтэ ынараа
+						өттүгэр</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">
@@ -373,7 +381,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">{0} сөкүүндэннэн</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">{0} сөкүүндэ ынараа өттүгэр</relativeTimePattern>
+					<relativeTimePattern count="other">{0} сөкүүндэ ынараа
+						өттүгэр</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">

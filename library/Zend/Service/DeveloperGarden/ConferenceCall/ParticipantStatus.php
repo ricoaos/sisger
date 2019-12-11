@@ -21,26 +21,31 @@
  */
 
 /**
+ *
  * @see Zend_Validate_Ip
  */
 require_once 'Zend/Validate/Ip.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_DeveloperGarden_ConferenceCall_ParticipantStatus
 {
+
     /**
+     *
      * @var string
      */
     public $name = null;
 
     /**
+     *
      * @var string
      */
     public $value = null;
@@ -48,13 +53,12 @@ class Zend_Service_DeveloperGarden_ConferenceCall_ParticipantStatus
     /**
      * constructor for participant status object
      *
-     * @param string $vame
-     * @param string $value
+     * @param string $vame            
+     * @param string $value            
      */
     public function __construct($name, $value = null)
     {
-        $this->setName($name)
-             ->setValue($value);
+        $this->setName($name)->setValue($value);
     }
 
     /**
@@ -70,7 +74,7 @@ class Zend_Service_DeveloperGarden_ConferenceCall_ParticipantStatus
     /**
      * sets $name
      *
-     * @param string $name
+     * @param string $name            
      * @return Zend_Service_DeveloperGarden_ConferenceCall_ParticipantStatus
      */
     public function setName($name)
@@ -92,7 +96,7 @@ class Zend_Service_DeveloperGarden_ConferenceCall_ParticipantStatus
     /**
      * sets $value
      *
-     * @param string $value
+     * @param string $value            
      * @return Zend_Service_DeveloperGarden_ConferenceCall_ParticipantStatus
      */
     public function setValue($value = null)

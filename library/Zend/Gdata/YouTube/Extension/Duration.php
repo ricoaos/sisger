@@ -22,6 +22,7 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
@@ -29,22 +30,26 @@ require_once 'Zend/Gdata/Extension.php';
 /**
  * Represents the yt:duration element used by the YouTube data API
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage YouTube
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_YouTube_Extension_Duration extends Zend_Gdata_Extension
 {
 
     protected $_rootNamespace = 'yt';
+
     protected $_rootElement = 'duration';
+
     protected $_seconds = null;
 
     /**
      * Constructs a new Zend_Gdata_YouTube_Extension_Duration object.
-     * @param bool $seconds(optional) The seconds value of the element.
+     * 
+     * @param bool $seconds(optional)
+     *            The seconds value of the element.
      */
     public function __construct($seconds = null)
     {
@@ -55,13 +60,15 @@ class Zend_Gdata_YouTube_Extension_Duration extends Zend_Gdata_Extension
 
     /**
      * Retrieves a DOMElement which corresponds to this element and all
-     * child properties.  This is used to build an entry back into a DOM
+     * child properties.
+     * This is used to build an entry back into a DOM
      * and eventually XML text for sending to the server upon updates, or
      * for application storage/persistence.
      *
-     * @param DOMDocument $doc The DOMDocument used to construct DOMElements
+     * @param DOMDocument $doc
+     *            The DOMDocument used to construct DOMElements
      * @return DOMElement The DOMElement representing this element and all
-     * child properties.
+     *         child properties.
      */
     public function getDOM($doc = null, $majorVersion = 1, $minorVersion = null)
     {
@@ -74,19 +81,21 @@ class Zend_Gdata_YouTube_Extension_Duration extends Zend_Gdata_Extension
 
     /**
      * Given a DOMNode representing an attribute, tries to map the data into
-     * instance members.  If no mapping is defined, the name and valueare
+     * instance members.
+     * If no mapping is defined, the name and valueare
      * stored in an array.
      *
-     * @param DOMNode $attribute The DOMNode attribute needed to be handled
+     * @param DOMNode $attribute
+     *            The DOMNode attribute needed to be handled
      */
     protected function takeAttributeFromDOM($attribute)
     {
         switch ($attribute->localName) {
-        case 'seconds':
-            $this->_seconds = $attribute->nodeValue;
-            break;
-        default:
-            parent::takeAttributeFromDOM($attribute);
+            case 'seconds':
+                $this->_seconds = $attribute->nodeValue;
+                break;
+            default:
+                parent::takeAttributeFromDOM($attribute);
         }
     }
 
@@ -103,7 +112,8 @@ class Zend_Gdata_YouTube_Extension_Duration extends Zend_Gdata_Extension
     /**
      * Set the value for this element's seconds attribute.
      *
-     * @param int $value The desired value for this attribute.
+     * @param int $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_YouTube_Extension_Duration The element being modified.
      */
     public function setSeconds($value)
@@ -122,5 +132,4 @@ class Zend_Gdata_YouTube_Extension_Duration extends Zend_Gdata_Extension
     {
         return $this->_seconds;
     }
-
 }

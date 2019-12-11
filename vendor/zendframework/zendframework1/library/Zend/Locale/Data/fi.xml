@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="fi"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="fi" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -555,7 +554,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Bugi">bugilainen</script>
 			<script type="Buhd">buhidilainen</script>
 			<script type="Cakm">chakmalainen</script>
-			<script type="Cans">kanadalaisten alkuperäiskansojen yhtenäistetty tavukirjoitus</script>
+			<script type="Cans">kanadalaisten alkuperäiskansojen yhtenäistetty
+				tavukirjoitus</script>
 			<script type="Cari">kaarialainen</script>
 			<script type="Cham">tšamilainen</script>
 			<script type="Cher">cherokeelainen</script>
@@ -1009,7 +1009,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</territories>
 		<variants>
 			<variant type="1901">saksan perinteinen oikeinkirjoitus</variant>
-			<variant type="1994">sloveenin resian murteen yhdenmukaistettu oikeinkirjoitus</variant>
+			<variant type="1994">sloveenin resian murteen yhdenmukaistettu
+				oikeinkirjoitus</variant>
 			<variant type="1996">saksan uusi oikeinkirjoitus</variant>
 			<variant type="1606NICT">myöhäiskeskiranska</variant>
 			<variant type="1694ACAD">varhaisnykyranska</variant>
@@ -1018,7 +1019,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="ALUKU">alukun kreolimurre</variant>
 			<variant type="AREVELA">itäarmenialainen</variant>
 			<variant type="AREVMDA">länsiarmenialainen</variant>
-			<variant type="BAKU1926">yhtenäistetty turkkilainen latinalainen aakkosto</variant>
+			<variant type="BAKU1926">yhtenäistetty turkkilainen latinalainen
+				aakkosto</variant>
 			<variant type="BAUDDHA">sanskriitin buddhalainen sekamuoto</variant>
 			<variant type="BISCAYAN">baskin biskajalaismurre</variant>
 			<variant type="BISKE">sloveenin resian San Giorgion/Bilan alamurre</variant>
@@ -1026,7 +1028,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="EMODENG">varhaisnykyenglanti</variant>
 			<variant type="FONIPA">kansainvälinen foneettinen aakkosto IPA</variant>
 			<variant type="FONUPA">uralilainen foneettinen aakkosto UPA</variant>
-			<variant type="FONUPA" alt="secondary">suomalais-ugrilainen tarkekirjoitus</variant>
+			<variant type="FONUPA" alt="secondary">suomalais-ugrilainen
+				tarkekirjoitus</variant>
 			<variant type="FONXSAMP">foneettinen X-SAMPA-merkistö</variant>
 			<variant type="HEPBURN">japanin Hepburn-latinaistus</variant>
 			<variant type="HOGNORSK">norjan högnorsk</variant>
@@ -1073,8 +1076,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="calendar">kalenteri</key>
 			<key type="colAlternate" draft="contributed">Ohita symbolit -lajittelu</key>
 			<key type="colBackwards" draft="contributed">Käänteinen painomerkki -lajittelu</key>
-			<key type="colCaseFirst" draft="contributed">Järjestys isojen/pienten kirjainten mukaan</key>
-			<key type="colCaseLevel" draft="contributed">Isot ja pienet kirjaimet erotteleva lajittelu</key>
+			<key type="colCaseFirst" draft="contributed">Järjestys isojen/pienten
+				kirjainten mukaan</key>
+			<key type="colCaseLevel" draft="contributed">Isot ja pienet kirjaimet
+				erotteleva lajittelu</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Kana-lajittelu</key>
 			<key type="collation">lajittelujärjestys</key>
 			<key type="colNormalization" draft="contributed">Normalisoitu lajittelu</key>
@@ -1108,10 +1113,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="eor" key="collation">yleiseurooppalainen lajittelujärjestys</type>
 			<type type="ethi" key="numbers">etiopialaiset numerot</type>
 			<type type="ethiopic" key="calendar">etiopialainen kalenteri</type>
-			<type type="ethiopic-amete-alem" key="calendar">etiopialainen amete alem -kalenteri</type>
+			<type type="ethiopic-amete-alem" key="calendar">etiopialainen amete alem
+				-kalenteri</type>
 			<type type="finance" key="numbers">talousnumerot</type>
 			<type type="fullwide" key="numbers">ideografin levyiset numerot</type>
-			<type type="gb2312han" key="collation">yksinkertaistettu kiinalainen järjestys GB2312</type>
+			<type type="gb2312han" key="collation">yksinkertaistettu kiinalainen
+				järjestys GB2312</type>
 			<type type="geor" key="numbers">georgialaiset numerot</type>
 			<type type="gregorian" key="calendar">gregoriaaninen kalenteri</type>
 			<type type="grek" key="numbers">kreikkalaiset numerot</type>
@@ -1120,7 +1127,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers">gurmukhilaiset numerot</type>
 			<type type="hanidec" key="numbers">kiinalaiset desimaalinumerot</type>
 			<type type="hans" key="numbers">yksinkertaistetut kiinalaiset numerot</type>
-			<type type="hansfin" key="numbers">yksinkertaistetut kiinalaiset talousnumerot</type>
+			<type type="hansfin" key="numbers">yksinkertaistetut kiinalaiset
+				talousnumerot</type>
 			<type type="hant" key="numbers">perinteiset kiinalaiset numerot</type>
 			<type type="hantfin" key="numbers">perinteiset kiinalaiset talousnumerot</type>
 			<type type="hebr" key="numbers">heprealaiset numerot</type>
@@ -1142,7 +1150,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="latn" key="numbers">länsimaiset numerot</type>
 			<type type="lepc" key="numbers">lepchanumerot</type>
 			<type type="limb" key="numbers">limbunumerot</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Lajittele pienet kirjaimet ensin</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Lajittele pienet
+				kirjaimet ensin</type>
 			<type type="mlym" key="numbers">malajalamilaiset numerot</type>
 			<type type="mong" key="numbers">mongolialaiset numerot</type>
 			<type type="mtei" key="numbers">meetei mayek -numerot</type>
@@ -1150,21 +1159,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="mymrshan" key="numbers">myanmarin shan-numerot</type>
 			<type type="native" key="numbers" draft="contributed">Kielen omat numerot</type>
 			<type type="nkoo" key="numbers">n'ko-numerot</type>
-			<type type="no" key="colBackwards" draft="contributed">Lajittele painomerkit normaalisti</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Lajittele isot ja pienet kirjaimet normaalisti</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Lajittele ilman isojen ja pienten kirjainten erottelua</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Lajittele kana-merkit erikseen</type>
-			<type type="no" key="colNormalization" draft="contributed">Lajittele ilman normalisointia</type>
-			<type type="no" key="colNumeric" draft="contributed">Lajittele numerot erikseen</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Lajittele symbolit</type>
+			<type type="no" key="colBackwards" draft="contributed">Lajittele painomerkit
+				normaalisti</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Lajittele isot ja
+				pienet kirjaimet normaalisti</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Lajittele ilman isojen
+				ja pienten kirjainten erottelua</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Lajittele
+				kana-merkit erikseen</type>
+			<type type="no" key="colNormalization" draft="contributed">Lajittele ilman
+				normalisointia</type>
+			<type type="no" key="colNumeric" draft="contributed">Lajittele numerot
+				erikseen</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Lajittele
+				symbolit</type>
 			<type type="olck" key="numbers">ol chiki -numerot</type>
 			<type type="orya" key="numbers">orijalaiset numerot</type>
 			<type type="persian" key="calendar">persialainen kalenteri</type>
 			<type type="phonebook" key="collation">puhelinluettelojärjestys</type>
 			<type type="phonetic" key="collation">äänteellinen järjestys</type>
 			<type type="pinyin" key="collation">pinyin-järjestys</type>
-			<type type="primary" key="colStrength" draft="contributed">Lajittele vain peruskirjaimet</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Lajittele painomerkit/koko/leveys/kana-merkit</type>
+			<type type="primary" key="colStrength" draft="contributed">Lajittele vain
+				peruskirjaimet</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Lajittele
+				painomerkit/koko/leveys/kana-merkit</type>
 			<type type="reformed" key="collation">uudistettu järjestys</type>
 			<type type="roc" key="calendar">Kiinan tasavallan kalenteri</type>
 			<type type="roman" key="numbers">roomalaiset numerot</type>
@@ -1172,8 +1190,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="saur" key="numbers">saurashtra-numerot</type>
 			<type type="search" key="collation">yleishakujärjestys</type>
 			<type type="searchjl" key="collation">haku hangul-alkukonsonantin mukaan</type>
-			<type type="secondary" key="colStrength" draft="contributed">Lajittele painomerkit</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Lajittele symbolit ohittaen</type>
+			<type type="secondary" key="colStrength" draft="contributed">Lajittele
+				painomerkit</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Lajittele symbolit
+				ohittaen</type>
 			<type type="sora" key="numbers">sora sompeng -numerot</type>
 			<type type="standard" key="collation">normaalijärjestys</type>
 			<type type="stroke" key="collation">piirtojärjestys</type>
@@ -1182,19 +1202,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">perinteiset tamilinumerot</type>
 			<type type="tamldec" key="numbers">tamilinumerot</type>
 			<type type="telu" key="numbers">telugulaiset numerot</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Lajittele painomerkit/koko/leveys</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Lajittele
+				painomerkit/koko/leveys</type>
 			<type type="thai" key="numbers">thainumerot</type>
 			<type type="tibt" key="numbers">tiibetiläiset numerot</type>
 			<type type="traditional" key="collation">perinteinen järjestys</type>
 			<type type="traditional" key="numbers">perinteiset numerot</type>
 			<type type="unihan" key="collation">radikaali- ja piirtojärjestys</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Lajittele isot kirjaimet ensin</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Lajittele isot
+				kirjaimet ensin</type>
 			<type type="vaii" key="numbers">vai-numerot</type>
-			<type type="yes" key="colBackwards" draft="contributed">Lajittele painomerkit käänteisesti</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Lajittele isojen ja pienten kirjainten mukaan</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Lajittele kana-merkit erikseen</type>
-			<type type="yes" key="colNormalization" draft="contributed">Lajittele Unicode normalisoituna</type>
-			<type type="yes" key="colNumeric" draft="contributed">Lajittele numerot numeerisesti</type>
+			<type type="yes" key="colBackwards" draft="contributed">Lajittele painomerkit
+				käänteisesti</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Lajittele isojen ja
+				pienten kirjainten mukaan</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Lajittele
+				kana-merkit erikseen</type>
+			<type type="yes" key="colNormalization" draft="contributed">Lajittele Unicode
+				normalisoituna</type>
+			<type type="yes" key="colNumeric" draft="contributed">Lajittele numerot
+				numeerisesti</type>
 			<type type="zhuyin" key="collation">zhuyin-järjestys</type>
 		</types>
 		<transformNames>
@@ -1229,10 +1256,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s š t u v w x y z ž å ä ö]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à â ã č ç đ é è ê ë ǧ ǥ ȟ í î ï ǩ ń ñ ŋ ô õ œ ř ß ŧ ú ù û ÿ ü ʒ ǯ æ ø]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Å Ä Ö]</exemplarCharacters>
-		<exemplarCharacters type="punctuation" draft="unconfirmed">[\- ‐ – , ; \: ! ? . … ’ ” ( ) \[ \] § @ * / \&amp; #]</exemplarCharacters>
+		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s š t u v w x
+			y z ž å ä ö]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à â ã č ç đ é è ê ë ǧ ǥ
+			ȟ í î ï ǩ ń ñ ŋ ô õ œ ř ß ŧ ú ù û ÿ ü ʒ ǯ æ ø]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S T U V W X Y Z Å Ä Ö]</exemplarCharacters>
+		<exemplarCharacters type="punctuation" draft="unconfirmed">[\- ‐
+			– , ; \: ! ? . … ’ ” ( ) \[ \] § @ * / \&amp; #]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1468,8 +1499,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E d. – E d. MMMM y G</greatestDifference>
-							<greatestDifference id="M">E d. MMMM – E d. MMMM y G</greatestDifference>
-							<greatestDifference id="y">E d. MMMM y – E d. MMMM y G</greatestDifference>
+							<greatestDifference id="M">E d. MMMM – E d. MMMM y
+								G</greatestDifference>
+							<greatestDifference id="y">E d. MMMM y – E d. MMMM
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">LLL–LLLL y G</greatestDifference>
@@ -1927,7 +1960,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E d. – E d. MMMM y</greatestDifference>
 							<greatestDifference id="M">E d. MMMM – E d. MMMM y</greatestDifference>
-							<greatestDifference id="y">E d. MMMM y – E d. MMMM y</greatestDifference>
+							<greatestDifference id="y">E d. MMMM y – E d. MMMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">LLL–LLLL y</greatestDifference>
@@ -2029,9 +2063,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</months>
 			</calendar>
 			<calendar type="japanese">
-				<!-- need some non-empty element here to make inheritance work,
-					 this copy of generic dateFormats above is smaller than root japanese eras
-				-->
+				<!-- need some non-empty element here to make inheritance work, this 
+					copy of generic dateFormats above is smaller than root japanese eras -->
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -3727,7 +3760,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="AOR">
 				<displayName>Angolan kwanza reajustado (1995–1999)</displayName>
 				<displayName count="one">Angolan kwanza reajustado (1995–1999)</displayName>
-				<displayName count="other">Angolan kwanza reajustadoa (1995–1999)</displayName>
+				<displayName count="other">Angolan kwanza reajustadoa
+					(1995–1999)</displayName>
 			</currency>
 			<currency type="ARA">
 				<displayName>Argentiinan austral</displayName>
@@ -3782,18 +3816,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAD">
 				<displayName>Bosnia-Hertsegovinan dinaari (1992–1994)</displayName>
-				<displayName count="one">Bosnia-Hertsegovinan dinaari (1992–1994)</displayName>
-				<displayName count="other">Bosnia-Hertsegovinan dinaaria (1992–1994)</displayName>
+				<displayName count="one">Bosnia-Hertsegovinan dinaari
+					(1992–1994)</displayName>
+				<displayName count="other">Bosnia-Hertsegovinan dinaaria
+					(1992–1994)</displayName>
 			</currency>
 			<currency type="BAM">
 				<displayName>Bosnia-Hertsegovinan vaihdettava markka</displayName>
-				<displayName count="one">Bosnia-Hertsegovinan vaihdettava markka</displayName>
-				<displayName count="other">Bosnia-Hertsegovinan vaihdettavaa markkaa</displayName>
+				<displayName count="one">Bosnia-Hertsegovinan vaihdettava
+					markka</displayName>
+				<displayName count="other">Bosnia-Hertsegovinan vaihdettavaa
+					markkaa</displayName>
 			</currency>
 			<currency type="BAN">
 				<displayName>Bosnia-Hertsegovinan uusi dinaari (1994–1997)</displayName>
-				<displayName count="one">Bosnia-Hertsegovinan uusi dinaari (1994–1997)</displayName>
-				<displayName count="other">Bosnia-Hertsegovinan uutta dinaaria (1994–1997)</displayName>
+				<displayName count="one">Bosnia-Hertsegovinan uusi dinaari
+					(1994–1997)</displayName>
+				<displayName count="other">Bosnia-Hertsegovinan uutta dinaaria
+					(1994–1997)</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Barbadosin dollari</displayName>
@@ -3939,7 +3979,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BYB">
 				<displayName>Valko-Venäjän uusi rupla (1994–1999)</displayName>
 				<displayName count="one">Valko-Venäjän uusi rupla (1994–1999)</displayName>
-				<displayName count="other">Valko-Venäjän uutta ruplaa (1994–1999)</displayName>
+				<displayName count="other">Valko-Venäjän uutta ruplaa
+					(1994–1999)</displayName>
 			</currency>
 			<currency type="BYR">
 				<displayName>Valko-Venäjän rupla</displayName>
@@ -4928,7 +4969,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="USN">
 				<displayName>Yhdysvaltain dollari (seuraava päivä)</displayName>
 				<displayName count="one">Yhdysvaltain dollari (seuraava päivä)</displayName>
-				<displayName count="other">Yhdysvaltain dollaria (seuraava päivä)</displayName>
+				<displayName count="other">Yhdysvaltain dollaria (seuraava
+					päivä)</displayName>
 			</currency>
 			<currency type="USS">
 				<displayName>Yhdysvaltain dollari (sama päivä)</displayName>
@@ -5077,8 +5119,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XTS">
 				<displayName>testaustarkoitukseen varattu valuuttakoodi</displayName>
-				<displayName count="one">testaustarkoitukseen varattu valuuttakoodi</displayName>
-				<displayName count="other">testaustarkoitukseen varattua valuuttakoodia</displayName>
+				<displayName count="one">testaustarkoitukseen varattu
+					valuuttakoodi</displayName>
+				<displayName count="other">testaustarkoitukseen varattua
+					valuuttakoodia</displayName>
 			</currency>
 			<currency type="XXX">
 				<displayName>tuntematon rahayksikkö</displayName>
@@ -5098,22 +5142,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="YUD">
 				<displayName>Jugoslavian kova dinaari (1966–1990)</displayName>
 				<displayName count="one">Jugoslavian kova dinaari (1966–1990)</displayName>
-				<displayName count="other">Jugoslavian kovaa dinaaria (1966–1990)</displayName>
+				<displayName count="other">Jugoslavian kovaa dinaaria
+					(1966–1990)</displayName>
 			</currency>
 			<currency type="YUM">
 				<displayName>Jugoslavian uusi dinaari (1994–2002)</displayName>
 				<displayName count="one">Jugoslavian uusi dinaari (1994–2002)</displayName>
-				<displayName count="other">Jugoslavian uutta dinaaria (1994–2002)</displayName>
+				<displayName count="other">Jugoslavian uutta dinaaria
+					(1994–2002)</displayName>
 			</currency>
 			<currency type="YUN">
 				<displayName>Jugoslavian vaihdettava dinaari (1990–1992)</displayName>
-				<displayName count="one">Jugoslavian vaihdettava dinaari (1990–1992)</displayName>
-				<displayName count="other">Jugoslavian vaihdettavaa dinaaria (1990–1992)</displayName>
+				<displayName count="one">Jugoslavian vaihdettava dinaari
+					(1990–1992)</displayName>
+				<displayName count="other">Jugoslavian vaihdettavaa dinaaria
+					(1990–1992)</displayName>
 			</currency>
 			<currency type="YUR">
 				<displayName>Jugoslavian uudistettu dinaari (1992–1993)</displayName>
-				<displayName count="one">Jugoslavian uudistettu dinaari (1992–1993)</displayName>
-				<displayName count="other">Jugoslavian uudistettua dinaaria (1992–1993)</displayName>
+				<displayName count="one">Jugoslavian uudistettu dinaari
+					(1992–1993)</displayName>
+				<displayName count="other">Jugoslavian uudistettua dinaaria
+					(1992–1993)</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName>Etelä-Afrikan rahoitusrandi</displayName>

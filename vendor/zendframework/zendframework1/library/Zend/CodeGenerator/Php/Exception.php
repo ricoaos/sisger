@@ -21,17 +21,18 @@
  */
 
 /**
+ *
  * @see Zend_CodeGenerator_Exception
  */
 require_once 'Zend/CodeGenerator/Exception.php';
 
 /**
- * @category   Zend
- * @package    Zend_CodeGenerator
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_CodeGenerator
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_CodeGenerator_Php_Exception extends Zend_CodeGenerator_Exception
 {
-
 }

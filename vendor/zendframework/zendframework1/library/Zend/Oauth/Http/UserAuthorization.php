@@ -19,20 +19,26 @@
  * @version    $Id$
  */
 
-/** Zend_Oauth_Http */
+/**
+ * Zend_Oauth_Http
+ */
 require_once 'Zend/Oauth/Http.php';
 
-/** Zend_Uri_Http */
+/**
+ * Zend_Uri_Http
+ */
 require_once 'Zend/Uri/Http.php';
 
 /**
- * @category   Zend
- * @package    Zend_Oauth
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Oauth
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Oauth_Http_UserAuthorization extends Zend_Oauth_Http
 {
+
     /**
      * Generate a redirect URL from the allowable parameters and configured
      * values.
@@ -42,12 +48,10 @@ class Zend_Oauth_Http_UserAuthorization extends Zend_Oauth_Http
     public function getUrl()
     {
         $params = $this->assembleParams();
-        $uri    = Zend_Uri_Http::fromString($this->_consumer->getUserAuthorizationUrl());
-
-        $uri->setQuery(
-            $this->_httpUtility->toEncodedQueryString($params)
-        );
-
+        $uri = Zend_Uri_Http::fromString($this->_consumer->getUserAuthorizationUrl());
+        
+        $uri->setQuery($this->_httpUtility->toEncodedQueryString($params));
+        
         return $uri->getUri();
     }
 
@@ -59,20 +63,20 @@ class Zend_Oauth_Http_UserAuthorization extends Zend_Oauth_Http
     public function assembleParams()
     {
         $params = array(
-            'oauth_token' => $this->_consumer->getLastRequestToken()->getToken(),
+            'oauth_token' => $this->_consumer->getLastRequestToken()->getToken()
         );
-
-        if (!Zend_Oauth_Client::$supportsRevisionA) {
+        
+        if (! Zend_Oauth_Client::$supportsRevisionA) {
             $callback = $this->_consumer->getCallbackUrl();
-            if (!empty($callback)) {
+            if (! empty($callback)) {
                 $params['oauth_callback'] = $callback;
             }
         }
-
-        if (!empty($this->_parameters)) {
+        
+        if (! empty($this->_parameters)) {
             $params = array_merge($params, $this->_parameters);
         }
-
+        
         return $params;
     }
 }

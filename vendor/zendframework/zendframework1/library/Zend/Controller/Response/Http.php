@@ -19,10 +19,10 @@
  * @version    $Id$
  */
 
-
-/** Zend_Controller_Response_Abstract */
+/**
+ * Zend_Controller_Response_Abstract
+ */
 require_once 'Zend/Controller/Response/Abstract.php';
-
 
 /**
  * Zend_Controller_Response_Http

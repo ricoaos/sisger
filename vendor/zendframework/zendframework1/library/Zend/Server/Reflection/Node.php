@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,29 +22,33 @@
 /**
  * Node Tree class for Zend_Server reflection operations
  *
- * @category   Zend
- * @package    Zend_Server
+ * @category Zend
+ * @package Zend_Server
  * @subpackage Reflection
  * @version $Id$
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Server_Reflection_Node
 {
+
     /**
      * Node value
+     * 
      * @var mixed
      */
     protected $_value = null;
 
     /**
      * Array of child nodes (if any)
+     * 
      * @var array
      */
     protected $_children = array();
 
     /**
      * Parent node (if any)
+     * 
      * @var Zend_Server_Reflection_Node
      */
     protected $_parent = null;
@@ -51,8 +56,9 @@ class Zend_Server_Reflection_Node
     /**
      * Constructor
      *
-     * @param mixed $value
-     * @param Zend_Server_Reflection_Node $parent Optional
+     * @param mixed $value            
+     * @param Zend_Server_Reflection_Node $parent
+     *            Optional
      * @return Zend_Server_Reflection_Node
      */
     public function __construct($value, Zend_Server_Reflection_Node $parent = null)
@@ -61,22 +67,23 @@ class Zend_Server_Reflection_Node
         if (null !== $parent) {
             $this->setParent($parent, true);
         }
-
+        
         return $this;
     }
 
     /**
      * Set parent node
      *
-     * @param Zend_Server_Reflection_Node $node
-     * @param boolean $new Whether or not the child node is newly created
-     * and should always be attached
+     * @param Zend_Server_Reflection_Node $node            
+     * @param boolean $new
+     *            Whether or not the child node is newly created
+     *            and should always be attached
      * @return void
      */
     public function setParent(Zend_Server_Reflection_Node $node, $new = false)
     {
         $this->_parent = $node;
-
+        
         if ($new) {
             $node->attachChild($this);
             return;
@@ -86,27 +93,27 @@ class Zend_Server_Reflection_Node
     /**
      * Create and attach a new child node
      *
-     * @param mixed $value
+     * @param mixed $value            
      * @access public
      * @return Zend_Server_Reflection_Node New child node
      */
     public function createChild($value)
     {
         $child = new self($value, $this);
-
+        
         return $child;
     }
 
     /**
      * Attach a child node
      *
-     * @param Zend_Server_Reflection_Node $node
+     * @param Zend_Server_Reflection_Node $node            
      * @return void
      */
     public function attachChild(Zend_Server_Reflection_Node $node)
     {
         $this->_children[] = $node;
-
+        
         if ($node->getParent() !== $this) {
             $node->setParent($this);
         }
@@ -155,7 +162,7 @@ class Zend_Server_Reflection_Node
     /**
      * Set the node value
      *
-     * @param mixed $value
+     * @param mixed $value            
      * @return void
      */
     public function setValue($value)
@@ -175,27 +182,25 @@ class Zend_Server_Reflection_Node
     public function getEndPoints()
     {
         $endPoints = array();
-        if (!$this->hasChildren()) {
+        if (! $this->hasChildren()) {
             return $endPoints;
         }
-
+        
         foreach ($this->_children as $child) {
             $value = $child->getValue();
-
+            
             if (null === $value) {
                 $endPoints[] = $this;
-            } elseif ((null !== $value)
-                && $child->hasChildren())
-            {
+            } elseif ((null !== $value) && $child->hasChildren()) {
                 $childEndPoints = $child->getEndPoints();
-                if (!empty($childEndPoints)) {
+                if (! empty($childEndPoints)) {
                     $endPoints = array_merge($endPoints, $childEndPoints);
                 }
-            } elseif ((null !== $value) && !$child->hasChildren()) {
+            } elseif ((null !== $value) && ! $child->hasChildren()) {
                 $endPoints[] = $child;
             }
         }
-
+        
         return $endPoints;
     }
 }

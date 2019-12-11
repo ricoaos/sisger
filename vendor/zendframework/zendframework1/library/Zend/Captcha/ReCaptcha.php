@@ -19,10 +19,16 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** @see Zend_Captcha_Base */
+/**
+ *
+ * @see Zend_Captcha_Base
+ */
 require_once 'Zend/Captcha/Base.php';
 
-/** @see Zend_Service_ReCaptcha */
+/**
+ *
+ * @see Zend_Service_ReCaptcha
+ */
 require_once 'Zend/Service/ReCaptcha.php';
 
 /**
@@ -32,23 +38,30 @@ require_once 'Zend/Service/ReCaptcha.php';
  *
  * @see http://recaptcha.net/apidocs/captcha/
  *
- * @category   Zend
- * @package    Zend_Captcha
+ * @category Zend
+ * @package Zend_Captcha
  * @subpackage Adapter
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id$
  */
 class Zend_Captcha_ReCaptcha extends Zend_Captcha_Base
 {
-    /**@+
+
+    /**
+     * @+
      * ReCaptcha Field names
+     * 
      * @var string
      */
     protected $_CHALLENGE = 'recaptcha_challenge_field';
-    protected $_RESPONSE  = 'recaptcha_response_field';
-    /**@-*/
 
+    protected $_RESPONSE = 'recaptcha_response_field';
+
+    /**
+     * @-
+     */
+    
     /**
      * Recaptcha service object
      *
@@ -70,22 +83,29 @@ class Zend_Captcha_ReCaptcha extends Zend_Captcha_Base
      */
     protected $_serviceOptions = array();
 
-    /**#@+
+    /**
+     * #@+
      * Error codes
      */
     const MISSING_VALUE = 'missingValue';
-    const ERR_CAPTCHA   = 'errCaptcha';
-    const BAD_CAPTCHA   = 'badCaptcha';
-    /**#@-*/
+
+    const ERR_CAPTCHA = 'errCaptcha';
+
+    const BAD_CAPTCHA = 'badCaptcha';
 
     /**
+     * #@-
+     */
+    
+    /**
      * Error messages
+     * 
      * @var array
      */
     protected $_messageTemplates = array(
         self::MISSING_VALUE => 'Missing captcha fields',
-        self::ERR_CAPTCHA   => 'Failed to validate captcha',
-        self::BAD_CAPTCHA   => 'Captcha value is wrong: %value%',
+        self::ERR_CAPTCHA => 'Failed to validate captcha',
+        self::BAD_CAPTCHA => 'Captcha value is wrong: %value%'
     );
 
     /**
@@ -111,7 +131,7 @@ class Zend_Captcha_ReCaptcha extends Zend_Captcha_Base
     /**
      * Set ReCaptcha Private key
      *
-     * @param string $privkey
+     * @param string $privkey            
      * @return Zend_Captcha_ReCaptcha
      */
     public function setPrivkey($privkey)
@@ -123,7 +143,7 @@ class Zend_Captcha_ReCaptcha extends Zend_Captcha_Base
     /**
      * Set ReCaptcha public key
      *
-     * @param string $pubkey
+     * @param string $pubkey            
      * @return Zend_Captcha_ReCaptcha
      */
     public function setPubkey($pubkey)
@@ -135,20 +155,20 @@ class Zend_Captcha_ReCaptcha extends Zend_Captcha_Base
     /**
      * Constructor
      *
-     * @param array|Zend_Config $options
+     * @param array|Zend_Config $options            
      */
     public function __construct($options = null)
     {
         $this->setService(new Zend_Service_ReCaptcha());
         $this->_serviceParams = $this->getService()->getParams();
         $this->_serviceOptions = $this->getService()->getOptions();
-
+        
         parent::__construct($options);
-
+        
         if ($options instanceof Zend_Config) {
             $options = $options->toArray();
         }
-        if (!empty($options)) {
+        if (! empty($options)) {
             $this->setOptions($options);
         }
     }
@@ -156,7 +176,7 @@ class Zend_Captcha_ReCaptcha extends Zend_Captcha_Base
     /**
      * Set service object
      *
-     * @param  Zend_Service_ReCaptcha $service
+     * @param Zend_Service_ReCaptcha $service            
      * @return Zend_Captcha_ReCaptcha
      */
     public function setService(Zend_Service_ReCaptcha $service)
@@ -181,8 +201,8 @@ class Zend_Captcha_ReCaptcha extends Zend_Captcha_Base
      * If option is a service parameter, proxies to the service. The same
      * goes for any service options (distinct from service params)
      *
-     * @param  string $key
-     * @param  mixed $value
+     * @param string $key            
+     * @param mixed $value            
      * @return Zend_Captcha_ReCaptcha
      */
     public function setOption($key, $value)
@@ -213,50 +233,50 @@ class Zend_Captcha_ReCaptcha extends Zend_Captcha_Base
     /**
      * Validate captcha
      *
-     * @see    Zend_Validate_Interface::isValid()
-     * @param  mixed      $value
-     * @param  array|null $context
+     * @see Zend_Validate_Interface::isValid()
+     * @param mixed $value            
+     * @param array|null $context            
      * @return boolean
      */
     public function isValid($value, $context = null)
     {
-        if (!is_array($value) && !is_array($context)) {
+        if (! is_array($value) && ! is_array($context)) {
             $this->_error(self::MISSING_VALUE);
             return false;
         }
-
-        if (!is_array($value) && is_array($context)) {
+        
+        if (! is_array($value) && is_array($context)) {
             $value = $context;
         }
-
+        
         if (empty($value[$this->_CHALLENGE]) || empty($value[$this->_RESPONSE])) {
             $this->_error(self::MISSING_VALUE);
             return false;
         }
-
+        
         $service = $this->getService();
-
+        
         $res = $service->verify($value[$this->_CHALLENGE], $value[$this->_RESPONSE]);
-
-        if (!$res) {
+        
+        if (! $res) {
             $this->_error(self::ERR_CAPTCHA);
             return false;
         }
-
-        if (!$res->isValid()) {
+        
+        if (! $res->isValid()) {
             $this->_error(self::BAD_CAPTCHA, $res->getErrorCode());
             $service->setParam('error', $res->getErrorCode());
             return false;
         }
-
+        
         return true;
     }
 
     /**
      * Render captcha
      *
-     * @param  Zend_View_Interface $view
-     * @param  mixed $element
+     * @param Zend_View_Interface $view            
+     * @param mixed $element            
      * @return string
      */
     public function render(Zend_View_Interface $view = null, $element = null)

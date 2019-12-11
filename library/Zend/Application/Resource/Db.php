@@ -21,6 +21,7 @@
  */
 
 /**
+ *
  * @see Zend_Application_Resource_ResourceAbstract
  */
 require_once 'Zend/Application/Resource/ResourceAbstract.php';
@@ -28,15 +29,16 @@ require_once 'Zend/Application/Resource/ResourceAbstract.php';
 /**
  * Resource for creating database adapter
  *
- * @uses       Zend_Application_Resource_ResourceAbstract
- * @category   Zend
- * @package    Zend_Application
+ * @uses Zend_Application_Resource_ResourceAbstract
+ * @category Zend
+ * @package Zend_Application
  * @subpackage Resource
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Application_Resource_Db extends Zend_Application_Resource_ResourceAbstract
 {
+
     /**
      * Adapter to use
      *
@@ -45,6 +47,7 @@ class Zend_Application_Resource_Db extends Zend_Application_Resource_ResourceAbs
     protected $_adapter = null;
 
     /**
+     *
      * @var Zend_Db_Adapter_Abstract
      */
     protected $_db;
@@ -66,7 +69,7 @@ class Zend_Application_Resource_Db extends Zend_Application_Resource_ResourceAbs
     /**
      * Set the adapter
      *
-     * @param  string $adapter
+     * @param string $adapter            
      * @return Zend_Application_Resource_Db
      */
     public function setAdapter($adapter)
@@ -88,7 +91,7 @@ class Zend_Application_Resource_Db extends Zend_Application_Resource_ResourceAbs
     /**
      * Set the adapter params
      *
-     * @param  string $adapter
+     * @param string $adapter            
      * @return Zend_Application_Resource_Db
      */
     public function setParams(array $params)
@@ -110,7 +113,7 @@ class Zend_Application_Resource_Db extends Zend_Application_Resource_ResourceAbs
     /**
      * Set whether to use this as default table adapter
      *
-     * @param  boolean $defaultTableAdapter
+     * @param boolean $defaultTableAdapter            
      * @return Zend_Application_Resource_Db
      */
     public function setIsDefaultTableAdapter($isDefaultTableAdapter)
@@ -136,9 +139,7 @@ class Zend_Application_Resource_Db extends Zend_Application_Resource_ResourceAbs
      */
     public function getDbAdapter()
     {
-        if ((null === $this->_db)
-            && (null !== ($adapter = $this->getAdapter()))
-        ) {
+        if ((null === $this->_db) && (null !== ($adapter = $this->getAdapter()))) {
             $this->_db = Zend_Db::factory($adapter, $this->getParams());
         }
         return $this->_db;
@@ -162,20 +163,17 @@ class Zend_Application_Resource_Db extends Zend_Application_Resource_ResourceAbs
     /**
      * Set the default metadata cache
      *
-     * @param string|Zend_Cache_Core $cache
+     * @param string|Zend_Cache_Core $cache            
      * @return Zend_Application_Resource_Db
      */
     public function setDefaultMetadataCache($cache)
     {
         $metadataCache = null;
-
+        
         if (is_string($cache)) {
             $bootstrap = $this->getBootstrap();
-            if ($bootstrap instanceof Zend_Application_Bootstrap_ResourceBootstrapper
-                && $bootstrap->hasPluginResource('CacheManager')
-            ) {
-                $cacheManager = $bootstrap->bootstrap('CacheManager')
-                    ->getResource('CacheManager');
+            if ($bootstrap instanceof Zend_Application_Bootstrap_ResourceBootstrapper && $bootstrap->hasPluginResource('CacheManager')) {
+                $cacheManager = $bootstrap->bootstrap('CacheManager')->getResource('CacheManager');
                 if (null !== $cacheManager && $cacheManager->hasCache($cache)) {
                     $metadataCache = $cacheManager->getCache($cache);
                 }
@@ -183,11 +181,11 @@ class Zend_Application_Resource_Db extends Zend_Application_Resource_ResourceAbs
         } else if ($cache instanceof Zend_Cache_Core) {
             $metadataCache = $cache;
         }
-
+        
         if ($metadataCache instanceof Zend_Cache_Core) {
             Zend_Db_Table::setDefaultMetadataCache($metadataCache);
         }
-
+        
         return $this;
     }
 }

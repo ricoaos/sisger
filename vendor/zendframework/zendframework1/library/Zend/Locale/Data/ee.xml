@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="ee"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="ee" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -294,7 +293,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Copt" draft="unconfirmed">koptia gbeŋɔŋlɔ</script>
 			<script type="Cprt" draft="unconfirmed">saipriot gbeŋɔŋlɔ</script>
 			<script type="Cyrl">syrilliagbeŋɔŋlɔ</script>
-			<script type="Cyrs" draft="unconfirmed">slavonia sirillia sɔleme gbeŋɔŋlɔ xoxotɔ</script>
+			<script type="Cyrs" draft="unconfirmed">slavonia sirillia sɔleme gbeŋɔŋlɔ
+				xoxotɔ</script>
 			<script type="Deva">devanagarigbeŋɔŋlɔ</script>
 			<script type="Dsrt" draft="unconfirmed">deseret gbeŋɔŋlɔ</script>
 			<script type="Egyd" draft="unconfirmed">egypte demotia gbeŋɔŋlɔ</script>
@@ -523,7 +523,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">Finland nutome</territory>
 			<territory type="FJ">Fidzi nutome</territory>
 			<territory type="FK">Falkland ƒudomekpowo nutome</territory>
-			<territory type="FK" alt="variant">Falkland ƒudomekpowo (Islas Malvinas) nutome</territory>
+			<territory type="FK" alt="variant">Falkland ƒudomekpowo (Islas
+				Malvinas) nutome</territory>
 			<territory type="FM">Mikronesia nutome</territory>
 			<territory type="FO">Faroe ƒudomekpowo nutome</territory>
 			<territory type="FR">Frans nutome</territory>
@@ -541,7 +542,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Guadelupe nutome</territory>
 			<territory type="GQ">Ekuatorial Guini nutome</territory>
 			<territory type="GR">Grisi nutome</territory>
-			<territory type="GS">Anyiehe Georgia kple Anyiehe Sandwich ƒudomekpowo nutome</territory>
+			<territory type="GS">Anyiehe Georgia kple Anyiehe Sandwich
+				ƒudomekpowo nutome</territory>
 			<territory type="GT">Guatemala nutome</territory>
 			<territory type="GU">Guam nutome</territory>
 			<territory type="GW">Gini-Bisao nutome</territory>
@@ -733,11 +735,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="chinese" key="calendar">chinatɔwo ƒe kalenda</type>
 			<type type="coptic" key="calendar">coptia kalenda</type>
 			<type type="deva" key="numbers">devanagari digitwo</type>
-			<type type="dictionary" key="collation">nuɖoɖo ɖe nyagɔmeɖegbalẽ ƒe ɖoɖomɔ nu</type>
+			<type type="dictionary" key="collation">nuɖoɖo ɖe nyagɔmeɖegbalẽ ƒe ɖoɖomɔ
+				nu</type>
 			<type type="ducet" key="collation">nuɖoɖo ɖe unicode ƒe ɖoɖo nu</type>
 			<type type="ethi" key="numbers">ethiopia numeralwo</type>
 			<type type="ethiopic" key="calendar">ethiopiatɔwo ƒe kalenda</type>
-			<type type="ethiopic-amete-alem" key="calendar">ethiopia amate alemtɔwo ƒe kalenda</type>
+			<type type="ethiopic-amete-alem" key="calendar">ethiopia amate alemtɔwo ƒe
+				kalenda</type>
 			<type type="fullwide" key="numbers">digit kekeme blibotɔwo</type>
 			<type type="gb2312han" key="collation">chinagbe yeye ƒe ɖoɖomɔ nu</type>
 			<type type="geor" key="numbers">georgiatɔwo ƒe numeralwo</type>
@@ -786,7 +790,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="romanlow" key="numbers">romatɔwo ƒe numeral suetɔwo</type>
 			<type type="saur" key="numbers" draft="unconfirmed">saurashtra digitwo</type>
 			<type type="search" key="collation">nudidi hena zazã gbadza</type>
-			<type type="searchjl" key="collation" draft="unconfirmed">nudidi le hangul ƒe ɖoɖo gbãtɔ nu</type>
+			<type type="searchjl" key="collation" draft="unconfirmed">nudidi le hangul ƒe
+				ɖoɖo gbãtɔ nu</type>
 			<type type="stroke" key="collation">stroke ɖoɖomɔ nu</type>
 			<type type="sund" key="numbers" draft="unconfirmed">sundana digitwo</type>
 			<type type="talu" key="numbers" draft="unconfirmed">tai lue digit yeye wo</type>
@@ -811,10 +816,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a á à ã b d ɖ e é è ẽ ɛ {ɛ\u0301} {ɛ\u0300} {ɛ\u0303} f ƒ g ɣ h x i í ì ĩ k l m n ŋ o ó ò õ ɔ {ɔ\u0301} {ɔ\u0300} {ɔ\u0303} p r s t u ú ù ũ v ʋ w y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[ă â å ä ā æ c ç ĕ ê ë ĭ î ï j ñ ŏ ô ö ø œ q ŭ û ü ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B D Ɖ E Ɛ F Ƒ G Ɣ H X I K L M N Ŋ O Ɔ P R S T U V Ʋ W Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] \{ \} § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters>[a á à ã b d ɖ e é è ẽ ɛ {ɛ\u0301} {ɛ\u0300}
+			{ɛ\u0303} f ƒ g ɣ h x i í ì ĩ k l m n ŋ o ó ò õ ɔ {ɔ\u0301} {ɔ\u0300}
+			{ɔ\u0303} p r s t u ú ù ũ v ʋ w y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[ă â å ä ā æ c ç ĕ ê ë ĭ î
+			ï j ñ ŏ ô ö ø œ q ŭ û ü ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B D Ɖ E Ɛ F Ƒ G Ɣ H X I
+			K L M N Ŋ O Ɔ P R S T U V Ʋ W Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ’ &quot; “ ” ( ) \[ \] \{ \} § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final" draft="unconfirmed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="unconfirmed">…{0}</ellipsis>
 		<ellipsis type="medial" draft="unconfirmed">{0}…{1}</ellipsis>
@@ -832,8 +842,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<dateTimeFormats>
 					<availableFormats>
 						<dateFormatItem id="h" draft="unconfirmed">a 'ga' h</dateFormatItem>
-						<dateFormatItem id="hm" draft="unconfirmed">a 'ga' h: 'aɖabaƒoƒo' mm</dateFormatItem>
-						<dateFormatItem id="hms" draft="unconfirmed">a 'ga' h: 'aɖabaƒoƒo' mm:ss</dateFormatItem>
+						<dateFormatItem id="hm" draft="unconfirmed">a 'ga' h: 'aɖabaƒoƒo'
+							mm</dateFormatItem>
+						<dateFormatItem id="hms" draft="unconfirmed">a 'ga' h:
+							'aɖabaƒoƒo' mm:ss</dateFormatItem>
 						<dateFormatItem id="ms" draft="unconfirmed">'ga' mm:ss</dateFormatItem>
 					</availableFormats>
 				</dateTimeFormats>
@@ -1146,7 +1158,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="H">HH–HH</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a">a 'ga' h:mm - a 'ga' h:mm</greatestDifference>
+							<greatestDifference id="a">a 'ga' h:mm - a 'ga'
+								h:mm</greatestDifference>
 							<greatestDifference id="h">a 'ga' h:mm - 'ga' h:mm</greatestDifference>
 							<greatestDifference id="m">a 'ga' h:mm – 'ga' h:mm</greatestDifference>
 						</intervalFormatItem>
@@ -1155,7 +1168,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a">a 'ga' h:mm – a 'ga' h:mm v</greatestDifference>
+							<greatestDifference id="a">a 'ga' h:mm – a 'ga'
+								h:mm v</greatestDifference>
 							<greatestDifference id="h">a 'ga' h:mm–h:mm v</greatestDifference>
 							<greatestDifference id="m">a h:mm–h:mm v</greatestDifference>
 						</intervalFormatItem>
@@ -1171,7 +1185,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="H">HH–HH v</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="M">
-							<greatestDifference id="M">'ɣleti' M 'lia' – 'ɣleti' M 'lia'</greatestDifference>
+							<greatestDifference id="M">'ɣleti' M 'lia' –
+								'ɣleti' M 'lia'</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="Md">
 							<greatestDifference id="d">M/d – M/d</greatestDifference>
@@ -1186,11 +1201,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
 							<greatestDifference id="d">MMM d 'lia' – d 'lia'</greatestDifference>
-							<greatestDifference id="M">MMM d 'lia' – MMM d 'lia'</greatestDifference>
+							<greatestDifference id="M">MMM d 'lia' – MMM d
+								'lia'</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d">E, MMM d 'lia' – E, MMM d 'lia'</greatestDifference>
-							<greatestDifference id="M">E, MMM d 'lia' – E, MMM d 'lia'</greatestDifference>
+							<greatestDifference id="d">E, MMM d 'lia' – E, MMM
+								d 'lia'</greatestDifference>
+							<greatestDifference id="M">E, MMM d 'lia' – E, MMM
+								d 'lia'</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
 							<greatestDifference id="M">M/y – M/y G</greatestDifference>
@@ -1211,14 +1229,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">MMM y – MMM y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d">MMM d 'lia' – d 'lia' , y G</greatestDifference>
-							<greatestDifference id="M">MMM d 'lia' – MMM d 'lia', y G</greatestDifference>
-							<greatestDifference id="y">MMM d 'lia' , y – MMM d 'lia', y G</greatestDifference>
+							<greatestDifference id="d">MMM d 'lia' – d 'lia' ,
+								y G</greatestDifference>
+							<greatestDifference id="M">MMM d 'lia' – MMM d
+								'lia', y G</greatestDifference>
+							<greatestDifference id="y">MMM d 'lia' , y – MMM d
+								'lia', y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, MMM d 'lia' – E, MMM d 'lia', y G</greatestDifference>
-							<greatestDifference id="M">E, MMM d 'lia' – E, MMM d 'lia', y G</greatestDifference>
-							<greatestDifference id="y">E, MMM d 'lia', y – E, MMM d 'lia', y G</greatestDifference>
+							<greatestDifference id="d">E, MMM d 'lia' – E, MMM
+								d 'lia', y G</greatestDifference>
+							<greatestDifference id="M">E, MMM d 'lia' – E, MMM
+								d 'lia', y G</greatestDifference>
+							<greatestDifference id="y">E, MMM d 'lia', y – E,
+								MMM d 'lia', y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y G</greatestDifference>
@@ -1575,7 +1599,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="H">HH–HH</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a">a 'ga' h:mm - a 'ga' h:mm</greatestDifference>
+							<greatestDifference id="a">a 'ga' h:mm - a 'ga'
+								h:mm</greatestDifference>
 							<greatestDifference id="h">a 'ga' h:mm - 'ga' h:mm</greatestDifference>
 							<greatestDifference id="m">a 'ga' h:mm – 'ga' h:mm</greatestDifference>
 						</intervalFormatItem>
@@ -1584,7 +1609,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="m">HH:mm–HH:mm</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a">a 'ga' h:mm – a 'ga' h:mm v</greatestDifference>
+							<greatestDifference id="a">a 'ga' h:mm – a 'ga'
+								h:mm v</greatestDifference>
 							<greatestDifference id="h">a 'ga' h:mm–h:mm v</greatestDifference>
 							<greatestDifference id="m">a h:mm–h:mm v</greatestDifference>
 						</intervalFormatItem>
@@ -1600,7 +1626,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="H">HH–HH v</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="M">
-							<greatestDifference id="M">'ɣleti' M 'lia' – 'ɣleti' M 'lia'</greatestDifference>
+							<greatestDifference id="M">'ɣleti' M 'lia' –
+								'ɣleti' M 'lia'</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="Md">
 							<greatestDifference id="d">M/d – M/d</greatestDifference>
@@ -1615,11 +1642,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
 							<greatestDifference id="d">MMM d 'lia' – d 'lia'</greatestDifference>
-							<greatestDifference id="M">MMM d 'lia' – MMM d 'lia'</greatestDifference>
+							<greatestDifference id="M">MMM d 'lia' – MMM d
+								'lia'</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d">E, MMM d 'lia' – E, MMM d 'lia'</greatestDifference>
-							<greatestDifference id="M">E, MMM d 'lia' – E, MMM d 'lia'</greatestDifference>
+							<greatestDifference id="d">E, MMM d 'lia' – E, MMM
+								d 'lia'</greatestDifference>
+							<greatestDifference id="M">E, MMM d 'lia' – E, MMM
+								d 'lia'</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
 							<greatestDifference id="M">M/y – M/y</greatestDifference>
@@ -1640,14 +1670,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">MMM y – MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d">MMM d 'lia' – d 'lia' , y</greatestDifference>
-							<greatestDifference id="M">MMM d 'lia' – MMM d 'lia', y</greatestDifference>
-							<greatestDifference id="y">MMM d 'lia' , y – MMM d 'lia', y</greatestDifference>
+							<greatestDifference id="d">MMM d 'lia' – d 'lia' ,
+								y</greatestDifference>
+							<greatestDifference id="M">MMM d 'lia' – MMM d
+								'lia', y</greatestDifference>
+							<greatestDifference id="y">MMM d 'lia' , y – MMM d
+								'lia', y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, MMM d 'lia' – E, MMM d 'lia', y</greatestDifference>
-							<greatestDifference id="M">E, MMM d 'lia' – E, MMM d 'lia', y</greatestDifference>
-							<greatestDifference id="y">E, MMM d 'lia', y – E, MMM d 'lia', y</greatestDifference>
+							<greatestDifference id="d">E, MMM d 'lia' – E, MMM
+								d 'lia', y</greatestDifference>
+							<greatestDifference id="M">E, MMM d 'lia' – E, MMM
+								d 'lia', y</greatestDifference>
+							<greatestDifference id="y">E, MMM d 'lia', y – E,
+								MMM d 'lia', y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -2024,7 +2060,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">ɣleti {0} si va yi</relativeTimePattern>
-					<relativeTimePattern count="other">ɣleti {0} si wo va yi</relativeTimePattern>
+					<relativeTimePattern count="other">ɣleti {0} si wo va
+						yi</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -2038,7 +2075,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">kɔsiɖa {0} si va yi</relativeTimePattern>
-					<relativeTimePattern count="other">kɔsiɖa {0} si wo va yi</relativeTimePattern>
+					<relativeTimePattern count="other">kɔsiɖa {0} si wo va
+						yi</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="day">
@@ -2054,7 +2092,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">ŋkeke {0} si va yi</relativeTimePattern>
-					<relativeTimePattern count="other">ŋkeke {0} si wo va yi</relativeTimePattern>
+					<relativeTimePattern count="other">ŋkeke {0} si wo va
+						yi</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="weekday">
@@ -2106,18 +2145,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">gaƒoƒo {0} si va yi</relativeTimePattern>
-					<relativeTimePattern count="other">gaƒoƒo {0} si wo va yi</relativeTimePattern>
+					<relativeTimePattern count="other">gaƒoƒo {0} si wo va
+						yi</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="minute">
 				<displayName>aɖabaƒoƒo</displayName>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">le aɖabaƒoƒo {0} me</relativeTimePattern>
-					<relativeTimePattern count="other">le aɖabaƒoƒo {0} wo me</relativeTimePattern>
+					<relativeTimePattern count="other">le aɖabaƒoƒo {0} wo
+						me</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">aɖabaƒoƒo {0} si va yi</relativeTimePattern>
-					<relativeTimePattern count="other">aɖabaƒoƒo {0} si wo va yi</relativeTimePattern>
+					<relativeTimePattern count="one">aɖabaƒoƒo {0} si va
+						yi</relativeTimePattern>
+					<relativeTimePattern count="other">aɖabaƒoƒo {0} si wo
+						va yi</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">
@@ -2129,7 +2172,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">sekend {0} si va yi</relativeTimePattern>
-					<relativeTimePattern count="other">sekend {0} si wo va yi</relativeTimePattern>
+					<relativeTimePattern count="other">sekend {0} si wo va
+						yi</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">
@@ -3592,7 +3636,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic draft="unconfirmed">Fɔlklanɖ Ƒudomekpodukɔ ƒe gaƒoƒome</generic>
 					<standard draft="unconfirmed">Fɔlklanɖ Ƒudomekpodukɔ ƒe gaƒoƒoɖoanyime</standard>
-					<daylight draft="unconfirmed">Fɔlklanɖ Ƒudomekpodukɔ ƒe dzomeŋɔli gaƒoƒome</daylight>
+					<daylight draft="unconfirmed">Fɔlklanɖ Ƒudomekpodukɔ ƒe dzomeŋɔli
+						gaƒoƒome</daylight>
 				</long>
 			</metazone>
 			<metazone type="French_Guiana">
@@ -3800,7 +3845,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic draft="unconfirmed">Saint Pierre kple Mikuelon gaƒoƒome</generic>
 					<standard draft="unconfirmed">Saint Pierre kple Mikuelon gaƒoƒoɖoanyime</standard>
-					<daylight draft="unconfirmed">Saint Pierre kple Mikuelon ŋkekeme gaƒoƒome</daylight>
+					<daylight draft="unconfirmed">Saint Pierre kple Mikuelon ŋkekeme
+						gaƒoƒome</daylight>
 				</long>
 			</metazone>
 			<metazone type="Qyzylorda">
@@ -3929,15 +3975,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<pattern type="1000000000" count="one" draft="unconfirmed">miliɔn 0000</pattern>
 					<pattern type="1000000000" count="other" draft="unconfirmed">miliɔn 0000</pattern>
 					<pattern type="10000000000" count="one" draft="unconfirmed">miliɔn 00000</pattern>
-					<pattern type="10000000000" count="other" draft="unconfirmed">miliɔn 00000</pattern>
-					<pattern type="100000000000" count="one" draft="unconfirmed">miliɔn 000000</pattern>
-					<pattern type="100000000000" count="other" draft="unconfirmed">miliɔn 000000</pattern>
+					<pattern type="10000000000" count="other" draft="unconfirmed">miliɔn
+						00000</pattern>
+					<pattern type="100000000000" count="one" draft="unconfirmed">miliɔn
+						000000</pattern>
+					<pattern type="100000000000" count="other" draft="unconfirmed">miliɔn
+						000000</pattern>
 					<pattern type="1000000000000" count="one" draft="unconfirmed">biliɔn 0</pattern>
 					<pattern type="1000000000000" count="other" draft="unconfirmed">biliɔn 0</pattern>
 					<pattern type="10000000000000" count="one" draft="unconfirmed">biliɔn 00</pattern>
-					<pattern type="10000000000000" count="other" draft="unconfirmed">biliɔn 00</pattern>
-					<pattern type="100000000000000" count="one" draft="unconfirmed">biliɔn 000</pattern>
-					<pattern type="100000000000000" count="other" draft="unconfirmed">biliɔn 000</pattern>
+					<pattern type="10000000000000" count="other" draft="unconfirmed">biliɔn
+						00</pattern>
+					<pattern type="100000000000000" count="one" draft="unconfirmed">biliɔn
+						000</pattern>
+					<pattern type="100000000000000" count="other" draft="unconfirmed">biliɔn
+						000</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 			<decimalFormatLength type="short">
@@ -4091,8 +4143,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAD">
 				<displayName>bosnia-herzegovinaga dinar (1992–1994)</displayName>
-				<displayName count="one">bosnia-herzegovinaga dinar (1992–1994)</displayName>
-				<displayName count="other">bosnia-herzegovinaga dinar (1992–1994)</displayName>
+				<displayName count="one">bosnia-herzegovinaga dinar
+					(1992–1994)</displayName>
+				<displayName count="other">bosnia-herzegovinaga dinar
+					(1992–1994)</displayName>
 			</currency>
 			<currency type="BAM">
 				<displayName>bosnia-herzegovinaga convertible mark</displayName>
@@ -4101,8 +4155,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAN">
 				<displayName>bosnia kple herzegovinaga dinar yeyètɔ (1994–1997)</displayName>
-				<displayName count="one">bosnia kple herzegovinaga dinar yeyètɔ (1994–1997)</displayName>
-				<displayName count="other">bosnia kple herzegovinaga dinar yeyètɔ (1994–1997)</displayName>
+				<displayName count="one">bosnia kple herzegovinaga dinar
+					yeyètɔ (1994–1997)</displayName>
+				<displayName count="other">bosnia kple herzegovinaga dinar
+					yeyètɔ (1994–1997)</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>barbadiaga dollar</displayName>
@@ -4191,8 +4247,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BRB">
 				<displayName>braziliaga cruzeiro xoxotɔ (1967–1986)</displayName>
-				<displayName count="one">braziliaga cruzeiro xoxotɔ (1967–1986)</displayName>
-				<displayName count="other">braziliaga cruzeiro xoxotɔ (1967–1986)</displayName>
+				<displayName count="one">braziliaga cruzeiro xoxotɔ
+					(1967–1986)</displayName>
+				<displayName count="other">braziliaga cruzeiro xoxotɔ
+					(1967–1986)</displayName>
 			</currency>
 			<currency type="BRC">
 				<displayName>brazilia cruzado (1986–1989)</displayName>
@@ -4201,8 +4259,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BRE">
 				<displayName>braziliaga cruzeiro xoxotɔ gbãtɔ (1990–1993)</displayName>
-				<displayName count="one">braziliaga cruzeiro xoxotɔ gbãtɔ (1990–1993)</displayName>
-				<displayName count="other">braziliaga cruzeiro xoxotɔ gbãtɔwo (1990–1993)</displayName>
+				<displayName count="one">braziliaga cruzeiro xoxotɔ gbãtɔ
+					(1990–1993)</displayName>
+				<displayName count="other">braziliaga cruzeiro xoxotɔ gbãtɔwo
+					(1990–1993)</displayName>
 			</currency>
 			<currency type="BRL">
 				<displayName>brazilga real</displayName>
@@ -5392,8 +5452,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="YUN">
 				<displayName>yugoslaviaga convertible dinar (1990–1992)</displayName>
-				<displayName count="one">yugoslaviaga convertible dinar (1990–1992)</displayName>
-				<displayName count="other">yugoslaviaga convertible dinar (1990–1992)</displayName>
+				<displayName count="one">yugoslaviaga convertible dinar
+					(1990–1992)</displayName>
+				<displayName count="other">yugoslaviaga convertible dinar
+					(1990–1992)</displayName>
 			</currency>
 			<currency type="YUR">
 				<displayName>yugoslaviaga dinar (1992–1993)</displayName>

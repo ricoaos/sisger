@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,26 +22,31 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Ebay
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Service_Ebay_Finding_Set_Abstract implements SeekableIterator, Countable
 {
+
     /**
+     *
      * @var DOMNodeList
      */
     protected $_nodes;
 
     /**
+     *
      * @var integer
      */
     protected $_key = 0;
 
     /**
-     * @param  DOMNodeList $nodes
+     *
+     * @param DOMNodeList $nodes            
      * @return void
      */
     public function __construct(DOMNodeList $nodes)
@@ -57,13 +63,12 @@ abstract class Zend_Service_Ebay_Finding_Set_Abstract implements SeekableIterato
      * @return void
      */
     protected function _init()
-    {
-    }
+    {}
 
     /**
      * Implement SeekableIterator::seek()
      *
-     * @param  integer $key
+     * @param integer $key            
      * @throws OutOfBoundsException When $key is not seekable
      * @return void
      */
@@ -93,7 +98,7 @@ abstract class Zend_Service_Ebay_Finding_Set_Abstract implements SeekableIterato
      */
     public function next()
     {
-        $this->_key++;
+        $this->_key ++;
     }
 
     /**

@@ -6,30 +6,33 @@
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-
 require_once 'Zend/Cloud/Infrastructure/Instance.php';
 
 /**
  * List of instances
  *
- * @package    Zend_Cloud
+ * @package Zend_Cloud
  * @subpackage Infrastructure
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Cloud_Infrastructure_InstanceList implements Countable, Iterator, ArrayAccess
 {
+
     /**
+     *
      * @var array Array of Zend_Cloud_Infrastructure_Instance
      */
     protected $instances = array();
 
     /**
+     *
      * @var int Iterator key
      */
     protected $iteratorKey = 0;
 
     /**
+     *
      * @var Zend_Cloud_Infrastructure_Adapter
      */
     protected $adapter;
@@ -37,13 +40,13 @@ class Zend_Cloud_Infrastructure_InstanceList implements Countable, Iterator, Arr
     /**
      * Constructor
      *
-     * @param  Adapter $adapter
-     * @param  array $instances
+     * @param Adapter $adapter            
+     * @param array $instances            
      * @return void
      */
     public function __construct($adapter, array $instances = null)
     {
-        if (!($adapter instanceof Zend_Cloud_Infrastructure_Adapter)) {
+        if (! ($adapter instanceof Zend_Cloud_Infrastructure_Adapter)) {
             require_once 'Zend/Cloud/Infrastructure/Exception.php';
             throw new Zend_Cloud_Infrastructure_Exception('You must pass a Zend_Cloud_Infrastructure_Adapter');
         }
@@ -51,7 +54,7 @@ class Zend_Cloud_Infrastructure_InstanceList implements Countable, Iterator, Arr
             require_once 'Zend/Cloud/Infrastructure/Exception.php';
             throw new Zend_Cloud_Infrastructure_Exception('You must pass an array of Instances');
         }
-
+        
         $this->adapter = $adapter;
         $this->constructFromArray($instances);
     }
@@ -59,20 +62,21 @@ class Zend_Cloud_Infrastructure_InstanceList implements Countable, Iterator, Arr
     /**
      * Transforms the Array to array of Instances
      *
-     * @param  array $list
+     * @param array $list            
      * @return void
      */
     protected function constructFromArray(array $list)
     {
         foreach ($list as $instance) {
-            $this->addInstance(new Zend_Cloud_Infrastructure_Instance($this->adapter,$instance));
+            $this->addInstance(new Zend_Cloud_Infrastructure_Instance($this->adapter, $instance));
         }
     }
 
     /**
      * Add an instance
      *
-     * @param  Instance
+     * @param
+     *            Instance
      * @return InstanceList
      */
     protected function addInstance(Zend_Cloud_Infrastructure_Instance $instance)
@@ -126,7 +130,7 @@ class Zend_Cloud_Infrastructure_InstanceList implements Countable, Iterator, Arr
      */
     public function next()
     {
-        $this->iteratorKey++;
+        $this->iteratorKey ++;
     }
 
     /**
@@ -162,7 +166,7 @@ class Zend_Cloud_Infrastructure_InstanceList implements Countable, Iterator, Arr
      *
      * Implement ArrayAccess::offsetExists()
      *
-     * @param  int $offset
+     * @param int $offset            
      * @return bool
      */
     public function offsetExists($offset)
@@ -175,13 +179,13 @@ class Zend_Cloud_Infrastructure_InstanceList implements Countable, Iterator, Arr
      *
      * Implement ArrayAccess::offsetGet()
      *
-     * @param  int $offset
+     * @param int $offset            
      * @return Instance
      * @throws Zend_Cloud_Infrastructure_Exception
      */
     public function offsetGet($offset)
     {
-        if (!$this->offsetExists($offset)) {
+        if (! $this->offsetExists($offset)) {
             require_once 'Zend/Cloud/Infrastructure/Exception.php';
             throw new Zend_Cloud_Infrastructure_Exception('Illegal index');
         }
@@ -193,9 +197,9 @@ class Zend_Cloud_Infrastructure_InstanceList implements Countable, Iterator, Arr
      *
      * Implement ArrayAccess::offsetSet()
      *
-     * @param   int     $offset
-     * @param   string  $value
-     * @throws  Zend_Cloud_Infrastructure_Exception
+     * @param int $offset            
+     * @param string $value            
+     * @throws Zend_Cloud_Infrastructure_Exception
      */
     public function offsetSet($offset, $value)
     {
@@ -208,8 +212,8 @@ class Zend_Cloud_Infrastructure_InstanceList implements Countable, Iterator, Arr
      *
      * Implement ArrayAccess::offsetUnset()
      *
-     * @param   int     $offset
-     * @throws  Zend_Cloud_Infrastructure_Exception
+     * @param int $offset            
+     * @throws Zend_Cloud_Infrastructure_Exception
      */
     public function offsetUnset($offset)
     {

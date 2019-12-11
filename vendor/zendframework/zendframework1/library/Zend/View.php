@@ -19,23 +19,21 @@
  * @version    $Id$
  */
 
-
 /**
  * Abstract master class for extension.
  */
 require_once 'Zend/View/Abstract.php';
 
-
 /**
  * Concrete class for handling view scripts.
  *
- * @category  Zend
- * @package   Zend_View
+ * @category Zend
+ * @package Zend_View
  * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   http://framework.zend.com/license/new-bsd     New BSD License
- *
- * Convenience methods for build in helpers (@see __call):
- *
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ *         
+ *          Convenience methods for build in helpers (@see __call):
+ *         
  * @method string baseUrl($file = null)
  * @method string currency($value = null, $currency = null)
  * @method Zend_View_Helper_Cycle cycle(array $data = array(), $name = Zend_View_Helper_Cycle::DEFAULT_NAME)
@@ -85,14 +83,17 @@ require_once 'Zend/View/Abstract.php';
  */
 class Zend_View extends Zend_View_Abstract
 {
+
     /**
      * Whether or not to use streams to mimic short tags
+     * 
      * @var bool
      */
     private $_useViewStream = false;
 
     /**
      * Whether or not to use stream wrapper if short_open_tag is false
+     * 
      * @var bool
      */
     private $_useStreamWrapper = false;
@@ -102,30 +103,30 @@ class Zend_View extends Zend_View_Abstract
      *
      * Register Zend_View_Stream stream wrapper if short tags are disabled.
      *
-     * @param  array $config
+     * @param array $config            
      * @return void
      */
     public function __construct($config = array())
     {
         $this->_useViewStream = (bool) ini_get('short_open_tag') ? false : true;
         if ($this->_useViewStream) {
-            if (!in_array('zend.view', stream_get_wrappers())) {
+            if (! in_array('zend.view', stream_get_wrappers())) {
                 require_once 'Zend/View/Stream.php';
                 stream_wrapper_register('zend.view', 'Zend_View_Stream');
             }
         }
-
+        
         if (array_key_exists('useStreamWrapper', $config)) {
             $this->setUseStreamWrapper($config['useStreamWrapper']);
         }
-
+        
         parent::__construct($config);
     }
 
     /**
      * Set flag indicating if stream wrapper should be used if short_open_tag is off
      *
-     * @param  bool $flag
+     * @param bool $flag            
      * @return Zend_View
      */
     public function setUseStreamWrapper($flag)
@@ -147,7 +148,8 @@ class Zend_View extends Zend_View_Abstract
     /**
      * Includes the view script in a scope with only public $this variables.
      *
-     * @param string The view script to execute.
+     * @param
+     *            string The view script to execute.
      */
     protected function _run()
     {

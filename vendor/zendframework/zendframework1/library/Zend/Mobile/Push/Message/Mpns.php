@@ -19,30 +19,37 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_Mobile_Push_Message_Abstract **/
+/**
+ * Zend_Mobile_Push_Message_Abstract *
+ */
 require_once 'Zend/Mobile/Push/Message/Abstract.php';
 
-/** Zend_Uri **/
+/**
+ * Zend_Uri *
+ */
 require_once 'Zend/Uri.php';
 
 /**
  * Mpns Message
  *
- * @category   Zend
- * @package    Zend_Mobile
+ * @category Zend
+ * @package Zend_Mobile
  * @subpackage Zend_Mobile_Push
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Mobile_Push_Message_Mpns extends Zend_Mobile_Push_Message_Abstract
 {
+
     /**
      * Mpns types
      *
      * @var string
      */
     const TYPE_RAW = 'raw';
+
     const TYPE_TILE = 'token';
+
     const TYPE_TOAST = 'toast';
 
     /**
@@ -62,7 +69,8 @@ abstract class Zend_Mobile_Push_Message_Mpns extends Zend_Mobile_Push_Message_Ab
     /**
      * Set Delay
      *
-     * @param int $delay one of const DELAY_* of implementing classes
+     * @param int $delay
+     *            one of const DELAY_* of implementing classes
      * @return Zend_Mobile_Push_Message_Mpns
      */
     abstract public function setDelay($delay);
@@ -80,16 +88,16 @@ abstract class Zend_Mobile_Push_Message_Mpns extends Zend_Mobile_Push_Message_Ab
     /**
      * Set Token
      *
-     * @param string $token
+     * @param string $token            
      * @return Zend_Mobile_Push_Message_Mpns
      * @throws Zend_Mobile_Push_Message_Exception
      */
     public function setToken($token)
     {
-        if (!is_string($token)) {
+        if (! is_string($token)) {
             throw new Zend_Mobile_Push_Message_Exception('$token is not a string');
         }
-        if (!Zend_Uri::check($token)) {
+        if (! Zend_Uri::check($token)) {
             throw new Zend_Mobile_Push_Message_Exception('$token is not a valid URI');
         }
         return parent::setToken($token);
@@ -109,7 +117,7 @@ abstract class Zend_Mobile_Push_Message_Mpns extends Zend_Mobile_Push_Message_Ab
      */
     public function validate()
     {
-        if (!isset($this->_token) || strlen($this->_token) === 0) {
+        if (! isset($this->_token) || strlen($this->_token) === 0) {
             return false;
         }
         return parent::validate();

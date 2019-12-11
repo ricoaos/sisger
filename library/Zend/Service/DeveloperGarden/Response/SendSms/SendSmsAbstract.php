@@ -21,21 +21,23 @@
  */
 
 /**
+ *
  * @see Zend_Service_DeveloperGarden_Response_ResponseAbstract
  */
 require_once 'Zend/Service/DeveloperGarden/Response/ResponseAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-abstract class Zend_Service_DeveloperGarden_Response_SendSms_SendSmsAbstract
-    extends Zend_Service_DeveloperGarden_Response_ResponseAbstract
+abstract class Zend_Service_DeveloperGarden_Response_SendSms_SendSmsAbstract extends Zend_Service_DeveloperGarden_Response_ResponseAbstract
 {
+
     /**
      * the return from the sms request
      *
@@ -53,12 +55,9 @@ abstract class Zend_Service_DeveloperGarden_Response_SendSms_SendSmsAbstract
     {
         if ($this->hasError()) {
             require_once 'Zend/Service/DeveloperGarden/Response/Exception.php';
-            throw new Zend_Service_DeveloperGarden_Response_Exception(
-                $this->getErrorMessage(),
-                $this->getErrorCode()
-            );
+            throw new Zend_Service_DeveloperGarden_Response_Exception($this->getErrorMessage(), $this->getErrorCode());
         }
-
+        
         return $this;
     }
 
@@ -97,8 +96,7 @@ abstract class Zend_Service_DeveloperGarden_Response_SendSms_SendSmsAbstract
      */
     public function isValid()
     {
-        return ($this->return === null
-                || $this->return->status == '0000');
+        return ($this->return === null || $this->return->status == '0000');
     }
 
     /**
@@ -109,9 +107,7 @@ abstract class Zend_Service_DeveloperGarden_Response_SendSms_SendSmsAbstract
     public function hasError()
     {
         $retValue = false;
-        if ($this->return instanceof stdClass
-            && $this->return->status != '0000'
-        ) {
+        if ($this->return instanceof stdClass && $this->return->status != '0000') {
             $retValue = true;
         }
         return $retValue;

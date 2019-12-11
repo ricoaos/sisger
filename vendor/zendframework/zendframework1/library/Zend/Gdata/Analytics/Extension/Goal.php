@@ -21,18 +21,22 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
 
 /**
- * @category   Zend
- * @package    Zend_Gdata
+ *
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Analytics
  */
 class Zend_Gdata_Analytics_Goal extends Zend_Gdata_Extension
 {
+
     protected $_rootNamespace = 'ga';
+
     protected $_rootElement = 'goal';
 
     public function __construct()
@@ -40,8 +44,9 @@ class Zend_Gdata_Analytics_Goal extends Zend_Gdata_Extension
         $this->registerAllNamespaces(Zend_Gdata_Analytics::$namespaces);
         parent::__construct();
     }
-    
+
     /**
+     *
      * @return string
      */
     public function __toString()

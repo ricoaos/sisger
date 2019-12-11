@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -20,14 +21,16 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Http
+ *
+ * @category Zend
+ * @package Zend_Http
  * @subpackage UserAgent
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 interface Zend_Http_UserAgent_Storage
 {
+
     /**
      * Returns true if and only if storage is empty
      *
@@ -49,7 +52,7 @@ interface Zend_Http_UserAgent_Storage
     /**
      * Writes $contents associated to the key parameter to storage
      *
-     * @param  mixed $contents
+     * @param mixed $contents            
      * @throws Zend_Http_UserAgent_Storage_Exception If writing $contents to storage is impossible
      * @return void
      */

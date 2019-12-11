@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9876 $"/>
-		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $"/>
-		<language type="ta"/>
+		<version number="$Revision: 9876 $" />
+		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $" />
+		<language type="ta" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -715,7 +714,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">பின்லாந்து</territory>
 			<territory type="FJ">ஃபிஜி</territory>
 			<territory type="FK">ஃபாக்லாந்து தீவுகள்</territory>
-			<territory type="FK" alt="variant">ஃபாக்லாந்து தீவுகள் (இஸ்லாஸ் மால்வினஸ்)</territory>
+			<territory type="FK" alt="variant">ஃபாக்லாந்து தீவுகள் (இஸ்லாஸ்
+				மால்வினஸ்)</territory>
 			<territory type="FM">மைக்ரோனேஷியா</territory>
 			<territory type="FO">ஃபெரௌ தீவுகள்</territory>
 			<territory type="FR">பிரான்ஸ்</territory>
@@ -734,7 +734,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">க்வாதேலோப்</territory>
 			<territory type="GQ">ஈக்குவாடோரியல் கினி</territory>
 			<territory type="GR">கிரீஸ்</territory>
-			<territory type="GS">தென் ஜியார்ஜியா மற்றும் தென் சான்ட்விச் தீவுகள்</territory>
+			<territory type="GS">தென் ஜியார்ஜியா மற்றும் தென் சான்ட்விச்
+				தீவுகள்</territory>
 			<territory type="GT">கவுதமாலா</territory>
 			<territory type="GU">குவாம்</territory>
 			<territory type="GW">கினி-பிஸ்ஸாவ்</territory>
@@ -943,10 +944,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="ducet" key="collation">இயல்பான யுனிகோடு வரிசை முறை</type>
 			<type type="ethi" key="numbers">எத்தியோப்பிக் எண்கள்</type>
 			<type type="ethiopic" key="calendar">எத்தியோப்பிக் நாள்காட்டி</type>
-			<type type="ethiopic-amete-alem" key="calendar">எத்தியோபிக் அமேதே ஆலெம் நாள்காட்டி</type>
+			<type type="ethiopic-amete-alem" key="calendar">எத்தியோபிக் அமேதே ஆலெம்
+				நாள்காட்டி</type>
 			<type type="finance" key="numbers">நிதி எண்கள்</type>
 			<type type="fullwide" key="numbers">முழு அகல இலக்கங்கள்</type>
-			<type type="gb2312han" key="collation">எளிமையாக்கப்பட்ட சீன வரிசை வடிவம் - GB2312</type>
+			<type type="gb2312han" key="collation">எளிமையாக்கப்பட்ட சீன வரிசை வடிவம் -
+				GB2312</type>
 			<type type="geor" key="numbers">ஜியாரிஜியன் எண்கள்</type>
 			<type type="gregorian" key="calendar">கிரிகோரியன் நாள்காட்டி</type>
 			<type type="grek" key="numbers">கிரீக் எண்கள்</type>
@@ -988,8 +991,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="phonebook" key="collation">தொலைபேசி புத்தக வரிசை முறை</type>
 			<type type="phonetic" key="collation">ஒலியியல் வரிசைப்படுத்தல் முறை</type>
 			<type type="pinyin" key="collation">பின்யின் வரிசை முறை</type>
-			<type type="primary" key="colStrength">அடிப்படை எழுத்துகளை மட்டும் வரிசைபடுத்து</type>
-			<type type="quaternary" key="colStrength">உச்சரிப்புகள்/எழுத்து/அகலம்/கானாவை வரிசைப்படுத்து</type>
+			<type type="primary" key="colStrength">அடிப்படை எழுத்துகளை மட்டும்
+				வரிசைபடுத்து</type>
+			<type type="quaternary" key="colStrength">உச்சரிப்புகள்/எழுத்து/அகலம்/கானாவை
+				வரிசைப்படுத்து</type>
 			<type type="reformed" key="collation">சீர்திருத்தப்பட்ட வரிசை முறை</type>
 			<type type="roc" key="calendar">மின்கோ நாள்காட்டி</type>
 			<type type="roman" key="numbers">ரோமன் எண்கள்</type>
@@ -997,13 +1002,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="search" key="collation">பொதுப்படையான தேடல்</type>
 			<type type="searchjl" key="collation">ஹங்குல் முதன்மை மெய்யெழுத்தின்படி தேடு</type>
 			<type type="secondary" key="colStrength">உச்சரிப்புகளை வரிசைபடுத்து</type>
-			<type type="shifted" key="colAlternate">சின்னங்களைப் புறக்கணித்து வரிசைப்படுத்து</type>
+			<type type="shifted" key="colAlternate">சின்னங்களைப் புறக்கணித்து
+				வரிசைப்படுத்து</type>
 			<type type="standard" key="collation">நிலையான வரிசை முறை</type>
 			<type type="stroke" key="collation">ஸ்ட்ரோக் வரிசை முறை</type>
 			<type type="taml" key="numbers">பாரம்பரிய தமிழ் எண்கள்</type>
 			<type type="tamldec" key="numbers">தமிழ் இலக்கங்கள்</type>
 			<type type="telu" key="numbers">தெலுங்கு இலக்கங்கள்</type>
-			<type type="tertiary" key="colStrength">உச்சரிப்புகள்/எழுத்து/அகலத்தை வரிசைப்படுத்து</type>
+			<type type="tertiary" key="colStrength">உச்சரிப்புகள்/எழுத்து/அகலத்தை
+				வரிசைப்படுத்து</type>
 			<type type="thai" key="numbers">தாய் இலக்கங்கள்</type>
 			<type type="tibt" key="numbers">திபேத்தியன் எண்கள்</type>
 			<type type="traditional" key="collation">பாரம்பரிய வரிசை முறை</type>
@@ -1041,10 +1048,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ ஃ க ங ச ஞ ட ண த ந ப ம ய ர ல வ ழ ள ற ன ஜ ஷ ஸ ஹ ா ி \u0BC0 ு ூ ெ ே ை ொ ோ ௌ \u0BCD]</exemplarCharacters>
+		<exemplarCharacters>[அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ ஃ க ங ச ஞ ட ண த ந ப ம ய ர
+			ல வ ழ ள ற ன ஜ ஷ ஸ ஹ ா ி \u0BC0 ு ூ ெ ே ை ொ ோ ௌ \u0BCD]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[\u200C\u200D]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[அ ஆ இ ஈ உ ஊ எ ஏ ஐ ஒ ஓ ஔ க ங ச ஞ ட ண த ந ப ம ய ர ல வ ழ ள ற ன ஜ ஶ ஷ ஸ ஹ {க\u0BCDஷ}]</exemplarCharacters>
-		<exemplarCharacters type="punctuation" draft="unconfirmed">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[அ ஆ இ ஈ உ ஊ
+			எ ஏ ஐ ஒ ஓ ஔ க ங ச ஞ ட ண த ந ப ம ய ர ல வ ழ ள ற ன ஜ ஶ ஷ ஸ ஹ {க\u0BCDஷ}]</exemplarCharacters>
+		<exemplarCharacters type="punctuation" draft="unconfirmed">[\- ‐
+			– — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′
+			″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1340,9 +1351,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">d MMM, y – d MMM, y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, d MMM – E, d MMM, y G</greatestDifference>
-							<greatestDifference id="M">E, d MMM – E, d MMM, y G</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y – E, d MMM, y G</greatestDifference>
+							<greatestDifference id="d">E, d MMM – E, d MMM, y
+								G</greatestDifference>
+							<greatestDifference id="M">E, d MMM – E, d MMM, y
+								G</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y – E, d MMM,
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y G</greatestDifference>
@@ -1782,7 +1796,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM – E, d MMM, y</greatestDifference>
 							<greatestDifference id="M">E, d MMM – E, d MMM, y</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y – E, d MMM, y</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y – E, d MMM,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -1807,7 +1822,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">{0} ஆண்டிற்கு முன்</relativeTimePattern>
-					<relativeTimePattern count="other">{0} ஆண்டுகளுக்கு முன்</relativeTimePattern>
+					<relativeTimePattern count="other">{0} ஆண்டுகளுக்கு
+						முன்</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="month">
@@ -1821,7 +1837,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">{0} மாதத்துக்கு முன்</relativeTimePattern>
-					<relativeTimePattern count="other">{0} மாதங்களுக்கு முன்</relativeTimePattern>
+					<relativeTimePattern count="other">{0} மாதங்களுக்கு
+						முன்</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -1834,7 +1851,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">{0} வாரங்களில்</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} வாரத்திற்கு முன்பு</relativeTimePattern>
+					<relativeTimePattern count="one">{0} வாரத்திற்கு
+						முன்பு</relativeTimePattern>
 					<relativeTimePattern count="other">{0} வாரத்திற்கு முன்</relativeTimePattern>
 				</relativeTime>
 			</field>
@@ -1913,8 +1931,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">{0} நிமிடங்களில்</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">{0} நிமிடத்திற்கு முன்</relativeTimePattern>
-					<relativeTimePattern count="other">{0} நிமிடங்களுக்கு முன்</relativeTimePattern>
+					<relativeTimePattern count="one">{0} நிமிடத்திற்கு
+						முன்</relativeTimePattern>
+					<relativeTimePattern count="other">{0} நிமிடங்களுக்கு
+						முன்</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">

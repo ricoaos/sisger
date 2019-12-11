@@ -19,23 +19,25 @@
  * @version    $Id$
  */
 
-
-/** Zend_Pdf_Trailer */
+/**
+ * Zend_Pdf_Trailer
+ */
 require_once 'Zend/Pdf/Trailer.php';
 
 /**
  * PDF file trailer generator (used for just created PDF)
  *
- * @package    Zend_Pdf
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @package Zend_Pdf
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Pdf_Trailer_Generator extends Zend_Pdf_Trailer
 {
+
     /**
      * Object constructor
      *
-     * @param Zend_Pdf_Element_Dictionary $dict
+     * @param Zend_Pdf_Element_Dictionary $dict            
      */
     public function __construct(Zend_Pdf_Element_Dictionary $dict)
     {

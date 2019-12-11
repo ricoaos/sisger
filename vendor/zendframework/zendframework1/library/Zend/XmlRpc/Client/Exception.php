@@ -20,21 +20,20 @@
  * @version    $Id$
  */
 
-
 /**
  * Zend_XmlRpc_Exception
  */
 require_once 'Zend/XmlRpc/Exception.php';
 
-
 /**
  * Base class for all Zend_XmlRpc_Client_* exceptions
  *
- * @category   Zend
- * @package    Zend_XmlRpc
+ * @category Zend
+ * @package Zend_XmlRpc
  * @subpackage Client
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_XmlRpc_Client_Exception extends Zend_XmlRpc_Exception
-{}
+{
+}

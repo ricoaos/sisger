@@ -20,23 +20,23 @@
  * @version    $Id: Rss.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-
 /**
+ *
  * @see Zend_Feed_Entry_Abstract
  */
 require_once 'Zend/Feed/Entry/Abstract.php';
 
-
 /**
  * Concrete class for working with RSS items.
  *
- * @category   Zend
- * @package    Zend_Feed
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Feed
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Feed_Entry_Rss extends Zend_Feed_Entry_Abstract
 {
+
     /**
      * Root XML element for RSS items.
      *
@@ -48,7 +48,8 @@ class Zend_Feed_Entry_Rss extends Zend_Feed_Entry_Abstract
      * Overwrites parent::_get method to enable read access
      * to content:encoded element.
      *
-     * @param  string $var The property to access.
+     * @param string $var
+     *            The property to access.
      * @return mixed
      */
     public function __get($var)
@@ -66,8 +67,10 @@ class Zend_Feed_Entry_Rss extends Zend_Feed_Entry_Abstract
      * Overwrites parent::_set method to enable write access
      * to content:encoded element.
      *
-     * @param  string $var The property to change.
-     * @param  string $val The property's new value.
+     * @param string $var
+     *            The property to change.
+     * @param string $val
+     *            The property's new value.
      * @return void
      */
     public function __set($var, $value)
@@ -85,7 +88,7 @@ class Zend_Feed_Entry_Rss extends Zend_Feed_Entry_Abstract
      * Overwrites parent::_isset method to enable access
      * to content:encoded element.
      *
-     * @param  string $var
+     * @param string $var            
      * @return boolean
      */
     public function __isset($var)
@@ -105,8 +108,10 @@ class Zend_Feed_Entry_Rss extends Zend_Feed_Entry_Abstract
      * Please note that method-style write access is not currently supported
      * by parent method, consequently this method doesn't as well.
      *
-     * @param  string $var    The element to get the string value of.
-     * @param  mixed  $unused This parameter is not used.
+     * @param string $var
+     *            The element to get the string value of.
+     * @param mixed $unused
+     *            This parameter is not used.
      * @return mixed The node's value, null, or an array of nodes.
      */
     public function __call($var, $unused)

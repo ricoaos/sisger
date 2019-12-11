@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="es"/>
-		<territory type="MX"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="es" />
+		<territory type="MX" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -273,7 +272,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CA" draft="contributed">Canadá</territory>
 			<territory type="CC" draft="contributed">Islas Cocos (Keeling)</territory>
 			<territory type="CD" draft="contributed">República Democrática del Congo</territory>
-			<territory type="CD" alt="variant" draft="contributed">Congo (República Democrática del Congo)</territory>
+			<territory type="CD" alt="variant" draft="contributed">Congo (República
+				Democrática del Congo)</territory>
 			<territory type="CF" draft="contributed">República Centroafricana</territory>
 			<territory type="CG" draft="contributed">Congo Brazzaville</territory>
 			<territory type="CG" alt="variant" draft="contributed">Congo (República)</territory>
@@ -311,7 +311,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI" draft="contributed">Finlandia</territory>
 			<territory type="FJ" draft="contributed">Fiyi</territory>
 			<territory type="FK" draft="contributed">Islas Malvinas</territory>
-			<territory type="FK" alt="variant" draft="contributed">Islas Malvinas (Islas Falkland)</territory>
+			<territory type="FK" alt="variant" draft="contributed">Islas Malvinas
+				(Islas Falkland)</territory>
 			<territory type="FM" draft="contributed">Micronesia</territory>
 			<territory type="FO" draft="contributed">Islas Feroe</territory>
 			<territory type="FR" draft="contributed">Francia</territory>
@@ -329,12 +330,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP" draft="contributed">Guadalupe</territory>
 			<territory type="GQ" draft="contributed">Guinea Ecuatorial</territory>
 			<territory type="GR" draft="contributed">Grecia</territory>
-			<territory type="GS" draft="contributed">Islas Georgias del Sur y Sandwich del Sur</territory>
+			<territory type="GS" draft="contributed">Islas Georgias del Sur y
+				Sandwich del Sur</territory>
 			<territory type="GT" draft="contributed">Guatemala</territory>
 			<territory type="GU" draft="contributed">Guam</territory>
 			<territory type="GW" draft="contributed">Guinea-Bissau</territory>
 			<territory type="GY" draft="contributed">Guyana</territory>
-			<territory type="HK" draft="contributed">Región Administrativa Especial de Hong Kong de la República Popular China</territory>
+			<territory type="HK" draft="contributed">Región Administrativa Especial
+				de Hong Kong de la República Popular China</territory>
 			<territory type="HK" alt="short" draft="contributed">Hong Kong</territory>
 			<territory type="HM" draft="contributed">Islas Heard y McDonald</territory>
 			<territory type="HN" draft="contributed">Honduras</territory>
@@ -347,7 +350,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IL" draft="contributed">Israel</territory>
 			<territory type="IM" draft="contributed">Isla de Man</territory>
 			<territory type="IN" draft="contributed">India</territory>
-			<territory type="IO" draft="contributed">Territorio Británico del Océano Índico</territory>
+			<territory type="IO" draft="contributed">Territorio Británico del Océano
+				Índico</territory>
 			<territory type="IQ" draft="contributed">Irak</territory>
 			<territory type="IR" draft="contributed">Irán</territory>
 			<territory type="IS" draft="contributed">Islandia</territory>
@@ -390,7 +394,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ML" draft="contributed">Mali</territory>
 			<territory type="MM" draft="contributed">Myanmar (Birmania)</territory>
 			<territory type="MN" draft="contributed">Mongolia</territory>
-			<territory type="MO" draft="contributed">Región Administrativa Especial de Macao de la República Popular China</territory>
+			<territory type="MO" draft="contributed">Región Administrativa Especial
+				de Macao de la República Popular China</territory>
 			<territory type="MO" alt="short" draft="contributed">Macao</territory>
 			<territory type="MP" draft="contributed">Islas Marianas del Norte</territory>
 			<territory type="MQ" draft="contributed">Martinica</territory>
@@ -478,7 +483,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ" draft="contributed">Tanzania</territory>
 			<territory type="UA" draft="contributed">Ucrania</territory>
 			<territory type="UG" draft="contributed">Uganda</territory>
-			<territory type="UM" draft="contributed">Islas UltramarinasMenores de Estados Unidos</territory>
+			<territory type="UM" draft="contributed">Islas UltramarinasMenores de
+				Estados Unidos</territory>
 			<territory type="US" draft="contributed">Estados Unidos</territory>
 			<territory type="US" alt="short" draft="contributed">EE. UU.</territory>
 			<territory type="UY" draft="contributed">Uruguay</territory>
@@ -487,7 +493,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="VC" draft="contributed">San Vicente y las Granadinas</territory>
 			<territory type="VE" draft="contributed">Venezuela</territory>
 			<territory type="VG" draft="contributed">Islas Vírgenes Británicas</territory>
-			<territory type="VI" draft="contributed">Islas Vírgenes de los Estados Unidos</territory>
+			<territory type="VI" draft="contributed">Islas Vírgenes de los Estados
+				Unidos</territory>
 			<territory type="VN" draft="contributed">Vietnam</territory>
 			<territory type="VU" draft="contributed">Vanuatu</territory>
 			<territory type="WF" draft="contributed">Wallis y Futuna</territory>
@@ -508,28 +515,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</keys>
 		<types>
 			<type type="arab" key="numbers" draft="contributed">Dígitos en arábigo-índico</type>
-			<type type="arabext" key="numbers" draft="contributed">Dígitos en árabigo-índico extendido</type>
+			<type type="arabext" key="numbers" draft="contributed">Dígitos en
+				árabigo-índico extendido</type>
 			<type type="armn" key="numbers" draft="contributed">Números en armenio</type>
-			<type type="armnlow" key="numbers" draft="contributed">Números en armenio en minúscula</type>
+			<type type="armnlow" key="numbers" draft="contributed">Números en armenio en
+				minúscula</type>
 			<type type="beng" key="numbers" draft="contributed">Dígitos en bengalí</type>
 			<type type="deva" key="numbers" draft="contributed">Dígitos en devanagari</type>
-			<type type="ducet" key="collation" draft="contributed">Orden de clasificación de Unicode predeterminado</type>
+			<type type="ducet" key="collation" draft="contributed">Orden de clasificación
+				de Unicode predeterminado</type>
 			<type type="ethi" key="numbers" draft="contributed">Números en etíope</type>
-			<type type="fullwide" key="numbers" draft="contributed">Dígitos en formato completo</type>
+			<type type="fullwide" key="numbers" draft="contributed">Dígitos en formato
+				completo</type>
 			<type type="geor" key="numbers" draft="contributed">Números en georgiano</type>
-			<type type="gregorian" key="calendar" draft="contributed">Calendario gregoriano</type>
+			<type type="gregorian" key="calendar" draft="contributed">Calendario
+				gregoriano</type>
 			<type type="grek" key="numbers" draft="contributed">Números en griego</type>
-			<type type="greklow" key="numbers" draft="contributed">Números en griego en minúscula</type>
+			<type type="greklow" key="numbers" draft="contributed">Números en griego en
+				minúscula</type>
 			<type type="gujr" key="numbers" draft="contributed">Dígitos en guyaratí</type>
 			<type type="guru" key="numbers" draft="contributed">Dígitos en gurmuji</type>
-			<type type="hanidec" key="numbers" draft="contributed">Numeros decimales en chino</type>
-			<type type="hans" key="numbers" draft="contributed">Números en chino simplificado</type>
-			<type type="hansfin" key="numbers" draft="contributed">Números financieros en chino simplificado</type>
-			<type type="hant" key="numbers" draft="contributed">Números en chino tradicional</type>
-			<type type="hantfin" key="numbers" draft="contributed">Números financieros en chino tradicional</type>
+			<type type="hanidec" key="numbers" draft="contributed">Numeros decimales en
+				chino</type>
+			<type type="hans" key="numbers" draft="contributed">Números en chino
+				simplificado</type>
+			<type type="hansfin" key="numbers" draft="contributed">Números financieros en
+				chino simplificado</type>
+			<type type="hant" key="numbers" draft="contributed">Números en chino
+				tradicional</type>
+			<type type="hantfin" key="numbers" draft="contributed">Números financieros en
+				chino tradicional</type>
 			<type type="hebr" key="numbers" draft="contributed">Números en hebreo</type>
 			<type type="jpan" key="numbers" draft="contributed">Números en japonés</type>
-			<type type="jpanfin" key="numbers" draft="contributed">Números financieros en japonés</type>
+			<type type="jpanfin" key="numbers" draft="contributed">Números financieros en
+				japonés</type>
 			<type type="khmr" key="numbers" draft="contributed">Dígitos en jemer</type>
 			<type type="knda" key="numbers" draft="contributed">Dígitos en canarés</type>
 			<type type="laoo" key="numbers" draft="contributed">Dígitos en lao</type>
@@ -538,7 +557,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="mymr" key="numbers" draft="contributed">Dígitos en birmano</type>
 			<type type="orya" key="numbers" draft="contributed">Dígitos en oriya</type>
 			<type type="roman" key="numbers" draft="contributed">Números romanos</type>
-			<type type="romanlow" key="numbers" draft="contributed">Números romanos en minúscula</type>
+			<type type="romanlow" key="numbers" draft="contributed">Números romanos en
+				minúscula</type>
 			<type type="search" key="collation" draft="contributed">Búsqueda generalizada</type>
 			<type type="standard" key="collation" draft="contributed">Orden estándar</type>
 			<type type="taml" key="numbers" draft="contributed">Números en tamil</type>
@@ -550,7 +570,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</types>
 		<measurementSystemNames>
 			<measurementSystemName type="metric" draft="contributed">métrico</measurementSystemName>
-			<measurementSystemName type="UK" draft="contributed">Reino Unido</measurementSystemName>
+			<measurementSystemName type="UK" draft="contributed">Reino
+				Unido</measurementSystemName>
 			<measurementSystemName type="US" draft="contributed">estadounidense</measurementSystemName>
 		</measurementSystemNames>
 		<codePatterns>
@@ -626,7 +647,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="Gy" draft="contributed">y G</dateFormatItem>
 						<dateFormatItem id="GyMMM" draft="contributed">MMM y G</dateFormatItem>
 						<dateFormatItem id="GyMMMd" draft="contributed">d MMM y G</dateFormatItem>
-						<dateFormatItem id="GyMMMEd" draft="contributed">E, d 'de' MMMM 'de' y G</dateFormatItem>
+						<dateFormatItem id="GyMMMEd" draft="contributed">E, d 'de' MMMM
+							'de' y G</dateFormatItem>
 						<dateFormatItem id="M" draft="contributed">L</dateFormatItem>
 						<dateFormatItem id="Md" draft="contributed">d/M</dateFormatItem>
 						<dateFormatItem id="MEd" draft="contributed">E, d/M</dateFormatItem>
@@ -642,7 +664,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="yyyyMEd" draft="contributed">E, d/M/y GGGGG</dateFormatItem>
 						<dateFormatItem id="yyyyMMM" draft="contributed">MMM y G</dateFormatItem>
 						<dateFormatItem id="yyyyMMMd" draft="contributed">d MMM y G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd" draft="contributed">E, d 'de' MMMM 'de' y G</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd" draft="contributed">E, d 'de' MMMM
+							'de' y G</dateFormatItem>
 						<dateFormatItem id="yyyyMMMM" draft="contributed">MMMM 'de' y G</dateFormatItem>
 						<dateFormatItem id="yyyyQQQ" draft="contributed">QQQ y G</dateFormatItem>
 						<dateFormatItem id="yyyyQQQQ" draft="contributed">QQQQ 'de' y G</dateFormatItem>
@@ -668,11 +691,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
 							<greatestDifference id="d" draft="contributed">d–d 'de' MMM</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d 'de' MMM–d 'de' MMM</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d 'de' MMM–d
+								'de' MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="contributed">E, d 'de' MMM–E, d 'de' MMM</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, d 'de' MMM–E, d 'de' MMM</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, d 'de'
+								MMM–E, d 'de' MMM</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, d 'de'
+								MMM–E, d 'de' MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="contributed">y–y G</greatestDifference>
@@ -682,32 +708,48 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="contributed">M/y – M/y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="contributed">d/M/y – d/M/y G</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d/M/y – d/M/y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">d/M/y – d/M/y G</greatestDifference>
+							<greatestDifference id="d" draft="contributed">d/M/y – d/M/y
+								G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d/M/y – d/M/y
+								G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">d/M/y – d/M/y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="contributed">E, d/M/y–E, d/M/y G</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, d/M/y–E, d/M/y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E, d/M/y–E, d/M/y G</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, d/M/y–E,
+								d/M/y G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, d/M/y–E,
+								d/M/y G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E, d/M/y–E,
+								d/M/y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
-							<greatestDifference id="M" draft="contributed">MMM–MMM 'de' y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">MMM 'de' y–MMM 'de' y G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">MMM–MMM 'de'
+								y G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMM 'de'
+								y–MMM 'de' y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d" draft="contributed">d–d 'de' MMM 'de' y G</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d 'de' MMM–d 'de' MMM y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">d 'de' MMM 'de' y–d 'de' MMM 'de' y G</greatestDifference>
+							<greatestDifference id="d" draft="contributed">d–d 'de' MMM
+								'de' y G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d 'de' MMM–d
+								'de' MMM y G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">d 'de' MMM
+								'de' y–d 'de' MMM 'de' y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="contributed">E, d 'de' MMM–E, d 'de' MMM 'de' y G</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, d 'de' MMM–E, d 'de' MMM 'de' y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E, d 'de' MMM 'de' y–E, d 'de' MMM 'de' y G</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, d 'de'
+								MMM–E, d 'de' MMM 'de' y G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, d 'de'
+								MMM–E, d 'de' MMM 'de' y G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E, d 'de' MMM
+								'de' y–E, d 'de' MMM 'de' y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
-							<greatestDifference id="M" draft="contributed">MMMM–MMMM 'de' y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">MMMM 'de' y–MMMM 'de' y G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">MMMM–MMMM
+								'de' y G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMMM 'de'
+								y–MMMM 'de' y G</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -1014,7 +1056,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="Gy" draft="contributed">y G</dateFormatItem>
 						<dateFormatItem id="GyMMM" draft="contributed">MMM y G</dateFormatItem>
 						<dateFormatItem id="GyMMMd" draft="contributed">d MMM y G</dateFormatItem>
-						<dateFormatItem id="GyMMMEd" draft="contributed">E, d 'de' MMMM 'de' y G</dateFormatItem>
+						<dateFormatItem id="GyMMMEd" draft="contributed">E, d 'de' MMMM
+							'de' y G</dateFormatItem>
 						<dateFormatItem id="h" draft="contributed">hh a</dateFormatItem>
 						<dateFormatItem id="H" draft="contributed">HH</dateFormatItem>
 						<dateFormatItem id="hm" draft="contributed">hh:mm a</dateFormatItem>
@@ -1039,7 +1082,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="yMM" draft="contributed">MM/y</dateFormatItem>
 						<dateFormatItem id="yMMM" draft="contributed">MMM 'de' y</dateFormatItem>
 						<dateFormatItem id="yMMMd" draft="contributed">d 'de' MMM 'de' y</dateFormatItem>
-						<dateFormatItem id="yMMMEd" draft="contributed">EEE, d 'de' MMMM 'de' y</dateFormatItem>
+						<dateFormatItem id="yMMMEd" draft="contributed">EEE, d 'de' MMMM
+							'de' y</dateFormatItem>
 						<dateFormatItem id="yMMMM" draft="contributed">MMMM 'de' y</dateFormatItem>
 						<dateFormatItem id="yQQQ" draft="contributed">QQQ y</dateFormatItem>
 						<dateFormatItem id="yQQQQ" draft="contributed">QQQQ 'de' y</dateFormatItem>
@@ -1060,7 +1104,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="H" draft="contributed">HH–HH</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="contributed">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="a" draft="contributed">h:mm a – h:mm
+								a</greatestDifference>
 							<greatestDifference id="h" draft="contributed">h:mm – h:mm a</greatestDifference>
 							<greatestDifference id="m" draft="contributed">h:mm – h:mm a</greatestDifference>
 						</intervalFormatItem>
@@ -1069,13 +1114,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="m" draft="contributed">HH:mm – HH:mm</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a" draft="contributed">h:mm a – h:mm a v</greatestDifference>
-							<greatestDifference id="h" draft="contributed">h:mm – h:mm a v</greatestDifference>
-							<greatestDifference id="m" draft="contributed">h:mm – h:mm a v</greatestDifference>
+							<greatestDifference id="a" draft="contributed">h:mm a – h:mm
+								a v</greatestDifference>
+							<greatestDifference id="h" draft="contributed">h:mm – h:mm a
+								v</greatestDifference>
+							<greatestDifference id="m" draft="contributed">h:mm – h:mm a
+								v</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="Hmv">
-							<greatestDifference id="H" draft="contributed">HH:mm – HH:mm v</greatestDifference>
-							<greatestDifference id="m" draft="contributed">HH:mm – HH:mm v</greatestDifference>
+							<greatestDifference id="H" draft="contributed">HH:mm – HH:mm
+								v</greatestDifference>
+							<greatestDifference id="m" draft="contributed">HH:mm – HH:mm
+								v</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hv">
 							<greatestDifference id="a" draft="contributed">h a – h a v</greatestDifference>
@@ -1100,11 +1150,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
 							<greatestDifference id="d" draft="contributed">d–d 'de' MMM</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d 'de' MMM – d 'de' MMM</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d 'de' MMM –
+								d 'de' MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="contributed">E d 'de' MMM – E d 'de' MMM</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E d 'de' MMM – E d 'de' MMM</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E d 'de' MMM
+								– E d 'de' MMM</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E d 'de' MMM
+								– E d 'de' MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="contributed">y–y</greatestDifference>
@@ -1119,27 +1172,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="contributed">d/M/y – d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="contributed">E d/M/y – E d/M/y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E d/M/y – E d/M/y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E d/M/y – E d/M/y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E d/M/y – E
+								d/M/y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E d/M/y – E
+								d/M/y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E d/M/y – E
+								d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
-							<greatestDifference id="M" draft="contributed">MMM–MMM 'de' y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">MMM 'de' y – MMM 'de' y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">MMM–MMM 'de'
+								y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMM 'de' y –
+								MMM 'de' y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d" draft="contributed">d–d 'de' MMM 'de' y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d 'de' MMM – d 'de' MMM y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">d 'de' MMM 'de' y – d 'de' MMM 'de' y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">d–d 'de' MMM
+								'de' y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d 'de' MMM –
+								d 'de' MMM y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">d 'de' MMM
+								'de' y – d 'de' MMM 'de' y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="contributed">E d 'de' MMM – E d 'de' MMM 'de' y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E d 'de' MMM – E d 'de' MMM 'de' y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E d 'de' MMM 'de' y – E d 'de' MMM 'de' y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E d 'de' MMM
+								– E d 'de' MMM 'de' y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E d 'de' MMM
+								– E d 'de' MMM 'de' y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E d 'de' MMM
+								'de' y – E d 'de' MMM 'de' y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
-							<greatestDifference id="M" draft="contributed">MMMM–MMMM 'de' y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">MMMM 'de' y – MMMM 'de' y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">MMMM–MMMM
+								'de' y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMMM 'de' y –
+								MMMM 'de' y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -1258,8 +1324,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<gmtFormat draft="contributed">GMT{0}</gmtFormat>
 			<gmtZeroFormat draft="contributed">GMT</gmtZeroFormat>
 			<regionFormat draft="contributed">Hora de {0}</regionFormat>
-			<regionFormat type="daylight" draft="contributed">(horario de verano de {0})</regionFormat>
-			<regionFormat type="standard" draft="contributed">(horario estándar de {0})</regionFormat>
+			<regionFormat type="daylight" draft="contributed">(horario de verano
+				de {0})</regionFormat>
+			<regionFormat type="standard" draft="contributed">(horario estándar de
+				{0})</regionFormat>
 			<fallbackFormat draft="contributed">{1} ({0})</fallbackFormat>
 			<zone type="Etc/Unknown">
 				<exemplarCity draft="contributed">Ciudad desconocida</exemplarCity>
@@ -2560,15 +2628,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="America_Mountain">
 				<long>
 					<generic draft="contributed">Hora de la montaña de Norteamérica</generic>
-					<standard draft="contributed">Hora estándar de la montaña de Norteamérica</standard>
-					<daylight draft="contributed">Hora de verano de la montaña de Norteamérica</daylight>
+					<standard draft="contributed">Hora estándar de la montaña de
+						Norteamérica</standard>
+					<daylight draft="contributed">Hora de verano de la montaña de
+						Norteamérica</daylight>
 				</long>
 			</metazone>
 			<metazone type="America_Pacific">
 				<long>
 					<generic draft="contributed">Hora del Pacífico de Norteamérica</generic>
 					<standard draft="contributed">Hora estándar del Pacífico de Norteamérica</standard>
-					<daylight draft="contributed">Hora de verano del Pacífico de Norteamérica</daylight>
+					<daylight draft="contributed">Hora de verano del Pacífico de
+						Norteamérica</daylight>
 				</long>
 			</metazone>
 			<metazone type="Arabian">
@@ -2617,7 +2688,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic draft="contributed">Hora de Australia Centroccidental</generic>
 					<standard draft="contributed">Hora estándar de Australia Centroccidental</standard>
-					<daylight draft="contributed">Hora de verano de Australia Centroccidental</daylight>
+					<daylight draft="contributed">Hora de verano de Australia
+						Centroccidental</daylight>
 				</long>
 			</metazone>
 			<metazone type="Australia_Eastern">
@@ -2817,7 +2889,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</metazone>
 			<metazone type="French_Southern">
 				<long>
-					<standard draft="contributed">Hora de las Tierras Australes y Antárticas Francesas</standard>
+					<standard draft="contributed">Hora de las Tierras Australes y Antárticas
+						Francesas</standard>
 				</long>
 			</metazone>
 			<metazone type="Galapagos">
@@ -3400,17 +3473,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<pattern type="100000000" count="one" draft="contributed">000 millones</pattern>
 					<pattern type="100000000" count="other" draft="contributed">000 millones</pattern>
 					<pattern type="1000000000" count="one" draft="contributed">0 mil millones</pattern>
-					<pattern type="1000000000" count="other" draft="contributed">0 mil millones</pattern>
-					<pattern type="10000000000" count="one" draft="contributed">00 mil millones</pattern>
-					<pattern type="10000000000" count="other" draft="contributed">00 mil millones</pattern>
-					<pattern type="100000000000" count="one" draft="contributed">000 mil millones</pattern>
-					<pattern type="100000000000" count="other" draft="contributed">000 mil millones</pattern>
+					<pattern type="1000000000" count="other" draft="contributed">0 mil
+						millones</pattern>
+					<pattern type="10000000000" count="one" draft="contributed">00 mil
+						millones</pattern>
+					<pattern type="10000000000" count="other" draft="contributed">00 mil
+						millones</pattern>
+					<pattern type="100000000000" count="one" draft="contributed">000 mil
+						millones</pattern>
+					<pattern type="100000000000" count="other" draft="contributed">000 mil
+						millones</pattern>
 					<pattern type="1000000000000" count="one" draft="contributed">0 billón</pattern>
-					<pattern type="1000000000000" count="other" draft="contributed">0 billones</pattern>
-					<pattern type="10000000000000" count="one" draft="contributed">00 billones</pattern>
-					<pattern type="10000000000000" count="other" draft="contributed">00 billones</pattern>
-					<pattern type="100000000000000" count="one" draft="contributed">000 billones</pattern>
-					<pattern type="100000000000000" count="other" draft="contributed">000 billones</pattern>
+					<pattern type="1000000000000" count="other" draft="contributed">0
+						billones</pattern>
+					<pattern type="10000000000000" count="one" draft="contributed">00
+						billones</pattern>
+					<pattern type="10000000000000" count="other" draft="contributed">00
+						billones</pattern>
+					<pattern type="100000000000000" count="one" draft="contributed">000
+						billones</pattern>
+					<pattern type="100000000000000" count="other" draft="contributed">000
+						billones</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 			<decimalFormatLength type="short">
@@ -3466,8 +3549,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<currencies>
 			<currency type="AED">
 				<displayName draft="contributed">dírham de los Emiratos Árabes Unidos</displayName>
-				<displayName count="one" draft="contributed">dírham de los Emiratos Árabes Unidos</displayName>
-				<displayName count="other" draft="contributed">dírhams de los Emiratos Árabes Unidos</displayName>
+				<displayName count="one" draft="contributed">dírham de los Emiratos
+					Árabes Unidos</displayName>
+				<displayName count="other" draft="contributed">dírhams de los Emiratos
+					Árabes Unidos</displayName>
 				<symbol draft="contributed">AED</symbol>
 			</currency>
 			<currency type="AFN">
@@ -3489,8 +3574,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ANG">
 				<displayName draft="contributed">florín de las Antillas Neerlandesas</displayName>
-				<displayName count="one" draft="contributed">florín de las Antillas Neerlandesas</displayName>
-				<displayName count="other" draft="contributed">florines de las Antillas Neerlandesas</displayName>
+				<displayName count="one" draft="contributed">florín de las Antillas
+					Neerlandesas</displayName>
+				<displayName count="other" draft="contributed">florines de las
+					Antillas Neerlandesas</displayName>
 				<symbol draft="contributed">Naf</symbol>
 			</currency>
 			<currency type="AOA">
@@ -3530,9 +3617,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<symbol draft="contributed">AZN</symbol>
 			</currency>
 			<currency type="BAM">
-				<displayName draft="contributed">marco convertible de Bosnia-Herzegovina</displayName>
-				<displayName count="one" draft="contributed">marco convertible de Bosnia-Herzegovina</displayName>
-				<displayName count="other" draft="contributed">marcos convertibles de Bosnia-Herzegovina</displayName>
+				<displayName draft="contributed">marco convertible de
+					Bosnia-Herzegovina</displayName>
+				<displayName count="one" draft="contributed">marco convertible de
+					Bosnia-Herzegovina</displayName>
+				<displayName count="other" draft="contributed">marcos convertibles de
+					Bosnia-Herzegovina</displayName>
 				<symbol draft="contributed">BAM</symbol>
 			</currency>
 			<currency type="BBD">
@@ -3613,7 +3703,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BRN">
 				<displayName draft="contributed">nuevo cruzado brasileño</displayName>
 				<displayName count="one" draft="contributed">nuevo cruzado brasileño</displayName>
-				<displayName count="other" draft="contributed">nuevos cruzados brasileños</displayName>
+				<displayName count="other" draft="contributed">nuevos cruzados
+					brasileños</displayName>
 				<symbol draft="contributed">BRN</symbol>
 			</currency>
 			<currency type="BRR">
@@ -3668,7 +3759,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="CLF">
 				<displayName draft="contributed">unidad de fomento chilena</displayName>
 				<displayName count="one" draft="contributed">unidad de fomento chilena</displayName>
-				<displayName count="other" draft="contributed">unidades de fomento chilenas</displayName>
+				<displayName count="other" draft="contributed">unidades de fomento
+					chilenas</displayName>
 				<symbol draft="contributed">CLF</symbol>
 			</currency>
 			<currency type="CLP">
@@ -3702,7 +3794,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="CUC">
 				<displayName draft="contributed">peso cubano convertible</displayName>
 				<displayName count="one" draft="contributed">peso cubano convertible</displayName>
-				<displayName count="other" draft="contributed">pesos cubanos convertibles</displayName>
+				<displayName count="other" draft="contributed">pesos cubanos
+					convertibles</displayName>
 				<symbol draft="contributed">CUC</symbol>
 			</currency>
 			<currency type="CUP">
@@ -3751,9 +3844,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<symbol draft="contributed">ECS</symbol>
 			</currency>
 			<currency type="ECV">
-				<displayName draft="contributed">unidad de valor constante (UVC) ecuatoriana</displayName>
-				<displayName count="one" draft="contributed">unidad de valor constante (UVC) ecuatoriana</displayName>
-				<displayName count="other" draft="contributed">unidades de valor constante (UVC) ecuatorianas</displayName>
+				<displayName draft="contributed">unidad de valor constante (UVC)
+					ecuatoriana</displayName>
+				<displayName count="one" draft="contributed">unidad de valor constante
+					(UVC) ecuatoriana</displayName>
+				<displayName count="other" draft="contributed">unidades de valor
+					constante (UVC) ecuatorianas</displayName>
 				<symbol draft="contributed">ECV</symbol>
 			</currency>
 			<currency type="EGP">
@@ -3789,7 +3885,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="GBP">
 				<displayName draft="contributed">libra esterlina británica</displayName>
 				<displayName count="one" draft="contributed">libra esterlina británica</displayName>
-				<displayName count="other" draft="contributed">libras esterlinas británicas</displayName>
+				<displayName count="other" draft="contributed">libras esterlinas
+					británicas</displayName>
 				<symbol draft="contributed">GBP</symbol>
 			</currency>
 			<currency type="GEL">
@@ -4067,8 +4164,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MXP">
 				<displayName draft="contributed">peso de plata mexicano (1861–1992)</displayName>
-				<displayName count="one" draft="contributed">peso de plata mexicano (MXP)</displayName>
-				<displayName count="other" draft="contributed">pesos de plata mexicanos (MXP)</displayName>
+				<displayName count="one" draft="contributed">peso de plata mexicano
+					(MXP)</displayName>
+				<displayName count="other" draft="contributed">pesos de plata
+					mexicanos (MXP)</displayName>
 				<symbol draft="contributed">MXP</symbol>
 			</currency>
 			<currency type="MYR">
@@ -4091,8 +4190,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="NIC">
 				<displayName draft="contributed">córdoba nicaragüense (1988–1991)</displayName>
-				<displayName count="one" draft="contributed">córdoba nicaragüense (1988–1991)</displayName>
-				<displayName count="other" draft="contributed">córdobas nicaragüenses (1988–1991)</displayName>
+				<displayName count="one" draft="contributed">córdoba nicaragüense
+					(1988–1991)</displayName>
+				<displayName count="other" draft="contributed">córdobas nicaragüenses
+					(1988–1991)</displayName>
 				<symbol draft="contributed">NIC</symbol>
 			</currency>
 			<currency type="NIO">
@@ -4148,8 +4249,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="PGK">
 				<displayName draft="contributed">kina de Papúa Nueva Guinea</displayName>
-				<displayName count="one" draft="contributed">kina de Papúa Nueva Guinea</displayName>
-				<displayName count="other" draft="contributed">kinas de Papúa Nueva Guinea</displayName>
+				<displayName count="one" draft="contributed">kina de Papúa Nueva
+					Guinea</displayName>
+				<displayName count="other" draft="contributed">kinas de Papúa Nueva
+					Guinea</displayName>
 				<symbol draft="contributed">PGK</symbol>
 			</currency>
 			<currency type="PHP">
@@ -4214,8 +4317,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="SBD">
 				<displayName draft="contributed">dólar de las Islas Salomón</displayName>
-				<displayName count="one" draft="contributed">dólar de las Islas Salomón</displayName>
-				<displayName count="other" draft="contributed">dólares de las Islas Salomón</displayName>
+				<displayName count="one" draft="contributed">dólar de las Islas
+					Salomón</displayName>
+				<displayName count="other" draft="contributed">dólares de las Islas
+					Salomón</displayName>
 				<symbol draft="contributed">SBD</symbol>
 			</currency>
 			<currency type="SCR">
@@ -4278,8 +4383,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="STD">
 				<displayName draft="contributed">dobra de Santo Tomé y Príncipe</displayName>
-				<displayName count="one" draft="contributed">dobra de Santo Tomé y Príncipe</displayName>
-				<displayName count="other" draft="contributed">dobras de Santo Tomé y Príncipe</displayName>
+				<displayName count="one" draft="contributed">dobra de Santo Tomé y
+					Príncipe</displayName>
+				<displayName count="other" draft="contributed">dobras de Santo Tomé y
+					Príncipe</displayName>
 				<symbol draft="contributed">STD</symbol>
 			</currency>
 			<currency type="SVC">
@@ -4335,14 +4442,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="TTD">
 				<displayName draft="contributed">dólar de Trinidad y Tobago</displayName>
-				<displayName count="one" draft="contributed">dólar de Trinidad y Tobago</displayName>
-				<displayName count="other" draft="contributed">dólares de Trinidad y Tobago</displayName>
+				<displayName count="one" draft="contributed">dólar de Trinidad y
+					Tobago</displayName>
+				<displayName count="other" draft="contributed">dólares de Trinidad y
+					Tobago</displayName>
 				<symbol draft="contributed">TTD</symbol>
 			</currency>
 			<currency type="TWD">
 				<displayName draft="contributed">nuevo dólar taiwanés</displayName>
 				<displayName count="one" draft="contributed">nuevo dólar taiwanés</displayName>
-				<displayName count="other" draft="contributed">nuevos dólares taiwaneses</displayName>
+				<displayName count="other" draft="contributed">nuevos dólares
+					taiwaneses</displayName>
 				<symbol draft="contributed">TWD</symbol>
 			</currency>
 			<currency type="TZS">
@@ -4369,20 +4479,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="USN">
 				<displayName draft="contributed">dólar estadounidense (día siguiente)</displayName>
-				<displayName count="one" draft="contributed">dólar estadounidense (día siguiente)</displayName>
-				<displayName count="other" draft="contributed">dólares estadounidenses (día siguiente)</displayName>
+				<displayName count="one" draft="contributed">dólar estadounidense (día
+					siguiente)</displayName>
+				<displayName count="other" draft="contributed">dólares estadounidenses
+					(día siguiente)</displayName>
 				<symbol draft="contributed">USN</symbol>
 			</currency>
 			<currency type="USS">
 				<displayName draft="contributed">dólar estadounidense (mismo día)</displayName>
-				<displayName count="one" draft="contributed">dólar estadounidense (mismo día)</displayName>
-				<displayName count="other" draft="contributed">dólares estadounidenses (mismo día)</displayName>
+				<displayName count="one" draft="contributed">dólar estadounidense
+					(mismo día)</displayName>
+				<displayName count="other" draft="contributed">dólares estadounidenses
+					(mismo día)</displayName>
 				<symbol draft="contributed">USS</symbol>
 			</currency>
 			<currency type="UYI">
 				<displayName draft="contributed">peso uruguayo en unidades indexadas</displayName>
-				<displayName count="one" draft="contributed">peso uruguayo en unidades indexadas</displayName>
-				<displayName count="other" draft="contributed">pesos uruguayos en unidades indexadas</displayName>
+				<displayName count="one" draft="contributed">peso uruguayo en unidades
+					indexadas</displayName>
+				<displayName count="other" draft="contributed">pesos uruguayos en
+					unidades indexadas</displayName>
 				<symbol draft="contributed">UYI</symbol>
 			</currency>
 			<currency type="UYU">
@@ -4430,7 +4546,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="XCD">
 				<displayName draft="contributed">dólar del Caribe Oriental</displayName>
 				<displayName count="one" draft="contributed">dólar del Caribe Oriental</displayName>
-				<displayName count="other" draft="contributed">dólares del Caribe Oriental</displayName>
+				<displayName count="other" draft="contributed">dólares del Caribe
+					Oriental</displayName>
 				<symbol draft="contributed">XCD</symbol>
 			</currency>
 			<currency type="XOF">
@@ -4447,8 +4564,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XXX">
 				<displayName draft="contributed">divisa desconocida</displayName>
-				<displayName count="one" draft="contributed">moneda desconocida/no válida</displayName>
-				<displayName count="other" draft="contributed">monedas desconocidas/no válidas</displayName>
+				<displayName count="one" draft="contributed">moneda desconocida/no
+					válida</displayName>
+				<displayName count="other" draft="contributed">monedas desconocidas/no
+					válidas</displayName>
 			</currency>
 			<currency type="YER">
 				<displayName draft="contributed">rial yemení</displayName>
@@ -4480,8 +4599,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<compoundUnitPattern draft="contributed">{0} por {1}</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
-				<unitPattern count="one" draft="contributed">{0} unidad de fuerza gravitacional</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} unidades de fuerza gravitacional</unitPattern>
+				<unitPattern count="one" draft="contributed">{0} unidad de fuerza
+					gravitacional</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} unidades de fuerza
+					gravitacional</unitPattern>
 			</unit>
 			<unit type="angle-arc-minute">
 				<unitPattern count="one" draft="contributed">{0} minuto</unitPattern>
@@ -4509,7 +4630,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="area-square-kilometer">
 				<unitPattern count="one" draft="contributed">{0} kilómetro cuadrado</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} kilómetros cuadrados</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} kilómetros
+					cuadrados</unitPattern>
 			</unit>
 			<unit type="area-square-meter">
 				<unitPattern count="one" draft="contributed">{0} metro cuadrado</unitPattern>
@@ -4625,7 +4747,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="pressure-inch-hg">
 				<unitPattern count="one" draft="contributed">{0} pulgada de mercurio</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} pulgadas de mercurio</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} pulgadas de
+					mercurio</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
 				<unitPattern count="one" draft="contributed">{0} milibar</unitPattern>

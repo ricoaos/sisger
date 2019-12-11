@@ -21,7 +21,6 @@
  * @version    $Id$
  */
 
-
 /**
  * Zend_Gdata_App_Exception
  */
@@ -32,11 +31,11 @@ require_once 'Zend/Gdata/App/Exception.php';
  *
  * Class to represent IO exceptions that occur during Gdata App operations.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage App
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_App_IOException extends Zend_Gdata_App_Exception
 {

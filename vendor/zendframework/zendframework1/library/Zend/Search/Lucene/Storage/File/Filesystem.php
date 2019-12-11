@@ -20,18 +20,22 @@
  * @version    $Id$
  */
 
-/** Zend_Search_Lucene_Storage_File */
+/**
+ * Zend_Search_Lucene_Storage_File
+ */
 require_once 'Zend/Search/Lucene/Storage/File.php';
 
 /**
- * @category   Zend
- * @package    Zend_Search_Lucene
+ *
+ * @category Zend
+ * @package Zend_Search_Lucene
  * @subpackage Storage
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Search_Lucene_Storage_File_Filesystem extends Zend_Search_Lucene_Storage_File
 {
+
     /**
      * Resource of the open file
      *
@@ -39,34 +43,34 @@ class Zend_Search_Lucene_Storage_File_Filesystem extends Zend_Search_Lucene_Stor
      */
     protected $_fileHandle;
 
-
     /**
-     * Class constructor.  Open the file.
+     * Class constructor.
+     * Open the file.
      *
-     * @param string $filename
-     * @param string $mode
+     * @param string $filename            
+     * @param string $mode            
      */
-    public function __construct($filename, $mode='r+b')
+    public function __construct($filename, $mode = 'r+b')
     {
         global $php_errormsg;
-
-        if (strpos($mode, 'w') === false  &&  !is_readable($filename)) {
+        
+        if (strpos($mode, 'w') === false && ! is_readable($filename)) {
             // opening for reading non-readable file
             require_once 'Zend/Search/Lucene/Exception.php';
             throw new Zend_Search_Lucene_Exception('File \'' . $filename . '\' is not readable.');
         }
-
+        
         $trackErrors = ini_get('track_errors');
         ini_set('track_errors', '1');
-
+        
         $this->_fileHandle = @fopen($filename, $mode);
-
+        
         if ($this->_fileHandle === false) {
             ini_set('track_errors', $trackErrors);
             require_once 'Zend/Search/Lucene/Exception.php';
             throw new Zend_Search_Lucene_Exception($php_errormsg);
         }
-
+        
         ini_set('track_errors', $trackErrors);
     }
 
@@ -84,15 +88,14 @@ class Zend_Search_Lucene_Storage_File_Filesystem extends Zend_Search_Lucene_Stor
      *
      * Upon success, returns 0; otherwise, returns -1
      *
-     * @param integer $offset
-     * @param integer $whence
+     * @param integer $offset            
+     * @param integer $whence            
      * @return integer
      */
-    public function seek($offset, $whence=SEEK_SET)
+    public function seek($offset, $whence = SEEK_SET)
     {
         return fseek($this->_fileHandle, $offset, $whence);
     }
-
 
     /**
      * Get file position.
@@ -121,7 +124,7 @@ class Zend_Search_Lucene_Storage_File_Filesystem extends Zend_Search_Lucene_Stor
      */
     public function close()
     {
-        if ($this->_fileHandle !== null ) {
+        if ($this->_fileHandle !== null) {
             @fclose($this->_fileHandle);
             $this->_fileHandle = null;
         }
@@ -137,57 +140,56 @@ class Zend_Search_Lucene_Storage_File_Filesystem extends Zend_Search_Lucene_Stor
         $position = ftell($this->_fileHandle);
         fseek($this->_fileHandle, 0, SEEK_END);
         $size = ftell($this->_fileHandle);
-        fseek($this->_fileHandle,$position);
-
+        fseek($this->_fileHandle, $position);
+        
         return $size;
     }
 
     /**
      * Read a $length bytes from the file and advance the file pointer.
      *
-     * @param integer $length
+     * @param integer $length            
      * @return string
      */
-    protected function _fread($length=1)
+    protected function _fread($length = 1)
     {
         if ($length == 0) {
             return '';
         }
-
+        
         if ($length < 1024) {
             return fread($this->_fileHandle, $length);
         }
-
+        
         $data = '';
-        while ($length > 0 && !feof($this->_fileHandle)) {
+        while ($length > 0 && ! feof($this->_fileHandle)) {
             $nextBlock = fread($this->_fileHandle, $length);
             if ($nextBlock === false) {
                 require_once 'Zend/Search/Lucene/Exception.php';
-                throw new Zend_Search_Lucene_Exception( "Error occured while file reading." );
+                throw new Zend_Search_Lucene_Exception("Error occured while file reading.");
             }
-
+            
             $data .= $nextBlock;
             $length -= strlen($nextBlock);
         }
         if ($length != 0) {
             require_once 'Zend/Search/Lucene/Exception.php';
-            throw new Zend_Search_Lucene_Exception( "Error occured while file reading." );
+            throw new Zend_Search_Lucene_Exception("Error occured while file reading.");
         }
-
+        
         return $data;
     }
-
 
     /**
      * Writes $length number of bytes (all, if $length===null) to the end
      * of the file.
      *
-     * @param string $data
-     * @param integer $length
+     * @param string $data            
+     * @param integer $length            
      */
-    protected function _fwrite($data, $length=null)
+    protected function _fwrite($data, $length = null)
     {
-        if ($length === null ) {
+        if ($length === null) {
             fwrite($this->_fileHandle, $data);
         } else {
             fwrite($this->_fileHandle, $data, $length);
@@ -199,8 +201,8 @@ class Zend_Search_Lucene_Storage_File_Filesystem extends Zend_Search_Lucene_Stor
      *
      * Lock type may be a LOCK_SH (shared lock) or a LOCK_EX (exclusive lock)
      *
-     * @param integer $lockType
-     * @param boolean $nonBlockingLock
+     * @param integer $lockType            
+     * @param boolean $nonBlockingLock            
      * @return boolean
      */
     public function lock($lockType, $nonBlockingLock = false)
@@ -221,7 +223,7 @@ class Zend_Search_Lucene_Storage_File_Filesystem extends Zend_Search_Lucene_Stor
      */
     public function unlock()
     {
-        if ($this->_fileHandle !== null ) {
+        if ($this->_fileHandle !== null) {
             return flock($this->_fileHandle, LOCK_UN);
         } else {
             return true;

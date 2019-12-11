@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="de"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="de" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -791,7 +790,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Guadeloupe</territory>
 			<territory type="GQ">Äquatorialguinea</territory>
 			<territory type="GR">Griechenland</territory>
-			<territory type="GS">Südgeorgien und die Südlichen Sandwichinseln</territory>
+			<territory type="GS">Südgeorgien und die Südlichen
+				Sandwichinseln</territory>
 			<territory type="GT">Guatemala</territory>
 			<territory type="GU">Guam</territory>
 			<territory type="GW">Guinea-Bissau</territory>
@@ -994,7 +994,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="SOLBA">Solbica-Dialekt</variant>
 			<variant type="TARASK">Taraskievica-Orthographie</variant>
 			<variant type="UCCOR" draft="contributed">Vereinheitlichte Rechtschreibung</variant>
-			<variant type="UCRCOR" draft="contributed">Vereinheitlichte überarbeitete Rechtschreibung</variant>
+			<variant type="UCRCOR" draft="contributed">Vereinheitlichte überarbeitete
+				Rechtschreibung</variant>
 			<variant type="VALENCIA">Valencianisch</variant>
 			<variant type="WADEGILE">Wade-Giles</variant>
 		</variants>
@@ -1002,8 +1003,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="calendar">Kalender</key>
 			<key type="colAlternate" draft="contributed">Sortierung ohne Symbole</key>
 			<key type="colBackwards" draft="contributed">Umgekehrte Sortierung von Akzenten</key>
-			<key type="colCaseFirst" draft="contributed">Sortierung nach Groß- bzw. Kleinbuchstaben</key>
-			<key type="colCaseLevel" draft="contributed">Sortierung nach Groß- oder Kleinschreibung</key>
+			<key type="colCaseFirst" draft="contributed">Sortierung nach Groß- bzw.
+				Kleinbuchstaben</key>
+			<key type="colCaseLevel" draft="contributed">Sortierung nach Groß- oder
+				Kleinschreibung</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Kana-Sortierung</key>
 			<key type="collation">Sortierung</key>
 			<key type="colNormalization" draft="contributed">Normierte Sortierung</key>
@@ -1030,10 +1033,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="deva" key="numbers">Devanagari-Ziffern</type>
 			<type type="dictionary" key="collation">Lexikographische Sortierreihenfolge</type>
 			<type type="ducet" key="collation">Unicode-Sortierung</type>
-			<type type="eor" key="collation" draft="unconfirmed">Sortierreihenfolge für mehrsprachige europäische Dokumente</type>
+			<type type="eor" key="collation" draft="unconfirmed">Sortierreihenfolge für
+				mehrsprachige europäische Dokumente</type>
 			<type type="ethi" key="numbers">Äthiopische Ziffern</type>
 			<type type="ethiopic" key="calendar">Äthiopischer Kalender</type>
-			<type type="ethiopic-amete-alem" key="calendar">Äthiopischer Kalender &quot;Amete Alem&quot;</type>
+			<type type="ethiopic-amete-alem" key="calendar">Äthiopischer Kalender
+				&quot;Amete Alem&quot;</type>
 			<type type="finance" key="numbers" draft="contributed">Finanzzahlen</type>
 			<type type="fullwide" key="numbers">Vollbreite Ziffern</type>
 			<type type="gb2312han" key="collation">Vereinfachtes Chinesisch - GB2312</type>
@@ -1061,51 +1066,70 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="knda" key="numbers">Kannada-Ziffern</type>
 			<type type="laoo" key="numbers">Laotische Ziffern</type>
 			<type type="latn" key="numbers">Westliche Ziffern</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Kleinbuchstaben zuerst aufführen</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Kleinbuchstaben
+				zuerst aufführen</type>
 			<type type="mlym" key="numbers">Malayalam-Ziffern</type>
 			<type type="mong" key="numbers">Mongolische Ziffern</type>
 			<type type="mymr" key="numbers">Myanmar-Ziffern</type>
 			<type type="native" key="numbers" draft="contributed">Native Ziffern</type>
-			<type type="no" key="colBackwards" draft="contributed">Akzente normal sortieren</type>
+			<type type="no" key="colBackwards" draft="contributed">Akzente normal
+				sortieren</type>
 			<type type="no" key="colCaseFirst" draft="contributed">Normal sortieren</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Nach Groß-/Kleinschreibung sortieren</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Kana separat sortieren</type>
-			<type type="no" key="colNormalization" draft="contributed">Ohne Normierung sortieren</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Nach
+				Groß-/Kleinschreibung sortieren</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Kana separat
+				sortieren</type>
+			<type type="no" key="colNormalization" draft="contributed">Ohne Normierung
+				sortieren</type>
 			<type type="no" key="colNumeric" draft="contributed">Ziffern einzeln sortieren</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Symbole sortieren</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Symbole
+				sortieren</type>
 			<type type="orya" key="numbers">Oriya-Ziffern</type>
 			<type type="persian" key="calendar">Persischer Kalender</type>
 			<type type="phonebook" key="collation">Telefonbuch-Sortierung</type>
-			<type type="phonetic" key="collation" draft="contributed">Sortierung nach Phonetik</type>
+			<type type="phonetic" key="collation" draft="contributed">Sortierung nach
+				Phonetik</type>
 			<type type="pinyin" key="collation">Pinyin-Sortierregeln</type>
-			<type type="primary" key="colStrength" draft="contributed">Nur Basisbuchstaben sortieren</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Akzente/Fall/Breite/Kana sortieren</type>
+			<type type="primary" key="colStrength" draft="contributed">Nur Basisbuchstaben
+				sortieren</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Akzente/Fall/Breite/Kana
+				sortieren</type>
 			<type type="reformed" key="collation">Reformierte Sortierreihenfolge</type>
 			<type type="roc" key="calendar">Kalender der Republik China</type>
 			<type type="roman" key="numbers">Römische Ziffern</type>
 			<type type="romanlow" key="numbers">Römische Ziffern in Kleinschrift</type>
 			<type type="search" key="collation">Allgemeine Suche</type>
-			<type type="searchjl" key="collation" draft="contributed">Suche nach Anfangsbuchstaben des koreanischen Alphabets</type>
+			<type type="searchjl" key="collation" draft="contributed">Suche nach
+				Anfangsbuchstaben des koreanischen Alphabets</type>
 			<type type="secondary" key="colStrength" draft="contributed">Akzente sortieren</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Symbole sortieren ignorieren</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Symbole sortieren
+				ignorieren</type>
 			<type type="standard" key="collation">Standard-Sortierung</type>
 			<type type="stroke" key="collation">Strichfolge</type>
 			<type type="taml" key="numbers">Tamilische Ziffern</type>
 			<type type="tamldec" key="numbers">Tamil-Ziffern</type>
 			<type type="telu" key="numbers">Telugu-Ziffern</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Akzente/Fall/Breite sortieren</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Akzente/Fall/Breite
+				sortieren</type>
 			<type type="thai" key="numbers">Thai-Ziffern</type>
 			<type type="tibt" key="numbers">Tibetische Ziffern</type>
 			<type type="traditional" key="collation">Traditionelle Sortierregeln</type>
-			<type type="traditional" key="numbers" draft="contributed">Traditionelle Zahlen</type>
+			<type type="traditional" key="numbers" draft="contributed">Traditionelle
+				Zahlen</type>
 			<type type="unihan" key="collation">Radikal-Strich-Sortierregeln</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Großbuchstaben zuerst aufführen</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Großbuchstaben
+				zuerst aufführen</type>
 			<type type="vaii" key="numbers" draft="contributed">Vai-Ziffern</type>
-			<type type="yes" key="colBackwards" draft="contributed">Akzente umgekehrt sortieren</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Nach Groß-/Kleinschreibung sortieren</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Kana anders sortieren</type>
-			<type type="yes" key="colNormalization" draft="contributed">Nach Unicode sortieren</type>
-			<type type="yes" key="colNumeric" draft="contributed">Ziffern numerisch sortieren</type>
+			<type type="yes" key="colBackwards" draft="contributed">Akzente umgekehrt
+				sortieren</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Nach
+				Groß-/Kleinschreibung sortieren</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Kana anders
+				sortieren</type>
+			<type type="yes" key="colNormalization" draft="contributed">Nach Unicode
+				sortieren</type>
+			<type type="yes" key="colNumeric" draft="contributed">Ziffern numerisch
+				sortieren</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">BGN</transformName>
@@ -1120,7 +1144,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<transformName type="x-Publishing" draft="contributed">Veröffentlichung</transformName>
 		</transformNames>
 		<measurementSystemNames>
-			<measurementSystemName type="metric">Internationales (SI)</measurementSystemName>
+			<measurementSystemName type="metric">Internationales
+				(SI)</measurementSystemName>
 			<measurementSystemName type="UK">Englisches</measurementSystemName>
 			<measurementSystemName type="US">Angloamerikanisches</measurementSystemName>
 		</measurementSystemNames>
@@ -1131,10 +1156,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a ä b c d e f g h i j k l m n o ö p q r s ß t u ü v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à ă â å ã ā æ ç é è ĕ ê ë ē ğ í ì ĭ î ï İ ī ı ñ ó ò ŏ ô ø ō œ ş ú ù ŭ û ū ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ‚ &quot; “ „ « » ( ) \[ \] \{ \} § @ * / \&amp; #]</exemplarCharacters>
+		<exemplarCharacters>[a ä b c d e f g h i j k l m n o ö p q r s ß t u ü
+			v w x y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à ă â å ã ā æ ç é è ĕ ê
+			ë ē ğ í ì ĭ î ï İ ī ı ñ ó ò ŏ ô ø ō œ ş ú ù ŭ û ū ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ‚ &quot; “ „ « » ( ) \[ \] \{ \} § @ * / \&amp; #]</exemplarCharacters>
 		<ellipsis type="final">{0} …</ellipsis>
 		<ellipsis type="initial">… {0}</ellipsis>
 		<ellipsis type="medial">{0} … {1}</ellipsis>
@@ -1367,9 +1396,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">dd.MM.y - dd.MM.y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, dd.MM.y - E, dd.MM.y G</greatestDifference>
-							<greatestDifference id="M">E, dd.MM.y - E, dd.MM.y G</greatestDifference>
-							<greatestDifference id="y">E, dd.MM.y - E, dd.MM.y G</greatestDifference>
+							<greatestDifference id="d">E, dd.MM.y - E, dd.MM.y
+								G</greatestDifference>
+							<greatestDifference id="M">E, dd.MM.y - E, dd.MM.y
+								G</greatestDifference>
+							<greatestDifference id="y">E, dd.MM.y - E, dd.MM.y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM-MMM y G</greatestDifference>
@@ -1382,8 +1414,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d. - E, d. MMM y G</greatestDifference>
-							<greatestDifference id="M">E, d. MMM - E, d. MMM y G</greatestDifference>
-							<greatestDifference id="y">E, d. MMM y - E, d. MMM y G</greatestDifference>
+							<greatestDifference id="M">E, d. MMM - E, d. MMM y
+								G</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y - E, d. MMM
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM-MMMM y G</greatestDifference>
@@ -1630,9 +1664,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<eras>
 					<eraNames>
 						<era type="0">v. Chr.</era>
-						<era type="0" alt="variant" draft="unconfirmed">vor der gewöhnlichen Zeitrechnung</era>
+						<era type="0" alt="variant" draft="unconfirmed">vor der gewöhnlichen
+							Zeitrechnung</era>
 						<era type="1">n. Chr.</era>
-						<era type="1" alt="variant" draft="unconfirmed">der gewöhnlichen Zeitrechnung</era>
+						<era type="1" alt="variant" draft="unconfirmed">der gewöhnlichen
+							Zeitrechnung</era>
 					</eraNames>
 					<eraAbbr>
 						<era type="0">v. Chr.</era>
@@ -1846,7 +1882,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d. - E, d. MMM y</greatestDifference>
 							<greatestDifference id="M">E, d. MMM - E, d. MMM y</greatestDifference>
-							<greatestDifference id="y">E, d. MMM y - E, d. MMM y</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y - E, d. MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM-MMMM y</greatestDifference>
@@ -1870,9 +1907,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</eras>
 			</calendar>
 			<calendar type="japanese">
-				<!-- need some non-empty element here to make inheritance work,
-					 this copy of generic dateFormats above is smaller than root japanese eras
-				-->
+				<!-- need some non-empty element here to make inheritance work, this 
+					copy of generic dateFormats above is smaller than root japanese eras -->
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -3488,13 +3524,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AON">
 				<displayName>Angolanischer Neuer Kwanza (1990–2000)</displayName>
-				<displayName count="one">Angolanischer Neuer Kwanza (1990–2000)</displayName>
+				<displayName count="one">Angolanischer Neuer Kwanza
+					(1990–2000)</displayName>
 				<displayName count="other">Angolanische Neue Kwanza (1990–2000)</displayName>
 			</currency>
 			<currency type="AOR">
 				<displayName>Angolanischer Kwanza Reajustado (1995–1999)</displayName>
-				<displayName count="one">Angolanischer Kwanza Reajustado (1995–1999)</displayName>
-				<displayName count="other">Angolanische Kwanza Reajustado (1995–1999)</displayName>
+				<displayName count="one">Angolanischer Kwanza Reajustado
+					(1995–1999)</displayName>
+				<displayName count="other">Angolanische Kwanza Reajustado
+					(1995–1999)</displayName>
 			</currency>
 			<currency type="ARA">
 				<displayName>Argentinischer Austral</displayName>
@@ -3540,13 +3579,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAD">
 				<displayName>Bosnien und Herzegowina Dinar (1992–1994)</displayName>
-				<displayName count="one">Bosnien und Herzegowina Dinar (1992–1994)</displayName>
-				<displayName count="other">Bosnien und Herzegowina Dinar (1992–1994)</displayName>
+				<displayName count="one">Bosnien und Herzegowina Dinar
+					(1992–1994)</displayName>
+				<displayName count="other">Bosnien und Herzegowina Dinar
+					(1992–1994)</displayName>
 			</currency>
 			<currency type="BAM">
 				<displayName>Bosnien und Herzegowina Konvertierbare Mark</displayName>
-				<displayName count="one">Bosnien und Herzegowina Konvertierbare Mark</displayName>
-				<displayName count="other">Bosnien und Herzegowina Konvertierbare Mark</displayName>
+				<displayName count="one">Bosnien und Herzegowina
+					Konvertierbare Mark</displayName>
+				<displayName count="other">Bosnien und Herzegowina
+					Konvertierbare Mark</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Barbados-Dollar</displayName>
@@ -3620,8 +3663,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BRB">
 				<displayName>Brasilianischer Cruzeiro Novo (1967–1986)</displayName>
-				<displayName count="one">Brasilianischer Cruzeiro Novo (1967–1986)</displayName>
-				<displayName count="other">Brasilianische Cruzeiro Novo (1967–1986)</displayName>
+				<displayName count="one">Brasilianischer Cruzeiro Novo
+					(1967–1986)</displayName>
+				<displayName count="other">Brasilianische Cruzeiro Novo
+					(1967–1986)</displayName>
 			</currency>
 			<currency type="BRC">
 				<displayName>Brasilianischer Cruzado (1986–1989)</displayName>
@@ -3641,8 +3686,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BRN">
 				<displayName>Brasilianischer Cruzado Novo (1989–1990)</displayName>
-				<displayName count="one">Brasilianischer Cruzado Novo (1989–1990)</displayName>
-				<displayName count="other">Brasilianische Cruzado Novo (1989–1990)</displayName>
+				<displayName count="one">Brasilianischer Cruzado Novo
+					(1989–1990)</displayName>
+				<displayName count="other">Brasilianische Cruzado Novo
+					(1989–1990)</displayName>
 			</currency>
 			<currency type="BRR">
 				<displayName>Brasilianischer Cruzeiro (1993–1994)</displayName>
@@ -4249,8 +4296,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MXV">
 				<displayName>Mexicanischer Unidad de Inversion (UDI)</displayName>
-				<displayName count="one">Mexicanischer Unidad de Inversion (UDI)</displayName>
-				<displayName count="other">Mexikanische Unidad de Inversion (UDI)</displayName>
+				<displayName count="one">Mexicanischer Unidad de Inversion
+					(UDI)</displayName>
+				<displayName count="other">Mexikanische Unidad de Inversion
+					(UDI)</displayName>
 			</currency>
 			<currency type="MYR">
 				<displayName>Malaysischer Ringgit</displayName>
@@ -4778,7 +4827,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="YUM">
 				<displayName>Jugoslawischer Neuer Dinar (1994–2002)</displayName>
-				<displayName count="one">Jugoslawischer Neuer Dinar (1994–2002)</displayName>
+				<displayName count="one">Jugoslawischer Neuer Dinar
+					(1994–2002)</displayName>
 				<displayName count="other">Jugoslawische Neue Dinar (1994–2002)</displayName>
 			</currency>
 			<currency type="YUN">
@@ -4843,8 +4893,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<compoundUnitPattern draft="contributed">{0} pro {1}</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
-				<unitPattern count="one" draft="contributed">{0}-fache Erdbeschleunigung</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}-fache Erdbeschleunigung</unitPattern>
+				<unitPattern count="one" draft="contributed">{0}-fache
+					Erdbeschleunigung</unitPattern>
+				<unitPattern count="other" draft="contributed">{0}-fache
+					Erdbeschleunigung</unitPattern>
 			</unit>
 			<unit type="angle-arc-minute">
 				<unitPattern count="one" draft="contributed">{0} Winkelminute</unitPattern>
@@ -4988,7 +5040,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="pressure-inch-hg">
 				<unitPattern count="one" draft="contributed">{0} Zoll Quecksilbersäule</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} Zoll Quecksilbersäule</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} Zoll
+					Quecksilbersäule</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
 				<unitPattern count="one" draft="contributed">{0} Millibar</unitPattern>
@@ -4996,7 +5049,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="speed-kilometer-per-hour">
 				<unitPattern count="one" draft="contributed">{0} Kilometer pro Stunde</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} Kilometer pro Stunde</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} Kilometer pro
+					Stunde</unitPattern>
 			</unit>
 			<unit type="speed-meter-per-second">
 				<unitPattern count="one" draft="contributed">{0} Meter pro Sekunde</unitPattern>

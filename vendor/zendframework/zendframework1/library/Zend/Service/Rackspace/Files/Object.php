@@ -18,11 +18,11 @@
  * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
-
 require_once 'Zend/Service/Rackspace/Files.php';
 
 class Zend_Service_Rackspace_Files_Object
 {
+
     /**
      * The service that has created the object
      *
@@ -93,70 +93,56 @@ class Zend_Service_Rackspace_Files_Object
      * last_modified= date of the last modified of the object
      * content= content of the object
      *
-     * @param Zend_Service_Rackspace_Files $service
-     * @param array                        $data
+     * @param Zend_Service_Rackspace_Files $service            
+     * @param array $data            
      * @throws Zend_Service_Rackspace_Files_Exception
      */
     public function __construct($service, $data)
     {
-        if (!($service instanceof Zend_Service_Rackspace_Files) || !is_array($data)) {
+        if (! ($service instanceof Zend_Service_Rackspace_Files) || ! is_array($data)) {
             require_once 'Zend/Service/Rackspace/Files/Exception.php';
-            throw new Zend_Service_Rackspace_Files_Exception(
-                'You must pass a RackspaceFiles and an array'
-            );
+            throw new Zend_Service_Rackspace_Files_Exception('You must pass a RackspaceFiles and an array');
         }
-        if (!array_key_exists('container', $data)) {
+        if (! array_key_exists('container', $data)) {
             require_once 'Zend/Service/Rackspace/Files/Exception.php';
-            throw new Zend_Service_Rackspace_Files_Exception(
-                'You must pass the container of the object in the array (container)'
-            );
+            throw new Zend_Service_Rackspace_Files_Exception('You must pass the container of the object in the array (container)');
         }
         if (array_key_exists('name', $data)) {
-            if (!array_key_exists('hash', $data)) {
+            if (! array_key_exists('hash', $data)) {
                 require_once 'Zend/Service/Rackspace/Files/Exception.php';
-                throw new Zend_Service_Rackspace_Files_Exception(
-                    'You must pass the hash of the object in the array (hash)'
-                );
+                throw new Zend_Service_Rackspace_Files_Exception('You must pass the hash of the object in the array (hash)');
             }
-            if (!array_key_exists('bytes', $data)) {
+            if (! array_key_exists('bytes', $data)) {
                 require_once 'Zend/Service/Rackspace/Files/Exception.php';
-                throw new Zend_Service_Rackspace_Files_Exception(
-                    'You must pass the byte size of the object in the array (bytes)'
-                );
+                throw new Zend_Service_Rackspace_Files_Exception('You must pass the byte size of the object in the array (bytes)');
             }
-            if (!array_key_exists('content_type', $data)) {
+            if (! array_key_exists('content_type', $data)) {
                 require_once 'Zend/Service/Rackspace/Files/Exception.php';
-                throw new Zend_Service_Rackspace_Files_Exception(
-                    'You must pass the content type of the object in the array (content_type)'
-                );
+                throw new Zend_Service_Rackspace_Files_Exception('You must pass the content type of the object in the array (content_type)');
             }
-            if (!array_key_exists('last_modified', $data)) {
+            if (! array_key_exists('last_modified', $data)) {
                 require_once 'Zend/Service/Rackspace/Files/Exception.php';
-                throw new Zend_Service_Rackspace_Files_Exception(
-                    'You must pass the last modified data of the object in the array (last_modified)'
-                );
+                throw new Zend_Service_Rackspace_Files_Exception('You must pass the last modified data of the object in the array (last_modified)');
             }
-
-            $this->name         = $data['name'];
-            $this->hash         = $data['hash'];
-            $this->size         = $data['bytes'];
-            $this->contentType  = $data['content_type'];
+            
+            $this->name = $data['name'];
+            $this->hash = $data['hash'];
+            $this->size = $data['bytes'];
+            $this->contentType = $data['content_type'];
             $this->lastModified = $data['last_modified'];
-
-            if (!empty($data['content'])) {
+            
+            if (! empty($data['content'])) {
                 $this->content = $data['content'];
             }
         } elseif (array_key_exists('subdir', $data)) {
             $this->name = $data['subdir'];
         } else {
             require_once 'Zend/Service/Rackspace/Files/Exception.php';
-            throw new Zend_Service_Rackspace_Files_Exception(
-                'You must pass the name of the object in the array (name)'
-            );
+            throw new Zend_Service_Rackspace_Files_Exception('You must pass the name of the object in the array (name)');
         }
-
+        
         $this->container = $data['container'];
-        $this->service   = $service;
+        $this->service = $service;
     }
 
     /**
@@ -164,7 +150,7 @@ class Zend_Service_Rackspace_Files_Object
      *
      * @return string
      */
-    public function getName() 
+    public function getName()
     {
         return $this->name;
     }
@@ -174,7 +160,7 @@ class Zend_Service_Rackspace_Files_Object
      *
      * @return string
      */
-    public function getContainer() 
+    public function getContainer()
     {
         return $this->container;
     }
@@ -184,7 +170,7 @@ class Zend_Service_Rackspace_Files_Object
      *
      * @return string|boolean
      */
-    public function getHash() 
+    public function getHash()
     {
         return $this->hash;
     }
@@ -194,7 +180,7 @@ class Zend_Service_Rackspace_Files_Object
      *
      * @return integer|boolean
      */
-    public function getSize() 
+    public function getSize()
     {
         return $this->size;
     }
@@ -204,7 +190,7 @@ class Zend_Service_Rackspace_Files_Object
      *
      * @return string
      */
-    public function getContentType() 
+    public function getContentType()
     {
         return $this->contentType;
     }
@@ -214,7 +200,7 @@ class Zend_Service_Rackspace_Files_Object
      *
      * @return string
      */
-    public function getLastModified() 
+    public function getLastModified()
     {
         return $this->lastModified;
     }
@@ -224,7 +210,7 @@ class Zend_Service_Rackspace_Files_Object
      *
      * @return string
      */
-    public function getContent() 
+    public function getContent()
     {
         return $this->content;
     }
@@ -233,13 +219,13 @@ class Zend_Service_Rackspace_Files_Object
      * Get the metadata of the object
      * If you don't pass the $key it returns the entire array of metadata value
      *
-     * @param  string $key
+     * @param string $key            
      * @return string|array|boolean
      */
-    public function getMetadata($key=null) 
+    public function getMetadata($key = null)
     {
-        $result= $this->service->getMetadataObject($this->container,$this->name);
-        if (!empty($result)) {
+        $result = $this->service->getMetadataObject($this->container, $this->name);
+        if (! empty($result)) {
             if (empty($key)) {
                 return $result['metadata'];
             }
@@ -253,13 +239,13 @@ class Zend_Service_Rackspace_Files_Object
     /**
      * Set the metadata value
      * The old metadata values are replaced with the new one
-     * 
-     * @param array $metadata
+     *
+     * @param array $metadata            
      * @return boolean
      */
-    public function setMetadata($metadata) 
+    public function setMetadata($metadata)
     {
-        return $this->service->setMetadataObject($this->container,$this->name,$metadata);
+        return $this->service->setMetadataObject($this->container, $this->name, $metadata);
     }
 
     /**
@@ -267,15 +253,15 @@ class Zend_Service_Rackspace_Files_Object
      * You can add metadata information to the destination object, change the
      * content_type and the name of the object
      *
-     * @param  string $container_dest
-     * @param  string $name_dest
-     * @param  array $metadata
-     * @param  string $content_type
+     * @param string $container_dest            
+     * @param string $name_dest            
+     * @param array $metadata            
+     * @param string $content_type            
      * @return boolean
      */
-    public function copyTo($container_dest,$name_dest,$metadata=array(),$content_type=null) 
+    public function copyTo($container_dest, $name_dest, $metadata = array(), $content_type = null)
     {
-        return $this->service->copyObject($this->container,$this->name,$container_dest,$name_dest,$metadata,$content_type);
+        return $this->service->copyObject($this->container, $this->name, $container_dest, $name_dest, $metadata, $content_type);
     }
 
     /**
@@ -283,12 +269,12 @@ class Zend_Service_Rackspace_Files_Object
      *
      * @return string
      */
-    public function getCdnUrl() 
+    public function getCdnUrl()
     {
-        $result= $this->service->getInfoCdnContainer($this->container);
-        if ($result!==false) {
+        $result = $this->service->getInfoCdnContainer($this->container);
+        if ($result !== false) {
             if ($result['cdn_enabled']) {
-                return $result['cdn_uri'].'/'.$this->name;
+                return $result['cdn_uri'] . '/' . $this->name;
             }
         }
         return false;
@@ -299,12 +285,12 @@ class Zend_Service_Rackspace_Files_Object
      *
      * @return string
      */
-    public function getCdnUrlSsl() 
+    public function getCdnUrlSsl()
     {
-        $result= $this->service->getInfoCdnContainer($this->container);
-        if ($result!==false) {
+        $result = $this->service->getInfoCdnContainer($this->container);
+        if ($result !== false) {
             if ($result['cdn_enabled']) {
-                return $result['cdn_uri_ssl'].'/'.$this->name;
+                return $result['cdn_uri_ssl'] . '/' . $this->name;
             }
         }
         return false;

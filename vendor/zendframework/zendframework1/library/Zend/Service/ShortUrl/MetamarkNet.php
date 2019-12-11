@@ -20,6 +20,7 @@
  */
 
 /**
+ *
  * @see Zend_Service_ShortUrl_AbstractShortener
  */
 require_once 'Zend/Service/ShortUrl/AbstractShortener.php';
@@ -27,13 +28,14 @@ require_once 'Zend/Service/ShortUrl/AbstractShortener.php';
 /**
  * Metamark.net API implementation
  *
- * @category   Zend
- * @package    Zend_Service_ShortUrl
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Service_ShortUrl
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_ShortUrl_MetamarkNet extends Zend_Service_ShortUrl_AbstractShortener
 {
+
     /**
      * Base URI of the service
      *
@@ -46,40 +48,42 @@ class Zend_Service_ShortUrl_MetamarkNet extends Zend_Service_ShortUrl_AbstractSh
     /**
      * This function shortens long url
      *
-     * @param string $url URL to Shorten
+     * @param string $url
+     *            URL to Shorten
      * @throws Zend_Service_ShortUrl_Exception When URL is not valid
      * @return string New URL
      */
     public function shorten($url)
     {
         $this->_validateUri($url);
-
+        
         $this->getHttpClient()->setUri($this->_apiUri);
         $this->getHttpClient()->setParameterGet('long_url', $url);
-
+        
         $response = $this->getHttpClient()->request();
-
+        
         return $response->getBody();
     }
 
-   /**
+    /**
      * Reveals target for short URL
      *
-     * @param string $shortenedUrl URL to reveal target of
+     * @param string $shortenedUrl
+     *            URL to reveal target of
      * @throws Zend_Service_ShortUrl_Exception When URL is not valid or is not shortened by this service
      * @return string
      */
     public function unshorten($shortenedUrl)
     {
         $this->_validateUri($shortenedUrl);
-
+        
         $this->_verifyBaseUri($shortenedUrl);
-
+        
         $this->getHttpClient()->setUri($this->_apiUri);
         $this->getHttpClient()->setParameterGet('short_url', $shortenedUrl);
-
+        
         $response = $this->getHttpClient()->request();
-
+        
         return $response->getBody();
     }
 }

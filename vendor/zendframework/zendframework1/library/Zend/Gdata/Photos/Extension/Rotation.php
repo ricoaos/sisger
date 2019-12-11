@@ -22,11 +22,13 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
 
 /**
+ *
  * @see Zend_Gdata_Photos
  */
 require_once 'Zend/Gdata/Photos.php';
@@ -36,22 +38,24 @@ require_once 'Zend/Gdata/Photos.php';
  * The rotation of a photo in degrees. Will only be shown if the
  * rotation has not already been applied to the image.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Photos
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Photos_Extension_Rotation extends Zend_Gdata_Extension
 {
 
     protected $_rootNamespace = 'gphoto';
+
     protected $_rootElement = 'rotation';
 
     /**
      * Constructs a new Zend_Gdata_Photos_Extension_Rotation object.
      *
-     * @param string $text (optional) The value to represent.
+     * @param string $text
+     *            (optional) The value to represent.
      */
     public function __construct($text = null)
     {
@@ -59,5 +63,4 @@ class Zend_Gdata_Photos_Extension_Rotation extends Zend_Gdata_Extension
         parent::__construct();
         $this->setText($text);
     }
-
 }

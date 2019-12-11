@@ -19,25 +19,28 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_Dojo_Form_Element_Dijit */
+/**
+ * Zend_Dojo_Form_Element_Dijit
+ */
 require_once 'Zend/Dojo/Form/Element/Dijit.php';
 
 /**
  * Abstract Slider dijit
  *
- * @uses       Zend_Dojo_Form_Element_Dijit
- * @package    Zend_Dojo
+ * @uses Zend_Dojo_Form_Element_Dijit
+ * @package Zend_Dojo
  * @subpackage Form_Element
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Slider.php 23775 2011-03-01 17:25:24Z ralph $
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id: Slider.php 23775 2011-03-01 17:25:24Z ralph $
  */
 abstract class Zend_Dojo_Form_Element_Slider extends Zend_Dojo_Form_Element_Dijit
 {
+
     /**
      * Set clickSelect flag
      *
-     * @param  bool $clickSelect
+     * @param bool $clickSelect            
      * @return Zend_Dojo_Form_Element_TextBox
      */
     public function setClickSelect($flag)
@@ -53,7 +56,7 @@ abstract class Zend_Dojo_Form_Element_Slider extends Zend_Dojo_Form_Element_Diji
      */
     public function getClickSelect()
     {
-        if (!$this->hasDijitParam('clickSelect')) {
+        if (! $this->hasDijitParam('clickSelect')) {
             return false;
         }
         return $this->getDijitParam('clickSelect');
@@ -62,7 +65,7 @@ abstract class Zend_Dojo_Form_Element_Slider extends Zend_Dojo_Form_Element_Diji
     /**
      * Set intermediateChanges flag
      *
-     * @param  bool $intermediateChanges
+     * @param bool $intermediateChanges            
      * @return Zend_Dojo_Form_Element_TextBox
      */
     public function setIntermediateChanges($flag)
@@ -78,7 +81,7 @@ abstract class Zend_Dojo_Form_Element_Slider extends Zend_Dojo_Form_Element_Diji
      */
     public function getIntermediateChanges()
     {
-        if (!$this->hasDijitParam('intermediateChanges')) {
+        if (! $this->hasDijitParam('intermediateChanges')) {
             return false;
         }
         return $this->getDijitParam('intermediateChanges');
@@ -87,7 +90,7 @@ abstract class Zend_Dojo_Form_Element_Slider extends Zend_Dojo_Form_Element_Diji
     /**
      * Set showButtons flag
      *
-     * @param  bool $showButtons
+     * @param bool $showButtons            
      * @return Zend_Dojo_Form_Element_TextBox
      */
     public function setShowButtons($flag)
@@ -103,7 +106,7 @@ abstract class Zend_Dojo_Form_Element_Slider extends Zend_Dojo_Form_Element_Diji
      */
     public function getShowButtons()
     {
-        if (!$this->hasDijitParam('showButtons')) {
+        if (! $this->hasDijitParam('showButtons')) {
             return false;
         }
         return $this->getDijitParam('showButtons');
@@ -112,7 +115,7 @@ abstract class Zend_Dojo_Form_Element_Slider extends Zend_Dojo_Form_Element_Diji
     /**
      * Set discreteValues
      *
-     * @param  int $value
+     * @param int $value            
      * @return Zend_Dojo_Form_Element_TextBox
      */
     public function setDiscreteValues($value)
@@ -134,7 +137,7 @@ abstract class Zend_Dojo_Form_Element_Slider extends Zend_Dojo_Form_Element_Diji
     /**
      * Set maximum
      *
-     * @param  int $value
+     * @param int $value            
      * @return Zend_Dojo_Form_Element_TextBox
      */
     public function setMaximum($value)
@@ -156,7 +159,7 @@ abstract class Zend_Dojo_Form_Element_Slider extends Zend_Dojo_Form_Element_Diji
     /**
      * Set minimum
      *
-     * @param  int $value
+     * @param int $value            
      * @return Zend_Dojo_Form_Element_TextBox
      */
     public function setMinimum($value)
@@ -178,7 +181,7 @@ abstract class Zend_Dojo_Form_Element_Slider extends Zend_Dojo_Form_Element_Diji
     /**
      * Set pageIncrement
      *
-     * @param  int $value
+     * @param int $value            
      * @return Zend_Dojo_Form_Element_TextBox
      */
     public function setPageIncrement($value)

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9876 $"/>
-		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $"/>
-		<language type="ml"/>
+		<version number="$Revision: 9876 $" />
+		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $" />
+		<language type="ml" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -798,7 +797,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">ഗുവാഡെലോപ്</territory>
 			<territory type="GQ">ഇക്വിറ്റോറിയൽ ഗ്വിനിയ</territory>
 			<territory type="GR">ഗ്രീസ്</territory>
-			<territory type="GS">ദക്ഷിണ ജോർജ്ജിയയും ദക്ഷിണ സാൻഡ്‌വിച്ച് ദ്വീപുകളും</territory>
+			<territory type="GS">ദക്ഷിണ ജോർജ്ജിയയും ദക്ഷിണ സാൻഡ്‌വിച്ച്
+				ദ്വീപുകളും</territory>
 			<territory type="GT">ഗ്വാട്ടിമാലാ</territory>
 			<territory type="GU">ഗ്വാം</territory>
 			<territory type="GW">ഗിനി-ബിസോ</territory>
@@ -986,9 +986,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</variants>
 		<keys>
 			<key type="calendar">കലണ്ടർ</key>
-			<key type="colAlternate" draft="contributed">ചിഹ്നങ്ങൾ പ്രകാരം അടുക്കുന്നത് അവഗണിക്കുക</key>
-			<key type="colBackwards" draft="contributed">വിപരീതക്രമ ആക്‌സന്റ് പ്രകാരമുള്ള അടുക്കൽ</key>
-			<key type="colCaseFirst" draft="contributed">വലിയക്ഷര/ചെറിയക്ഷര പ്രകാരമുള്ള അടുക്കൽ</key>
+			<key type="colAlternate" draft="contributed">ചിഹ്നങ്ങൾ പ്രകാരം അടുക്കുന്നത്
+				അവഗണിക്കുക</key>
+			<key type="colBackwards" draft="contributed">വിപരീതക്രമ ആക്‌സന്റ് പ്രകാരമുള്ള
+				അടുക്കൽ</key>
+			<key type="colCaseFirst" draft="contributed">വലിയക്ഷര/ചെറിയക്ഷര പ്രകാരമുള്ള
+				അടുക്കൽ</key>
 			<key type="colCaseLevel" draft="contributed">കേസ് സെൻസിറ്റീവ് അടുക്കൽ</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Kana അടുക്കൽ</key>
 			<key type="collation">അകാരാദിക്രമം</key>
@@ -1013,11 +1016,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="chinese" key="calendar">ചൈനീസ് കലണ്ടർ</type>
 			<type type="coptic" key="calendar" draft="contributed">കോപ്റ്റിക് കലണ്ടർ</type>
 			<type type="deva" key="numbers">ദേവനാഗരി അക്കങ്ങൾ</type>
-			<type type="dictionary" key="collation" draft="contributed">നിഘണ്ടു അടുക്കൽ ക്രമം</type>
+			<type type="dictionary" key="collation" draft="contributed">നിഘണ്ടു അടുക്കൽ
+				ക്രമം</type>
 			<type type="ducet" key="collation">സ്ഥിരസ്ഥിതി യൂണീകോഡ് അടുക്കൽ ക്രമം</type>
 			<type type="ethi" key="numbers">എത്യോപിക് സംഖ്യകൾ</type>
 			<type type="ethiopic" key="calendar" draft="contributed">എത്യോപിക് കലണ്ടർ</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">എത്യോപിക് അമെതെ അലെം കലണ്ടർ</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">എത്യോപിക്
+				അമെതെ അലെം കലണ്ടർ</type>
 			<type type="finance" key="numbers" draft="contributed">സാമ്പത്തിക സംഖ്യകൾ</type>
 			<type type="fullwide" key="numbers">പൂർണ വലുപ്പമുള്ള സംഖ്യകൾ</type>
 			<type type="gb2312han" key="collation">ലളിതമായ ചൈനീസ് ക്രമീകരണം - ജീബി2312</type>
@@ -1045,51 +1050,75 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="knda" key="numbers">കന്നഡ സംഖ്യകൾ</type>
 			<type type="laoo" key="numbers">ലാവോ അക്കങ്ങൾ</type>
 			<type type="latn" key="numbers">പടിഞ്ഞാറൻ അക്കങ്ങൾ</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">ആദ്യം ചെറിയക്ഷര പ്രകാരം അടുക്കുക</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">ആദ്യം ചെറിയക്ഷര
+				പ്രകാരം അടുക്കുക</type>
 			<type type="mlym" key="numbers">മലയാളം അക്കങ്ങൾ</type>
 			<type type="mong" key="numbers" draft="contributed">മംഗോളിയൻ സംഖ്യകൾ</type>
 			<type type="mymr" key="numbers">മ്യാൻമാർ അക്കങ്ങൾ</type>
 			<type type="native" key="numbers" draft="contributed">സ്വാഭാവിക ഡിജിറ്റുകൾ</type>
-			<type type="no" key="colBackwards" draft="contributed">സാധാരണ ആക്‌സന്റുകൾ പ്രകാരം അടുക്കുക</type>
-			<type type="no" key="colCaseFirst" draft="contributed">സാധാരണ കേസ് ക്രമത്തിൽ അടുക്കുക</type>
-			<type type="no" key="colCaseLevel" draft="contributed">കേസ് സെൻസിറ്റീവ് പ്രകാരം അടുക്കുക</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Kana പ്രത്യേകം അടുക്കുക</type>
-			<type type="no" key="colNormalization" draft="contributed">സാധാരണരീതി ഇല്ലാതെ അടുക്കുക</type>
-			<type type="no" key="colNumeric" draft="contributed">ഓരോ ഡിജിറ്റുകൾ പ്രകാരം അടുക്കുക</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">ചിഹ്നങ്ങൾ അടുക്കുക</type>
+			<type type="no" key="colBackwards" draft="contributed">സാധാരണ ആക്‌സന്റുകൾ
+				പ്രകാരം അടുക്കുക</type>
+			<type type="no" key="colCaseFirst" draft="contributed">സാധാരണ കേസ് ക്രമത്തിൽ
+				അടുക്കുക</type>
+			<type type="no" key="colCaseLevel" draft="contributed">കേസ് സെൻസിറ്റീവ്
+				പ്രകാരം അടുക്കുക</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Kana പ്രത്യേകം
+				അടുക്കുക</type>
+			<type type="no" key="colNormalization" draft="contributed">സാധാരണരീതി ഇല്ലാതെ
+				അടുക്കുക</type>
+			<type type="no" key="colNumeric" draft="contributed">ഓരോ ഡിജിറ്റുകൾ പ്രകാരം
+				അടുക്കുക</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">ചിഹ്നങ്ങൾ
+				അടുക്കുക</type>
 			<type type="orya" key="numbers">ഒഡിയ അക്കങ്ങൾ</type>
 			<type type="persian" key="calendar" draft="contributed">പേർഷ്യൻ കലണ്ടർ</type>
 			<type type="phonebook" key="collation">ഫോൺബുക്കിലെ ക്രമീകരണം</type>
-			<type type="phonetic" key="collation" draft="contributed">സ്വരസൂചക അടുക്കൽ ക്രമം</type>
+			<type type="phonetic" key="collation" draft="contributed">സ്വരസൂചക അടുക്കൽ
+				ക്രമം</type>
 			<type type="pinyin" key="collation">പിൻ‌യിൻ ക്രമീകരണം</type>
-			<type type="primary" key="colStrength" draft="contributed">അടിസ്ഥാന അക്ഷരങ്ങൾ മാത്രം അടുക്കുക</type>
-			<type type="quaternary" key="colStrength" draft="contributed">ആക്‌സന്റുകൾ/കേസ്/വീതി/Kana അടുക്കുക</type>
-			<type type="reformed" key="collation" draft="contributed">നവീകരിച്ച അടുക്കൽ ക്രമം</type>
+			<type type="primary" key="colStrength" draft="contributed">അടിസ്ഥാന അക്ഷരങ്ങൾ
+				മാത്രം അടുക്കുക</type>
+			<type type="quaternary" key="colStrength" draft="contributed">ആക്‌സന്റുകൾ/കേസ്/വീതി/Kana
+				അടുക്കുക</type>
+			<type type="reformed" key="collation" draft="contributed">നവീകരിച്ച അടുക്കൽ
+				ക്രമം</type>
 			<type type="roc" key="calendar">ചൈനീസ് കലണ്ടർ</type>
 			<type type="roman" key="numbers">റോമൻ സംഖ്യകൾ</type>
 			<type type="romanlow" key="numbers">റോമൻ ചെറിയ സംഖ്യകൾ</type>
 			<type type="search" key="collation">പൊതുലക്ഷ്യത്തിനുള്ള തിരയൽ</type>
-			<type type="searchjl" key="collation" draft="contributed">ഹാംഗൽ പ്രാരംഭ വ്യഞ്ജനാക്ഷരം പ്രകാരം തിരയുക</type>
-			<type type="secondary" key="colStrength" draft="contributed">ആക്‌സന്റുകൾ അടുക്കുക</type>
-			<type type="shifted" key="colAlternate" draft="contributed">അവഗണിക്കൽ ചിഹ്നങ്ങൾ അടുക്കുക</type>
+			<type type="searchjl" key="collation" draft="contributed">ഹാംഗൽ പ്രാരംഭ
+				വ്യഞ്ജനാക്ഷരം പ്രകാരം തിരയുക</type>
+			<type type="secondary" key="colStrength" draft="contributed">ആക്‌സന്റുകൾ
+				അടുക്കുക</type>
+			<type type="shifted" key="colAlternate" draft="contributed">അവഗണിക്കൽ
+				ചിഹ്നങ്ങൾ അടുക്കുക</type>
 			<type type="standard" key="collation">സാധാരണ ക്രമം</type>
 			<type type="stroke" key="collation">സ്റ്റ്രോക്ക് ക്രമീകരണം</type>
 			<type type="taml" key="numbers">പഴയ തമിഴ് സംഖ്യകൾ</type>
 			<type type="tamldec" key="numbers">തമിഴ് അക്കങ്ങൾ</type>
 			<type type="telu" key="numbers">തെലുങ്ക് സംഖ്യകൾ</type>
-			<type type="tertiary" key="colStrength" draft="contributed">ആക്‌സന്റുകൾ/കേസ്/വീതി അടുക്കുക</type>
+			<type type="tertiary" key="colStrength" draft="contributed">ആക്‌സന്റുകൾ/കേസ്/വീതി
+				അടുക്കുക</type>
 			<type type="thai" key="numbers">തായി അക്കങ്ങൾ</type>
 			<type type="tibt" key="numbers">തിബത്തൻ അക്കങ്ങൾ</type>
 			<type type="traditional" key="collation">പരമ്പരാഗത ക്രമീകരണം</type>
-			<type type="traditional" key="numbers" draft="contributed">സാധാരണയായി ഉപയോഗിച്ചുവരുന്ന സംഖ്യകൾ</type>
-			<type type="unihan" key="collation" draft="contributed">റാഡിക്കൽ-സ്ട്രോക്ക് അടുക്കൽ ക്രമം</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">ആദ്യം വലിയക്ഷരപ്രകാരം അടുക്കുക</type>
+			<type type="traditional" key="numbers" draft="contributed">സാധാരണയായി
+				ഉപയോഗിച്ചുവരുന്ന സംഖ്യകൾ</type>
+			<type type="unihan" key="collation" draft="contributed">റാഡിക്കൽ-സ്ട്രോക്ക്
+				അടുക്കൽ ക്രമം</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">ആദ്യം
+				വലിയക്ഷരപ്രകാരം അടുക്കുക</type>
 			<type type="vaii" key="numbers" draft="contributed">വായ് സംഖ്യകൾ</type>
-			<type type="yes" key="colBackwards" draft="contributed">ആക്‌സന്റുകളെ വിപരീതക്രമത്തിൽ അടുക്കുക</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">കേസ് സെൻസിറ്റീവ് അടുക്കുക</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Kana വ്യത്യസ്‌തമായി അടുക്കുക</type>
-			<type type="yes" key="colNormalization" draft="contributed">സാധാരണ യൂണിക്കോഡ് അടുക്കുക</type>
-			<type type="yes" key="colNumeric" draft="contributed">ഡിജിറ്റുകളെ സംഖ്യാപരമായി അടുക്കുക</type>
+			<type type="yes" key="colBackwards" draft="contributed">ആക്‌സന്റുകളെ
+				വിപരീതക്രമത്തിൽ അടുക്കുക</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">കേസ് സെൻസിറ്റീവ്
+				അടുക്കുക</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Kana
+				വ്യത്യസ്‌തമായി അടുക്കുക</type>
+			<type type="yes" key="colNormalization" draft="contributed">സാധാരണ യൂണിക്കോഡ്
+				അടുക്കുക</type>
+			<type type="yes" key="colNumeric" draft="contributed">ഡിജിറ്റുകളെ സംഖ്യാപരമായി
+				അടുക്കുക</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">BGN</transformName>
@@ -1115,9 +1144,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[\u200C\u200D ഃ അ ആ ഇ ഈ ഉ ഊ ഋ ൠ ഌ ൡ എ ഏ ഐ ഒ ഓ ഔ ക ൿ ഖ ഗ ഘ ങ ച ഛ ജ ഝ ഞ ട ഠ ഡ ഢ ണ ൺ ത ഥ ദ ധ ന ൻ പ ഫ ബ ഭ മ ം യ ര ർ ല ൽ വ ശ ഷ സ ഹ ള ൾ ഴ റ ാ ി ീ \u0D41 \u0D42 \u0D43 െ േ ൈ ൊ ോ ൗ ൌ \u0D4D]</exemplarCharacters>
+		<exemplarCharacters>[\u200C\u200D ഃ അ ആ ഇ ഈ ഉ ഊ ഋ ൠ ഌ ൡ എ ഏ ഐ ഒ ഓ ഔ ക
+			ൿ ഖ ഗ ഘ ങ ച ഛ ജ ഝ ഞ ട ഠ ഡ ഢ ണ ൺ ത ഥ ദ ധ ന ൻ പ ഫ ബ ഭ മ ം യ ര ർ ല ൽ വ ശ
+			ഷ സ ഹ ള ൾ ഴ റ ാ ി ീ \u0D41 \u0D42 \u0D43 െ േ ൈ ൊ ോ ൗ ൌ \u0D4D]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[\u200C\u200D]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[അ ആ ഇ ഈ ഉ ഊ ഋ എ ഏ ഐ ഒ ഓ ഔ ക ഖ ഗ ഘ ങ ച ഛ ജ ഝ ഞ ട ഠ ഡ ഢ ണ ത ഥ ദ ധ ന പ ഫ ബ ഭ മ യ ര ല വ ശ ഷ സ ഹ ള ഴ റ]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[അ ആ ഇ ഈ ഉ ഊ
+			ഋ എ ഏ ഐ ഒ ഓ ഔ ക ഖ ഗ ഘ ങ ച ഛ ജ ഝ ഞ ട ഠ ഡ ഢ ണ ത ഥ ദ ധ ന പ ഫ ബ ഭ മ യ ര ല
+			വ ശ ഷ സ ഹ ള ഴ റ]</exemplarCharacters>
 		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
 		<ellipsis type="medial" draft="contributed">{0}…{1}</ellipsis>
@@ -1305,7 +1338,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">G y, MMM d, E - d, E</greatestDifference>
 							<greatestDifference id="M">G y MMM d, E - MMM d, E</greatestDifference>
-							<greatestDifference id="y">G y MMM d, E - y MMM d, E</greatestDifference>
+							<greatestDifference id="y">G y MMM d, E - y MMM d,
+								E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">G y MMMM-MMMM</greatestDifference>
@@ -4370,8 +4404,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>ബോസ്നിയ-ഹെർസഗോവിന കൺവേർട്ടിബിൾ മാർക്ക്</displayName>
-				<displayName count="one">ബോസ്നിയ ഹെർസഗോവിന കൺവേർട്ടിബിൾ മാർക്ക്</displayName>
-				<displayName count="other">ബോസ്നിയ ഹെർസഗോവിന കൺവേർട്ടിബിൾ മാർക്സ്</displayName>
+				<displayName count="one">ബോസ്നിയ ഹെർസഗോവിന കൺവേർട്ടിബിൾ
+					മാർക്ക്</displayName>
+				<displayName count="other">ബോസ്നിയ ഹെർസഗോവിന കൺവേർട്ടിബിൾ
+					മാർക്സ്</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>ബാർബഡോസ് ഡോളർ</displayName>
@@ -4385,8 +4421,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BEC">
 				<displayName>ബെൽജിയൻ ഫ്രാങ്ക് (കൈമാറ്റം ചെയ്യാവുന്നത്)</displayName>
-				<displayName count="one">ബെൽജിയൻ ഫ്രാങ്ക് (കൈമാറ്റം ചെയ്യാവുന്നത്)</displayName>
-				<displayName count="other">ബെൽജിയൻ ഫ്രാങ്ക്സ് (കൈമാറ്റം ചെയ്യാവുന്നത്)</displayName>
+				<displayName count="one">ബെൽജിയൻ ഫ്രാങ്ക് (കൈമാറ്റം
+					ചെയ്യാവുന്നത്)</displayName>
+				<displayName count="other">ബെൽജിയൻ ഫ്രാങ്ക്സ് (കൈമാറ്റം
+					ചെയ്യാവുന്നത്)</displayName>
 			</currency>
 			<currency type="BEF">
 				<displayName>ബെൽജിയൻ ഫ്രാങ്ക്</displayName>
@@ -4637,8 +4675,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ECV">
 				<displayName>ഇക്വഡോർ യൂണിഡാഡ് വാലർ കോൺസ്റ്റൻറെ (UVC)</displayName>
-				<displayName count="one">ഇക്വഡോർ യൂണിഡാഡ് ഡി വാലർ കോൺസ്റ്റൻറെ (UVC)</displayName>
-				<displayName count="other">ഇക്വഡോർ യൂണിഡാഡ്സ് ഡി വാലർ കോൺസ്റ്റൻറെ (UVC)</displayName>
+				<displayName count="one">ഇക്വഡോർ യൂണിഡാഡ് ഡി വാലർ കോൺസ്റ്റൻറെ
+					(UVC)</displayName>
+				<displayName count="other">ഇക്വഡോർ യൂണിഡാഡ്സ് ഡി വാലർ
+					കോൺസ്റ്റൻറെ (UVC)</displayName>
 			</currency>
 			<currency type="EEK">
 				<displayName>എസ്റ്റൌനിയൻ ക്രൂൺ</displayName>
@@ -4662,8 +4702,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ESB">
 				<displayName>സ്പാനിഷ് പസെയ്റ്റ (കൈമാറ്റം ചെയ്യാവുന്ന അക്കൌണ്ട്)</displayName>
-				<displayName count="one">സ്പാനിഷ് പസെയ്റ്റ (കൈമാറ്റം ചെയ്യാവുന്ന അക്കൌണ്ട്)</displayName>
-				<displayName count="other">സ്പാനിഷ് പസെയ്റ്റാസ് (കൈമാറ്റം ചെയ്യാവുന്ന അക്കൌണ്ട്)</displayName>
+				<displayName count="one">സ്പാനിഷ് പസെയ്റ്റ (കൈമാറ്റം
+					ചെയ്യാവുന്ന അക്കൌണ്ട്)</displayName>
+				<displayName count="other">സ്പാനിഷ് പസെയ്റ്റാസ് (കൈമാറ്റം
+					ചെയ്യാവുന്ന അക്കൌണ്ട്)</displayName>
 			</currency>
 			<currency type="ESP">
 				<displayName>സ്പാനിഷ് പസെയ്റ്റ</displayName>
@@ -4954,8 +4996,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="LUC">
 				<displayName>ലക്സംബർഗ് കൺവേർട്ടിബിൾ ഫ്രാങ്ക്</displayName>
-				<displayName count="one">ലക്സംബർഗ് കൈമാറ്റം ചെയ്യാവുന്ന ഫ്രാങ്ക്‌</displayName>
-				<displayName count="other">ലക്സംബർഗ് കൈമാറ്റം ചെയ്യാവുന്ന ഫ്രാങ്ക്‌സ്‌</displayName>
+				<displayName count="one">ലക്സംബർഗ് കൈമാറ്റം ചെയ്യാവുന്ന
+					ഫ്രാങ്ക്‌</displayName>
+				<displayName count="other">ലക്സംബർഗ് കൈമാറ്റം ചെയ്യാവുന്ന
+					ഫ്രാങ്ക്‌സ്‌</displayName>
 			</currency>
 			<currency type="LUF">
 				<displayName>ലക്സംബർഗ് ഫ്രാങ്ക്</displayName>
@@ -5048,13 +5092,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MXP">
 				<displayName>മെക്സിക്കൻ സിൽവർ പെയ്സോ (1861–1992)</displayName>
-				<displayName count="one" draft="contributed">മെക്സിക്കൻ സിൽവർ പെയ്സോ (MXP)</displayName>
-				<displayName count="other" draft="contributed">മെക്സിക്കൻ സിൽവർ പെയ്സോസ് (MXP)</displayName>
+				<displayName count="one" draft="contributed">മെക്സിക്കൻ സിൽവർ പെയ്സോ
+					(MXP)</displayName>
+				<displayName count="other" draft="contributed">മെക്സിക്കൻ സിൽവർ
+					പെയ്സോസ് (MXP)</displayName>
 			</currency>
 			<currency type="MXV">
 				<displayName>മെക്സിക്കൻ യൂണിഡാഡ് ഡി ഇൻവെർഷൻ (UDI)</displayName>
-				<displayName count="one" draft="contributed">മെക്സിക്കൻ യൂണിഡാഡ് ഡി ഇൻവെർഷൻ (UDI)</displayName>
-				<displayName count="other" draft="contributed">മെക്സിക്കൻ യൂണിഡാഡ്സ് ഡി ഇൻവെർഷൻ (UDI)</displayName>
+				<displayName count="one" draft="contributed">മെക്സിക്കൻ യൂണിഡാഡ് ഡി
+					ഇൻവെർഷൻ (UDI)</displayName>
+				<displayName count="other" draft="contributed">മെക്സിക്കൻ യൂണിഡാഡ്സ്
+					ഡി ഇൻവെർഷൻ (UDI)</displayName>
 			</currency>
 			<currency type="MYR">
 				<displayName>മലേഷ്യൻ റിംഗിറ്റ്</displayName>
@@ -5339,8 +5387,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="UYI">
 				<displayName>ഉറുഗ്വേ പെയ്സോ എൻ യൂണിഡാഡ്സ്</displayName>
-				<displayName count="one" draft="contributed">ഉറുഗ്വേ പെയ്സോ എൻ യൂണിഡാഡ്സ് ഇൻഡെക്സാഡാസ്</displayName>
-				<displayName count="other" draft="contributed">ഉറുഗ്വേ പെയ്സോസ് എൻ യൂണിഡാഡ്സ് ഇൻഡെക്സാഡാസ്</displayName>
+				<displayName count="one" draft="contributed">ഉറുഗ്വേ പെയ്സോ എൻ
+					യൂണിഡാഡ്സ് ഇൻഡെക്സാഡാസ്</displayName>
+				<displayName count="other" draft="contributed">ഉറുഗ്വേ പെയ്സോസ് എൻ
+					യൂണിഡാഡ്സ് ഇൻഡെക്സാഡാസ്</displayName>
 			</currency>
 			<currency type="UYP">
 				<displayName>ഉറുഗ്വേ പെയ്സോ (1975–1993)</displayName>
@@ -5409,12 +5459,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="XBC">
 				<displayName>യൂറോപ്യൻ യൂണിറ്റ് ഓഫ് അക്കൌണ്ട് (XBC)</displayName>
 				<displayName count="one">യൂറോപ്യൻ യൂണിറ്റ് ഓഫ് അക്കൌണ്ട് (XBC)</displayName>
-				<displayName count="other">യൂറോപ്യൻ യൂണിറ്റ്സ് ഓഫ് അക്കൌണ്ട് (XBC)</displayName>
+				<displayName count="other">യൂറോപ്യൻ യൂണിറ്റ്സ് ഓഫ് അക്കൌണ്ട്
+					(XBC)</displayName>
 			</currency>
 			<currency type="XBD">
 				<displayName>യൂറോപ്യൻ യൂണിറ്റ് ഓഫ് അക്കൌണ്ട് (XBD)</displayName>
 				<displayName count="one">യൂറോപ്യൻ യൂണിറ്റ് ഓഫ് അക്കൌണ്ട് (XBD)</displayName>
-				<displayName count="other">യൂറോപ്യൻ യൂണിറ്റ്സ് ഓഫ് അക്കൌണ്ട് (XBD)</displayName>
+				<displayName count="other">യൂറോപ്യൻ യൂണിറ്റ്സ് ഓഫ് അക്കൌണ്ട്
+					(XBD)</displayName>
 			</currency>
 			<currency type="XCD">
 				<displayName>കിഴക്കൻ കരീബിയൻ ഡോളർ</displayName>

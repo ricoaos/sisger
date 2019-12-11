@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9920 $"/>
-		<generation date="$Date: 2014-03-10 16:39:54 -0500 (Mon, 10 Mar 2014) $"/>
-		<language type="sv"/>
+		<version number="$Revision: 9920 $" />
+		<generation date="$Date: 2014-03-10 16:39:54 -0500 (Mon, 10 Mar 2014) $" />
+		<language type="sv" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -1097,10 +1096,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="deva" key="numbers">devanagariska siffror</type>
 			<type type="dictionary" key="collation">ordbokssorteringsordning</type>
 			<type type="ducet" key="collation">grundläggande Unicode-sorteringsordning</type>
-			<type type="eor" key="collation" draft="contributed">sorteringsordning för flerspråkliga europeiska dokument</type>
+			<type type="eor" key="collation" draft="contributed">sorteringsordning för
+				flerspråkliga europeiska dokument</type>
 			<type type="ethi" key="numbers">etiopiska numeraler</type>
 			<type type="ethiopic" key="calendar">etiopisk kalender</type>
-			<type type="ethiopic-amete-alem" key="calendar">etiopisk amete-alem-kalender</type>
+			<type type="ethiopic-amete-alem" key="calendar">etiopisk
+				amete-alem-kalender</type>
 			<type type="finance" key="numbers" draft="contributed">Finansiella siffror</type>
 			<type type="fullwide" key="numbers">fullbreddssiffror</type>
 			<type type="gb2312han" key="collation">gb2312-sorteringsordning</type>
@@ -1112,9 +1113,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers">gurmukhiska siffror</type>
 			<type type="hanidec" key="numbers">kinesiska decimaltal</type>
 			<type type="hans" key="numbers">förenklat kinesiskt stavade tal</type>
-			<type type="hansfin" key="numbers">förenklat kinesiskt finansiellt stavade tal</type>
+			<type type="hansfin" key="numbers">förenklat kinesiskt finansiellt stavade
+				tal</type>
 			<type type="hant" key="numbers">traditionellt kinesiskt stavade tal</type>
-			<type type="hantfin" key="numbers">traditionellt kinesiskt finansiellt stavade tal</type>
+			<type type="hantfin" key="numbers">traditionellt kinesiskt finansiellt
+				stavade tal</type>
 			<type type="hebr" key="numbers">hebreiska numeraler</type>
 			<type type="hebrew" key="calendar">hebreisk kalender</type>
 			<type type="identical" key="colStrength" draft="contributed">Sortera alla</type>
@@ -1138,18 +1141,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="latn" key="numbers">västerländska siffror</type>
 			<type type="lepc" key="numbers" draft="contributed">lepcha-siffror</type>
 			<type type="limb" key="numbers" draft="contributed">limbu-siffror</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Sortera gemener först</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Sortera gemener
+				först</type>
 			<type type="mlym" key="numbers">malayalamiska siffror</type>
 			<type type="mong" key="numbers">mongoliska siffror</type>
 			<type type="mtei" key="numbers" draft="contributed">meetei mayek-siffror</type>
 			<type type="mymr" key="numbers">burmesiska siffror</type>
-			<type type="mymrshan" key="numbers" draft="contributed">burmesiska shan-siffror</type>
+			<type type="mymrshan" key="numbers" draft="contributed">burmesiska
+				shan-siffror</type>
 			<type type="native" key="numbers" draft="contributed">Språkspecifika siffror</type>
 			<type type="nkoo" key="numbers" draft="contributed">n-kå-siffor</type>
 			<type type="no" key="colBackwards">sortera accenter normalt</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Ordna normalt efter skiftläge</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Sortera oavsett skiftläge</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Sortera kana separat</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Ordna normalt efter
+				skiftläge</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Sortera oavsett
+				skiftläge</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Sortera kana
+				separat</type>
 			<type type="no" key="colNormalization">sortera utan normalisering</type>
 			<type type="no" key="colNumeric" draft="contributed">Sortera siffror för sig</type>
 			<type type="non-ignorable" key="colAlternate">sortera symboler</type>
@@ -1160,17 +1168,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="phonebook" key="collation">telefonkatalogssorteringsordning</type>
 			<type type="phonetic" key="collation">fonetisk sorteringsordning</type>
 			<type type="pinyin" key="collation">pinyin-sorteringsordning</type>
-			<type type="primary" key="colStrength" draft="contributed">Sortera endast efter grundbokstäver</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Sortera efter accent/skiftläge/bredd/kana</type>
+			<type type="primary" key="colStrength" draft="contributed">Sortera endast
+				efter grundbokstäver</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Sortera efter
+				accent/skiftläge/bredd/kana</type>
 			<type type="reformed" key="collation">reformerad sorteringsordning</type>
 			<type type="roc" key="calendar">kinesiska republikens kalender</type>
 			<type type="roman" key="numbers">romerska numeraler</type>
 			<type type="romanlow" key="numbers">små romerska numeraler</type>
 			<type type="saur" key="numbers" draft="contributed">saurashtra-siffror</type>
 			<type type="search" key="collation">allmän sökning</type>
-			<type type="searchjl" key="collation" draft="contributed">söksorteringsordning för att söka på inledande Hangul-konsonant</type>
+			<type type="searchjl" key="collation" draft="contributed">söksorteringsordning
+				för att söka på inledande Hangul-konsonant</type>
 			<type type="secondary" key="colStrength" draft="contributed">Sortera accenter</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Sortera oavsett symboler</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Sortera oavsett
+				symboler</type>
 			<type type="shrd" key="numbers" draft="contributed">sharada-siffror</type>
 			<type type="sora" key="numbers" draft="contributed">sora sompeng-siffror</type>
 			<type type="standard" key="collation">normal sorteringsordning</type>
@@ -1181,19 +1193,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">traditionella tamilska numeraler</type>
 			<type type="tamldec" key="numbers">tamilska siffror</type>
 			<type type="telu" key="numbers">telugiska siffror</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Sortera accenter/skiftläge/bredd</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Sortera
+				accenter/skiftläge/bredd</type>
 			<type type="thai" key="numbers">thailändska siffror</type>
 			<type type="tibt" key="numbers">tibetanska siffror</type>
 			<type type="traditional" key="collation">traditionell ordning</type>
-			<type type="traditional" key="numbers" draft="contributed">Traditionella siffror</type>
+			<type type="traditional" key="numbers" draft="contributed">Traditionella
+				siffror</type>
 			<type type="unihan" key="collation">radikal-streck-sorteringsordning</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Sortera versaler först</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Sortera versaler
+				först</type>
 			<type type="vaii" key="numbers" draft="contributed">vai-siffror</type>
 			<type type="yes" key="colBackwards">sortera accenter omvänt</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Sortera efter skiftläge</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Sortera efter kana</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Sortera efter
+				skiftläge</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Sortera efter
+				kana</type>
 			<type type="yes" key="colNormalization">sortera med Unicode-normalisering</type>
-			<type type="yes" key="colNumeric" draft="contributed">Sortera siffror numeriskt</type>
+			<type type="yes" key="colNumeric" draft="contributed">Sortera siffror
+				numeriskt</type>
 			<type type="zhuyin" key="collation">zhuyin-sorteringsordning</type>
 		</types>
 		<transformNames>
@@ -1206,7 +1224,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<transformName type="x-Halfwidth" draft="contributed">Halvbreda</transformName>
 			<transformName type="x-Jamo" draft="contributed">Jamo</transformName>
 			<transformName type="x-Pinyin" draft="contributed">Pinyin</transformName>
-			<transformName type="x-Publishing" draft="contributed">För publicering</transformName>
+			<transformName type="x-Publishing" draft="contributed">För
+				publicering</transformName>
 		</transformNames>
 		<measurementSystemNames>
 			<measurementSystemName type="metric">SI-enheter</measurementSystemName>
@@ -1230,10 +1249,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[a à b c d e é f g h i j k l m n o p q r s t u v w x y z å ä ö]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á â ã ā ç ë í î ï ī ñ ó ú ÿ ü æ ø]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Å Ä Ö]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters>[a à b c d e é f g h i j k l m n o p q r s t u v w
+			x y z å ä ö]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á â ã ā ç ë í î ï ī ñ ó ú
+			ÿ ü æ ø]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S T U V W X Y Z Å Ä Ö]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
 		<ellipsis type="medial" draft="contributed">{0}…{1}</ellipsis>
@@ -1615,9 +1638,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">G y-MM-dd – y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, y-MM-dd – E, y-MM-dd G</greatestDifference>
-							<greatestDifference id="M">E, y-MM-dd – E, y-MM-dd G</greatestDifference>
-							<greatestDifference id="y">E, y-MM-dd – E, y-MM-dd G</greatestDifference>
+							<greatestDifference id="d">E, y-MM-dd – E, y-MM-dd
+								G</greatestDifference>
+							<greatestDifference id="M">E, y-MM-dd – E, y-MM-dd
+								G</greatestDifference>
+							<greatestDifference id="y">E, y-MM-dd – E, y-MM-dd
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM–MMM y G</greatestDifference>
@@ -1884,7 +1910,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<eras>
 					<eraNames>
 						<era type="0">före Kristus</era>
-						<era type="0" alt="variant" draft="contributed">före västerländsk tideräkning</era>
+						<era type="0" alt="variant" draft="contributed">före västerländsk
+							tideräkning</era>
 						<era type="1">efter Kristus</era>
 						<era type="1" alt="variant" draft="contributed">västerländsk tideräkning</era>
 					</eraNames>
@@ -2666,7 +2693,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">för {0} månad sedan</relativeTimePattern>
-					<relativeTimePattern count="other">för {0} månader sedan</relativeTimePattern>
+					<relativeTimePattern count="other">för {0} månader
+						sedan</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -2759,7 +2787,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">för {0} minut sedan</relativeTimePattern>
-					<relativeTimePattern count="other">för {0} minuter sedan</relativeTimePattern>
+					<relativeTimePattern count="other">för {0} minuter
+						sedan</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">
@@ -2771,7 +2800,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">för {0} sekund sedan</relativeTimePattern>
-					<relativeTimePattern count="other">för {0} sekunder sedan</relativeTimePattern>
+					<relativeTimePattern count="other">för {0} sekunder
+						sedan</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">
@@ -4295,8 +4325,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AOR">
 				<displayName>angolansk kwanza reajustado (1995–1999)</displayName>
-				<displayName count="one">angolansk kwanza reajustado (1995–1999)</displayName>
-				<displayName count="other">angolanska kwanza reajustado (1995–1999)</displayName>
+				<displayName count="one">angolansk kwanza reajustado
+					(1995–1999)</displayName>
+				<displayName count="other">angolanska kwanza reajustado
+					(1995–1999)</displayName>
 			</currency>
 			<currency type="ARA">
 				<displayName>argentinsk austral</displayName>
@@ -4305,13 +4337,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ARL">
 				<displayName draft="contributed">argentisk peso (1970–1983)</displayName>
-				<displayName count="one" draft="contributed">argentisk peso (1970–1983)</displayName>
-				<displayName count="other" draft="contributed">argentiska pesos (1970–1983)</displayName>
+				<displayName count="one" draft="contributed">argentisk peso
+					(1970–1983)</displayName>
+				<displayName count="other" draft="contributed">argentiska pesos
+					(1970–1983)</displayName>
 			</currency>
 			<currency type="ARM">
 				<displayName draft="contributed">argentisk peso (1881–1969)</displayName>
-				<displayName count="one" draft="contributed">argentisk peso (1881–1969)</displayName>
-				<displayName count="other" draft="contributed">argentiska pesos (1881–1969)</displayName>
+				<displayName count="one" draft="contributed">argentisk peso
+					(1881–1969)</displayName>
+				<displayName count="other" draft="contributed">argentiska pesos
+					(1881–1969)</displayName>
 			</currency>
 			<currency type="ARP">
 				<displayName>argentinsk peso (1983–1985)</displayName>
@@ -4351,18 +4387,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAD">
 				<displayName>bosnisk-hercegovinsk dinar (1992–1994)</displayName>
-				<displayName count="one">bosnisk-hercegovinsk dinar (1992–1994)</displayName>
-				<displayName count="other">bosnisk-hercegovinska dinarer (1992–1994)</displayName>
+				<displayName count="one">bosnisk-hercegovinsk dinar
+					(1992–1994)</displayName>
+				<displayName count="other">bosnisk-hercegovinska dinarer
+					(1992–1994)</displayName>
 			</currency>
 			<currency type="BAM">
 				<displayName>bosnisk-hercegovinsk mark (konvertibel)</displayName>
-				<displayName count="one">bosnisk-hercegovinsk mark (konvertibel)</displayName>
-				<displayName count="other">bosnisk-hercegovinska mark (konvertibla)</displayName>
+				<displayName count="one">bosnisk-hercegovinsk mark
+					(konvertibel)</displayName>
+				<displayName count="other">bosnisk-hercegovinska mark
+					(konvertibla)</displayName>
 			</currency>
 			<currency type="BAN">
-				<displayName draft="contributed">bosnisk-hercegovinsk dinar (1994–1998)</displayName>
-				<displayName count="one" draft="contributed">bosnisk-hercegovinsk dinar (1994–1998)</displayName>
-				<displayName count="other" draft="contributed">bosnisk-hercegovinska dinarer (1994–1998)</displayName>
+				<displayName draft="contributed">bosnisk-hercegovinsk dinar
+					(1994–1998)</displayName>
+				<displayName count="one" draft="contributed">bosnisk-hercegovinsk
+					dinar (1994–1998)</displayName>
+				<displayName count="other" draft="contributed">bosnisk-hercegovinska
+					dinarer (1994–1998)</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Barbados-dollar</displayName>
@@ -4393,13 +4436,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BGL">
 				<displayName draft="contributed">bulgarisk hård lev (1962–1999)</displayName>
-				<displayName count="one" draft="contributed">bulgarisk hård lev (1962–1999)</displayName>
-				<displayName count="other" draft="contributed">bulgariska hård lev (1962–1999)</displayName>
+				<displayName count="one" draft="contributed">bulgarisk hård lev
+					(1962–1999)</displayName>
+				<displayName count="other" draft="contributed">bulgariska hård lev
+					(1962–1999)</displayName>
 			</currency>
 			<currency type="BGM">
 				<displayName draft="contributed">bulgarisk lev (1952–1962)</displayName>
 				<displayName count="one" draft="contributed">bulgarisk lev (1952–1962)</displayName>
-				<displayName count="other" draft="contributed">bulgariska lev (1952–1962)</displayName>
+				<displayName count="other" draft="contributed">bulgariska lev
+					(1952–1962)</displayName>
 			</currency>
 			<currency type="BGN">
 				<displayName>bulgarisk lev</displayName>
@@ -4409,7 +4455,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BGO">
 				<displayName draft="contributed">bulgarisk lev (1881–1952)</displayName>
 				<displayName count="one" draft="contributed">bulgarisk lev (1881–1952)</displayName>
-				<displayName count="other" draft="contributed">bulgarisk lev (1881–1952)</displayName>
+				<displayName count="other" draft="contributed">bulgarisk lev
+					(1881–1952)</displayName>
 			</currency>
 			<currency type="BHD">
 				<displayName>Bahrain-dinar</displayName>
@@ -4440,8 +4487,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BOL">
 				<displayName draft="contributed">boliviansk boliviano (1864–1963)</displayName>
-				<displayName count="one" draft="contributed">boliviansk boliviano (1864–1963)</displayName>
-				<displayName count="other" draft="contributed">bolivianska bolivianos (1864–1963)</displayName>
+				<displayName count="one" draft="contributed">boliviansk boliviano
+					(1864–1963)</displayName>
+				<displayName count="other" draft="contributed">bolivianska bolivianos
+					(1864–1963)</displayName>
 			</currency>
 			<currency type="BOP">
 				<displayName>boliviansk peso</displayName>
@@ -4456,7 +4505,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BRB">
 				<displayName>brasiliansk cruzeiro novo (1967–1986)</displayName>
 				<displayName count="one">brasiliansk cruzeiro (1967–1986)</displayName>
-				<displayName count="other">brasilianska cruzeiro novo (1967–1986)</displayName>
+				<displayName count="other">brasilianska cruzeiro novo
+					(1967–1986)</displayName>
 			</currency>
 			<currency type="BRC">
 				<displayName>brasiliansk cruzado</displayName>
@@ -4486,8 +4536,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BRZ">
 				<displayName draft="contributed">brasiliansk cruzeiro (1942–1967)</displayName>
-				<displayName count="one" draft="contributed">brasiliansk cruzeiro (1942–1967)</displayName>
-				<displayName count="other" draft="contributed">brasilianska cruzeiros (1942–1967)</displayName>
+				<displayName count="one" draft="contributed">brasiliansk cruzeiro
+					(1942–1967)</displayName>
+				<displayName count="other" draft="contributed">brasilianska cruzeiros
+					(1942–1967)</displayName>
 			</currency>
 			<currency type="BSD">
 				<displayName>bahamansk dollar</displayName>
@@ -4540,7 +4592,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="CHE">
 				<displayName>euro (konvertibelt konto, WIR Bank, Schweiz)</displayName>
 				<displayName count="one">euro (WIR Bank)</displayName>
-				<displayName count="other">euro (konvertibelt konto, WIR Bank, Schweiz)</displayName>
+				<displayName count="other">euro (konvertibelt konto, WIR Bank,
+					Schweiz)</displayName>
 			</currency>
 			<currency type="CHF">
 				<displayName>schweizisk franc</displayName>
@@ -4550,12 +4603,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="CHW">
 				<displayName>franc (konvertibelt konto, WIR Bank, Schweiz)</displayName>
 				<displayName count="one">franc (WIR Bank)</displayName>
-				<displayName count="other">franc (konvertibelt konto, WIR Bank, Schweiz)</displayName>
+				<displayName count="other">franc (konvertibelt konto, WIR Bank,
+					Schweiz)</displayName>
 			</currency>
 			<currency type="CLE">
 				<displayName draft="contributed">chilensk escudo (1960–1975)</displayName>
-				<displayName count="one" draft="contributed">chilensk escudo (1960–1975)</displayName>
-				<displayName count="other" draft="contributed">chilenska escudos (1960–1975)</displayName>
+				<displayName count="one" draft="contributed">chilensk escudo
+					(1960–1975)</displayName>
+				<displayName count="other" draft="contributed">chilenska escudos
+					(1960–1975)</displayName>
 			</currency>
 			<currency type="CLF">
 				<displayName>chilensk unidad de fomento</displayName>
@@ -4667,8 +4723,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ECV">
 				<displayName>ecuadoriansk unidad de valor constante</displayName>
-				<displayName count="one">ecuadoriansk unidad de valor constante</displayName>
-				<displayName count="other">ecuadorianska unidad de valor constante</displayName>
+				<displayName count="one">ecuadoriansk unidad de valor
+					constante</displayName>
+				<displayName count="other">ecuadorianska unidad de valor
+					constante</displayName>
 			</currency>
 			<currency type="EEK">
 				<displayName>estnisk krona</displayName>
@@ -4942,13 +5000,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="KRH">
 				<displayName draft="contributed">sydkoreansk hwan (1953–1962)</displayName>
-				<displayName count="one" draft="contributed">sydkoreansk hwan (1953–1962)</displayName>
-				<displayName count="other" draft="contributed">sydkoreanska hwan (1953–1962)</displayName>
+				<displayName count="one" draft="contributed">sydkoreansk hwan
+					(1953–1962)</displayName>
+				<displayName count="other" draft="contributed">sydkoreanska hwan
+					(1953–1962)</displayName>
 			</currency>
 			<currency type="KRO">
 				<displayName draft="contributed">sydkoreansk won (1945–1953)</displayName>
-				<displayName count="one" draft="contributed">sydkoreansk won (1945–1953)</displayName>
-				<displayName count="other" draft="contributed">sydkoreanska won (1945–1953)</displayName>
+				<displayName count="one" draft="contributed">sydkoreansk won
+					(1945–1953)</displayName>
+				<displayName count="other" draft="contributed">sydkoreanska won
+					(1945–1953)</displayName>
 			</currency>
 			<currency type="KRW">
 				<displayName>sydkoreansk won</displayName>
@@ -5049,12 +5111,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="MCF">
 				<displayName draft="contributed">monegaskisk franc (–2001)</displayName>
 				<displayName count="one" draft="contributed">monegaskisk franc (–2001)</displayName>
-				<displayName count="other" draft="contributed">monegaskiska franc (–2001)</displayName>
+				<displayName count="other" draft="contributed">monegaskiska franc
+					(–2001)</displayName>
 			</currency>
 			<currency type="MDC">
 				<displayName draft="contributed">moldavisk cupon (1992–1993)</displayName>
-				<displayName count="one" draft="contributed">moldavisk cupon (1992–1993)</displayName>
-				<displayName count="other" draft="contributed">moldaviska cupon (1992–1993)</displayName>
+				<displayName count="one" draft="contributed">moldavisk cupon
+					(1992–1993)</displayName>
+				<displayName count="other" draft="contributed">moldaviska cupon
+					(1992–1993)</displayName>
 			</currency>
 			<currency type="MDL">
 				<displayName>moldavisk leu</displayName>
@@ -5392,8 +5457,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="STD">
 				<displayName>São Tomé och Príncipe-dobra</displayName>
-				<displayName count="one" draft="contributed">São Tomé och Príncipe-dobra</displayName>
-				<displayName count="other" draft="contributed">São Tomé och Príncipe-dobror</displayName>
+				<displayName count="one" draft="contributed">São Tomé och
+					Príncipe-dobra</displayName>
+				<displayName count="other" draft="contributed">São Tomé och
+					Príncipe-dobror</displayName>
 			</currency>
 			<currency type="SUR">
 				<displayName>sovjetisk rubel</displayName>
@@ -5490,13 +5557,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="UAK">
 				<displayName>ukrainsk karbovanetz</displayName>
-				<displayName count="one" draft="contributed">ukrainsk karbovanetz (1992–1996)</displayName>
-				<displayName count="other" draft="contributed">ukrainska karbovanetz (1992–1996)</displayName>
+				<displayName count="one" draft="contributed">ukrainsk karbovanetz
+					(1992–1996)</displayName>
+				<displayName count="other" draft="contributed">ukrainska karbovanetz
+					(1992–1996)</displayName>
 			</currency>
 			<currency type="UGS">
 				<displayName>ugandisk shilling (1966–1987)</displayName>
-				<displayName count="one" draft="contributed">ugandisk shilling (1966–1987)</displayName>
-				<displayName count="other" draft="contributed">ugandiska shilling (1966–1987)</displayName>
+				<displayName count="one" draft="contributed">ugandisk shilling
+					(1966–1987)</displayName>
+				<displayName count="other" draft="contributed">ugandiska shilling
+					(1966–1987)</displayName>
 			</currency>
 			<currency type="UGX">
 				<displayName>ugandisk shilling</displayName>
@@ -5521,8 +5592,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="UYI">
 				<displayName>uruguayansk peso en unidades indexadas</displayName>
-				<displayName count="one">uruguayansk peso en unidades indexadas</displayName>
-				<displayName count="other">uruguayanska pesos en unidades indexadas</displayName>
+				<displayName count="one">uruguayansk peso en unidades
+					indexadas</displayName>
+				<displayName count="other">uruguayanska pesos en unidades
+					indexadas</displayName>
 			</currency>
 			<currency type="UYP">
 				<displayName>uruguayansk peso (1975–1993)</displayName>
@@ -5557,8 +5630,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="VNN">
 				<displayName draft="contributed">vietnamesisk dong (1978–1985)</displayName>
-				<displayName count="one" draft="contributed">vietnamesisk dong (1978–1985)</displayName>
-				<displayName count="other" draft="contributed">vietnamesiska dong (1978–1985)</displayName>
+				<displayName count="one" draft="contributed">vietnamesisk dong
+					(1978–1985)</displayName>
+				<displayName count="other" draft="contributed">vietnamesiska dong
+					(1978–1985)</displayName>
 			</currency>
 			<currency type="VUV">
 				<displayName>vanuatisk vatu</displayName>
@@ -5628,8 +5703,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XFU">
 				<displayName>French UIC-Franc</displayName>
-				<displayName count="one">internationella järnvägsunionens franc</displayName>
-				<displayName count="other">internationella järnvägsunionens franc</displayName>
+				<displayName count="one">internationella järnvägsunionens
+					franc</displayName>
+				<displayName count="other">internationella järnvägsunionens
+					franc</displayName>
 			</currency>
 			<currency type="XOF">
 				<displayName>västafrikansk franc</displayName>
@@ -5693,8 +5770,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="YUR">
 				<displayName draft="contributed">jugoslavisk dinar (1992–1993)</displayName>
-				<displayName count="one" draft="contributed">jugoslavisk dinar (1992–1993)</displayName>
-				<displayName count="other" draft="contributed">jugoslaviska dinarer (1992–1993)</displayName>
+				<displayName count="one" draft="contributed">jugoslavisk dinar
+					(1992–1993)</displayName>
+				<displayName count="other" draft="contributed">jugoslaviska dinarer
+					(1992–1993)</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName>sydafrikansk rand (finansiell)</displayName>
@@ -5753,8 +5832,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<compoundUnitPattern draft="contributed">{0} per {1}</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
-				<unitPattern count="one" draft="contributed">{0} gång Jordens gravitation</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} gånger Jordens gravitation</unitPattern>
+				<unitPattern count="one" draft="contributed">{0} gång Jordens
+					gravitation</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} gånger Jordens
+					gravitation</unitPattern>
 			</unit>
 			<unit type="angle-arc-minute">
 				<unitPattern count="one" draft="contributed">{0} bågminut</unitPattern>
@@ -5770,7 +5851,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="area-acre">
 				<unitPattern count="one" draft="contributed">{0} amerikanskt tunnland</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} amerikanska tunnland</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} amerikanska
+					tunnland</unitPattern>
 			</unit>
 			<unit type="area-hectare">
 				<unitPattern count="one" draft="contributed">{0} hektar</unitPattern>
@@ -5914,7 +5996,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</unit>
 			<unit type="speed-mile-per-hour">
 				<unitPattern count="one" draft="contributed">{0} engelsk mil per timme</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} engelska mil per timme</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} engelska mil per
+					timme</unitPattern>
 			</unit>
 			<unit type="temperature-celsius">
 				<unitPattern count="one">{0} grad Celsius</unitPattern>

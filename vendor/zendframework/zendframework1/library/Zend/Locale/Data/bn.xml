@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9967 $"/>
-		<generation date="$Date: 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014) $"/>
-		<language type="bn"/>
+		<version number="$Revision: 9967 $" />
+		<generation date="$Date: 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014) $" />
+		<language type="bn" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -714,7 +713,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">ফিনল্যান্ড</territory>
 			<territory type="FJ">ফিজি</territory>
 			<territory type="FK">ফকল্যান্ড দ্বীপপুঞ্জ</territory>
-			<territory type="FK" alt="variant">ফকল্যান্ড আইল্যান্ড ( ইসল্যাস মাসভেনিস)</territory>
+			<territory type="FK" alt="variant">ফকল্যান্ড আইল্যান্ড ( ইসল্যাস
+				মাসভেনিস)</territory>
 			<territory type="FM">মাইক্রোনেশিয়া</territory>
 			<territory type="FO">ফ্যারও দ্বীপপুঞ্জ</territory>
 			<territory type="FR">ফ্রান্স</territory>
@@ -733,7 +733,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">গুয়াদেলৌপ</territory>
 			<territory type="GQ">নিরক্ষীয় গিনি</territory>
 			<territory type="GR">গ্রীস্</territory>
-			<territory type="GS">দক্ষিণ জর্জিয়া ও দক্ষিণ স্যান্ডউইচ দ্বীপপুঞ</territory>
+			<territory type="GS">দক্ষিণ জর্জিয়া ও দক্ষিণ স্যান্ডউইচ
+				দ্বীপপুঞ</territory>
 			<territory type="GT">গোয়াটিমালা</territory>
 			<territory type="GU">গুয়াম</territory>
 			<territory type="GW">গিনি-বিসাউ</territory>
@@ -938,11 +939,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="chinese" key="calendar">চীনা বর্ষপঞ্জী</type>
 			<type type="coptic" key="calendar" draft="contributed">কপটিক ক্যালেন্ডার</type>
 			<type type="deva" key="numbers">দেবনাগরি সংখ্যা</type>
-			<type type="dictionary" key="collation" draft="contributed">অভিধান বাছাই বিন্যাস</type>
+			<type type="dictionary" key="collation" draft="contributed">অভিধান বাছাই
+				বিন্যাস</type>
 			<type type="ducet" key="collation">ডিফল্ট ইউনিকোড বাছাই বিন্যাস</type>
 			<type type="ethi" key="numbers">ইথীয়োপিক সংখ্যা</type>
 			<type type="ethiopic" key="calendar" draft="contributed">ইথিওপিক ক্যালেন্ডার</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">ইথিওপিও আমেতে আলেম ক্যালেন্ডার</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">ইথিওপিও
+				আমেতে আলেম ক্যালেন্ডার</type>
 			<type type="finance" key="numbers" draft="contributed">অর্থনৈতিক সংখ্যাসূচক</type>
 			<type type="fullwide" key="numbers">পূর্ণ চওড়া সংখ্যা</type>
 			<type type="gb2312han" key="collation">সাধারণ চীনা সজ্জাক্রম - জিবি২৩১২</type>
@@ -970,51 +973,71 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="knda" key="numbers">কান্নাডা শংখ্যা</type>
 			<type type="laoo" key="numbers">লাও সংখ্যা</type>
 			<type type="latn" key="numbers">পশ্চিমি শংখ্যা</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">প্রথমে ছোট হাতের অক্ষর বাছাই করুন</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">প্রথমে ছোট হাতের
+				অক্ষর বাছাই করুন</type>
 			<type type="mlym" key="numbers">মালয়ালম শংখ্যা</type>
 			<type type="mong" key="numbers" draft="contributed">মঙ্গোলীয় সংখ্যা</type>
 			<type type="mymr" key="numbers">মায়ানমার সংখ্যা</type>
 			<type type="native" key="numbers">স্থানীয় সংখ্যা</type>
-			<type type="no" key="colBackwards" draft="contributed">স্বরাঘাত সাধারণতভাবে বাছাই করুন</type>
-			<type type="no" key="colCaseFirst" draft="contributed">সাধারন কেস ক্রম বাছাই করুন</type>
+			<type type="no" key="colBackwards" draft="contributed">স্বরাঘাত সাধারণতভাবে
+				বাছাই করুন</type>
+			<type type="no" key="colCaseFirst" draft="contributed">সাধারন কেস ক্রম বাছাই
+				করুন</type>
 			<type type="no" key="colCaseLevel" draft="contributed">কেস অসংবেদী বাছাই করুন</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">কানা আলাদাভাবে বাছাই করুন</type>
-			<type type="no" key="colNormalization" draft="contributed">স্বাভাবিক ছাড়া বাছাই করুন</type>
-			<type type="no" key="colNumeric" draft="contributed">সংখ্যা পৃথকভাবে বাছাই করুন</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">প্রতীক বাছাই করুন</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">কানা আলাদাভাবে
+				বাছাই করুন</type>
+			<type type="no" key="colNormalization" draft="contributed">স্বাভাবিক ছাড়া
+				বাছাই করুন</type>
+			<type type="no" key="colNumeric" draft="contributed">সংখ্যা পৃথকভাবে বাছাই
+				করুন</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">প্রতীক বাছাই
+				করুন</type>
 			<type type="orya" key="numbers">ওড়িয়া শংখ্যা</type>
 			<type type="persian" key="calendar" draft="contributed">ফারসি ক্যালেন্ডার</type>
 			<type type="phonebook" key="collation">ফোনবুক সজ্জাক্রম</type>
-			<type type="phonetic" key="collation" draft="contributed">ধ্বনি নির্দেশক বাছাই ক্রম</type>
+			<type type="phonetic" key="collation" draft="contributed">ধ্বনি নির্দেশক বাছাই
+				ক্রম</type>
 			<type type="pinyin" key="collation" draft="contributed">পিনিন সজ্জাক্রম</type>
 			<type type="primary" key="colStrength">কেবল বুনিয়াদি বর্ণ বাছাই করুন</type>
-			<type type="quaternary" key="colStrength" draft="contributed">স্বরাঘাত/কেস/প্রস্থ/কানা বাছাই করুন</type>
-			<type type="reformed" key="collation" draft="contributed">রিফর্মড বাছাই বিন্যাস</type>
+			<type type="quaternary" key="colStrength" draft="contributed">স্বরাঘাত/কেস/প্রস্থ/কানা
+				বাছাই করুন</type>
+			<type type="reformed" key="collation" draft="contributed">রিফর্মড বাছাই
+				বিন্যাস</type>
 			<type type="roc" key="calendar">গণপ্রজাতন্ত্রী চীনা বর্ষপঞ্জী</type>
 			<type type="roman" key="numbers">রোমান সংখ্যা</type>
 			<type type="romanlow" key="numbers">রোমান ছোটহাতের সংখ্যা</type>
 			<type type="search" key="collation">সাধারণ-উদ্দেশ্যে অনুসন্ধান</type>
-			<type type="searchjl" key="collation" draft="contributed">হাঙ্গুল প্রাথমিক ব্যঞ্জনবর্ণ দ্বারা অনুসন্ধান করুন</type>
-			<type type="secondary" key="colStrength" draft="contributed">স্বরাঘাত বাছাই করুন</type>
-			<type type="shifted" key="colAlternate" draft="contributed">উপেক্ষা প্রতীক বাছাই করুন</type>
+			<type type="searchjl" key="collation" draft="contributed">হাঙ্গুল প্রাথমিক
+				ব্যঞ্জনবর্ণ দ্বারা অনুসন্ধান করুন</type>
+			<type type="secondary" key="colStrength" draft="contributed">স্বরাঘাত বাছাই
+				করুন</type>
+			<type type="shifted" key="colAlternate" draft="contributed">উপেক্ষা প্রতীক
+				বাছাই করুন</type>
 			<type type="standard" key="collation">আদর্শ বাছাই বিন্যাস</type>
 			<type type="stroke" key="collation" draft="contributed">আবর্তিত সজ্জাক্রম</type>
 			<type type="taml" key="numbers">ঐতিহ্যবাহী তামিল সংখ্যা</type>
 			<type type="tamldec" key="numbers">তামিল সংখ্যা</type>
 			<type type="telu" key="numbers">তেলুগু সংখ্যা</type>
-			<type type="tertiary" key="colStrength" draft="contributed">স্বরাঘাত/কেস/প্রস্থ বাছাই করুন</type>
+			<type type="tertiary" key="colStrength" draft="contributed">স্বরাঘাত/কেস/প্রস্থ
+				বাছাই করুন</type>
 			<type type="thai" key="numbers">থাই সংখ্যা</type>
 			<type type="tibt" key="numbers">তিব্বতি সংখ্যা</type>
 			<type type="traditional" key="collation">প্রথাগত সজ্জাক্রম</type>
 			<type type="traditional" key="numbers" draft="contributed">ঐতিহ্যগত সংখ্যাসূচক</type>
-			<type type="unihan" key="collation" draft="contributed">রাডিকেল স্ট্রোক বাছাই বিন্যাস</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">প্রথমে বড়হাতের অক্ষর বাছাই করুন</type>
+			<type type="unihan" key="collation" draft="contributed">রাডিকেল স্ট্রোক বাছাই
+				বিন্যাস</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">প্রথমে বড়হাতের
+				অক্ষর বাছাই করুন</type>
 			<type type="vaii" key="numbers" draft="contributed">ভাই সংখ্যা</type>
-			<type type="yes" key="colBackwards" draft="contributed">স্বরাঘাত বিপরীত বাছাই করুন</type>
+			<type type="yes" key="colBackwards" draft="contributed">স্বরাঘাত বিপরীত বাছাই
+				করুন</type>
 			<type type="yes" key="colCaseLevel" draft="contributed">কেস সংবেদী বাছাই করুন</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">কানা ভিন্নভাবে বাছাই করুন</type>
-			<type type="yes" key="colNormalization" draft="contributed">স্বাভাবিকৃত ইউনিকোড বাছাই করুন</type>
-			<type type="yes" key="colNumeric" draft="contributed">সংখ্যা সংখ্যাসূচকভাবে বাছাই করুন</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">কানা
+				ভিন্নভাবে বাছাই করুন</type>
+			<type type="yes" key="colNormalization" draft="contributed">স্বাভাবিকৃত
+				ইউনিকোড বাছাই করুন</type>
+			<type type="yes" key="colNumeric" draft="contributed">সংখ্যা সংখ্যাসূচকভাবে
+				বাছাই করুন</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">BGN</transformName>
@@ -1040,9 +1063,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[\u09BC ৺ অ আ ই ঈ উ ঊ ঋ ৠ ঌ ৡ এ ঐ ও ঔ ং ঃ \u0981 ক {ক\u09CDষ} খ গ ঘ ঙ চ ছ জ ঝ ঞ ট ঠ ড {ড\u09BC} ঢ {ঢ\u09BC} ণ ত ৎ থ দ ধ ন প ফ ব ভ ম য {য\u09BC} র ল শ ষ স হ ঽ া ি ী \u09C1 \u09C2 \u09C3 \u09C4 \u09E2 \u09E3 ে ৈ ো ৌ \u09CD ৗ]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[\u200C\u200D ৲ ৳ ৴ ৵ ৶ ৷ ৸ ৹ ৰ ৱ]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[অ আ ই ঈ উ ঊ ঋ এ ঐ ও ঔ ক {ক\u09CDষ} খ গ ঘ ঙ চ ছ জ ঝ ঞ ট ঠ ড ঢ ণ ত থ দ ধ ন প ফ ব ভ ম য র ল শ ষ স হ]</exemplarCharacters>
+		<exemplarCharacters>[\u09BC ৺ অ আ ই ঈ উ ঊ ঋ ৠ ঌ ৡ এ ঐ ও ঔ ং ঃ \u0981 ক
+			{ক\u09CDষ} খ গ ঘ ঙ চ ছ জ ঝ ঞ ট ঠ ড {ড\u09BC} ঢ {ঢ\u09BC} ণ ত ৎ থ দ ধ
+			ন প ফ ব ভ ম য {য\u09BC} র ল শ ষ স হ ঽ া ি ী \u09C1 \u09C2 \u09C3
+			\u09C4 \u09E2 \u09E3 ে ৈ ো ৌ \u09CD ৗ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u200C\u200D ৲ ৳ ৴ ৵ ৶ ৷
+			৸ ৹ ৰ ৱ]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[অ আ ই ঈ উ ঊ
+			ঋ এ ঐ ও ঔ ক {ক\u09CDষ} খ গ ঘ ঙ চ ছ জ ঝ ঞ ট ঠ ড ঢ ণ ত থ দ ধ ন প ফ ব ভ
+			ম য র ল শ ষ স হ]</exemplarCharacters>
 		<ellipsis type="final">{0} …</ellipsis>
 		<ellipsis type="initial">… {0}</ellipsis>
 		<ellipsis type="medial">{0} … {1}</ellipsis>
@@ -1225,9 +1254,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">d MMM, y – d MMM, y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, d MMM – E, d MMM, y G</greatestDifference>
-							<greatestDifference id="M">E, d MMM – E, d MMM, y G</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y – E, d MMM, y G</greatestDifference>
+							<greatestDifference id="d">E, d MMM – E, d MMM, y
+								G</greatestDifference>
+							<greatestDifference id="M">E, d MMM – E, d MMM, y
+								G</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y – E, d MMM,
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y G</greatestDifference>
@@ -1660,7 +1692,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM – E, d MMM, y</greatestDifference>
 							<greatestDifference id="M">E, d MMM – E, d MMM, y</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y – E, d MMM, y</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y – E, d MMM,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -3650,7 +3683,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic draft="contributed">পিত্রেপ্যাভলস্ক- ক্যামচ্যাটস্কি সময়</generic>
 					<standard draft="contributed">পিত্রেপ্যাভলস্ক- ক্যামচ্যাটস্কি মান সময়</standard>
-					<daylight draft="contributed">পিত্রেপ্যাভলস্ক- ক্যামচ্যাটস্কি গৃষ্মকালীন সময়</daylight>
+					<daylight draft="contributed">পিত্রেপ্যাভলস্ক- ক্যামচ্যাটস্কি গৃষ্মকালীন
+						সময়</daylight>
 				</long>
 			</metazone>
 			<metazone type="Kazakhstan_Eastern">

@@ -22,6 +22,7 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_App_Extension
  */
 require_once 'Zend/Gdata/App/Extension.php';
@@ -29,17 +30,19 @@ require_once 'Zend/Gdata/App/Extension.php';
 /**
  * Represents the atom:generator element
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage App
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_App_Extension_Generator extends Zend_Gdata_App_Extension
 {
 
     protected $_rootElement = 'generator';
+
     protected $_uri = null;
+
     protected $_version = null;
 
     public function __construct($text = null, $uri = null, $version = null)
@@ -65,18 +68,19 @@ class Zend_Gdata_App_Extension_Generator extends Zend_Gdata_App_Extension
     protected function takeAttributeFromDOM($attribute)
     {
         switch ($attribute->localName) {
-        case 'uri':
-            $this->_uri = $attribute->nodeValue;
-            break;
-        case 'version':
-            $this->_version= $attribute->nodeValue;
-            break;
-        default:
-            parent::takeAttributeFromDOM($attribute);
+            case 'uri':
+                $this->_uri = $attribute->nodeValue;
+                break;
+            case 'version':
+                $this->_version = $attribute->nodeValue;
+                break;
+            default:
+                parent::takeAttributeFromDOM($attribute);
         }
     }
 
     /**
+     *
      * @return Zend_Gdata_App_Extension_Uri
      */
     public function getUri()
@@ -85,7 +89,8 @@ class Zend_Gdata_App_Extension_Generator extends Zend_Gdata_App_Extension
     }
 
     /**
-     * @param Zend_Gdata_App_Extension_Uri $value
+     *
+     * @param Zend_Gdata_App_Extension_Uri $value            
      * @return Zend_Gdata_App_Entry Provides a fluent interface
      */
     public function setUri($value)
@@ -95,6 +100,7 @@ class Zend_Gdata_App_Extension_Generator extends Zend_Gdata_App_Extension
     }
 
     /**
+     *
      * @return Zend_Gdata_App_Extension_Version
      */
     public function getVersion()
@@ -103,7 +109,8 @@ class Zend_Gdata_App_Extension_Generator extends Zend_Gdata_App_Extension
     }
 
     /**
-     * @param Zend_Gdata_App_Extension_Version $value
+     *
+     * @param Zend_Gdata_App_Extension_Version $value            
      * @return Zend_Gdata_App_Entry Provides a fluent interface
      */
     public function setVersion($value)
@@ -111,5 +118,4 @@ class Zend_Gdata_App_Extension_Generator extends Zend_Gdata_App_Extension
         $this->_version = $value;
         return $this;
     }
-
 }

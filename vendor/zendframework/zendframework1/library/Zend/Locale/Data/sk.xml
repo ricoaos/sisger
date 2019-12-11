@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="sk"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="sk" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -890,15 +889,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<variants>
 			<variant type="PINYIN" draft="provisional">romanizovaná mandarínčina</variant>
 			<variant type="SCOTLAND" draft="contributed">škótska štandardná angličtina</variant>
-			<variant type="WADEGILE" draft="provisional">romanizovaná mandarínčina Wade-Giles</variant>
+			<variant type="WADEGILE" draft="provisional">romanizovaná mandarínčina
+				Wade-Giles</variant>
 		</variants>
 		<keys>
 			<key type="calendar">Kalendár</key>
 			<key type="colAlternate" draft="contributed">Ignorovať radenie symbolov</key>
 			<key type="colBackwards" draft="contributed">Obrátené radenie akcentov</key>
 			<key type="colCaseFirst" draft="contributed">Radenie veľkých a malých písmen</key>
-			<key type="colCaseLevel" draft="contributed">Rozlišovanie veľkých a malých písmen pri radení</key>
-			<key type="colHiraganaQuaternary" draft="contributed">Radenie podľa slabičných písiem (kana)</key>
+			<key type="colCaseLevel" draft="contributed">Rozlišovanie veľkých a malých
+				písmen pri radení</key>
+			<key type="colHiraganaQuaternary" draft="contributed">Radenie podľa slabičných
+				písiem (kana)</key>
 			<key type="collation">Triedenie</key>
 			<key type="colNormalization" draft="contributed">Normalizované radenie</key>
 			<key type="colNumeric" draft="contributed">Číselné radenie</key>
@@ -912,91 +914,124 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</keys>
 		<types>
 			<type type="arab" key="numbers" draft="contributed">Arabsko-indické číslice</type>
-			<type type="arabext" key="numbers" draft="contributed">Rozšírené arabsko-indické číslice</type>
+			<type type="arabext" key="numbers" draft="contributed">Rozšírené
+				arabsko-indické číslice</type>
 			<type type="armn" key="numbers" draft="contributed">Arménske číslice</type>
-			<type type="armnlow" key="numbers" draft="contributed">Arménske číslice (malé písmená)</type>
+			<type type="armnlow" key="numbers" draft="contributed">Arménske číslice (malé
+				písmená)</type>
 			<type type="beng" key="numbers" draft="contributed">Bengálske číslice</type>
 			<type type="big5han" key="collation" draft="contributed">Tradičný čínsky Big5</type>
 			<type type="buddhist" key="calendar">Buddhistický kalendár</type>
 			<type type="chinese" key="calendar">Čínsky kalendár</type>
 			<type type="coptic" key="calendar" draft="contributed">Koptický kalendár</type>
 			<type type="deva" key="numbers" draft="contributed">Číslice písma Dévanágarí</type>
-			<type type="dictionary" key="collation" draft="contributed">Usporiadanie slovníka</type>
-			<type type="ducet" key="collation" draft="contributed">Predvolené usporiadanie unicode</type>
+			<type type="dictionary" key="collation" draft="contributed">Usporiadanie
+				slovníka</type>
+			<type type="ducet" key="collation" draft="contributed">Predvolené usporiadanie
+				unicode</type>
 			<type type="ethi" key="numbers" draft="contributed">Etiópske číslice</type>
 			<type type="ethiopic" key="calendar" draft="contributed">Etiópsky kalendár</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Etiópsky kalendár Amete Alem</type>
-			<type type="finance" key="numbers" draft="contributed">Finančnícky zápis čísiel</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Etiópsky
+				kalendár Amete Alem</type>
+			<type type="finance" key="numbers" draft="contributed">Finančnícky zápis
+				čísiel</type>
 			<type type="fullwide" key="numbers" draft="contributed">Číslice s celou šírkou</type>
-			<type type="gb2312han" key="collation" draft="contributed">Zjednodušený čínsky GB2312</type>
+			<type type="gb2312han" key="collation" draft="contributed">Zjednodušený čínsky
+				GB2312</type>
 			<type type="geor" key="numbers" draft="contributed">Gruzínske číslice</type>
 			<type type="gregorian" key="calendar">Gregoriánsky kalendár</type>
 			<type type="grek" key="numbers" draft="contributed">Grécke číslice</type>
-			<type type="greklow" key="numbers" draft="contributed">Grécke číslice (malé písmená)</type>
+			<type type="greklow" key="numbers" draft="contributed">Grécke číslice (malé
+				písmená)</type>
 			<type type="gujr" key="numbers" draft="contributed">Gudžarátske číslice</type>
 			<type type="guru" key="numbers" draft="contributed">Číslice Gurmukhi</type>
-			<type type="hanidec" key="numbers" draft="contributed">Čínske desatinné číslice</type>
-			<type type="hans" key="numbers" draft="contributed">Číslice zjednodušenej čínštiny</type>
-			<type type="hansfin" key="numbers" draft="contributed">Finančné číslice zjednodušenej čínštiny</type>
+			<type type="hanidec" key="numbers" draft="contributed">Čínske desatinné
+				číslice</type>
+			<type type="hans" key="numbers" draft="contributed">Číslice zjednodušenej
+				čínštiny</type>
+			<type type="hansfin" key="numbers" draft="contributed">Finančné číslice
+				zjednodušenej čínštiny</type>
 			<type type="hant" key="numbers" draft="contributed">Číslice tradičnej čínštiny</type>
-			<type type="hantfin" key="numbers" draft="contributed">Finančné číslice tradičnej čínštiny</type>
+			<type type="hantfin" key="numbers" draft="contributed">Finančné číslice
+				tradičnej čínštiny</type>
 			<type type="hebr" key="numbers" draft="contributed">Hebrejské číslice</type>
 			<type type="hebrew" key="calendar">Židovský kalendár</type>
 			<type type="identical" key="colStrength" draft="contributed">Radiť všetko</type>
-			<type type="indian" key="calendar" draft="contributed">Indický národný kalendár</type>
+			<type type="indian" key="calendar" draft="contributed">Indický národný
+				kalendár</type>
 			<type type="islamic" key="calendar">Islamský kalendár</type>
 			<type type="islamic-civil" key="calendar">Islamský občiansky kalendár</type>
 			<type type="japanese" key="calendar">Japonský kalendár</type>
 			<type type="jpan" key="numbers" draft="contributed">Japonské číslice</type>
-			<type type="jpanfin" key="numbers" draft="contributed">Japonské finančné číslice</type>
+			<type type="jpanfin" key="numbers" draft="contributed">Japonské finančné
+				číslice</type>
 			<type type="khmr" key="numbers" draft="contributed">Khmérske číslice</type>
 			<type type="knda" key="numbers" draft="contributed">Kannadské číslice</type>
 			<type type="laoo" key="numbers" draft="contributed">Číslice písma lao</type>
 			<type type="latn" key="numbers">Arabské číslice</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Najprv radiť malé písmená</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Najprv radiť malé
+				písmená</type>
 			<type type="mlym" key="numbers" draft="contributed">Malajámske číslice</type>
 			<type type="mong" key="numbers" draft="contributed">Mongolské číslice</type>
 			<type type="mymr" key="numbers" draft="contributed">Mjanmarské číslice</type>
 			<type type="native" key="numbers" draft="contributed">Natívne číslice</type>
-			<type type="no" key="colBackwards" draft="contributed">Normálne radenie akcentov</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Normálne radenie veľkých a malých písmen</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Pri radení nerozlišovať veľké a malé písmená</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Radiť slabičné písma (kana) samostatne</type>
-			<type type="no" key="colNormalization" draft="contributed">Radiť bez normalizácie</type>
+			<type type="no" key="colBackwards" draft="contributed">Normálne radenie
+				akcentov</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Normálne radenie
+				veľkých a malých písmen</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Pri radení nerozlišovať
+				veľké a malé písmená</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Radiť slabičné
+				písma (kana) samostatne</type>
+			<type type="no" key="colNormalization" draft="contributed">Radiť bez
+				normalizácie</type>
 			<type type="no" key="colNumeric" draft="contributed">Radiť číslice jednotlivo</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Radiť symboly</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Radiť
+				symboly</type>
 			<type type="orya" key="numbers" draft="contributed">Oríjske číslice</type>
 			<type type="persian" key="calendar" draft="contributed">Perzský kalendár</type>
 			<type type="phonebook" key="collation">Lexikografické triedenie</type>
 			<type type="phonetic" key="collation" draft="contributed">Fonetické radenie</type>
 			<type type="pinyin" key="collation">Triedenie pinyin</type>
-			<type type="primary" key="colStrength" draft="contributed">Radiť iba základné písmená</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Radiť akcenty/veľké a malé písmená/šírku/kana</type>
-			<type type="reformed" key="collation" draft="contributed">Reformované usporiadanie</type>
+			<type type="primary" key="colStrength" draft="contributed">Radiť iba základné
+				písmená</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Radiť
+				akcenty/veľké a malé písmená/šírku/kana</type>
+			<type type="reformed" key="collation" draft="contributed">Reformované
+				usporiadanie</type>
 			<type type="roc" key="calendar" draft="contributed">Kalendár Čínskej republiky</type>
 			<type type="roman" key="numbers" draft="contributed">Rímske číslice</type>
-			<type type="romanlow" key="numbers" draft="contributed">Rímske číslice (malé písmená)</type>
+			<type type="romanlow" key="numbers" draft="contributed">Rímske číslice (malé
+				písmená)</type>
 			<type type="search" key="collation" draft="contributed">Všeobecné vyhľadávanie</type>
-			<type type="searchjl" key="collation" draft="contributed">Hľadať podľa počiatočnej spoluhlásky písma Hangul</type>
+			<type type="searchjl" key="collation" draft="contributed">Hľadať podľa
+				počiatočnej spoluhlásky písma Hangul</type>
 			<type type="secondary" key="colStrength" draft="contributed">Radiť akcenty</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Pri radení ignorovať symboly</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Pri radení
+				ignorovať symboly</type>
 			<type type="standard" key="collation" draft="contributed">Štandardné poradie</type>
 			<type type="stroke" key="collation">Tiedenie podľa ťahov</type>
 			<type type="taml" key="numbers" draft="contributed">Tamilské číslice</type>
 			<type type="tamldec" key="numbers" draft="contributed">Tamilské číslice</type>
 			<type type="telu" key="numbers" draft="contributed">Telugské číslice</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Radiť akcenty/veľké a malé písmená/šírku</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Radiť
+				akcenty/veľké a malé písmená/šírku</type>
 			<type type="thai" key="numbers" draft="contributed">Thajské číslice</type>
 			<type type="tibt" key="numbers" draft="contributed">Tibetské číslice</type>
 			<type type="traditional" key="collation">Tradičné</type>
 			<type type="traditional" key="numbers" draft="contributed">Tradičné číslovky</type>
-			<type type="unihan" key="collation" draft="contributed">Usporiadanie podľa znakov radikál</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Najprv radiť veľké písmená</type>
+			<type type="unihan" key="collation" draft="contributed">Usporiadanie podľa
+				znakov radikál</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Najprv radiť veľké
+				písmená</type>
 			<type type="vaii" key="numbers" draft="contributed">Vaiské číslice</type>
 			<type type="yes" key="colBackwards" draft="contributed">Radiť akcenty opačne</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Pri radení rozlišovať veľké a malé písmená</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Radiť slabičné písma (kana) inak</type>
-			<type type="yes" key="colNormalization" draft="contributed">Radenie podľa normalizovaného kódovania Unicode</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Pri radení rozlišovať
+				veľké a malé písmená</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Radiť
+				slabičné písma (kana) inak</type>
+			<type type="yes" key="colNormalization" draft="contributed">Radenie podľa
+				normalizovaného kódovania Unicode</type>
 			<type type="yes" key="colNumeric" draft="contributed">Numerické radenie číslic</type>
 		</types>
 		<transformNames>
@@ -1041,10 +1076,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[a á ä b c č d ď e é f g h {ch} i í j k l ĺ ľ m n ň o ó ô p q r ŕ s š t ť u ú v w x y ý z ž]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary" draft="contributed">[à ă â å ā æ ç è ĕ ê ë ē ì ĭ î ï ī ñ ò ŏ ö ø ō œ ř ù ŭ û ü ū ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[A Ä B C Č D Ď E F G H {CH} I J K L Ľ M N O Ô P Q R S Š T Ť U V W X Y Z Ž]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – , ; \: ! ? . … ‘ ‚ “ „ ( ) \[ \] § @ * / \&amp;]</exemplarCharacters>
+		<exemplarCharacters>[a á ä b c č d ď e é f g h {ch} i í j k l ĺ ľ m n
+			ň o ó ô p q r ŕ s š t ť u ú v w x y ý z ž]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary" draft="contributed">[à ă â å
+			ā æ ç è ĕ ê ë ē ì ĭ î ï ī ñ ò ŏ ö ø ō œ ř ù ŭ û ü ū ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[A Ä B C Č D
+			Ď E F G H {CH} I J K L Ľ M N O Ô P Q R S Š T Ť U V W X Y Z Ž]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – , ; \: ! ? . … ‘ ‚
+			“ „ ( ) \[ \] § @ * / \&amp;]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">… {0}</ellipsis>
 		<ellipsis type="medial">{0}… {1}</ellipsis>
@@ -1232,8 +1271,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d. - E, d. MMM y G</greatestDifference>
-							<greatestDifference id="M">E, d. MMM - E, d. MMM y G</greatestDifference>
-							<greatestDifference id="y">E, d. MMM y - E, d. MMM y G</greatestDifference>
+							<greatestDifference id="M">E, d. MMM - E, d. MMM y
+								G</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y - E, d. MMM
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">LLLL - LLLL y G</greatestDifference>
@@ -1638,7 +1679,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d. - E, d. MMM y</greatestDifference>
 							<greatestDifference id="M">E, d. MMM - E, d. MMM y</greatestDifference>
-							<greatestDifference id="y">E, d. MMM y - E, d. MMM y</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y - E, d. MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">LLLL - LLLL y</greatestDifference>
@@ -3449,7 +3491,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one">bieloruský nový rubeľ (1994–1999)</displayName>
 				<displayName count="few">bieloruské nové ruble (1994–1999)</displayName>
 				<displayName count="many">bieloruského nového rubľa (1994–1999)</displayName>
-				<displayName count="other">bieloruských nových rubľov (1994–1999)</displayName>
+				<displayName count="other">bieloruských nových rubľov
+					(1994–1999)</displayName>
 			</currency>
 			<currency type="BYR">
 				<displayName>Bieloruský rubeľ</displayName>

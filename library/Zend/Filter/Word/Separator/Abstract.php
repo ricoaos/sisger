@@ -20,16 +20,18 @@
  */
 
 /**
+ *
  * @see Zend_Filter_PregReplace
  */
 require_once 'Zend/Filter/PregReplace.php';
 
 /**
- * @category   Zend
- * @package    Zend_Filter
- * @uses       Zend_Filter_PregReplace
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Filter
+ * @uses Zend_Filter_PregReplace
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Filter_Word_Separator_Abstract extends Zend_Filter_PregReplace
 {
@@ -39,7 +41,8 @@ abstract class Zend_Filter_Word_Separator_Abstract extends Zend_Filter_PregRepla
     /**
      * Constructor
      *
-     * @param  string $separator Space by default
+     * @param string $separator
+     *            Space by default
      * @return void
      */
     public function __construct($separator = ' ')
@@ -50,7 +53,8 @@ abstract class Zend_Filter_Word_Separator_Abstract extends Zend_Filter_PregRepla
     /**
      * Sets a new seperator
      *
-     * @param  string  $separator  Seperator
+     * @param string $separator
+     *            Seperator
      * @return $this
      */
     public function setSeparator($separator)
@@ -66,11 +70,10 @@ abstract class Zend_Filter_Word_Separator_Abstract extends Zend_Filter_PregRepla
     /**
      * Returns the actual set seperator
      *
-     * @return  string
+     * @return string
      */
     public function getSeparator()
     {
         return $this->_separator;
     }
-
 }

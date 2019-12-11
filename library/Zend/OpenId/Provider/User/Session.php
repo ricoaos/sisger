@@ -22,11 +22,13 @@
  */
 
 /**
+ *
  * @see Zend_OpenId_Provider_User
  */
 require_once "Zend/OpenId/Provider/User.php";
 
 /**
+ *
  * @see Zend_Session_Namespace
  */
 require_once "Zend/Session/Namespace.php";
@@ -35,14 +37,15 @@ require_once "Zend/Session/Namespace.php";
  * Class to get/store information about logged in user in Web Browser using
  * PHP session
  *
- * @category   Zend
- * @package    Zend_OpenId
+ * @category Zend
+ * @package Zend_OpenId
  * @subpackage Zend_OpenId_Provider
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_OpenId_Provider_User_Session extends Zend_OpenId_Provider_User
 {
+
     /**
      * Reference to an implementation of Zend_Session_Namespace object
      *
@@ -54,7 +57,7 @@ class Zend_OpenId_Provider_User_Session extends Zend_OpenId_Provider_User
      * Creates Zend_OpenId_Provider_User_Session object with given session
      * namespace or creates new session namespace named "openid"
      *
-     * @param Zend_Session_Namespace $session
+     * @param Zend_Session_Namespace $session            
      */
     public function __construct(Zend_Session_Namespace $session = null)
     {
@@ -68,7 +71,8 @@ class Zend_OpenId_Provider_User_Session extends Zend_OpenId_Provider_User
     /**
      * Stores information about logged in user in session data
      *
-     * @param string $id user identity URL
+     * @param string $id
+     *            user identity URL
      * @return bool
      */
     public function setLoggedInUser($id)
@@ -91,7 +95,8 @@ class Zend_OpenId_Provider_User_Session extends Zend_OpenId_Provider_User
     }
 
     /**
-     * Performs logout. Clears information about logged in user.
+     * Performs logout.
+     * Clears information about logged in user.
      *
      * @return bool
      */
@@ -100,5 +105,4 @@ class Zend_OpenId_Provider_User_Session extends Zend_OpenId_Provider_User
         unset($this->_session->logged_in);
         return true;
     }
-
 }

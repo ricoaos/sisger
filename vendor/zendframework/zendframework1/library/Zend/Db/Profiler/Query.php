@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -20,13 +21,13 @@
  * @version    $Id$
  */
 
-
 /**
- * @category   Zend
- * @package    Zend_Db
+ *
+ * @category Zend
+ * @package Zend_Db
  * @subpackage Profiler
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Db_Profiler_Query
 {
@@ -60,20 +61,23 @@ class Zend_Db_Profiler_Query
     protected $_endedMicrotime = null;
 
     /**
+     *
      * @var array
      */
     protected $_boundParams = array();
 
     /**
+     *
      * @var array
      */
-
+    
     /**
-     * Class constructor.  A query is about to be started, save the query text ($query) and its
+     * Class constructor.
+     * A query is about to be started, save the query text ($query) and its
      * type (one of the Zend_Db_Profiler::* constants).
      *
-     * @param  string  $query
-     * @param  integer $queryType
+     * @param string $query            
+     * @param integer $queryType            
      * @return void
      */
     public function __construct($query, $queryType)
@@ -86,6 +90,7 @@ class Zend_Db_Profiler_Query
 
     /**
      * Clone handler for the query object.
+     * 
      * @return void
      */
     public function __clone()
@@ -98,7 +103,7 @@ class Zend_Db_Profiler_Query
     /**
      * Starts the elapsed time click ticking.
      * This can be called subsequent to object creation,
-     * to restart the clock.  For instance, this is useful
+     * to restart the clock. For instance, this is useful
      * right before executing a prepared query.
      *
      * @return void
@@ -149,8 +154,9 @@ class Zend_Db_Profiler_Query
     }
 
     /**
-     * @param string $param
-     * @param mixed $variable
+     *
+     * @param string $param            
+     * @param mixed $variable            
      * @return void
      */
     public function bindParam($param, $variable)
@@ -159,7 +165,8 @@ class Zend_Db_Profiler_Query
     }
 
     /**
-     * @param array $param
+     *
+     * @param array $param            
      * @return void
      */
     public function bindParams(array $params)
@@ -174,6 +181,7 @@ class Zend_Db_Profiler_Query
     }
 
     /**
+     *
      * @return array
      */
     public function getQueryParams()
@@ -192,7 +200,7 @@ class Zend_Db_Profiler_Query
         if (null === $this->_endedMicrotime) {
             return false;
         }
-
+        
         return $this->_endedMicrotime - $this->_startedMicrotime;
     }
 
@@ -203,10 +211,10 @@ class Zend_Db_Profiler_Query
      */
     public function getStartedMicrotime()
     {
-        if(null === $this->_startedMicrotime) {
+        if (null === $this->_startedMicrotime) {
             return false;
         }
-
+        
         return $this->_startedMicrotime;
     }
 }

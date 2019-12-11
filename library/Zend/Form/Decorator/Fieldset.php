@@ -19,7 +19,9 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_Form_Decorator_Abstract */
+/**
+ * Zend_Form_Decorator_Abstract
+ */
 require_once 'Zend/Form/Decorator/Abstract.php';
 
 /**
@@ -27,17 +29,19 @@ require_once 'Zend/Form/Decorator/Abstract.php';
  *
  * Any options passed will be used as HTML attributes of the fieldset tag.
  *
- * @category   Zend
- * @package    Zend_Form
+ * @category Zend
+ * @package Zend_Form
  * @subpackage Decorator
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Fieldset.php 23775 2011-03-01 17:25:24Z ralph $
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id: Fieldset.php 23775 2011-03-01 17:25:24Z ralph $
  */
 class Zend_Form_Decorator_Fieldset extends Zend_Form_Decorator_Abstract
 {
+
     /**
      * Attribs that should be removed prior to rendering
+     * 
      * @var array
      */
     public $stripAttribs = array(
@@ -45,17 +49,19 @@ class Zend_Form_Decorator_Fieldset extends Zend_Form_Decorator_Abstract
         'enctype',
         'helper',
         'method',
-        'name',
+        'name'
     );
 
     /**
      * Fieldset legend
+     * 
      * @var string
      */
     protected $_legend;
 
     /**
      * Default placement: surround content
+     * 
      * @var string
      */
     protected $_placement = null;
@@ -81,7 +87,7 @@ class Zend_Form_Decorator_Fieldset extends Zend_Form_Decorator_Abstract
     /**
      * Set legend
      *
-     * @param  string $value
+     * @param string $value            
      * @return Zend_Form_Decorator_Fieldset
      */
     public function setLegend($value)
@@ -108,48 +114,48 @@ class Zend_Form_Decorator_Fieldset extends Zend_Form_Decorator_Abstract
             $this->setLegend($legend);
             $this->removeOption('legend');
         }
-
+        
         return $legend;
     }
 
     /**
      * Render a fieldset
      *
-     * @param  string $content
+     * @param string $content            
      * @return string
      */
     public function render($content)
     {
         $element = $this->getElement();
-        $view    = $element->getView();
+        $view = $element->getView();
         if (null === $view) {
             return $content;
         }
-
-        $legend  = $this->getLegend();
+        
+        $legend = $this->getLegend();
         $attribs = $this->getOptions();
-        $name    = $element->getFullyQualifiedName();
-        $id      = (string)$element->getId();
-
-        if (!array_key_exists('id', $attribs) && '' !== $id) {
+        $name = $element->getFullyQualifiedName();
+        $id = (string) $element->getId();
+        
+        if (! array_key_exists('id', $attribs) && '' !== $id) {
             $attribs['id'] = 'fieldset-' . $id;
         }
-
+        
         if (null !== $legend) {
             if (null !== ($translator = $element->getTranslator())) {
                 $legend = $translator->translate($legend);
             }
-
+            
             $attribs['legend'] = $legend;
         }
-
+        
         foreach (array_keys($attribs) as $attrib) {
             $testAttrib = strtolower($attrib);
             if (in_array($testAttrib, $this->stripAttribs)) {
                 unset($attribs[$attrib]);
             }
         }
-
+        
         return $view->fieldset($name, $content, $attribs);
     }
 }

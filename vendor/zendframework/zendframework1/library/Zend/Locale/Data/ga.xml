@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9791 $"/>
-		<generation date="$Date: 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014) $"/>
-		<language type="ga"/>
+		<version number="$Revision: 9791 $" />
+		<generation date="$Date: 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014) $" />
+		<language type="ga" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -333,7 +332,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Guadalúip</territory>
 			<territory type="GQ">An Ghuine Mheánchriosach</territory>
 			<territory type="GR">An Ghréig</territory>
-			<territory type="GS">An tSeoirsia Theas agus Oileáin Sandwich Theas</territory>
+			<territory type="GS">An tSeoirsia Theas agus Oileáin Sandwich
+				Theas</territory>
 			<territory type="GT">Guatamala</territory>
 			<territory type="GU">Guam</territory>
 			<territory type="GW">An Ghuine-Bhissau</territory>
@@ -503,19 +503,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="numbers" draft="unconfirmed">Uimhreacha</key>
 		</keys>
 		<types>
-			<type type="big5han" key="collation" draft="unconfirmed">Ord sórtála Síneach traidisiúnta - Big5</type>
+			<type type="big5han" key="collation" draft="unconfirmed">Ord sórtála Síneach
+				traidisiúnta - Big5</type>
 			<type type="buddhist" key="calendar" draft="unconfirmed">Féilire Búdaíoch</type>
 			<type type="chinese" key="calendar" draft="unconfirmed">Féilire Síneach</type>
-			<type type="gb2312han" key="collation" draft="unconfirmed">Ord sórtála Síneach simplithe - GB 2312</type>
+			<type type="gb2312han" key="collation" draft="unconfirmed">Ord sórtála Síneach
+				simplithe - GB 2312</type>
 			<type type="gregorian" key="calendar" draft="unconfirmed">Féilire Greagórach</type>
 			<type type="hebrew" key="calendar" draft="unconfirmed">Féilire Eabhrach</type>
 			<type type="islamic" key="calendar" draft="unconfirmed">Féilire Ioslamach</type>
-			<type type="islamic-civil" key="calendar" draft="unconfirmed">Féilire Ioslamach Sibhialta</type>
+			<type type="islamic-civil" key="calendar" draft="unconfirmed">Féilire
+				Ioslamach Sibhialta</type>
 			<type type="japanese" key="calendar" draft="unconfirmed">Féilire Seapánach</type>
-			<type type="phonebook" key="collation" draft="unconfirmed">Ord sórtála an eolaire teileafóin</type>
+			<type type="phonebook" key="collation" draft="unconfirmed">Ord sórtála an
+				eolaire teileafóin</type>
 			<type type="pinyin" key="collation" draft="unconfirmed">Ord sórtála pinyin</type>
 			<type type="stroke" key="collation" draft="unconfirmed">Ord sórtála stríce</type>
-			<type type="traditional" key="collation" draft="unconfirmed">Ord sórtála traidisiúnta</type>
+			<type type="traditional" key="collation" draft="unconfirmed">Ord sórtála
+				traidisiúnta</type>
 		</types>
 		<measurementSystemNames>
 			<measurementSystemName type="metric" draft="unconfirmed">Méadrach</measurementSystemName>
@@ -524,8 +529,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</localeDisplayNames>
 	<characters>
 		<exemplarCharacters>[a á b c d e é f g h i í l m n o ó p r s t u ú]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[å ḃ ċ ḋ ḟ ġ j k ṁ ṗ q ṡ ṫ v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="unconfirmed">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[å ḃ ċ ḋ ḟ ġ j k ṁ ṗ q ṡ ṫ
+			v w x y z]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="unconfirmed">[A B C D E F
+			G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
 	</characters>
 	<dates>
 		<calendars>

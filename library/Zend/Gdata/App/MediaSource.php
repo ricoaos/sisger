@@ -24,14 +24,15 @@
 /**
  * Interface for defining data that can be encoded and sent over the network.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage App
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 interface Zend_Gdata_App_MediaSource
 {
+
     /**
      * Return a byte stream representation of this object.
      *
@@ -42,7 +43,8 @@ interface Zend_Gdata_App_MediaSource
     /**
      * Set the content type for the file attached (example image/png)
      *
-     * @param string $value The content type
+     * @param string $value
+     *            The content type
      * @return Zend_Gdata_App_MediaFileSource Provides a fluent interface
      */
     public function setContentType($value);
@@ -55,8 +57,9 @@ interface Zend_Gdata_App_MediaSource
     public function getContentType();
 
     /**
-     * Sets the Slug header value.  Used by some services to determine the
-     * title for the uploaded file.  A null value indicates no slug header.
+     * Sets the Slug header value.
+     * Used by some services to determine the
+     * title for the uploaded file. A null value indicates no slug header.
      *
      * @var string The slug value
      * @return Zend_Gdata_App_MediaSource Provides a fluent interface
@@ -64,8 +67,9 @@ interface Zend_Gdata_App_MediaSource
     public function setSlug($value);
 
     /**
-     * Returns the Slug header value.  Used by some services to determine the
-     * title for the uploaded file.  Returns null if no slug should be used.
+     * Returns the Slug header value.
+     * Used by some services to determine the
+     * title for the uploaded file. Returns null if no slug should be used.
      *
      * @return string The slug value
      */

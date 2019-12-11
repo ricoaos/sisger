@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9792 $"/>
-		<generation date="$Date: 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014) $"/>
-		<language type="gd"/>
+		<version number="$Revision: 9792 $" />
+		<generation date="$Date: 2014-02-25 16:17:53 -0600 (Tue, 25 Feb 2014) $" />
+		<language type="gd" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -273,7 +272,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="AI" draft="unconfirmed">Anguilla</territory>
 			<territory type="AL" draft="unconfirmed">Albàinia</territory>
 			<territory type="AM" draft="unconfirmed">Airmeinia</territory>
-			<territory type="AN" draft="unconfirmed">Eileanan Aintilia nan Tìrean Ìsle</territory>
+			<territory type="AN" draft="unconfirmed">Eileanan Aintilia nan Tìrean
+				Ìsle</territory>
 			<territory type="AO" draft="unconfirmed">Angòla</territory>
 			<territory type="AQ" draft="unconfirmed">An Antartaig</territory>
 			<territory type="AR" draft="unconfirmed">An Argantain</territory>
@@ -296,7 +296,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="BM" draft="unconfirmed">Bearmùda</territory>
 			<territory type="BN" draft="unconfirmed">Brùnaigh</territory>
 			<territory type="BO" draft="unconfirmed">Boilibhia</territory>
-			<territory type="BQ" draft="unconfirmed">Ranntair Breatainn na h-Antartaig</territory>
+			<territory type="BQ" draft="unconfirmed">Ranntair Breatainn na
+				h-Antartaig</territory>
 			<territory type="BR" draft="unconfirmed">Braisil</territory>
 			<territory type="BS" draft="unconfirmed">Na h-Eileanan Bathama</territory>
 			<territory type="BT" draft="unconfirmed">Butàn</territory>
@@ -345,7 +346,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI" draft="unconfirmed">An Fhionnlann</territory>
 			<territory type="FJ" draft="unconfirmed">Fìdi</territory>
 			<territory type="FK" draft="unconfirmed">Na h-Eileanan Fàclannach</territory>
-			<territory type="FK" alt="variant" draft="unconfirmed">Na h-Eileanan Fàclannach (Islas Malvinas)</territory>
+			<territory type="FK" alt="variant" draft="unconfirmed">Na h-Eileanan
+				Fàclannach (Islas Malvinas)</territory>
 			<territory type="FM" draft="unconfirmed">Na Meanbh-Eileanan</territory>
 			<territory type="FO" draft="unconfirmed">Na h-Eileanan Fàro</territory>
 			<territory type="FR" draft="unconfirmed">An Fhraing</territory>
@@ -363,7 +365,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP" draft="unconfirmed">Guadalup</territory>
 			<territory type="GQ" draft="unconfirmed">Gini Mheadhan-Chriosach</territory>
 			<territory type="GR" draft="unconfirmed">A' Ghreug</territory>
-			<territory type="GS" draft="unconfirmed">Seòrsea a Deas is na h-Eileanan Sandwich a Deas</territory>
+			<territory type="GS" draft="unconfirmed">Seòrsea a Deas is na h-Eileanan
+				Sandwich a Deas</territory>
 			<territory type="GT" draft="unconfirmed">Guatamala</territory>
 			<territory type="GU" draft="unconfirmed">Guam</territory>
 			<territory type="GW" draft="unconfirmed">Gini-Bioso</territory>
@@ -381,7 +384,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="IL" draft="unconfirmed">Iosrael</territory>
 			<territory type="IM" draft="unconfirmed">Eilean Manainn</territory>
 			<territory type="IN" draft="unconfirmed">Na h-Innseachan</territory>
-			<territory type="IO" draft="unconfirmed">Ranntair Breatannach Cuan nan Innseachan</territory>
+			<territory type="IO" draft="unconfirmed">Ranntair Breatannach Cuan nan
+				Innseachan</territory>
 			<territory type="IQ" draft="unconfirmed">Ioràc</territory>
 			<territory type="IR" draft="unconfirmed">Ioràn</territory>
 			<territory type="IS" draft="unconfirmed">Innis Tìle</territory>
@@ -420,7 +424,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MG" draft="unconfirmed">Madagasgar</territory>
 			<territory type="MH" draft="unconfirmed">Eileanan Mharshall</territory>
 			<territory type="MK" draft="unconfirmed">A' Mhasadon</territory>
-			<territory type="MK" alt="variant" draft="unconfirmed">A' Mhasadon (FYROM)</territory>
+			<territory type="MK" alt="variant" draft="unconfirmed">A' Mhasadon
+				(FYROM)</territory>
 			<territory type="ML" draft="unconfirmed">Màili</territory>
 			<territory type="MM" draft="unconfirmed">Miànmar (Burma)</territory>
 			<territory type="MN" draft="unconfirmed">Dùthaich nam Mongol</territory>
@@ -509,15 +514,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ" draft="unconfirmed">An Tansan</territory>
 			<territory type="UA" draft="unconfirmed">An Ucràin</territory>
 			<territory type="UG" draft="unconfirmed">Uganda</territory>
-			<territory type="UM" draft="unconfirmed">Meanbh-Eileanan Iomallach nan Stàitean Aonaichte</territory>
+			<territory type="UM" draft="unconfirmed">Meanbh-Eileanan Iomallach nan
+				Stàitean Aonaichte</territory>
 			<territory type="US" draft="unconfirmed">Na Stàitean Aonaichte</territory>
 			<territory type="UY" draft="unconfirmed">Uruguaidh</territory>
 			<territory type="UZ" draft="unconfirmed">Usbagastan</territory>
 			<territory type="VA" draft="unconfirmed">Cathair na Bhatacain</territory>
-			<territory type="VC" draft="unconfirmed">Naomh Bhionsant agus Eileanan Greanadach</territory>
+			<territory type="VC" draft="unconfirmed">Naomh Bhionsant agus Eileanan
+				Greanadach</territory>
 			<territory type="VE" draft="unconfirmed">A' Bheiniseala</territory>
-			<territory type="VG" draft="unconfirmed">Eileanan Breatannach na Maighdinn</territory>
-			<territory type="VI" draft="unconfirmed">Eileanan Aimeireagach na Maighdinn</territory>
+			<territory type="VG" draft="unconfirmed">Eileanan Breatannach na
+				Maighdinn</territory>
+			<territory type="VI" draft="unconfirmed">Eileanan Aimeireagach na
+				Maighdinn</territory>
 			<territory type="VN" draft="unconfirmed">Bhiet-Nam</territory>
 			<territory type="VU" draft="unconfirmed">Vanuatu</territory>
 			<territory type="WF" draft="unconfirmed">Uallas agus Futuna</territory>
@@ -530,7 +539,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ZZ" draft="unconfirmed">Ranntair Neo-Aithnichte</territory>
 		</territories>
 		<variants>
-			<variant type="SCOTLAND" draft="unconfirmed">Beurla Bhun-Tomhasach na h-Alba</variant>
+			<variant type="SCOTLAND" draft="unconfirmed">Beurla Bhun-Tomhasach na
+				h-Alba</variant>
 		</variants>
 		<keys>
 			<key type="calendar" draft="unconfirmed">Mìosachan</key>
@@ -539,32 +549,44 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="numbers" draft="unconfirmed">Àireamhan</key>
 		</keys>
 		<types>
-			<type type="arab" key="numbers" draft="unconfirmed">Figearan Arbanach-Innseanach</type>
-			<type type="arabext" key="numbers" draft="unconfirmed">Figearan Arbanach-Innseanach Leudaichte</type>
+			<type type="arab" key="numbers" draft="unconfirmed">Figearan
+				Arbanach-Innseanach</type>
+			<type type="arabext" key="numbers" draft="unconfirmed">Figearan
+				Arbanach-Innseanach Leudaichte</type>
 			<type type="armn" key="numbers" draft="unconfirmed">Àireamhan Airmeineach</type>
-			<type type="big5han" key="collation" draft="unconfirmed">Òrdugh Seòrsachaidh na Sìnise Tradaiseanta - Big5</type>
+			<type type="big5han" key="collation" draft="unconfirmed">Òrdugh Seòrsachaidh
+				na Sìnise Tradaiseanta - Big5</type>
 			<type type="buddhist" key="calendar" draft="unconfirmed">Am Mìosachan Budach</type>
 			<type type="chinese" key="calendar" draft="unconfirmed">Am Mìosachan Sìneach</type>
 			<type type="coptic" key="calendar" draft="unconfirmed">Am Mìosachan Coptach</type>
 			<type type="deva" key="numbers" draft="unconfirmed">Figearan Devanagari</type>
 			<type type="ethi" key="numbers" draft="unconfirmed">Àireamhan Itiopach</type>
-			<type type="ethiopic" key="calendar" draft="unconfirmed">Mìosachan na h-Itioipe</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="unconfirmed">Mìosachan Itiopach Amete Alem</type>
+			<type type="ethiopic" key="calendar" draft="unconfirmed">Mìosachan na
+				h-Itioipe</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="unconfirmed">Mìosachan
+				Itiopach Amete Alem</type>
 			<type type="fullwide" key="numbers" draft="unconfirmed">Figearan Làn-Leud</type>
-			<type type="gb2312han" key="collation" draft="unconfirmed">Òrdugh Seòrsachaidh na Sìnise Simplichte - GB2312</type>
+			<type type="gb2312han" key="collation" draft="unconfirmed">Òrdugh Seòrsachaidh
+				na Sìnise Simplichte - GB2312</type>
 			<type type="geor" key="numbers" draft="unconfirmed">Àireamhan Cairthbheileach</type>
-			<type type="gregorian" key="calendar" draft="unconfirmed">Am Mìosachan Griogarach</type>
+			<type type="gregorian" key="calendar" draft="unconfirmed">Am Mìosachan
+				Griogarach</type>
 			<type type="grek" key="numbers" draft="unconfirmed">Àireamhan Greugach</type>
-			<type type="greklow" key="numbers" draft="unconfirmed">Àireamhan Greugach Beaga</type>
+			<type type="greklow" key="numbers" draft="unconfirmed">Àireamhan Greugach
+				Beaga</type>
 			<type type="gujr" key="numbers" draft="unconfirmed">Figearan Gujarati</type>
 			<type type="guru" key="numbers" draft="unconfirmed">Figearan Gurmukhi</type>
-			<type type="hans" key="numbers" draft="unconfirmed">Àireamhan Sìneach Simplichte</type>
-			<type type="hant" key="numbers" draft="unconfirmed">Àireamhan Sìneach Tradaiseanta</type>
+			<type type="hans" key="numbers" draft="unconfirmed">Àireamhan Sìneach
+				Simplichte</type>
+			<type type="hant" key="numbers" draft="unconfirmed">Àireamhan Sìneach
+				Tradaiseanta</type>
 			<type type="hebr" key="numbers" draft="unconfirmed">Àireamhan Eabhrach</type>
 			<type type="hebrew" key="calendar" draft="unconfirmed">Am Mìosachan Eabhrach</type>
-			<type type="indian" key="calendar" draft="unconfirmed">Mìosachan Nàiseanta nan Innseachan</type>
+			<type type="indian" key="calendar" draft="unconfirmed">Mìosachan Nàiseanta nan
+				Innseachan</type>
 			<type type="islamic" key="calendar" draft="unconfirmed">Am Mìosachan Ioslamach</type>
-			<type type="japanese" key="calendar" draft="unconfirmed">Am Mìosachan Seapanach</type>
+			<type type="japanese" key="calendar" draft="unconfirmed">Am Mìosachan
+				Seapanach</type>
 			<type type="jpan" key="numbers" draft="unconfirmed">Àireamhan Seapanach</type>
 			<type type="khmr" key="numbers" draft="unconfirmed">Figearan Cmèar</type>
 			<type type="knda" key="numbers" draft="unconfirmed">Figearan Kannada</type>
@@ -575,18 +597,23 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="mymr" key="numbers" draft="unconfirmed">Figearan Miànmar</type>
 			<type type="orya" key="numbers" draft="unconfirmed">Figearan Oriya</type>
 			<type type="persian" key="calendar" draft="unconfirmed">Am Míosachan Pearsach</type>
-			<type type="phonebook" key="collation" draft="unconfirmed">Òrdugh Seòrsachaidh nan Leabhraichean-Fòn</type>
-			<type type="pinyin" key="collation" draft="unconfirmed">Òrdugh Seòrsachaidh Pinyin na Sìnise Simplichte</type>
+			<type type="phonebook" key="collation" draft="unconfirmed">Òrdugh Seòrsachaidh
+				nan Leabhraichean-Fòn</type>
+			<type type="pinyin" key="collation" draft="unconfirmed">Òrdugh Seòrsachaidh
+				Pinyin na Sìnise Simplichte</type>
 			<type type="roc" key="calendar" draft="unconfirmed">Am Míosachan Minguo</type>
 			<type type="roman" key="numbers" draft="unconfirmed">Àireamhan Ròmanach</type>
-			<type type="romanlow" key="numbers" draft="unconfirmed">Àireamhan Beaga Ròmanach</type>
+			<type type="romanlow" key="numbers" draft="unconfirmed">Àireamhan Beaga
+				Ròmanach</type>
 			<type type="search" key="collation" draft="unconfirmed">Lorg Coitcheann</type>
-			<type type="stroke" key="collation" draft="unconfirmed">Òrdugh Stràcan na Sìnis Tradaiseanta</type>
+			<type type="stroke" key="collation" draft="unconfirmed">Òrdugh Stràcan na
+				Sìnis Tradaiseanta</type>
 			<type type="taml" key="numbers" draft="unconfirmed">Àireamhan Taimileach</type>
 			<type type="telu" key="numbers" draft="unconfirmed">Figearan Telugu</type>
 			<type type="thai" key="numbers" draft="unconfirmed">Figearan Tàidh</type>
 			<type type="tibt" key="numbers" draft="unconfirmed">Figearan Tibeiteach</type>
-			<type type="traditional" key="collation" draft="unconfirmed">Òrdugh Seòrsachaidh Tradaiseanta</type>
+			<type type="traditional" key="collation" draft="unconfirmed">Òrdugh
+				Seòrsachaidh Tradaiseanta</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="unconfirmed">BGN</transformName>
@@ -613,9 +640,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 	</localeDisplayNames>
 	<characters>
 		<exemplarCharacters>[a à b c d e è f g h i ì l m n o ò p r s t u ù]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á ċ ḋ é ḟ ġ j k ṁ ó ṗ q ṡ ṫ v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I L M N O P R S T U]</exemplarCharacters>
-		<exemplarCharacters type="punctuation" draft="unconfirmed">[\- ‐ – — , ; \: ! ¡ ? . … · ' ‘ ’ &quot; “ ” ( ) \[ \] \{ \} § ¶ @ * / \&amp; ⁊ # % † ‡ ‧ ° © ® ™]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á ċ ḋ é ḟ ġ j k ṁ ó ṗ q ṡ
+			ṫ v w x y z]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I L M N O
+			P R S T U]</exemplarCharacters>
+		<exemplarCharacters type="punctuation" draft="unconfirmed">[\- ‐
+			– — , ; \: ! ¡ ? . … · ' ‘ ’ &quot; “ ” ( ) \[ \] \{ \} § ¶ @ * /
+			\&amp; ⁊ # % † ‡ ‧ ° © ® ™]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart draft="unconfirmed">“</quotationStart>
@@ -689,8 +720,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="unconfirmed">dd/MM - dd/MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d" draft="unconfirmed">E, dd/MM - E, dd/MM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, dd/MM - E, dd/MM</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, dd/MM - E,
+								dd/MM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, dd/MM - E,
+								dd/MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM-MMM</greatestDifference>
@@ -700,8 +733,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="unconfirmed">d MMM - d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E, d - E, d MMM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, d MMM - E, d MMM</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, d - E, d
+								MMM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, d MMM - E,
+								d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="unconfirmed">y-y</greatestDifference>
@@ -711,14 +746,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="unconfirmed">MM/y - MM/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="unconfirmed">dd/MM/y - dd/MM/y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">dd/MM/y - dd/MM/y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">dd/MM/y - dd/MM/y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">dd/MM/y -
+								dd/MM/y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">dd/MM/y -
+								dd/MM/y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">dd/MM/y -
+								dd/MM/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="unconfirmed">E, dd/MM/y - E, dd/MM/y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, dd/MM/y - E, dd/MM/y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E, dd/MM/y - E, dd/MM/y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, dd/MM/y -
+								E, dd/MM/y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, dd/MM/y -
+								E, dd/MM/y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E, dd/MM/y -
+								E, dd/MM/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM-MMM y</greatestDifference>
@@ -726,13 +767,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d" draft="unconfirmed">d-d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">d MMM - d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">d MMM y - d MMM y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">d MMM - d MMM
+								y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">d MMM y - d
+								MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E, d - E, d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, d MMM - E, d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E, d MMM y - E, d MMM y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, d - E, d
+								MMM y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, d MMM - E,
+								d MMM y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E, d MMM y -
+								E, d MMM y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -938,8 +984,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="unconfirmed">dd/MM - dd/MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d" draft="unconfirmed">E, dd/MM - E, dd/MM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, dd/MM - E, dd/MM</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, dd/MM - E,
+								dd/MM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, dd/MM - E,
+								dd/MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM-MMM</greatestDifference>
@@ -949,8 +997,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="unconfirmed">d MMM - d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E, d - E, d MMM</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, d MMM - E, d MMM</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, d - E, d
+								MMM</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, d MMM - E,
+								d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="unconfirmed">y-y</greatestDifference>
@@ -960,14 +1010,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="unconfirmed">MM/y - MM/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="unconfirmed">dd/MM/y - dd/MM/y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">dd/MM/y - dd/MM/y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">dd/MM/y - dd/MM/y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">dd/MM/y -
+								dd/MM/y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">dd/MM/y -
+								dd/MM/y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">dd/MM/y -
+								dd/MM/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="unconfirmed">E, dd/MM/y - E, dd/MM/y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, dd/MM/y - E, dd/MM/y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E, dd/MM/y - E, dd/MM/y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, dd/MM/y -
+								E, dd/MM/y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, dd/MM/y -
+								E, dd/MM/y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E, dd/MM/y -
+								E, dd/MM/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="unconfirmed">MMM-MMM y</greatestDifference>
@@ -975,13 +1031,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d" draft="unconfirmed">d-d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">d MMM - d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">d MMM y - d MMM y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">d MMM - d MMM
+								y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">d MMM y - d
+								MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="unconfirmed">E, d - E, d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="unconfirmed">E, d MMM - E, d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="unconfirmed">E, d MMM y - E, d MMM y</greatestDifference>
+							<greatestDifference id="d" draft="unconfirmed">E, d - E, d
+								MMM y</greatestDifference>
+							<greatestDifference id="M" draft="unconfirmed">E, d MMM - E,
+								d MMM y</greatestDifference>
+							<greatestDifference id="y" draft="unconfirmed">E, d MMM y -
+								E, d MMM y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>

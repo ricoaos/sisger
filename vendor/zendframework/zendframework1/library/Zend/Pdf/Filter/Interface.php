@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -22,17 +23,18 @@
 /**
  * PDF stream filter
  *
- * @package    Zend_Pdf
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @package Zend_Pdf
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 interface Zend_Pdf_Filter_Interface
 {
+
     /**
      * Encode data
      *
-     * @param string $data
-     * @param array $params
+     * @param string $data            
+     * @param array $params            
      * @return string
      * @throws Zend_Pdf_Exception
      */
@@ -41,8 +43,8 @@ interface Zend_Pdf_Filter_Interface
     /**
      * Decode data
      *
-     * @param string $data
-     * @param array $params
+     * @param string $data            
+     * @param array $params            
      * @return string
      * @throws Zend_Pdf_Exception
      */

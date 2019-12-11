@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -25,6 +26,7 @@
  */
 abstract class Zend_XmlRpc_Generator_GeneratorAbstract
 {
+
     /**
      * XML encoding string
      *
@@ -35,7 +37,8 @@ abstract class Zend_XmlRpc_Generator_GeneratorAbstract
     /**
      * Construct new instance of the generator
      *
-     * @param string $encoding XML encoding, default UTF-8
+     * @param string $encoding
+     *            XML encoding, default UTF-8
      */
     public function __construct($encoding = 'UTF-8')
     {
@@ -48,8 +51,10 @@ abstract class Zend_XmlRpc_Generator_GeneratorAbstract
      *
      * Method opens a new XML element with an element name and an optional value
      *
-     * @param string $name XML tag name
-     * @param string $value Optional value of the XML tag
+     * @param string $name
+     *            XML tag name
+     * @param string $value
+     *            Optional value of the XML tag
      * @return Zend_XmlRpc_Generator_Abstract Fluent interface
      */
     public function openElement($name, $value = null)
@@ -58,7 +63,7 @@ abstract class Zend_XmlRpc_Generator_GeneratorAbstract
         if ($value !== null) {
             $this->_writeTextData($value);
         }
-
+        
         return $this;
     }
 
@@ -67,13 +72,14 @@ abstract class Zend_XmlRpc_Generator_GeneratorAbstract
      *
      * Method marks the end of an XML element
      *
-     * @param string $name XML tag name
+     * @param string $name
+     *            XML tag name
      * @return Zend_XmlRpc_Generator_Abstract Fluent interface
      */
     public function closeElement($name)
     {
         $this->_closeElement($name);
-
+        
         return $this;
     }
 
@@ -119,7 +125,7 @@ abstract class Zend_XmlRpc_Generator_GeneratorAbstract
     /**
      * Removes XML declaration from a string
      *
-     * @param string $xml
+     * @param string $xml            
      * @return string
      */
     public function stripDeclaration($xml)
@@ -130,21 +136,22 @@ abstract class Zend_XmlRpc_Generator_GeneratorAbstract
     /**
      * Start XML element
      *
-     * @param string $name XML element name
+     * @param string $name
+     *            XML element name
      */
     abstract protected function _openElement($name);
 
     /**
      * Write XML text data into the currently opened XML element
      *
-     * @param string $text
+     * @param string $text            
      */
     abstract protected function _writeTextData($text);
 
     /**
      * End XML element
      *
-     * @param string $name
+     * @param string $name            
      */
     abstract protected function _closeElement($name);
 }

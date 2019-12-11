@@ -21,26 +21,29 @@
  */
 
 /**
+ *
  * @see Zend_Queue_Adapter_AdapterAbstract
  */
 require_once 'Zend/Queue/Adapter/AdapterAbstract.php';
 
 /**
- * Class testing.  No supported functions.  Also used to disable a Zend_Queue.
+ * Class testing.
+ * No supported functions. Also used to disable a Zend_Queue.
  *
- * @category   Zend
- * @package    Zend_Queue
+ * @category Zend
+ * @package Zend_Queue
  * @subpackage Adapter
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Queue_Adapter_Null extends Zend_Queue_Adapter_AdapterAbstract
 {
+
     /**
      * Constructor
      *
-     * @param  array|Zend_Config $options
-     * @param  null|Zend_Queue $queue
+     * @param array|Zend_Config $options            
+     * @param null|Zend_Queue $queue            
      * @return void
      */
     public function __construct($options, Zend_Queue $queue = null)
@@ -48,10 +51,12 @@ class Zend_Queue_Adapter_Null extends Zend_Queue_Adapter_AdapterAbstract
         parent::__construct($options, $queue);
     }
 
-    /********************************************************************
+    /**
+     * ******************************************************************
      * Queue management functions
-     *********************************************************************/
-
+     * *******************************************************************
+     */
+    
     /**
      * Does a queue already exist?
      *
@@ -63,13 +68,12 @@ class Zend_Queue_Adapter_Null extends Zend_Queue_Adapter_AdapterAbstract
         throw new Zend_Queue_Exception(__FUNCTION__ . '() is not supported by ' . get_class($this));
     }
 
-
     /**
      * Create a new queue
      *
      * @throws Zend_Queue_Exception - not supported.
      */
-    public function create($name, $timeout=null)
+    public function create($name, $timeout = null)
     {
         require_once 'Zend/Queue/Exception.php';
         throw new Zend_Queue_Exception(__FUNCTION__ . '() is not supported by ' . get_class($this));
@@ -102,22 +106,24 @@ class Zend_Queue_Adapter_Null extends Zend_Queue_Adapter_AdapterAbstract
      *
      * @throws Zend_Queue_Exception - not supported.
      */
-    public function count(Zend_Queue $queue=null)
+    public function count(Zend_Queue $queue = null)
     {
         require_once 'Zend/Queue/Exception.php';
         throw new Zend_Queue_Exception(__FUNCTION__ . '() is not supported by ' . get_class($this));
     }
 
-    /********************************************************************
+    /**
+     * ******************************************************************
      * Messsage management functions
-     *********************************************************************/
-
+     * *******************************************************************
+     */
+    
     /**
      * Send a message to the queue
      *
      * @throws Zend_Queue_Exception - not supported.
      */
-    public function send($message, Zend_Queue $queue=null)
+    public function send($message, Zend_Queue $queue = null)
     {
         require_once 'Zend/Queue/Exception.php';
         throw new Zend_Queue_Exception(__FUNCTION__ . '() is not supported by ' . get_class($this));
@@ -128,7 +134,7 @@ class Zend_Queue_Adapter_Null extends Zend_Queue_Adapter_AdapterAbstract
      *
      * @throws Zend_Queue_Exception - not supported.
      */
-    public function receive($maxMessages=null, $timeout=null, Zend_Queue $queue=null)
+    public function receive($maxMessages = null, $timeout = null, Zend_Queue $queue = null)
     {
         require_once 'Zend/Queue/Exception.php';
         throw new Zend_Queue_Exception(__FUNCTION__ . '() is not supported by ' . get_class($this));
@@ -145,30 +151,32 @@ class Zend_Queue_Adapter_Null extends Zend_Queue_Adapter_AdapterAbstract
         throw new Zend_Queue_Exception(__FUNCTION__ . '() is not supported by ' . get_class($this));
     }
 
-    /********************************************************************
+    /**
+     * ******************************************************************
      * Supporting functions
-     *********************************************************************/
-
+     * *******************************************************************
+     */
+    
     /**
      * Return a list of queue capabilities functions
      *
      * $array['function name'] = true or false
      * true is supported, false is not supported.
      *
-     * @param  string $name
+     * @param string $name            
      * @return array
      */
     public function getCapabilities()
     {
         return array(
-            'create'        => false,
-            'delete'        => false,
-            'send'          => false,
-            'receive'       => false,
+            'create' => false,
+            'delete' => false,
+            'send' => false,
+            'receive' => false,
             'deleteMessage' => false,
-            'getQueues'     => false,
-            'count'         => false,
-            'isExists'      => false,
+            'getQueues' => false,
+            'count' => false,
+            'isExists' => false
         );
     }
 }

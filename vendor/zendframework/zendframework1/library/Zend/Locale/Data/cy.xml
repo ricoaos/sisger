@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="cy"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="cy" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -536,7 +535,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">Y Ffindir</territory>
 			<territory type="FJ">Fiji</territory>
 			<territory type="FK">Ynysoedd y Falkland/Malvinas</territory>
-			<territory type="FK" alt="variant">Ynysoedd y Falkland (Ynysoedd y Malfinas)</territory>
+			<territory type="FK" alt="variant">Ynysoedd y Falkland (Ynysoedd y
+				Malfinas)</territory>
 			<territory type="FM">Micronesia</territory>
 			<territory type="FO">Føroyar</territory>
 			<territory type="FR">Ffrainc</territory>
@@ -737,9 +737,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="arab" key="numbers">Digidau Arabig-Indig</type>
 			<type type="arabext" key="numbers">Digidau Arabig-Indig Estynedig</type>
 			<type type="armn" key="numbers">Rhifolion Armenaidd</type>
-			<type type="armnlow" key="numbers">Rhifolion Armenaidd mewn Llythrennau Bychain</type>
+			<type type="armnlow" key="numbers">Rhifolion Armenaidd mewn Llythrennau
+				Bychain</type>
 			<type type="beng" key="numbers">Digidau Bengalaidd</type>
-			<type type="big5han" key="collation" draft="unconfirmed">Trefn Traddodiadol Tsieina - Big5</type>
+			<type type="big5han" key="collation" draft="unconfirmed">Trefn Traddodiadol
+				Tsieina - Big5</type>
 			<type type="buddhist" key="calendar" draft="unconfirmed">Calendr y Bwdiaid</type>
 			<type type="chinese" key="calendar" draft="unconfirmed">Calendr Tseina</type>
 			<type type="coptic" key="calendar" draft="unconfirmed">Calendr y Coptiaid</type>
@@ -750,25 +752,31 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="eor" key="collation" draft="unconfirmed">Rheolau trefnu Ewropeaidd</type>
 			<type type="ethi" key="numbers">Rhifolion Ethiopig</type>
 			<type type="ethiopic" key="calendar" draft="unconfirmed">Calendr Ethiopia</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="unconfirmed">Calendr Amete Alem Ethiopia</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="unconfirmed">Calendr
+				Amete Alem Ethiopia</type>
 			<type type="fullwide" key="numbers">Digidau Lled Llawn</type>
-			<type type="gb2312han" key="collation" draft="unconfirmed">Trefn Symledig Tsieina - GB2312</type>
+			<type type="gb2312han" key="collation" draft="unconfirmed">Trefn Symledig
+				Tsieina - GB2312</type>
 			<type type="geor" key="numbers">Rhifolion Georgaidd</type>
 			<type type="gregorian" key="calendar">Calendr Gregori</type>
 			<type type="grek" key="numbers">Rhifolion Groegaidd</type>
-			<type type="greklow" key="numbers">Rhifolion Groegaidd mewn Llythrennau Bychain</type>
+			<type type="greklow" key="numbers">Rhifolion Groegaidd mewn Llythrennau
+				Bychain</type>
 			<type type="gujr" key="numbers">Digidau Gujarataidd</type>
 			<type type="guru" key="numbers">Digidau Gwrmwcaidd</type>
 			<type type="hanidec" key="numbers">Rhifolion Degol Tsieineaidd</type>
 			<type type="hans" key="numbers">Rhifolion Tsieineaidd Symledig</type>
 			<type type="hansfin" key="numbers">Rhifolion Ariannol Tsieineaidd Symledig</type>
 			<type type="hant" key="numbers">Rhifolion Tsieineaidd Traddodiadol</type>
-			<type type="hantfin" key="numbers">Rhifolion Ariannol Tsieineaidd Traddodiadol</type>
+			<type type="hantfin" key="numbers">Rhifolion Ariannol Tsieineaidd
+				Traddodiadol</type>
 			<type type="hebr" key="numbers">Rhifolion Hebreig</type>
 			<type type="hebrew" key="calendar" draft="unconfirmed">Calendr yr Hebraed</type>
-			<type type="indian" key="calendar" draft="unconfirmed">Calendr Cenedlaethol India</type>
+			<type type="indian" key="calendar" draft="unconfirmed">Calendr Cenedlaethol
+				India</type>
 			<type type="islamic" key="calendar" draft="unconfirmed">Calendr Islam</type>
-			<type type="islamic-umalqura" key="calendar" draft="unconfirmed">Calendr Islam (Umm al-Qura)</type>
+			<type type="islamic-umalqura" key="calendar" draft="unconfirmed">Calendr Islam
+				(Umm al-Qura)</type>
 			<type type="iso8601" key="calendar" draft="unconfirmed">Calendr ISO-8601</type>
 			<type type="japanese" key="calendar" draft="unconfirmed">Calendr Japan</type>
 			<type type="jpan" key="numbers">Rhifolion Japaneaidd</type>
@@ -786,7 +794,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="pinyin" key="collation" draft="unconfirmed">Trefn Pinyin</type>
 			<type type="reformed" key="collation" draft="unconfirmed">Trefn Diwygiedig</type>
 			<type type="roman" key="numbers">Rhifolion Rhufeinig</type>
-			<type type="romanlow" key="numbers">Rhifolion Rhufeinig mewn Llythrennau Bychain</type>
+			<type type="romanlow" key="numbers">Rhifolion Rhufeinig mewn Llythrennau
+				Bychain</type>
 			<type type="search" key="collation">Chwilio at Ddibenion Cyffredinol</type>
 			<type type="standard" key="collation">Trefn Safonol</type>
 			<type type="taml" key="numbers">Rhifolion Tamilaidd Traddodiadol</type>
@@ -794,7 +803,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="telu" key="numbers">Digidau Telugu</type>
 			<type type="thai" key="numbers">Digidau Thai</type>
 			<type type="tibt" key="numbers">Digidau Tibetaidd</type>
-			<type type="traditional" key="collation" draft="unconfirmed">Trefn Traddodiadol</type>
+			<type type="traditional" key="collation" draft="unconfirmed">Trefn
+				Traddodiadol</type>
 			<type type="zhuyin" key="collation" draft="unconfirmed">Trefn Zhuyin</type>
 		</types>
 		<measurementSystemNames>
@@ -809,10 +819,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a á à â ä b c {ch} d {dd} e é è ê ë f {ff} g {ng} h i í ì î ï j l {ll} m n o ó ò ô ö p {ph} r {rh} s t {th} u ú ù û ü w ẃ ẁ ŵ ẅ y ý ỳ ŷ ÿ]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[ă å ã ā æ ç ĕ ē ĭ ī k ñ ŏ ø ō œ q ŭ ū v x z]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C {CH} D {DD} E F {FF} G {NG} H I J K L {LL} M N O P {PH} Q R {RH} S T {TH} U V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters>[a á à â ä b c {ch} d {dd} e é è ê ë f {ff} g {ng}
+			h i í ì î ï j l {ll} m n o ó ò ô ö p {ph} r {rh} s t {th} u ú ù û ü w
+			ẃ ẁ ŵ ẅ y ý ỳ ŷ ÿ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[ă å ã ā æ ç ĕ ē ĭ ī k ñ ŏ
+			ø ō œ q ŭ ū v x z]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C {CH} D {DD} E F
+			{FF} G {NG} H I J K L {LL} M N O P {PH} Q R {RH} S T {TH} U V W X Y
+			Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -980,9 +996,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">d/M/y - d/M/y GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, d/M/y - E, d/M/y GGGGG</greatestDifference>
-							<greatestDifference id="M">E, d/M/y - E, d/M/y GGGGG</greatestDifference>
-							<greatestDifference id="y">E, d/M/y - E, d/M/y GGGGG</greatestDifference>
+							<greatestDifference id="d">E, d/M/y - E, d/M/y
+								GGGGG</greatestDifference>
+							<greatestDifference id="M">E, d/M/y - E, d/M/y
+								GGGGG</greatestDifference>
+							<greatestDifference id="y">E, d/M/y - E, d/M/y
+								GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM - MMM y G</greatestDifference>
@@ -996,7 +1015,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM - E, d MMM y G</greatestDifference>
 							<greatestDifference id="M">E, d MMM - E, d MMM y G</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y - E, d MMM y G</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y - E, d MMM
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y G</greatestDifference>
@@ -1437,7 +1457,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM - E, d MMM y</greatestDifference>
 							<greatestDifference id="M">E, d MMM - E, d MMM y</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y - E, d MMM y</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y - E, d MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -1465,12 +1486,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">Ymhen {0} mlynedd</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="zero">{0} o flynyddoedd yn ôl</relativeTimePattern>
+					<relativeTimePattern count="zero">{0} o flynyddoedd yn
+						ôl</relativeTimePattern>
 					<relativeTimePattern count="one">blwyddyn yn ôl</relativeTimePattern>
 					<relativeTimePattern count="two">{0} flynedd yn ôl</relativeTimePattern>
 					<relativeTimePattern count="few">{0} blynedd yn ôl</relativeTimePattern>
 					<relativeTimePattern count="many">{0} blynedd yn ôl</relativeTimePattern>
-					<relativeTimePattern count="other">{0} o flynyddoedd yn ôl</relativeTimePattern>
+					<relativeTimePattern count="other">{0} o flynyddoedd yn
+						ôl</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="month">

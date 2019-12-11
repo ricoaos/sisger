@@ -19,36 +19,41 @@
  * @version    $Id: Image.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
+/**
+ * Internally used classes
+ */
 
-/** Internally used classes */
-
-/** Zend_Pdf_Element_Name */
+/**
+ * Zend_Pdf_Element_Name
+ */
 require_once 'Zend/Pdf/Element/Name.php';
 
-
-/** Zend_Pdf_Resource */
+/**
+ * Zend_Pdf_Resource
+ */
 require_once 'Zend/Pdf/Resource.php';
-
 
 /**
  * Image abstraction.
  *
- * @package    Zend_Pdf
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @package Zend_Pdf
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Pdf_Resource_Image extends Zend_Pdf_Resource
 {
+
     /**
      * Object constructor.
      */
     public function __construct()
     {
         parent::__construct('');
-
-        $this->_resource->dictionary->Type    = new Zend_Pdf_Element_Name('XObject');
+        
+        $this->_resource->dictionary->Type = new Zend_Pdf_Element_Name('XObject');
         $this->_resource->dictionary->Subtype = new Zend_Pdf_Element_Name('Image');
     }
+
     /**
      * get the height in pixels of the image
      *

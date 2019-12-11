@@ -22,6 +22,7 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Feed
  */
 require_once 'Zend/Gdata/Feed.php';
@@ -30,15 +31,16 @@ require_once 'Zend/Gdata/Feed.php';
  * Represents a Google Health user's Profile List Feed
  *
  * @link http://code.google.com/apis/health/
- *
- * @category   Zend
- * @package    Zend_Gdata
+ *      
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Health
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Health_ProfileListFeed extends Zend_Gdata_Feed
 {
+
     /**
      * The class name for individual profile feed elements.
      *

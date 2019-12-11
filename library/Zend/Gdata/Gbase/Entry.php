@@ -22,11 +22,13 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Entry
  */
 require_once 'Zend/Gdata/Entry.php';
 
 /**
+ *
  * @see Zend_Gdata_Gbase_Extension_BaseAttribute
  */
 require_once 'Zend/Gdata/Gbase/Extension/BaseAttribute.php';
@@ -35,12 +37,12 @@ require_once 'Zend/Gdata/Gbase/Extension/BaseAttribute.php';
  * Base class for working with Google Base entries.
  *
  * @link http://code.google.com/apis/base/
- *
- * @category   Zend
- * @package    Zend_Gdata
+ *      
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Gbase
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Gbase_Entry extends Zend_Gdata_Entry
 {
@@ -61,7 +63,9 @@ class Zend_Gdata_Gbase_Entry extends Zend_Gdata_Entry
 
     /**
      * Constructs a new Zend_Gdata_Gbase_ItemEntry object.
-     * @param DOMElement $element (optional) The DOMElement on which to base this object.
+     * 
+     * @param DOMElement $element
+     *            (optional) The DOMElement on which to base this object.
      */
     public function __construct($element = null)
     {
@@ -71,12 +75,14 @@ class Zend_Gdata_Gbase_Entry extends Zend_Gdata_Entry
 
     /**
      * Retrieves a DOMElement which corresponds to this element and all
-     * child properties.  This is used to build an entry back into a DOM
+     * child properties.
+     * This is used to build an entry back into a DOM
      * and eventually XML text for application storage/persistence.
      *
-     * @param DOMDocument $doc The DOMDocument used to construct DOMElements
+     * @param DOMDocument $doc
+     *            The DOMDocument used to construct DOMElements
      * @return DOMElement The DOMElement representing this element and all
-     *          child properties.
+     *         child properties.
      */
     public function getDOM($doc = null, $majorVersion = 1, $minorVersion = null)
     {
@@ -91,12 +97,13 @@ class Zend_Gdata_Gbase_Entry extends Zend_Gdata_Entry
      * Creates individual Entry objects of the appropriate type and
      * stores them as members of this entry based upon DOM data.
      *
-     * @param DOMNode $child The DOMNode to process
+     * @param DOMNode $child
+     *            The DOMNode to process
      */
     protected function takeChildFromDOM($child)
     {
         $absoluteNodeName = $child->namespaceURI . ':' . $child->localName;
-
+        
         if (strstr($absoluteNodeName, $this->lookupNamespace('g') . ':')) {
             $baseAttribute = new Zend_Gdata_Gbase_Extension_BaseAttribute();
             $baseAttribute->transferFromDOM($child);
@@ -115,37 +122,38 @@ class Zend_Gdata_Gbase_Entry extends Zend_Gdata_Entry
     {
         $itemType = $this->getGbaseAttribute('item_type');
         if (is_object($itemType[0])) {
-          return $itemType[0];
+            return $itemType[0];
         } else {
-          return null;
+            return null;
         }
     }
 
     /**
      * Return all the Base attributes
+     * 
      * @return Zend_Gdata_Gbase_Extension_BaseAttribute
      */
-    public function getGbaseAttributes() {
+    public function getGbaseAttributes()
+    {
         return $this->_baseAttributes;
     }
 
     /**
      * Return an array of Base attributes that match the given attribute name
      *
-     * @param string $name The name of the Base attribute to look for
+     * @param string $name
+     *            The name of the Base attribute to look for
      * @return array $matches Array that contains the matching list of Base attributes
      */
     public function getGbaseAttribute($name)
     {
         $matches = array();
-        for ($i = 0; $i < count($this->_baseAttributes); $i++) {
+        for ($i = 0; $i < count($this->_baseAttributes); $i ++) {
             $baseAttribute = $this->_baseAttributes[$i];
-            if ($baseAttribute->rootElement == $name &&
-                $baseAttribute->rootNamespaceURI == $this->lookupNamespace('g')) {
+            if ($baseAttribute->rootElement == $name && $baseAttribute->rootNamespaceURI == $this->lookupNamespace('g')) {
                 $matches[] = &$this->_baseAttributes[$i];
             }
         }
         return $matches;
     }
-
 }

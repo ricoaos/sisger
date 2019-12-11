@@ -19,24 +19,27 @@
  * @version    $Id: Reference.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-
-/** Internally used classes */
+/**
+ * Internally used classes
+ */
 require_once 'Zend/Pdf/Element/Null.php';
 
-
-/** Zend_Pdf_Element */
+/**
+ * Zend_Pdf_Element
+ */
 require_once 'Zend/Pdf/Element.php';
 
 /**
  * PDF file 'reference' element implementation
  *
- * @category   Zend
- * @package    Zend_Pdf
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Pdf
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
 {
+
     /**
      * Object value
      * The reference to the object
@@ -66,7 +69,6 @@ class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
      */
     private $_context;
 
-
     /**
      * Reference to the factory.
      *
@@ -82,26 +84,26 @@ class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
     /**
      * Object constructor:
      *
-     * @param integer $objNum
-     * @param integer $genNum
-     * @param Zend_Pdf_Element_Reference_Context $context
-     * @param Zend_Pdf_ElementFactory $factory
+     * @param integer $objNum            
+     * @param integer $genNum            
+     * @param Zend_Pdf_Element_Reference_Context $context            
+     * @param Zend_Pdf_ElementFactory $factory            
      * @throws Zend_Pdf_Exception
      */
     public function __construct($objNum, $genNum = 0, Zend_Pdf_Element_Reference_Context $context, Zend_Pdf_ElementFactory $factory)
     {
-        if ( !(is_integer($objNum) && $objNum > 0) ) {
+        if (! (is_integer($objNum) && $objNum > 0)) {
             require_once 'Zend/Pdf/Exception.php';
             throw new Zend_Pdf_Exception('Object number must be positive integer');
         }
-        if ( !(is_integer($genNum) && $genNum >= 0) ) {
+        if (! (is_integer($genNum) && $genNum >= 0)) {
             require_once 'Zend/Pdf/Exception.php';
             throw new Zend_Pdf_Exception('Generation number must be non-negative integer');
         }
-
-        $this->_objNum  = $objNum;
-        $this->_genNum  = $genNum;
-        $this->_ref     = null;
+        
+        $this->_objNum = $objNum;
+        $this->_genNum = $genNum;
+        $this->_ref = null;
         $this->_context = $context;
         $this->_factory = $factory;
     }
@@ -116,7 +118,6 @@ class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
         return $this->_factory;
     }
 
-
     /**
      * Return type of the element.
      *
@@ -127,15 +128,14 @@ class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
         if ($this->_ref === null) {
             $this->_dereference();
         }
-
+        
         return $this->_ref->getType();
     }
-
 
     /**
      * Return reference to the object
      *
-     * @param Zend_Pdf_Factory $factory
+     * @param Zend_Pdf_Factory $factory            
      * @return string
      */
     public function toString($factory = null)
@@ -145,10 +145,9 @@ class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
         } else {
             $shift = $factory->getEnumerationShift($this->_factory);
         }
-
+        
         return $this->_objNum + $shift . ' ' . $this->_genNum . ' R';
     }
-
 
     /**
      * Dereference.
@@ -162,39 +161,40 @@ class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
     private function _dereference()
     {
         if (($obj = $this->_factory->fetchObject($this->_objNum . ' ' . $this->_genNum)) === null) {
-            $obj = $this->_context->getParser()->getObject(
-                           $this->_context->getRefTable()->getOffset($this->_objNum . ' ' . $this->_genNum . ' R'),
-                           $this->_context
-                                                          );
+            $obj = $this->_context->getParser()->getObject($this->_context->getRefTable()
+                ->getOffset($this->_objNum . ' ' . $this->_genNum . ' R'), $this->_context);
         }
-
-        if ($obj === null ) {
+        
+        if ($obj === null) {
             $this->_ref = new Zend_Pdf_Element_Null();
             return;
         }
-
+        
         if ($obj->toString() != $this->_objNum . ' ' . $this->_genNum . ' R') {
             require_once 'Zend/Pdf/Exception.php';
             throw new Zend_Pdf_Exception('Incorrect reference to the object');
         }
-
+        
         $this->_ref = $obj;
     }
 
     /**
      * Detach PDF object from the factory (if applicable), clone it and attach to new factory.
      *
-     * @param Zend_Pdf_ElementFactory $factory  The factory to attach
-     * @param array &$processed  List of already processed indirect objects, used to avoid objects duplication
-     * @param integer $mode  Cloning mode (defines filter for objects cloning)
-     * @returns Zend_Pdf_Element
+     * @param Zend_Pdf_ElementFactory $factory
+     *            The factory to attach
+     * @param
+     *            array &$processed List of already processed indirect objects, used to avoid objects duplication
+     * @param integer $mode
+     *            Cloning mode (defines filter for objects cloning)
+     *            @returns Zend_Pdf_Element
      */
     public function makeClone(Zend_Pdf_ElementFactory $factory, array &$processed, $mode)
     {
         if ($this->_ref === null) {
             $this->_dereference();
         }
-
+        
         // This code duplicates code in Zend_Pdf_Element_Object class,
         // but allows to avoid unnecessary method call in most cases
         $id = spl_object_hash($this->_ref);
@@ -203,7 +203,7 @@ class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
             // return it
             return $processed[$id];
         }
-
+        
         return $this->_ref->makeClone($factory, $processed, $mode);
     }
 
@@ -215,7 +215,7 @@ class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
         if ($this->_ref === null) {
             $this->_dereference();
         }
-
+        
         $this->_ref->touch();
     }
 
@@ -229,14 +229,14 @@ class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
         if ($this->_ref === null) {
             $this->_dereference();
         }
-
+        
         return $this->_ref;
     }
 
     /**
      * Get handler
      *
-     * @param string $property
+     * @param string $property            
      * @return mixed
      */
     public function __get($property)
@@ -244,30 +244,30 @@ class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
         if ($this->_ref === null) {
             $this->_dereference();
         }
-
+        
         return $this->_ref->$property;
     }
 
     /**
      * Set handler
      *
-     * @param string $property
-     * @param  mixed $value
+     * @param string $property            
+     * @param mixed $value            
      */
     public function __set($property, $value)
     {
         if ($this->_ref === null) {
             $this->_dereference();
         }
-
+        
         $this->_ref->$property = $value;
     }
 
     /**
      * Call handler
      *
-     * @param string $method
-     * @param array  $args
+     * @param string $method            
+     * @param array $args            
      * @return mixed
      */
     public function __call($method, $args)
@@ -275,8 +275,11 @@ class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
         if ($this->_ref === null) {
             $this->_dereference();
         }
-
-        return call_user_func_array(array($this->_ref, $method), $args);
+        
+        return call_user_func_array(array(
+            $this->_ref,
+            $method
+        ), $args);
     }
 
     /**
@@ -297,7 +300,7 @@ class Zend_Pdf_Element_Reference extends Zend_Pdf_Element
         if ($this->_ref === null) {
             $this->_dereference();
         }
-
+        
         return $this->_ref->toPhp();
     }
 }

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9967 $"/>
-		<generation date="$Date: 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014) $"/>
-		<language type="sl"/>
+		<version number="$Revision: 9967 $" />
+		<generation date="$Date: 2014-03-14 12:20:13 -0500 (Fri, 14 Mar 2014) $" />
+		<language type="sl" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -649,7 +648,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CA">Kanada</territory>
 			<territory type="CC">Kokosovi otoki</territory>
 			<territory type="CD">Demokratična republika Kongo</territory>
-			<territory type="CD" alt="variant">Kongo (Demokratična republika Kongo)</territory>
+			<territory type="CD" alt="variant">Kongo (Demokratična republika
+				Kongo)</territory>
 			<territory type="CF">Centralnoafriška republika</territory>
 			<territory type="CG">Kongo - Brazzaville</territory>
 			<territory type="CG" alt="variant">Kongo (Republika)</territory>
@@ -687,7 +687,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">Finska</territory>
 			<territory type="FJ">Fidži</territory>
 			<territory type="FK">Falklandski otoki</territory>
-			<territory type="FK" alt="variant">Falklandski otoki (Malvinski otoki)</territory>
+			<territory type="FK" alt="variant">Falklandski otoki (Malvinski
+				otoki)</territory>
 			<territory type="FM">Mikronezija</territory>
 			<territory type="FO">Ferski otoki</territory>
 			<territory type="FR">Francija</territory>
@@ -711,7 +712,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GU">Guam</territory>
 			<territory type="GW">Gvineja Bissau</territory>
 			<territory type="GY">Gvajana</territory>
-			<territory type="HK">Posebno administrativno območje LR Kitajske Hong Kong</territory>
+			<territory type="HK">Posebno administrativno območje LR Kitajske
+				Hong Kong</territory>
 			<territory type="HK" alt="short">Hongkong</territory>
 			<territory type="HM">Otok Heard in otočje McDonald</territory>
 			<territory type="HN">Honduras</territory>
@@ -767,7 +769,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ML">Mali</territory>
 			<territory type="MM">Mjanmar (Burma)</territory>
 			<territory type="MN">Mongolija</territory>
-			<territory type="MO">Posebno administrativno območje LR Kitajske Macao</territory>
+			<territory type="MO">Posebno administrativno območje LR Kitajske
+				Macao</territory>
 			<territory type="MO" alt="short">Macao</territory>
 			<territory type="MP">Severni Marianski otoki</territory>
 			<territory type="MQ">Martinik</territory>
@@ -917,7 +920,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="colAlternate" draft="contributed">Razvrščanje s prezrtimi znaki</key>
 			<key type="colBackwards" draft="contributed">Razvrščanje z obratnimi naglasi</key>
 			<key type="colCaseFirst" draft="contributed">Razvrščanje velike črke/male črke</key>
-			<key type="colCaseLevel" draft="contributed">Razvrščanje, občutljivo na velike/male črke</key>
+			<key type="colCaseLevel" draft="contributed">Razvrščanje, občutljivo na
+				velike/male črke</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Razvrščanje kana</key>
 			<key type="collation">razvrščanje</key>
 			<key type="colNormalization" draft="contributed">Normalizirano razvrščanje</key>
@@ -932,34 +936,46 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</keys>
 		<types>
 			<type type="arab" key="numbers" draft="contributed">Arabskoindijske števke</type>
-			<type type="arabext" key="numbers" draft="contributed">Razširjene arabskoindijske števke</type>
+			<type type="arabext" key="numbers" draft="contributed">Razširjene
+				arabskoindijske števke</type>
 			<type type="armn" key="numbers" draft="contributed">Armenske številke</type>
-			<type type="armnlow" key="numbers" draft="contributed">Armenske majhne številke</type>
+			<type type="armnlow" key="numbers" draft="contributed">Armenske majhne
+				številke</type>
 			<type type="beng" key="numbers" draft="contributed">Bengalske števke</type>
-			<type type="big5han" key="collation">razvrščanje po sistemu tradicionalne kitajščine - Big5</type>
+			<type type="big5han" key="collation">razvrščanje po sistemu tradicionalne
+				kitajščine - Big5</type>
 			<type type="buddhist" key="calendar">budistični koledar</type>
 			<type type="chinese" key="calendar">kitajski koledar</type>
 			<type type="coptic" key="calendar" draft="contributed">Koptski koledar</type>
 			<type type="deva" key="numbers" draft="contributed">Devangarske števke</type>
-			<type type="dictionary" key="collation" draft="contributed">Vrstni red razvrščanja v slovarju</type>
-			<type type="ducet" key="collation" draft="contributed">Privzeto razvrščanje Unicode</type>
+			<type type="dictionary" key="collation" draft="contributed">Vrstni red
+				razvrščanja v slovarju</type>
+			<type type="ducet" key="collation" draft="contributed">Privzeto razvrščanje
+				Unicode</type>
 			<type type="ethi" key="numbers" draft="contributed">Etiopijske številke</type>
 			<type type="ethiopic" key="calendar" draft="contributed">Etiopski koledar</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Etiopsko ametsko alemski koledar</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Etiopsko
+				ametsko alemski koledar</type>
 			<type type="finance" key="numbers" draft="contributed">Finančne številke</type>
 			<type type="fullwide" key="numbers" draft="contributed">Števke polne širine</type>
-			<type type="gb2312han" key="collation">razvrščanje po sistemu poenostavljene kitajščine - GB2312</type>
+			<type type="gb2312han" key="collation">razvrščanje po sistemu poenostavljene
+				kitajščine - GB2312</type>
 			<type type="geor" key="numbers" draft="contributed">Gruzijske številke</type>
 			<type type="gregorian" key="calendar">gregorijanski koledar</type>
 			<type type="grek" key="numbers" draft="contributed">Grške številke</type>
 			<type type="greklow" key="numbers" draft="contributed">Grške male številke</type>
 			<type type="gujr" key="numbers" draft="contributed">Gudžaratske števke</type>
 			<type type="guru" key="numbers" draft="contributed">Gurmuške števke</type>
-			<type type="hanidec" key="numbers" draft="contributed">Kitajske decimalne številke</type>
-			<type type="hans" key="numbers" draft="contributed">Poenostavljene kitajske številke</type>
-			<type type="hansfin" key="numbers" draft="contributed">Poenostavljene kitajske finančne številke</type>
-			<type type="hant" key="numbers" draft="contributed">Tradicionalne kitajske številke</type>
-			<type type="hantfin" key="numbers" draft="contributed">Tradicionalne kitajske finančne številke</type>
+			<type type="hanidec" key="numbers" draft="contributed">Kitajske decimalne
+				številke</type>
+			<type type="hans" key="numbers" draft="contributed">Poenostavljene kitajske
+				številke</type>
+			<type type="hansfin" key="numbers" draft="contributed">Poenostavljene kitajske
+				finančne številke</type>
+			<type type="hant" key="numbers" draft="contributed">Tradicionalne kitajske
+				številke</type>
+			<type type="hantfin" key="numbers" draft="contributed">Tradicionalne kitajske
+				finančne številke</type>
 			<type type="hebr" key="numbers" draft="contributed">Hebrejske številke</type>
 			<type type="hebrew" key="calendar">hebrejski koledar</type>
 			<type type="identical" key="colStrength" draft="contributed">Razvrščanje vsega</type>
@@ -968,56 +984,83 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="islamic-civil" key="calendar">islamski civilni koledar</type>
 			<type type="japanese" key="calendar">japonski koledar</type>
 			<type type="jpan" key="numbers" draft="contributed">Japonske številke</type>
-			<type type="jpanfin" key="numbers" draft="contributed">Japonske finančne številke</type>
+			<type type="jpanfin" key="numbers" draft="contributed">Japonske finančne
+				številke</type>
 			<type type="khmr" key="numbers" draft="contributed">Kmerske števke</type>
 			<type type="knda" key="numbers" draft="contributed">Kanaredske števke</type>
 			<type type="laoo" key="numbers" draft="contributed">Laoške števke</type>
 			<type type="latn" key="numbers" draft="contributed">Zahodne števke</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Razvrščanje malih črk najprej</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Razvrščanje malih
+				črk najprej</type>
 			<type type="mlym" key="numbers" draft="contributed">Malajalamske števke</type>
 			<type type="mong" key="numbers" draft="contributed">Mongolske števke</type>
 			<type type="mymr" key="numbers" draft="contributed">Mjanmarske števke</type>
 			<type type="native" key="numbers" draft="contributed">Domače števke</type>
-			<type type="no" key="colBackwards" draft="contributed">Navadno razvrščanje naglasov</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Razvrščanje v običajnem zaporedju velikih/malih črk</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Razvrščanje ne glede na velike/male črke</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Razvrščanje kana ločeno</type>
-			<type type="no" key="colNormalization" draft="contributed">Razvrščanje brez normaliziranja</type>
-			<type type="no" key="colNumeric" draft="contributed">Ločeno razvrščanje številk</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Razvrščanje simbolov</type>
+			<type type="no" key="colBackwards" draft="contributed">Navadno razvrščanje
+				naglasov</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Razvrščanje v običajnem
+				zaporedju velikih/malih črk</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Razvrščanje ne glede na
+				velike/male črke</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Razvrščanje
+				kana ločeno</type>
+			<type type="no" key="colNormalization" draft="contributed">Razvrščanje brez
+				normaliziranja</type>
+			<type type="no" key="colNumeric" draft="contributed">Ločeno razvrščanje
+				številk</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Razvrščanje
+				simbolov</type>
 			<type type="orya" key="numbers" draft="contributed">Orijske števke</type>
 			<type type="persian" key="calendar" draft="contributed">Perzijski koledar</type>
 			<type type="phonebook" key="collation">razvrščanje po abecedi</type>
-			<type type="phonetic" key="collation" draft="contributed">Fonetično razvrščanje</type>
+			<type type="phonetic" key="collation" draft="contributed">Fonetično
+				razvrščanje</type>
 			<type type="pinyin" key="collation">razvrščanje po sistemu pinjin</type>
-			<type type="primary" key="colStrength" draft="contributed">Razvrščanje samo osnovnih črk</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Razvrščanje po naglasih/velikih črkah/malih črkah/širini/kana</type>
-			<type type="reformed" key="collation" draft="contributed">Reformirano razvrščanje</type>
+			<type type="primary" key="colStrength" draft="contributed">Razvrščanje samo
+				osnovnih črk</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Razvrščanje po
+				naglasih/velikih črkah/malih črkah/širini/kana</type>
+			<type type="reformed" key="collation" draft="contributed">Reformirano
+				razvrščanje</type>
 			<type type="roc" key="calendar">kitajski državni koledar</type>
 			<type type="roman" key="numbers" draft="contributed">Rimske številke</type>
 			<type type="romanlow" key="numbers" draft="contributed">Rimske male številke</type>
 			<type type="search" key="collation" draft="contributed">Splošno iskanje</type>
-			<type type="searchjl" key="collation" draft="contributed">Iskanje po začetnem soglasniku hangul</type>
-			<type type="secondary" key="colStrength" draft="contributed">Razvrščanje naglasov</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Razvrščanje s prezrtjem simbolov</type>
-			<type type="standard" key="collation" draft="contributed">Standardno razvrščanje</type>
+			<type type="searchjl" key="collation" draft="contributed">Iskanje po začetnem
+				soglasniku hangul</type>
+			<type type="secondary" key="colStrength" draft="contributed">Razvrščanje
+				naglasov</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Razvrščanje s
+				prezrtjem simbolov</type>
+			<type type="standard" key="collation" draft="contributed">Standardno
+				razvrščanje</type>
 			<type type="stroke" key="collation">razvrščanje po zaporedju pisanja pismenk</type>
 			<type type="taml" key="numbers" draft="contributed">Tamilske številke</type>
 			<type type="tamldec" key="numbers" draft="contributed">Tamilske števke</type>
 			<type type="telu" key="numbers" draft="contributed">Teluške števke</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Razvrščanje po naglasih/velikih črkah/malih črkah/širini</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Razvrščanje po
+				naglasih/velikih črkah/malih črkah/širini</type>
 			<type type="thai" key="numbers" draft="contributed">Tajske števke</type>
 			<type type="tibt" key="numbers" draft="contributed">Tibetanske števke</type>
-			<type type="traditional" key="collation">razvrščanje po tradicionalnem sistemu</type>
-			<type type="traditional" key="numbers" draft="contributed">Tradicionalne številke</type>
-			<type type="unihan" key="collation" draft="contributed">Razvrščanje koren-poteza</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Razvrščanje velikih črk najprej</type>
+			<type type="traditional" key="collation">razvrščanje po tradicionalnem
+				sistemu</type>
+			<type type="traditional" key="numbers" draft="contributed">Tradicionalne
+				številke</type>
+			<type type="unihan" key="collation" draft="contributed">Razvrščanje
+				koren-poteza</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Razvrščanje velikih
+				črk najprej</type>
 			<type type="vaii" key="numbers" draft="contributed">Številke vai</type>
-			<type type="yes" key="colBackwards" draft="contributed">Obratno razvrščanje naglasov</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Razvrščanje ob upoštevanju velikih/malih črk</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Razvrščanje kana različno</type>
-			<type type="yes" key="colNormalization" draft="contributed">Normalizirano razvrščanje Unicode</type>
-			<type type="yes" key="colNumeric" draft="contributed">Številsko razvrščanje števk</type>
+			<type type="yes" key="colBackwards" draft="contributed">Obratno razvrščanje
+				naglasov</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Razvrščanje ob
+				upoštevanju velikih/malih črk</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Razvrščanje
+				kana različno</type>
+			<type type="yes" key="colNormalization" draft="contributed">Normalizirano
+				razvrščanje Unicode</type>
+			<type type="yes" key="colNumeric" draft="contributed">Številsko razvrščanje
+				števk</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">BGN</transformName>
@@ -1026,7 +1069,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<transformName type="UNGEGN" draft="contributed">UNGEGN</transformName>
 			<transformName type="x-Accents" draft="contributed">Accents</transformName>
 			<transformName type="x-Fullwidth" draft="contributed">Polna širina</transformName>
-			<transformName type="x-Halfwidth" draft="contributed">Polovična širina</transformName>
+			<transformName type="x-Halfwidth" draft="contributed">Polovična
+				širina</transformName>
 			<transformName type="x-Jamo" draft="contributed">Jamo</transformName>
 			<transformName type="x-Pinyin" draft="contributed">Pinjin</transformName>
 			<transformName type="x-Publishing" draft="contributed">Publishing</transformName>
@@ -1043,9 +1087,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a b c č d e f g h i j k l m n o p r s š t u v z ž]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à ă â å ä ā æ ç ć đ é è ĕ ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ö ø ō œ q ú ù ŭ û ü ū w x y ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C Č Ć D Đ E F G H I J K L M N O P Q R S Š T U V W X Y Z Ž]</exemplarCharacters>
+		<exemplarCharacters>[a b c č d e f g h i j k l m n o p r s š t u v z
+			ž]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à ă â å ä ā æ ç ć đ é è
+			ĕ ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ö ø ō œ q ú ù ŭ û ü ū w x y ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C Č Ć D Đ E F G H I J
+			K L M N O P Q R S Š T U V W X Y Z Ž]</exemplarCharacters>
 		<moreInformation draft="contributed">?</moreInformation>
 	</characters>
 	<delimiters>
@@ -1221,11 +1268,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d. MMM – E, d. MMM y</greatestDifference>
 							<greatestDifference id="M">E, d. MMM – E, d. MMM y</greatestDifference>
-							<greatestDifference id="y">E, d. MMM y – E, d. MMM y</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y – E, d. MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="contributed">MMMM–MMMM y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">MMMM y – MMMM y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMMM y – MMMM
+								y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -1652,11 +1701,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d. MMM – E, d. MMM y</greatestDifference>
 							<greatestDifference id="M">E, d. MMM – E, d. MMM y</greatestDifference>
-							<greatestDifference id="y">E, d. MMM y – E, d. MMM y</greatestDifference>
+							<greatestDifference id="y">E, d. MMM y – E, d. MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="contributed">MMMM–MMMM y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">MMMM y – MMMM y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMMM y – MMMM
+								y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -3191,22 +3242,34 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<pattern type="10000000000" count="two" draft="contributed">00 milijardi</pattern>
 					<pattern type="10000000000" count="few" draft="contributed">00 milijarde</pattern>
 					<pattern type="10000000000" count="other" draft="contributed">00 milijard</pattern>
-					<pattern type="100000000000" count="one" draft="contributed">000 milijarda</pattern>
-					<pattern type="100000000000" count="two" draft="contributed">000 milijardi</pattern>
-					<pattern type="100000000000" count="few" draft="contributed">000 milijarde</pattern>
-					<pattern type="100000000000" count="other" draft="contributed">000 milijard</pattern>
+					<pattern type="100000000000" count="one" draft="contributed">000
+						milijarda</pattern>
+					<pattern type="100000000000" count="two" draft="contributed">000
+						milijardi</pattern>
+					<pattern type="100000000000" count="few" draft="contributed">000
+						milijarde</pattern>
+					<pattern type="100000000000" count="other" draft="contributed">000
+						milijard</pattern>
 					<pattern type="1000000000000" count="one" draft="contributed">0 bilijon</pattern>
 					<pattern type="1000000000000" count="two" draft="contributed">0 bilijona</pattern>
 					<pattern type="1000000000000" count="few" draft="contributed">0 bilijoni</pattern>
-					<pattern type="1000000000000" count="other" draft="contributed">0 bilijonov</pattern>
+					<pattern type="1000000000000" count="other" draft="contributed">0
+						bilijonov</pattern>
 					<pattern type="10000000000000" count="one" draft="contributed">00 bilijon</pattern>
-					<pattern type="10000000000000" count="two" draft="contributed">00 bilijona</pattern>
-					<pattern type="10000000000000" count="few" draft="contributed">00 bilijoni</pattern>
-					<pattern type="10000000000000" count="other" draft="contributed">00 bilijonov</pattern>
-					<pattern type="100000000000000" count="one" draft="contributed">000 bilijon</pattern>
-					<pattern type="100000000000000" count="two" draft="contributed">000 bilijona</pattern>
-					<pattern type="100000000000000" count="few" draft="contributed">000 bilijoni(</pattern>
-					<pattern type="100000000000000" count="other" draft="contributed">000 bilijonov</pattern>
+					<pattern type="10000000000000" count="two" draft="contributed">00
+						bilijona</pattern>
+					<pattern type="10000000000000" count="few" draft="contributed">00
+						bilijoni</pattern>
+					<pattern type="10000000000000" count="other" draft="contributed">00
+						bilijonov</pattern>
+					<pattern type="100000000000000" count="one" draft="contributed">000
+						bilijon</pattern>
+					<pattern type="100000000000000" count="two" draft="contributed">000
+						bilijona</pattern>
+					<pattern type="100000000000000" count="few" draft="contributed">000
+						bilijoni(</pattern>
+					<pattern type="100000000000000" count="other" draft="contributed">000
+						bilijonov</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 			<decimalFormatLength type="short">
@@ -3357,10 +3420,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>bosansko-hercegovska konvertibilna marka</displayName>
-				<displayName count="one" draft="contributed">bosansko-hercegovska konvertibilna marka</displayName>
-				<displayName count="two" draft="contributed">bosansko-hercegovski konvertibilni marki</displayName>
-				<displayName count="few" draft="contributed">bosansko-hercegovske konvertibilne marke</displayName>
-				<displayName count="other" draft="contributed">bosansko-hercegovskih konvertibilnih mark</displayName>
+				<displayName count="one" draft="contributed">bosansko-hercegovska
+					konvertibilna marka</displayName>
+				<displayName count="two" draft="contributed">bosansko-hercegovski
+					konvertibilni marki</displayName>
+				<displayName count="few" draft="contributed">bosansko-hercegovske
+					konvertibilne marke</displayName>
+				<displayName count="other" draft="contributed">bosansko-hercegovskih
+					konvertibilnih mark</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>barbadoški dolar</displayName>

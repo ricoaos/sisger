@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -22,13 +23,14 @@
 /**
  * Abstract class definition for all timeserver protocols
  *
- * @category  Zend
- * @package   Zend_TimeSync
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_TimeSync
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_TimeSync_Protocol
 {
+
     /**
      * Holds the current socket connection
      *
@@ -74,7 +76,8 @@ abstract class Zend_TimeSync_Protocol
     /**
      * Abstract method that writes data to to the timeserver
      *
-     * @param  string $data Data to write
+     * @param string $data
+     *            Data to write
      * @return void
      */
     abstract protected function _write($data);
@@ -82,7 +85,8 @@ abstract class Zend_TimeSync_Protocol
     /**
      * Abstract method that extracts the binary data returned from the timeserver
      *
-     * @param  string|array $data Data returned from the timeserver
+     * @param string|array $data
+     *            Data returned from the timeserver
      * @return integer
      */
     abstract protected function _extract($data);
@@ -95,13 +99,11 @@ abstract class Zend_TimeSync_Protocol
      */
     protected function _connect()
     {
-        $socket = @fsockopen($this->_timeserver, $this->_port, $errno, $errstr,
-                             Zend_TimeSync::$options['timeout']);
+        $socket = @fsockopen($this->_timeserver, $this->_port, $errno, $errstr, Zend_TimeSync::$options['timeout']);
         if ($socket === false) {
-            throw new Zend_TimeSync_Exception('could not connect to ' .
-                "'$this->_timeserver' on port '$this->_port', reason: '$errstr'");
+            throw new Zend_TimeSync_Exception('could not connect to ' . "'$this->_timeserver' on port '$this->_port', reason: '$errstr'");
         }
-
+        
         $this->_socket = $socket;
     }
 
@@ -119,7 +121,7 @@ abstract class Zend_TimeSync_Protocol
     /**
      * Return information sent/returned from the timeserver
      *
-     * @return  array
+     * @return array
      */
     public function getInfo()
     {
@@ -127,21 +129,22 @@ abstract class Zend_TimeSync_Protocol
             $this->_write($this->_prepare());
             $timestamp = $this->_extract($this->_read());
         }
-
+        
         return $this->_info;
     }
 
     /**
      * Query this timeserver without using the fallback mechanism
      *
-     * @param  string|Zend_Locale $locale (Optional) Locale
+     * @param string|Zend_Locale $locale
+     *            (Optional) Locale
      * @return Zend_Date
      */
     public function getDate($locale = null)
     {
         $this->_write($this->_prepare());
         $timestamp = $this->_extract($this->_read());
-
+        
         $date = new Zend_Date($this, null, $locale);
         return $date;
     }

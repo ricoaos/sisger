@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -20,13 +21,15 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Feed_Reader
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Feed_Reader
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Feed_Reader_EntryAbstract
 {
+
     /**
      * Feed entry data
      *
@@ -72,15 +75,15 @@ abstract class Zend_Feed_Reader_EntryAbstract
     /**
      * Constructor
      *
-     * @param  DOMElement $entry
-     * @param  int $entryKey
-     * @param  string $type
+     * @param DOMElement $entry            
+     * @param int $entryKey            
+     * @param string $type            
      * @return void
      */
     public function __construct(DOMElement $entry, $entryKey, $type = null)
     {
-        $this->_entry       = $entry;
-        $this->_entryKey    = $entryKey;
+        $this->_entry = $entry;
+        $this->_entryKey = $entryKey;
         $this->_domDocument = $entry->ownerDocument;
         if ($type !== null) {
             $this->_data['type'] = $type;
@@ -154,7 +157,7 @@ abstract class Zend_Feed_Reader_EntryAbstract
      */
     public function getXpath()
     {
-        if (!$this->_xpath) {
+        if (! $this->_xpath) {
             $this->setXpath(new DOMXPath($this->getDomDocument()));
         }
         return $this->_xpath;
@@ -163,7 +166,7 @@ abstract class Zend_Feed_Reader_EntryAbstract
     /**
      * Set the XPath query
      *
-     * @param  DOMXPath $xpath
+     * @param DOMXPath $xpath            
      * @return Zend_Feed_Reader_Entry_EntryAbstract
      */
     public function setXpath(DOMXPath $xpath)
@@ -185,7 +188,7 @@ abstract class Zend_Feed_Reader_EntryAbstract
     /**
      * Return an Extension object with the matching name (postfixed with _Entry)
      *
-     * @param string $name
+     * @param string $name            
      * @return Zend_Feed_Reader_Extension_EntryAbstract
      */
     public function getExtension($name)
@@ -199,8 +202,8 @@ abstract class Zend_Feed_Reader_EntryAbstract
     /**
      * Method overloading: call given method on first extension implementing it
      *
-     * @param  string $method
-     * @param  array $args
+     * @param string $method            
+     * @param array $args            
      * @return mixed
      * @throws Zend_Feed_Exception if no extensions implements the method
      */
@@ -208,12 +211,14 @@ abstract class Zend_Feed_Reader_EntryAbstract
     {
         foreach ($this->_extensions as $extension) {
             if (method_exists($extension, $method)) {
-                return call_user_func_array(array($extension, $method), $args);
+                return call_user_func_array(array(
+                    $extension,
+                    $method
+                ), $args);
             }
         }
         require_once 'Zend/Feed/Exception.php';
-        throw new Zend_Feed_Exception('Method: ' . $method
-            . 'does not exist and could not be located on a registered Extension');
+        throw new Zend_Feed_Exception('Method: ' . $method . 'does not exist and could not be located on a registered Extension');
     }
 
     /**
@@ -230,9 +235,7 @@ abstract class Zend_Feed_Reader_EntryAbstract
                 continue;
             }
             $className = Zend_Feed_Reader::getPluginLoader()->getClassName($extension);
-            $this->_extensions[$extension] = new $className(
-                $this->getElement(), $this->_entryKey, $this->_data['type']
-            );
+            $this->_extensions[$extension] = new $className($this->getElement(), $this->_entryKey, $this->_data['type']);
         }
     }
 }

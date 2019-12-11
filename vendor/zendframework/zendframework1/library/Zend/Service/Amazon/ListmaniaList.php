@@ -21,22 +21,25 @@
  * @version    $Id$
  */
 
-
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_Amazon_ListmaniaList
 {
+
     /**
+     *
      * @var string
      */
     public $ListId;
 
     /**
+     *
      * @var string
      */
     public $ListName;
@@ -44,14 +47,17 @@ class Zend_Service_Amazon_ListmaniaList
     /**
      * Assigns values to properties relevant to ListmaniaList
      *
-     * @param  DOMElement $dom
+     * @param DOMElement $dom            
      * @return void
      */
     public function __construct(DOMElement $dom)
     {
         $xpath = new DOMXPath($dom->ownerDocument);
         $xpath->registerNamespace('az', 'http://webservices.amazon.com/AWSECommerceService/2011-08-01');
-        foreach (array('ListId', 'ListName') as $el) {
+        foreach (array(
+            'ListId',
+            'ListName'
+        ) as $el) {
             $this->$el = (string) $xpath->query("./az:$el/text()", $dom)->item(0)->data;
         }
     }

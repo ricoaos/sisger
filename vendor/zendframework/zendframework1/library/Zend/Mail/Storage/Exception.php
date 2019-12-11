@@ -20,20 +20,21 @@
  * @version    $Id$
  */
 
-
 /**
+ *
  * @see Zend_Mail_Exception
  */
 require_once 'Zend/Mail/Exception.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Mail
+ *
+ * @category Zend
+ * @package Zend_Mail
  * @subpackage Storage
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Mail_Storage_Exception extends Zend_Mail_Exception
-{}
+{
+}
 

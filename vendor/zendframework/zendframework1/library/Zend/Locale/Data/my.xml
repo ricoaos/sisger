@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9862 $"/>
-		<generation date="$Date: 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014) $"/>
-		<language type="my"/>
+		<version number="$Revision: 9862 $" />
+		<generation date="$Date: 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014) $" />
+		<language type="my" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -117,7 +116,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="lv">လက္ဘီအံ</language>
 			<language type="mg">အာလာဂါစီ</language>
 			<language type="mga">အလယ်ပိုင်း အိုင်းရစ်</language>
-			<language type="mi" draft="contributed">မောင်းရီ (နယူးဇီလန်ကျွန်းရှိ ပင်ရင်းတိုင်းရင်းသားလူမျိုး)</language>
+			<language type="mi" draft="contributed">မောင်းရီ (နယူးဇီလန်ကျွန်းရှိ
+				ပင်ရင်းတိုင်းရင်းသားလူမျိုး)</language>
 			<language type="mk">မာစီဒိုနီယံ</language>
 			<language type="ml">မလေးရာလမ်</language>
 			<language type="mn">မွန်ဂိုလီးယန်း</language>
@@ -351,7 +351,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">ဖင်လန်</territory>
 			<territory type="FJ">ဖီဂျီ</territory>
 			<territory type="FK">ဖောက်ကလန် ကျွန်းစု</territory>
-			<territory type="FK" alt="variant">ဖော့ခ်လန်ကျွန်းစု(အီလားစ် မောလ်ဗီနာစ်)</territory>
+			<territory type="FK" alt="variant">ဖော့ခ်လန်ကျွန်းစု(အီလားစ်
+				မောလ်ဗီနာစ်)</territory>
 			<territory type="FM">မိုင်ခရိုနီရှား</territory>
 			<territory type="FO">ဖာရိုး ကျွန်းစုများ</territory>
 			<territory type="FR">ပြင်သစ်</territory>
@@ -370,7 +371,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">ဂူအာဒီလုပ်</territory>
 			<territory type="GQ">အီကွေတာ ဂီရာနာ</territory>
 			<territory type="GR">ဂရိ</territory>
-			<territory type="GS">တောင် ဂျော်ဂျီယာ နှင့် တောင် ဆင်းဒဝစ်ဂျ် ကျွန်းစုများ</territory>
+			<territory type="GS">တောင် ဂျော်ဂျီယာ နှင့် တောင် ဆင်းဒဝစ်ဂျ်
+				ကျွန်းစုများ</territory>
 			<territory type="GT">ဂွာတီမာလာ</territory>
 			<territory type="GU">ဂူအမ်</territory>
 			<territory type="GW">ဂီရာနာ-ဘီစ်စာဥ</territory>
@@ -519,7 +521,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ">တန်ဇန်းနီးယား</territory>
 			<territory type="UA">ယူကရိန်း</territory>
 			<territory type="UG">ယူဂန္ဓာ</territory>
-			<territory type="UM">ယူနိုက်တက်စတိတ် အပြင်ထွက် နေသည့် သေးငယ်သောကျွန်းများ</territory>
+			<territory type="UM">ယူနိုက်တက်စတိတ် အပြင်ထွက် နေသည့်
+				သေးငယ်သောကျွန်းများ</territory>
 			<territory type="US">ယူနိုက်တက်စတိတ်</territory>
 			<territory type="US" alt="short">ယူအက်စ်</territory>
 			<territory type="UY">ဥရုဂွေး</territory>
@@ -621,9 +624,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[\u1036 း \u1037 က ခ ဂ ဃ င စ ဆ ဇ ဈ ဉ ည ဋ ဌ ဍ ဎ ဏ တ ထ ဒ ဓ န ပ ဖ ဗ ဘ မ ယ ျ ရ ြ လ ဝ \u103D သ ဿ ဟ \u103E ဠ အ ဣ ဤ ဥ ဦ ဧ ဩ ဪ ာ ါ \u102D \u102E \u102F \u1030 ေ \u1032 \u1039 \u103A]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[ၐ ၑ ဢ ၒ ၓ ၔ ၕ ဨ ၖ ၗ \u1058 \u1059]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[က ခ ဂ ဃ င စ ဆ ဇ ဈ ဉ ည ဋ ဌ ဍ ဎ ဏ တ ထ ဒ ဓ န ပ ဖ ဗ ဘ မ ယ ရ လ ဝ သ ဟ ဠ အ]</exemplarCharacters>
+		<exemplarCharacters>[\u1036 း \u1037 က ခ ဂ ဃ င စ ဆ ဇ ဈ ဉ ည ဋ ဌ ဍ ဎ ဏ တ
+			ထ ဒ ဓ န ပ ဖ ဗ ဘ မ ယ ျ ရ ြ လ ဝ \u103D သ ဿ ဟ \u103E ဠ အ ဣ ဤ ဥ ဦ ဧ ဩ ဪ ာ
+			ါ \u102D \u102E \u102F \u1030 ေ \u1032 \u1039 \u103A]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[ၐ ၑ ဢ ၒ ၓ ၔ ၕ ဨ ၖ ၗ
+			\u1058 \u1059]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[က ခ ဂ ဃ င စ
+			ဆ ဇ ဈ ဉ ည ဋ ဌ ဍ ဎ ဏ တ ထ ဒ ဓ န ပ ဖ ဗ ဘ မ ယ ရ လ ဝ သ ဟ ဠ အ]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[၊ ။ ‘ ’ “ ”]</exemplarCharacters>
 	</characters>
 	<delimiters>
@@ -765,8 +772,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M">MMM d – MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d">MMM d၊ EEEE – MMM d၊ EEEE</greatestDifference>
-							<greatestDifference id="M">MMM d၊ EEEE – MMM d၊ EEEE</greatestDifference>
+							<greatestDifference id="d">MMM d၊ EEEE – MMM d၊
+								EEEE</greatestDifference>
+							<greatestDifference id="M">MMM d၊ EEEE – MMM d၊
+								EEEE</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">G y-y</greatestDifference>
@@ -781,9 +790,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">G y/M/d – y/M/d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">EEEE၊ G y/M/d – EEEE၊ y/M/d</greatestDifference>
-							<greatestDifference id="M">EEEE၊ G y/M/d – EEEE၊ y/M/d</greatestDifference>
-							<greatestDifference id="y">EEEE၊ G y/M/d – EEEE၊ y/M/d</greatestDifference>
+							<greatestDifference id="d">EEEE၊ G y/M/d – EEEE၊
+								y/M/d</greatestDifference>
+							<greatestDifference id="M">EEEE၊ G y/M/d – EEEE၊
+								y/M/d</greatestDifference>
+							<greatestDifference id="y">EEEE၊ G y/M/d – EEEE၊
+								y/M/d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">G y MMM – y MMM</greatestDifference>
@@ -795,9 +807,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">G y MMM d – y MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">G y၊ MMM d၊ EEEE – MMM d၊ EEEE</greatestDifference>
-							<greatestDifference id="M">G y၊ MMM d၊ EEEE – MMM d၊ EEEE</greatestDifference>
-							<greatestDifference id="y">G y၊ MMM d၊ EEEE – y၊ MMM d၊ EEEE</greatestDifference>
+							<greatestDifference id="d">G y၊ MMM d၊ EEEE – MMM
+								d၊ EEEE</greatestDifference>
+							<greatestDifference id="M">G y၊ MMM d၊ EEEE – MMM
+								d၊ EEEE</greatestDifference>
+							<greatestDifference id="y">G y၊ MMM d၊ EEEE – y၊
+								MMM d၊ EEEE</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">G y MMMM–MMMM</greatestDifference>
@@ -1166,8 +1181,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M">MMM d – MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d">MMM d၊ EEEE – MMM d၊ EEEE</greatestDifference>
-							<greatestDifference id="M">MMM d၊ EEEE – MMM d၊ EEEE</greatestDifference>
+							<greatestDifference id="d">MMM d၊ EEEE – MMM d၊
+								EEEE</greatestDifference>
+							<greatestDifference id="M">MMM d၊ EEEE – MMM d၊
+								EEEE</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y">y-y</greatestDifference>
@@ -1182,9 +1199,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">y/M/d – y/M/d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">EEEE၊ y/M/d – EEEE၊ y/M/d</greatestDifference>
-							<greatestDifference id="M">EEEE၊ y/M/d – EEEE၊ y/M/d</greatestDifference>
-							<greatestDifference id="y">EEEE၊ y/M/d – EEEE၊ y/M/d</greatestDifference>
+							<greatestDifference id="d">EEEE၊ y/M/d – EEEE၊
+								y/M/d</greatestDifference>
+							<greatestDifference id="M">EEEE၊ y/M/d – EEEE၊
+								y/M/d</greatestDifference>
+							<greatestDifference id="y">EEEE၊ y/M/d – EEEE၊
+								y/M/d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">y MMM – y MMM</greatestDifference>
@@ -1196,9 +1216,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">y MMM d – y MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">y၊ MMM d၊ EEEE – MMM d၊ EEEE</greatestDifference>
-							<greatestDifference id="M">y၊ MMM d၊ EEEE – MMM d၊ EEEE</greatestDifference>
-							<greatestDifference id="y">y၊ MMM d၊ EEEE – y၊ MMM d၊ EEEE</greatestDifference>
+							<greatestDifference id="d">y၊ MMM d၊ EEEE – MMM d၊
+								EEEE</greatestDifference>
+							<greatestDifference id="M">y၊ MMM d၊ EEEE – MMM d၊
+								EEEE</greatestDifference>
+							<greatestDifference id="y">y၊ MMM d၊ EEEE – y၊ MMM
+								d၊ EEEE</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">y MMMM–MMMM</greatestDifference>
@@ -3691,8 +3714,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">ကော့စ်တာရီကာ ခိုလုံး</displayName>
 			</currency>
 			<currency type="CUC">
-				<displayName draft="contributed">နိုင်ငျံခားငွေလဲလှယ်နိုင်သော ကျူးဘားပီဆို ငွေ။</displayName>
-				<displayName count="other" draft="contributed">နိုင်ငျံခားငွေလဲလှယ်နိုင်သော ကျူးဘားပီဆို ငွေ။</displayName>
+				<displayName draft="contributed">နိုင်ငျံခားငွေလဲလှယ်နိုင်သော
+					ကျူးဘားပီဆို ငွေ။</displayName>
+				<displayName count="other" draft="contributed">နိုင်ငျံခားငွေလဲလှယ်နိုင်သော
+					ကျူးဘားပီဆို ငွေ။</displayName>
 			</currency>
 			<currency type="CUP">
 				<displayName>ကျူးဘား ပီဆို</displayName>

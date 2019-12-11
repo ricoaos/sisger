@@ -19,18 +19,23 @@
  * @version    $Id: AuthorizedRequest.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-/** Zend_Oauth_Token */
+/**
+ * Zend_Oauth_Token
+ */
 require_once 'Zend/Oauth/Token.php';
 
 /**
- * @category   Zend
- * @package    Zend_Oauth
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Oauth
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Oauth_Token_AuthorizedRequest extends Zend_Oauth_Token
 {
+
     /**
+     *
      * @var array
      */
     protected $_data = array();
@@ -38,8 +43,8 @@ class Zend_Oauth_Token_AuthorizedRequest extends Zend_Oauth_Token
     /**
      * Constructor
      *
-     * @param  null|array $data
-     * @param  null|Zend_Oauth_Http_Utility $utility
+     * @param null|array $data            
+     * @param null|Zend_Oauth_Http_Utility $utility            
      * @return void
      */
     public function __construct(array $data = null, Zend_Oauth_Http_Utility $utility = null)
@@ -54,7 +59,7 @@ class Zend_Oauth_Token_AuthorizedRequest extends Zend_Oauth_Token
         if ($utility !== null) {
             $this->_httpUtility = $utility;
         } else {
-            $this->_httpUtility = new Zend_Oauth_Http_Utility;
+            $this->_httpUtility = new Zend_Oauth_Http_Utility();
         }
     }
 
@@ -75,9 +80,7 @@ class Zend_Oauth_Token_AuthorizedRequest extends Zend_Oauth_Token
      */
     public function isValid()
     {
-        if (isset($this->_params[self::TOKEN_PARAM_KEY])
-            && !empty($this->_params[self::TOKEN_PARAM_KEY])
-        ) {
+        if (isset($this->_params[self::TOKEN_PARAM_KEY]) && ! empty($this->_params[self::TOKEN_PARAM_KEY])) {
             return true;
         }
         return false;

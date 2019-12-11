@@ -21,6 +21,7 @@
  */
 
 /**
+ *
  * @see Zend_Ldap_Node_RootDse
  */
 require_once 'Zend/Ldap/Node/RootDse.php';
@@ -29,18 +30,20 @@ require_once 'Zend/Ldap/Node/RootDse.php';
  * Zend_Ldap_Node_RootDse provides a simple data-container for the RootDSE node of
  * a Novell eDirectory server.
  *
- * @category   Zend
- * @package    Zend_Ldap
+ * @category Zend
+ * @package Zend_Ldap
  * @subpackage RootDSE
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Ldap_Node_RootDse_eDirectory extends Zend_Ldap_Node_RootDse
 {
+
     /**
      * Determines if the extension is supported
      *
-     * @param  string|array $oids oid(s) to check
+     * @param string|array $oids
+     *            oid(s) to check
      * @return boolean
      */
     public function supportsExtension($oids)

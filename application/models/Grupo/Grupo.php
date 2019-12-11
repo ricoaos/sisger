@@ -2,7 +2,12 @@
 
 class Model_Grupo_Grupo extends Zend_Db_Table
 {
-	protected $_schema  = 'grupo';
-	protected $_name    = 'grupo';
-	protected $_primary = array('id_grupo');
+
+    protected $_schema = 'grupo';
+
+    protected $_name = 'grupo';
+
+    protected $_primary = array(
+        'id_grupo'
+    );
 }

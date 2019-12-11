@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -20,17 +21,17 @@
  * @version    $Id$
  */
 
-
 /**
- * @category   Zend
- * @package    Zend_Mail
+ *
+ * @category Zend
+ * @package Zend_Mail
  * @subpackage Storage
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-
 interface Zend_Mail_Message_Interface
 {
+
     /**
      * return toplines as found after headers
      *
@@ -41,7 +42,8 @@ interface Zend_Mail_Message_Interface
     /**
      * check if flag is set
      *
-     * @param mixed $flag a flag name, use constants defined in Zend_Mail_Storage
+     * @param mixed $flag
+     *            a flag name, use constants defined in Zend_Mail_Storage
      * @return bool true if set, otherwise false
      */
     public function hasFlag($flag);

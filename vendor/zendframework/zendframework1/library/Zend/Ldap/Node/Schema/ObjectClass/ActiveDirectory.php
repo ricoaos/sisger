@@ -21,10 +21,12 @@
  */
 
 /**
+ *
  * @see Zend_Ldap_Node_Schema_Item
  */
 require_once 'Zend/Ldap/Node/Schema/Item.php';
 /**
+ *
  * @see Zend_Ldap_Node_Schema_ObjectClass_Interface
  */
 require_once 'Zend/Ldap/Node/Schema/ObjectClass/Interface.php';
@@ -33,15 +35,15 @@ require_once 'Zend/Ldap/Node/Schema/ObjectClass/Interface.php';
  * Zend_Ldap_Node_Schema_ObjectClass_ActiveDirectory provides access to the objectClass
  * schema information on an Active Directory server.
  *
- * @category   Zend
- * @package    Zend_Ldap
+ * @category Zend
+ * @package Zend_Ldap
  * @subpackage Schema
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Ldap_Node_Schema_ObjectClass_ActiveDirectory extends Zend_Ldap_Node_Schema_Item
-    implements Zend_Ldap_Node_Schema_ObjectClass_Interface
+class Zend_Ldap_Node_Schema_ObjectClass_ActiveDirectory extends Zend_Ldap_Node_Schema_Item implements Zend_Ldap_Node_Schema_ObjectClass_Interface
 {
+
     /**
      * Gets the objectClass name
      *
@@ -58,9 +60,7 @@ class Zend_Ldap_Node_Schema_ObjectClass_ActiveDirectory extends Zend_Ldap_Node_S
      * @return string
      */
     public function getOid()
-    {
-
-    }
+    {}
 
     /**
      * Gets the attributes that this objectClass must contain
@@ -68,9 +68,7 @@ class Zend_Ldap_Node_Schema_ObjectClass_ActiveDirectory extends Zend_Ldap_Node_S
      * @return array
      */
     public function getMustContain()
-    {
-
-    }
+    {}
 
     /**
      * Gets the attributes that this objectClass may contain
@@ -78,9 +76,7 @@ class Zend_Ldap_Node_Schema_ObjectClass_ActiveDirectory extends Zend_Ldap_Node_S
      * @return array
      */
     public function getMayContain()
-    {
-
-    }
+    {}
 
     /**
      * Gets the objectClass description
@@ -88,9 +84,7 @@ class Zend_Ldap_Node_Schema_ObjectClass_ActiveDirectory extends Zend_Ldap_Node_S
      * @return string
      */
     public function getDescription()
-    {
-
-    }
+    {}
 
     /**
      * Gets the objectClass type
@@ -98,9 +92,7 @@ class Zend_Ldap_Node_Schema_ObjectClass_ActiveDirectory extends Zend_Ldap_Node_S
      * @return integer
      */
     public function getType()
-    {
-
-    }
+    {}
 
     /**
      * Returns the parent objectClasses of this class.
@@ -109,7 +101,5 @@ class Zend_Ldap_Node_Schema_ObjectClass_ActiveDirectory extends Zend_Ldap_Node_S
      * @return array
      */
     public function getParentClasses()
-    {
-
-    }
+    {}
 }

@@ -20,19 +20,22 @@
  * @version    $Id$
  */
 
-/** Zend_Amf_Response */
+/**
+ * Zend_Amf_Response
+ */
 require_once 'Zend/Amf/Response.php';
 
 /**
  * Creates the proper http headers and send the serialized AMF stream to standard out.
  *
- * @package    Zend_Amf
+ * @package Zend_Amf
  * @subpackage Response
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Amf_Response_Http extends Zend_Amf_Response
 {
+
     /**
      * Create the application response header for AMF and sends the serialized AMF string
      *
@@ -40,7 +43,7 @@ class Zend_Amf_Response_Http extends Zend_Amf_Response
      */
     public function getResponse()
     {
-        if (!headers_sent()) {
+        if (! headers_sent()) {
             if ($this->isIeOverSsl()) {
                 header('Cache-Control: cache, must-revalidate');
                 header('Pragma: public');
@@ -57,17 +60,17 @@ class Zend_Amf_Response_Http extends Zend_Amf_Response
     protected function isIeOverSsl()
     {
         $ssl = isset($_SERVER['HTTPS']) ? $_SERVER['HTTPS'] : false;
-        if (!$ssl || ($ssl == 'off')) {
+        if (! $ssl || ($ssl == 'off')) {
             // IIS reports "off", whereas other browsers simply don't populate
             return false;
         }
-
-        $ua  = $_SERVER['HTTP_USER_AGENT'];
-        if (!preg_match('/; MSIE \d+\.\d+;/', $ua)) {
+        
+        $ua = $_SERVER['HTTP_USER_AGENT'];
+        if (! preg_match('/; MSIE \d+\.\d+;/', $ua)) {
             // Not MicroSoft Internet Explorer
             return false;
         }
-
+        
         return true;
     }
 }

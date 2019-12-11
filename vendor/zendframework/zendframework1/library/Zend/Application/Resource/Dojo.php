@@ -21,25 +21,26 @@
  */
 
 /**
+ *
  * @see Zend_Application_Resource_ResourceAbstract
  */
 require_once 'Zend/Application/Resource/ResourceAbstract.php';
 
-
 /**
  * Resource for settings Dojo options
  *
- * @uses       Zend_Application_Resource_ResourceAbstract
- * @category   Zend
- * @package    Zend_Application
+ * @uses Zend_Application_Resource_ResourceAbstract
+ * @category Zend
+ * @package Zend_Application
  * @subpackage Resource
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Application_Resource_Dojo
-    extends Zend_Application_Resource_ResourceAbstract
+class Zend_Application_Resource_Dojo extends Zend_Application_Resource_ResourceAbstract
 {
+
     /**
+     *
      * @var Zend_Dojo_View_Helper_Dojo_Container
      */
     protected $_dojo;
@@ -64,13 +65,13 @@ class Zend_Application_Resource_Dojo
         if (null === $this->_dojo) {
             $this->getBootstrap()->bootstrap('view');
             $view = $this->getBootstrap()->view;
-
+            
             Zend_Dojo::enableView($view);
             $view->dojo()->setOptions($this->getOptions());
-
+            
             $this->_dojo = $view->dojo();
         }
-
+        
         return $this->_dojo;
     }
 }

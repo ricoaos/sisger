@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -23,14 +24,15 @@
 /**
  * Helper for returning the current server URL (optionally with request URI)
  *
- * @category   Zend
- * @package    Zend_View
+ * @category Zend
+ * @package Zend_View
  * @subpackage Helper
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_View_Helper_ServerUrl
 {
+
     /**
      * Scheme
      *
@@ -59,18 +61,17 @@ class Zend_View_Helper_ServerUrl
                 $scheme = 'https';
                 break;
             default:
-            $scheme = 'http';
+                $scheme = 'http';
         }
         $this->setScheme($scheme);
-
-        if (isset($_SERVER['HTTP_HOST']) && !empty($_SERVER['HTTP_HOST'])) {
+        
+        if (isset($_SERVER['HTTP_HOST']) && ! empty($_SERVER['HTTP_HOST'])) {
             $this->setHost($_SERVER['HTTP_HOST']);
         } else if (isset($_SERVER['SERVER_NAME'], $_SERVER['SERVER_PORT'])) {
             $name = $_SERVER['SERVER_NAME'];
             $port = $_SERVER['SERVER_PORT'];
-
-            if (($scheme == 'http' && $port == 80) ||
-                ($scheme == 'https' && $port == 443)) {
+            
+            if (($scheme == 'http' && $port == 80) || ($scheme == 'https' && $port == 443)) {
                 $this->setHost($name);
             } else {
                 $this->setHost($name . ':' . $port);
@@ -82,12 +83,13 @@ class Zend_View_Helper_ServerUrl
      * View helper entry point:
      * Returns the current host's URL like http://site.com
      *
-     * @param  string|boolean $requestUri  [optional] if true, the request URI
-     *                                     found in $_SERVER will be appended
-     *                                     as a path. If a string is given, it
-     *                                     will be appended as a path. Default
-     *                                     is to not append any path.
-     * @return string                      server url
+     * @param string|boolean $requestUri
+     *            [optional] if true, the request URI
+     *            found in $_SERVER will be appended
+     *            as a path. If a string is given, it
+     *            will be appended as a path. Default
+     *            is to not append any path.
+     * @return string server url
      */
     public function serverUrl($requestUri = null)
     {
@@ -98,14 +100,14 @@ class Zend_View_Helper_ServerUrl
         } else {
             $path = '';
         }
-
+        
         return $this->getScheme() . '://' . $this->getHost() . $path;
     }
 
     /**
      * Returns host
      *
-     * @return string  host
+     * @return string host
      */
     public function getHost()
     {
@@ -115,8 +117,9 @@ class Zend_View_Helper_ServerUrl
     /**
      * Sets host
      *
-     * @param  string $host                new host
-     * @return Zend_View_Helper_ServerUrl  fluent interface, returns self
+     * @param string $host
+     *            new host
+     * @return Zend_View_Helper_ServerUrl fluent interface, returns self
      */
     public function setHost($host)
     {
@@ -127,7 +130,7 @@ class Zend_View_Helper_ServerUrl
     /**
      * Returns scheme (typically http or https)
      *
-     * @return string  scheme (typically http or https)
+     * @return string scheme (typically http or https)
      */
     public function getScheme()
     {
@@ -137,8 +140,9 @@ class Zend_View_Helper_ServerUrl
     /**
      * Sets scheme (typically http or https)
      *
-     * @param  string $scheme              new scheme (typically http or https)
-     * @return Zend_View_Helper_ServerUrl  fluent interface, returns self
+     * @param string $scheme
+     *            new scheme (typically http or https)
+     * @return Zend_View_Helper_ServerUrl fluent interface, returns self
      */
     public function setScheme($scheme)
     {

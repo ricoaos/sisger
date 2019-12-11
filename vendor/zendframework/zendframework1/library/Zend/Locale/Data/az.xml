@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="az"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="az" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -923,10 +922,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a b c ç d e ə f g ğ h x ı i İ j k q l m n o ö p r s ş t u ü v y z]</exemplarCharacters>
+		<exemplarCharacters>[a b c ç d e ə f g ğ h x ı i İ j k q l m n o ö p r
+			s ş t u ü v y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[w]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[A B C Ç D E Ə F G Ğ H X I İ J K Q L M N O Ö P R S Ş T U Ü V Y Z W]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[A B C Ç D E
+			Ə F G Ğ H X I İ J K Q L M N O Ö P R S Ş T U Ü V Y Z W]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1051,9 +1053,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">GGGGG dd/MM/y – dd/MM/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">GGGGG dd/MM/y , E – dd/MM/y, E</greatestDifference>
-							<greatestDifference id="M">GGGGG dd/MM/y , E – dd/MM/y, E</greatestDifference>
-							<greatestDifference id="y">GGGGG dd/MM/y , E – dd/MM/y, E</greatestDifference>
+							<greatestDifference id="d">GGGGG dd/MM/y , E –
+								dd/MM/y, E</greatestDifference>
+							<greatestDifference id="M">GGGGG dd/MM/y , E –
+								dd/MM/y, E</greatestDifference>
+							<greatestDifference id="y">GGGGG dd/MM/y , E –
+								dd/MM/y, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">G MMM–MMM y</greatestDifference>
@@ -1067,7 +1072,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">G d MMM y, E – d MMM, E</greatestDifference>
 							<greatestDifference id="M">G d MMM y, E – d MMM, E</greatestDifference>
-							<greatestDifference id="y">G d MMM y, E – d MMM y, E</greatestDifference>
+							<greatestDifference id="y">G d MMM y, E – d MMM y,
+								E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">G MMMM y –MMMM</greatestDifference>

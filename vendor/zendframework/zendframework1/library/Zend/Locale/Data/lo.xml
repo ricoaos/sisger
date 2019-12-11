@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="lo"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="lo" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -1000,7 +999,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="1606NICT">ປາຍຍຸກກາງຝຣັ່ງເຖິງປີ ຄສ 1606</variant>
 			<variant type="1694ACAD">ຕອນຕົ້ນຍຸກໃໝ່ຝຣັ່ງ</variant>
 			<variant type="1959ACAD">ວິຊາການ</variant>
-			<variant type="ALALC97">ການຖອດອັກສອນເປັນອັກສອນໂຣມັນຕາມເກນຂອງສະມາຄົມຫ້ອງສະໝຸດອາເມລິກາແລະຫ້ອງສະໝຸດລັດຖະສະພາ ສະບັບພິມປີ 1997</variant>
+			<variant type="ALALC97">ການຖອດອັກສອນເປັນອັກສອນໂຣມັນຕາມເກນຂອງສະມາຄົມຫ້ອງສະໝຸດອາເມລິກາແລະຫ້ອງສະໝຸດລັດຖະສະພາ
+				ສະບັບພິມປີ 1997</variant>
 			<variant type="ALUKU">ພາສາພື້ນເມືອງອລູຄຸ</variant>
 			<variant type="AREVELA">ອາເມເນຍຕາເວັນອອກ</variant>
 			<variant type="AREVMDA">ອາເມເນຍຕາເວັນຕົກ</variant>
@@ -1149,9 +1149,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[\u0EC8 \u0EC9 \u0ECA \u0ECB \u0ECC \u0ECD ໆ ກ ຂ ຄ ງ ຈ ສ ຊ ຍ ດ ຕ ຖ ທ ນ ບ ປ ຜ ຝ ພ ຟ ມ ຢ ຣ ລ ວ ຫ ໜ ໝ ອ ຮ ຯ ະ \u0EB1 າ ຳ \u0EB4 \u0EB5 \u0EB6 \u0EB7 \u0EB8 \u0EB9 \u0EBB \u0EBC ຽ ເ ແ ໂ ໃ ໄ]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[\u200B ໐ ໑ ໒ ໓ ໔ ໕ ໖ ໗ ໘ ໙]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[ກ ຂ ຄ ງ ຈ ສ ຊ ຍ ດ ຕ ຖ ທ ນ ບ ປ ຜ ຝ ພ ຟ ມ ຢ ຣ ລ ວ ຫ {ຫງ} {ຫຍ} {ຫນ} {ຫມ} {ຫລ} {ຫວ} ອ ຮ]</exemplarCharacters>
+		<exemplarCharacters>[\u0EC8 \u0EC9 \u0ECA \u0ECB \u0ECC \u0ECD ໆ ກ ຂ ຄ
+			ງ ຈ ສ ຊ ຍ ດ ຕ ຖ ທ ນ ບ ປ ຜ ຝ ພ ຟ ມ ຢ ຣ ລ ວ ຫ ໜ ໝ ອ ຮ ຯ ະ \u0EB1 າ ຳ
+			\u0EB4 \u0EB5 \u0EB6 \u0EB7 \u0EB8 \u0EB9 \u0EBB \u0EBC ຽ ເ ແ ໂ ໃ ໄ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u200B ໐ ໑ ໒ ໓ ໔ ໕ ໖ ໗ ໘
+			໙]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[ກ ຂ ຄ ງ ຈ ສ
+			ຊ ຍ ດ ຕ ຖ ທ ນ ບ ປ ຜ ຝ ພ ຟ ມ ຢ ຣ ລ ວ ຫ {ຫງ} {ຫຍ} {ຫນ} {ຫມ} {ຫລ} {ຫວ} ອ
+			ຮ]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1736,9 +1741,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">G y-MM-dd – y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, G y-MM-dd – E, y-MM-dd</greatestDifference>
-							<greatestDifference id="M">E, G y-MM-dd – E, y-MM-dd</greatestDifference>
-							<greatestDifference id="y">E, G y-MM-dd – E, y-MM-dd</greatestDifference>
+							<greatestDifference id="d">E, G y-MM-dd – E,
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="M">E, G y-MM-dd – E,
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="y">E, G y-MM-dd – E,
+								y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">G y-MM – MM</greatestDifference>
@@ -1750,9 +1758,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">G y-MM-dd – y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, G y-MM-dd – E, y-MM-dd</greatestDifference>
-							<greatestDifference id="M">E, G y-MM-dd – E, y-MM-dd</greatestDifference>
-							<greatestDifference id="y">E, G y-MM-dd – E, y-MM-dd</greatestDifference>
+							<greatestDifference id="d">E, G y-MM-dd – E,
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="M">E, G y-MM-dd – E,
+								y-MM-dd</greatestDifference>
+							<greatestDifference id="y">E, G y-MM-dd – E,
+								y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">G y-MM – MM</greatestDifference>

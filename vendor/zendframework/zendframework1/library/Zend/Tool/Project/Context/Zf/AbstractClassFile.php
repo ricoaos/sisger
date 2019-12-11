@@ -31,10 +31,10 @@ require_once 'Zend/Tool/Project/Context/Filesystem/File.php';
  * A profile is a hierarchical set of resources that keep track of
  * items within a specific project.
  *
- * @category   Zend
- * @package    Zend_Tool
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Tool
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Tool_Project_Context_Zf_AbstractClassFile extends Zend_Tool_Project_Context_Filesystem_File
 {
@@ -42,12 +42,12 @@ abstract class Zend_Tool_Project_Context_Zf_AbstractClassFile extends Zend_Tool_
     /**
      * getFullClassName()
      *
-     * @param string $localClassName
-     * @param string $classContextName
+     * @param string $localClassName            
+     * @param string $classContextName            
      */
     public function getFullClassName($localClassName, $classContextName = null)
     {
-
+        
         // find the ApplicationDirectory OR ModuleDirectory
         $currentResource = $this->_resource;
         do {
@@ -56,11 +56,10 @@ abstract class Zend_Tool_Project_Context_Zf_AbstractClassFile extends Zend_Tool_
                 $containingResource = $currentResource;
                 break;
             }
-        } while ($currentResource instanceof Zend_Tool_Project_Profile_Resource
-            && $currentResource = $currentResource->getParentResource());
-
+        } while ($currentResource instanceof Zend_Tool_Project_Profile_Resource && $currentResource = $currentResource->getParentResource());
+        
         $fullClassName = '';
-
+        
         // go find the proper prefix
         if (isset($containingResource)) {
             if ($containingResource->getName() == 'ApplicationDirectory') {
@@ -72,13 +71,12 @@ abstract class Zend_Tool_Project_Context_Zf_AbstractClassFile extends Zend_Tool_
                 $fullClassName = $prefix;
             }
         }
-
+        
         if ($classContextName) {
             $fullClassName .= rtrim($classContextName, '_') . '_';
         }
         $fullClassName .= $localClassName;
-
+        
         return $fullClassName;
     }
-
 }

@@ -21,22 +21,23 @@
  * @version    $Id: LinkSet.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-
 /**
+ *
  * @see Zend_Service_Simpy_Link
  */
 require_once 'Zend/Service/Simpy/Link.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Simpy
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_Simpy_LinkSet implements IteratorAggregate
 {
+
     /**
      * List of links
      *
@@ -47,7 +48,8 @@ class Zend_Service_Simpy_LinkSet implements IteratorAggregate
     /**
      * Constructor to initialize the object with data
      *
-     * @param  DOMDocument $doc Parsed response from a GetLinks operation
+     * @param DOMDocument $doc
+     *            Parsed response from a GetLinks operation
      * @return void
      */
     public function __construct(DOMDocument $doc)
@@ -55,8 +57,8 @@ class Zend_Service_Simpy_LinkSet implements IteratorAggregate
         $xpath = new DOMXPath($doc);
         $list = $xpath->query('//links/link');
         $this->_links = array();
-
-        for ($x = 0; $x < $list->length; $x++) {
+        
+        for ($x = 0; $x < $list->length; $x ++) {
             $this->_links[$x] = new Zend_Service_Simpy_Link($list->item($x));
         }
     }

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9287 $"/>
-		<generation date="$Date: 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013) $"/>
-		<language type="ebu"/>
+		<version number="$Revision: 9287 $" />
+		<generation date="$Date: 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013) $" />
+		<language type="ebu" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -223,7 +222,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="PM">Santapieri na Mikeloni</territory>
 			<territory type="PN">Pitkairni</territory>
 			<territory type="PR">Pwetoriko</territory>
-			<territory type="PS">Ukingo wa Magharibi na Ukanda wa Gaza wa Palestina</territory>
+			<territory type="PS">Ukingo wa Magharibi na Ukanda wa Gaza wa
+				Palestina</territory>
 			<territory type="PT">Ureno</territory>
 			<territory type="PW">Palau</territory>
 			<territory type="PY">Paragwai</territory>
@@ -287,8 +287,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</territories>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a b c d e f g h i ĩ j k l m n o p q r s t u ũ v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I Ĩ J K L M N O P Q R S T U Ũ V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters>[a b c d e f g h i ĩ j k l m n o p q r s t u ũ v w
+			x y z]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I Ĩ J K L
+			M N O P Q R S T U Ũ V W X Y Z]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart>“</quotationStart>

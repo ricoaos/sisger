@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -22,13 +23,14 @@
 /**
  * Zend_Ldap_Collection wraps a list of LDAP entries.
  *
- * @category   Zend
- * @package    Zend_Ldap
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Ldap
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Ldap_Collection implements Iterator, Countable
 {
+
     /**
      * Iterator
      *
@@ -41,7 +43,7 @@ class Zend_Ldap_Collection implements Iterator, Countable
      *
      * @var integer
      */
-    protected $_current = -1;
+    protected $_current = - 1;
 
     /**
      * Container for item caching to speed up multiple iterations
@@ -53,7 +55,7 @@ class Zend_Ldap_Collection implements Iterator, Countable
     /**
      * Constructor.
      *
-     * @param Zend_Ldap_Collection_Iterator_Default $iterator
+     * @param Zend_Ldap_Collection_Iterator_Default $iterator            
      */
     public function __construct(Zend_Ldap_Collection_Iterator_Default $iterator)
     {
@@ -138,7 +140,7 @@ class Zend_Ldap_Collection implements Iterator, Countable
             if ($this->_current < 0) {
                 $this->rewind();
             }
-            if (!array_key_exists($this->_current, $this->_cache)) {
+            if (! array_key_exists($this->_current, $this->_cache)) {
                 $current = $this->_iterator->current();
                 if ($current === null) {
                     return null;
@@ -154,7 +156,7 @@ class Zend_Ldap_Collection implements Iterator, Countable
     /**
      * Creates the data structure for the given entry data
      *
-     * @param  array $data
+     * @param array $data            
      * @return array
      */
     protected function _createEntry(array $data)
@@ -206,7 +208,7 @@ class Zend_Ldap_Collection implements Iterator, Countable
     public function next()
     {
         $this->_iterator->next();
-        $this->_current++;
+        $this->_current ++;
     }
 
     /**

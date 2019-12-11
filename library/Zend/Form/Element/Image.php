@@ -19,35 +19,41 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_Form_Element_Xhtml */
+/**
+ * Zend_Form_Element_Xhtml
+ */
 require_once 'Zend/Form/Element/Xhtml.php';
 
 /**
  * Image form element
  *
- * @category   Zend
- * @package    Zend_Form
+ * @category Zend
+ * @package Zend_Form
  * @subpackage Element
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id: Image.php 23871 2011-04-23 22:40:16Z ramon $
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id: Image.php 23871 2011-04-23 22:40:16Z ramon $
  */
 class Zend_Form_Element_Image extends Zend_Form_Element_Xhtml
 {
+
     /**
      * What view helper to use when using view helper decorator
+     * 
      * @var string
      */
     public $helper = 'formImage';
 
     /**
      * Image source
+     * 
      * @var string
      */
     public $src;
 
     /**
      * Image value
+     * 
      * @var mixed
      */
     protected $_imageValue;
@@ -62,14 +68,18 @@ class Zend_Form_Element_Image extends Zend_Form_Element_Xhtml
         if ($this->loadDefaultDecoratorsIsDisabled()) {
             return $this;
         }
-
+        
         $decorators = $this->getDecorators();
         if (empty($decorators)) {
             $this->addDecorator('Tooltip')
-                 ->addDecorator('Image')
-                 ->addDecorator('Errors')
-                 ->addDecorator('HtmlTag', array('tag' => 'dd'))
-                 ->addDecorator('Label', array('tag' => 'dt'));
+                ->addDecorator('Image')
+                ->addDecorator('Errors')
+                ->addDecorator('HtmlTag', array(
+                'tag' => 'dd'
+            ))
+                ->addDecorator('Label', array(
+                'tag' => 'dt'
+            ));
         }
         return $this;
     }
@@ -77,7 +87,7 @@ class Zend_Form_Element_Image extends Zend_Form_Element_Xhtml
     /**
      * Set image path
      *
-     * @param  string $path
+     * @param string $path            
      * @return Zend_Form_Element_Image
      */
     public function setImage($path)
@@ -99,7 +109,7 @@ class Zend_Form_Element_Image extends Zend_Form_Element_Xhtml
     /**
      * Set image value to use when submitted
      *
-     * @param  mixed $value
+     * @param mixed $value            
      * @return Zend_Form_Element_Image
      */
     public function setImageValue($value)
@@ -128,5 +138,4 @@ class Zend_Form_Element_Image extends Zend_Form_Element_Xhtml
         $imageValue = $this->getImageValue();
         return ((null !== $imageValue) && ($this->getValue() == $imageValue));
     }
-
 }

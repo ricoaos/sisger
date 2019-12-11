@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9814 $"/>
-		<generation date="$Date: 2014-02-26 15:19:38 -0600 (Wed, 26 Feb 2014) $"/>
-		<language type="sv"/>
-		<territory type="FI"/>
+		<version number="$Revision: 9814 $" />
+		<generation date="$Date: 2014-02-26 15:19:38 -0600 (Wed, 26 Feb 2014) $" />
+		<language type="sv" />
+		<territory type="FI" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -65,20 +64,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="timezone" draft="contributed">tidszon</key>
 		</keys>
 		<types>
-			<type type="big5han" key="collation" draft="unconfirmed">kinesiska i big5-sorteringsordning</type>
+			<type type="big5han" key="collation" draft="unconfirmed">kinesiska i
+				big5-sorteringsordning</type>
 			<type type="buddhist" key="calendar" draft="contributed">buddhistisk kalender</type>
-			<type type="gb2312han" key="collation" draft="unconfirmed">kinesiska i gb2312-sorteringsordning</type>
-			<type type="pinyin" key="collation" draft="unconfirmed">kinesiska i pinyin-sorteringsordning</type>
-			<type type="stroke" key="collation" draft="unconfirmed">kinesiska i strecksorteringsordning</type>
-			<type type="traditional" key="collation" draft="unconfirmed">traditionell sorteringsordning</type>
+			<type type="gb2312han" key="collation" draft="unconfirmed">kinesiska i
+				gb2312-sorteringsordning</type>
+			<type type="pinyin" key="collation" draft="unconfirmed">kinesiska i
+				pinyin-sorteringsordning</type>
+			<type type="stroke" key="collation" draft="unconfirmed">kinesiska i
+				strecksorteringsordning</type>
+			<type type="traditional" key="collation" draft="unconfirmed">traditionell
+				sorteringsordning</type>
 		</types>
 		<measurementSystemNames>
-			<measurementSystemName type="UK" draft="contributed">engelska enheter (UK)</measurementSystemName>
-			<measurementSystemName type="US" draft="contributed">engelska enheter (USA)</measurementSystemName>
+			<measurementSystemName type="UK" draft="contributed">engelska
+				enheter (UK)</measurementSystemName>
+			<measurementSystemName type="US" draft="contributed">engelska
+				enheter (USA)</measurementSystemName>
 		</measurementSystemNames>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters draft="unconfirmed">[a à b c d e é f g h i j k l m n o p q r s t u v x y z å ä ö]</exemplarCharacters>
+		<exemplarCharacters draft="unconfirmed">[a à b c d e é f g h i j
+			k l m n o p q r s t u v x y z å ä ö]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[ã ç ë í ñ ó š ÿ ü ž]</exemplarCharacters>
 	</characters>
 	<dates>

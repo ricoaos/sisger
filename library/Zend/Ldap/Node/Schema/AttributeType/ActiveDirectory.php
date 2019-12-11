@@ -21,10 +21,12 @@
  */
 
 /**
+ *
  * @see Zend_Ldap_Node_Schema_Item
  */
 require_once 'Zend/Ldap/Node/Schema/Item.php';
 /**
+ *
  * @see Zend_Ldap_Node_Schema_AttributeType_Interface
  */
 require_once 'Zend/Ldap/Node/Schema/AttributeType/Interface.php';
@@ -33,15 +35,15 @@ require_once 'Zend/Ldap/Node/Schema/AttributeType/Interface.php';
  * Zend_Ldap_Node_Schema_AttributeType_ActiveDirectory provides access to the attribute type
  * schema information on an Active Directory server.
  *
- * @category   Zend
- * @package    Zend_Ldap
+ * @category Zend
+ * @package Zend_Ldap
  * @subpackage Schema
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Ldap_Node_Schema_AttributeType_ActiveDirectory extends Zend_Ldap_Node_Schema_Item
-    implements Zend_Ldap_Node_Schema_AttributeType_Interface
+class Zend_Ldap_Node_Schema_AttributeType_ActiveDirectory extends Zend_Ldap_Node_Schema_Item implements Zend_Ldap_Node_Schema_AttributeType_Interface
 {
+
     /**
      * Gets the attribute name
      *
@@ -58,9 +60,7 @@ class Zend_Ldap_Node_Schema_AttributeType_ActiveDirectory extends Zend_Ldap_Node
      * @return string
      */
     public function getOid()
-    {
-
-    }
+    {}
 
     /**
      * Gets the attribute syntax
@@ -68,9 +68,7 @@ class Zend_Ldap_Node_Schema_AttributeType_ActiveDirectory extends Zend_Ldap_Node
      * @return string
      */
     public function getSyntax()
-    {
-
-    }
+    {}
 
     /**
      * Gets the attribute maximum length
@@ -78,9 +76,7 @@ class Zend_Ldap_Node_Schema_AttributeType_ActiveDirectory extends Zend_Ldap_Node
      * @return int|null
      */
     public function getMaxLength()
-    {
-
-    }
+    {}
 
     /**
      * Returns if the attribute is single-valued.
@@ -88,9 +84,7 @@ class Zend_Ldap_Node_Schema_AttributeType_ActiveDirectory extends Zend_Ldap_Node
      * @return boolean
      */
     public function isSingleValued()
-    {
-
-    }
+    {}
 
     /**
      * Gets the attribute description
@@ -98,7 +92,5 @@ class Zend_Ldap_Node_Schema_AttributeType_ActiveDirectory extends Zend_Ldap_Node
      * @return string
      */
     public function getDescription()
-    {
-
-    }
+    {}
 }

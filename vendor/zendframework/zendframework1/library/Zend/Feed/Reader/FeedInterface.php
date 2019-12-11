@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -20,17 +21,19 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Feed_Reader
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Feed_Reader
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 interface Zend_Feed_Reader_FeedInterface extends Iterator, Countable
 {
+
     /**
      * Get a single author
      *
-     * @param  int $index
+     * @param int $index            
      * @return string|null
      */
     public function getAuthor($index = 0);
@@ -118,5 +121,4 @@ interface Zend_Feed_Reader_FeedInterface extends Iterator, Countable
      * @return Zend_Feed_Reader_Collection_Category
      */
     public function getCategories();
-
 }

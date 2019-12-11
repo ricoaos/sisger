@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="to"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="to" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -510,7 +509,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Brai">tohinima laukonga ki he kui</script>
 			<script type="Bugi" draft="unconfirmed">tohinima fakapukisi</script>
 			<script type="Cakm" draft="unconfirmed">tohinima fakasakimā</script>
-			<script type="Cans" draft="unconfirmed">tohinima fakatupuʻi-kānata fakatahataha</script>
+			<script type="Cans" draft="unconfirmed">tohinima fakatupuʻi-kānata
+				fakatahataha</script>
 			<script type="Cham" draft="unconfirmed">tohinima fakasami</script>
 			<script type="Cher" draft="unconfirmed">tohinima fakaselokī</script>
 			<script type="Copt" draft="unconfirmed">tohinima fakakopitika</script>
@@ -914,7 +914,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="ethiopic" key="calendar" draft="unconfirmed">fakaʻītiōpia</type>
 			<type type="ethiopic-amete-alem" key="calendar" draft="unconfirmed">fakaʻītiōpia-ʻamete-ʻalemi</type>
 			<type type="fullwide" key="numbers">fika laulahi</type>
-			<type type="gb2312han" key="collation" draft="unconfirmed">siaine fakafaingofua</type>
+			<type type="gb2312han" key="collation" draft="unconfirmed">siaine
+				fakafaingofua</type>
 			<type type="geor" key="numbers">fika fakaseōsia</type>
 			<type type="gregorian" key="calendar">fakakelekolia</type>
 			<type type="grek" key="numbers">fika fakakalisi</type>
@@ -923,16 +924,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers">fika fakakūmuki</type>
 			<type type="hanidec" key="numbers">fika fakasiaina</type>
 			<type type="hans" key="numbers">fika fakasiaina fakafaingofua</type>
-			<type type="hansfin" key="numbers">fika fakasiaina fakafaingofua fakapaʻanga</type>
+			<type type="hansfin" key="numbers">fika fakasiaina fakafaingofua
+				fakapaʻanga</type>
 			<type type="hant" key="numbers">fika fakasiaina tukufakaholo</type>
-			<type type="hantfin" key="numbers">fika fakasiaina tukufakaholo fakapaʻanga</type>
+			<type type="hantfin" key="numbers">fika fakasiaina tukufakaholo
+				fakapaʻanga</type>
 			<type type="hebr" key="numbers">fika fakahepelū</type>
 			<type type="hebrew" key="calendar">fakahepelū</type>
 			<type type="indian" key="calendar">fakaʻinitia</type>
 			<type type="islamic" key="calendar">fakamohameti</type>
 			<type type="islamic-civil" key="calendar">fakamohameti-sivile</type>
 			<type type="islamic-rgsa" key="calendar" draft="unconfirmed">fakamohameti-ʻasimāhina</type>
-			<type type="islamic-tbla" key="calendar" draft="unconfirmed">fakamohameti -fakatēpile</type>
+			<type type="islamic-tbla" key="calendar" draft="unconfirmed">fakamohameti
+				-fakatēpile</type>
 			<type type="islamic-umalqura" key="calendar" draft="unconfirmed">fakamohameti-ʻumalakula</type>
 			<type type="iso8601" key="calendar" draft="unconfirmed">faka-iso8601</type>
 			<type type="japanese" key="calendar">fakasiapani</type>
@@ -996,10 +1000,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a á ā e é ē f h i í ī k l m n {ng} o ó ō p s t u ú ū v ʻ]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[à ă â å ä æ b c ç d è ĕ ê ë g ì ĭ î ï j ñ ò ŏ ô ö ø œ q r ù ŭ û ü w x y ÿ z]</exemplarCharacters>
-		<exemplarCharacters type="index">[A E F H I K L M N {NG} O P S T U V ʻ]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters>[a á ā e é ē f h i í ī k l m n {ng} o ó ō p s t u
+			ú ū v ʻ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[à ă â å ä æ b c ç d è ĕ ê
+			ë g ì ĭ î ï j ñ ò ŏ ô ö ø œ q r ù ŭ û ü w x y ÿ z]</exemplarCharacters>
+		<exemplarCharacters type="index">[A E F H I K L M N {NG} O
+			P S T U V ʻ]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1670,7 +1678,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">ʻi he māhina ʻe {0}</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">māhina ʻe {0} kuoʻosi</relativeTimePattern>
+					<relativeTimePattern count="other">māhina ʻe {0}
+						kuoʻosi</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -1755,7 +1764,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">ʻi he miniti ʻe {0}</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">miniti ʻe {0} kuoʻosi</relativeTimePattern>
+					<relativeTimePattern count="other">miniti ʻe {0}
+						kuoʻosi</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">
@@ -1765,7 +1775,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">ʻi he sekoni ʻe {0}</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">sekoni ʻe {0} kuoʻosi</relativeTimePattern>
+					<relativeTimePattern count="other">sekoni ʻe {0}
+						kuoʻosi</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">
@@ -1998,22 +2009,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="America_Eastern">
 				<long>
 					<generic draft="unconfirmed">houa fakaʻamelika-tokelau hahake</generic>
-					<standard draft="unconfirmed">houa fakaʻamelika-tokelau hahake fakasīpinga</standard>
+					<standard draft="unconfirmed">houa fakaʻamelika-tokelau hahake
+						fakasīpinga</standard>
 					<daylight draft="unconfirmed">houa fakaʻamelika-tokelau hahake fakamaama</daylight>
 				</long>
 			</metazone>
 			<metazone type="America_Mountain">
 				<long>
 					<generic draft="unconfirmed">houa fakaʻamelika-tokelau moʻunga</generic>
-					<standard draft="unconfirmed">houa fakaʻamelika-tokelau moʻunga fakasīpinga</standard>
-					<daylight draft="unconfirmed">houa fakaʻamelika-tokelau moʻunga fakamaama</daylight>
+					<standard draft="unconfirmed">houa fakaʻamelika-tokelau moʻunga
+						fakasīpinga</standard>
+					<daylight draft="unconfirmed">houa fakaʻamelika-tokelau moʻunga
+						fakamaama</daylight>
 				</long>
 			</metazone>
 			<metazone type="America_Pacific">
 				<long>
 					<generic draft="unconfirmed">houa fakaʻamelika-tokelau pasifika</generic>
-					<standard draft="unconfirmed">houa fakaʻamelika-tokelau pasifika fakasīpinga</standard>
-					<daylight draft="unconfirmed">houa fakaʻamelika-tokelau pasifika fakamaama</daylight>
+					<standard draft="unconfirmed">houa fakaʻamelika-tokelau pasifika
+						fakasīpinga</standard>
+					<daylight draft="unconfirmed">houa fakaʻamelika-tokelau pasifika
+						fakamaama</daylight>
 				</long>
 			</metazone>
 			<metazone type="Arabian">
@@ -2026,8 +2042,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="Atlantic">
 				<long>
 					<generic draft="unconfirmed">houa fakaʻamelika-tokelau ʻatalanitiki</generic>
-					<standard draft="unconfirmed">houa fakaʻamelika-tokelau ʻatalanitiki fakasīpinga</standard>
-					<daylight draft="unconfirmed">houa fakaʻamelika-tokelau ʻatalanitiki fakamaama</daylight>
+					<standard draft="unconfirmed">houa fakaʻamelika-tokelau ʻatalanitiki
+						fakasīpinga</standard>
+					<daylight draft="unconfirmed">houa fakaʻamelika-tokelau ʻatalanitiki
+						fakamaama</daylight>
 				</long>
 			</metazone>
 			<metazone type="Australia_Central">
@@ -2040,8 +2058,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="Australia_CentralWestern">
 				<long>
 					<generic draft="unconfirmed">houa fakaʻaositelēlia-loto-hihifo</generic>
-					<standard draft="unconfirmed">houa fakaʻaositelēlia-loto-hihifo fakasīpinga</standard>
-					<daylight draft="unconfirmed">houa fakaʻaositelēlia-loto-hihifo fakamaama</daylight>
+					<standard draft="unconfirmed">houa fakaʻaositelēlia-loto-hihifo
+						fakasīpinga</standard>
+					<daylight draft="unconfirmed">houa fakaʻaositelēlia-loto-hihifo
+						fakamaama</daylight>
 				</long>
 			</metazone>
 			<metazone type="Australia_Eastern">

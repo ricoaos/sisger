@@ -19,40 +19,50 @@
  * @version    $Id$
  */
 
-/** Zend_Oauth_Http_Utility */
+/**
+ * Zend_Oauth_Http_Utility
+ */
 require_once 'Zend/Oauth/Http/Utility.php';
 
-/** Zend_Uri_Http */
+/**
+ * Zend_Uri_Http
+ */
 require_once 'Zend/Uri/Http.php';
 
 /**
- * @category   Zend
- * @package    Zend_Oauth
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Oauth
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Oauth_Signature_SignatureAbstract
 {
+
     /**
      * Hash algorithm to use when generating signature
+     * 
      * @var string
      */
     protected $_hashAlgorithm = null;
 
     /**
      * Key to use when signing
+     * 
      * @var string
      */
     protected $_key = null;
 
     /**
      * Consumer secret
+     * 
      * @var string
      */
     protected $_consumerSecret = null;
 
     /**
      * Token secret
+     * 
      * @var string
      */
     protected $_tokenSecret = '';
@@ -60,9 +70,9 @@ abstract class Zend_Oauth_Signature_SignatureAbstract
     /**
      * Constructor
      *
-     * @param  string $consumerSecret
-     * @param  null|string $tokenSecret
-     * @param  null|string $hashAlgo
+     * @param string $consumerSecret            
+     * @param null|string $tokenSecret            
+     * @param null|string $hashAlgo            
      * @return void
      */
     public function __construct($consumerSecret, $tokenSecret = null, $hashAlgo = null)
@@ -80,9 +90,9 @@ abstract class Zend_Oauth_Signature_SignatureAbstract
     /**
      * Sign a request
      *
-     * @param  array $params
-     * @param  null|string $method
-     * @param  null|string $url
+     * @param array $params            
+     * @param null|string $method            
+     * @param null|string $url            
      * @return string
      */
     public abstract function sign(array $params, $method = null, $url = null);
@@ -90,7 +100,7 @@ abstract class Zend_Oauth_Signature_SignatureAbstract
     /**
      * Normalize the base signature URL
      *
-     * @param  string $url
+     * @param string $url            
      * @return string
      */
     public function normaliseBaseSignatureUrl($url)
@@ -114,7 +124,9 @@ abstract class Zend_Oauth_Signature_SignatureAbstract
      */
     protected function _assembleKey()
     {
-        $parts = array($this->_consumerSecret);
+        $parts = array(
+            $this->_consumerSecret
+        );
         if ($this->_tokenSecret !== null) {
             $parts[] = $this->_tokenSecret;
         }
@@ -127,17 +139,16 @@ abstract class Zend_Oauth_Signature_SignatureAbstract
     /**
      * Get base signature string
      *
-     * @param  array $params
-     * @param  null|string $method
-     * @param  null|string $url
+     * @param array $params            
+     * @param null|string $method            
+     * @param null|string $url            
      * @return string
      */
     protected function _getBaseSignatureString(array $params, $method = null, $url = null)
     {
         $encodedParams = array();
         foreach ($params as $key => $value) {
-            $encodedParams[Zend_Oauth_Http_Utility::urlEncode($key)] =
-                Zend_Oauth_Http_Utility::urlEncode($value);
+            $encodedParams[Zend_Oauth_Http_Utility::urlEncode($key)] = Zend_Oauth_Http_Utility::urlEncode($value);
         }
         $baseStrings = array();
         if (isset($method)) {
@@ -145,23 +156,19 @@ abstract class Zend_Oauth_Signature_SignatureAbstract
         }
         if (isset($url)) {
             // should normalise later
-            $baseStrings[] = Zend_Oauth_Http_Utility::urlEncode(
-                $this->normaliseBaseSignatureUrl($url)
-            );
+            $baseStrings[] = Zend_Oauth_Http_Utility::urlEncode($this->normaliseBaseSignatureUrl($url));
         }
         if (isset($encodedParams['oauth_signature'])) {
             unset($encodedParams['oauth_signature']);
         }
-        $baseStrings[] = Zend_Oauth_Http_Utility::urlEncode(
-            $this->_toByteValueOrderedQueryString($encodedParams)
-        );
+        $baseStrings[] = Zend_Oauth_Http_Utility::urlEncode($this->_toByteValueOrderedQueryString($encodedParams));
         return implode('&', $baseStrings);
     }
 
     /**
      * Transform an array to a byte value ordered query string
      *
-     * @param  array $params
+     * @param array $params            
      * @return string
      */
     protected function _toByteValueOrderedQueryString(array $params)

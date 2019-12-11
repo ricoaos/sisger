@@ -21,21 +21,23 @@
  */
 
 /**
+ *
  * @see Zend_Service_DeveloperGarden_Request_RequestAbstract
  */
 require_once 'Zend/Service/DeveloperGarden/Request/RequestAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateParticipantRequest
-    extends Zend_Service_DeveloperGarden_Request_RequestAbstract
+class Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateParticipantRequest extends Zend_Service_DeveloperGarden_Request_RequestAbstract
 {
+
     /**
      * the conference id
      *
@@ -67,27 +69,25 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateParticipantReque
     /**
      * constructor
      *
-     * @param integer $environment
-     * @param string $conferenceId
-     * @param string $participantId
-     * @param integer $action
-     * @param Zend_Service_DeveloperGarden_ConferenceCall_ParticipantDetail $participant
+     * @param integer $environment            
+     * @param string $conferenceId            
+     * @param string $participantId            
+     * @param integer $action            
+     * @param Zend_Service_DeveloperGarden_ConferenceCall_ParticipantDetail $participant            
      */
-    public function __construct($environment, $conferenceId, $participantId,
-        $action = null,
-        Zend_Service_DeveloperGarden_ConferenceCall_ParticipantDetail $participant = null
-    ) {
+    public function __construct($environment, $conferenceId, $participantId, $action = null, Zend_Service_DeveloperGarden_ConferenceCall_ParticipantDetail $participant = null)
+    {
         parent::__construct($environment);
         $this->setConferenceId($conferenceId)
-             ->setParticipantId($participantId)
-             ->setAction($action)
-             ->setParticipant($participant);
+            ->setParticipantId($participantId)
+            ->setAction($action)
+            ->setParticipant($participant);
     }
 
     /**
      * set the conference id
      *
-     * @param string $conferenceId
+     * @param string $conferenceId            
      * @return Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateParticipantRequest
      */
     public function setConferenceId($conferenceId)
@@ -99,7 +99,7 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateParticipantReque
     /**
      * set the participant id
      *
-     * @param string $participantId
+     * @param string $participantId            
      * @return Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateParticipantRequest
      */
     public function setParticipantId($participantId)
@@ -111,7 +111,7 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateParticipantReque
     /**
      * sets new action
      *
-     * @param integer $action
+     * @param integer $action            
      * @return Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateParticipantRequest
      */
     public function setAction($action = null)
@@ -126,12 +126,11 @@ class Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateParticipantReque
     /**
      * sets new participant
      *
-     * @param Zend_Service_DeveloperGarden_ConferenceCall_ParticipantDetail $participant
+     * @param Zend_Service_DeveloperGarden_ConferenceCall_ParticipantDetail $participant            
      * @return Zend_Service_DeveloperGarden_Request_ConferenceCall_UpdateParticipantRequest
      */
-    public function setParticipant(
-        Zend_Service_DeveloperGarden_ConferenceCall_ParticipantDetail $participant = null
-    ) {
+    public function setParticipant(Zend_Service_DeveloperGarden_ConferenceCall_ParticipantDetail $participant = null)
+    {
         $this->participant = $participant;
         return $this;
     }

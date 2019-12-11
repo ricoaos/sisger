@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="sq"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="sq" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -455,7 +454,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="SS">Sudani i Jugut</territory>
 			<territory type="ST">Sao Tome e Prinsipe</territory>
 			<territory type="SV">El Salvador</territory>
-			<territory type="SX">Shën Martin (Sint Maarten-pjesa e Mbretërisë së Holandës)</territory>
+			<territory type="SX">Shën Martin (Sint Maarten-pjesa e
+				Mbretërisë së Holandës)</territory>
 			<territory type="SY">Siri</territory>
 			<territory type="SZ">Svazilandë</territory>
 			<territory type="TA">Tristan da Kuna</territory>
@@ -511,7 +511,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armn" key="numbers">Numra armenë</type>
 			<type type="armnlow" key="numbers">Numra armenë të vegjël</type>
 			<type type="beng" key="numbers">Numra bengalë</type>
-			<type type="big5han" key="collation">Radhitje e kinezishtes tradicionale - Big5</type>
+			<type type="big5han" key="collation">Radhitje e kinezishtes tradicionale -
+				Big5</type>
 			<type type="buddhist" key="calendar">Kalendari Budist</type>
 			<type type="chinese" key="calendar">Kalendari Kinez</type>
 			<type type="coptic" key="calendar">Kalendari Koptik</type>
@@ -521,9 +522,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="ducet" key="collation">Radhitje Unikode e parazgjedhur</type>
 			<type type="ethi" key="numbers">Numra etiopas</type>
 			<type type="ethiopic" key="calendar">Kalendari Etiopas</type>
-			<type type="ethiopic-amete-alem" key="calendar">Kalendari Etiopas Amete Alem</type>
+			<type type="ethiopic-amete-alem" key="calendar">Kalendari Etiopas Amete
+				Alem</type>
 			<type type="fullwide" key="numbers">Shifra me largësi të brendshme</type>
-			<type type="gb2312han" key="collation">Radhitje e kinezishtes së thjeshtësuar - GB2312</type>
+			<type type="gb2312han" key="collation">Radhitje e kinezishtes së
+				thjeshtësuar - GB2312</type>
 			<type type="geor" key="numbers">Numra gjeorgjianë</type>
 			<type type="gregorian" key="calendar">Kalendari Gregorian</type>
 			<type type="grek" key="numbers">Numra grekë</type>
@@ -532,15 +535,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers">Shifra gurmuki</type>
 			<type type="hanidec" key="numbers">Numra dhjetorë kinezë</type>
 			<type type="hans" key="numbers">Numra të kinezishtes së thjeshtësuar</type>
-			<type type="hansfin" key="numbers">Numra financiarë të kinezishtes së thjeshtësuar</type>
+			<type type="hansfin" key="numbers">Numra financiarë të kinezishtes së
+				thjeshtësuar</type>
 			<type type="hant" key="numbers">Numra të kinezishtes tradicionale</type>
-			<type type="hantfin" key="numbers">Numra financiarë të kinezishtes tradicionale</type>
+			<type type="hantfin" key="numbers">Numra financiarë të kinezishtes
+				tradicionale</type>
 			<type type="hebr" key="numbers">Numra hebraikë</type>
 			<type type="hebrew" key="calendar">Kalendari Hebraik</type>
 			<type type="indian" key="calendar">Kalendari Kombëtar Indian</type>
 			<type type="islamic" key="calendar">Kalendari Islamik</type>
-			<type type="islamic-civil" key="calendar">Kalendari Islamik (tabelor, periudha civile)</type>
-			<type type="islamic-tbla" key="calendar">Kalendari Islamik (tabelor, epoka austromikale)</type>
+			<type type="islamic-civil" key="calendar">Kalendari Islamik (tabelor,
+				periudha civile)</type>
+			<type type="islamic-tbla" key="calendar">Kalendari Islamik (tabelor, epoka
+				austromikale)</type>
 			<type type="islamic-umalqura" key="calendar">Kalendari Islamik (Um al-Qura)</type>
 			<type type="iso8601" key="calendar">Kalendari ISO-8601</type>
 			<type type="japanese" key="calendar">Kalendari Japonez</type>
@@ -580,9 +587,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a b c ç d {dh} e ë f g {gj} h i j k l {ll} m n {nj} o p q r {rr} s {sh} t {th} u v x {xh} y z {zh}]</exemplarCharacters>
+		<exemplarCharacters>[a b c ç d {dh} e ë f g {gj} h i j k l {ll} m n
+			{nj} o p q r {rr} s {sh} t {th} u v x {xh} y z {zh}]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[w]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C Ç D {DH} E Ë F G {GJ} H I J K L {LL} M N {NJ} O P Q R {RR} S {SH} T {TH} U V X {XH} Y Z {ZH}]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C Ç D {DH} E Ë F G
+			{GJ} H I J K L {LL} M N {NJ} O P Q R {RR} S {SH} T {TH} U V X {XH} Y
+			Z {ZH}]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="word-final">{0} …</ellipsis>
 		<moreInformation>?</moreInformation>
@@ -684,14 +694,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="h" draft="unconfirmed">h.-h.a</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="unconfirmed">h.mm.a - h.mm.a</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h.mm.a -
+								h.mm.a</greatestDifference>
 							<greatestDifference id="h" draft="unconfirmed">h.mm.-h.mm.a</greatestDifference>
 							<greatestDifference id="m" draft="unconfirmed">h.mm.-h.mm.a</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a" draft="unconfirmed">h.mm.a - h.mm.a v</greatestDifference>
-							<greatestDifference id="h" draft="unconfirmed">h.mm.-h.mm.a v</greatestDifference>
-							<greatestDifference id="m" draft="unconfirmed">h.mm.-h.mm.a v</greatestDifference>
+							<greatestDifference id="a" draft="unconfirmed">h.mm.a -
+								h.mm.a v</greatestDifference>
+							<greatestDifference id="h" draft="unconfirmed">h.mm.-h.mm.a
+								v</greatestDifference>
+							<greatestDifference id="m" draft="unconfirmed">h.mm.-h.mm.a
+								v</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hv">
 							<greatestDifference id="a" draft="unconfirmed">h.a - h.a v</greatestDifference>
@@ -1194,7 +1208,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, dd - E, dd MMM y</greatestDifference>
 							<greatestDifference id="M">E, dd MMM - E, dd MMM y</greatestDifference>
-							<greatestDifference id="y">E, dd MMM y - E, dd MMM y</greatestDifference>
+							<greatestDifference id="y">E, dd MMM y - E, dd MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM - MMMM y</greatestDifference>
@@ -3205,7 +3220,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="AED">
 				<displayName>Dirhami i Emirateve të Bashkuara Arabe</displayName>
 				<displayName count="one">dirham i Emirateve të Bashkuara Arabe</displayName>
-				<displayName count="other">dirhamë të Emirateve të Bashkuara Arabe</displayName>
+				<displayName count="other">dirhamë të Emirateve të Bashkuara
+					Arabe</displayName>
 			</currency>
 			<currency type="AFN">
 				<displayName>Afgani afgan</displayName>
@@ -3256,8 +3272,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>Marka e Bosnjë-Hercegovinës [e shkëmbyeshme]</displayName>
-				<displayName count="one">markë e Bosnjë-Hercegovinës [e shkëmbyeshme]</displayName>
-				<displayName count="other">marka të Bosnjë-Hercegovinës [të shkëmbyeshme]</displayName>
+				<displayName count="one">markë e Bosnjë-Hercegovinës [e
+					shkëmbyeshme]</displayName>
+				<displayName count="other">marka të Bosnjë-Hercegovinës [të
+					shkëmbyeshme]</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Dollar barbadian</displayName>

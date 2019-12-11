@@ -20,19 +20,21 @@
  * @version    $Id$
  */
 
-/** Zend_Mobile_Push_Message_Abstract **/
+/**
+ * Zend_Mobile_Push_Message_Abstract *
+ */
 require_once 'Zend/Mobile/Push/Message/Abstract.php';
 
 /**
  * Gcm Message
  *
- * @category   Zend
- * @package    Zend_Mobile
+ * @category Zend
+ * @package Zend_Mobile
  * @subpackage Zend_Mobile_Push
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
- * @method     array getToken()
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id$
+ * @method array getToken()
  */
 class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
 {
@@ -46,7 +48,7 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
 
     /**
      * Data key value pairs
-     * 
+     *
      * @var array
      */
     protected $_data = array();
@@ -60,7 +62,7 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
 
     /**
      * Time to live in seconds
-     * 
+     *
      * @var int
      */
     protected $_ttl = 2419200;
@@ -68,17 +70,17 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
     /**
      * Add a Token
      *
-     * @param  string $token
+     * @param string $token            
      * @return Zend_Mobile_Push_Message_Gcm
      * @throws Zend_Mobile_Push_Message_Exception
      */
     public function addToken($token)
     {
-        if (!is_string($token)) {
+        if (! is_string($token)) {
             throw new Zend_Mobile_Push_Message_Exception('$token must be a string');
         }
-        if (!in_array($token, $this->_token)) {
-           $this->_token[] = $token;
+        if (! in_array($token, $this->_token)) {
+            $this->_token[] = $token;
         }
         return $this;
     }
@@ -86,7 +88,7 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
     /**
      * Set Token
      *
-     * @param  string|array $token
+     * @param string|array $token            
      * @return Zend_Mobile_Push_Message_Gcm
      * @throws Zend_Mobile_Push_Message_Exception
      */
@@ -114,21 +116,20 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
         return $this;
     }
 
-
     /**
      * Add Data
      *
-     * @param  string $key
-     * @param  string $value
+     * @param string $key            
+     * @param string $value            
      * @return Zend_Mobile_Push_Message_Gcm
      * @throws Zend_Mobile_Push_Message_Exception
      */
     public function addData($key, $value)
     {
-        if (!is_string($key)) {
+        if (! is_string($key)) {
             throw new Zend_Mobile_Push_Message_Exception('$key is not a string');
         }
-        if (!is_scalar($value)) {
+        if (! is_scalar($value)) {
             throw new Zend_Mobile_Push_Message_Exception('$value is not a string');
         }
         $this->_data[$key] = $value;
@@ -138,7 +139,7 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
     /**
      * Set Data
      *
-     * @param array $data
+     * @param array $data            
      * @return Zend_Mobile_Push_Message_Gcm
      * @throws Zend_Mobile_Push_Message_Exception
      */
@@ -175,13 +176,13 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
     /**
      * Set Delay While Idle
      *
-     * @param boolean $delay
+     * @param boolean $delay            
      * @return Zend_Mobile_Push_Message_Gcm
      * @throws Zend_Mobile_Push_Message_Exception
      */
     public function setDelayWhileIdle($delay)
     {
-        if (!is_bool($delay)) {
+        if (! is_bool($delay)) {
             throw new Zend_Mobile_Push_Message_Exception('$delay must be boolean');
         }
         $this->_delay = $delay;
@@ -201,13 +202,13 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
     /**
      * Set time to live.
      *
-     * @param  int $secs
+     * @param int $secs            
      * @throws Zend_Mobile_Push_Message_Exception
      * @return Zend_Mobile_Push_Message_Gcm
      */
     public function setTtl($secs)
     {
-        if (!is_numeric($secs)) {
+        if (! is_numeric($secs)) {
             throw new Zend_Mobile_Push_Message_Exception('$secs must be numeric');
         }
         $this->_ttl = (int) $secs;
@@ -232,12 +233,10 @@ class Zend_Mobile_Push_Message_Gcm extends Zend_Mobile_Push_Message_Abstract
      */
     public function validate()
     {
-        if (!is_array($this->_token) || empty($this->_token)) {
+        if (! is_array($this->_token) || empty($this->_token)) {
             return false;
         }
-        if ($this->_ttl !== 2419200 &&
-            (!is_scalar($this->_id) ||
-            strlen($this->_id) === 0)) {
+        if ($this->_ttl !== 2419200 && (! is_scalar($this->_id) || strlen($this->_id) === 0)) {
             return false;
         }
         return true;

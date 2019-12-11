@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -23,41 +24,47 @@
 /**
  * ZF
  *
- * @category   Zend
- * @package    Zend_Tool
+ * @category Zend
+ * @package Zend_Tool
  * @subpackage Framework
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class ZF
 {
 
     /**
+     *
      * @var bool
      */
     protected $_clientLoaded = false;
 
     /**
+     *
      * @var string
      */
     protected $_mode = 'runTool';
 
     /**
+     *
      * @var array of messages
      */
     protected $_messages = array();
 
     /**
+     *
      * @var string
      */
     protected $_homeDirectory = null;
 
     /**
+     *
      * @var string
      */
     protected $_storageDirectory = null;
 
     /**
+     *
      * @var string
      */
     protected $_configFile = null;
@@ -82,11 +89,11 @@ class ZF
     public function bootstrap()
     {
         // detect settings
-        $this->_mode             = $this->_detectMode();
-        $this->_homeDirectory    = $this->_detectHomeDirectory();
+        $this->_mode = $this->_detectMode();
+        $this->_homeDirectory = $this->_detectHomeDirectory();
         $this->_storageDirectory = $this->_detectStorageDirectory();
-        $this->_configFile       = $this->_detectConfigFile();
-
+        $this->_configFile = $this->_detectConfigFile();
+        
         // setup
         $this->_setupPHPRuntime();
         $this->_setupToolRuntime();
@@ -117,7 +124,7 @@ class ZF
                 $this->_runTool();
                 break;
         }
-
+        
         return $this;
     }
 
@@ -129,171 +136,174 @@ class ZF
     protected function _detectMode()
     {
         $arguments = $_SERVER['argv'];
-
+        
         $mode = 'runTool';
-
-        if (!isset($arguments[0])) {
+        
+        if (! isset($arguments[0])) {
             return $mode;
         }
-
+        
         if ($arguments[0] == $_SERVER['PHP_SELF']) {
             $this->_executable = array_shift($arguments);
         }
-
-        if (!isset($arguments[0])) {
+        
+        if (! isset($arguments[0])) {
             return $mode;
         }
-
+        
         if ($arguments[0] == '--setup') {
             $mode = 'runSetup';
         } elseif ($arguments[0] == '--info') {
             $mode = 'runInfo';
         }
-
+        
         return $mode;
     }
-
 
     /**
      * _detectHomeDirectory() - detect the home directory in a variety of different places
      *
-     * @param bool $mustExist Should the returned value already exist in the file system
-     * @param bool $returnMessages Should it log messages for output later
+     * @param bool $mustExist
+     *            Should the returned value already exist in the file system
+     * @param bool $returnMessages
+     *            Should it log messages for output later
      * @return string
      */
     protected function _detectHomeDirectory($mustExist = true, $returnMessages = true)
     {
         $homeDirectory = null;
-
+        
         $homeDirectory = getenv('ZF_HOME'); // check env var ZF_HOME
         if ($homeDirectory) {
             $this->_logMessage('Home directory found in environment variable ZF_HOME with value ' . $homeDirectory, $returnMessages);
-            if (!$mustExist || ($mustExist && file_exists($homeDirectory))) {
+            if (! $mustExist || ($mustExist && file_exists($homeDirectory))) {
                 return $homeDirectory;
             } else {
                 $this->_logMessage('Home directory does not exist at ' . $homeDirectory, $returnMessages);
             }
         }
-
+        
         $homeDirectory = getenv('HOME'); // HOME environment variable
-
+        
         if ($homeDirectory) {
             $this->_logMessage('Home directory found in environment variable HOME with value ' . $homeDirectory, $returnMessages);
-            if (!$mustExist || ($mustExist && file_exists($homeDirectory))) {
+            if (! $mustExist || ($mustExist && file_exists($homeDirectory))) {
                 return $homeDirectory;
             } else {
                 $this->_logMessage('Home directory does not exist at ' . $homeDirectory, $returnMessages);
             }
-
         }
-
+        
         $homeDirectory = getenv('HOMEPATH');
-
+        
         if ($homeDirectory) {
             $this->_logMessage('Home directory found in environment variable HOMEPATH with value ' . $homeDirectory, $returnMessages);
-            if (!$mustExist || ($mustExist && file_exists($homeDirectory))) {
+            if (! $mustExist || ($mustExist && file_exists($homeDirectory))) {
                 return $homeDirectory;
             } else {
                 $this->_logMessage('Home directory does not exist at ' . $homeDirectory, $returnMessages);
             }
         }
-
+        
         $homeDirectory = getenv('USERPROFILE');
-
+        
         if ($homeDirectory) {
             $this->_logMessage('Home directory found in environment variable USERPROFILE with value ' . $homeDirectory, $returnMessages);
-            if (!$mustExist || ($mustExist && file_exists($homeDirectory))) {
+            if (! $mustExist || ($mustExist && file_exists($homeDirectory))) {
                 return $homeDirectory;
             } else {
                 $this->_logMessage('Home directory does not exist at ' . $homeDirectory, $returnMessages);
             }
         }
-
+        
         return false;
     }
 
     /**
      * _detectStorageDirectory() - Detect where the storage directory is from a variaty of possiblities
      *
-     * @param bool $mustExist Should the returned value already exist in the file system
-     * @param bool $returnMessages Should it log messages for output later
+     * @param bool $mustExist
+     *            Should the returned value already exist in the file system
+     * @param bool $returnMessages
+     *            Should it log messages for output later
      * @return string
      */
     protected function _detectStorageDirectory($mustExist = true, $returnMessages = true)
     {
         $storageDirectory = false;
-
+        
         $storageDirectory = getenv('ZF_STORAGE_DIR');
         if ($storageDirectory) {
             $this->_logMessage('Storage directory path found in environment variable ZF_STORAGE_DIR with value ' . $storageDirectory, $returnMessages);
-            if (!$mustExist || ($mustExist && file_exists($storageDirectory))) {
+            if (! $mustExist || ($mustExist && file_exists($storageDirectory))) {
                 return $storageDirectory;
             } else {
                 $this->_logMessage('Storage directory does not exist at ' . $storageDirectory, $returnMessages);
             }
         }
-
+        
         $homeDirectory = ($this->_homeDirectory) ? $this->_homeDirectory : $this->_detectHomeDirectory(true, false);
-
+        
         if ($homeDirectory) {
             $storageDirectory = $homeDirectory . '/.zf/';
             $this->_logMessage('Storage directory assumed in home directory at location ' . $storageDirectory, $returnMessages);
-            if (!$mustExist || ($mustExist && file_exists($storageDirectory))) {
+            if (! $mustExist || ($mustExist && file_exists($storageDirectory))) {
                 return $storageDirectory;
             } else {
                 $this->_logMessage('Storage directory does not exist at ' . $storageDirectory, $returnMessages);
             }
         }
-
+        
         return false;
     }
 
     /**
      * _detectConfigFile() - Detect config file location from a variety of possibilities
      *
-     * @param bool $mustExist Should the returned value already exist in the file system
-     * @param bool $returnMessages Should it log messages for output later
+     * @param bool $mustExist
+     *            Should the returned value already exist in the file system
+     * @param bool $returnMessages
+     *            Should it log messages for output later
      * @return string
      */
     protected function _detectConfigFile($mustExist = true, $returnMessages = true)
     {
         $configFile = null;
-
+        
         $configFile = getenv('ZF_CONFIG_FILE');
         if ($configFile) {
             $this->_logMessage('Config file found environment variable ZF_CONFIG_FILE at ' . $configFile, $returnMessages);
-            if (!$mustExist || ($mustExist && file_exists($configFile))) {
+            if (! $mustExist || ($mustExist && file_exists($configFile))) {
                 return $configFile;
             } else {
                 $this->_logMessage('Config file does not exist at ' . $configFile, $returnMessages);
             }
         }
-
+        
         $homeDirectory = ($this->_homeDirectory) ? $this->_homeDirectory : $this->_detectHomeDirectory(true, false);
         if ($homeDirectory) {
             $configFile = $homeDirectory . '/.zf.ini';
             $this->_logMessage('Config file assumed in home directory at location ' . $configFile, $returnMessages);
-            if (!$mustExist || ($mustExist && file_exists($configFile))) {
+            if (! $mustExist || ($mustExist && file_exists($configFile))) {
                 return $configFile;
             } else {
                 $this->_logMessage('Config file does not exist at ' . $configFile, $returnMessages);
             }
         }
-
+        
         $storageDirectory = ($this->_storageDirectory) ? $this->_storageDirectory : $this->_detectStorageDirectory(true, false);
         if ($storageDirectory) {
             $configFile = $storageDirectory . '/zf.ini';
             $this->_logMessage('Config file assumed in storage directory at location ' . $configFile, $returnMessages);
-            if (!$mustExist || ($mustExist && file_exists($configFile))) {
+            if (! $mustExist || ($mustExist && file_exists($configFile))) {
                 return $configFile;
             } else {
                 $this->_logMessage('Config file does not exist at ' . $configFile, $returnMessages);
             }
         }
-
+        
         return false;
     }
-
 
     /**
      * _setupPHPRuntime() - parse the config file if it exists for php ini values to set
@@ -304,14 +314,14 @@ class ZF
     {
         // set php runtime settings
         ini_set('display_errors', true);
-
+        
         // support the changing of the current working directory, necessary for some providers
         $cwd = getenv('ZEND_TOOL_CURRENT_WORKING_DIRECTORY');
         if ($cwd != '' && realpath($cwd)) {
             chdir($cwd);
         }
-
-        if (!$this->_configFile) {
+        
+        if (! $this->_configFile) {
             return;
         }
         $zfINISettings = parse_ini_file($this->_configFile);
@@ -334,17 +344,16 @@ class ZF
      */
     protected function _setupToolRuntime()
     {
-
         $includePathPrepend = getenv('ZEND_TOOL_INCLUDE_PATH_PREPEND');
         $includePathFull = getenv('ZEND_TOOL_INCLUDE_PATH');
-
+        
         // check if the user has not provided anything
-        if (!($includePathPrepend || $includePathFull)) {
+        if (! ($includePathPrepend || $includePathFull)) {
             if ($this->_tryClientLoad()) {
                 return;
             }
         }
-
+        
         // if ZF is not in the include_path, but relative to this file, put it in the include_path
         if ($includePathPrepend || $includePathFull) {
             if (isset($includePathPrepend) && ($includePathPrepend !== false)) {
@@ -353,17 +362,17 @@ class ZF
                 set_include_path($includePathFull);
             }
         }
-
+        
         if ($this->_tryClientLoad()) {
             return;
         }
-
+        
         $zfIncludePath['relativePath'] = dirname(__FILE__) . '/../library/';
         if (file_exists($zfIncludePath['relativePath'] . 'Zend/Tool/Framework/Client/Console.php')) {
             set_include_path(realpath($zfIncludePath['relativePath']) . PATH_SEPARATOR . get_include_path());
         }
-
-        if (!$this->_tryClientLoad()) {
+        
+        if (! $this->_tryClientLoad()) {
             $this->_mode = 'runError';
             return;
         }
@@ -381,7 +390,7 @@ class ZF
     {
         $this->_clientLoaded = false;
         $fh = @fopen('Zend/Tool/Framework/Client/Console.php', 'r', true);
-        if (!$fh) {
+        if (! $fh) {
             return $this->_clientLoaded; // false
         } else {
             fclose($fh);
@@ -389,7 +398,7 @@ class ZF
             include 'Zend/Tool/Framework/Client/Console.php';
             $this->_clientLoaded = class_exists('Zend_Tool_Framework_Client_Console');
         }
-
+        
         return $this->_clientLoaded;
     }
 
@@ -401,7 +410,6 @@ class ZF
      */
     protected function _runError()
     {
-
         echo <<<EOS
 
 ***************************** ZF ERROR ********************************
@@ -425,7 +433,6 @@ $ ZEND_TOOL_INCLUDE_PATH=/path/to/library zf --setup
 Your are encourged to read more in the link that follows.
 
 EOS;
-
     }
 
     /**
@@ -436,18 +443,15 @@ EOS;
      */
     protected function _runInfo()
     {
-        echo 'Zend_Tool & CLI Setup Information' . PHP_EOL
-           . '(available via the command line "zf --info")'
-           . PHP_EOL;
-
+        echo 'Zend_Tool & CLI Setup Information' . PHP_EOL . '(available via the command line "zf --info")' . PHP_EOL;
+        
         echo '   * ' . implode(PHP_EOL . '   * ', $this->_messages) . PHP_EOL;
-
+        
         echo PHP_EOL;
-
+        
         echo 'To change the setup of this tool, run: "zf --setup"';
-
+        
         echo PHP_EOL;
-
     }
 
     /**
@@ -458,7 +462,7 @@ EOS;
     protected function _runSetup()
     {
         $setupCommand = (isset($_SERVER['argv'][2])) ? $_SERVER['argv'][2] : null;
-
+        
         switch ($setupCommand) {
             case 'storage-directory':
                 $this->_runSetupStorageDirectory();
@@ -480,15 +484,14 @@ EOS;
     protected function _runSetupStorageDirectory()
     {
         $storageDirectory = $this->_detectStorageDirectory(false, false);
-
+        
         if (file_exists($storageDirectory)) {
-            echo 'Directory already exists at ' . $storageDirectory . PHP_EOL
-               . 'Cannot create storage directory.';
+            echo 'Directory already exists at ' . $storageDirectory . PHP_EOL . 'Cannot create storage directory.';
             return;
         }
-
+        
         mkdir($storageDirectory);
-
+        
         echo 'Storage directory created at ' . $storageDirectory . PHP_EOL;
     }
 
@@ -500,26 +503,23 @@ EOS;
     protected function _runSetupConfigFile()
     {
         $configFile = $this->_detectConfigFile(false, false);
-
+        
         if (file_exists($configFile)) {
-            echo 'File already exists at ' . $configFile . PHP_EOL
-               . 'Cannot write new config file.';
+            echo 'File already exists at ' . $configFile . PHP_EOL . 'Cannot write new config file.';
             return;
         }
-
+        
         $includePath = get_include_path();
-
+        
         $contents = 'php.include_path = "' . $includePath . '"';
-
+        
         file_put_contents($configFile, $contents);
-
+        
         $iniValues = ini_get_all();
         if ($iniValues['include_path']['global_value'] != $iniValues['include_path']['local_value']) {
-            echo 'NOTE: the php include_path to be used with the tool has been written' . PHP_EOL
-               . 'to the config file, using ZEND_TOOL_INCLUDE_PATH (or other include_path setters)' . PHP_EOL
-               . 'is no longer necessary.' . PHP_EOL . PHP_EOL;
+            echo 'NOTE: the php include_path to be used with the tool has been written' . PHP_EOL . 'to the config file, using ZEND_TOOL_INCLUDE_PATH (or other include_path setters)' . PHP_EOL . 'is no longer necessary.' . PHP_EOL . PHP_EOL;
         }
-
+        
         echo 'Config file written to ' . $configFile . PHP_EOL;
     }
 
@@ -530,10 +530,10 @@ EOS;
      */
     protected function _runSetupMoreInfo()
     {
-        $homeDirectory    = $this->_detectHomeDirectory(false, false);
+        $homeDirectory = $this->_detectHomeDirectory(false, false);
         $storageDirectory = $this->_detectStorageDirectory(false, false);
-        $configFile       = $this->_detectConfigFile(false, false);
-
+        $configFile = $this->_detectConfigFile(false, false);
+        
         echo <<<EOS
 
 ZF Command Line Tool - Setup
@@ -584,7 +584,6 @@ EOS;
      */
     protected function _runTool()
     {
-
         $configOptions = array();
         if (isset($this->_configFile) && $this->_configFile) {
             $configOptions['configOptions']['configFilepath'] = $this->_configFile;
@@ -592,10 +591,10 @@ EOS;
         if (isset($this->_storageDirectory) && $this->_storageDirectory) {
             $configOptions['storageOptions']['directory'] = $this->_storageDirectory;
         }
-
+        
         // ensure that zf.php loads the Zend_Tool_Project features
         $configOptions['classesToLoad'] = 'Zend_Tool_Project_Provider_Manifest';
-
+        
         $console = new Zend_Tool_Framework_Client_Console($configOptions);
         $console->dispatch();
     }
@@ -603,22 +602,20 @@ EOS;
     /**
      * _logMessage() - Internal method used to log setup and information messages.
      *
-     * @param string $message
-     * @param bool   $storeMessage
+     * @param string $message            
+     * @param bool $storeMessage            
      * @return void
      */
     protected function _logMessage($message, $storeMessage = true)
     {
-        if (!$storeMessage) {
+        if (! $storeMessage) {
             return;
         }
-
+        
         $this->_messages[] = $message;
     }
-
-
 }
 
-if (!getenv('ZF_NO_MAIN')) {
+if (! getenv('ZF_NO_MAIN')) {
     ZF::main();
 }

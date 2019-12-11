@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="lt"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="lt" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -798,7 +797,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GU">Guamas</territory>
 			<territory type="GW">Bisau Gvinėja</territory>
 			<territory type="GY">Gajana</territory>
-			<territory type="HK">Ypatingasis Administracinis Kinijos Regionas Honkongas</territory>
+			<territory type="HK">Ypatingasis Administracinis Kinijos
+				Regionas Honkongas</territory>
 			<territory type="HK" alt="short">Honkongas</territory>
 			<territory type="HM">Herdo ir Makdonaldo Salos</territory>
 			<territory type="HN">Hondūras</territory>
@@ -853,7 +853,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="ML">Malis</territory>
 			<territory type="MM">Mianmaras (Birma)</territory>
 			<territory type="MN">Mongolija</territory>
-			<territory type="MO">Ypatingasis Administracinis Kinijos Regionas Makao</territory>
+			<territory type="MO">Ypatingasis Administracinis Kinijos
+				Regionas Makao</territory>
 			<territory type="MO" alt="short">Makao</territory>
 			<territory type="MP">Marianos Šiaurinės Salos</territory>
 			<territory type="MQ">Martinika</territory>
@@ -941,7 +942,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ">Tanzanija</territory>
 			<territory type="UA">Ukraina</territory>
 			<territory type="UG">Uganda</territory>
-			<territory type="UM">Jungtinių Valstijų Mažosios Tolimosios Salos</territory>
+			<territory type="UM">Jungtinių Valstijų Mažosios Tolimosios
+				Salos</territory>
 			<territory type="US">Jungtinės Valstijos</territory>
 			<territory type="US" alt="short">JAV</territory>
 			<territory type="UY">Urugvajus</territory>
@@ -1032,13 +1034,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="deva" key="numbers">devanagari skaitmenys</type>
 			<type type="dictionary" key="collation">žodyno rūšiavimo tvarka</type>
 			<type type="ducet" key="collation">numatytasis unikodo rikiavimas</type>
-			<type type="eor" key="collation" draft="unconfirmed">rūšiavimo tvarka daugiakalbės Europos dokumentų</type>
+			<type type="eor" key="collation" draft="unconfirmed">rūšiavimo tvarka
+				daugiakalbės Europos dokumentų</type>
 			<type type="ethi" key="numbers">Etiopijos skaitmenys</type>
 			<type type="ethiopic" key="calendar">Etiopijos kalendorius</type>
-			<type type="ethiopic-amete-alem" key="calendar">Etiopijos „Amete Alem“ kalendorius</type>
+			<type type="ethiopic-amete-alem" key="calendar">Etiopijos „Amete Alem“
+				kalendorius</type>
 			<type type="finance" key="numbers">Finansiniai skaičiai</type>
 			<type type="fullwide" key="numbers">viso pločio skaitmenys</type>
-			<type type="gb2312han" key="collation">supaprastinta kiniška rūšiavimo tvarka - GB2312</type>
+			<type type="gb2312han" key="collation">supaprastinta kiniška rūšiavimo
+				tvarka - GB2312</type>
 			<type type="geor" key="numbers">gruzinų skaitmenys</type>
 			<type type="gregorian" key="calendar">Grigaliaus kalendorius</type>
 			<type type="grek" key="numbers">graikų skaitmenys</type>
@@ -1065,14 +1070,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="knda" key="numbers">kanadų skaitmenys</type>
 			<type type="laoo" key="numbers">laosiečių skaitmenys</type>
 			<type type="latn" key="numbers">lotyniški skaitmenys</type>
-			<type type="lower" key="colCaseFirst">Rikiuoti suteikiant pirmumą mažosioms raidėms</type>
+			<type type="lower" key="colCaseFirst">Rikiuoti suteikiant pirmumą mažosioms
+				raidėms</type>
 			<type type="mlym" key="numbers">malajalių skaitmenys</type>
 			<type type="mong" key="numbers">mongolų skaitmenys</type>
 			<type type="mymr" key="numbers">mianmariečių skaitmenys</type>
 			<type type="native" key="numbers">Vietiniai skaitmenys</type>
 			<type type="no" key="colBackwards">Rikiuoti diakritinius ženklus įprastai</type>
-			<type type="no" key="colCaseFirst">Rikiuoti įprasta didžiųjų ir mažųjų raidžių tvarka</type>
-			<type type="no" key="colCaseLevel">Rikiuoti neskiriant didžiųjų ir mažųjų raidžių</type>
+			<type type="no" key="colCaseFirst">Rikiuoti įprasta didžiųjų ir mažųjų raidžių
+				tvarka</type>
+			<type type="no" key="colCaseLevel">Rikiuoti neskiriant didžiųjų ir mažųjų
+				raidžių</type>
 			<type type="no" key="colHiraganaQuaternary">Rikiuoti kanos ženklus atskirai</type>
 			<type type="no" key="colNormalization">Rikiuoti nenormalizuojant</type>
 			<type type="no" key="colNumeric">Rikiuoti skaitmenis atskirai</type>
@@ -1081,15 +1089,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="persian" key="calendar">persų kalendorius</type>
 			<type type="phonebook" key="collation">telefonų knygos rūšiavimo tvarka</type>
 			<type type="phonetic" key="collation">Fonetinė rikiavimo tvarka</type>
-			<type type="pinyin" key="collation">supaprastinta kiniškų hieroglifų rūšiavimo tvarka</type>
+			<type type="pinyin" key="collation">supaprastinta kiniškų hieroglifų
+				rūšiavimo tvarka</type>
 			<type type="primary" key="colStrength">Rikiuoti tik pagal pamatines raides</type>
-			<type type="quaternary" key="colStrength">Rikiuoti pagal didžiąsias ir mažąsias raides / plotį / diakritinius / kanos ženklus</type>
+			<type type="quaternary" key="colStrength">Rikiuoti pagal didžiąsias ir
+				mažąsias raides / plotį / diakritinius / kanos ženklus</type>
 			<type type="reformed" key="collation">reformuota rūšiavimo tvarka</type>
 			<type type="roc" key="calendar">Kinijos Respublikos kalendorius</type>
 			<type type="roman" key="numbers">romėniški skaitmenys</type>
-			<type type="romanlow" key="numbers">romėniški skaitmenys mažosiomis raidėmis</type>
+			<type type="romanlow" key="numbers">romėniški skaitmenys mažosiomis
+				raidėmis</type>
 			<type type="search" key="collation">bendroji paieška</type>
-			<type type="searchjl" key="collation" draft="provisional">ieškoti pagal hangul pirmines priebalses</type>
+			<type type="searchjl" key="collation" draft="provisional">ieškoti pagal hangul
+				pirmines priebalses</type>
 			<type type="secondary" key="colStrength">Rikiuoti diakritinius ženklus</type>
 			<type type="shifted" key="colAlternate">Rikiuoti nepaisant simbolių</type>
 			<type type="standard" key="collation">standartinis rikiavimas</type>
@@ -1097,16 +1109,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">tradicinės tamilų skaitmenys</type>
 			<type type="tamldec" key="numbers">tamilų skaitmenys</type>
 			<type type="telu" key="numbers">telugų skaitmenys</type>
-			<type type="tertiary" key="colStrength">Rikiuoti pagal diakritinius ženklus / didžiąsias ir mažąsias raides / plotį</type>
+			<type type="tertiary" key="colStrength">Rikiuoti pagal diakritinius ženklus /
+				didžiąsias ir mažąsias raides / plotį</type>
 			<type type="thai" key="numbers">tajų skaitmenys</type>
 			<type type="tibt" key="numbers">tibetiečių skaitmenys</type>
 			<type type="traditional" key="collation">įprasta rūšiavimo tvarka</type>
 			<type type="traditional" key="numbers">Tradiciniai skaičiai</type>
-			<type type="unihan" key="collation">Šaknies ženklų ir brūkšnių rūšiavimo tvarka</type>
-			<type type="upper" key="colCaseFirst">Rikiuoti suteikiant pirmumą didžiosioms raidėms</type>
+			<type type="unihan" key="collation">Šaknies ženklų ir brūkšnių rūšiavimo
+				tvarka</type>
+			<type type="upper" key="colCaseFirst">Rikiuoti suteikiant pirmumą didžiosioms
+				raidėms</type>
 			<type type="vaii" key="numbers" draft="provisional">vai skaitmenys</type>
 			<type type="yes" key="colBackwards">Rikiuoti diakritinius ženklus atvirkščiai</type>
-			<type type="yes" key="colCaseLevel">Rikiuoti skiriant didžiąsias ir mažąsias raides</type>
+			<type type="yes" key="colCaseLevel">Rikiuoti skiriant didžiąsias ir mažąsias
+				raides</type>
 			<type type="yes" key="colHiraganaQuaternary">Rikiuoti kanos ženklus kitaip</type>
 			<type type="yes" key="colNormalization">Rikiuoti normalizuojant unikodą</type>
 			<type type="yes" key="colNumeric">Rikiuoti skaitmenis pagal skaičius</type>
@@ -1135,10 +1151,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a ą b c č d e ę ė f g h i į y j k l m n o p r s š t u ų ū v z ž]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à ã {ą\u0301} {ą\u0303} {ch} {dz} {dž} é è ẽ {ę\u0301} {ę\u0303} {ė\u0301} {ė\u0303} {i\u0307\u0301}í {i\u0307\u0300}ì {i\u0307\u0303}ĩ {į\u0301}{į\u0307\u0301} {į\u0303}{į\u0307\u0303} {j\u0303}{j\u0307\u0303} {l\u0303} {m\u0303} ñ ó ò õ q {r\u0303} ú ù ũ {ų\u0301} {ų\u0303} {ū\u0301} {ū\u0303} w x]</exemplarCharacters>
-		<exemplarCharacters type="index">[A Ą B C Č D E Ę Ė F G H I Į Y J K L M N O P R S Š T U Ų Ū V Z Ž]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … “ „ ( ) \[ \] \{ \}]</exemplarCharacters>
+		<exemplarCharacters>[a ą b c č d e ę ė f g h i į y j k l m n o p r s š
+			t u ų ū v z ž]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à ã {ą\u0301} {ą\u0303}
+			{ch} {dz} {dž} é è ẽ {ę\u0301} {ę\u0303} {ė\u0301} {ė\u0303}
+			{i\u0307\u0301}í {i\u0307\u0300}ì {i\u0307\u0303}ĩ
+			{į\u0301}{į\u0307\u0301} {į\u0303}{į\u0307\u0303}
+			{j\u0303}{j\u0307\u0303} {l\u0303} {m\u0303} ñ ó ò õ q {r\u0303} ú ù
+			ũ {ų\u0301} {ų\u0303} {ū\u0301} {ū\u0303} w x]</exemplarCharacters>
+		<exemplarCharacters type="index">[A Ą B C Č D E Ę Ė F G H I
+			Į Y J K L M N O P R S Š T U Ų Ū V Z Ž]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … “
+			„ ( ) \[ \] \{ \}]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1440,23 +1464,30 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">y-MM-dd – y-MM-dd G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">y-MM-dd G, E – y-MM-dd G, E</greatestDifference>
-							<greatestDifference id="M">y-MM-dd G, E – y-MM-dd G, E</greatestDifference>
-							<greatestDifference id="y">y-MM-dd G, E – y-MM-dd G, E</greatestDifference>
+							<greatestDifference id="d">y-MM-dd G, E – y-MM-dd
+								G, E</greatestDifference>
+							<greatestDifference id="M">y-MM-dd G, E – y-MM-dd
+								G, E</greatestDifference>
+							<greatestDifference id="y">y-MM-dd G, E – y-MM-dd
+								G, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">y MMM–MMM G</greatestDifference>
 							<greatestDifference id="y">y-MM – y-MM G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d">y 'm'. MMM d 'd'.–d 'd'. G</greatestDifference>
+							<greatestDifference id="d">y 'm'. MMM d 'd'.–d
+								'd'. G</greatestDifference>
 							<greatestDifference id="M">y-MM-dd – MM-d G</greatestDifference>
 							<greatestDifference id="y">y-MM-dd – y-MM-dd G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">y-MM-dd G, E – y-MM-dd G, E</greatestDifference>
-							<greatestDifference id="M">y-MM-dd G, E – y-MM-dd G, E</greatestDifference>
-							<greatestDifference id="y">y-MM-dd G, E – y-MM-dd G, E</greatestDifference>
+							<greatestDifference id="d">y-MM-dd G, E – y-MM-dd
+								G, E</greatestDifference>
+							<greatestDifference id="M">y-MM-dd G, E – y-MM-dd
+								G, E</greatestDifference>
+							<greatestDifference id="y">y-MM-dd G, E – y-MM-dd
+								G, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">y MMMM – MMMM G</greatestDifference>
@@ -1899,7 +1930,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">y MMM d, E – MMM d, E</greatestDifference>
 							<greatestDifference id="M">y MMM d, E. – MMM d, E.</greatestDifference>
-							<greatestDifference id="y">y MMM d, E. – y MMM d, E.</greatestDifference>
+							<greatestDifference id="y">y MMM d, E. – y MMM d,
+								E.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">y MMMM–MMMM</greatestDifference>
@@ -4477,24 +4509,36 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAD">
 				<displayName>Bosnijos ir Hercegovinos dinaras (1992–1994)</displayName>
-				<displayName count="one">Bosnijos ir Hercegovinos dinaras (1992–1994)</displayName>
-				<displayName count="few">Bosnijos ir Hercegovinos dinarai (1992–1994)</displayName>
-				<displayName count="many">Bosnijos ir Hercegovinos dinaro (1992–1994)</displayName>
-				<displayName count="other">Bosnijos ir Hercegovinos dinarų (1992–1994)</displayName>
+				<displayName count="one">Bosnijos ir Hercegovinos dinaras
+					(1992–1994)</displayName>
+				<displayName count="few">Bosnijos ir Hercegovinos dinarai
+					(1992–1994)</displayName>
+				<displayName count="many">Bosnijos ir Hercegovinos dinaro
+					(1992–1994)</displayName>
+				<displayName count="other">Bosnijos ir Hercegovinos dinarų
+					(1992–1994)</displayName>
 			</currency>
 			<currency type="BAM">
 				<displayName>Bosnijos ir Hercegovinos konvertuojamoji markė</displayName>
-				<displayName count="one">Bosnijos ir Hercegovinos konvertuojamoji markė</displayName>
-				<displayName count="few">Bosnijos ir Hercegovinos konvertuojamosios markės</displayName>
-				<displayName count="many">Bosnijos ir Hercegovinos konvertuojamosios markės</displayName>
-				<displayName count="other">Bosnijos ir Hercegovinos konvertuojamųjų markių</displayName>
+				<displayName count="one">Bosnijos ir Hercegovinos
+					konvertuojamoji markė</displayName>
+				<displayName count="few">Bosnijos ir Hercegovinos
+					konvertuojamosios markės</displayName>
+				<displayName count="many">Bosnijos ir Hercegovinos
+					konvertuojamosios markės</displayName>
+				<displayName count="other">Bosnijos ir Hercegovinos
+					konvertuojamųjų markių</displayName>
 			</currency>
 			<currency type="BAN">
 				<displayName>Bosnijos ir Hercegovinos naujasis dinaras (1994–1997)</displayName>
-				<displayName count="one">Bosnijos ir Hercegovinos naujasis dinaras (1994–1997)</displayName>
-				<displayName count="few">Bosnijos ir Hercegovinos naujieji dinarai (1994–1997)</displayName>
-				<displayName count="many">Bosnijos ir Hercegovinos naujojo dinaro (1994–1997)</displayName>
-				<displayName count="other">Bosnijos ir Hercegovinos naujųjų dinarų (1994–1997)</displayName>
+				<displayName count="one">Bosnijos ir Hercegovinos naujasis
+					dinaras (1994–1997)</displayName>
+				<displayName count="few">Bosnijos ir Hercegovinos naujieji
+					dinarai (1994–1997)</displayName>
+				<displayName count="many">Bosnijos ir Hercegovinos naujojo
+					dinaro (1994–1997)</displayName>
+				<displayName count="other">Bosnijos ir Hercegovinos naujųjų
+					dinarų (1994–1997)</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Barbadoso doleris</displayName>
@@ -4695,9 +4739,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BYB">
 				<displayName>Baltarusijos naujasis rublis (1994–1999)</displayName>
-				<displayName count="one">Baltarusijos naujasis rublis (1994–1999)</displayName>
-				<displayName count="few">Baltarusijos naujieji rubliai (1994–1999)</displayName>
-				<displayName count="many">Baltarusijos naujojo rublio (1994–1999)</displayName>
+				<displayName count="one">Baltarusijos naujasis rublis
+					(1994–1999)</displayName>
+				<displayName count="few">Baltarusijos naujieji rubliai
+					(1994–1999)</displayName>
+				<displayName count="many">Baltarusijos naujojo rublio
+					(1994–1999)</displayName>
 				<displayName count="other">Baltarusijos naujųjų rublių</displayName>
 			</currency>
 			<currency type="BYR">
@@ -4773,10 +4820,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="CNX">
 				<displayName>Kinijos &quot;People&quot; banko doleris</displayName>
-				<displayName count="one">Kinijos &quot;People&quot; banko doleris</displayName>
-				<displayName count="few">Kinijos &quot;People&quot; banko doleriai</displayName>
-				<displayName count="many">Kinijos &quot;People&quot; banko dolerio</displayName>
-				<displayName count="other">Kinijos &quot;People&quot; banko dolerių</displayName>
+				<displayName count="one">Kinijos &quot;People&quot; banko
+					doleris</displayName>
+				<displayName count="few">Kinijos &quot;People&quot; banko
+					doleriai</displayName>
+				<displayName count="many">Kinijos &quot;People&quot; banko
+					dolerio</displayName>
+				<displayName count="other">Kinijos &quot;People&quot; banko
+					dolerių</displayName>
 			</currency>
 			<currency type="CNY">
 				<displayName>Kinijos ženminbi juanis</displayName>
@@ -4907,10 +4958,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ECV">
 				<displayName>Ekvadoro constante (UVC)</displayName>
-				<displayName count="one">Ekvadoro unidads de narsa Constante (UVC)</displayName>
-				<displayName count="few">Ekvadoro unidads de narsa Constante (UVC)</displayName>
-				<displayName count="many">Ekvadoro unidads de narsa Constante (UVC)</displayName>
-				<displayName count="other">Ekvadoro unidads de narsa Constante (UVC)</displayName>
+				<displayName count="one">Ekvadoro unidads de narsa Constante
+					(UVC)</displayName>
+				<displayName count="few">Ekvadoro unidads de narsa Constante
+					(UVC)</displayName>
+				<displayName count="many">Ekvadoro unidads de narsa Constante
+					(UVC)</displayName>
+				<displayName count="other">Ekvadoro unidads de narsa Constante
+					(UVC)</displayName>
 			</currency>
 			<currency type="EEK">
 				<displayName>Estijos krona</displayName>
@@ -4942,10 +4997,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ESB">
 				<displayName>Ispanų pesetai (konvertuojama sąskaita)</displayName>
-				<displayName count="one">Ispanų pesetas (konvertuojama sąskaita)</displayName>
-				<displayName count="few">Ispanų pesetai (konvertuojama sąskaita)</displayName>
-				<displayName count="many">Ispanų pesetai (konvertuojama sąskaita)</displayName>
-				<displayName count="other">Ispanų pesetai (konvertuojama sąskaita)</displayName>
+				<displayName count="one">Ispanų pesetas (konvertuojama
+					sąskaita)</displayName>
+				<displayName count="few">Ispanų pesetai (konvertuojama
+					sąskaita)</displayName>
+				<displayName count="many">Ispanų pesetai (konvertuojama
+					sąskaita)</displayName>
+				<displayName count="other">Ispanų pesetai (konvertuojama
+					sąskaita)</displayName>
 			</currency>
 			<currency type="ESP">
 				<displayName>Ispanijos peseta</displayName>
@@ -4998,8 +5057,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="GBP">
 				<displayName>Didžiosios Britanijos svaras sterlingų</displayName>
-				<displayName count="one">Didžiosios Britanijos svaras sterlingų</displayName>
-				<displayName count="few">Didžiosios Britanijos svarai sterlingų</displayName>
+				<displayName count="one">Didžiosios Britanijos svaras
+					sterlingų</displayName>
+				<displayName count="few">Didžiosios Britanijos svarai
+					sterlingų</displayName>
 				<displayName count="many">Didžiosios Britanijos svaro sterlingų</displayName>
 				<displayName count="other">Didžiosios Britanijos svarų sterlingų</displayName>
 				<symbol>GBP</symbol>
@@ -5560,7 +5621,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="MXP">
 				<displayName>Meksikos sidabrinis pesas (1861–1992)</displayName>
 				<displayName count="one">Meksikos sidabrinis pesas (1861–1992)</displayName>
-				<displayName count="few">Meksikos sidabriniai pesai (1861–1992)</displayName>
+				<displayName count="few">Meksikos sidabriniai pesai
+					(1861–1992)</displayName>
 				<displayName count="many">Meksikos sidabrino peso (1861–1992)</displayName>
 				<displayName count="other">Meksikos sidabrinių pesų (1861–1992)</displayName>
 			</currency>
@@ -6088,10 +6150,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="UYI">
 				<displayName>Urugvajaus pesai en unidades indexadas</displayName>
-				<displayName count="one">Urugvajaus pesas en unidades indexadas</displayName>
-				<displayName count="few">Uragvajaus pesai en unidades indexadas</displayName>
-				<displayName count="many">Urugvajaus pesai en unidades indexadas</displayName>
-				<displayName count="other">Urugvajaus pesai en unidades indexadas</displayName>
+				<displayName count="one">Urugvajaus pesas en unidades
+					indexadas</displayName>
+				<displayName count="few">Uragvajaus pesai en unidades
+					indexadas</displayName>
+				<displayName count="many">Urugvajaus pesai en unidades
+					indexadas</displayName>
+				<displayName count="other">Urugvajaus pesai en unidades
+					indexadas</displayName>
 			</currency>
 			<currency type="UYP">
 				<displayName>Urugvajaus pesas (1975–1993)</displayName>
@@ -6195,17 +6261,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XBC">
 				<displayName>Europos valiutos / apskaitos vienetas (XBC)</displayName>
-				<displayName count="one">Europos valiutos / apskaitos vienetas (XBC)</displayName>
-				<displayName count="few">Europos valiutos / apskaitos vienetai (XBC)</displayName>
-				<displayName count="many">Europos valiutos / apskaitos vienetai (XBC)</displayName>
-				<displayName count="other">Europos valiutos / apskaitos vienetai (XBC)</displayName>
+				<displayName count="one">Europos valiutos / apskaitos vienetas
+					(XBC)</displayName>
+				<displayName count="few">Europos valiutos / apskaitos vienetai
+					(XBC)</displayName>
+				<displayName count="many">Europos valiutos / apskaitos vienetai
+					(XBC)</displayName>
+				<displayName count="other">Europos valiutos / apskaitos vienetai
+					(XBC)</displayName>
 			</currency>
 			<currency type="XBD">
 				<displayName>Europos valiutos / apskaitos vienetas (XBD)</displayName>
-				<displayName count="one">Europos valiutos / apskaitos vienetas (XBD)</displayName>
-				<displayName count="few">Europos valiutos / apskaitos vienetas (XBD)</displayName>
-				<displayName count="many">Europos valiutos / apskaitos vienetai (XBD)</displayName>
-				<displayName count="other">Europos valiutos / apskaitos vienetai (XBD)</displayName>
+				<displayName count="one">Europos valiutos / apskaitos vienetas
+					(XBD)</displayName>
+				<displayName count="few">Europos valiutos / apskaitos vienetas
+					(XBD)</displayName>
+				<displayName count="many">Europos valiutos / apskaitos vienetai
+					(XBD)</displayName>
+				<displayName count="other">Europos valiutos / apskaitos vienetai
+					(XBD)</displayName>
 			</currency>
 			<currency type="XCD">
 				<displayName>Rytų Karibų doleris</displayName>
@@ -6306,17 +6380,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="YUD">
 				<displayName>Jugoslavijos kietasis dinaras (1966–1990)</displayName>
-				<displayName count="one">Jugoslavijos kietasis dinaras (1966–1990)</displayName>
-				<displayName count="few">Jugoslavijos kietieji dinarai (1966–1990)</displayName>
-				<displayName count="many">Jugoslavijos kietiejo dinaro (1966–1990)</displayName>
-				<displayName count="other">Jugoslavijos kietiejų dinarų (1966–1990)</displayName>
+				<displayName count="one">Jugoslavijos kietasis dinaras
+					(1966–1990)</displayName>
+				<displayName count="few">Jugoslavijos kietieji dinarai
+					(1966–1990)</displayName>
+				<displayName count="many">Jugoslavijos kietiejo dinaro
+					(1966–1990)</displayName>
+				<displayName count="other">Jugoslavijos kietiejų dinarų
+					(1966–1990)</displayName>
 			</currency>
 			<currency type="YUM">
 				<displayName>Jugoslavijos naujasis dinaras (1994–2002)</displayName>
-				<displayName count="one">Jugoslavijos naujasis dinaras (1994–2002)</displayName>
-				<displayName count="few">Jugoslavijos naujieji dinarai (1994–2002)</displayName>
-				<displayName count="many">Jugoslavijos naujojo dinaro (1994–2002)</displayName>
-				<displayName count="other">Jugoslavijos naujųjų dinarų (1994–2002)</displayName>
+				<displayName count="one">Jugoslavijos naujasis dinaras
+					(1994–2002)</displayName>
+				<displayName count="few">Jugoslavijos naujieji dinarai
+					(1994–2002)</displayName>
+				<displayName count="many">Jugoslavijos naujojo dinaro
+					(1994–2002)</displayName>
+				<displayName count="other">Jugoslavijos naujųjų dinarų
+					(1994–2002)</displayName>
 			</currency>
 			<currency type="YUN">
 				<displayName>Jugoslavijos konvertuojamas dinaras</displayName>

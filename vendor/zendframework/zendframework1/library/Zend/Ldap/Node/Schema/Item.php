@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -24,14 +25,15 @@
  * Zend_Ldap_Node_Schema_Item provides a base implementation for managing schema
  * items like objectClass and attribute.
  *
- * @category   Zend
- * @package    Zend_Ldap
+ * @category Zend
+ * @package Zend_Ldap
  * @subpackage Schema
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Ldap_Node_Schema_Item implements ArrayAccess, Countable
 {
+
     /**
      * The underlying data
      *
@@ -42,7 +44,7 @@ abstract class Zend_Ldap_Node_Schema_Item implements ArrayAccess, Countable
     /**
      * Constructor.
      *
-     * @param array $data
+     * @param array $data            
      */
     public function __construct(array $data)
     {
@@ -52,7 +54,7 @@ abstract class Zend_Ldap_Node_Schema_Item implements ArrayAccess, Countable
     /**
      * Sets the data
      *
-     * @param  array $data
+     * @param array $data            
      * @return Zend_Ldap_Node_Schema_Item Provides a fluent interface
      */
     public function setData(array $data)
@@ -74,7 +76,7 @@ abstract class Zend_Ldap_Node_Schema_Item implements ArrayAccess, Countable
     /**
      * Gets a specific attribute from this item
      *
-     * @param  string $name
+     * @param string $name            
      * @return mixed
      */
     public function __get($name)
@@ -89,7 +91,7 @@ abstract class Zend_Ldap_Node_Schema_Item implements ArrayAccess, Countable
     /**
      * Checks whether a specific attribute exists.
      *
-     * @param  string $name
+     * @param string $name            
      * @return boolean
      */
     public function __isset($name)
@@ -103,8 +105,8 @@ abstract class Zend_Ldap_Node_Schema_Item implements ArrayAccess, Countable
      *
      * This method is needed for a full implementation of ArrayAccess
      *
-     * @param  string $name
-     * @param  mixed $value
+     * @param string $name            
+     * @param mixed $value            
      * @return null
      * @throws BadMethodCallException
      */
@@ -116,7 +118,7 @@ abstract class Zend_Ldap_Node_Schema_Item implements ArrayAccess, Countable
     /**
      * Gets a specific attribute from this item
      *
-     * @param  string $name
+     * @param string $name            
      * @return mixed
      */
     public function offsetGet($name)
@@ -130,7 +132,7 @@ abstract class Zend_Ldap_Node_Schema_Item implements ArrayAccess, Countable
      *
      * This method is needed for a full implementation of ArrayAccess
      *
-     * @param  string $name
+     * @param string $name            
      * @return null
      * @throws BadMethodCallException
      */
@@ -142,7 +144,7 @@ abstract class Zend_Ldap_Node_Schema_Item implements ArrayAccess, Countable
     /**
      * Checks whether a specific attribute exists.
      *
-     * @param  string $name
+     * @param string $name            
      * @return boolean
      */
     public function offsetExists($name)

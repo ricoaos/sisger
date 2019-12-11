@@ -20,24 +20,29 @@
  * @version    $Id$
  */
 
-/** Zend_Mobile_Push_Interface **/
+/**
+ * Zend_Mobile_Push_Interface *
+ */
 require_once 'Zend/Mobile/Push/Interface.php';
 
-/** Zend_Mobile_Push_Exception **/
+/**
+ * Zend_Mobile_Push_Exception *
+ */
 require_once 'Zend/Mobile/Push/Exception.php';
 
 /**
  * Push Abstract
  *
- * @category   Zend
- * @package    Zend_Mobile
+ * @category Zend
+ * @package Zend_Mobile
  * @subpackage Zend_Mobile_Push
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id$
  */
 abstract class Zend_Mobile_Push_Abstract implements Zend_Mobile_Push_Interface
 {
+
     /**
      * Is Connected
      *
@@ -47,7 +52,7 @@ abstract class Zend_Mobile_Push_Abstract implements Zend_Mobile_Push_Interface
 
     /**
      * Connect to the Push Server
-     * 
+     *
      * @return Zend_Mobile_Push_Abstract
      */
     public function connect()
@@ -59,13 +64,13 @@ abstract class Zend_Mobile_Push_Abstract implements Zend_Mobile_Push_Interface
     /**
      * Send a Push Message
      *
-     * @param Zend_Mobile_Push_Message_Abstract $message
+     * @param Zend_Mobile_Push_Message_Abstract $message            
      * @return boolean
      * @throws DomainException
      */
     public function send(Zend_Mobile_Push_Message_Abstract $message)
     {
-        if (!$this->_isConnected) {
+        if (! $this->_isConnected) {
             $this->connect();
         }
         return true;
@@ -94,7 +99,7 @@ abstract class Zend_Mobile_Push_Abstract implements Zend_Mobile_Push_Interface
     /**
      * Set Options
      *
-     * @param array $options
+     * @param array $options            
      * @return Zend_Mobile_Push_Abstract
      * @throws Zend_Mobile_Push_Exception
      */
@@ -102,7 +107,7 @@ abstract class Zend_Mobile_Push_Abstract implements Zend_Mobile_Push_Interface
     {
         foreach ($options as $k => $v) {
             $method = 'set' . ucwords($k);
-            if (!method_exists($this, $method)) {
+            if (! method_exists($this, $method)) {
                 throw new Zend_Mobile_Push_Exception('The method "' . $method . "' does not exist.");
             }
             $this->$method($v);

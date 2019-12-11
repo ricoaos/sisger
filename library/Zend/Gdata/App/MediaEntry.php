@@ -22,16 +22,19 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_App_Entry
  */
 require_once 'Zend/Gdata/App/Entry.php';
 
 /**
+ *
  * @see Zend_Gdata_App_MediaSource
  */
 require_once 'Zend/Gdata/App/MediaSource.php';
 
 /**
+ *
  * @see Zend_Gdata_MediaMimeStream
  */
 require_once 'Zend/Gdata/MediaMimeStream.php';
@@ -39,14 +42,15 @@ require_once 'Zend/Gdata/MediaMimeStream.php';
 /**
  * Concrete class for working with Atom entries containing multi-part data.
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage App
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_App_MediaEntry extends Zend_Gdata_App_Entry
 {
+
     /**
      * The attached MediaSource/file
      *
@@ -58,8 +62,9 @@ class Zend_Gdata_App_MediaEntry extends Zend_Gdata_App_Entry
      * Constructs a new MediaEntry, representing XML data and optional
      * file to upload
      *
-     * @param DOMElement $element (optional) DOMElement from which this
-     *          object should be constructed.
+     * @param DOMElement $element
+     *            (optional) DOMElement from which this
+     *            object should be constructed.
      */
     public function __construct($element = null, $mediaSource = null)
     {
@@ -82,8 +87,7 @@ class Zend_Gdata_App_MediaEntry extends Zend_Gdata_App_Entry
             // No attachment, just send XML for entry
             return $xmlData;
         } else {
-            return new Zend_Gdata_MediaMimeStream($xmlData,
-                $mediaSource->getFilename(), $mediaSource->getContentType());
+            return new Zend_Gdata_MediaMimeStream($xmlData, $mediaSource->getFilename(), $mediaSource->getContentType());
         }
     }
 
@@ -101,7 +105,8 @@ class Zend_Gdata_App_MediaEntry extends Zend_Gdata_App_Entry
     /**
      * Set the MediaSource object (file) for this MediaEntry
      *
-     * @param Zend_Gdata_App_MediaSource $value The attached MediaSource/file
+     * @param Zend_Gdata_App_MediaSource $value
+     *            The attached MediaSource/file
      * @return Zend_Gdata_App_MediaEntry Provides a fluent interface
      */
     public function setMediaSource($value)
@@ -110,10 +115,8 @@ class Zend_Gdata_App_MediaEntry extends Zend_Gdata_App_Entry
             $this->_mediaSource = $value;
         } else {
             require_once 'Zend/Gdata/App/InvalidArgumentException.php';
-            throw new Zend_Gdata_App_InvalidArgumentException(
-                    'You must specify the media data as a class that conforms to Zend_Gdata_App_MediaSource.');
+            throw new Zend_Gdata_App_InvalidArgumentException('You must specify the media data as a class that conforms to Zend_Gdata_App_MediaSource.');
         }
         return $this;
     }
-
 }

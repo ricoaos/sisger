@@ -20,42 +20,46 @@
  * @version    $Id: Apc.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-
 /**
+ *
  * @see Zend_Cache_Backend_Interface
  */
 require_once 'Zend/Cache/Backend/ExtendedInterface.php';
 
 /**
+ *
  * @see Zend_Cache_Backend
  */
 require_once 'Zend/Cache/Backend.php';
 
-
 /**
- * @package    Zend_Cache
+ *
+ * @package Zend_Cache
  * @subpackage Zend_Cache_Backend
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Backend_ExtendedInterface
 {
+
     /**
      * Log message
      */
     const TAGS_UNSUPPORTED_BY_CLEAN_OF_APC_BACKEND = 'Zend_Cache_Backend_Apc::clean() : tags are unsupported by the Apc backend';
-    const TAGS_UNSUPPORTED_BY_SAVE_OF_APC_BACKEND =  'Zend_Cache_Backend_Apc::save() : tags are unsupported by the Apc backend';
+
+    const TAGS_UNSUPPORTED_BY_SAVE_OF_APC_BACKEND = 'Zend_Cache_Backend_Apc::save() : tags are unsupported by the Apc backend';
 
     /**
      * Constructor
      *
-     * @param  array $options associative array of options
+     * @param array $options
+     *            associative array of options
      * @throws Zend_Cache_Exception
      * @return void
      */
     public function __construct(array $options = array())
     {
-        if (!extension_loaded('apc')) {
+        if (! extension_loaded('apc')) {
             Zend_Cache::throwException('The apc extension must be loaded for using this backend !');
         }
         parent::__construct($options);
@@ -66,8 +70,10 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
      *
      * WARNING $doNotTestCacheValidity=true is unsupported by the Apc backend
      *
-     * @param  string  $id                     cache id
-     * @param  boolean $doNotTestCacheValidity if set to true, the cache validity won't be tested
+     * @param string $id
+     *            cache id
+     * @param boolean $doNotTestCacheValidity
+     *            if set to true, the cache validity won't be tested
      * @return string cached datas (or false)
      */
     public function load($id, $doNotTestCacheValidity = false)
@@ -82,7 +88,8 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
     /**
      * Test if a cache is available or not (for the given id)
      *
-     * @param  string $id cache id
+     * @param string $id
+     *            cache id
      * @return mixed false (a cache is not available) or "last modified" timestamp (int) of the available cache record
      */
     public function test($id)
@@ -100,16 +107,24 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
      * Note : $data is always "string" (serialization is done by the
      * core not by the backend)
      *
-     * @param string $data datas to cache
-     * @param string $id cache id
-     * @param array $tags array of strings, the cache record will be tagged by each string entry
-     * @param int $specificLifetime if != false, set a specific lifetime for this cache record (null => infinite lifetime)
+     * @param string $data
+     *            datas to cache
+     * @param string $id
+     *            cache id
+     * @param array $tags
+     *            array of strings, the cache record will be tagged by each string entry
+     * @param int $specificLifetime
+     *            if != false, set a specific lifetime for this cache record (null => infinite lifetime)
      * @return boolean true if no problem
      */
     public function save($data, $id, $tags = array(), $specificLifetime = false)
     {
         $lifetime = $this->getLifetime($specificLifetime);
-        $result = apc_store($id, array($data, time(), $lifetime), $lifetime);
+        $result = apc_store($id, array(
+            $data,
+            time(),
+            $lifetime
+        ), $lifetime);
         if (count($tags) > 0) {
             $this->_log(self::TAGS_UNSUPPORTED_BY_SAVE_OF_APC_BACKEND);
         }
@@ -119,7 +134,8 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
     /**
      * Remove a cache record
      *
-     * @param  string $id cache id
+     * @param string $id
+     *            cache id
      * @return boolean true if no problem
      */
     public function remove($id)
@@ -131,14 +147,16 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
      * Clean some cache records
      *
      * Available modes are :
-     * 'all' (default)  => remove all cache entries ($tags is not used)
-     * 'old'            => unsupported
-     * 'matchingTag'    => unsupported
+     * 'all' (default) => remove all cache entries ($tags is not used)
+     * 'old' => unsupported
+     * 'matchingTag' => unsupported
      * 'notMatchingTag' => unsupported
      * 'matchingAnyTag' => unsupported
      *
-     * @param  string $mode clean mode
-     * @param  array  $tags array of tags
+     * @param string $mode
+     *            clean mode
+     * @param array $tags
+     *            array of tags
      * @throws Zend_Cache_Exception
      * @return boolean true if no problem
      */
@@ -168,6 +186,7 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
      * DEPRECATED : use getCapabilities() instead
      *
      * @deprecated
+     *
      * @return boolean
      */
     public function isAutomaticCleaningAvailable()
@@ -184,8 +203,8 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
     public function getFillingPercentage()
     {
         $mem = apc_sma_info(true);
-        $memSize    = $mem['num_seg'] * $mem['seg_size'];
-        $memAvailable= $mem['avail_mem'];
+        $memSize = $mem['num_seg'] * $mem['seg_size'];
+        $memAvailable = $mem['avail_mem'];
         $memUsed = $memSize - $memAvailable;
         if ($memSize == 0) {
             Zend_Cache::throwException('can\'t get apc memory size');
@@ -212,7 +231,8 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
      *
      * In case of multiple tags, a logical AND is made between tags
      *
-     * @param array $tags array of tags
+     * @param array $tags
+     *            array of tags
      * @return array array of matching cache ids (string)
      */
     public function getIdsMatchingTags($tags = array())
@@ -226,7 +246,8 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
      *
      * In case of multiple tags, a logical OR is made between tags
      *
-     * @param array $tags array of tags
+     * @param array $tags
+     *            array of tags
      * @return array array of not matching cache ids (string)
      */
     public function getIdsNotMatchingTags($tags = array())
@@ -240,7 +261,8 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
      *
      * In case of multiple tags, a logical AND is made between tags
      *
-     * @param array $tags array of tags
+     * @param array $tags
+     *            array of tags
      * @return array array of any matching cache ids (string)
      */
     public function getIdsMatchingAnyTags($tags = array())
@@ -273,7 +295,8 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
      * - tags : a string array of tags
      * - mtime : timestamp of last modification time
      *
-     * @param string $id cache id
+     * @param string $id
+     *            cache id
      * @return array array of metadatas (false if the cache id is not found)
      */
     public function getMetadatas($id)
@@ -282,7 +305,7 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
         if (is_array($tmp)) {
             $data = $tmp[0];
             $mtime = $tmp[1];
-            if (!isset($tmp[2])) {
+            if (! isset($tmp[2])) {
                 // because this record is only with 1.7 release
                 // if old cache records are still there...
                 return false;
@@ -300,8 +323,9 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
     /**
      * Give (if possible) an extra lifetime to the given cache id
      *
-     * @param string $id cache id
-     * @param int $extraLifetime
+     * @param string $id
+     *            cache id
+     * @param int $extraLifetime            
      * @return boolean true if ok
      */
     public function touch($id, $extraLifetime)
@@ -310,17 +334,21 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
         if (is_array($tmp)) {
             $data = $tmp[0];
             $mtime = $tmp[1];
-            if (!isset($tmp[2])) {
+            if (! isset($tmp[2])) {
                 // because this record is only with 1.7 release
                 // if old cache records are still there...
                 return false;
             }
             $lifetime = $tmp[2];
             $newLifetime = $lifetime - (time() - $mtime) + $extraLifetime;
-            if ($newLifetime <=0) {
+            if ($newLifetime <= 0) {
                 return false;
             }
-            apc_store($id, array($data, time(), $newLifetime), $newLifetime);
+            apc_store($id, array(
+                $data,
+                time(),
+                $newLifetime
+            ), $newLifetime);
             return true;
         }
         return false;
@@ -333,7 +361,7 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
      * - automatic_cleaning (is automating cleaning necessary)
      * - tags (are tags supported)
      * - expired_read (is it possible to read expired cache records
-     *                 (for doNotTestCacheValidity option for example))
+     * (for doNotTestCacheValidity option for example))
      * - priority does the backend deal with priority when saving
      * - infinite_lifetime (is infinite lifetime can work with this backend)
      * - get_list (is it possible to get the list of cache ids and the complete list of tags)
@@ -351,5 +379,4 @@ class Zend_Cache_Backend_Apc extends Zend_Cache_Backend implements Zend_Cache_Ba
             'get_list' => true
         );
     }
-
 }

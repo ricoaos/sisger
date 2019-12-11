@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9876 $"/>
-		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $"/>
-		<language type="lkt"/>
+		<version number="$Revision: 9876 $" />
+		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $" />
+		<language type="lkt" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -181,10 +180,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</measurementSystemNames>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a á {aŋ} b č {čh} {čʼ} e é g ǧ h ȟ i í {iŋ} k {kh} {kȟ} {kʼ} l m n ŋ o ó p {ph} {pȟ} {pʼ} s š t {th} {tȟ} {tʼ} u ú {uŋ} w y z ž ʼ]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[c d f {ȟʼ} j q r {sʼ} {šʼ} v x]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B Č E G Ǧ H Ȟ I K L M N Ŋ O P S Š T U W Y Z Ž]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . &quot; “ ” ( ) \[ \] @ * / \&amp; #]</exemplarCharacters>
+		<exemplarCharacters>[a á {aŋ} b č {čh} {čʼ} e é g ǧ h ȟ i í {iŋ} k
+			{kh} {kȟ} {kʼ} l m n ŋ o ó p {ph} {pȟ} {pʼ} s š t {th} {tȟ} {tʼ} u ú
+			{uŋ} w y z ž ʼ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[c d f {ȟʼ} j q r {sʼ}
+			{šʼ} v x]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B Č E G Ǧ H Ȟ I K L M N
+			Ŋ O P S Š T U W Y Z Ž]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? .
+			&quot; “ ” ( ) \[ \] @ * / \&amp; #]</exemplarCharacters>
 	</characters>
 	<dates>
 		<calendars>
@@ -306,10 +310,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="0">Lé ómakȟa kiŋ</relative>
 				<relative type="1">Tȟokáta ómakȟa kiŋháŋ</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="other">Letáŋhaŋ ómakȟa {0} kiŋháŋ</relativeTimePattern>
+					<relativeTimePattern count="other">Letáŋhaŋ ómakȟa {0}
+						kiŋháŋ</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">Hékta ómakȟa {0} kʼuŋ héhaŋ</relativeTimePattern>
+					<relativeTimePattern count="other">Hékta ómakȟa {0}
+						kʼuŋ héhaŋ</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="month">
@@ -318,10 +324,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="0">Lé wí kiŋ</relative>
 				<relative type="1">Wí kiŋháŋ</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="other">Letáŋhaŋ wíyawapi {0} kiŋháŋ</relativeTimePattern>
+					<relativeTimePattern count="other">Letáŋhaŋ wíyawapi
+						{0} kiŋháŋ</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">Hékta wíyawapi {0} kʼuŋ héhaŋ</relativeTimePattern>
+					<relativeTimePattern count="other">Hékta wíyawapi {0}
+						kʼuŋ héhaŋ</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -330,10 +338,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="0">Lé okó kiŋ</relative>
 				<relative type="1">Tȟokáta okó kiŋháŋ</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="other">Letáŋhaŋ okó {0} kiŋháŋ</relativeTimePattern>
+					<relativeTimePattern count="other">Letáŋhaŋ okó {0}
+						kiŋháŋ</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">Hékta okó {0} kʼuŋ héhaŋ</relativeTimePattern>
+					<relativeTimePattern count="other">Hékta okó {0} kʼuŋ
+						héhaŋ</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="day">
@@ -342,10 +352,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="0">Lé aŋpétu kiŋ</relative>
 				<relative type="1">Híŋhaŋni kiŋháŋ</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="other">Letáŋhaŋ {0}-čháŋ kiŋháŋ</relativeTimePattern>
+					<relativeTimePattern count="other">Letáŋhaŋ {0}-čháŋ
+						kiŋháŋ</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">Hékta {0}-čháŋ k’uŋ héhaŋ</relativeTimePattern>
+					<relativeTimePattern count="other">Hékta {0}-čháŋ k’uŋ
+						héhaŋ</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="weekday">
@@ -389,10 +401,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="hour">
 				<displayName>Owápȟe</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="other">Letáŋhaŋ owápȟe {0} kiŋháŋ</relativeTimePattern>
+					<relativeTimePattern count="other">Letáŋhaŋ owápȟe {0}
+						kiŋháŋ</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">Hékta owápȟe {0} kʼuŋ héhaŋ</relativeTimePattern>
+					<relativeTimePattern count="other">Hékta owápȟe {0}
+						kʼuŋ héhaŋ</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="minute">
@@ -401,10 +415,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="second">
 				<displayName>Okpí</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="other">Letáŋhaŋ okpí {0} kiŋháŋ</relativeTimePattern>
+					<relativeTimePattern count="other">Letáŋhaŋ okpí {0}
+						kiŋháŋ</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="other">Hékta okpí {0} k’uŋ héhaŋ</relativeTimePattern>
+					<relativeTimePattern count="other">Hékta okpí {0} k’uŋ
+						héhaŋ</relativeTimePattern>
 				</relativeTime>
 			</field>
 		</fields>

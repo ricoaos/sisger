@@ -20,20 +20,22 @@
  * @version    $Id$
  */
 
-
-/** Zend_Search_Lucene_Search_Weight */
+/**
+ * Zend_Search_Lucene_Search_Weight
+ */
 require_once 'Zend/Search/Lucene/Search/Weight.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Search_Lucene
+ *
+ * @category Zend
+ * @package Zend_Search_Lucene
  * @subpackage Search
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Search_Lucene_Search_Weight_Empty extends Zend_Search_Lucene_Search_Weight
 {
+
     /**
      * The sum of squared weights of contained query clauses.
      *
@@ -44,14 +46,12 @@ class Zend_Search_Lucene_Search_Weight_Empty extends Zend_Search_Lucene_Search_W
         return 1;
     }
 
-
     /**
      * Assigns the query normalization factor to this.
      *
-     * @param float $queryNorm
+     * @param float $queryNorm            
      */
     public function normalize($queryNorm)
-    {
-    }
+    {}
 }
 

@@ -20,11 +20,13 @@
  */
 
 /**
+ *
  * @see Zend_Filter_Interface
  */
 require_once 'Zend/Filter/Interface.php';
 
 /**
+ *
  * @see Zend_Loader
  */
 require_once 'Zend/Loader.php';
@@ -32,13 +34,14 @@ require_once 'Zend/Loader.php';
 /**
  * Encrypts a given string
  *
- * @category   Zend
- * @package    Zend_Filter
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Filter
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Filter_Encrypt implements Zend_Filter_Interface
 {
+
     /**
      * Encryption adapter
      */
@@ -47,14 +50,15 @@ class Zend_Filter_Encrypt implements Zend_Filter_Interface
     /**
      * Class constructor
      *
-     * @param string|array $options (Optional) Options to set, if null mcrypt is used
+     * @param string|array $options
+     *            (Optional) Options to set, if null mcrypt is used
      */
     public function __construct($options = null)
     {
         if ($options instanceof Zend_Config) {
             $options = $options->toArray();
         }
-
+        
         $this->setAdapter($options);
     }
 
@@ -71,7 +75,8 @@ class Zend_Filter_Encrypt implements Zend_Filter_Interface
     /**
      * Sets new encryption options
      *
-     * @param  string|array $options (Optional) Encryption options
+     * @param string|array $options
+     *            (Optional) Encryption options
      * @return Zend_Filter_Encrypt
      */
     public function setAdapter($options = null)
@@ -84,43 +89,48 @@ class Zend_Filter_Encrypt implements Zend_Filter_Interface
         } else {
             $adapter = 'Mcrypt';
         }
-
-        if (!is_array($options)) {
+        
+        if (! is_array($options)) {
             $options = array();
         }
-
-        if (Zend_Loader::isReadable('Zend/Filter/Encrypt/' . ucfirst($adapter). '.php')) {
+        
+        if (Zend_Loader::isReadable('Zend/Filter/Encrypt/' . ucfirst($adapter) . '.php')) {
             $adapter = 'Zend_Filter_Encrypt_' . ucfirst($adapter);
         }
-
-        if (!class_exists($adapter)) {
+        
+        if (! class_exists($adapter)) {
             Zend_Loader::loadClass($adapter);
         }
-
+        
         $this->_adapter = new $adapter($options);
-        if (!$this->_adapter instanceof Zend_Filter_Encrypt_Interface) {
+        if (! $this->_adapter instanceof Zend_Filter_Encrypt_Interface) {
             require_once 'Zend/Filter/Exception.php';
             throw new Zend_Filter_Exception("Encoding adapter '" . $adapter . "' does not implement Zend_Filter_Encrypt_Interface");
         }
-
+        
         return $this;
     }
 
     /**
      * Calls adapter methods
      *
-     * @param string       $method  Method to call
-     * @param string|array $options Options for this method
+     * @param string $method
+     *            Method to call
+     * @param string|array $options
+     *            Options for this method
      */
     public function __call($method, $options)
     {
         $part = substr($method, 0, 3);
-        if ((($part != 'get') and ($part != 'set')) or !method_exists($this->_adapter, $method)) {
+        if ((($part != 'get') and ($part != 'set')) or ! method_exists($this->_adapter, $method)) {
             require_once 'Zend/Filter/Exception.php';
             throw new Zend_Filter_Exception("Unknown method '{$method}'");
         }
-
-        return call_user_func_array(array($this->_adapter, $method), $options);
+        
+        return call_user_func_array(array(
+            $this->_adapter,
+            $method
+        ), $options);
     }
 
     /**
@@ -128,7 +138,8 @@ class Zend_Filter_Encrypt implements Zend_Filter_Interface
      *
      * Encrypts the content $value with the defined settings
      *
-     * @param  string $value Content to encrypt
+     * @param string $value
+     *            Content to encrypt
      * @return string The encrypted content
      */
     public function filter($value)

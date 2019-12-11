@@ -21,21 +21,23 @@
  */
 
 /**
+ *
  * @see Zend_Service_DeveloperGarden_Response_BaseType
  */
 require_once 'Zend/Service/DeveloperGarden/Response/BaseType.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Service_DeveloperGarden_Response_IpLocation_LocateIPResponse
-    extends Zend_Service_DeveloperGarden_Response_BaseType
+class Zend_Service_DeveloperGarden_Response_IpLocation_LocateIPResponse extends Zend_Service_DeveloperGarden_Response_BaseType
 {
+
     /**
      * internal data object array of
      * elements
@@ -47,27 +49,25 @@ class Zend_Service_DeveloperGarden_Response_IpLocation_LocateIPResponse
     /**
      * constructor
      *
-     * @param Zend_Service_DeveloperGarden_Response_IpLocation_LocateIPResponseType $response
+     * @param Zend_Service_DeveloperGarden_Response_IpLocation_LocateIPResponseType $response            
      */
-    public function __construct(
-        Zend_Service_DeveloperGarden_Response_IpLocation_LocateIPResponseType $response
-    ) {
+    public function __construct(Zend_Service_DeveloperGarden_Response_IpLocation_LocateIPResponseType $response)
+    {
         if ($response->ipAddressLocation instanceof Zend_Service_DeveloperGarden_Response_IpLocation_IPAddressLocationType) {
             if (is_array($response->ipAddressLocation)) {
                 foreach ($response->ipAddressLocation as $location) {
                     $this->ipAddressLocation[] = $location;
                 }
-
             } else {
                 $this->ipAddressLocation[] = $response->ipAddressLocation;
             }
         } elseif (is_array($response->ipAddressLocation)) {
             $this->ipAddressLocation = $response->ipAddressLocation;
         }
-
-        $this->errorCode     = $response->getErrorCode();
-        $this->errorMessage  = $response->getErrorMessage();
-        $this->statusCode    = $response->getStatusCode();
+        
+        $this->errorCode = $response->getErrorCode();
+        $this->errorMessage = $response->getErrorMessage();
+        $this->statusCode = $response->getStatusCode();
         $this->statusMessage = $response->getStatusMessage();
     }
 
@@ -84,11 +84,12 @@ class Zend_Service_DeveloperGarden_Response_IpLocation_LocateIPResponse
         } elseif ($this->ipAddressLocation instanceof Zend_Service_DeveloperGarden_Response_IpLocation_IPAddressLocationType) {
             $this->ipAddressLocation->parse();
         }
-
+        
         return $this;
     }
 
     /**
+     *
      * @return array
      */
     public function getIpAddressLocation()

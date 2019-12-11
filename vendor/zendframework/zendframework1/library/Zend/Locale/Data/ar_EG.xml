@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9791 $"/>
-		<generation date="$Date: 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014) $"/>
-		<language type="ar"/>
-		<territory type="EG"/>
+		<version number="$Revision: 9791 $" />
+		<generation date="$Date: 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014) $" />
+		<language type="ar" />
+		<territory type="EG" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -148,7 +147,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="Gy" draft="contributed">y ‏G</dateFormatItem>
 						<dateFormatItem id="GyMMM" draft="contributed">MMM‏ y‏ G</dateFormatItem>
 						<dateFormatItem id="GyMMMd" draft="contributed">d ‏MMM‏، y‏ G</dateFormatItem>
-						<dateFormatItem id="GyMMMEd" draft="contributed">E‏، d‏ MMM‏، y ‏G</dateFormatItem>
+						<dateFormatItem id="GyMMMEd" draft="contributed">E‏، d‏ MMM‏، y
+							‏G</dateFormatItem>
 						<dateFormatItem id="Md" draft="contributed">d‏/M</dateFormatItem>
 						<dateFormatItem id="MEd" draft="contributed">E‏، d‏/M</dateFormatItem>
 						<dateFormatItem id="MMMd" draft="contributed">d ‏MMM</dateFormatItem>
@@ -157,10 +157,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="yyyy" draft="contributed">y ‏G</dateFormatItem>
 						<dateFormatItem id="yyyyM" draft="contributed">M‏/y ‏GGGGG</dateFormatItem>
 						<dateFormatItem id="yyyyMd" draft="contributed">d‏/M‏/y ‏GGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMEd" draft="contributed">E‏، d‏/M‏/y ‏GGGGG</dateFormatItem>
+						<dateFormatItem id="yyyyMEd" draft="contributed">E‏، d‏/M‏/y
+							‏GGGGG</dateFormatItem>
 						<dateFormatItem id="yyyyMMM" draft="contributed">MMM‏ y ‏G</dateFormatItem>
 						<dateFormatItem id="yyyyMMMd" draft="contributed">d‏ MMM‏، y‏ G</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd" draft="contributed">E‏، d‏ MMM‏، y‏ G</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd" draft="contributed">E‏، d‏ MMM‏،
+							y‏ G</dateFormatItem>
 						<dateFormatItem id="yyyyMMMM" draft="contributed">MMM‏ y‏ G</dateFormatItem>
 						<dateFormatItem id="yyyyQQQ" draft="contributed">QQQ‏ y‏ G</dateFormatItem>
 						<dateFormatItem id="yyyyQQQQ" draft="contributed">QQQQ‏ y‏ G</dateFormatItem>
@@ -201,8 +203,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="America_Pacific">
 				<long>
 					<generic draft="contributed">توقيت المحيط الهادي لأمريكا الشمالية</generic>
-					<standard draft="contributed">توقيت المحيط الهادي الرسمي لأمريكا الشمالية</standard>
-					<daylight draft="contributed">توقيت المحيط الهادي الصيفي لأمريكا الشمالية</daylight>
+					<standard draft="contributed">توقيت المحيط الهادي الرسمي لأمريكا
+						الشمالية</standard>
+					<daylight draft="contributed">توقيت المحيط الهادي الصيفي لأمريكا
+						الشمالية</daylight>
 				</long>
 			</metazone>
 			<metazone type="Pierre_Miquelon">

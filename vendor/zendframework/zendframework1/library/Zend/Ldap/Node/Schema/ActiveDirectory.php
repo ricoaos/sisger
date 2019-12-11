@@ -21,14 +21,17 @@
  */
 
 /**
+ *
  * @see Zend_Ldap_Node_Schema
  */
 require_once 'Zend/Ldap/Node/Schema.php';
 /**
+ *
  * @see Zend_Ldap_Node_Schema_AttributeType_ActiveDirectory
  */
 require_once 'Zend/Ldap/Node/Schema/AttributeType/ActiveDirectory.php';
 /**
+ *
  * @see Zend_Ldap_Node_Schema_ObjectClass_ActiveDirectory
  */
 require_once 'Zend/Ldap/Node/Schema/ObjectClass/ActiveDirectory.php';
@@ -37,20 +40,22 @@ require_once 'Zend/Ldap/Node/Schema/ObjectClass/ActiveDirectory.php';
  * Zend_Ldap_Node_Schema_ActiveDirectory provides a simple data-container for the Schema node of
  * an Active Directory server.
  *
- * @category   Zend
- * @package    Zend_Ldap
+ * @category Zend
+ * @package Zend_Ldap
  * @subpackage Schema
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Ldap_Node_Schema_ActiveDirectory extends Zend_Ldap_Node_Schema
 {
+
     /**
      * The attribute Types
      *
      * @var array
      */
     protected $_attributeTypes = array();
+
     /**
      * The object classes
      *
@@ -61,20 +66,18 @@ class Zend_Ldap_Node_Schema_ActiveDirectory extends Zend_Ldap_Node_Schema
     /**
      * Parses the schema
      *
-     * @param  Zend_Ldap_Dn $dn
-     * @param  Zend_Ldap    $ldap
+     * @param Zend_Ldap_Dn $dn            
+     * @param Zend_Ldap $ldap            
      * @return Zend_Ldap_Node_Schema Provides a fluent interface
      */
     protected function _parseSchema(Zend_Ldap_Dn $dn, Zend_Ldap $ldap)
     {
         parent::_parseSchema($dn, $ldap);
-        foreach ($ldap->search('(objectClass=classSchema)', $dn,
-                Zend_Ldap::SEARCH_SCOPE_ONE) as $node) {
+        foreach ($ldap->search('(objectClass=classSchema)', $dn, Zend_Ldap::SEARCH_SCOPE_ONE) as $node) {
             $val = new Zend_Ldap_Node_Schema_ObjectClass_ActiveDirectory($node);
             $this->_objectClasses[$val->getName()] = $val;
         }
-        foreach ($ldap->search('(objectClass=attributeSchema)', $dn,
-                Zend_Ldap::SEARCH_SCOPE_ONE) as $node) {
+        foreach ($ldap->search('(objectClass=attributeSchema)', $dn, Zend_Ldap::SEARCH_SCOPE_ONE) as $node) {
             $val = new Zend_Ldap_Node_Schema_AttributeType_ActiveDirectory($node);
             $this->_attributeTypes[$val->getName()] = $val;
         }

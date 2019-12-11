@@ -20,37 +20,42 @@
  * @version    $Id$
  */
 
-/** Zend_Log */
+/**
+ * Zend_Log
+ */
 require_once 'Zend/Log.php';
 
-/** Zend_Log_Writer_Abstract */
+/**
+ * Zend_Log_Writer_Abstract
+ */
 require_once 'Zend/Log/Writer/Abstract.php';
 
 /**
  * Writes log messages to syslog
  *
- * @category   Zend
- * @package    Zend_Log
+ * @category Zend
+ * @package Zend_Log
  * @subpackage Writer
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Log_Writer_Syslog extends Zend_Log_Writer_Abstract
 {
+
     /**
      * Maps Zend_Log priorities to PHP's syslog priorities
      *
      * @var array
      */
     protected $_priorities = array(
-        Zend_Log::EMERG  => LOG_EMERG,
-        Zend_Log::ALERT  => LOG_ALERT,
-        Zend_Log::CRIT   => LOG_CRIT,
-        Zend_Log::ERR    => LOG_ERR,
-        Zend_Log::WARN   => LOG_WARNING,
+        Zend_Log::EMERG => LOG_EMERG,
+        Zend_Log::ALERT => LOG_ALERT,
+        Zend_Log::CRIT => LOG_CRIT,
+        Zend_Log::ERR => LOG_ERR,
+        Zend_Log::WARN => LOG_WARNING,
         Zend_Log::NOTICE => LOG_NOTICE,
-        Zend_Log::INFO   => LOG_INFO,
-        Zend_Log::DEBUG  => LOG_DEBUG,
+        Zend_Log::INFO => LOG_INFO,
+        Zend_Log::DEBUG => LOG_DEBUG
     );
 
     /**
@@ -98,7 +103,8 @@ class Zend_Log_Writer_Syslog extends Zend_Log_Writer_Abstract
     /**
      * Class constructor
      *
-     * @param  array $params Array of options; may include "application" and "facility" keys
+     * @param array $params
+     *            Array of options; may include "application" and "facility" keys
      * @return void
      */
     public function __construct(array $params = array())
@@ -106,13 +112,13 @@ class Zend_Log_Writer_Syslog extends Zend_Log_Writer_Abstract
         if (isset($params['application'])) {
             $this->_application = $params['application'];
         }
-
+        
         $runInitializeSyslog = true;
         if (isset($params['facility'])) {
             $this->setFacility($params['facility']);
             $runInitializeSyslog = false;
         }
-
+        
         if ($runInitializeSyslog) {
             $this->_initializeSyslog();
         }
@@ -121,7 +127,7 @@ class Zend_Log_Writer_Syslog extends Zend_Log_Writer_Abstract
     /**
      * Create a new instance of Zend_Log_Writer_Syslog
      *
-     * @param  array|Zend_Config $config
+     * @param array|Zend_Config $config            
      * @return Zend_Log_Writer_Syslog
      */
     static public function factory($config)
@@ -157,7 +163,7 @@ class Zend_Log_Writer_Syslog extends Zend_Log_Writer_Abstract
             'LOG_USER',
             'LOG_UUCP'
         );
-
+        
         foreach ($constants as $constant) {
             if (defined($constant)) {
                 $this->_validFacilities[] = constant($constant);
@@ -173,14 +179,15 @@ class Zend_Log_Writer_Syslog extends Zend_Log_Writer_Abstract
     protected function _initializeSyslog()
     {
         self::$_lastApplication = $this->_application;
-        self::$_lastFacility    = $this->_facility;
+        self::$_lastFacility = $this->_facility;
         openlog($this->_application, LOG_PID, $this->_facility);
     }
 
     /**
      * Set syslog facility
      *
-     * @param  int $facility Syslog facility
+     * @param int $facility
+     *            Syslog facility
      * @return Zend_Log_Writer_Syslog
      * @throws Zend_Log_Exception for invalid log facility
      */
@@ -189,23 +196,21 @@ class Zend_Log_Writer_Syslog extends Zend_Log_Writer_Abstract
         if ($this->_facility === $facility) {
             return $this;
         }
-
-        if (!count($this->_validFacilities)) {
+        
+        if (! count($this->_validFacilities)) {
             $this->_initializeValidFacilities();
         }
-
-        if (!in_array($facility, $this->_validFacilities)) {
+        
+        if (! in_array($facility, $this->_validFacilities)) {
             require_once 'Zend/Log/Exception.php';
             throw new Zend_Log_Exception('Invalid log facility provided; please see http://php.net/openlog for a list of valid facility values');
         }
-
-        if ('WIN' == strtoupper(substr(PHP_OS, 0, 3))
-            && ($facility !== LOG_USER)
-        ) {
+        
+        if ('WIN' == strtoupper(substr(PHP_OS, 0, 3)) && ($facility !== LOG_USER)) {
             require_once 'Zend/Log/Exception.php';
             throw new Zend_Log_Exception('Only LOG_USER is a valid log facility on Windows');
         }
-
+        
         $this->_facility = $facility;
         $this->_initializeSyslog();
         return $this;
@@ -214,7 +219,8 @@ class Zend_Log_Writer_Syslog extends Zend_Log_Writer_Abstract
     /**
      * Set application name
      *
-     * @param  string $application Application name
+     * @param string $application
+     *            Application name
      * @return Zend_Log_Writer_Syslog
      */
     public function setApplicationName($application)
@@ -240,7 +246,8 @@ class Zend_Log_Writer_Syslog extends Zend_Log_Writer_Abstract
     /**
      * Write a message to syslog.
      *
-     * @param  array $event event data
+     * @param array $event
+     *            event data
      * @return void
      */
     protected function _write($event)
@@ -250,18 +257,16 @@ class Zend_Log_Writer_Syslog extends Zend_Log_Writer_Abstract
         } else {
             $priority = $this->_defaultPriority;
         }
-
-        if ($this->_application !== self::$_lastApplication
-            || $this->_facility !== self::$_lastFacility)
-        {
+        
+        if ($this->_application !== self::$_lastApplication || $this->_facility !== self::$_lastFacility) {
             $this->_initializeSyslog();
         }
-
+        
         $message = $event['message'];
         if ($this->_formatter instanceof Zend_Log_Formatter_Interface) {
             $message = $this->_formatter->format($event);
         }
-
+        
         syslog($priority, $message);
     }
 }

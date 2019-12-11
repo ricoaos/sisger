@@ -22,21 +22,23 @@
  */
 
 /**
+ *
  * @see Zend_Service_DeveloperGarden_Request_RequestAbstract
  */
 require_once 'Zend/Service/DeveloperGarden/Request/RequestAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-abstract class Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
-    extends Zend_Service_DeveloperGarden_Request_RequestAbstract
+abstract class Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract extends Zend_Service_DeveloperGarden_Request_RequestAbstract
 {
+
     /**
      * the number or numbers to receive this sms
      *
@@ -80,7 +82,7 @@ abstract class Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
         ']',
         '~',
         '\\',
-        "\n",
+        "\n"
         // '€', removed because its counted in utf8 correctly
     );
 
@@ -130,7 +132,7 @@ abstract class Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
     /**
      * set a new number(s)
      *
-     * @param string $number
+     * @param string $number            
      * @throws Zend_Service_DeveloperGarden_Request_Exception
      *
      * @return Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
@@ -158,7 +160,7 @@ abstract class Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
     /**
      * sets a new message
      *
-     * @param string $message
+     * @param string $message            
      * @throws Zend_Service_DeveloperGarden_Request_Exception
      *
      * @return Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
@@ -186,7 +188,7 @@ abstract class Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
     /**
      * the originator name
      *
-     * @param string $originator
+     * @param string $originator            
      * @return Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
      */
     public function setOriginator($originator)
@@ -197,6 +199,7 @@ abstract class Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
 
     /**
      * the account
+     * 
      * @return integer $account
      */
     public function getAccount()
@@ -207,7 +210,8 @@ abstract class Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
     /**
      * sets a new accounts
      *
-     * @param int $account the $account to set
+     * @param int $account
+     *            the $account to set
      * @return Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
      */
     public function setAccount($account)
@@ -224,15 +228,15 @@ abstract class Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
     public function getMessageLength()
     {
         $message = $this->getMessage();
-        $length  = strlen($message);
-
+        $length = strlen($message);
+        
         foreach ($this->_specialChars as $char) {
             $c = (substr_count($message, $char) * 2) - 1;
             if ($c > 0) {
                 $length += $c;
             }
         }
-
+        
         return $length;
     }
 
@@ -258,9 +262,9 @@ abstract class Zend_Service_DeveloperGarden_Request_SendSms_SendSmsAbstract
      */
     public function getNumberCount()
     {
-        $number   = $this->getNumber();
+        $number = $this->getNumber();
         $retValue = 0;
-        if (!empty($number)) {
+        if (! empty($number)) {
             $retValue = count(explode(',', $number));
         }
         return $retValue;

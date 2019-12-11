@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,45 +22,52 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage LiveDocx
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @since      LiveDocx 1.0
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @since LiveDocx 1.0
  */
 class Zend_Service_LiveDocx
 {
+
     /**
      * LiveDocx service version
+     * 
      * @since LiveDocx 1.0
      */
     const VERSION = '2.0';
 
     /**
      * SOAP client used to connect to LiveDocx service
-     * @var   Zend_Soap_Client
+     * 
+     * @var Zend_Soap_Client
      * @since LiveDocx 1.0
      */
     protected $_soapClient;
 
     /**
      * WSDL of LiveDocx web service
-     * @var   string
+     * 
+     * @var string
      * @since LiveDocx 1.0
      */
     protected $_wsdl;
 
     /**
      * Array of credentials (username and password) to log into backend server
-     * @var   array
+     * 
+     * @var array
      * @since LiveDocx 1.2
      */
     protected $_credentials;
 
     /**
      * Set to true, when session is logged into backend server
-     * @var   boolean
+     * 
+     * @var boolean
      * @since LiveDocx 1.2
      */
     protected $_loggedIn;
@@ -78,11 +86,11 @@ class Zend_Service_LiveDocx
      *
      * {code}
      * $phpLiveDocx = new Zend_Service_LiveDocx_MailMerge(
-     *     array (
-     *         'username'   => 'myUsername',
-     *         'password'   => 'myPassword',
-     *         'soapClient' => new Zend_Soap_Client('https://api.example.com/path/mailmerge.asmx?WSDL')
-     *     )
+     * array (
+     * 'username' => 'myUsername',
+     * 'password' => 'myPassword',
+     * 'soapClient' => new Zend_Soap_Client('https://api.example.com/path/mailmerge.asmx?WSDL')
+     * )
      * );
      * {code}
      *
@@ -94,10 +102,10 @@ class Zend_Service_LiveDocx
      *
      * {code}
      * $phpLiveDocx = new Zend_Service_LiveDocx_MailMerge(
-     *     array (
-     *         'username' => 'myUsername',
-     *         'password' => 'myPassword'
-     *     )
+     * array (
+     * 'username' => 'myUsername',
+     * 'password' => 'myPassword'
+     * )
      * );
      * {code}
      *
@@ -108,7 +116,7 @@ class Zend_Service_LiveDocx
      * $phpLiveDocx = new Zend_Service_LiveDocx_MailMerge();
      *
      * $phpLiveDocx->setUsername('myUsername')
-     *             ->setPassword('myPassword');
+     * ->setPassword('myPassword');
      * {/code}
      *
      * Or, if you want to specify your own SoapClient:
@@ -117,27 +125,27 @@ class Zend_Service_LiveDocx
      * $phpLiveDocx = new Zend_Service_LiveDocx_MailMerge();
      *
      * $phpLiveDocx->setUsername('myUsername')
-     *             ->setPassword('myPassword');
+     * ->setPassword('myPassword');
      *
      * $phpLiveDocx->setSoapClient(
-     *     new Zend_Soap_Client('https://api.example.com/path/mailmerge.asmx?WSDL')
+     * new Zend_Soap_Client('https://api.example.com/path/mailmerge.asmx?WSDL')
      * );
      * {/code}
      *
-     * @param  array|Zend_Config $options
+     * @param array|Zend_Config $options            
      * @return void
      * @throws Zend_Service_LiveDocx_Exception
-     * @since  LiveDocx 1.0
+     * @since LiveDocx 1.0
      */
     public function __construct($options = null)
     {
         $this->_credentials = array();
         $this->_loggedIn = false;
-
+        
         if ($options instanceof Zend_Config) {
             $options = $options->toArray();
         }
-
+        
         if (is_array($options)) {
             $this->setOptions($options);
         }
@@ -147,9 +155,9 @@ class Zend_Service_LiveDocx
      * Set options
      * One or more of username, password, soapClient
      *
-     * @param  array $options
+     * @param array $options            
      * @return Zend_Service_LiveDocx
-     * @since  LiveDocx 1.2
+     * @since LiveDocx 1.2
      */
     public function setOptions(array $options)
     {
@@ -159,7 +167,7 @@ class Zend_Service_LiveDocx
                 $this->$method($value);
             }
         }
-
+        
         return $this;
     }
 
@@ -167,7 +175,7 @@ class Zend_Service_LiveDocx
      * Clean up and log out of LiveDocx service
      *
      * @return boolean
-     * @since  LiveDocx 1.0
+     * @since LiveDocx 1.0
      */
     public function __destruct()
     {
@@ -177,10 +185,10 @@ class Zend_Service_LiveDocx
     /**
      * Init Soap client - connect to SOAP service
      *
-     * @param  string $endpoint
+     * @param string $endpoint            
      * @throws Zend_Service_LiveDocx_Exception
      * @return void
-     * @since  LiveDocx 1.2
+     * @since LiveDocx 1.2
      */
     protected function _initSoapClient($endpoint)
     {
@@ -198,7 +206,7 @@ class Zend_Service_LiveDocx
      * Get SOAP client
      *
      * @return Zend_Soap_Client
-     * @since  LiveDocx 1.2
+     * @since LiveDocx 1.2
      */
     public function getSoapClient()
     {
@@ -208,9 +216,9 @@ class Zend_Service_LiveDocx
     /**
      * Set SOAP client
      *
-     * @param  Zend_Soap_Client $soapClient
+     * @param Zend_Soap_Client $soapClient            
      * @return Zend_Service_LiveDocx
-     * @since  LiveDocx 1.2
+     * @since LiveDocx 1.2
      */
     public function setSoapClient(Zend_Soap_Client $soapClient)
     {
@@ -221,48 +229,42 @@ class Zend_Service_LiveDocx
     /**
      * Log in to LiveDocx service
      *
-     * @param string $username
-     * @param string $password
+     * @param string $username            
+     * @param string $password            
      *
      * @throws Zend_Service_LiveDocx_Exception
      * @return boolean
-     * @since  LiveDocx 1.2
+     * @since LiveDocx 1.2
      */
     public function logIn()
     {
-        if (!$this->isLoggedIn()) {
+        if (! $this->isLoggedIn()) {
             if (null === $this->getUsername()) {
                 require_once 'Zend/Service/LiveDocx/Exception.php';
-                throw new Zend_Service_LiveDocx_Exception(
-                    'Username has not been set. To set username specify the options array in the constructor or call setUsername($username) after instantiation'
-                );
+                throw new Zend_Service_LiveDocx_Exception('Username has not been set. To set username specify the options array in the constructor or call setUsername($username) after instantiation');
             }
-
+            
             if (null === $this->getPassword()) {
                 require_once 'Zend/Service/LiveDocx/Exception.php';
-                throw new Zend_Service_LiveDocx_Exception(
-                    'Password has not been set. To set password specify the options array in the constructor or call setPassword($password) after instantiation'
-                );
+                throw new Zend_Service_LiveDocx_Exception('Password has not been set. To set password specify the options array in the constructor or call setPassword($password) after instantiation');
             }
-
+            
             if (null === $this->getSoapClient()) {
                 $this->_initSoapClient($this->_wsdl);
             }
-
+            
             try {
                 $this->getSoapClient()->LogIn(array(
                     'username' => $this->getUsername(),
-                    'password' => $this->getPassword(),
+                    'password' => $this->getPassword()
                 ));
                 $this->_loggedIn = true;
             } catch (Exception $e) {
                 require_once 'Zend/Service/LiveDocx/Exception.php';
-                throw new Zend_Service_LiveDocx_Exception(
-                    'Cannot login into LiveDocx service - username and/or password are invalid', 0, $e
-                );
+                throw new Zend_Service_LiveDocx_Exception('Cannot login into LiveDocx service - username and/or password are invalid', 0, $e);
             }
         }
-
+        
         return $this->_loggedIn;
     }
 
@@ -271,7 +273,7 @@ class Zend_Service_LiveDocx
      *
      * @throws Zend_Service_LiveDocx_Exception
      * @return boolean
-     * @since  LiveDocx 1.2
+     * @since LiveDocx 1.2
      */
     public function logOut()
     {
@@ -281,12 +283,10 @@ class Zend_Service_LiveDocx
                 $this->_loggedIn = false;
             } catch (Exception $e) {
                 require_once 'Zend/Service/LiveDocx/Exception.php';
-                throw new Zend_Service_LiveDocx_Exception(
-                    'Cannot log out of LiveDocx service', 0, $e
-                );
+                throw new Zend_Service_LiveDocx_Exception('Cannot log out of LiveDocx service', 0, $e);
             }
         }
-
+        
         return $this->_loggedIn;
     }
 
@@ -294,7 +294,7 @@ class Zend_Service_LiveDocx
      * Return true, if session is currently logged into the backend server
      *
      * @return boolean
-     * @since  LiveDocx 1.2
+     * @since LiveDocx 1.2
      */
     public function isLoggedIn()
     {
@@ -305,7 +305,7 @@ class Zend_Service_LiveDocx
      * Set username
      *
      * @return Zend_Service_LiveDocx
-     * @since  LiveDocx 1.0
+     * @since LiveDocx 1.0
      */
     public function setUsername($username)
     {
@@ -317,7 +317,7 @@ class Zend_Service_LiveDocx
      * Set password
      *
      * @return Zend_Service_LiveDocx
-     * @since  LiveDocx 1.0
+     * @since LiveDocx 1.0
      */
     public function setPassword($password)
     {
@@ -329,7 +329,7 @@ class Zend_Service_LiveDocx
      * Set WSDL of LiveDocx web service
      *
      * @return Zend_Service_LiveDocx
-     * @since  LiveDocx 1.0
+     * @since LiveDocx 1.0
      */
     public function setWsdl($wsdl)
     {
@@ -341,14 +341,14 @@ class Zend_Service_LiveDocx
      * Return current username
      *
      * @return string|null
-     * @since  LiveDocx 1.0
+     * @since LiveDocx 1.0
      */
     public function getUsername()
     {
         if (isset($this->_credentials['username'])) {
             return $this->_credentials['username'];
         }
-
+        
         return null;
     }
 
@@ -356,14 +356,14 @@ class Zend_Service_LiveDocx
      * Return current password
      *
      * @return string|null
-     * @since  LiveDocx 1.0
+     * @since LiveDocx 1.0
      */
     public function getPassword()
     {
         if (isset($this->_credentials['password'])) {
             return $this->_credentials['password'];
         }
-
+        
         return null;
     }
 
@@ -371,7 +371,7 @@ class Zend_Service_LiveDocx
      * Return WSDL of LiveDocx web service
      *
      * @return Zend_Service_LiveDocx
-     * @since  LiveDocx 1.0
+     * @since LiveDocx 1.0
      */
     public function getWsdl()
     {
@@ -381,9 +381,9 @@ class Zend_Service_LiveDocx
     /**
      * Return the document format (extension) of a filename
      *
-     * @param  string $filename
+     * @param string $filename            
      * @return string
-     * @since  LiveDocx 1.0
+     * @since LiveDocx 1.0
      */
     public function getFormat($filename)
     {
@@ -394,7 +394,7 @@ class Zend_Service_LiveDocx
      * Return the current API version
      *
      * @return string
-     * @since  LiveDocx 1.0
+     * @since LiveDocx 1.0
      */
     public function getVersion()
     {
@@ -404,9 +404,10 @@ class Zend_Service_LiveDocx
     /**
      * Compare the current API version with another version
      *
-     * @param  string $version (STRING NOT FLOAT)
+     * @param string $version
+     *            (STRING NOT FLOAT)
      * @return int -1 (version is less than API version), 0 (versions are equal), or 1 (version is greater than API version)
-     * @since  LiveDocx 1.0
+     * @since LiveDocx 1.0
      */
     public function compareVersion($version)
     {

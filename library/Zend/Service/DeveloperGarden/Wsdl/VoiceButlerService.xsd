@@ -53,14 +53,14 @@
 			</xsd:sequence>
 		</xsd:complexType>
 	</xsd:element>
-  <xsd:element name="callStatus2">
-    <xsd:complexType>
-      <xsd:sequence>
-        <xsd:element minOccurs="0" name="request" nillable="false"
-          type="VoiceButlerCallStatusRequest" />
-      </xsd:sequence>
-    </xsd:complexType>
-  </xsd:element>
+	<xsd:element name="callStatus2">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element minOccurs="0" name="request" nillable="false"
+					type="VoiceButlerCallStatusRequest" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
 	<xsd:complexType name="VoiceButlerCallStatusRequest">
 		<xsd:complexContent>
 			<xsd:extension base="VoiceButlerRequest">
@@ -88,8 +88,8 @@
 		<xsd:complexContent>
 			<xsd:extension base="VoiceButlerNewCallRequestBase">
 				<xsd:sequence>
-					<xsd:element minOccurs="1" maxOccurs="1"
-						name="bNumber" nillable="false" type="NumberType" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="bNumber"
+						nillable="false" type="NumberType" />
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -158,37 +158,37 @@
 		</xsd:complexContent>
 	</xsd:complexType>
 
-    <xsd:element name="callStatus2Response">
-      <xsd:complexType>
-        <xsd:sequence>
-          <xsd:element minOccurs="0" name="return" nillable="false"
-            type="VoiceButlerCallStatus2Result" />
-        </xsd:sequence>
-      </xsd:complexType>
-    </xsd:element>
-    <xsd:complexType name="VoiceButlerCallStatus2Result">
-      <xsd:complexContent>
-        <xsd:extension base="VoiceButlerResult">
-          <xsd:sequence minOccurs="0" maxOccurs="1">
-            <xsd:element minOccurs="0" name="connectiontimea" type="xsd:int" />
-            <xsd:element minOccurs="0" name="connectiontimeb" type="xsd:int" />
-            <xsd:element minOccurs="0" name="descriptiona"
-              nillable="true" type="xsd:string" />
-            <xsd:element minOccurs="0" name="descriptionb"
-              nillable="true" type="xsd:string" />
-            <xsd:element minOccurs="0" name="reasona" type="xsd:int" />
-            <xsd:element minOccurs="0" name="reasonb" type="xsd:int" />
-            <xsd:element minOccurs="0" name="statea" type="xsd:string" />
-            <xsd:element minOccurs="0" name="stateb" type="xsd:string" />
-            
-            <xsd:element minOccurs="0" name="be164" type="xsd:string" 
-              nillable="true"/>
-            <xsd:element minOccurs="0" name="bindex" type="xsd:int" 
-              nillable="true"/>
-          </xsd:sequence>
-        </xsd:extension>
-      </xsd:complexContent>
-    </xsd:complexType>
+	<xsd:element name="callStatus2Response">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element minOccurs="0" name="return" nillable="false"
+					type="VoiceButlerCallStatus2Result" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:complexType name="VoiceButlerCallStatus2Result">
+		<xsd:complexContent>
+			<xsd:extension base="VoiceButlerResult">
+				<xsd:sequence minOccurs="0" maxOccurs="1">
+					<xsd:element minOccurs="0" name="connectiontimea" type="xsd:int" />
+					<xsd:element minOccurs="0" name="connectiontimeb" type="xsd:int" />
+					<xsd:element minOccurs="0" name="descriptiona"
+						nillable="true" type="xsd:string" />
+					<xsd:element minOccurs="0" name="descriptionb"
+						nillable="true" type="xsd:string" />
+					<xsd:element minOccurs="0" name="reasona" type="xsd:int" />
+					<xsd:element minOccurs="0" name="reasonb" type="xsd:int" />
+					<xsd:element minOccurs="0" name="statea" type="xsd:string" />
+					<xsd:element minOccurs="0" name="stateb" type="xsd:string" />
+
+					<xsd:element minOccurs="0" name="be164" type="xsd:string"
+						nillable="true" />
+					<xsd:element minOccurs="0" name="bindex" type="xsd:int"
+						nillable="true" />
+				</xsd:sequence>
+			</xsd:extension>
+		</xsd:complexContent>
+	</xsd:complexType>
 	<xsd:element name="newCallResponse">
 		<xsd:complexType>
 			<xsd:sequence>
@@ -228,9 +228,10 @@
 		<xsd:complexContent>
 			<xsd:extension base="VoiceButlerNewCallRequestBase">
 				<xsd:sequence>
-					<xsd:element minOccurs="1" maxOccurs="unbounded"
-						name="bNumber" nillable="false" type="NumberType" />
-					<xsd:element name="maxWait" type="xsd:int" maxOccurs="1" minOccurs="1"></xsd:element>
+					<xsd:element minOccurs="1" maxOccurs="unbounded" name="bNumber"
+						nillable="false" type="NumberType" />
+					<xsd:element name="maxWait" type="xsd:int" maxOccurs="1"
+						minOccurs="1"></xsd:element>
 				</xsd:sequence>
 			</xsd:extension>
 		</xsd:complexContent>
@@ -240,20 +241,21 @@
 		<xsd:complexContent>
 			<xsd:extension base="VoiceButlerRequest">
 				<xsd:sequence>
-					<xsd:element minOccurs="1" maxOccurs="1"
-						name="aNumber" nillable="false" type="NumberType" />
-					<xsd:element minOccurs="1" maxOccurs="1"
-						name="expiration" nillable="false" type="ExpirationType" />
-					<xsd:element minOccurs="1" maxOccurs="1"
-						name="maxDuration" nillable="false" type="MaxDurationType" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="aNumber"
+						nillable="false" type="NumberType" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="expiration"
+						nillable="false" type="ExpirationType" />
+					<xsd:element minOccurs="1" maxOccurs="1" name="maxDuration"
+						nillable="false" type="MaxDurationType" />
 					<xsd:element name="account" type="xsd:string"
 						maxOccurs="1" minOccurs="0">
 					</xsd:element>
 					<xsd:element name="privacyA" type="xsd:boolean"
 						maxOccurs="1" minOccurs="0">
 					</xsd:element>
-                    <xsd:element name="privacyB" type="xsd:boolean" maxOccurs="1" minOccurs="0"></xsd:element>
-                    <xsd:element name="greeter" type="xsd:string"
+					<xsd:element name="privacyB" type="xsd:boolean"
+						maxOccurs="1" minOccurs="0"></xsd:element>
+					<xsd:element name="greeter" type="xsd:string"
 						maxOccurs="1" minOccurs="0">
 					</xsd:element>
 

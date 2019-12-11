@@ -21,21 +21,23 @@
  */
 
 /**
+ *
  * @see Zend_Service_DeveloperGarden_Response_BaseType
  */
 require_once 'Zend/Service/DeveloperGarden/Response/BaseType.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-abstract class Zend_Service_DeveloperGarden_Response_ConferenceCall_ConferenceCallAbstract
-    extends Zend_Service_DeveloperGarden_Response_BaseType
+abstract class Zend_Service_DeveloperGarden_Response_ConferenceCall_ConferenceCallAbstract extends Zend_Service_DeveloperGarden_Response_BaseType
 {
+
     /**
      * returns the response object or null
      *
@@ -63,10 +65,10 @@ abstract class Zend_Service_DeveloperGarden_Response_ConferenceCall_ConferenceCa
     {
         $retVal = $this->getResponse();
         if ($retVal === null) {
-            $this->statusCode    = 9999;
+            $this->statusCode = 9999;
             $this->statusMessage = 'Internal response property not found.';
         } else {
-            $this->statusCode    = $retVal->getStatusCode();
+            $this->statusCode = $retVal->getStatusCode();
             $this->statusMessage = $retVal->getStatusMessage();
         }
         parent::parse();

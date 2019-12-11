@@ -19,23 +19,27 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_Dojo_Form_Element_Dijit */
+/**
+ * Zend_Dojo_Form_Element_Dijit
+ */
 require_once 'Zend/Dojo/Form/Element/Dijit.php';
 
 /**
  * Textarea dijit
  *
- * @category   Zend
- * @package    Zend_Dojo
+ * @category Zend
+ * @package Zend_Dojo
  * @subpackage Form_Element
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id$
  */
 class Zend_Dojo_Form_Element_Textarea extends Zend_Dojo_Form_Element_Dijit
 {
+
     /**
      * Use Textarea dijit view helper
+     * 
      * @var string
      */
     public $helper = 'Textarea';

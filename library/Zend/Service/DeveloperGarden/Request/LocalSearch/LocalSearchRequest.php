@@ -21,21 +21,23 @@
  */
 
 /**
+ *
  * @see Zend_Service_DeveloperGarden_RequestAbstract
  */
 require_once 'Zend/Service/DeveloperGarden/Request/RequestAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Service_DeveloperGarden_Request_LocalSearch_LocalSearchRequest
-    extends Zend_Service_DeveloperGarden_Request_RequestAbstract
+class Zend_Service_DeveloperGarden_Request_LocalSearch_LocalSearchRequest extends Zend_Service_DeveloperGarden_Request_RequestAbstract
 {
+
     /**
      * array of search parameters
      *
@@ -60,22 +62,20 @@ class Zend_Service_DeveloperGarden_Request_LocalSearch_LocalSearchRequest
     /**
      * constructor give them the environment and the sessionId
      *
-     * @param integer $environment
-     * @param Zend_Service_DeveloperGarden_LocalSearch_SearchParameters $searchParameters
-     * @param integer $account
+     * @param integer $environment            
+     * @param Zend_Service_DeveloperGarden_LocalSearch_SearchParameters $searchParameters            
+     * @param integer $account            
      * @return Zend_Service_DeveloperGarden_Request_RequestAbstract
      */
-    public function __construct($environment,
-        Zend_Service_DeveloperGarden_LocalSearch_SearchParameters $searchParameters,
-        $account = null
-    ) {
+    public function __construct($environment, Zend_Service_DeveloperGarden_LocalSearch_SearchParameters $searchParameters, $account = null)
+    {
         parent::__construct($environment);
-        $this->setSearchParameters($searchParameters)
-             ->setAccount($account);
+        $this->setSearchParameters($searchParameters)->setAccount($account);
     }
 
     /**
-     * @param integer $account
+     *
+     * @param integer $account            
      */
     public function setAccount($account = null)
     {
@@ -84,6 +84,7 @@ class Zend_Service_DeveloperGarden_Request_LocalSearch_LocalSearchRequest
     }
 
     /**
+     *
      * @return integer
      */
     public function getAccount()
@@ -92,22 +93,22 @@ class Zend_Service_DeveloperGarden_Request_LocalSearch_LocalSearchRequest
     }
 
     /**
-     * @param Zend_Service_DeveloperGarden_LocalSearch_SearchParameters $searchParameters
+     *
+     * @param Zend_Service_DeveloperGarden_LocalSearch_SearchParameters $searchParameters            
      */
-    public function setSearchParameters(
-        Zend_Service_DeveloperGarden_LocalSearch_SearchParameters $searchParameters
-    ) {
-        $this->searchParameters  = $searchParameters->getSearchParameters();
+    public function setSearchParameters(Zend_Service_DeveloperGarden_LocalSearch_SearchParameters $searchParameters)
+    {
+        $this->searchParameters = $searchParameters->getSearchParameters();
         $this->_searchParameters = $searchParameters;
         return $this;
     }
 
     /**
+     *
      * @return Zend_Service_DeveloperGarden_LocalSearch_SearchParameters
      */
     public function getSearchParameters()
     {
         return $this->_searchParameters;
     }
-
 }

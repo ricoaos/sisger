@@ -19,21 +19,21 @@
  * @version    $Id$
  */
 
-
 /**
  * Zend_Http_Client
  */
 require_once 'Zend/Http/Client.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Service
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Service
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Service_Abstract
 {
+
     /**
      * HTTP Client used to query all web services
      *
@@ -41,18 +41,17 @@ abstract class Zend_Service_Abstract
      */
     protected static $_httpClient = null;
 
-
     /**
-     * Sets the HTTP client object to use for retrieving the feeds.  If none
+     * Sets the HTTP client object to use for retrieving the feeds.
+     * If none
      * is set, the default Zend_Http_Client will be used.
      *
-     * @param Zend_Http_Client $httpClient
+     * @param Zend_Http_Client $httpClient            
      */
     final public static function setHttpClient(Zend_Http_Client $httpClient)
     {
         self::$_httpClient = $httpClient;
     }
-
 
     /**
      * Gets the HTTP client object.
@@ -61,10 +60,10 @@ abstract class Zend_Service_Abstract
      */
     final public static function getHttpClient()
     {
-        if (!self::$_httpClient instanceof Zend_Http_Client) {
+        if (! self::$_httpClient instanceof Zend_Http_Client) {
             self::$_httpClient = new Zend_Http_Client();
         }
-
+        
         return self::$_httpClient;
     }
 }

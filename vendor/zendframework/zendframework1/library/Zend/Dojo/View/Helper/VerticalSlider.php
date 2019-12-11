@@ -20,28 +20,33 @@
  * @version    $Id$
  */
 
-/** Zend_Dojo_View_Helper_Slider */
+/**
+ * Zend_Dojo_View_Helper_Slider
+ */
 require_once 'Zend/Dojo/View/Helper/Slider.php';
 
 /**
  * Dojo VerticalSlider dijit
  *
- * @uses       Zend_Dojo_View_Helper_Slider
- * @package    Zend_Dojo
+ * @uses Zend_Dojo_View_Helper_Slider
+ * @package Zend_Dojo
  * @subpackage View
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
-  */
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ */
 class Zend_Dojo_View_Helper_VerticalSlider extends Zend_Dojo_View_Helper_Slider
 {
+
     /**
      * Dijit being used
+     * 
      * @var string
      */
-    protected $_dijit  = 'dijit.form.VerticalSlider';
+    protected $_dijit = 'dijit.form.VerticalSlider';
 
     /**
      * Slider type
+     * 
      * @var string
      */
     protected $_sliderType = 'Vertical';
@@ -49,10 +54,12 @@ class Zend_Dojo_View_Helper_VerticalSlider extends Zend_Dojo_View_Helper_Slider
     /**
      * dijit.form.VerticalSlider
      *
-     * @param  int $id
-     * @param  mixed $value
-     * @param  array $params  Parameters to use for dijit creation
-     * @param  array $attribs HTML attributes
+     * @param int $id            
+     * @param mixed $value            
+     * @param array $params
+     *            Parameters to use for dijit creation
+     * @param array $attribs
+     *            HTML attributes
      * @return string
      */
     public function verticalSlider($id, $value = null, array $params = array(), array $attribs = array())

@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9876 $"/>
-		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $"/>
-		<language type="zu"/>
+		<version number="$Revision: 9876 $" />
+		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $" />
+		<language type="zu" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -357,7 +356,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">i-Finland</territory>
 			<territory type="FJ">i-Fiji</territory>
 			<territory type="FK">i-Falkland Islands</territory>
-			<territory type="FK" alt="variant">i-Falkland Islands (Islas Malvinas)</territory>
+			<territory type="FK" alt="variant">i-Falkland Islands (Islas
+				Malvinas)</territory>
 			<territory type="FM">i-Micronesia</territory>
 			<territory type="FO">i-Faroe Islands</territory>
 			<territory type="FR">i-France</territory>
@@ -570,7 +570,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armn" key="numbers">i-Armenian Numerals</type>
 			<type type="armnlow" key="numbers">i-Armenian Lowercase Numerals</type>
 			<type type="beng" key="numbers">i-Bengali Digits</type>
-			<type type="big5han" key="collation">Ukuhlunga kwe-Traditional Chinese - Big5</type>
+			<type type="big5han" key="collation">Ukuhlunga kwe-Traditional Chinese -
+				Big5</type>
 			<type type="buddhist" key="calendar">i-Buddhist Calender</type>
 			<type type="chinese" key="calendar">i-Chinese Calender</type>
 			<type type="coptic" key="calendar">i-Coptic Calender</type>
@@ -579,10 +580,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="ducet" key="collation">Ukuhlunga okuzenzakalelayo kwe-Unicode</type>
 			<type type="ethi" key="numbers">i-Ethiopic Numerals</type>
 			<type type="ethiopic" key="calendar">i-Ethipic Calender</type>
-			<type type="ethiopic-amete-alem" key="calendar">i-Ethiopic Amete Alem Calender</type>
+			<type type="ethiopic-amete-alem" key="calendar">i-Ethiopic Amete Alem
+				Calender</type>
 			<type type="finance" key="numbers">Izinombolo Zezomnotho</type>
 			<type type="fullwide" key="numbers">i-Full Width Digits</type>
-			<type type="gb2312han" key="collation">Ukuhlunga kwe-Simplified Chinese - GB2312</type>
+			<type type="gb2312han" key="collation">Ukuhlunga kwe-Simplified Chinese -
+				GB2312</type>
 			<type type="geor" key="numbers">i-Georgian Numerals</type>
 			<type type="gregorian" key="calendar">i-Gregorian Calender</type>
 			<type type="grek" key="numbers">i-Greek Numerals</type>
@@ -593,7 +596,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="hans" key="numbers">i-Simplified Chinese Numerals</type>
 			<type type="hansfin" key="numbers">i-Simplified Chinese Financial Numerals</type>
 			<type type="hant" key="numbers">i-Traditional Chinese Numerals</type>
-			<type type="hantfin" key="numbers">i-Traditional Chinese Financial Numerals</type>
+			<type type="hantfin" key="numbers">i-Traditional Chinese Financial
+				Numerals</type>
 			<type type="hebr" key="numbers">i-Hebrew Numerals</type>
 			<type type="hebrew" key="calendar">i-Hebrew Calender</type>
 			<type type="identical" key="colStrength">Hlela konke</type>
@@ -612,7 +616,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="mong" key="numbers">i-Mongolian Digits</type>
 			<type type="mymr" key="numbers">i-Myanmar Digits</type>
 			<type type="native" key="numbers">Izinkinobho Zasendaweni</type>
-			<type type="no" key="colBackwards">Hlela Izindlela Zokuphimisela Ngokujwayelekile</type>
+			<type type="no" key="colBackwards">Hlela Izindlela Zokuphimisela
+				Ngokujwayelekile</type>
 			<type type="no" key="colCaseFirst">Hlela Ngokwenhlamvu Ezejwayelekile</type>
 			<type type="no" key="colCaseLevel">Hlela Okungancikile Ezinkinobhweni</type>
 			<type type="no" key="colHiraganaQuaternary">Hlela i-Kana Eceleni</type>
@@ -625,7 +630,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="phonetic" key="collation">Hlela Ngokwefonetiki</type>
 			<type type="pinyin" key="collation">Ukuhlunga nge-Pinyin</type>
 			<type type="primary" key="colStrength">Hlela Izinhlamvu Zaphansi Kuphela</type>
-			<type type="quaternary" key="colStrength">Hlola Ukuphimisela/Ukuma kwezinhlamvu/Ububanzi/i-Kana</type>
+			<type type="quaternary" key="colStrength">Hlola Ukuphimisela/Ukuma
+				kwezinhlamvu/Ububanzi/i-Kana</type>
 			<type type="reformed" key="collation">Ukuhlunga okwenziwe kabusha</type>
 			<type type="roc" key="calendar">i-Minguo Calender</type>
 			<type type="roman" key="numbers">i-Roman Numerals</type>
@@ -638,7 +644,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="stroke" key="collation">Ukuhlunga kwe-Stroke</type>
 			<type type="taml" key="numbers">i-Tamil Numerals</type>
 			<type type="telu" key="numbers">i-Telegu Digits</type>
-			<type type="tertiary" key="colStrength">Hlela Ukuphimisela/Ukuma kwezinhlamvu/Ububanzi</type>
+			<type type="tertiary" key="colStrength">Hlela Ukuphimisela/Ukuma
+				kwezinhlamvu/Ububanzi</type>
 			<type type="thai" key="numbers">i-Thai Digits</type>
 			<type type="tibt" key="numbers">i-Tibetan Digits</type>
 			<type type="traditional" key="collation">Ukuhlunga ngokisiko</type>
@@ -676,9 +683,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a b {bh} c {ch} d {dl} {dy} e f g {gc} {gq} {gx} h {hh} {hl} i j k {kh} {kl} {kp} l m n {nc} {ngc} {ngq} {ngx} {nhl} {nk} {nkc} {nkq} {nkx} {nq} {ntsh} {nx} {ny} o p {ph} q {qh} r {rh} s {sh} t {th} {tl} {ts} {tsh} u v w x {xh} y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ö ø ō œ ú ù ŭ û ü ū ÿ]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="unconfirmed">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters>[a b {bh} c {ch} d {dl} {dy} e f g {gc} {gq} {gx}
+			h {hh} {hl} i j k {kh} {kl} {kp} l m n {nc} {ngc} {ngq} {ngx} {nhl}
+			{nk} {nkc} {nkq} {nkx} {nq} {ntsh} {nx} {ny} o p {ph} q {qh} r {rh} s
+			{sh} t {th} {tl} {ts} {tsh} u v w x {xh} y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à ă â å ä ã ā æ ç é è ĕ
+			ê ë ē í ì ĭ î ï ī ñ ó ò ŏ ô ö ø ō œ ú ù ŭ û ü ū ÿ]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="unconfirmed">[A B C D E F
+			G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -863,7 +875,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, MMM d – E, MMM d, y</greatestDifference>
 							<greatestDifference id="M">E, MMM d – E, MMM d, y</greatestDifference>
-							<greatestDifference id="y">E, MMM d, y – E, MMM d, y</greatestDifference>
+							<greatestDifference id="y">E, MMM d, y – E, MMM d,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -1294,7 +1307,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, MMM d – E, MMM d, y</greatestDifference>
 							<greatestDifference id="M">E, MMM d – E, MMM d, y</greatestDifference>
-							<greatestDifference id="y">E, MMM d, y – E, MMM d, y</greatestDifference>
+							<greatestDifference id="y">E, MMM d, y – E, MMM d,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -1318,8 +1332,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">Eminyakeni engu-{0}</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">enyakeni ongu-{0} owedlule</relativeTimePattern>
-					<relativeTimePattern count="other">iminyaka engu-{0} eyedlule</relativeTimePattern>
+					<relativeTimePattern count="one">enyakeni ongu-{0}
+						owedlule</relativeTimePattern>
+					<relativeTimePattern count="other">iminyaka engu-{0}
+						eyedlule</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="month">
@@ -1329,11 +1345,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="1">inyanga ezayo</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">Enyangeni engu-{0}</relativeTimePattern>
-					<relativeTimePattern count="other">Ezinyangeni ezingu-{0}</relativeTimePattern>
+					<relativeTimePattern count="other">Ezinyangeni
+						ezingu-{0}</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">enyangeni engu-{0} eyedlule</relativeTimePattern>
-					<relativeTimePattern count="other">ezinyangeni ezingu-{0} ezedlule</relativeTimePattern>
+					<relativeTimePattern count="one">enyangeni engu-{0}
+						eyedlule</relativeTimePattern>
+					<relativeTimePattern count="other">ezinyangeni
+						ezingu-{0} ezedlule</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -1346,8 +1365,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">Emavikini angu-{0}</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">evikini elingu-{0} eledlule</relativeTimePattern>
-					<relativeTimePattern count="other">amaviki angu-{0} adlule</relativeTimePattern>
+					<relativeTimePattern count="one">evikini elingu-{0}
+						eledlule</relativeTimePattern>
+					<relativeTimePattern count="other">amaviki angu-{0}
+						adlule</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="day">
@@ -1359,11 +1380,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relative type="2">Usuku olulandela olakusasa</relative>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">Osukwini olungu-{0}</relativeTimePattern>
-					<relativeTimePattern count="other">Ezinsukwini ezingu-{0}</relativeTimePattern>
+					<relativeTimePattern count="other">Ezinsukwini
+						ezingu-{0}</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">osukwini olungu-{0} olwedlule</relativeTimePattern>
-					<relativeTimePattern count="other">ezinsukwini ezingu-{0} ezedlule.</relativeTimePattern>
+					<relativeTimePattern count="one">osukwini olungu-{0}
+						olwedlule</relativeTimePattern>
+					<relativeTimePattern count="other">ezinsukwini
+						ezingu-{0} ezedlule.</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="weekday">
@@ -1414,31 +1438,40 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<relativeTimePattern count="other">Emahoreni angu-{0}</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">ehoreni eligu-{0} eledluli</relativeTimePattern>
-					<relativeTimePattern count="other">emahoreni angu-{0} edlule</relativeTimePattern>
+					<relativeTimePattern count="one">ehoreni eligu-{0}
+						eledluli</relativeTimePattern>
+					<relativeTimePattern count="other">emahoreni angu-{0}
+						edlule</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="minute">
 				<displayName>Iminithi</displayName>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">Kumunithi engu-{0}</relativeTimePattern>
-					<relativeTimePattern count="other">Emaminithini angu-{0}</relativeTimePattern>
+					<relativeTimePattern count="other">Emaminithini
+						angu-{0}</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">eminithini elingu-{0} eledlule</relativeTimePattern>
-					<relativeTimePattern count="other">amaminithi angu-{0} adlule</relativeTimePattern>
+					<relativeTimePattern count="one">eminithini
+						elingu-{0} eledlule</relativeTimePattern>
+					<relativeTimePattern count="other">amaminithi angu-{0}
+						adlule</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">
 				<displayName>Isekhondi</displayName>
 				<relative type="0">manje</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">Kusekhondi elingu-{0}</relativeTimePattern>
-					<relativeTimePattern count="other">Kumasekhondi angu-{0}</relativeTimePattern>
+					<relativeTimePattern count="one">Kusekhondi
+						elingu-{0}</relativeTimePattern>
+					<relativeTimePattern count="other">Kumasekhondi
+						angu-{0}</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one">isekhondi elingu-{0} eledlule</relativeTimePattern>
-					<relativeTimePattern count="other">amasekhondi angu-{0} adlule</relativeTimePattern>
+					<relativeTimePattern count="one">isekhondi elingu-{0}
+						eledlule</relativeTimePattern>
+					<relativeTimePattern count="other">amasekhondi angu-{0}
+						adlule</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,14 +22,16 @@
  */
 
 /**
- * @category   Zend
- * @package    Zend_Auth
+ *
+ * @category Zend
+ * @package Zend_Auth
  * @subpackage Storage
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 interface Zend_Auth_Storage_Interface
 {
+
     /**
      * Returns true if and only if storage is empty
      *
@@ -50,7 +53,7 @@ interface Zend_Auth_Storage_Interface
     /**
      * Writes $contents to storage
      *
-     * @param  mixed $contents
+     * @param mixed $contents            
      * @throws Zend_Auth_Storage_Exception If writing $contents to storage is impossible
      * @return void
      */

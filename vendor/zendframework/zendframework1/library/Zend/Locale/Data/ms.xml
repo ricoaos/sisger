@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9791 $"/>
-		<generation date="$Date: 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014) $"/>
-		<language type="ms"/>
+		<version number="$Revision: 9791 $" />
+		<generation date="$Date: 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014) $" />
+		<language type="ms" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -427,7 +426,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">Finland</territory>
 			<territory type="FJ">Fiji</territory>
 			<territory type="FK">Kepulauan Falkland</territory>
-			<territory type="FK" alt="variant">Kepulauan Falkland (Islas Malvinas)</territory>
+			<territory type="FK" alt="variant">Kepulauan Falkland (Islas
+				Malvinas)</territory>
 			<territory type="FM">Micronesia</territory>
 			<territory type="FO">Kepulauan Faroe</territory>
 			<territory type="FR">Perancis</territory>
@@ -446,7 +446,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Guadeloupe</territory>
 			<territory type="GQ">Guinea Khatulistiwa</territory>
 			<territory type="GR">Yunani</territory>
-			<territory type="GS">Kepualaun Georgia Selatan dan Sandwich Selatan</territory>
+			<territory type="GS">Kepualaun Georgia Selatan dan Sandwich
+				Selatan</territory>
 			<territory type="GT">Guatemala</territory>
 			<territory type="GU">Guam</territory>
 			<territory type="GW">Guinea Bissau</territory>
@@ -650,10 +651,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="ducet" key="collation">Aturan Isih Unikod Lalai</type>
 			<type type="ethi" key="numbers">Angka Ethiopia</type>
 			<type type="ethiopic" key="calendar">Kalendar Ethiopia</type>
-			<type type="ethiopic-amete-alem" key="calendar">Kalendar Amete Alem Ethiopia</type>
+			<type type="ethiopic-amete-alem" key="calendar">Kalendar Amete Alem
+				Ethiopia</type>
 			<type type="finance" key="numbers">Angka Kewangan</type>
 			<type type="fullwide" key="numbers">Digit Lebar Penuh</type>
-			<type type="gb2312han" key="collation">Aturan Isih Bahasa Cina Ringkas - GB2312</type>
+			<type type="gb2312han" key="collation">Aturan Isih Bahasa Cina Ringkas -
+				GB2312</type>
 			<type type="geor" key="numbers">Angka Georgia</type>
 			<type type="gregorian" key="calendar">Kalendar Gregory</type>
 			<type type="grek" key="numbers">Angka Greek</type>
@@ -748,9 +751,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a {ai} {au} b c d {dz} e f g h i j k {kh} l m n {ng} {ngg} {ny} o p q r s {sy} t {ts} u {ua} v w x y z]</exemplarCharacters>
+		<exemplarCharacters>[a {ai} {au} b c d {dz} e f g h i j k {kh} l m n
+			{ng} {ngg} {ny} o p q r s {sy} t {ts} u {ua} v w x y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S T U V W X Y Z]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1051,9 +1056,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">d MMM y – d MMM y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, d MMM – E, d MMM, y G</greatestDifference>
-							<greatestDifference id="M">E, d MMM – E, d MMM, y G</greatestDifference>
-							<greatestDifference id="y">E, d MMM y – E, d MMM y G</greatestDifference>
+							<greatestDifference id="d">E, d MMM – E, d MMM, y
+								G</greatestDifference>
+							<greatestDifference id="M">E, d MMM – E, d MMM, y
+								G</greatestDifference>
+							<greatestDifference id="y">E, d MMM y – E, d MMM y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y G</greatestDifference>

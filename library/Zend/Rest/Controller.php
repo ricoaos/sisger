@@ -19,21 +19,24 @@
  * @version    $Id: Controller.php 23953 2011-05-03 05:47:39Z ralph $
  */
 
-/** Zend_Controller_Action */
+/**
+ * Zend_Controller_Action
+ */
 require_once 'Zend/Controller/Action.php';
 
 /**
  * An abstract class to guide implementation of action controllers for use with
  * Zend_Rest_Route.
  *
- * @category   Zend
+ * @category Zend
  * @package Zend_Rest
  * @see Zend_Rest_Route
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Rest_Controller extends Zend_Controller_Action
 {
+
     /**
      * The index action handles index/list requests; it should respond with a
      * list of the requested resources.
@@ -66,5 +69,4 @@ abstract class Zend_Rest_Controller extends Zend_Controller_Action
      * identified by the 'id' value.
      */
     abstract public function deleteAction();
-
 }

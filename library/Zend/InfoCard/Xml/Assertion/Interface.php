@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -23,14 +24,15 @@
 /**
  * The Interface required by any InfoCard Assertion Object implemented within the component
  *
- * @category   Zend
- * @package    Zend_InfoCard
+ * @category Zend
+ * @package Zend_InfoCard
  * @subpackage Zend_InfoCard_Xml
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 interface Zend_InfoCard_Xml_Assertion_Interface
 {
+
     /**
      * Get the Assertion ID of the assertion
      *
@@ -62,7 +64,8 @@ interface Zend_InfoCard_Xml_Assertion_Interface
     /**
      * Validate the conditions array returned from the getConditions() call
      *
-     * @param array $conditions An array of condtions for the assertion taken from getConditions()
+     * @param array $conditions
+     *            An array of condtions for the assertion taken from getConditions()
      * @return mixed Boolean true on success, an array of condition, error message on failure
      */
     public function validateConditions(Array $conditions);

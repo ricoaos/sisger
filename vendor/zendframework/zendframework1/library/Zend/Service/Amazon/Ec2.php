@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -23,31 +24,35 @@
 /**
  * Amazon Ec2 Interface to allow easy creation of the Ec2 Components
  *
- * @category   Zend
- * @package    Zend_Service
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Amazon
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_Amazon_Ec2
 {
+
     /**
      * Factory method to fetch what you want to work with.
      *
-     * @param string $section           Create the method that you want to work with
-     * @param string $key               Override the default aws key
-     * @param string $secret_key        Override the default aws secretkey
+     * @param string $section
+     *            Create the method that you want to work with
+     * @param string $key
+     *            Override the default aws key
+     * @param string $secret_key
+     *            Override the default aws secretkey
      * @throws Zend_Service_Amazon_Ec2_Exception
      * @return object
      */
     public static function factory($section, $key = null, $secret_key = null)
     {
-        switch(strtolower($section)) {
+        switch (strtolower($section)) {
             case 'keypair':
                 $class = 'Zend_Service_Amazon_Ec2_Keypair';
                 break;
             case 'eip':
-                // break left out
+            // break left out
             case 'elasticip':
                 $class = 'Zend_Service_Amazon_Ec2_Elasticip';
                 break;
@@ -55,12 +60,12 @@ class Zend_Service_Amazon_Ec2
                 $class = 'Zend_Service_Amazon_Ec2_Ebs';
                 break;
             case 'availabilityzones':
-                // break left out
+            // break left out
             case 'zones':
                 $class = 'Zend_Service_Amazon_Ec2_Availabilityzones';
                 break;
             case 'ami':
-                // break left out
+            // break left out
             case 'image':
                 $class = 'Zend_Service_Amazon_Ec2_Image';
                 break;
@@ -68,7 +73,7 @@ class Zend_Service_Amazon_Ec2
                 $class = 'Zend_Service_Amazon_Ec2_Instance';
                 break;
             case 'security':
-                // break left out
+            // break left out
             case 'securitygroups':
                 $class = 'Zend_Service_Amazon_Ec2_Securitygroups';
                 break;
@@ -76,8 +81,8 @@ class Zend_Service_Amazon_Ec2
                 throw new Zend_Service_Amazon_Ec2_Exception('Invalid Section: ' . $section);
                 break;
         }
-
-        if (!class_exists($class)) {
+        
+        if (! class_exists($class)) {
             require_once 'Zend/Loader.php';
             Zend_Loader::loadClass($class);
         }

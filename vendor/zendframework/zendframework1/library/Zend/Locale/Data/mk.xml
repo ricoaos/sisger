@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="mk"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="mk" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -647,7 +646,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CA">Канада</territory>
 			<territory type="CC">Кокосови (Килиншки) Острови</territory>
 			<territory type="CD">Конго - Киншаса</territory>
-			<territory type="CD" alt="variant">Конго (Демократска Република Конго)</territory>
+			<territory type="CD" alt="variant">Конго (Демократска Република
+				Конго)</territory>
 			<territory type="CF">Централноафриканска Република</territory>
 			<territory type="CG">Конго - Бразавил</territory>
 			<territory type="CG" alt="variant">Конго (Република)</territory>
@@ -686,7 +686,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">Финска</territory>
 			<territory type="FJ">Фиџи</territory>
 			<territory type="FK">Фолкландски Острови</territory>
-			<territory type="FK" alt="variant">Фолкландски Острови (Малвински Острови)</territory>
+			<territory type="FK" alt="variant">Фолкландски Острови (Малвински
+				Острови)</territory>
 			<territory type="FM">Микронезија</territory>
 			<territory type="FO">Фарски Острови</territory>
 			<territory type="FR">Франција</territory>
@@ -957,10 +958,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[а б в г д ѓ е ж з ѕ и ј к л љ м н њ о п р с т ќ у ф х ц ч џ ш]</exemplarCharacters>
+		<exemplarCharacters>[а б в г д ѓ е ж з ѕ и ј к л љ м н њ о п р с т ќ у
+			ф х ц ч џ ш]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[ѐ ѝ]</exemplarCharacters>
-		<exemplarCharacters type="index">[А Б В Г Д Ѓ Е Ж З Ѕ И Ј К Л Љ М Н Њ О П Р С Т Ќ У Ф Х Ц Ч Џ Ш]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ‘ ‚ “ „ ( ) \[ \] \{ \}]</exemplarCharacters>
+		<exemplarCharacters type="index">[А Б В Г Д Ѓ Е Ж З Ѕ И Ј К
+			Л Љ М Н Њ О П Р С Т Ќ У Ф Х Ц Ч Џ Ш]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ‘
+			‚ “ „ ( ) \[ \] \{ \}]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1145,8 +1149,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, dd - E, dd MMM y G</greatestDifference>
-							<greatestDifference id="M">E, dd MMM - E, dd MMM y G</greatestDifference>
-							<greatestDifference id="y">E, dd MMM y - E, dd MMM y G</greatestDifference>
+							<greatestDifference id="M">E, dd MMM - E, dd MMM y
+								G</greatestDifference>
+							<greatestDifference id="y">E, dd MMM y - E, dd MMM
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM-MMMM y G</greatestDifference>
@@ -1577,7 +1583,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, dd - E, dd MMM y</greatestDifference>
 							<greatestDifference id="M">E, dd MMM - E, dd MMM y</greatestDifference>
-							<greatestDifference id="y">E, dd MMM y - E, dd MMM y</greatestDifference>
+							<greatestDifference id="y">E, dd MMM y - E, dd MMM
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -3112,7 +3119,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<long>
 					<generic>Време во Централна и Западна Австралија</generic>
 					<standard>Стандардно време во Централна и Западна Австралија</standard>
-					<daylight>Летно сметање на времето во Централна и Западна Австралија</daylight>
+					<daylight>Летно сметање на времето во Централна и Западна
+						Австралија</daylight>
 				</long>
 			</metazone>
 			<metazone type="Australia_Eastern">
@@ -4044,8 +4052,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>Босанско-Херцеговска конвертибилна марка</displayName>
-				<displayName count="one">Босанско-Херцеговска конвертибилна марка</displayName>
-				<displayName count="other">Босанско-Херцеговска конвертибилна марка</displayName>
+				<displayName count="one">Босанско-Херцеговска конвертибилна
+					марка</displayName>
+				<displayName count="other">Босанско-Херцеговска конвертибилна
+					марка</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Барбадоски долар</displayName>

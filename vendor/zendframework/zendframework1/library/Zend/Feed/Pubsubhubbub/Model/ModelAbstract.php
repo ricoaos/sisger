@@ -19,24 +19,28 @@
  * @version    $Id$
  */
 
-
-/** @see Zend_Db_Table */
+/**
+ *
+ * @see Zend_Db_Table
+ */
 require_once 'Zend/Db/Table.php';
 
 /**
- * @see Zend_Registry
- * Seems to fix the file not being included by Zend_Db_Table...
+ *
+ * @see Zend_Registry Seems to fix the file not being included by Zend_Db_Table...
  */
 require_once 'Zend/Registry.php';
 
 /**
- * @category   Zend
- * @package    Zend_Feed_Pubsubhubbub
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Feed_Pubsubhubbub
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Feed_Pubsubhubbub_Model_ModelAbstract
 {
+
     /**
      * Zend_Db_Table instance to host database methods
      *
@@ -47,7 +51,7 @@ class Zend_Feed_Pubsubhubbub_Model_ModelAbstract
     /**
      * Constructor
      *
-     * @param  Zend_Db_Table_Abstract $tableGateway
+     * @param Zend_Db_Table_Abstract $tableGateway            
      */
     public function __construct(Zend_Db_Table_Abstract $tableGateway = null)
     {
@@ -59,5 +63,4 @@ class Zend_Feed_Pubsubhubbub_Model_ModelAbstract
             $this->_db = $tableGateway;
         }
     }
-
 }

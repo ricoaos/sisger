@@ -21,21 +21,26 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension_Property
  */
 require_once 'Zend/Gdata/Analytics/Extension/Property.php';
 
 /**
- * @category   Zend
- * @package    Zend_Gdata
+ *
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Analytics
  */
-class Zend_Gdata_Analytics_Extension_Metric 
-    extends Zend_Gdata_Analytics_Extension_Property
+class Zend_Gdata_Analytics_Extension_Metric extends Zend_Gdata_Analytics_Extension_Property
 {
+
     protected $_rootNamespace = 'ga';
+
     protected $_rootElement = 'metric';
+
     protected $_value = null;
+
     protected $_name = null;
 
     protected function takeAttributeFromDOM($attribute)

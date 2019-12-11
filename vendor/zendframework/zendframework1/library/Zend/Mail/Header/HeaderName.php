@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -19,33 +20,33 @@
  * @version    $Id$
  */
 
-
 /**
- * @category   Zend
- * @package    Zend_Mail
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Mail
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 final class Zend_Mail_Header_HeaderName
 {
+
     /**
      * No public constructor.
      */
     private function __construct()
-    {
-    }
+    {}
 
     /**
      * Filter the header name according to RFC 2822
      *
-     * @see    http://www.rfc-base.org/txt/rfc-2822.txt (section 2.2)
-     * @param  string $name
+     * @see http://www.rfc-base.org/txt/rfc-2822.txt (section 2.2)
+     * @param string $name            
      * @return string
      */
     public static function filter($name)
     {
         $result = '';
-        $tot    = strlen($name);
+        $tot = strlen($name);
         for ($i = 0; $i < $tot; $i += 1) {
             $ord = ord($name[$i]);
             if ($ord > 32 && $ord < 127 && $ord !== 58) {
@@ -58,7 +59,7 @@ final class Zend_Mail_Header_HeaderName
     /**
      * Determine if the header name contains any invalid characters.
      *
-     * @param string $name
+     * @param string $name            
      * @return bool
      */
     public static function isValid($name)
@@ -78,7 +79,7 @@ final class Zend_Mail_Header_HeaderName
      *
      * Raises an exception if invalid.
      *
-     * @param string $name
+     * @param string $name            
      * @throws Exception\RuntimeException
      * @return void
      */

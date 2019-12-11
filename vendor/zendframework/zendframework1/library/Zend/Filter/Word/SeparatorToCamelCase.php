@@ -20,15 +20,17 @@
  */
 
 /**
+ *
  * @see Zend_Filter_PregReplace
  */
 require_once 'Zend/Filter/Word/Separator/Abstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Filter
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Filter
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Filter_Word_SeparatorToCamelCase extends Zend_Filter_Word_Separator_Abstract
 {
@@ -37,20 +39,33 @@ class Zend_Filter_Word_SeparatorToCamelCase extends Zend_Filter_Word_Separator_A
     {
         // a unicode safe way of converting characters to \x00\x00 notation
         $pregQuotedSeparator = preg_quote($this->_separator, '#');
-
+        
         if (self::isUnicodeSupportEnabled()) {
-            parent::setMatchPattern(array('#('.$pregQuotedSeparator.')(\p{L}{1})#','#(^\p{Ll}{1})#'));
-            parent::setReplacement(array('Zend_Filter_Word_SeparatorToCamelCase', '_strtoupperArray'));
+            parent::setMatchPattern(array(
+                '#(' . $pregQuotedSeparator . ')(\p{L}{1})#',
+                '#(^\p{Ll}{1})#'
+            ));
+            parent::setReplacement(array(
+                'Zend_Filter_Word_SeparatorToCamelCase',
+                '_strtoupperArray'
+            ));
         } else {
-            parent::setMatchPattern(array('#('.$pregQuotedSeparator.')([A-Za-z]{1})#','#(^[A-Za-z]{1})#'));
-            parent::setReplacement(array('Zend_Filter_Word_SeparatorToCamelCase', '_strtoupperArray'));
+            parent::setMatchPattern(array(
+                '#(' . $pregQuotedSeparator . ')([A-Za-z]{1})#',
+                '#(^[A-Za-z]{1})#'
+            ));
+            parent::setReplacement(array(
+                'Zend_Filter_Word_SeparatorToCamelCase',
+                '_strtoupperArray'
+            ));
         }
-
+        
         return preg_replace_callback($this->_matchPattern, $this->_replacement, $value);
     }
 
     /**
-     * @param array $matches
+     *
+     * @param array $matches            
      * @return string
      */
     private static function _strtoupperArray(array $matches)
@@ -60,5 +75,4 @@ class Zend_Filter_Word_SeparatorToCamelCase extends Zend_Filter_Word_Separator_A
         }
         return strtoupper($matches[1]);
     }
-
 }

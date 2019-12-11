@@ -1,102 +1,102 @@
-
 #errmsg {
-    color: #ff0000;
-    display:none;
+	color: #ff0000;
+	display: none;
 }
 
 #left {
-    float: left;
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    color: #333;
-    margin-top: 49px;
-    padding: 22px;
-    margin-right:0;
-   text-align: right;
+	float: left;
+	background: #f4f4f4;
+	border: 1px solid #ddd;
+	color: #333;
+	margin-top: 49px;
+	padding: 22px;
+	margin-right: 0;
+	text-align: right;
 }
 
 #right {
-    float: right;
-    background: #333;
-    color:#fff;
+	float: right;
+	background: #333;
+	color: #fff;
 }
 
 input {
-    background: #333;
-    border: 1px solid #292929;
-    color: #fff;
-    outline: none;
+	background: #333;
+	border: 1px solid #292929;
+	color: #fff;
+	outline: none;
 }
+
 #gauge {
-    float:left;
-    width:250px;
-    position: relative;
-    height:300px;
-    background: #00C6D7 url(../images/speed.png) no-repeat 10px 20px;
-	margin-left:10px;
+	float: left;
+	width: 250px;
+	position: relative;
+	height: 300px;
+	background: #00C6D7 url(../images/speed.png) no-repeat 10px 20px;
+	margin-left: 10px;
 }
 
 #needle {
-         height: 5px;
-    width: 113px;
-    background: #C31916;
-    position: absolute;
-    bottom: 157px;
-    left: 16px;
+	height: 5px;
+	width: 113px;
+	background: #C31916;
+	position: absolute;
+	bottom: 157px;
+	left: 16px;
 }
 
 #numbers {
-        width: 140px;
-    height: 30px;
-    background: #0795A2;
-    position: absolute;
-    bottom: 64px;
-    left: 57px;
-    color: #fff;
-    font-size: 1em;
-    line-height: 1.6em;
-    padding: 0px 10px 5px;
-    border: 1px solid #02ADBB;
+	width: 140px;
+	height: 30px;
+	background: #0795A2;
+	position: absolute;
+	bottom: 64px;
+	left: 57px;
+	color: #fff;
+	font-size: 1em;
+	line-height: 1.6em;
+	padding: 0px 10px 5px;
+	border: 1px solid #02ADBB;
 }
 
 #circle {
-       width: 55px;
-    height: 55px;
-    background: #0795A2;
-    bottom:133px;
-    left: 96px;
-    position: absolute;
-    box-shadow: 0px 0px 10px #014449;
-    border-radius: 50%;
+	width: 55px;
+	height: 55px;
+	background: #0795A2;
+	bottom: 133px;
+	left: 96px;
+	position: absolute;
+	box-shadow: 0px 0px 10px #014449;
+	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-o-border-radius: 50%;
 	-moz-border-radius: 50%;
 }
 
 #mi-km {
-         bottom: 22px;
-    left: 60px;
-    text-align: center;
-    position: absolute;
-    width: 140px;
-    height: 30px;
-    color: #078894;
-    font-size: 1.2em;
+	bottom: 22px;
+	left: 60px;
+	text-align: center;
+	position: absolute;
+	width: 140px;
+	height: 30px;
+	color: #078894;
+	font-size: 1.2em;
 }
 /*--responsiv--*/
-@media (max-width:1440px){
+@media ( max-width :1440px) {
 	#left {
-			float: left;
-			margin-top: 49px;
-			padding: 12px 12px;
-			margin-right: 0;
-			text-align: right;
-		}
+		float: left;
+		margin-top: 49px;
+		padding: 12px 12px;
+		margin-right: 0;
+		text-align: right;
+	}
 	#gauge {
 		float: right;
 		width: 200px;
 		position: relative;
-		height:288px;
+		height: 288px;
 		background: #00C6D7 url(../images/speed.png) no-repeat 13px 20px;
 		margin-left: 1px;
 		background-size: 86%;
@@ -124,15 +124,16 @@ input {
 		left: 46px;
 	}
 	#mi-km {
-    bottom: 29px;
-    left: 38px;
-    position: absolute;
-    width: 140px;
-    height: 30px;
-    font-size: 1.2em;
+		bottom: 29px;
+		left: 38px;
+		position: absolute;
+		width: 140px;
+		height: 30px;
+		font-size: 1.2em;
 	}
 }
-@media (max-width:1366px){
+
+@media ( max-width :1366px) {
 	#left {
 		float: none;
 		margin-top: 49px;
@@ -181,7 +182,8 @@ input {
 		font-size: 1.2em;
 	}
 }
-@media (max-width:1280px){
+
+@media ( max-width :1280px) {
 	#left {
 		float: none;
 		margin-top: 49px;
@@ -190,25 +192,31 @@ input {
 		text-align: right;
 	}
 }
-@media (max-width:1024px){
+
+@media ( max-width :1024px) {
 }
-@media (max-width:800px){
+
+@media ( max-width :800px) {
 }
-@media (max-width:768px){
+
+@media ( max-width :768px) {
 }
-@media (max-width:640px){
+
+@media ( max-width :640px) {
 }
-@media (max-width:480px){
+
+@media ( max-width :480px) {
 }
-@media (max-width:375px){
-  	#gauge {
+
+@media ( max-width :375px) {
+	#gauge {
 		float: left;
 		width: 200px;
 		position: relative;
 		height: 288px;
 		background: #00C6D7 url(../images/speed.png) no-repeat 15px 20px;
 		margin-left: 0;
-		background-size:86%;
+		background-size: 86%;
 		margin-top: 1em;
 	}
 	#circle {
@@ -241,9 +249,8 @@ input {
 		height: 30px;
 		font-size: 1em;
 	}
-
 }
-@media (max-width:320px){
 
+@media ( max-width :320px) {
 }
 /*--//responsive--*/

@@ -21,20 +21,23 @@
  */
 
 /**
+ *
  * @see Zend_Validate_Ip
  */
 require_once 'Zend/Validate/Ip.php';
 
 /**
- * @category   Zend
- * @package    Zend_Service
+ *
+ * @category Zend
+ * @package Zend_Service
  * @subpackage DeveloperGarden
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @author     Marco Kaiser
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @author Marco Kaiser
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_DeveloperGarden_IpLocation_IpAddress
 {
+
     /**
      * the ip version
      * ip v4 = 4
@@ -50,8 +53,8 @@ class Zend_Service_DeveloperGarden_IpLocation_IpAddress
      * @var array
      */
     private $_versionSupported = array(
-        4,
-        //6, not supported yet
+        4
+        // 6, not supported yet
     );
 
     private $_address = null;
@@ -59,29 +62,28 @@ class Zend_Service_DeveloperGarden_IpLocation_IpAddress
     /**
      * create ipaddress object
      *
-     * @param string $ip
-     * @param integer $version
+     * @param string $ip            
+     * @param integer $version            
      *
      * @return Zend_Service_Developergarde_IpLocation_IpAddress
      */
     public function __construct($ip, $version = 4)
     {
-        $this->setIp($ip)
-             ->setVersion($version);
+        $this->setIp($ip)->setVersion($version);
     }
 
     /**
      * sets new ip address
      *
-     * @param string $ip
+     * @param string $ip            
      * @throws Zend_Service_DeveloperGarden_Exception
      * @return Zend_Service_DeveloperGarden_IpLocation_IpAddress
      */
     public function setIp($ip)
     {
         $validator = new Zend_Validate_Ip();
-
-        if (!$validator->isValid($ip)) {
+        
+        if (! $validator->isValid($ip)) {
             $message = $validator->getMessages();
             require_once 'Zend/Service/DeveloperGarden/Exception.php';
             throw new Zend_Service_DeveloperGarden_Exception($message['notIpAddress']);
@@ -103,17 +105,17 @@ class Zend_Service_DeveloperGarden_IpLocation_IpAddress
     /**
      * sets new ip version
      *
-     * @param integer $version
+     * @param integer $version            
      * @throws Zend_Service_DeveloperGarden_Exception
      * @return Zend_Service_DeveloperGarden_IpLocation_IpAddress
      */
     public function setVersion($version)
     {
-        if (!in_array($version, $this->_versionSupported)) {
+        if (! in_array($version, $this->_versionSupported)) {
             require_once 'Zend/Service/DeveloperGarden/Exception.php';
-            throw new Zend_Service_DeveloperGarden_Exception('Ip Version ' . (int)$version . ' is not supported.');
+            throw new Zend_Service_DeveloperGarden_Exception('Ip Version ' . (int) $version . ' is not supported.');
         }
-
+        
         $this->_version = $version;
         return $this;
     }

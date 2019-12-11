@@ -21,6 +21,7 @@
  */
 
 /**
+ *
  * @var Zend_XmlRpc_Generator_GeneratorAbstract
  */
 require_once 'Zend/XmlRpc/Generator/GeneratorAbstract.php';
@@ -30,12 +31,15 @@ require_once 'Zend/XmlRpc/Generator/GeneratorAbstract.php';
  */
 class Zend_XmlRpc_Generator_DomDocument extends Zend_XmlRpc_Generator_GeneratorAbstract
 {
+
     /**
+     *
      * @var DOMDocument
      */
     protected $_dom;
 
     /**
+     *
      * @var DOMNode
      */
     protected $_currentElement;
@@ -43,20 +47,20 @@ class Zend_XmlRpc_Generator_DomDocument extends Zend_XmlRpc_Generator_GeneratorA
     /**
      * Start XML element
      *
-     * @param string $name
+     * @param string $name            
      * @return void
      */
     protected function _openElement($name)
     {
         $newElement = $this->_dom->createElement($name);
-
+        
         $this->_currentElement = $this->_currentElement->appendChild($newElement);
     }
 
     /**
      * Write XML text data into the currently opened XML element
      *
-     * @param string $text
+     * @param string $text            
      */
     protected function _writeTextData($text)
     {
@@ -68,7 +72,7 @@ class Zend_XmlRpc_Generator_DomDocument extends Zend_XmlRpc_Generator_GeneratorA
      *
      * Resets $_currentElement to the next parent node in the hierarchy
      *
-     * @param string $name
+     * @param string $name            
      * @return void
      */
     protected function _closeElement($name)

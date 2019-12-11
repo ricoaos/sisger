@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="ka"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="ka" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -612,7 +611,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CA">კანადა</territory>
 			<territory type="CC">ქოქოსის (კილინგის) კუნძულები</territory>
 			<territory type="CD">კონგო - კინშასა</territory>
-			<territory type="CD" alt="variant">კონგო (კონგოს დემოკრატიული რესპუბლიკა)</territory>
+			<territory type="CD" alt="variant">კონგო (კონგოს დემოკრატიული
+				რესპუბლიკა)</territory>
 			<territory type="CF">ცენტრალური აფრიკის რესპუბლიკა</territory>
 			<territory type="CG">კონგო - ბრაზავილი</territory>
 			<territory type="CG" alt="variant">კონგო (რესპუბლიკა)</territory>
@@ -651,7 +651,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">ფინეთი</territory>
 			<territory type="FJ">ფიჯი</territory>
 			<territory type="FK">ფოლკლენდის კუნძულები</territory>
-			<territory type="FK" alt="variant">ფოლკლენდის კუნძულები (მალვინის კუნძულები)</territory>
+			<territory type="FK" alt="variant">ფოლკლენდის კუნძულები (მალვინის
+				კუნძულები)</territory>
 			<territory type="FM">მიკრონეზია</territory>
 			<territory type="FO">ფარერის კუნძულები</territory>
 			<territory type="FR">საფრანგეთი</territory>
@@ -670,12 +671,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">გვადელუპე</territory>
 			<territory type="GQ">ეკვატორული გვინეა</territory>
 			<territory type="GR">საბერძნეთი</territory>
-			<territory type="GS">სამხრეთი გეორგია და სამხრეთ სენდვიჩის კუნძულები</territory>
+			<territory type="GS">სამხრეთი გეორგია და სამხრეთ სენდვიჩის
+				კუნძულები</territory>
 			<territory type="GT">გვატემალა</territory>
 			<territory type="GU">გუამი</territory>
 			<territory type="GW">გვინეა-ბისაუ</territory>
 			<territory type="GY">გაიანა</territory>
-			<territory type="HK">ჰონკონგის სპეციალური ადმინისტრაციული რეგიონი ჩინეთი</territory>
+			<territory type="HK">ჰონკონგის სპეციალური ადმინისტრაციული
+				რეგიონი ჩინეთი</territory>
 			<territory type="HK" alt="short">ჰონკონგი</territory>
 			<territory type="HM">ჰერდი და მაკდონალდის კუნძულები</territory>
 			<territory type="HN">ჰონდურასი</territory>
@@ -727,11 +730,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="MG">მადაგასკარი</territory>
 			<territory type="MH">მარშალის კუნძულები</territory>
 			<territory type="MK">მაკედონია</territory>
-			<territory type="MK" alt="variant">მაკედონია (ყოფილი იუგოსლავიის რესპუბლიკა მაკედონია)</territory>
+			<territory type="MK" alt="variant">მაკედონია (ყოფილი იუგოსლავიის
+				რესპუბლიკა მაკედონია)</territory>
 			<territory type="ML">მალი</territory>
 			<territory type="MM">მიანმარი (ბირმა)</territory>
 			<territory type="MN">მონღოლეთი</territory>
-			<territory type="MO">მაკაოს სპეციალური ადმინისტრაციული რეგიონი ჩინეთი</territory>
+			<territory type="MO">მაკაოს სპეციალური ადმინისტრაციული რეგიონი
+				ჩინეთი</territory>
 			<territory type="MO" alt="short">მაკაო</territory>
 			<territory type="MP">ჩრდილოეთ მარიანას კუნძულები</territory>
 			<territory type="MQ">მარტინიკა</territory>
@@ -898,7 +903,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="SUTSILV" draft="unconfirmed">სუტსილვანური რეტორომანული</variant>
 			<variant type="TARASK" draft="unconfirmed">ტარაშკევიცა</variant>
 			<variant type="UCCOR" draft="unconfirmed">უნიფიცირებული ორთოგრაფია</variant>
-			<variant type="UCRCOR" draft="unconfirmed">გადასინჯული უნიფიცირებული ორთოგრაფია</variant>
+			<variant type="UCRCOR" draft="unconfirmed">გადასინჯული უნიფიცირებული
+				ორთოგრაფია</variant>
 			<variant type="ULSTER" draft="unconfirmed">ულსტერის ირლანდიური</variant>
 			<variant type="VAIDIKA" draft="unconfirmed">ვედური სანსკრიტი</variant>
 			<variant type="VALENCIA" draft="unconfirmed">ვალენსიური კატალანური</variant>
@@ -926,10 +932,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="dangi" key="calendar" draft="unconfirmed">კალენდარი დანგი</type>
 			<type type="deva" key="numbers">დევანაგარის ციფრები</type>
 			<type type="dictionary" key="collation" draft="unconfirmed">ლექსიკონით</type>
-			<type type="ducet" key="collation">უნიკოდის ნაგულისხმევი დახარისხების თანმიმდევრობა</type>
+			<type type="ducet" key="collation">უნიკოდის ნაგულისხმევი დახარისხების
+				თანმიმდევრობა</type>
 			<type type="ethi" key="numbers">ეთიოპიური რიცხვები</type>
 			<type type="ethiopic" key="calendar" draft="unconfirmed">ეთიოპიური კალენდარი</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="unconfirmed">ეთიოპიური ამეთე ალემი კალენდარი</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="unconfirmed">ეთიოპიური
+				ამეთე ალემი კალენდარი</type>
 			<type type="fullwide" key="numbers">სრულსიგანიანი ციფრები</type>
 			<type type="gb2312han" key="collation">გამარტივებული ჩინური</type>
 			<type type="geor" key="numbers">ქართული რიცხვები</type>
@@ -956,7 +964,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="khmr" key="numbers">ქხმერული ციფრები</type>
 			<type type="knda" key="numbers">კანადური რიცხვები</type>
 			<type type="lana" key="numbers" draft="unconfirmed">ტაი თამის ჰორასი ციფრები</type>
-			<type type="lanatham" key="numbers" draft="unconfirmed">ტაი თამის თამისი ციფრები</type>
+			<type type="lanatham" key="numbers" draft="unconfirmed">ტაი თამის თამისი
+				ციფრები</type>
 			<type type="laoo" key="numbers">ლაოსური ციფრები</type>
 			<type type="latn" key="numbers">დასავლური ციფრები</type>
 			<type type="lepc" key="numbers" draft="unconfirmed">რონგ-რინგის ციფრები</type>
@@ -973,12 +982,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="phonebook" key="collation" draft="unconfirmed">ტელეფონის წიგნით</type>
 			<type type="pinyin" key="collation" draft="unconfirmed">პინ-ინი</type>
 			<type type="reformed" key="collation" draft="unconfirmed">რეფორმირებული</type>
-			<type type="roc" key="calendar" draft="contributed">ჩინეთის რესპუბლიკის კალენდარი</type>
+			<type type="roc" key="calendar" draft="contributed">ჩინეთის რესპუბლიკის
+				კალენდარი</type>
 			<type type="roman" key="numbers">რომაული ციფრები</type>
 			<type type="romanlow" key="numbers">რომაული ქვედა რეგისტრის რიცხვები</type>
 			<type type="saur" key="numbers">საურაშტრული ციფრები</type>
 			<type type="search" key="collation">ზოგადი დანიშნულების ძიება</type>
-			<type type="searchjl" key="collation" draft="unconfirmed">ჰანგულის პირველი თანხმოვნით</type>
+			<type type="searchjl" key="collation" draft="unconfirmed">ჰანგულის პირველი
+				თანხმოვნით</type>
 			<type type="standard" key="collation">სტანდარტული დახარისხების თანმიმდევრობა</type>
 			<type type="stroke" key="collation" draft="unconfirmed">შტრიხით</type>
 			<type type="sund" key="numbers">სუნდანური ციფრები</type>
@@ -1005,10 +1016,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[ა ბ გ დ ე ვ ზ თ ი კ ლ მ ნ ო პ ჟ რ ს ტ უ ფ ქ ღ ყ შ ჩ ც ძ წ ჭ ხ ჯ ჰ]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[ⴀ ⴁ ⴂ ⴃ ⴄ ⴅ ⴆ ჱ ⴡ ⴇ ⴈ ⴉ ⴊ ⴋ ⴌ ჲ ⴢ ⴍ ⴎ ⴏ ⴐ ⴑ ⴒ ჳ ⴣ ⴓ ⴔ ⴕ ⴖ ⴗ ⴘ ⴙ ⴚ ⴛ ⴜ ⴝ ⴞ ჴ ⴤ ⴟ ⴠ ჵ ⴥ ჶ ჷ ჸ ჹ ჺ]</exemplarCharacters>
-		<exemplarCharacters type="index">[ა ბ გ დ ე ვ ზ თ ი კ ლ მ ნ ო პ ჟ რ ს ტ უ ფ ქ ღ ყ შ ჩ ც ძ წ ჭ ხ ჯ ჰ]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ჻ ' ‘ ‚ “ „ « » ( ) \[ \] \{ \} § @ * / \&amp; # † ‡ ′ ″ №]</exemplarCharacters>
+		<exemplarCharacters>[ა ბ გ დ ე ვ ზ თ ი კ ლ მ ნ ო პ ჟ რ ს ტ უ ფ ქ ღ ყ შ
+			ჩ ც ძ წ ჭ ხ ჯ ჰ]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[ⴀ ⴁ ⴂ ⴃ ⴄ ⴅ ⴆ ჱ ⴡ ⴇ ⴈ ⴉ ⴊ
+			ⴋ ⴌ ჲ ⴢ ⴍ ⴎ ⴏ ⴐ ⴑ ⴒ ჳ ⴣ ⴓ ⴔ ⴕ ⴖ ⴗ ⴘ ⴙ ⴚ ⴛ ⴜ ⴝ ⴞ ჴ ⴤ ⴟ ⴠ ჵ ⴥ ჶ ჷ ჸ ჹ
+			ჺ]</exemplarCharacters>
+		<exemplarCharacters type="index">[ა ბ გ დ ე ვ ზ თ ი კ ლ მ ნ
+			ო პ ჟ რ ს ტ უ ფ ქ ღ ყ შ ჩ ც ძ წ ჭ ხ ჯ ჰ]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ჻
+			' ‘ ‚ “ „ « » ( ) \[ \] \{ \} § @ * / \&amp; # † ‡ ′ ″ №]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1172,9 +1188,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">dd.MM.y - dd.MM.y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, dd.MM.y - E, dd.MM.y G</greatestDifference>
-							<greatestDifference id="M">E, dd.MM.y - E, dd.MM.y G</greatestDifference>
-							<greatestDifference id="y">E, dd.MM.y - E, dd.MM.y G</greatestDifference>
+							<greatestDifference id="d">E, dd.MM.y - E, dd.MM.y
+								G</greatestDifference>
+							<greatestDifference id="M">E, dd.MM.y - E, dd.MM.y
+								G</greatestDifference>
+							<greatestDifference id="y">E, dd.MM.y - E, dd.MM.y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM-MMM y G</greatestDifference>
@@ -1187,8 +1206,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d - E, d MMM y G</greatestDifference>
-							<greatestDifference id="M">E, d MMM - E, d MMM, y G</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y - E, d MMM, y G</greatestDifference>
+							<greatestDifference id="M">E, d MMM - E, d MMM, y
+								G</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y - E, d MMM,
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MM - MM.y G</greatestDifference>
@@ -1627,7 +1648,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM - E, d MMM, y</greatestDifference>
 							<greatestDifference id="M">E, d MMM - E, d MMM, y</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y - E, d MMM, y</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y - E, d MMM,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MM - MM.y</greatestDifference>
@@ -4275,8 +4297,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AED">
 				<displayName>არაბთა გაერთიანებული საამიროების დირჰამი</displayName>
-				<displayName count="one">არაბთა გაერთიანებული საამიროების დირჰამი</displayName>
-				<displayName count="other">არაბთა გაერთიანებული საამიროების დირჰამი</displayName>
+				<displayName count="one">არაბთა გაერთიანებული საამიროების
+					დირჰამი</displayName>
+				<displayName count="other">არაბთა გაერთიანებული საამიროების
+					დირჰამი</displayName>
 			</currency>
 			<currency type="AFA">
 				<displayName draft="contributed">ავღანი (1927–2002)</displayName>
@@ -4313,7 +4337,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName draft="contributed">ანგოლური ახალი კვანზა (1990–2000)</displayName>
 			</currency>
 			<currency type="AOR">
-				<displayName draft="contributed">ანგოლური მიტოლებული კვანზა (1995–1999)</displayName>
+				<displayName draft="contributed">ანგოლური მიტოლებული კვანზა
+					(1995–1999)</displayName>
 			</currency>
 			<currency type="ARA">
 				<displayName draft="contributed">არგენტინული აუსტრალი</displayName>
@@ -4353,8 +4378,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>ბოსნია და ჰერცოგოვინას კონვერტირებადი მარკა</displayName>
-				<displayName count="one">ბოსნია და ჰერცოგოვინას კონვერტირებადი მარკა</displayName>
-				<displayName count="other">ბოსნია და ჰერცოგოვინას კონვერტირებადი მარკა</displayName>
+				<displayName count="one">ბოსნია და ჰერცოგოვინას კონვერტირებადი
+					მარკა</displayName>
+				<displayName count="other">ბოსნია და ჰერცოგოვინას კონვერტირებადი
+					მარკა</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>ბარბადოსული დოლარი</displayName>

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -21,13 +22,15 @@
 /**
  * Locate files containing PHP classes, interfaces, abstracts or traits
  *
- * @package    Zend_File
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    New BSD {@link http://framework.zend.com/license/new-bsd}
+ * @package Zend_File
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license New BSD {@link http://framework.zend.com/license/new-bsd}
  */
 class Zend_File_PhpClassFile extends SplFileInfo
 {
+
     /**
+     *
      * @var array
      */
     protected $classes;
@@ -45,7 +48,7 @@ class Zend_File_PhpClassFile extends SplFileInfo
     /**
      * Add class
      *
-     * @param  string $class
+     * @param string $class            
      * @return Zend_File_PhpClassFile
      */
     public function addClass($class)

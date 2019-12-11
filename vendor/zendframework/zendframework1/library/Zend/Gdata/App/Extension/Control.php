@@ -22,11 +22,13 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_App_Extension
  */
 require_once 'Zend/Gdata/App/Extension.php';
 
 /**
+ *
  * @see Zend_Gdata_App_Extension_Draft
  */
 require_once 'Zend/Gdata/App/Extension/Draft.php';
@@ -34,17 +36,19 @@ require_once 'Zend/Gdata/App/Extension/Draft.php';
 /**
  * Represents the app:control element
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage App
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_App_Extension_Control extends Zend_Gdata_App_Extension
 {
 
     protected $_rootNamespace = 'app';
+
     protected $_rootElement = 'control';
+
     protected $_draft = null;
 
     public function __construct($draft = null)
@@ -66,18 +70,19 @@ class Zend_Gdata_App_Extension_Control extends Zend_Gdata_App_Extension
     {
         $absoluteNodeName = $child->namespaceURI . ':' . $child->localName;
         switch ($absoluteNodeName) {
-        case $this->lookupNamespace('app') . ':' . 'draft':
-            $draft = new Zend_Gdata_App_Extension_Draft();
-            $draft->transferFromDOM($child);
-            $this->_draft = $draft;
-            break;
-        default:
-            parent::takeChildFromDOM($child);
-            break;
+            case $this->lookupNamespace('app') . ':' . 'draft':
+                $draft = new Zend_Gdata_App_Extension_Draft();
+                $draft->transferFromDOM($child);
+                $this->_draft = $draft;
+                break;
+            default:
+                parent::takeChildFromDOM($child);
+                break;
         }
     }
 
     /**
+     *
      * @return Zend_Gdata_App_Extension_Draft
      */
     public function getDraft()
@@ -86,7 +91,8 @@ class Zend_Gdata_App_Extension_Control extends Zend_Gdata_App_Extension
     }
 
     /**
-     * @param Zend_Gdata_App_Extension_Draft $value
+     *
+     * @param Zend_Gdata_App_Extension_Draft $value            
      * @return Zend_Gdata_App_Entry Provides a fluent interface
      */
     public function setDraft($value)
@@ -94,5 +100,4 @@ class Zend_Gdata_App_Extension_Control extends Zend_Gdata_App_Extension
         $this->_draft = $value;
         return $this;
     }
-
 }

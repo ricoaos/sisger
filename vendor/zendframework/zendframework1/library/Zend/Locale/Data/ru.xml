@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9862 $"/>
-		<generation date="$Date: 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014) $"/>
-		<language type="ru"/>
+		<version number="$Revision: 9862 $" />
+		<generation date="$Date: 2014-03-03 17:35:05 -0600 (Mon, 03 Mar 2014) $" />
+		<language type="ru" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -577,16 +576,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hani">Китайская</script>
 			<script type="Hano">Хануну</script>
 			<script type="Hans">Упрощенная китайская</script>
-			<script type="Hans" alt="stand-alone" draft="contributed">Упрощенный китайский</script>
+			<script type="Hans" alt="stand-alone" draft="contributed">Упрощенный
+				китайский</script>
 			<script type="Hant">Традиционная китайская</script>
-			<script type="Hant" alt="stand-alone" draft="contributed">Традиционный китайский</script>
+			<script type="Hant" alt="stand-alone" draft="contributed">Традиционный
+				китайский</script>
 			<script type="Hebr">Иврит</script>
 			<script type="Hira">Хирагана</script>
 			<script type="Hluw" draft="contributed">лувийские иероглифы</script>
 			<script type="Hmng" draft="contributed">Пахау хмонг</script>
 			<script type="Hrkt">Катакана или хирагана</script>
 			<script type="Hung">Старовенгерская</script>
-			<script type="Inds" draft="contributed">Хараппская (письменность долины Инда)</script>
+			<script type="Inds" draft="contributed">Хараппская (письменность долины
+				Инда)</script>
 			<script type="Ital">Староитальянская</script>
 			<script type="Java">Яванская</script>
 			<script type="Jpan">Японская</script>
@@ -997,20 +999,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</territories>
 		<variants>
 			<variant type="1901" draft="contributed">Традиционная немецкая орфография</variant>
-			<variant type="1994" draft="contributed">Стандартизированная резьянская орфография</variant>
-			<variant type="1996">Правила немецкой орфографии установленные с 1996 года</variant>
-			<variant type="1606NICT" draft="contributed">Поздне-средневековый французский до 1606 г.</variant>
-			<variant type="1694ACAD" draft="provisional">Французский раннего нового времени</variant>
+			<variant type="1994" draft="contributed">Стандартизированная резьянская
+				орфография</variant>
+			<variant type="1996">Правила немецкой орфографии установленные с
+				1996 года</variant>
+			<variant type="1606NICT" draft="contributed">Поздне-средневековый
+				французский до 1606 г.</variant>
+			<variant type="1694ACAD" draft="provisional">Французский раннего нового
+				времени</variant>
 			<variant type="1959ACAD" draft="provisional">Академическая</variant>
 			<variant type="AREVELA" draft="contributed">Восточно-армянский</variant>
 			<variant type="AREVMDA" draft="contributed">Западно-армянский</variant>
 			<variant type="BAKU1926">Унифицированный тюрско-латинский алфавит</variant>
 			<variant type="BISKE" draft="provisional">Диалект Сан-Гиоргио/Била</variant>
 			<variant type="BOONT" draft="provisional">Бунтлинг</variant>
-			<variant type="FONIPA" draft="contributed">Международный фонетический алфавит</variant>
-			<variant type="FONUPA" draft="provisional">Фонетический алфавит уральских языков</variant>
+			<variant type="FONIPA" draft="contributed">Международный фонетический
+				алфавит</variant>
+			<variant type="FONUPA" draft="provisional">Фонетический алфавит уральских
+				языков</variant>
 			<variant type="KKCOR" draft="provisional">Общая офография</variant>
-			<variant type="LIPAW" draft="provisional">Липовецкий диалект резьянского языка</variant>
+			<variant type="LIPAW" draft="provisional">Липовецкий диалект резьянского
+				языка</variant>
 			<variant type="MONOTON">Монотонный</variant>
 			<variant type="NEDIS" draft="provisional">Надижский диалект</variant>
 			<variant type="NJIVA" draft="provisional">Гнива-нживский диалект</variant>
@@ -1026,15 +1035,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="SOLBA" draft="provisional">Столвицко-солбицкий диалект</variant>
 			<variant type="TARASK" draft="contributed">Тарашкевица</variant>
 			<variant type="UCCOR" draft="provisional">Объединенная орфография</variant>
-			<variant type="UCRCOR" draft="provisional">Объединенная пересмотренная орфография</variant>
+			<variant type="UCRCOR" draft="provisional">Объединенная пересмотренная
+				орфография</variant>
 			<variant type="VALENCIA" draft="contributed">Валенсийский</variant>
 			<variant type="WADEGILE">Система Уэйда – Джайлза</variant>
 		</variants>
 		<keys>
 			<key type="calendar">Календарь</key>
-			<key type="colAlternate" draft="contributed">Игнорировать символы при сортировке</key>
+			<key type="colAlternate" draft="contributed">Игнорировать символы при
+				сортировке</key>
 			<key type="colBackwards" draft="contributed">Обратная сортировка по акценту</key>
-			<key type="colCaseFirst" draft="contributed">Сортировка по верхнему или нижнему регистру</key>
+			<key type="colCaseFirst" draft="contributed">Сортировка по верхнему или нижнему
+				регистру</key>
 			<key type="colCaseLevel" draft="contributed">Сортировка с учетом регистра</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Сортировка каны</key>
 			<key type="collation">Сопоставление</key>
@@ -1050,12 +1062,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</keys>
 		<types>
 			<type type="arab" key="numbers">Арабско-индийские цифры</type>
-			<type type="arabext" key="numbers">Расширенная система арабско-индийских цифр</type>
+			<type type="arabext" key="numbers">Расширенная система арабско-индийских
+				цифр</type>
 			<type type="armn" key="numbers">Армянские цифры</type>
 			<type type="armnlow" key="numbers">Армянские цифры в нижнем регистре</type>
 			<type type="bali" key="numbers" draft="contributed">балийские цифры</type>
 			<type type="beng" key="numbers">Бенгальские цифры</type>
-			<type type="big5han" key="collation">Сортировка традиционного китайского языка – Big5</type>
+			<type type="big5han" key="collation">Сортировка традиционного китайского
+				языка – Big5</type>
 			<type type="brah" key="numbers" draft="contributed">цифры брахми</type>
 			<type type="buddhist" key="calendar">Буддийский календарь</type>
 			<type type="cakm" key="numbers" draft="contributed">цифры чакма</type>
@@ -1066,11 +1080,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="deva" key="numbers">Цифры деванагари</type>
 			<type type="dictionary" key="collation">словарный порядок сортировки</type>
 			<type type="ducet" key="collation">cтандартная сортировка Unicode</type>
-			<type type="eor" key="collation" draft="contributed">европейские правила сортировки</type>
+			<type type="eor" key="collation" draft="contributed">европейские правила
+				сортировки</type>
 			<type type="ethi" key="numbers">Эфиопские цифры</type>
 			<type type="ethiopic" key="calendar">Эфиопский календарь</type>
-			<type type="ethiopic-amete-alem" key="calendar">Эфиопский календарь &quot;Амете Алем&quot;</type>
-			<type type="finance" key="numbers" draft="contributed">Символы обозначения финансовых показателей</type>
+			<type type="ethiopic-amete-alem" key="calendar">Эфиопский календарь
+				&quot;Амете Алем&quot;</type>
+			<type type="finance" key="numbers" draft="contributed">Символы обозначения
+				финансовых показателей</type>
 			<type type="fullwide" key="numbers">Полный формат цифр</type>
 			<type type="gb2312han" key="collation">упрощенный китайский - GB2312</type>
 			<type type="geor" key="numbers">Грузинские цифры</type>
@@ -1090,9 +1107,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="indian" key="calendar">Национальный календарь Индии</type>
 			<type type="islamic" key="calendar">Исламский календарь</type>
 			<type type="islamic-civil" key="calendar">Исламский гражданский календарь</type>
-			<type type="islamic-rgsa" key="calendar" draft="contributed">исламский календарь (Саудовская Аравия)</type>
-			<type type="islamic-tbla" key="calendar" draft="contributed">исламский календарь (табличный, астрономическая эпоха)</type>
-			<type type="islamic-umalqura" key="calendar" draft="contributed">исламский календарь (Умм аль-Кура)</type>
+			<type type="islamic-rgsa" key="calendar" draft="contributed">исламский
+				календарь (Саудовская Аравия)</type>
+			<type type="islamic-tbla" key="calendar" draft="contributed">исламский
+				календарь (табличный, астрономическая эпоха)</type>
+			<type type="islamic-umalqura" key="calendar" draft="contributed">исламский
+				календарь (Умм аль-Кура)</type>
 			<type type="iso8601" key="calendar" draft="contributed">календарь ISO-8601</type>
 			<type type="japanese" key="calendar">Японский календарь</type>
 			<type type="java" key="numbers" draft="contributed">яванские цифры</type>
@@ -1107,39 +1127,55 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="latn" key="numbers">Современные цифры</type>
 			<type type="lepc" key="numbers" draft="contributed">цифры лепча</type>
 			<type type="limb" key="numbers" draft="contributed">цифры лимбу</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Приоритетная сортировка слов в нижнем регистре</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Приоритетная
+				сортировка слов в нижнем регистре</type>
 			<type type="mlym" key="numbers">Цифры малаялам</type>
 			<type type="mong" key="numbers">Монгольские цифры</type>
 			<type type="mtei" key="numbers" draft="contributed">цифры манипури</type>
 			<type type="mymr" key="numbers">Бирманские цифры</type>
-			<type type="mymrshan" key="numbers" draft="contributed">бирманские шанские цифры</type>
-			<type type="native" key="numbers" draft="contributed">Обозначения цифр коренного населения</type>
+			<type type="mymrshan" key="numbers" draft="contributed">бирманские шанские
+				цифры</type>
+			<type type="native" key="numbers" draft="contributed">Обозначения цифр
+				коренного населения</type>
 			<type type="nkoo" key="numbers" draft="contributed">цифры нко</type>
-			<type type="no" key="colBackwards" draft="contributed">Сортировка по акцентам в обычном порядке</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Сортировка по стандартным правилам</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Сортировка вне зависимости от регистра</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Отдельная сортировка каны</type>
-			<type type="no" key="colNormalization" draft="contributed">Сортировка без нормализации</type>
-			<type type="no" key="colNumeric" draft="contributed">Отдельная сортировка числовых значений</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Сортировка символов</type>
+			<type type="no" key="colBackwards" draft="contributed">Сортировка по акцентам
+				в обычном порядке</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Сортировка по
+				стандартным правилам</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Сортировка вне
+				зависимости от регистра</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Отдельная
+				сортировка каны</type>
+			<type type="no" key="colNormalization" draft="contributed">Сортировка без
+				нормализации</type>
+			<type type="no" key="colNumeric" draft="contributed">Отдельная сортировка
+				числовых значений</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Сортировка
+				символов</type>
 			<type type="olck" key="numbers" draft="contributed">цифры ол-чики</type>
 			<type type="orya" key="numbers">Цифры ория</type>
 			<type type="osma" key="numbers" draft="contributed">цифры османья</type>
 			<type type="persian" key="calendar">Персидский календарь</type>
 			<type type="phonebook" key="collation">порядок телефонной книги</type>
-			<type type="phonetic" key="collation" draft="contributed">Фонетический порядок сортировки</type>
+			<type type="phonetic" key="collation" draft="contributed">Фонетический порядок
+				сортировки</type>
 			<type type="pinyin" key="collation">пиньинь</type>
-			<type type="primary" key="colStrength" draft="contributed">Сортировка только по символам, обозначающим разрядность</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Сортировка по акцентам/регистрам/длине строки/кане</type>
+			<type type="primary" key="colStrength" draft="contributed">Сортировка только
+				по символам, обозначающим разрядность</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Сортировка по
+				акцентам/регистрам/длине строки/кане</type>
 			<type type="reformed" key="collation">реформированный порядок сортировки</type>
 			<type type="roc" key="calendar">Китайский календарь</type>
 			<type type="roman" key="numbers">Римские цифры</type>
 			<type type="romanlow" key="numbers">Римские цифры в нижнем регистре</type>
 			<type type="saur" key="numbers" draft="contributed">цифры саураштра</type>
 			<type type="search" key="collation">поиск</type>
-			<type type="searchjl" key="collation" draft="contributed">Поиск по первой согласной хангыль</type>
-			<type type="secondary" key="colStrength" draft="contributed">Сортировка по акцентам</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Сортировка без учета символов</type>
+			<type type="searchjl" key="collation" draft="contributed">Поиск по первой
+				согласной хангыль</type>
+			<type type="secondary" key="colStrength" draft="contributed">Сортировка по
+				акцентам</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Сортировка без
+				учета символов</type>
 			<type type="shrd" key="numbers" draft="contributed">цифры шарада</type>
 			<type type="sora" key="numbers" draft="contributed">цифры сора-сомпенг</type>
 			<type type="standard" key="collation">стандартное сопоставление</type>
@@ -1150,27 +1186,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">Тамильские цифры</type>
 			<type type="tamldec" key="numbers" draft="contributed">Тамильские цифры</type>
 			<type type="telu" key="numbers">Цифры телугу</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Сортировка по акцентам/регистру/длине строки</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Сортировка по
+				акцентам/регистру/длине строки</type>
 			<type type="thai" key="numbers">Тайские цифры</type>
 			<type type="tibt" key="numbers">Тибетские цифры</type>
 			<type type="traditional" key="collation">традиционный порядок</type>
-			<type type="traditional" key="numbers" draft="contributed">Традиционная система нумерации</type>
+			<type type="traditional" key="numbers" draft="contributed">Традиционная
+				система нумерации</type>
 			<type type="unihan" key="collation">сортировка по ключам, затем по чертам</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Приоритетная сортировка слов в верхнем регистре</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Приоритетная
+				сортировка слов в верхнем регистре</type>
 			<type type="vaii" key="numbers" draft="contributed">Цифры языка вай</type>
-			<type type="yes" key="colBackwards" draft="contributed">Сортировка по акцентам в обратном порядке</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Сортировка с учетом регистра</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Сортировка каны другим способом</type>
-			<type type="yes" key="colNormalization" draft="contributed">Сортировка нормализованных символов Unicode</type>
-			<type type="yes" key="colNumeric" draft="contributed">Сортировка численных значений</type>
+			<type type="yes" key="colBackwards" draft="contributed">Сортировка по акцентам
+				в обратном порядке</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Сортировка с учетом
+				регистра</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Сортировка
+				каны другим способом</type>
+			<type type="yes" key="colNormalization" draft="contributed">Сортировка
+				нормализованных символов Unicode</type>
+			<type type="yes" key="colNumeric" draft="contributed">Сортировка численных
+				значений</type>
 			<type type="zhuyin" key="collation" draft="contributed">чжуинь</type>
 		</types>
 		<transformNames>
-			<transformName type="BGN" draft="contributed">Палата географических названий США</transformName>
+			<transformName type="BGN" draft="contributed">Палата географических
+				названий США</transformName>
 			<transformName type="Numeric" draft="contributed">Числовая</transformName>
 			<transformName type="Tone" draft="contributed">Тоновая</transformName>
-			<transformName type="UNGEGN" draft="contributed">Группа экспертов ООН по географическим названиям</transformName>
-			<transformName type="x-Accents" draft="contributed">Диакритические знаки</transformName>
+			<transformName type="UNGEGN" draft="contributed">Группа экспертов ООН
+				по географическим названиям</transformName>
+			<transformName type="x-Accents" draft="contributed">Диакритические
+				знаки</transformName>
 			<transformName type="x-Fullwidth" draft="contributed">Широкие символы</transformName>
 			<transformName type="x-Halfwidth" draft="contributed">Краткий формат</transformName>
 			<transformName type="x-Jamo" draft="contributed">Джамо</transformName>
@@ -1235,10 +1282,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[{а\u0301} {е\u0301} {и\u0301} {о\u0301} {у\u0301} {ы\u0301} {э\u0301} {ю\u0301} {я\u0301}]</exemplarCharacters>
-		<exemplarCharacters type="index">[А Б В Г Д Е Ё Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ы Э Ю Я]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ‚ &quot; “ „ « » ( ) \[ \] \{ \} § @ * / \&amp; #]</exemplarCharacters>
+		<exemplarCharacters>[а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч
+			ш щ ъ ы ь э ю я]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[{а\u0301} {е\u0301}
+			{и\u0301} {о\u0301} {у\u0301} {ы\u0301} {э\u0301} {ю\u0301}
+			{я\u0301}]</exemplarCharacters>
+		<exemplarCharacters type="index">[А Б В Г Д Е Ё Ж З И Й К Л
+			М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ы Э Ю Я]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ‚ &quot; “ „ « » ( ) \[ \] \{ \} § @ * / \&amp; #]</exemplarCharacters>
 		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
 		<ellipsis type="medial" draft="contributed">{0}…{1}</ellipsis>
@@ -1682,8 +1734,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="contributed">d MMM - d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="contributed">ccc, d - E, d MMM</greatestDifference>
-							<greatestDifference id="M" draft="contributed">ccc, d MMM - ccc, d MMM</greatestDifference>
+							<greatestDifference id="d" draft="contributed">ccc, d - E, d
+								MMM</greatestDifference>
+							<greatestDifference id="M" draft="contributed">ccc, d MMM -
+								ccc, d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMM">
 							<greatestDifference id="M" draft="contributed">LLLL-LLLL</greatestDifference>
@@ -1696,32 +1750,48 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="contributed">MM.y - MM.y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="contributed">dd.MM.y - dd.MM.y G</greatestDifference>
-							<greatestDifference id="M" draft="contributed">dd.MM.y - dd.MM.y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">dd.MM.y - dd.MM.y G</greatestDifference>
+							<greatestDifference id="d" draft="contributed">dd.MM.y -
+								dd.MM.y G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">dd.MM.y -
+								dd.MM.y G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">dd.MM.y -
+								dd.MM.y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="contributed">ccc, dd.MM.y - ccc, dd.MM.y G</greatestDifference>
-							<greatestDifference id="M" draft="contributed">ccc, dd.MM.y - ccc, dd.MM.y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">ccc, dd.MM.y - ccc, dd.MM.y G</greatestDifference>
+							<greatestDifference id="d" draft="contributed">ccc, dd.MM.y
+								- ccc, dd.MM.y G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">ccc, dd.MM.y
+								- ccc, dd.MM.y G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">ccc, dd.MM.y
+								- ccc, dd.MM.y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
-							<greatestDifference id="M" draft="contributed">LLL-LLL y 'г'. G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">LLL y - LLL y 'г'. G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">LLL-LLL y
+								'г'. G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">LLL y - LLL y
+								'г'. G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d" draft="contributed">d-d MMM y 'г'. G</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d MMM - d MMM y 'г'. G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">d MMM y - d MMM y 'г'. G</greatestDifference>
+							<greatestDifference id="d" draft="contributed">d-d MMM y
+								'г'. G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d MMM - d MMM
+								y 'г'. G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">d MMM y - d
+								MMM y 'г'. G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="contributed">ccc, d - ccc, d MMM y 'г'. G</greatestDifference>
-							<greatestDifference id="M" draft="contributed">ccc, d MMM - ccc, d MMM y 'г'. G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">ccc, d MMM y - ccc, d MMM y 'г'. G</greatestDifference>
+							<greatestDifference id="d" draft="contributed">ccc, d - ccc,
+								d MMM y 'г'. G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">ccc, d MMM -
+								ccc, d MMM y 'г'. G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">ccc, d MMM y
+								- ccc, d MMM y 'г'. G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
-							<greatestDifference id="M" draft="contributed">LLLL-LLLL y 'г'. G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">LLLL y - LLLL y 'г'. G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">LLLL-LLLL y
+								'г'. G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">LLLL y - LLLL
+								y 'г'. G</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -2131,8 +2201,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="contributed">d MMM - d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="contributed">ccc, d - E, d MMM</greatestDifference>
-							<greatestDifference id="M" draft="contributed">ccc, d MMM - ccc, d MMM</greatestDifference>
+							<greatestDifference id="d" draft="contributed">ccc, d - E, d
+								MMM</greatestDifference>
+							<greatestDifference id="M" draft="contributed">ccc, d MMM -
+								ccc, d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMM">
 							<greatestDifference id="M" draft="contributed">LLLL-LLLL</greatestDifference>
@@ -2145,32 +2217,48 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="contributed">MM.y - MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="contributed">dd.MM.y - dd.MM.y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">dd.MM.y - dd.MM.y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">dd.MM.y - dd.MM.y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">dd.MM.y -
+								dd.MM.y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">dd.MM.y -
+								dd.MM.y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">dd.MM.y -
+								dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="contributed">ccc, dd.MM.y - ccc, dd.MM.y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">ccc, dd.MM.y - ccc, dd.MM.y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">ccc, dd.MM.y - ccc, dd.MM.y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">ccc, dd.MM.y
+								- ccc, dd.MM.y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">ccc, dd.MM.y
+								- ccc, dd.MM.y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">ccc, dd.MM.y
+								- ccc, dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
-							<greatestDifference id="M" draft="contributed">LLL-LLL y 'г'.</greatestDifference>
-							<greatestDifference id="y" draft="contributed">LLL y - LLL y 'г'.</greatestDifference>
+							<greatestDifference id="M" draft="contributed">LLL-LLL y
+								'г'.</greatestDifference>
+							<greatestDifference id="y" draft="contributed">LLL y - LLL y
+								'г'.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d" draft="contributed">d-d MMM y 'г'.</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d MMM - d MMM y 'г'.</greatestDifference>
-							<greatestDifference id="y" draft="contributed">d MMM y - d MMM y 'г'.</greatestDifference>
+							<greatestDifference id="d" draft="contributed">d-d MMM y
+								'г'.</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d MMM - d MMM
+								y 'г'.</greatestDifference>
+							<greatestDifference id="y" draft="contributed">d MMM y - d
+								MMM y 'г'.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="contributed">ccc, d - ccc, d MMM y 'г'.</greatestDifference>
-							<greatestDifference id="M" draft="contributed">ccc, d MMM - ccc, d MMM y 'г'.</greatestDifference>
-							<greatestDifference id="y" draft="contributed">ccc, d MMM y - ccc, d MMM y 'г'.</greatestDifference>
+							<greatestDifference id="d" draft="contributed">ccc, d - ccc,
+								d MMM y 'г'.</greatestDifference>
+							<greatestDifference id="M" draft="contributed">ccc, d MMM -
+								ccc, d MMM y 'г'.</greatestDifference>
+							<greatestDifference id="y" draft="contributed">ccc, d MMM y
+								- ccc, d MMM y 'г'.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
-							<greatestDifference id="M" draft="contributed">LLLL-LLLL y 'г'.</greatestDifference>
-							<greatestDifference id="y" draft="contributed">LLLL y - LLLL y 'г'.</greatestDifference>
+							<greatestDifference id="M" draft="contributed">LLLL-LLLL y
+								'г'.</greatestDifference>
+							<greatestDifference id="y" draft="contributed">LLLL y - LLLL
+								y 'г'.</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -4660,7 +4748,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="Kamchatka">
 				<long>
 					<generic draft="contributed">Время в Петропавловску-Камчатскому</generic>
-					<standard draft="contributed">Стандартное время в Петропавловску-Камчатскому</standard>
+					<standard draft="contributed">Стандартное время в
+						Петропавловску-Камчатскому</standard>
 					<daylight draft="contributed">Летнее время в Петропавловске-Камчатском</daylight>
 				</long>
 			</metazone>
@@ -5288,10 +5377,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ANG">
 				<displayName>Нидерландский антильский гульден</displayName>
-				<displayName count="one" draft="contributed">нидерландский антильский гульден</displayName>
-				<displayName count="few" draft="contributed">нидерландских антильских гульдена</displayName>
-				<displayName count="many" draft="contributed">нидерландских антильских гульденов</displayName>
-				<displayName count="other" draft="contributed">идерландского антильского гульдена</displayName>
+				<displayName count="one" draft="contributed">нидерландский антильский
+					гульден</displayName>
+				<displayName count="few" draft="contributed">нидерландских антильских
+					гульдена</displayName>
+				<displayName count="many" draft="contributed">нидерландских антильских
+					гульденов</displayName>
+				<displayName count="other" draft="contributed">идерландского
+					антильского гульдена</displayName>
 			</currency>
 			<currency type="AOA">
 				<displayName>Ангольская кванза</displayName>
@@ -5313,7 +5406,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="AOR">
 				<displayName>Ангольская кванза реюстадо (1995–1999)</displayName>
 				<displayName count="one">ангольских кванз реюстадо (1995–1999)</displayName>
-				<displayName count="few">ангольские кванзы реюстадо (1995–1999)</displayName>
+				<displayName count="few">ангольские кванзы реюстадо
+					(1995–1999)</displayName>
 				<displayName count="many">ангольских кванз реюстадо (1995–1999)</displayName>
 				<displayName count="other">ангольских кванз реюстадо (1995–1999)</displayName>
 			</currency>
@@ -5363,10 +5457,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>Конвертируемая марка Боснии и Герцеговины</displayName>
-				<displayName count="one" draft="contributed">боснийская конвертируемая марка</displayName>
-				<displayName count="few" draft="contributed">боснийские конвертируемые марки</displayName>
-				<displayName count="many" draft="contributed">боснийских конвертируемых марок</displayName>
-				<displayName count="other" draft="contributed">боснийской конвертируемой марки</displayName>
+				<displayName count="one" draft="contributed">боснийская конвертируемая
+					марка</displayName>
+				<displayName count="few" draft="contributed">боснийские конвертируемые
+					марки</displayName>
+				<displayName count="many" draft="contributed">боснийских
+					конвертируемых марок</displayName>
+				<displayName count="other" draft="contributed">боснийской
+					конвертируемой марки</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Барбадосский доллар</displayName>
@@ -5577,10 +5675,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="CUC">
 				<displayName>Кубинское конвертируемое песо</displayName>
-				<displayName count="one" draft="contributed">кубинское конвертируемое песо</displayName>
-				<displayName count="few" draft="contributed">кубинских конвертируемых песо</displayName>
-				<displayName count="many" draft="contributed">кубинских конвертируемых песо</displayName>
-				<displayName count="other" draft="contributed">кубинского конвертируемого песо</displayName>
+				<displayName count="one" draft="contributed">кубинское конвертируемое
+					песо</displayName>
+				<displayName count="few" draft="contributed">кубинских конвертируемых
+					песо</displayName>
+				<displayName count="many" draft="contributed">кубинских конвертируемых
+					песо</displayName>
+				<displayName count="other" draft="contributed">кубинского
+					конвертируемого песо</displayName>
 			</currency>
 			<currency type="CUP">
 				<displayName>Кубинское песо</displayName>
@@ -5699,20 +5801,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="FKP">
 				<displayName>Фунт Фолклендских островов</displayName>
-				<displayName count="one" draft="contributed">фунт Фолклендских островов</displayName>
-				<displayName count="few" draft="contributed">фунта Фолклендских островов</displayName>
-				<displayName count="many" draft="contributed">фунтов Фолклендских островов</displayName>
-				<displayName count="other" draft="contributed">фунта Фолклендских островов</displayName>
+				<displayName count="one" draft="contributed">фунт Фолклендских
+					островов</displayName>
+				<displayName count="few" draft="contributed">фунта Фолклендских
+					островов</displayName>
+				<displayName count="many" draft="contributed">фунтов Фолклендских
+					островов</displayName>
+				<displayName count="other" draft="contributed">фунта Фолклендских
+					островов</displayName>
 			</currency>
 			<currency type="FRF">
 				<displayName>Французский франк</displayName>
 			</currency>
 			<currency type="GBP">
 				<displayName>Английский фунт стерлингов</displayName>
-				<displayName count="one" draft="contributed">английский фунт стерлингов</displayName>
-				<displayName count="few" draft="contributed">английских фунта стерлингов</displayName>
-				<displayName count="many" draft="contributed">английских фунтов стерлингов</displayName>
-				<displayName count="other" draft="contributed">английского фунта стерлингов</displayName>
+				<displayName count="one" draft="contributed">английский фунт
+					стерлингов</displayName>
+				<displayName count="few" draft="contributed">английских фунта
+					стерлингов</displayName>
+				<displayName count="many" draft="contributed">английских фунтов
+					стерлингов</displayName>
+				<displayName count="other" draft="contributed">английского фунта
+					стерлингов</displayName>
 				<symbol draft="contributed">£</symbol>
 			</currency>
 			<currency type="GEK">
@@ -5841,8 +5951,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Новый израильский шекель</displayName>
 				<displayName count="one" draft="contributed">новый израильский шекель</displayName>
 				<displayName count="few" draft="contributed">новых израильских шекеля</displayName>
-				<displayName count="many" draft="contributed">новых израильских шекелей</displayName>
-				<displayName count="other" draft="contributed">нового израильского шекеля</displayName>
+				<displayName count="many" draft="contributed">новых израильских
+					шекелей</displayName>
+				<displayName count="other" draft="contributed">нового израильского
+					шекеля</displayName>
 				<symbol draft="contributed">₪</symbol>
 			</currency>
 			<currency type="INR">
@@ -5924,8 +6036,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Франк Коморских островов</displayName>
 				<displayName count="one" draft="contributed">франк Коморских островов</displayName>
 				<displayName count="few" draft="contributed">франка Коморских островов</displayName>
-				<displayName count="many" draft="contributed">франков Коморских островов</displayName>
-				<displayName count="other" draft="contributed">франка Коморских островов</displayName>
+				<displayName count="many" draft="contributed">франков Коморских
+					островов</displayName>
+				<displayName count="other" draft="contributed">франка Коморских
+					островов</displayName>
 			</currency>
 			<currency type="KPW">
 				<displayName>Северо-корейская вона</displayName>
@@ -5951,10 +6065,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="KYD">
 				<displayName>Доллар Каймановых островов</displayName>
-				<displayName count="one" draft="contributed">доллар Каймановых островов</displayName>
-				<displayName count="few" draft="contributed">доллара Каймановых островов</displayName>
-				<displayName count="many" draft="contributed">долларов Каймановых островов</displayName>
-				<displayName count="other" draft="contributed">доллара Каймановых островов</displayName>
+				<displayName count="one" draft="contributed">доллар Каймановых
+					островов</displayName>
+				<displayName count="few" draft="contributed">доллара Каймановых
+					островов</displayName>
+				<displayName count="many" draft="contributed">долларов Каймановых
+					островов</displayName>
+				<displayName count="other" draft="contributed">доллара Каймановых
+					островов</displayName>
 			</currency>
 			<currency type="KZT">
 				<displayName>Казахский тенге</displayName>
@@ -6328,10 +6446,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="SBD">
 				<displayName>Доллар Соломоновых островов</displayName>
-				<displayName count="one" draft="contributed">доллар Соломоновых островов</displayName>
-				<displayName count="few" draft="contributed">доллара Соломоновых островов</displayName>
-				<displayName count="many" draft="contributed">долларов Соломоновых островов</displayName>
-				<displayName count="other" draft="contributed">доллара Соломоновых островов</displayName>
+				<displayName count="one" draft="contributed">доллар Соломоновых
+					островов</displayName>
+				<displayName count="few" draft="contributed">доллара Соломоновых
+					островов</displayName>
+				<displayName count="many" draft="contributed">долларов Соломоновых
+					островов</displayName>
+				<displayName count="other" draft="contributed">доллара Соломоновых
+					островов</displayName>
 			</currency>
 			<currency type="SCR">
 				<displayName>Сейшельская рупия</displayName>
@@ -6370,9 +6492,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="SHP">
 				<displayName>Фунт острова Святой Елены</displayName>
 				<displayName count="one" draft="contributed">фунт острова Святой Елены</displayName>
-				<displayName count="few" draft="contributed">фунта острова Святой Елены</displayName>
-				<displayName count="many" draft="contributed">фунтов острова Святой Елены</displayName>
-				<displayName count="other" draft="contributed">фунта острова Святой Елены</displayName>
+				<displayName count="few" draft="contributed">фунта острова Святой
+					Елены</displayName>
+				<displayName count="many" draft="contributed">фунтов острова Святой
+					Елены</displayName>
+				<displayName count="other" draft="contributed">фунта острова Святой
+					Елены</displayName>
 			</currency>
 			<currency type="SIT">
 				<displayName>Словенский толар</displayName>
@@ -6436,7 +6561,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="one" draft="contributed">свазилендский лилангени</displayName>
 				<displayName count="few" draft="contributed">свазилендских эмалангени</displayName>
 				<displayName count="many" draft="contributed">свазилендских лилангени</displayName>
-				<displayName count="other" draft="contributed">свазилендского лилангени</displayName>
+				<displayName count="other" draft="contributed">свазилендского
+					лилангени</displayName>
 			</currency>
 			<currency type="THB">
 				<displayName>Таиландский бат</displayName>
@@ -6463,8 +6589,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Туркменский новый манат</displayName>
 				<displayName count="one" draft="contributed">туркменский новый манат</displayName>
 				<displayName count="few" draft="contributed">туркменских новых маната</displayName>
-				<displayName count="many" draft="contributed">туркменских новых манатов</displayName>
-				<displayName count="other" draft="contributed">туркменского нового маната</displayName>
+				<displayName count="many" draft="contributed">туркменских новых
+					манатов</displayName>
+				<displayName count="other" draft="contributed">туркменского нового
+					маната</displayName>
 				<symbol draft="contributed">ТМТ</symbol>
 			</currency>
 			<currency type="TND">
@@ -6501,16 +6629,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="TTD">
 				<displayName>Доллар Тринидада и Тобаго</displayName>
 				<displayName count="one" draft="contributed">доллар Тринидада и Тобаго</displayName>
-				<displayName count="few" draft="contributed">доллара Тринидада и Тобаго</displayName>
-				<displayName count="many" draft="contributed">долларов Тринидада и Тобаго</displayName>
-				<displayName count="other" draft="contributed">доллара Тринидада и Тобаго</displayName>
+				<displayName count="few" draft="contributed">доллара Тринидада и
+					Тобаго</displayName>
+				<displayName count="many" draft="contributed">долларов Тринидада и
+					Тобаго</displayName>
+				<displayName count="other" draft="contributed">доллара Тринидада и
+					Тобаго</displayName>
 			</currency>
 			<currency type="TWD">
 				<displayName>Новый тайваньский доллар</displayName>
 				<displayName count="one" draft="contributed">новый тайваньский доллар</displayName>
 				<displayName count="few" draft="contributed">новых тайваньских доллара</displayName>
-				<displayName count="many" draft="contributed">новых тайваньских долларов</displayName>
-				<displayName count="other" draft="contributed">нового тайваньского доллара</displayName>
+				<displayName count="many" draft="contributed">новых тайваньских
+					долларов</displayName>
+				<displayName count="other" draft="contributed">нового тайваньского
+					доллара</displayName>
 				<symbol draft="contributed">NT$</symbol>
 			</currency>
 			<currency type="TZS">
@@ -6628,17 +6761,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>Европейская денежная единица</displayName>
 			</currency>
 			<currency type="XBC">
-				<displayName>расчетная единица европейского валютного соглашения (XBC)</displayName>
+				<displayName>расчетная единица европейского валютного соглашения
+					(XBC)</displayName>
 			</currency>
 			<currency type="XBD">
-				<displayName>расчетная единица европейского валютного соглашения (XBD)</displayName>
+				<displayName>расчетная единица европейского валютного соглашения
+					(XBD)</displayName>
 			</currency>
 			<currency type="XCD">
 				<displayName>Восточно-карибский доллар</displayName>
 				<displayName count="one" draft="contributed">восточно-карибский доллар</displayName>
-				<displayName count="few" draft="contributed">восточно-карибских доллара</displayName>
-				<displayName count="many" draft="contributed">восточно-карибских доллара</displayName>
-				<displayName count="other" draft="contributed">восточно-карибского доллара</displayName>
+				<displayName count="few" draft="contributed">восточно-карибских
+					доллара</displayName>
+				<displayName count="many" draft="contributed">восточно-карибских
+					доллара</displayName>
+				<displayName count="other" draft="contributed">восточно-карибского
+					доллара</displayName>
 				<symbol draft="contributed">EC$</symbol>
 			</currency>
 			<currency type="XDR">
@@ -6666,10 +6804,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XPF">
 				<displayName>Франк КФП</displayName>
-				<displayName count="one" draft="contributed">французский тихоокеанский франк</displayName>
-				<displayName count="few" draft="contributed">французских тихоокеанских франка</displayName>
+				<displayName count="one" draft="contributed">французский тихоокеанский
+					франк</displayName>
+				<displayName count="few" draft="contributed">французских тихоокеанских
+					франка</displayName>
 				<displayName count="many" draft="contributed">франков КФП</displayName>
-				<displayName count="other" draft="contributed">французского тихоокеанского франка</displayName>
+				<displayName count="other" draft="contributed">французского
+					тихоокеанского франка</displayName>
 				<symbol>CFPF</symbol>
 			</currency>
 			<currency type="XPT">
@@ -6683,10 +6824,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XXX">
 				<displayName>Неизвестная или недействительная валюта</displayName>
-				<displayName count="one">Неизвестная или недействительная валюта</displayName>
-				<displayName count="few">Неизвестная или недействительная валюта</displayName>
-				<displayName count="many">Неизвестная или недействительная валюта</displayName>
-				<displayName count="other">Неизвестная или недействительная валюта</displayName>
+				<displayName count="one">Неизвестная или недействительная
+					валюта</displayName>
+				<displayName count="few">Неизвестная или недействительная
+					валюта</displayName>
+				<displayName count="many">Неизвестная или недействительная
+					валюта</displayName>
+				<displayName count="other">Неизвестная или недействительная
+					валюта</displayName>
 				<symbol draft="contributed">XXXX</symbol>
 			</currency>
 			<currency type="YDD">
@@ -6720,10 +6865,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ZMK">
 				<displayName>Квача (замбийская) (1968–2012)</displayName>
-				<displayName count="one" draft="contributed">замбийская квача (1968–2012)</displayName>
-				<displayName count="few" draft="contributed">замбийские квачи (1968–2012)</displayName>
-				<displayName count="many" draft="contributed">замбийских квач (1968–2012)</displayName>
-				<displayName count="other" draft="contributed">замбийской квачи (1968–2012)</displayName>
+				<displayName count="one" draft="contributed">замбийская квача
+					(1968–2012)</displayName>
+				<displayName count="few" draft="contributed">замбийские квачи
+					(1968–2012)</displayName>
+				<displayName count="many" draft="contributed">замбийских квач
+					(1968–2012)</displayName>
+				<displayName count="other" draft="contributed">замбийской квачи
+					(1968–2012)</displayName>
 			</currency>
 			<currency type="ZMW">
 				<displayName>Квача (замбийская)</displayName>
@@ -6800,8 +6949,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="area-square-kilometer">
 				<unitPattern count="one" draft="contributed">{0} квадратный километр</unitPattern>
 				<unitPattern count="few" draft="contributed">{0} квадратных километра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} квадратных километров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} квадратных километра</unitPattern>
+				<unitPattern count="many" draft="contributed">{0} квадратных
+					километров</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} квадратных
+					километра</unitPattern>
 			</unit>
 			<unit type="area-square-meter">
 				<unitPattern count="one" draft="contributed">{0} квадратный метр</unitPattern>
@@ -6974,8 +7125,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="pressure-inch-hg">
 				<unitPattern count="one" draft="contributed">{0} дюйм ртутного столба</unitPattern>
 				<unitPattern count="few" draft="contributed">{0} дюйма ртутного столба</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} дюймов ртутного столба</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}дюйма ртутного столба</unitPattern>
+				<unitPattern count="many" draft="contributed">{0} дюймов ртутного
+					столба</unitPattern>
+				<unitPattern count="other" draft="contributed">{0}дюйма ртутного
+					столба</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
 				<unitPattern count="one" draft="contributed">{0} миллибар</unitPattern>
@@ -7010,14 +7163,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="temperature-fahrenheit">
 				<unitPattern count="one" draft="contributed">{0}градус по Фаренгейту</unitPattern>
 				<unitPattern count="few" draft="contributed">{0} градуса по Фаренгейту</unitPattern>
-				<unitPattern count="many" draft="contributed">{0}градусов по Фаренгейту</unitPattern>
-				<unitPattern count="other" draft="contributed">{0}градуса по Фаренгейту</unitPattern>
+				<unitPattern count="many" draft="contributed">{0}градусов по
+					Фаренгейту</unitPattern>
+				<unitPattern count="other" draft="contributed">{0}градуса по
+					Фаренгейту</unitPattern>
 			</unit>
 			<unit type="volume-cubic-kilometer">
 				<unitPattern count="one" draft="contributed">{0} кубический километр</unitPattern>
 				<unitPattern count="few" draft="contributed">{0} кубических километра</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} кубических километров</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} кубических километра</unitPattern>
+				<unitPattern count="many" draft="contributed">{0} кубических
+					километров</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} кубических
+					километра</unitPattern>
 			</unit>
 			<unit type="volume-cubic-mile">
 				<unitPattern count="one" draft="contributed">{0} кубическая миля</unitPattern>

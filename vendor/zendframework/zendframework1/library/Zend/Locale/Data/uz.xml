@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9287 $"/>
-		<generation date="$Date: 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013) $"/>
-		<language type="uz"/>
+		<version number="$Revision: 9287 $" />
+		<generation date="$Date: 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013) $" />
+		<language type="uz" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -306,7 +305,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">Finlyandiya</territory>
 			<territory type="FJ">Fiji orollari</territory>
 			<territory type="FK">Folklend orollari</territory>
-			<territory type="FK" alt="variant">Folklend orollari (Malvin orollari)</territory>
+			<territory type="FK" alt="variant">Folklend orollari (Malvin
+				orollari)</territory>
 			<territory type="FM">Mikroneziya</territory>
 			<territory type="FO">Farer orollari</territory>
 			<territory type="FR">Fransiya</territory>
@@ -325,7 +325,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Gvadelupe</territory>
 			<territory type="GQ">Ekvatorial Gvineya</territory>
 			<territory type="GR">Gretsiya</territory>
-			<territory type="GS">Janubiy Djordjiya va Janubiy Sendvich orollari</territory>
+			<territory type="GS">Janubiy Djordjiya va Janubiy Sendvich
+				orollari</territory>
 			<territory type="GT">Gvatemala</territory>
 			<territory type="GU">Guam</territory>
 			<territory type="GW">Gvineya-Bisau</territory>
@@ -556,10 +557,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a {aʼ} b {ch} d e {eʼ} f g {gʻ} h i {iʼ} j k l m n o {oʻ} p q r s {sh} t u {uʼ} v x y z]</exemplarCharacters>
+		<exemplarCharacters>[a {aʼ} b {ch} d e {eʼ} f g {gʻ} h i {iʼ} j k l m
+			n o {oʻ} p q r s {sh} t u {uʼ} v x y z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[c w]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B {CH} D E F G {Gʻ} H I J K L M N O {Oʻ} P Q R S {SH} T U V X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ‚ &quot; “ „ « » ( ) \[ \] \{ \} § @ * / \&amp; #]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B {CH} D E F G {Gʻ} H I
+			J K L M N O {Oʻ} P Q R S {SH} T U V X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ‚ &quot; “ „ « » ( ) \[ \] \{ \} § @ * / \&amp; #]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -684,9 +688,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">GGGGG y-MM-dd – y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">GGGGG y-MM-dd, E – y-MM-dd, E</greatestDifference>
-							<greatestDifference id="M">GGGGG y-MM-dd, E – y-MM-dd, E</greatestDifference>
-							<greatestDifference id="y">GGGGG y-MM-dd, E – y-MM-dd, E</greatestDifference>
+							<greatestDifference id="d">GGGGG y-MM-dd, E –
+								y-MM-dd, E</greatestDifference>
+							<greatestDifference id="M">GGGGG y-MM-dd, E –
+								y-MM-dd, E</greatestDifference>
+							<greatestDifference id="y">GGGGG y-MM-dd, E –
+								y-MM-dd, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">G y MMM–MMM</greatestDifference>
@@ -700,7 +707,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">G y MMM d, E – MMM d, E</greatestDifference>
 							<greatestDifference id="M">G y MMM d, E – MMM d, E</greatestDifference>
-							<greatestDifference id="y">G y MMM d, E – y MMM d, E</greatestDifference>
+							<greatestDifference id="y">G y MMM d, E – y MMM d,
+								E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">G y MMMM–MMMM</greatestDifference>

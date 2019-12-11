@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="nb"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="nb" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -1003,7 +1002,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="1606NICT">nyere mellomfransk til 1606</variant>
 			<variant type="1694ACAD">eldre nyfransk</variant>
 			<variant type="1959ACAD" draft="contributed">akademisk</variant>
-			<variant type="ALALC97" draft="contributed">ALA-LC-romanisering, 1997-utgaven</variant>
+			<variant type="ALALC97" draft="contributed">ALA-LC-romanisering,
+				1997-utgaven</variant>
 			<variant type="ALUKU">Aluku-dialekt</variant>
 			<variant type="AREVELA">øst-armensk</variant>
 			<variant type="AREVMDA">vest-armensk</variant>
@@ -1060,8 +1060,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="calendar">kalender</key>
 			<key type="colAlternate" draft="contributed">Ignorer sortering etter symboler</key>
 			<key type="colBackwards" draft="contributed">Omvendt sortering etter aksent</key>
-			<key type="colCaseFirst" draft="contributed">Organisering av store og små bokstaver</key>
-			<key type="colCaseLevel" draft="contributed">Sortering av store og små bokstaver</key>
+			<key type="colCaseFirst" draft="contributed">Organisering av store og små
+				bokstaver</key>
+			<key type="colCaseLevel" draft="contributed">Sortering av store og små
+				bokstaver</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Sortering av kana</key>
 			<key type="collation">sorteringsrekkefølge</key>
 			<key type="colNormalization" draft="contributed">Normalisert sortering</key>
@@ -1092,10 +1094,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="deva" key="numbers">devanagari-tall</type>
 			<type type="dictionary" key="collation">ordlistesortering</type>
 			<type type="ducet" key="collation">standard Unicode-sorteringsrekkefølge</type>
-			<type type="eor" key="collation" draft="unconfirmed">sorteringsrekkefølge for flerspråklige europeiske dokumenter</type>
+			<type type="eor" key="collation" draft="unconfirmed">sorteringsrekkefølge for
+				flerspråklige europeiske dokumenter</type>
 			<type type="ethi" key="numbers">etiopiske tallsymboler</type>
 			<type type="ethiopic" key="calendar">etiopisk kalender</type>
-			<type type="ethiopic-amete-alem" key="calendar">etiopisk amete-alem-kalender</type>
+			<type type="ethiopic-amete-alem" key="calendar">etiopisk
+				amete-alem-kalender</type>
 			<type type="finance" key="numbers" draft="contributed">Finansielle tall</type>
 			<type type="fullwide" key="numbers">tall med full bredde</type>
 			<type type="gb2312han" key="collation">forenklet kinesisk sortering - GB2312</type>
@@ -1109,16 +1113,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="hans" key="numbers">forenklede kinesiske tallsymboler</type>
 			<type type="hansfin" key="numbers">forenklede kinesiske finanstallsymboler</type>
 			<type type="hant" key="numbers">tradisjonelle kinesiske tallsymboler</type>
-			<type type="hantfin" key="numbers">tradisjonelle kinesiske finanstallsymboler</type>
+			<type type="hantfin" key="numbers">tradisjonelle kinesiske
+				finanstallsymboler</type>
 			<type type="hebr" key="numbers">hebraiske tallsymboler</type>
 			<type type="hebrew" key="calendar">hebraisk kalender</type>
 			<type type="identical" key="colStrength" draft="contributed">Sortér alle</type>
 			<type type="indian" key="calendar">indisk nasjonalkalender</type>
 			<type type="islamic" key="calendar">islamsk kalender</type>
 			<type type="islamic-civil" key="calendar">islamsk sivil kalender</type>
-			<type type="islamic-rgsa" key="calendar" draft="contributed">islamsk kalender (Saudi-Arabia. synlighet)</type>
-			<type type="islamic-tbla" key="calendar" draft="contributed">islamsk kalender (tabellarisk, astronomisk epoke)</type>
-			<type type="islamic-umalqura" key="calendar" draft="contributed">islamsk kalender (Umm al-Qura)</type>
+			<type type="islamic-rgsa" key="calendar" draft="contributed">islamsk kalender
+				(Saudi-Arabia. synlighet)</type>
+			<type type="islamic-tbla" key="calendar" draft="contributed">islamsk kalender
+				(tabellarisk, astronomisk epoke)</type>
+			<type type="islamic-umalqura" key="calendar" draft="contributed">islamsk
+				kalender (Umm al-Qura)</type>
 			<type type="iso8601" key="calendar" draft="contributed">ISO-8601-kalender</type>
 			<type type="japanese" key="calendar">japansk kalender</type>
 			<type type="java" key="numbers" draft="contributed">java-tall</type>
@@ -1133,7 +1141,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="latn" key="numbers">vestlige tall</type>
 			<type type="lepc" key="numbers" draft="contributed">lepecha-tall</type>
 			<type type="limb" key="numbers" draft="contributed">limbu-tall</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Sortér små bokstaver først</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Sortér små bokstaver
+				først</type>
 			<type type="mlym" key="numbers">malayalam-tall</type>
 			<type type="mong" key="numbers">mongolske tall</type>
 			<type type="mtei" key="numbers" draft="contributed">meetei mayek-tall</type>
@@ -1141,31 +1150,42 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="mymrshan" key="numbers" draft="contributed">myanmar shan-tall</type>
 			<type type="native" key="numbers" draft="contributed">Språkspesifikke sifre</type>
 			<type type="nkoo" key="numbers" draft="contributed">n'ko-tall</type>
-			<type type="no" key="colBackwards" draft="contributed">Sortér aksenttegn normalt</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Sortér store og små bokstaver i vanlig rekkefølge</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Sortér uavhengig av store og små bokstaver.</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Sortér kana separat</type>
-			<type type="no" key="colNormalization" draft="contributed">Sortér uten normalisering</type>
+			<type type="no" key="colBackwards" draft="contributed">Sortér aksenttegn
+				normalt</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Sortér store og små
+				bokstaver i vanlig rekkefølge</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Sortér uavhengig av
+				store og små bokstaver.</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Sortér kana
+				separat</type>
+			<type type="no" key="colNormalization" draft="contributed">Sortér uten
+				normalisering</type>
 			<type type="no" key="colNumeric" draft="contributed">Sortér sifre individuelt</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Sortér symboler</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Sortér
+				symboler</type>
 			<type type="olck" key="numbers" draft="contributed">ol chiki-tall</type>
 			<type type="orya" key="numbers">oriya-tall</type>
 			<type type="osma" key="numbers" draft="contributed">osmanya-tall</type>
 			<type type="persian" key="calendar">persisk kalender</type>
 			<type type="phonebook" key="collation">telefonkatalogsortering</type>
-			<type type="phonetic" key="collation" draft="contributed">Fonetisk sorteringsrekkefølge</type>
+			<type type="phonetic" key="collation" draft="contributed">Fonetisk
+				sorteringsrekkefølge</type>
 			<type type="pinyin" key="collation">pinyinsortering</type>
-			<type type="primary" key="colStrength" draft="contributed">Sortér bare basisbokstaver</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Sortér aksenttegn / små og store bokstaver / bredde / kana</type>
+			<type type="primary" key="colStrength" draft="contributed">Sortér bare
+				basisbokstaver</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Sortér
+				aksenttegn / små og store bokstaver / bredde / kana</type>
 			<type type="reformed" key="collation">reformert sortering</type>
 			<type type="roc" key="calendar">kalender for Republikken Kina</type>
 			<type type="roman" key="numbers">romertall</type>
 			<type type="romanlow" key="numbers">små romertall</type>
 			<type type="saur" key="numbers" draft="contributed">sarushatra-tall</type>
 			<type type="search" key="collation">søk av normaltype</type>
-			<type type="searchjl" key="collation" draft="contributed">Søk etter første konsonant i hangul</type>
+			<type type="searchjl" key="collation" draft="contributed">Søk etter første
+				konsonant i hangul</type>
 			<type type="secondary" key="colStrength" draft="contributed">Sortér aksenttegn</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Ignorer symboler under sortering</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Ignorer symboler
+				under sortering</type>
 			<type type="shrd" key="numbers" draft="contributed">sharada-tall</type>
 			<type type="sora" key="numbers" draft="contributed">sora sompeng-tall</type>
 			<type type="standard" key="collation">standard sorteringsrekkefølge</type>
@@ -1176,18 +1196,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="taml" key="numbers">tamilske tallsymboler</type>
 			<type type="tamldec" key="numbers">tamilske tall</type>
 			<type type="telu" key="numbers">telugu-tall</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Sortér aksenttegn / små og store bokstaver / bredde</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Sortér aksenttegn
+				/ små og store bokstaver / bredde</type>
 			<type type="thai" key="numbers">thailandske tall</type>
 			<type type="tibt" key="numbers">tibetanske tall</type>
 			<type type="traditional" key="collation">tradisjonell sortering</type>
 			<type type="traditional" key="numbers" draft="contributed">Tradisjonelle tall</type>
 			<type type="unihan" key="collation">radikal-strek-sortering</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Sortér store bokstaver først</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Sortér store
+				bokstaver først</type>
 			<type type="vaii" key="numbers" draft="contributed">vai-sifre</type>
-			<type type="yes" key="colBackwards" draft="contributed">Sortér aksenttegn i motsatt rekkefølge</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Sortér med skille mellom små og store bokstaver</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Sortér med skille mellom forskjellige varianter av kana</type>
-			<type type="yes" key="colNormalization" draft="contributed">Sortér Unicode normalisert</type>
+			<type type="yes" key="colBackwards" draft="contributed">Sortér aksenttegn i
+				motsatt rekkefølge</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Sortér med skille
+				mellom små og store bokstaver</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Sortér med
+				skille mellom forskjellige varianter av kana</type>
+			<type type="yes" key="colNormalization" draft="contributed">Sortér Unicode
+				normalisert</type>
 			<type type="yes" key="colNumeric" draft="contributed">Sortér sifre numerisk</type>
 			<type type="zhuyin" key="collation" draft="contributed">zhuyin-sortering</type>
 		</types>
@@ -1201,7 +1227,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<transformName type="x-Halfwidth" draft="contributed">Halv bredde</transformName>
 			<transformName type="x-Jamo" draft="contributed">Jamo</transformName>
 			<transformName type="x-Pinyin" draft="contributed">Pinyin</transformName>
-			<transformName type="x-Publishing" draft="contributed">For publisering</transformName>
+			<transformName type="x-Publishing" draft="contributed">For
+				publisering</transformName>
 		</transformNames>
 		<measurementSystemNames>
 			<measurementSystemName type="metric">metrisk</measurementSystemName>
@@ -1220,10 +1247,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[a à b c d e é f g h i j k l m n o ó ò ô p q r s t u v w x y z æ ø å]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á ǎ ã č ç đ è ê í ń ñ ŋ š ŧ ü ž ä ö]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Æ Ø Å]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- – , ; \: ! ? . ' &quot; « » ( ) \[ \] \{ \} § @ * / \\]</exemplarCharacters>
+		<exemplarCharacters>[a à b c d e é f g h i j k l m n o ó ò ô p q r s t
+			u v w x y z æ ø å]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á ǎ ã č ç đ è ê í ń ñ ŋ š
+			ŧ ü ž ä ö]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S T U V W X Y Z Æ Ø Å]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- – , ; \: ! ? . '
+			&quot; « » ( ) \[ \] \{ \} § @ * / \\]</exemplarCharacters>
 		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
 		<ellipsis type="medial" draft="contributed">{0}…{1}</ellipsis>
@@ -1892,9 +1923,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</eras>
 			</calendar>
 			<calendar type="japanese">
-				<!-- need some non-empty element here to make inheritance work,
-					 this copy of generic dateFormats above is smaller than root japanese eras
-				-->
+				<!-- need some non-empty element here to make inheritance work, this 
+					copy of generic dateFormats above is smaller than root japanese eras -->
 				<dateFormats>
 					<dateFormatLength type="full">
 						<dateFormat>
@@ -1956,7 +1986,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">for {0} måned siden</relativeTimePattern>
-					<relativeTimePattern count="other">for {0} måneder siden</relativeTimePattern>
+					<relativeTimePattern count="other">for {0} måneder
+						siden</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -2049,7 +2080,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">for {0} minutt siden</relativeTimePattern>
-					<relativeTimePattern count="other">for {0} minutter siden</relativeTimePattern>
+					<relativeTimePattern count="other">for {0} minutter
+						siden</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">
@@ -2061,7 +2093,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">for {0} sekund siden</relativeTimePattern>
-					<relativeTimePattern count="other">for {0} sekunder siden</relativeTimePattern>
+					<relativeTimePattern count="other">for {0} sekunder
+						siden</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">
@@ -2943,8 +2976,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="Kamchatka">
 				<long>
 					<generic draft="contributed">Russisk (Petropavlovsk-Kamtsjatskij) tid</generic>
-					<standard draft="contributed">Russisk (Petropavlovsk-Kamtsjatskij) normaltid</standard>
-					<daylight draft="contributed">Russisk (Petropavlovsk-Kamtsjatskij) sommertid</daylight>
+					<standard draft="contributed">Russisk (Petropavlovsk-Kamtsjatskij)
+						normaltid</standard>
+					<daylight draft="contributed">Russisk (Petropavlovsk-Kamtsjatskij)
+						sommertid</daylight>
 				</long>
 			</metazone>
 			<metazone type="Kazakhstan_Eastern">
@@ -3507,7 +3542,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="ALK">
 				<displayName draft="contributed">albanske lek (1946–1965)</displayName>
 				<displayName count="one" draft="contributed">albansk lek (1946–1965)</displayName>
-				<displayName count="other" draft="contributed">albanske lek (1946–1965)</displayName>
+				<displayName count="other" draft="contributed">albanske lek
+					(1946–1965)</displayName>
 				<symbol draft="contributed">ALK</symbol>
 			</currency>
 			<currency type="ALL">
@@ -3542,8 +3578,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AOR">
 				<displayName>angolanske omjusterte kwanza (1995–1999)</displayName>
-				<displayName count="one">angolansk kwanza reajustado (1995–1999)</displayName>
-				<displayName count="other">angolanske omjusterte kwanza (1995–1999)</displayName>
+				<displayName count="one">angolansk kwanza reajustado
+					(1995–1999)</displayName>
+				<displayName count="other">angolanske omjusterte kwanza
+					(1995–1999)</displayName>
 			</currency>
 			<currency type="ARA">
 				<displayName>argentinske australer</displayName>
@@ -3557,8 +3595,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ARM">
 				<displayName draft="contributed">argentinsk pesos (1881–1970)</displayName>
-				<displayName count="one" draft="contributed">argentinsk pesos (1881–1970)</displayName>
-				<displayName count="other" draft="contributed">argentinske pesos (1881–1970)</displayName>
+				<displayName count="one" draft="contributed">argentinsk pesos
+					(1881–1970)</displayName>
+				<displayName count="other" draft="contributed">argentinske pesos
+					(1881–1970)</displayName>
 			</currency>
 			<currency type="ARP">
 				<displayName>argentinske pesos (1983–1985)</displayName>
@@ -3598,18 +3638,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAD">
 				<displayName>bosnisk-hercegovinske dinarer (1992–1994)</displayName>
-				<displayName count="one">bosnisk-hercegovinsk dinar (1992–1994)</displayName>
-				<displayName count="other">bosnisk-hercegovinske dinarer (1992–1994)</displayName>
+				<displayName count="one">bosnisk-hercegovinsk dinar
+					(1992–1994)</displayName>
+				<displayName count="other">bosnisk-hercegovinske dinarer
+					(1992–1994)</displayName>
 			</currency>
 			<currency type="BAM">
 				<displayName>bosnisk-hercegovinske konvertible mark</displayName>
 				<displayName count="one">bosnisk-hercegovinsk konvertibel mark</displayName>
-				<displayName count="other">bosnisk-hercegovinske konvertible mark</displayName>
+				<displayName count="other">bosnisk-hercegovinske konvertible
+					mark</displayName>
 			</currency>
 			<currency type="BAN">
-				<displayName draft="contributed">nye bosnisk-hercegovinske dinarer (1994–1997)</displayName>
-				<displayName count="one" draft="contributed">ny bosnisk-hercegovinsk dinar (1994–1997)</displayName>
-				<displayName count="other" draft="contributed">nye bosnisk-hercegovinske dinarer (1994–1997)</displayName>
+				<displayName draft="contributed">nye bosnisk-hercegovinske dinarer
+					(1994–1997)</displayName>
+				<displayName count="one" draft="contributed">ny bosnisk-hercegovinsk
+					dinar (1994–1997)</displayName>
+				<displayName count="other" draft="contributed">nye
+					bosnisk-hercegovinske dinarer (1994–1997)</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>barbadiske dollar</displayName>
@@ -3644,7 +3690,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BGM">
 				<displayName draft="contributed">bulgarske lev (sosialist)</displayName>
 				<displayName count="one" draft="contributed">bulgarsk lev (sosialist)</displayName>
-				<displayName count="other" draft="contributed">bulgarske lev (sosialist)</displayName>
+				<displayName count="other" draft="contributed">bulgarske lev
+					(sosialist)</displayName>
 			</currency>
 			<currency type="BGN">
 				<displayName>bulgarske lev</displayName>
@@ -3654,7 +3701,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BGO">
 				<displayName draft="contributed">bulgarske lev (1879–1952)</displayName>
 				<displayName count="one" draft="contributed">bulgarsk lev (1879–1952)</displayName>
-				<displayName count="other" draft="contributed">bulgarske lev (1879–1952)</displayName>
+				<displayName count="other" draft="contributed">bulgarske lev
+					(1879–1952)</displayName>
 			</currency>
 			<currency type="BHD">
 				<displayName>bahrainske dinarer</displayName>
@@ -3683,8 +3731,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BOL">
 				<displayName draft="contributed">bolivianske boliviano (1863–1963)</displayName>
-				<displayName count="one" draft="contributed">boliviansk boliviano (1863–1963)</displayName>
-				<displayName count="other" draft="contributed">bolivianske boliviano (1863–1963)</displayName>
+				<displayName count="one" draft="contributed">boliviansk boliviano
+					(1863–1963)</displayName>
+				<displayName count="other" draft="contributed">bolivianske boliviano
+					(1863–1963)</displayName>
 			</currency>
 			<currency type="BOP">
 				<displayName>bolivianske pesos</displayName>
@@ -3699,7 +3749,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BRB">
 				<displayName>brasilianske cruzeiro novo (1967–1986)</displayName>
 				<displayName count="one">brasiliansk cruzeiro novo (1967–1986)</displayName>
-				<displayName count="other">brasilianske cruzeiro novo (1967–1986)</displayName>
+				<displayName count="other">brasilianske cruzeiro novo
+					(1967–1986)</displayName>
 			</currency>
 			<currency type="BRC">
 				<displayName>brasilianske cruzado</displayName>
@@ -3729,8 +3780,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BRZ">
 				<displayName draft="contributed">brasilianske cruzeiro (1942–1967)</displayName>
-				<displayName count="one" draft="contributed">brasiliansk cruzeiro (1942–1967)</displayName>
-				<displayName count="other" draft="contributed">brasilianske cruzeiro (1942–1967)</displayName>
+				<displayName count="one" draft="contributed">brasiliansk cruzeiro
+					(1942–1967)</displayName>
+				<displayName count="other" draft="contributed">brasilianske cruzeiro
+					(1942–1967)</displayName>
 			</currency>
 			<currency type="BSD">
 				<displayName>bahamanske dollar</displayName>
@@ -3903,8 +3956,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ECV">
 				<displayName>ecuadorianske unidad de valor constante (UVC)</displayName>
-				<displayName count="one">ecuadoriansk unidad de valor constante (UVC)</displayName>
-				<displayName count="other">ecuadorianske unidad de valor constante (UVC)</displayName>
+				<displayName count="one">ecuadoriansk unidad de valor
+					constante (UVC)</displayName>
+				<displayName count="other">ecuadorianske unidad de valor
+					constante (UVC)</displayName>
 			</currency>
 			<currency type="EEK">
 				<displayName>estiske kroon</displayName>
@@ -4175,13 +4230,17 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="KRH">
 				<displayName draft="contributed">sørkoreanske hwan (1953–1962)</displayName>
-				<displayName count="one" draft="contributed">sørkoreansk hwan (1953–1962)</displayName>
-				<displayName count="other" draft="contributed">sørkoreanske hwan (1953–1962)</displayName>
+				<displayName count="one" draft="contributed">sørkoreansk hwan
+					(1953–1962)</displayName>
+				<displayName count="other" draft="contributed">sørkoreanske hwan
+					(1953–1962)</displayName>
 			</currency>
 			<currency type="KRO">
 				<displayName draft="contributed">sørkoreanske won (1945–1953)</displayName>
-				<displayName count="one" draft="contributed">sørkoreansk won (1945–1953)</displayName>
-				<displayName count="other" draft="contributed">sørkoreanske won (1945–1953)</displayName>
+				<displayName count="one" draft="contributed">sørkoreansk won
+					(1945–1953)</displayName>
+				<displayName count="other" draft="contributed">sørkoreanske won
+					(1945–1953)</displayName>
 			</currency>
 			<currency type="KRW">
 				<displayName>sørkoreanske won</displayName>
@@ -4306,8 +4365,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="MKN">
 				<displayName draft="contributed">makedonske denarer (1992–1993)</displayName>
-				<displayName count="one" draft="contributed">makedonsk denar (1992–1993)</displayName>
-				<displayName count="other" draft="contributed">makedonske denarer (1992–1993)</displayName>
+				<displayName count="one" draft="contributed">makedonsk denar
+					(1992–1993)</displayName>
+				<displayName count="other" draft="contributed">makedonske denarer
+					(1992–1993)</displayName>
 			</currency>
 			<currency type="MLF">
 				<displayName>maliske franc</displayName>
@@ -4752,7 +4813,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">amerikanske dollar (samme dag)</displayName>
 			</currency>
 			<currency type="UYI">
-				<displayName draft="contributed">uruguyanske pesos (indekserte enheter)</displayName>
+				<displayName draft="contributed">uruguyanske pesos (indekserte
+					enheter)</displayName>
 			</currency>
 			<currency type="UYP">
 				<displayName>uruguayanske pesos (1975–1993)</displayName>
@@ -4787,8 +4849,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="VNN">
 				<displayName draft="contributed">vietnamesiske dong (1978–1985)</displayName>
-				<displayName count="one" draft="contributed">vietnamesisk dong (1978–1985)</displayName>
-				<displayName count="other" draft="contributed">vietnamesiske dong (1978–1985)</displayName>
+				<displayName count="one" draft="contributed">vietnamesisk dong
+					(1978–1985)</displayName>
+				<displayName count="other" draft="contributed">vietnamesiske dong
+					(1978–1985)</displayName>
 			</currency>
 			<currency type="VUV">
 				<displayName>vanuatiske vatu</displayName>
@@ -4933,9 +4997,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">jugoslaviske konvertible dinarer</displayName>
 			</currency>
 			<currency type="YUR">
-				<displayName draft="contributed">jugoslaviske reformerte dinarer (1992–1993)</displayName>
-				<displayName count="one" draft="contributed">jugoslavisk reformert dinar (1992–1993)</displayName>
-				<displayName count="other" draft="contributed">jugoslaviske reformerte dinarer (1992–1993)</displayName>
+				<displayName draft="contributed">jugoslaviske reformerte dinarer
+					(1992–1993)</displayName>
+				<displayName count="one" draft="contributed">jugoslavisk reformert
+					dinar (1992–1993)</displayName>
+				<displayName count="other" draft="contributed">jugoslaviske reformerte
+					dinarer (1992–1993)</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName>sørafrikanske rand (finansielle)</displayName>

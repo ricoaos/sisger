@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9728 $"/>
-		<generation date="$Date: 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014) $"/>
-		<language type="kab"/>
+		<version number="$Revision: 9728 $" />
+		<generation date="$Date: 2014-02-12 22:14:13 -0600 (Wed, 12 Feb 2014) $" />
+		<language type="kab" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -287,9 +286,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</territories>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a b c č d ḍ e ɛ f g ǧ ɣ h ḥ i j k l m n p q r ṛ s ṣ t ṭ u w x y z ẓ]</exemplarCharacters>
+		<exemplarCharacters>[a b c č d ḍ e ɛ f g ǧ ɣ h ḥ i j k l m n p q r ṛ s
+			ṣ t ṭ u w x y z ẓ]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[o v]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C Č D Ḍ E Ɛ F G Ǧ Ɣ H Ḥ I J K L M N P Q R Ṛ S Ṣ T Ṭ U W X Y Z Ẓ]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C Č D Ḍ E Ɛ F G Ǧ Ɣ H
+			Ḥ I J K L M N P Q R Ṛ S Ṣ T Ṭ U W X Y Z Ẓ]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart>«</quotationStart>

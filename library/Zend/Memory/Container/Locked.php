@@ -19,7 +19,9 @@
  * @version    $Id: Locked.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-/** Zend_Memory_Container */
+/**
+ * Zend_Memory_Container
+ */
 require_once 'Zend/Memory/Container.php';
 
 /**
@@ -27,13 +29,14 @@ require_once 'Zend/Memory/Container.php';
  *
  * Locked (always stored in memory).
  *
- * @category   Zend
- * @package    Zend_Memory
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Memory
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Memory_Container_Locked extends Zend_Memory_Container
 {
+
     /**
      * Value object
      *
@@ -41,13 +44,12 @@ class Zend_Memory_Container_Locked extends Zend_Memory_Container
      */
     public $value;
 
-
     /**
      * Object constructor
      *
-     * @param Zend_Memory_Manager $memoryManager
-     * @param integer $id
-     * @param string $value
+     * @param Zend_Memory_Manager $memoryManager            
+     * @param integer $id            
+     * @param string $value            
      */
     public function __construct($value)
     {

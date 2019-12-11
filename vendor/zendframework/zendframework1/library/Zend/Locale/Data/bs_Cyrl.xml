@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="bs"/>
-		<script type="Cyrl"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="bs" />
+		<script type="Cyrl" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -503,7 +502,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Hani">хан</script>
 			<script type="Hano">хануно</script>
 			<script type="Hans">поједностављено кинеско писмо</script>
-			<script type="Hans" alt="stand-alone" draft="contributed">поједностављени хан</script>
+			<script type="Hans" alt="stand-alone" draft="contributed">поједностављени
+				хан</script>
 			<script type="Hant">традиционално кинеско писмо</script>
 			<script type="Hant" alt="stand-alone" draft="contributed">традиционални хан</script>
 			<script type="Hebr">хебрејско писмо</script>
@@ -931,7 +931,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</keys>
 		<types>
 			<type type="arab" key="numbers" draft="contributed">арапско-индијске цифре</type>
-			<type type="arabext" key="numbers" draft="contributed">продужене арапско-индијске цифре</type>
+			<type type="arabext" key="numbers" draft="contributed">продужене
+				арапско-индијске цифре</type>
 			<type type="armn" key="numbers" draft="contributed">јерменски бројеви</type>
 			<type type="armnlow" key="numbers" draft="contributed">мали јерменски бројеви</type>
 			<type type="beng" key="numbers" draft="contributed">бенгалске цифре</type>
@@ -940,11 +941,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="chinese" key="calendar">Кинески календар</type>
 			<type type="coptic" key="calendar" draft="contributed">коптски календар</type>
 			<type type="deva" key="numbers" draft="contributed">девангари цифре</type>
-			<type type="dictionary" key="collation" draft="contributed">Редослед сортирања у речнику</type>
-			<type type="ducet" key="collation" draft="contributed">Подразумевани Unicode редослед сортирања</type>
+			<type type="dictionary" key="collation" draft="contributed">Редослед сортирања
+				у речнику</type>
+			<type type="ducet" key="collation" draft="contributed">Подразумевани Unicode
+				редослед сортирања</type>
 			<type type="ethi" key="numbers" draft="contributed">етиопски бројеви</type>
 			<type type="ethiopic" key="calendar" draft="contributed">етиопски календар</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">етиопски амет алем календар</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">етиопски
+				амет алем календар</type>
 			<type type="fullwide" key="numbers" draft="contributed">цифре пуне ширине</type>
 			<type type="gb2312han" key="collation">Поједностављено кинеско сортирање</type>
 			<type type="geor" key="numbers" draft="contributed">грузијски бројеви</type>
@@ -953,11 +957,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="greklow" key="numbers" draft="contributed">мали грчки бројеви</type>
 			<type type="gujr" key="numbers" draft="contributed">гуџаратске цифре</type>
 			<type type="guru" key="numbers" draft="contributed">гурмуки цифре</type>
-			<type type="hanidec" key="numbers" draft="contributed">кинески децимални бројеви</type>
-			<type type="hans" key="numbers" draft="contributed">поједностављени кинески бројеви</type>
-			<type type="hansfin" key="numbers" draft="contributed">поједностављени кинески финансијски бројеви</type>
-			<type type="hant" key="numbers" draft="contributed">традиционални кинески бројеви</type>
-			<type type="hantfin" key="numbers" draft="contributed">традиционални кинески финансијски бројеви</type>
+			<type type="hanidec" key="numbers" draft="contributed">кинески децимални
+				бројеви</type>
+			<type type="hans" key="numbers" draft="contributed">поједностављени кинески
+				бројеви</type>
+			<type type="hansfin" key="numbers" draft="contributed">поједностављени кинески
+				финансијски бројеви</type>
+			<type type="hant" key="numbers" draft="contributed">традиционални кинески
+				бројеви</type>
+			<type type="hantfin" key="numbers" draft="contributed">традиционални кинески
+				финансијски бројеви</type>
 			<type type="hebr" key="numbers" draft="contributed">хебрејски бројеви</type>
 			<type type="hebrew" key="calendar">Хебрејски календар</type>
 			<type type="indian" key="calendar">Индијски национални календар</type>
@@ -965,7 +974,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="islamic-civil" key="calendar">Исламски цивилни календар</type>
 			<type type="japanese" key="calendar">Јапански календар</type>
 			<type type="jpan" key="numbers" draft="contributed">јапански бројеви</type>
-			<type type="jpanfin" key="numbers" draft="contributed">јапански финансијски бројеви</type>
+			<type type="jpanfin" key="numbers" draft="contributed">јапански финансијски
+				бројеви</type>
 			<type type="khmr" key="numbers" draft="contributed">кмерске цифре</type>
 			<type type="knda" key="numbers" draft="contributed">канада цифре</type>
 			<type type="laoo" key="numbers" draft="contributed">лаошке цифре</type>
@@ -977,18 +987,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="persian" key="calendar" draft="contributed">персијски календар</type>
 			<type type="phonebook" key="collation">Сортирање као телефонски именик</type>
 			<type type="pinyin" key="collation">Пињин сортирање</type>
-			<type type="reformed" key="collation" draft="contributed">Реформисани редослед сортирања</type>
+			<type type="reformed" key="collation" draft="contributed">Реформисани редослед
+				сортирања</type>
 			<type type="roc" key="calendar">Календар Републике Кине</type>
 			<type type="roman" key="numbers" draft="contributed">римски бројеви</type>
 			<type type="romanlow" key="numbers" draft="contributed">мали римски бројеви</type>
-			<type type="search" key="collation" draft="contributed">Опште намењена претрага</type>
+			<type type="search" key="collation" draft="contributed">Опште намењена
+				претрага</type>
 			<type type="stroke" key="collation">Сортирање по броју црта</type>
 			<type type="taml" key="numbers" draft="contributed">тамилски бројеви</type>
 			<type type="telu" key="numbers" draft="contributed">телугу цифре</type>
 			<type type="thai" key="numbers" draft="contributed">тајске цифре</type>
 			<type type="tibt" key="numbers" draft="contributed">тибетанске цифре</type>
 			<type type="traditional" key="collation">Традиционално сортирање</type>
-			<type type="unihan" key="collation" draft="contributed">Редослед сортирања радикалним цртицама</type>
+			<type type="unihan" key="collation" draft="contributed">Редослед сортирања
+				радикалним цртицама</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">БГН (BGN)</transformName>
@@ -1014,9 +1027,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[а б в г д ђ е ж з и ј к л љ м н њ о п р с т ћ у ф х ц ч џ ш]</exemplarCharacters>
+		<exemplarCharacters>[а б в г д ђ е ж з и ј к л љ м н њ о п р с т ћ у ф
+			х ц ч џ ш]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[А Б В Г Д Ђ Е Ж З И Ј К Л Љ М Н Њ О П Р С Т Ћ У Ф Х Ц Ч Џ Ш]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[А Б В Г Д Ђ
+			Е Ж З И Ј К Л Љ М Н Њ О П Р С Т Ћ У Ф Х Ц Ч Џ Ш]</exemplarCharacters>
 		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
 	</characters>
@@ -1214,12 +1229,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">dd.-dd. MMM y. G</greatestDifference>
 							<greatestDifference id="M">dd. MMM - dd. MMM y. G</greatestDifference>
-							<greatestDifference id="y">dd. MMM y. - dd. MMM y. G</greatestDifference>
+							<greatestDifference id="y">dd. MMM y. - dd. MMM y.
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, dd. - E, dd. MMM y. G</greatestDifference>
-							<greatestDifference id="M">E, dd. MMM - E, dd. MMM y. G</greatestDifference>
-							<greatestDifference id="y">E, dd. MMM y. - E, dd. MMM y. G</greatestDifference>
+							<greatestDifference id="d">E, dd. - E, dd. MMM y.
+								G</greatestDifference>
+							<greatestDifference id="M">E, dd. MMM - E, dd. MMM
+								y. G</greatestDifference>
+							<greatestDifference id="y">E, dd. MMM y. - E, dd.
+								MMM y. G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM-MMMM y. G</greatestDifference>
@@ -1523,8 +1542,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, dd. - E, dd. MMM y.</greatestDifference>
-							<greatestDifference id="M">E, dd. MMM - E, dd. MMM y.</greatestDifference>
-							<greatestDifference id="y">E, dd. MMM y. - E, dd. MMM y.</greatestDifference>
+							<greatestDifference id="M">E, dd. MMM - E, dd. MMM
+								y.</greatestDifference>
+							<greatestDifference id="y">E, dd. MMM y. - E, dd.
+								MMM y.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM-MMMM y.</greatestDifference>
@@ -4494,10 +4515,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other" draft="provisional">аргентинских пезос леја</displayName>
 			</currency>
 			<currency type="ARM">
-				<displayName count="one" draft="provisional">аргентински пезос монедо национал</displayName>
-				<displayName count="few" draft="provisional">аргентинска пезос монеда национал</displayName>
-				<displayName count="many" draft="provisional">аргентинских пезос монеда национала</displayName>
-				<displayName count="other" draft="provisional">аргентинских пезос монеда национала</displayName>
+				<displayName count="one" draft="provisional">аргентински пезос монедо
+					национал</displayName>
+				<displayName count="few" draft="provisional">аргентинска пезос монеда
+					национал</displayName>
+				<displayName count="many" draft="provisional">аргентинских пезос
+					монеда национала</displayName>
+				<displayName count="other" draft="provisional">аргентинских пезос
+					монеда национала</displayName>
 			</currency>
 			<currency type="ARP">
 				<displayName>аргентински пезо (1983–1985)</displayName>
@@ -4557,17 +4582,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>Конвертибилна марка</displayName>
-				<displayName count="one">босанско-херцеговачка конвертибилна марка</displayName>
-				<displayName count="few">босанско-херцеговачке конвертибилне марк</displayName>
-				<displayName count="many">босанско-херцеговачких конвертабилних марака</displayName>
-				<displayName count="other">босанско-херцеговачких конвертибилних марака</displayName>
+				<displayName count="one">босанско-херцеговачка конвертибилна
+					марка</displayName>
+				<displayName count="few">босанско-херцеговачке конвертибилне
+					марк</displayName>
+				<displayName count="many">босанско-херцеговачких конвертабилних
+					марака</displayName>
+				<displayName count="other">босанско-херцеговачких конвертибилних
+					марака</displayName>
 				<symbol>КМ</symbol>
 			</currency>
 			<currency type="BAN">
-				<displayName count="one" draft="provisional">босанско-херцеговачки нови динар</displayName>
-				<displayName count="few" draft="provisional">босанско-херцеговачка нова динара</displayName>
-				<displayName count="many" draft="provisional">босанско-херцеговачких нових динара</displayName>
-				<displayName count="other" draft="provisional">босанско-херцеговачких нових динара</displayName>
+				<displayName count="one" draft="provisional">босанско-херцеговачки
+					нови динар</displayName>
+				<displayName count="few" draft="provisional">босанско-херцеговачка
+					нова динара</displayName>
+				<displayName count="many" draft="provisional">босанско-херцеговачких
+					нових динара</displayName>
+				<displayName count="other" draft="provisional">босанско-херцеговачких
+					нових динара</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Барбадошки долар</displayName>
@@ -4612,10 +4645,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">бугарских тврдих лева</displayName>
 			</currency>
 			<currency type="BGM">
-				<displayName count="one" draft="provisional">бугарски социјалистички лев</displayName>
-				<displayName count="few" draft="provisional">бугарска социјалистичка лева</displayName>
-				<displayName count="many" draft="provisional">бугарских социјалистичких лева</displayName>
-				<displayName count="other" draft="provisional">бугарских социјалистичких лева</displayName>
+				<displayName count="one" draft="provisional">бугарски социјалистички
+					лев</displayName>
+				<displayName count="few" draft="provisional">бугарска социјалистичка
+					лева</displayName>
+				<displayName count="many" draft="provisional">бугарских
+					социјалистичких лева</displayName>
+				<displayName count="other" draft="provisional">бугарских
+					социјалистичких лева</displayName>
 			</currency>
 			<currency type="BGN">
 				<displayName>Бугарски лев</displayName>
@@ -4666,10 +4703,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">боливијских боливиана</displayName>
 			</currency>
 			<currency type="BOL">
-				<displayName count="one" draft="provisional">стари боливијски боливијано</displayName>
-				<displayName count="few" draft="provisional">стара боливијска боливијана</displayName>
-				<displayName count="many" draft="provisional">старих боливијских боливијана</displayName>
-				<displayName count="other" draft="provisional">старих боливијских боливијана</displayName>
+				<displayName count="one" draft="provisional">стари боливијски
+					боливијано</displayName>
+				<displayName count="few" draft="provisional">стара боливијска
+					боливијана</displayName>
+				<displayName count="many" draft="provisional">старих боливијских
+					боливијана</displayName>
+				<displayName count="other" draft="provisional">старих боливијских
+					боливијана</displayName>
 			</currency>
 			<currency type="BOP">
 				<displayName>Боливијски пезо</displayName>
@@ -4730,8 +4771,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="BRZ">
 				<displayName count="one" draft="provisional">стари бразилски крузеиро</displayName>
 				<displayName count="few" draft="provisional">стара бразилска крузеира</displayName>
-				<displayName count="many" draft="provisional">старих бразилских крузеира</displayName>
-				<displayName count="other" draft="provisional">старих бразилских крузеира</displayName>
+				<displayName count="many" draft="provisional">старих бразилских
+					крузеира</displayName>
+				<displayName count="other" draft="provisional">старих бразилских
+					крузеира</displayName>
 			</currency>
 			<currency type="BSD">
 				<displayName>Бахамски долар</displayName>
@@ -4838,10 +4881,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">чилеански пезоси</displayName>
 			</currency>
 			<currency type="CNX">
-				<displayName count="one" draft="provisional">долар кинеске народне банке</displayName>
-				<displayName count="few" draft="provisional">долара кинеске народне банке</displayName>
-				<displayName count="many" draft="provisional">долара кинеске народне банке</displayName>
-				<displayName count="other" draft="provisional">долара кинеске народне банке</displayName>
+				<displayName count="one" draft="provisional">долар кинеске народне
+					банке</displayName>
+				<displayName count="few" draft="provisional">долара кинеске народне
+					банке</displayName>
+				<displayName count="many" draft="provisional">долара кинеске народне
+					банке</displayName>
+				<displayName count="other" draft="provisional">долара кинеске народне
+					банке</displayName>
 			</currency>
 			<currency type="CNY">
 				<displayName>Кинески јуан ренминби</displayName>
@@ -4887,10 +4934,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="CUC">
 				<displayName draft="contributed">кубански конвертибилни песо</displayName>
-				<displayName count="one" draft="contributed">кубански конвертибилни песо</displayName>
-				<displayName count="few" draft="contributed">кубански конвертибилни пезос</displayName>
-				<displayName count="many" draft="contributed">кубанских конвертибилних пезоса</displayName>
-				<displayName count="other" draft="contributed">кубански конвертибилни пезос</displayName>
+				<displayName count="one" draft="contributed">кубански конвертибилни
+					песо</displayName>
+				<displayName count="few" draft="contributed">кубански конвертибилни
+					пезос</displayName>
+				<displayName count="many" draft="contributed">кубанских конвертибилних
+					пезоса</displayName>
+				<displayName count="other" draft="contributed">кубански конвертибилни
+					пезос</displayName>
 			</currency>
 			<currency type="CUP">
 				<displayName>Кубански пезо</displayName>
@@ -5351,8 +5402,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="KRO">
 				<displayName count="one" draft="provisional">стари јужнокорејски вон</displayName>
 				<displayName count="few" draft="provisional">стара јужнокорејска вона</displayName>
-				<displayName count="many" draft="provisional">старих јужнокорејских вона</displayName>
-				<displayName count="other" draft="provisional">старих јужнокорејских вона</displayName>
+				<displayName count="many" draft="provisional">старих јужнокорејских
+					вона</displayName>
+				<displayName count="other" draft="provisional">старих јужнокорејских
+					вона</displayName>
 			</currency>
 			<currency type="KRW">
 				<displayName>Јужнокорејски Вон</displayName>
@@ -5530,8 +5583,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="MKN">
 				<displayName count="one" draft="provisional">стари македонски денар</displayName>
 				<displayName count="few" draft="provisional">стара македонска денара</displayName>
-				<displayName count="many" draft="provisional">старих македонских денара</displayName>
-				<displayName count="other" draft="provisional">старих македонских денара</displayName>
+				<displayName count="many" draft="provisional">старих македонских
+					денара</displayName>
+				<displayName count="other" draft="provisional">старих македонских
+					денара</displayName>
 			</currency>
 			<currency type="MLF">
 				<displayName>Малијански франак</displayName>
@@ -6133,10 +6188,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="UYI">
 				<displayName>Уругвајски пезо ен унидадес индексадас</displayName>
-				<displayName count="one">уругвајски пезо ен унидадес индексадес</displayName>
-				<displayName count="few">уругвајска пезоса ен унидадес индексадеса</displayName>
-				<displayName count="many">уругвајских пезоса ен унидадес индексадеса</displayName>
-				<displayName count="other">угвајских пезоса ен унидадес индексадеса</displayName>
+				<displayName count="one">уругвајски пезо ен унидадес
+					индексадес</displayName>
+				<displayName count="few">уругвајска пезоса ен унидадес
+					индексадеса</displayName>
+				<displayName count="many">уругвајских пезоса ен унидадес
+					индексадеса</displayName>
+				<displayName count="other">угвајских пезоса ен унидадес
+					индексадеса</displayName>
 			</currency>
 			<currency type="UYP">
 				<displayName>Уругвајски пезо (1975–1993)</displayName>
@@ -6183,8 +6242,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="VNN">
 				<displayName count="one" draft="provisional">стари вијетнамски донг</displayName>
 				<displayName count="few" draft="provisional">стара вијетнамска донга</displayName>
-				<displayName count="many" draft="provisional">старих вијетнамских донга</displayName>
-				<displayName count="other" draft="provisional">старих вијетнамских донга</displayName>
+				<displayName count="many" draft="provisional">старих вијетнамских
+					донга</displayName>
+				<displayName count="other" draft="provisional">старих вијетнамских
+					донга</displayName>
 			</currency>
 			<currency type="VUV">
 				<displayName>Вануатски вату</displayName>
@@ -6369,10 +6430,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">југословенских конвертибилних динара</displayName>
 			</currency>
 			<currency type="YUR">
-				<displayName count="one" draft="provisional">југословенски реформирани динар</displayName>
-				<displayName count="few" draft="provisional">југословенска реформирана динара</displayName>
-				<displayName count="many" draft="provisional">југословенских реформираних динара</displayName>
-				<displayName count="other" draft="provisional">југословенских реформираних динара</displayName>
+				<displayName count="one" draft="provisional">југословенски реформирани
+					динар</displayName>
+				<displayName count="few" draft="provisional">југословенска реформирана
+					динара</displayName>
+				<displayName count="many" draft="provisional">југословенских
+					реформираних динара</displayName>
+				<displayName count="other" draft="provisional">југословенских
+					реформираних динара</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName>Јужно-афрички ранд (финансијски)</displayName>
@@ -6429,9 +6494,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="ZWR">
 				<displayName>Зимбабвеански долар (2008)</displayName>
 				<displayName count="one" draft="provisional">зимбабвејски долар (2008)</displayName>
-				<displayName count="few" draft="provisional">зимбабвејска долара (2008)</displayName>
-				<displayName count="many" draft="provisional">зимбабвејских долара (2008)</displayName>
-				<displayName count="other" draft="provisional">зимбабвејских долара (2008)</displayName>
+				<displayName count="few" draft="provisional">зимбабвејска долара
+					(2008)</displayName>
+				<displayName count="many" draft="provisional">зимбабвејских долара
+					(2008)</displayName>
+				<displayName count="other" draft="provisional">зимбабвејских долара
+					(2008)</displayName>
 			</currency>
 		</currencies>
 	</numbers>

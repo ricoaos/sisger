@@ -21,6 +21,7 @@
  */
 
 /**
+ *
  * @see Zend_Application_Resource_Resource
  */
 require_once 'Zend/Application/Resource/Resource.php';
@@ -28,15 +29,16 @@ require_once 'Zend/Application/Resource/Resource.php';
 /**
  * Abstract class for bootstrap resources
  *
- * @uses       Zend_Application_Resource_Resource
- * @category   Zend
- * @package    Zend_Application
+ * @uses Zend_Application_Resource_Resource
+ * @category Zend
+ * @package Zend_Application
  * @subpackage Resource
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Application_Resource_ResourceAbstract implements Zend_Application_Resource_Resource
 {
+
     /**
      * Parent bootstrap
      *
@@ -58,13 +60,13 @@ abstract class Zend_Application_Resource_ResourceAbstract implements Zend_Applic
      */
     protected $_skipOptions = array(
         'options',
-        'config',
+        'config'
     );
 
     /**
      * Create a instance with options
      *
-     * @param mixed $options
+     * @param mixed $options            
      */
     public function __construct($options = null)
     {
@@ -78,7 +80,8 @@ abstract class Zend_Application_Resource_ResourceAbstract implements Zend_Applic
     /**
      * Set options from array
      *
-     * @param  array $options Configuration for resource
+     * @param array $options
+     *            Configuration for resource
      * @return Zend_Application_Resource_ResourceAbstract
      */
     public function setOptions(array $options)
@@ -87,20 +90,20 @@ abstract class Zend_Application_Resource_ResourceAbstract implements Zend_Applic
             $this->setBootstrap($options['bootstrap']);
             unset($options['bootstrap']);
         }
-
+        
         foreach ($options as $key => $value) {
             if (in_array(strtolower($key), $this->_skipOptions)) {
                 continue;
             }
-
+            
             $method = 'set' . strtolower($key);
             if (method_exists($this, $method)) {
                 $this->$method($value);
             }
         }
-
+        
         $this->_options = $this->mergeOptions($this->_options, $options);
-
+        
         return $this;
     }
 
@@ -117,8 +120,8 @@ abstract class Zend_Application_Resource_ResourceAbstract implements Zend_Applic
     /**
      * Merge options recursively
      *
-     * @param  array $array1
-     * @param  mixed $array2
+     * @param array $array1            
+     * @param mixed $array2            
      * @return array
      */
     public function mergeOptions(array $array1, $array2 = null)
@@ -126,9 +129,7 @@ abstract class Zend_Application_Resource_ResourceAbstract implements Zend_Applic
         if (is_array($array2)) {
             foreach ($array2 as $key => $val) {
                 if (is_array($array2[$key])) {
-                    $array1[$key] = (array_key_exists($key, $array1) && is_array($array1[$key]))
-                                  ? $this->mergeOptions($array1[$key], $array2[$key])
-                                  : $array2[$key];
+                    $array1[$key] = (array_key_exists($key, $array1) && is_array($array1[$key])) ? $this->mergeOptions($array1[$key], $array2[$key]) : $array2[$key];
                 } else {
                     $array1[$key] = $val;
                 }
@@ -140,7 +141,7 @@ abstract class Zend_Application_Resource_ResourceAbstract implements Zend_Applic
     /**
      * Set the bootstrap to which the resource is attached
      *
-     * @param  Zend_Application_Bootstrap_Bootstrapper $bootstrap
+     * @param Zend_Application_Bootstrap_Bootstrapper $bootstrap            
      * @return Zend_Application_Resource_Resource
      */
     public function setBootstrap(Zend_Application_Bootstrap_Bootstrapper $bootstrap)

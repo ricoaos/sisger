@@ -22,39 +22,43 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Media_Entry
  */
 require_once 'Zend/Gdata/Media/Entry.php';
 
 /**
+ *
  * @see Zend_Gdata_Extension_Rating
  */
 require_once 'Zend/Gdata/Extension/Rating.php';
 
 /**
+ *
  * @see Zend_Gdata_Extension_Comments
  */
 require_once 'Zend/Gdata/Extension/Comments.php';
 
 /**
+ *
  * @see Zend_Gdata_YouTube_Extension_Statistics
  */
 require_once 'Zend/Gdata/YouTube/Extension/Statistics.php';
 
 /**
+ *
  * @see Zend_Gdata_YouTube_Extension_Description
  */
 require_once 'Zend/Gdata/YouTube/Extension/Description.php';
 
-
 /**
  * Represents the YouTube message flavor of an Atom entry
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage YouTube
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_YouTube_InboxEntry extends Zend_Gdata_Media_Entry
 {
@@ -93,8 +97,9 @@ class Zend_Gdata_YouTube_InboxEntry extends Zend_Gdata_Media_Entry
      * Creates a subscription entry, representing an individual subscription
      * in a list of subscriptions, usually associated with an individual user.
      *
-     * @param DOMElement $element (optional) DOMElement from which this
-     *          object should be constructed.
+     * @param DOMElement $element
+     *            (optional) DOMElement from which this
+     *            object should be constructed.
      */
     public function __construct($element = null)
     {
@@ -104,32 +109,30 @@ class Zend_Gdata_YouTube_InboxEntry extends Zend_Gdata_Media_Entry
 
     /**
      * Retrieves a DOMElement which corresponds to this element and all
-     * child properties.  This is used to build an entry back into a DOM
+     * child properties.
+     * This is used to build an entry back into a DOM
      * and eventually XML text for sending to the server upon updates, or
      * for application storage/persistence.
      *
-     * @param DOMDocument $doc The DOMDocument used to construct DOMElements
+     * @param DOMDocument $doc
+     *            The DOMDocument used to construct DOMElements
      * @return DOMElement The DOMElement representing this element and all
-     * child properties.
+     *         child properties.
      */
     public function getDOM($doc = null, $majorVersion = 1, $minorVersion = null)
     {
         $element = parent::getDOM($doc, $majorVersion, $minorVersion);
         if ($this->_description != null) {
-            $element->appendChild(
-                $this->_description->getDOM($element->ownerDocument));
+            $element->appendChild($this->_description->getDOM($element->ownerDocument));
         }
         if ($this->_rating != null) {
-            $element->appendChild(
-                $this->_rating->getDOM($element->ownerDocument));
+            $element->appendChild($this->_rating->getDOM($element->ownerDocument));
         }
         if ($this->_statistics != null) {
-            $element->appendChild(
-                $this->_statistics->getDOM($element->ownerDocument));
+            $element->appendChild($this->_statistics->getDOM($element->ownerDocument));
         }
         if ($this->_comments != null) {
-            $element->appendChild(
-                $this->_comments->getDOM($element->ownerDocument));
+            $element->appendChild($this->_comments->getDOM($element->ownerDocument));
         }
         return $element;
     }
@@ -138,7 +141,8 @@ class Zend_Gdata_YouTube_InboxEntry extends Zend_Gdata_Media_Entry
      * Creates individual Entry objects of the appropriate type and
      * stores them in the $_entry array based upon DOM data.
      *
-     * @param DOMNode $child The DOMNode to process
+     * @param DOMNode $child
+     *            The DOMNode to process
      */
     protected function takeChildFromDOM($child)
     {
@@ -180,9 +184,7 @@ class Zend_Gdata_YouTube_InboxEntry extends Zend_Gdata_Media_Entry
     {
         if ($this->getMajorProtocolVersion() == 2) {
             require_once 'Zend/Gdata/App/VersionException.php';
-            throw new Zend_Gdata_App_VersionException('The getDescription ' .
-                ' method is only supported in version 1 of the YouTube ' .
-                'API.');
+            throw new Zend_Gdata_App_VersionException('The getDescription ' . ' method is only supported in version 1 of the YouTube ' . 'API.');
         } else {
             return $this->_description;
         }
@@ -191,8 +193,9 @@ class Zend_Gdata_YouTube_InboxEntry extends Zend_Gdata_Media_Entry
     /**
      * Sets the yt:description element for a new inbox entry.
      *
-     * @param Zend_Gdata_YouTube_Extension_Description $description The
-     *        description.
+     * @param Zend_Gdata_YouTube_Extension_Description $description
+     *            The
+     *            description.
      * @throws Zend_Gdata_App_VersionException
      * @return Zend_Gdata_YouTube_InboxEntry Provides a fluent interface
      */
@@ -200,9 +203,7 @@ class Zend_Gdata_YouTube_InboxEntry extends Zend_Gdata_Media_Entry
     {
         if ($this->getMajorProtocolVersion() == 2) {
             require_once 'Zend/Gdata/App/VersionException.php';
-            throw new Zend_Gdata_App_VersionException('The setDescription ' .
-                ' method is only supported in version 1 of the YouTube ' .
-                'API.');
+            throw new Zend_Gdata_App_VersionException('The setDescription ' . ' method is only supported in version 1 of the YouTube ' . 'API.');
         } else {
             $this->_description = $description;
             return $this;
@@ -222,8 +223,9 @@ class Zend_Gdata_YouTube_InboxEntry extends Zend_Gdata_Media_Entry
     /**
      * Sets the gd:rating element for the inbox entry
      *
-     * @param Zend_Gdata_Extension_Rating $rating The rating for the video in
-     *        the message
+     * @param Zend_Gdata_Extension_Rating $rating
+     *            The rating for the video in
+     *            the message
      * @return Zend_Gdata_YouTube_InboxEntry Provides a fluent interface
      */
     public function setRating($rating = null)
@@ -245,7 +247,8 @@ class Zend_Gdata_YouTube_InboxEntry extends Zend_Gdata_Media_Entry
     /**
      * Sets the gd:comments element for the inbox entry
      *
-     * @param Zend_Gdata_Extension_Comments $comments The comments feed link
+     * @param Zend_Gdata_Extension_Comments $comments
+     *            The comments feed link
      * @return Zend_Gdata_YouTube_InboxEntry Provides a fluent interface
      */
     public function setComments($comments = null)
@@ -267,8 +270,9 @@ class Zend_Gdata_YouTube_InboxEntry extends Zend_Gdata_Media_Entry
     /**
      * Sets the yt:statistics element for the inbox entry
      *
-     * @param Zend_Gdata_YouTube_Extension_Statistics $statistics The
-     *        statistics element for the video in the message
+     * @param Zend_Gdata_YouTube_Extension_Statistics $statistics
+     *            The
+     *            statistics element for the video in the message
      * @return Zend_Gdata_YouTube_InboxEntry Provides a fluent interface
      */
     public function setStatistics($statistics = null)
@@ -276,6 +280,4 @@ class Zend_Gdata_YouTube_InboxEntry extends Zend_Gdata_Media_Entry
         $this->_statistics = $statistics;
         return $this;
     }
-
-
 }

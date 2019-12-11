@@ -19,23 +19,27 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_Form_Element_Xhtml */
+/**
+ * Zend_Form_Element_Xhtml
+ */
 require_once 'Zend/Form/Element/Xhtml.php';
 
 /**
  * Submit form element
  *
- * @category   Zend
- * @package    Zend_Form
+ * @category Zend
+ * @package Zend_Form
  * @subpackage Element
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id$
  */
 class Zend_Form_Element_Submit extends Zend_Form_Element_Xhtml
 {
+
     /**
      * Default view helper to use
+     * 
      * @var string
      */
     public $helper = 'formSubmit';
@@ -43,20 +47,24 @@ class Zend_Form_Element_Submit extends Zend_Form_Element_Xhtml
     /**
      * Constructor
      *
-     * @param  string|array|Zend_Config $spec Element name or configuration
-     * @param  string|array|Zend_Config $options Element value or configuration
+     * @param string|array|Zend_Config $spec
+     *            Element name or configuration
+     * @param string|array|Zend_Config $options
+     *            Element value or configuration
      * @return void
      */
     public function __construct($spec, $options = null)
     {
         if (is_string($spec) && ((null !== $options) && is_string($options))) {
-            $options = array('label' => $options);
+            $options = array(
+                'label' => $options
+            );
         }
-
-        if (!isset($options['ignore'])) {
+        
+        if (! isset($options['ignore'])) {
             $options['ignore'] = true;
         }
-
+        
         parent::__construct($spec, $options);
     }
 
@@ -72,15 +80,15 @@ class Zend_Form_Element_Submit extends Zend_Form_Element_Xhtml
     public function getLabel()
     {
         $value = parent::getLabel();
-
+        
         if (null === $value) {
             $value = $this->getName();
-
+            
             if (null !== ($translator = $this->getTranslator())) {
                 return $translator->translate($value);
             }
         }
-
+        
         return $value;
     }
 
@@ -92,14 +100,14 @@ class Zend_Form_Element_Submit extends Zend_Form_Element_Xhtml
     public function isChecked()
     {
         $value = $this->getValue();
-
+        
         if (empty($value)) {
             return false;
         }
         if ($value != $this->getLabel()) {
             return false;
         }
-
+        
         return true;
     }
 
@@ -115,12 +123,12 @@ class Zend_Form_Element_Submit extends Zend_Form_Element_Xhtml
         if ($this->loadDefaultDecoratorsIsDisabled()) {
             return $this;
         }
-
+        
         $decorators = $this->getDecorators();
         if (empty($decorators)) {
             $this->addDecorator('Tooltip')
-                 ->addDecorator('ViewHelper')
-                 ->addDecorator('DtDdWrapper');
+                ->addDecorator('ViewHelper')
+                ->addDecorator('DtDdWrapper');
         }
         return $this;
     }

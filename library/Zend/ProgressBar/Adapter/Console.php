@@ -18,11 +18,13 @@
  */
 
 /**
+ *
  * @see Zend_ProgressBar_Adapter
  */
 require_once 'Zend/ProgressBar/Adapter.php';
 
 /**
+ *
  * @see Zend_Text_MultiByte
  */
 require_once 'Zend/Text/MultiByte.php';
@@ -31,14 +33,15 @@ require_once 'Zend/Text/MultiByte.php';
  * Zend_ProgressBar_Adapter_Console offers a text-based progressbar for console
  * applications
  *
- * @category  Zend
- * @package   Zend_ProgressBar
- * @uses      Zend_ProgressBar_Adapter_Interface
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_ProgressBar
+ * @uses Zend_ProgressBar_Adapter_Interface
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
 {
+
     /**
      * Percentage value of the progress
      */
@@ -86,9 +89,11 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
      *
      * @var array
      */
-    protected $_elements = array(self::ELEMENT_PERCENT,
-                                 self::ELEMENT_BAR,
-                                 self::ELEMENT_ETA);
+    protected $_elements = array(
+        self::ELEMENT_PERCENT,
+        self::ELEMENT_BAR,
+        self::ELEMENT_ETA
+    );
 
     /**
      * Which action to do at finish call
@@ -126,7 +131,8 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
     protected $_barRightChar = '-';
 
     /**
-     * Output-stream, when STDOUT is not defined (e.g. in CGI) or set manually
+     * Output-stream, when STDOUT is not defined (e.g.
+     * in CGI) or set manually
      *
      * @var resource
      */
@@ -156,13 +162,13 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
     /**
      * Defined by Zend_ProgressBar_Adapter
      *
-     * @param null|array|Zend_Config $options
+     * @param null|array|Zend_Config $options            
      */
     public function __construct($options = null)
     {
         // Call parent constructor with options
         parent::__construct($options);
-
+        
         // Check if a width was set, else use auto width
         if ($this->_width === null) {
             $this->setWidth();
@@ -182,23 +188,23 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
     /**
      * Set a different output-stream
      *
-     * @param  string $resource
+     * @param string $resource            
      * @return Zend_ProgressBar_Adapter_Console
      */
     public function setOutputStream($resource)
     {
-       $stream = @fopen($resource, 'w');
-
-       if ($stream === false) {
+        $stream = @fopen($resource, 'w');
+        
+        if ($stream === false) {
             require_once 'Zend/ProgressBar/Adapter/Exception.php';
             throw new Zend_ProgressBar_Adapter_Exception('Unable to open stream');
-       }
-
-       if ($this->_outputStream !== null) {
-           fclose($this->_outputStream);
-       }
-
-       $this->_outputStream = $stream;
+        }
+        
+        if ($this->_outputStream !== null) {
+            fclose($this->_outputStream);
+        }
+        
+        $this->_outputStream = $stream;
     }
 
     /**
@@ -209,25 +215,25 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
     public function getOutputStream()
     {
         if ($this->_outputStream === null) {
-            if (!defined('STDOUT')) {
+            if (! defined('STDOUT')) {
                 $this->_outputStream = fopen('php://stdout', 'w');
             } else {
                 return STDOUT;
             }
         }
-
+        
         return $this->_outputStream;
     }
 
     /**
      * Set the width of the progressbar
      *
-     * @param  integer $width
+     * @param integer $width            
      * @return Zend_ProgressBar_Adapter_Console
      */
     public function setWidth($width = null)
     {
-        if ($width === null || !is_integer($width)) {
+        if ($width === null || ! is_integer($width)) {
             if (substr(PHP_OS, 0, 3) === 'WIN') {
                 // We have to default to 79 on windows, because the windows
                 // terminal always has a fixed width of 80 characters and the
@@ -237,7 +243,7 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
             } else {
                 // Set the default width of 80
                 $this->_width = 80;
-
+                
                 // Try to determine the width through stty
                 if (preg_match('#\d+ (\d+)#', @shell_exec('stty size'), $match) === 1) {
                     $this->_width = (int) $match[1];
@@ -248,42 +254,44 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
         } else {
             $this->_width = (int) $width;
         }
-
+        
         $this->_calculateBarWidth();
-
+        
         return $this;
     }
 
     /**
      * Set the elements to display with the progressbar
      *
-     * @param  array $elements
+     * @param array $elements            
      * @throws Zend_ProgressBar_Adapter_Exception When an invalid element is foudn in the array
      * @return Zend_ProgressBar_Adapter_Console
      */
     public function setElements(array $elements)
     {
-        $allowedElements = array(self::ELEMENT_PERCENT,
-                                 self::ELEMENT_BAR,
-                                 self::ELEMENT_ETA,
-                                 self::ELEMENT_TEXT);
-
+        $allowedElements = array(
+            self::ELEMENT_PERCENT,
+            self::ELEMENT_BAR,
+            self::ELEMENT_ETA,
+            self::ELEMENT_TEXT
+        );
+        
         if (count(array_diff($elements, $allowedElements)) > 0) {
             require_once 'Zend/ProgressBar/Adapter/Exception.php';
             throw new Zend_ProgressBar_Adapter_Exception('Invalid element found in $elements array');
         }
-
+        
         $this->_elements = $elements;
-
+        
         $this->_calculateBarWidth();
-
+        
         return $this;
     }
 
     /**
      * Set the left-hand character for the bar
      *
-     * @param  string $char
+     * @param string $char            
      * @throws Zend_ProgressBar_Adapter_Exception When character is empty
      * @return Zend_ProgressBar_Adapter_Console
      */
@@ -293,16 +301,16 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
             require_once 'Zend/ProgressBar/Adapter/Exception.php';
             throw new Zend_ProgressBar_Adapter_Exception('Character may not be empty');
         }
-
+        
         $this->_barLeftChar = (string) $char;
-
+        
         return $this;
     }
 
     /**
      * Set the right-hand character for the bar
      *
-     * @param  string $char
+     * @param string $char            
      * @throws Zend_ProgressBar_Adapter_Exception When character is empty
      * @return Zend_ProgressBar_Adapter_Console
      */
@@ -312,44 +320,44 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
             require_once 'Zend/ProgressBar/Adapter/Exception.php';
             throw new Zend_ProgressBar_Adapter_Exception('Character may not be empty');
         }
-
+        
         $this->_barRightChar = (string) $char;
-
+        
         return $this;
     }
 
     /**
      * Set the indicator character for the bar
      *
-     * @param  string $char
+     * @param string $char            
      * @return Zend_ProgressBar_Adapter_Console
      */
     public function setBarIndicatorChar($char)
     {
         $this->_barIndicatorChar = (string) $char;
-
+        
         return $this;
     }
 
     /**
      * Set the width of the text element
      *
-     * @param  integer $width
+     * @param integer $width            
      * @return Zend_ProgressBar_Adapter_Console
      */
     public function setTextWidth($width)
     {
         $this->_textWidth = (int) $width;
-
+        
         $this->_calculateBarWidth();
-
+        
         return $this;
     }
 
     /**
      * Set the charset of the text element
      *
-     * @param string $charset
+     * @param string $charset            
      */
     public function setCharset($charset)
     {
@@ -359,35 +367,43 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
     /**
      * Set the finish action
      *
-     * @param  string $action
+     * @param string $action            
      * @throws Zend_ProgressBar_Adapter_Exception When an invalid action is specified
      * @return Zend_ProgressBar_Adapter_Console
      */
     public function setFinishAction($action)
     {
-        $allowedActions = array(self::FINISH_ACTION_CLEAR_LINE,
-                                self::FINISH_ACTION_EOL,
-                                self::FINISH_ACTION_NONE);
-
-        if (!in_array($action, $allowedActions)) {
+        $allowedActions = array(
+            self::FINISH_ACTION_CLEAR_LINE,
+            self::FINISH_ACTION_EOL,
+            self::FINISH_ACTION_NONE
+        );
+        
+        if (! in_array($action, $allowedActions)) {
             require_once 'Zend/ProgressBar/Adapter/Exception.php';
             throw new Zend_ProgressBar_Adapter_Exception('Invalid finish action specified');
         }
-
+        
         $this->_finishAction = $action;
-
+        
         return $this;
     }
 
     /**
      * Defined by Zend_ProgressBar_Adapter_Interface
      *
-     * @param  float   $current       Current progress value
-     * @param  float   $max           Max progress value
-     * @param  float   $percent       Current percent value
-     * @param  integer $timeTaken     Taken time in seconds
-     * @param  integer $timeRemaining Remaining time in seconds
-     * @param  string  $text          Status text
+     * @param float $current
+     *            Current progress value
+     * @param float $max
+     *            Max progress value
+     * @param float $percent
+     *            Current percent value
+     * @param integer $timeTaken
+     *            Taken time in seconds
+     * @param integer $timeRemaining
+     *            Remaining time in seconds
+     * @param string $text
+     *            Status text
      * @return void
      */
     public function notify($current, $max, $percent, $timeTaken, $timeRemaining, $text)
@@ -399,39 +415,39 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
             $data = '';
             $this->_outputStarted = true;
         }
-
+        
         // Build all elements
         $renderedElements = array();
-
+        
         foreach ($this->_elements as $element) {
             switch ($element) {
                 case self::ELEMENT_BAR:
                     $visualWidth = $this->_barWidth - 2;
-                    $bar         = '[';
-
+                    $bar = '[';
+                    
                     $indicatorWidth = strlen($this->_barIndicatorChar);
-
+                    
                     $doneWidth = min($visualWidth - $indicatorWidth, round($visualWidth * $percent));
                     if ($doneWidth > 0) {
                         $bar .= substr(str_repeat($this->_barLeftChar, ceil($doneWidth / strlen($this->_barLeftChar))), 0, $doneWidth);
                     }
-
+                    
                     $bar .= $this->_barIndicatorChar;
-
+                    
                     $leftWidth = $visualWidth - $doneWidth - $indicatorWidth;
                     if ($leftWidth > 0) {
                         $bar .= substr(str_repeat($this->_barRightChar, ceil($leftWidth / strlen($this->_barRightChar))), 0, $leftWidth);
                     }
-
+                    
                     $bar .= ']';
-
+                    
                     $renderedElements[] = $bar;
                     break;
-
+                
                 case self::ELEMENT_PERCENT:
                     $renderedElements[] = str_pad(round($percent * 100), 3, ' ', STR_PAD_LEFT) . '%';
                     break;
-
+                
                 case self::ELEMENT_ETA:
                     // In the first 5 seconds we don't get accurate results,
                     // this skipping technique is found in many progressbar
@@ -440,28 +456,28 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
                         $renderedElements[] = str_repeat(' ', 12);
                         break;
                     }
-
+                    
                     if ($timeRemaining === null || $timeRemaining > 86400) {
                         $etaFormatted = '??:??:??';
                     } else {
-                        $hours   = floor($timeRemaining / 3600);
+                        $hours = floor($timeRemaining / 3600);
                         $minutes = floor(($timeRemaining % 3600) / 60);
                         $seconds = ($timeRemaining % 3600 % 60);
-
+                        
                         $etaFormatted = sprintf('%02d:%02d:%02d', $hours, $minutes, $seconds);
                     }
-
+                    
                     $renderedElements[] = 'ETA ' . $etaFormatted;
                     break;
-
+                
                 case self::ELEMENT_TEXT:
                     $renderedElements[] = Zend_Text_MultiByte::strPad(substr($text, 0, $this->_textWidth), $this->_textWidth, ' ', STR_PAD_RIGHT, $this->_charset);
                     break;
             }
         }
-
+        
         $data .= implode(' ', $renderedElements);
-
+        
         // Output line data
         $this->_outputData($data);
     }
@@ -477,17 +493,15 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
             case self::FINISH_ACTION_EOL:
                 $this->_outputData(PHP_EOL);
                 break;
-
+            
             case self::FINISH_ACTION_CLEAR_LINE:
                 if ($this->_outputStarted) {
-                    $data = str_repeat("\x08", $this->_width)
-                          . str_repeat(' ', $this->_width)
-                          . str_repeat("\x08", $this->_width);
-
+                    $data = str_repeat("\x08", $this->_width) . str_repeat(' ', $this->_width) . str_repeat("\x08", $this->_width);
+                    
                     $this->_outputData($data);
                 }
                 break;
-
+            
             case self::FINISH_ACTION_NONE:
                 break;
         }
@@ -502,19 +516,19 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
     {
         if (in_array(self::ELEMENT_BAR, $this->_elements)) {
             $barWidth = $this->_width;
-
+            
             if (in_array(self::ELEMENT_PERCENT, $this->_elements)) {
                 $barWidth -= 4;
             }
-
+            
             if (in_array(self::ELEMENT_ETA, $this->_elements)) {
                 $barWidth -= 12;
             }
-
+            
             if (in_array(self::ELEMENT_TEXT, $this->_elements)) {
                 $barWidth -= $this->_textWidth;
             }
-
+            
             $this->_barWidth = $barWidth - (count($this->_elements) - 1);
         }
     }
@@ -524,7 +538,7 @@ class Zend_ProgressBar_Adapter_Console extends Zend_ProgressBar_Adapter
      *
      * This split-off is required for unit-testing.
      *
-     * @param  string $data
+     * @param string $data            
      * @return void
      */
     protected function _outputData($data)

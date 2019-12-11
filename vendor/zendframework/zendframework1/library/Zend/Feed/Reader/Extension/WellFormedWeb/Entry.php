@@ -20,24 +20,27 @@
  */
 
 /**
+ *
  * @see Zend_Feed_Reader
  */
 require_once 'Zend/Feed/Reader.php';
 
 /**
+ *
  * @see Zend_Feed_Reader_Extension_EntryAbstract
  */
 require_once 'Zend/Feed/Reader/Extension/EntryAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Feed_Reader
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Feed_Reader
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Feed_Reader_Extension_WellFormedWeb_Entry
-    extends Zend_Feed_Reader_Extension_EntryAbstract
+class Zend_Feed_Reader_Extension_WellFormedWeb_Entry extends Zend_Feed_Reader_Extension_EntryAbstract
 {
+
     /**
      * Get the entry comment Uri
      *
@@ -49,15 +52,15 @@ class Zend_Feed_Reader_Extension_WellFormedWeb_Entry
         if (array_key_exists($name, $this->_data)) {
             return $this->_data[$name];
         }
-
+        
         $data = $this->_xpath->evaluate('string(' . $this->getXpathPrefix() . '/wfw:' . $name . ')');
-
-        if (!$data) {
+        
+        if (! $data) {
             $data = null;
         }
-
+        
         $this->_data[$name] = $data;
-
+        
         return $data;
     }
 

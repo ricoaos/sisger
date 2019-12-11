@@ -22,11 +22,13 @@
  */
 
 /**
+ *
  * @see Zend_Exception
  */
 require_once 'Zend/Exception.php';
 
 /**
+ *
  * @see Zend_Gdata_Query
  */
 require_once 'Zend/Gdata/Query.php';
@@ -35,12 +37,12 @@ require_once 'Zend/Gdata/Query.php';
  * Assists in constructing queries for Google Base
  *
  * @link http://code.google.com/apis/base
- *
- * @category   Zend
- * @package    Zend_Gdata
+ *      
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Gbase
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Gbase_Query extends Zend_Gdata_Query
 {
@@ -60,10 +62,6 @@ class Zend_Gdata_Gbase_Query extends Zend_Gdata_Query
      */
     public function __construct($url = null)
     {
-        throw new Zend_Exception(
-            'Google Base API has been discontinued by Google and was removed'
-            . ' from Zend Framework in 1.12.0.  For more information see: '
-            . 'http://googlemerchantblog.blogspot.ca/2010/12/new-shopping-apis-and-deprecation-of.html'
-        );    
+        throw new Zend_Exception('Google Base API has been discontinued by Google and was removed' . ' from Zend Framework in 1.12.0.  For more information see: ' . 'http://googlemerchantblog.blogspot.ca/2010/12/new-shopping-apis-and-deprecation-of.html');
     }
 }

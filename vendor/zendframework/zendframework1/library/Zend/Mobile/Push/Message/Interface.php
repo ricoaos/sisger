@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -23,15 +24,16 @@
 /**
  * Push Message Interface
  *
- * @category   Zend
- * @package    Zend_Mobile
+ * @category Zend
+ * @package Zend_Mobile
  * @subpackage Zend_Mobile_Push
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
- * @version    $Id$
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
+ * @version $Id$
  */
 interface Zend_Mobile_Push_Message_Interface
 {
+
     /**
      * Get Token
      *
@@ -42,7 +44,7 @@ interface Zend_Mobile_Push_Message_Interface
     /**
      * Set Token
      *
-     * @param string $token
+     * @param string $token            
      * @return Zend_Mobile_Push_Message_Abstract
      */
     public function setToken($token);
@@ -57,7 +59,8 @@ interface Zend_Mobile_Push_Message_Interface
     /**
      * Set Id
      *
-     * @param int|string|float|bool $id Scalar
+     * @param int|string|float|bool $id
+     *            Scalar
      * @return Zend_Mobile_Push_Message_Abstract
      */
     public function setId($id);
@@ -65,7 +68,7 @@ interface Zend_Mobile_Push_Message_Interface
     /**
      * Set Options
      *
-     * @param array $options
+     * @param array $options            
      * @return Zend_Mobile_Push_Message_Abstract
      */
     public function setOptions(array $options);

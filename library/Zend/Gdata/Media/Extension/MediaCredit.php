@@ -22,6 +22,7 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_App_Extension
  */
 require_once 'Zend/Gdata/App/Extension.php';
@@ -29,24 +30,27 @@ require_once 'Zend/Gdata/App/Extension.php';
 /**
  * Represents the media:credit element
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Media
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_Media_Extension_MediaCredit extends Zend_Gdata_Extension
 {
 
     protected $_rootElement = 'credit';
+
     protected $_rootNamespace = 'media';
 
     /**
+     *
      * @var string
      */
     protected $_role = null;
 
     /**
+     *
      * @var string
      */
     protected $_scheme = null;
@@ -54,11 +58,11 @@ class Zend_Gdata_Media_Extension_MediaCredit extends Zend_Gdata_Extension
     /**
      * Creates an individual MediaCredit object.
      *
-     * @param string $text
-     * @param string $role
-     * @param string $scheme
+     * @param string $text            
+     * @param string $role            
+     * @param string $scheme            
      */
-    public function __construct($text = null, $role = null,  $scheme = null)
+    public function __construct($text = null, $role = null, $scheme = null)
     {
         $this->registerAllNamespaces(Zend_Gdata_Media::$namespaces);
         parent::__construct();
@@ -69,13 +73,15 @@ class Zend_Gdata_Media_Extension_MediaCredit extends Zend_Gdata_Extension
 
     /**
      * Retrieves a DOMElement which corresponds to this element and all
-     * child properties.  This is used to build an entry back into a DOM
+     * child properties.
+     * This is used to build an entry back into a DOM
      * and eventually XML text for sending to the server upon updates, or
      * for application storage/persistence.
      *
-     * @param DOMDocument $doc The DOMDocument used to construct DOMElements
+     * @param DOMDocument $doc
+     *            The DOMDocument used to construct DOMElements
      * @return DOMElement The DOMElement representing this element and all
-     * child properties.
+     *         child properties.
      */
     public function getDOM($doc = null, $majorVersion = 1, $minorVersion = null)
     {
@@ -91,26 +97,29 @@ class Zend_Gdata_Media_Extension_MediaCredit extends Zend_Gdata_Extension
 
     /**
      * Given a DOMNode representing an attribute, tries to map the data into
-     * instance members.  If no mapping is defined, the name and value are
+     * instance members.
+     * If no mapping is defined, the name and value are
      * stored in an array.
      *
-     * @param DOMNode $attribute The DOMNode attribute needed to be handled
+     * @param DOMNode $attribute
+     *            The DOMNode attribute needed to be handled
      */
     protected function takeAttributeFromDOM($attribute)
     {
         switch ($attribute->localName) {
-        case 'role':
-            $this->_role = $attribute->nodeValue;
-            break;
-        case 'scheme':
-            $this->_scheme = $attribute->nodeValue;
-            break;
-        default:
-            parent::takeAttributeFromDOM($attribute);
+            case 'role':
+                $this->_role = $attribute->nodeValue;
+                break;
+            case 'scheme':
+                $this->_scheme = $attribute->nodeValue;
+                break;
+            default:
+                parent::takeAttributeFromDOM($attribute);
         }
     }
 
     /**
+     *
      * @return string
      */
     public function getRole()
@@ -119,7 +128,8 @@ class Zend_Gdata_Media_Extension_MediaCredit extends Zend_Gdata_Extension
     }
 
     /**
-     * @param string $value
+     *
+     * @param string $value            
      * @return Zend_Gdata_Media_Extension_MediaCredit Provides a fluent interface
      */
     public function setRole($value)
@@ -129,6 +139,7 @@ class Zend_Gdata_Media_Extension_MediaCredit extends Zend_Gdata_Extension
     }
 
     /**
+     *
      * @return string
      */
     public function getScheme()
@@ -137,7 +148,8 @@ class Zend_Gdata_Media_Extension_MediaCredit extends Zend_Gdata_Extension
     }
 
     /**
-     * @param string $value
+     *
+     * @param string $value            
      * @return Zend_Gdata_Media_Extension_MediaCredit Provides a fluent interface
      */
     public function setScheme($value)
@@ -145,5 +157,4 @@ class Zend_Gdata_Media_Extension_MediaCredit extends Zend_Gdata_Extension
         $this->_scheme = $value;
         return $this;
     }
-
 }

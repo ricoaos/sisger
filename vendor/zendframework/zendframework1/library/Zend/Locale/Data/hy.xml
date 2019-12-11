@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="hy"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="hy" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -280,7 +279,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="CA">Կանադա</territory>
 			<territory type="CC">Կոկոսյան (Քիլինգ) կղզիներ</territory>
 			<territory type="CD">Կոնգո - Կինշասա</territory>
-			<territory type="CD" alt="variant">Կոնգո (Կոնգոյի Ժողովրդավարական Հանրապետություն)</territory>
+			<territory type="CD" alt="variant">Կոնգո (Կոնգոյի Ժողովրդավարական
+				Հանրապետություն)</territory>
 			<territory type="CF">Կենտրոնական Աֆրիկյան Հանրապետություն</territory>
 			<territory type="CG">Կոնգո - Բրազավիլ</territory>
 			<territory type="CG" alt="variant">Կոնգո (Կոնգոյի Հանրապետություն)</territory>
@@ -337,7 +337,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Գվադելուպա</territory>
 			<territory type="GQ">Հասարակածային Գվինեա</territory>
 			<territory type="GR">Հունաստան</territory>
-			<territory type="GS">Հարավային Ջորջիա և Հարավային Սենդվիչյան կղզիներ</territory>
+			<territory type="GS">Հարավային Ջորջիա և Հարավային Սենդվիչյան
+				կղզիներ</territory>
 			<territory type="GT">Գվատեմալա</territory>
 			<territory type="GU">Գուամ</territory>
 			<territory type="GW">Գվինեա-Բիսաու</territory>
@@ -517,12 +518,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</keys>
 		<types>
 			<type type="arab" key="numbers">արաբա-հնդկական թվեր</type>
-			<type type="arabext" key="numbers">արաբա-հնդկական թվերի ընդլայնված համակարգ</type>
+			<type type="arabext" key="numbers">արաբա-հնդկական թվերի ընդլայնված
+				համակարգ</type>
 			<type type="armn" key="numbers">հայկական թվեր</type>
 			<type type="armnlow" key="numbers">հայկական թվեր (փոքրատառ)</type>
 			<type type="beng" key="numbers">բենգալական թվեր</type>
 			<type type="deva" key="numbers">դեվանագարի թվեր</type>
-			<type type="ducet" key="collation">Սկզբնադիր տեսակավորման կարգ Unicode-ի համար</type>
+			<type type="ducet" key="collation">Սկզբնադիր տեսակավորման կարգ Unicode-ի
+				համար</type>
 			<type type="ethi" key="numbers">եթովպական թվեր</type>
 			<type type="fullwide" key="numbers">թվերի լայն ձևաչափ</type>
 			<type type="geor" key="numbers">վրացական թվեր</type>
@@ -568,9 +571,11 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[ա բ գ դ ե զ է ը թ ժ ի լ խ ծ կ հ ձ ղ ճ մ յ ն շ ո չ պ ջ ռ ս վ տ ր ց ւ փ ք և օ ֆ]</exemplarCharacters>
+		<exemplarCharacters>[ա բ գ դ ե զ է ը թ ժ ի լ խ ծ կ հ ձ ղ ճ մ յ ն շ ո չ
+			պ ջ ռ ս վ տ ր ց ւ փ ք և օ ֆ]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="unconfirmed">[Ա Բ Գ Դ Ե Զ Է Ը Թ Ժ Ի Լ Խ Ծ Կ Հ Ձ Ղ Ճ Մ Յ Ն Շ Ո Չ Պ Ջ Ռ Ս Վ Տ Ր Ց Ւ Փ Ք Օ Ֆ]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="unconfirmed">[Ա Բ Գ Դ Ե Զ
+			Է Ը Թ Ժ Ի Լ Խ Ծ Կ Հ Ձ Ղ Ճ Մ Յ Ն Շ Ո Չ Պ Ջ Ռ Ս Վ Տ Ր Ց Ւ Փ Ք Օ Ֆ]</exemplarCharacters>
 		<exemplarCharacters type="punctuation">[֊ , ՝ \: ՜ ՞ . « » ՚ ՛ ՟]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
@@ -735,9 +740,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">dd.MM.y - dd.MM.y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">ccc, dd.MM.y - ccc, dd.MM.y G</greatestDifference>
-							<greatestDifference id="M">ccc, dd.MM.y - ccc, dd.MM.y G</greatestDifference>
-							<greatestDifference id="y">ccc, dd.MM.y - ccc, dd.MM.y G</greatestDifference>
+							<greatestDifference id="d">ccc, dd.MM.y - ccc,
+								dd.MM.y G</greatestDifference>
+							<greatestDifference id="M">ccc, dd.MM.y - ccc,
+								dd.MM.y G</greatestDifference>
+							<greatestDifference id="y">ccc, dd.MM.y - ccc,
+								dd.MM.y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM-MMM y թ. G</greatestDifference>
@@ -746,12 +754,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d">dd-dd MMM, y թ. G</greatestDifference>
 							<greatestDifference id="M">dd MMM - dd MMM, y թ. G</greatestDifference>
-							<greatestDifference id="y">dd MMM, y - dd MMM, y թ. G</greatestDifference>
+							<greatestDifference id="y">dd MMM, y - dd MMM, y
+								թ. G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, d MMM - E, d MMM, y թ. G</greatestDifference>
-							<greatestDifference id="M">E, d MMM - E, d MMM, y թ. G</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y - E, d MMM, y թ. G</greatestDifference>
+							<greatestDifference id="d">E, d MMM - E, d MMM, y
+								թ. G</greatestDifference>
+							<greatestDifference id="M">E, d MMM - E, d MMM, y
+								թ. G</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y - E, d MMM,
+								y թ. G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">G y թ. MMM – MMM</greatestDifference>
@@ -1159,9 +1171,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">dd.MM.y - dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">ccc, dd.MM.y - ccc, dd.MM.y</greatestDifference>
-							<greatestDifference id="M">ccc, dd.MM.y - ccc, dd.MM.y</greatestDifference>
-							<greatestDifference id="y">ccc, dd.MM.y - ccc, dd.MM.y</greatestDifference>
+							<greatestDifference id="d">ccc, dd.MM.y - ccc,
+								dd.MM.y</greatestDifference>
+							<greatestDifference id="M">ccc, dd.MM.y - ccc,
+								dd.MM.y</greatestDifference>
+							<greatestDifference id="y">ccc, dd.MM.y - ccc,
+								dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM-MMM yթ.</greatestDifference>
@@ -1173,9 +1188,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">dd MMM, y - dd MMM, yթ.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, d MMM - E, d MMM, yթ.</greatestDifference>
-							<greatestDifference id="M">E, d MMM - E, d MMM, yթ.</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y - E, d MMM, yթ.</greatestDifference>
+							<greatestDifference id="d">E, d MMM - E, d MMM,
+								yթ.</greatestDifference>
+							<greatestDifference id="M">E, d MMM - E, d MMM,
+								yթ.</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y - E, d MMM,
+								yթ.</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">yթ. MMM – MMM</greatestDifference>
@@ -3546,8 +3564,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<currencies>
 			<currency type="AED">
 				<displayName>Արաբական Միացյալ Էմիրությունների դիրհամ</displayName>
-				<displayName count="one">Արաբական Միացյալ Էմիրությունների դիրհամ</displayName>
-				<displayName count="other">Արաբական Միացյալ Էմիրությունների դիրհամ</displayName>
+				<displayName count="one">Արաբական Միացյալ Էմիրությունների
+					դիրհամ</displayName>
+				<displayName count="other">Արաբական Միացյալ Էմիրությունների
+					դիրհամ</displayName>
 			</currency>
 			<currency type="AFN">
 				<displayName>Աֆղանական աֆղանի</displayName>
@@ -3599,8 +3619,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>Բոսնիա և Հերցեգովինայի փոխարկելի մարկա</displayName>
-				<displayName count="one">Բոսնիա և Հերցեգովինայի փոխարկելի մարկա</displayName>
-				<displayName count="other">Բոսնիա և Հերցեգովինայի փոխարկելի մարկա</displayName>
+				<displayName count="one">Բոսնիա և Հերցեգովինայի փոխարկելի
+					մարկա</displayName>
+				<displayName count="other">Բոսնիա և Հերցեգովինայի փոխարկելի
+					մարկա</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Բարբադոսյան դոլար</displayName>
@@ -4310,8 +4332,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XAF">
 				<displayName>Աֆրիկական ֆինանսական համայնքի ֆրանկ BEAC</displayName>
-				<displayName count="one">Աֆրիկական ֆինանսական համայնքի ֆրանկ BEAC</displayName>
-				<displayName count="other">Աֆրիկական ֆինանսական համայնքի ֆրանկ BEAC</displayName>
+				<displayName count="one">Աֆրիկական ֆինանսական համայնքի ֆրանկ
+					BEAC</displayName>
+				<displayName count="other">Աֆրիկական ֆինանսական համայնքի ֆրանկ
+					BEAC</displayName>
 				<symbol>FCFA</symbol>
 			</currency>
 			<currency type="XCD">
@@ -4322,8 +4346,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="XOF">
 				<displayName>Աֆրիկական ֆինանսական համայնքի ֆրանկ BCEAO</displayName>
-				<displayName count="one">Աֆրիկական ֆինանսական համայնքի ֆրանկ BCEAO</displayName>
-				<displayName count="other">Աֆրիկական ֆինանսական համայնքի ֆրանկ BCEAO</displayName>
+				<displayName count="one">Աֆրիկական ֆինանսական համայնքի ֆրանկ
+					BCEAO</displayName>
+				<displayName count="other">Աֆրիկական ֆինանսական համայնքի ֆրանկ
+					BCEAO</displayName>
 				<symbol>CFA</symbol>
 			</currency>
 			<currency type="XPF">

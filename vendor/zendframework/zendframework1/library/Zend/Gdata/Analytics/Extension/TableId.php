@@ -21,25 +21,31 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
 
 /**
- * @category   Zend
- * @package    Zend_Gdata
+ *
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Analytics
  */
 class Zend_Gdata_Analytics_Extension_TableId extends Zend_Gdata_Extension
 {
 
     protected $_rootNamespace = 'ga';
+
     protected $_rootElement = 'tableId';
+
     protected $_value = null;
 
     /**
      * Constructs a new Zend_Gdata_Calendar_Extension_Timezone object.
-     * @param string $value (optional) The text content of the element.
+     * 
+     * @param string $value
+     *            (optional) The text content of the element.
      */
     public function __construct($value = null)
     {
@@ -50,13 +56,15 @@ class Zend_Gdata_Analytics_Extension_TableId extends Zend_Gdata_Extension
 
     /**
      * Retrieves a DOMElement which corresponds to this element and all
-     * child properties.  This is used to build an entry back into a DOM
+     * child properties.
+     * This is used to build an entry back into a DOM
      * and eventually XML text for sending to the server upon updates, or
      * for application storage/persistence.
      *
-     * @param DOMDocument $doc The DOMDocument used to construct DOMElements
+     * @param DOMDocument $doc
+     *            The DOMDocument used to construct DOMElements
      * @return DOMElement The DOMElement representing this element and all
-     * child properties.
+     *         child properties.
      */
     public function getDOM($doc = null, $majorVersion = 1, $minorVersion = null)
     {
@@ -69,14 +77,16 @@ class Zend_Gdata_Analytics_Extension_TableId extends Zend_Gdata_Extension
 
     /**
      * Given a DOMNode representing an attribute, tries to map the data into
-     * instance members.  If no mapping is defined, the name and value are
+     * instance members.
+     * If no mapping is defined, the name and value are
      * stored in an array.
      *
-     * @param DOMNode $attribute The DOMNode attribute needed to be handled
+     * @param DOMNode $attribute
+     *            The DOMNode attribute needed to be handled
      */
     protected function takeChildFromDOM($child)
     {
-       $this->_value = $child->nodeValue;
+        $this->_value = $child->nodeValue;
     }
 
     /**
@@ -92,7 +102,8 @@ class Zend_Gdata_Analytics_Extension_TableId extends Zend_Gdata_Extension
     /**
      * Set the value for this element's value attribute.
      *
-     * @param string $value The desired value for this attribute.
+     * @param string $value
+     *            The desired value for this attribute.
      * @return Zend_Gdata_Calendar_Extension_Timezone The element being modified.
      */
     public function setValue($value)

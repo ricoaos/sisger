@@ -21,11 +21,13 @@
  */
 
 /**
+ *
  * @see Zend_Http_Response
  */
 require_once 'Zend/Http/Response.php';
 
 /**
+ *
  * @see Zend_Json
  */
 require_once 'Zend/Json.php';
@@ -41,25 +43,29 @@ require_once 'Zend/Json.php';
  * - method for retrieving the decoded response
  * - proxying to elements of the decoded response via property overloading
  *
- * @category   Zend
- * @package    Zend_Service
+ * @category Zend
+ * @package Zend_Service
  * @subpackage Twitter
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Service_Twitter_Response
 {
+
     /**
+     *
      * @var Zend_Http_Response
      */
     protected $httpResponse;
 
     /**
+     *
      * @var array|stdClass
      */
     protected $jsonBody;
 
     /**
+     *
      * @var string
      */
     protected $rawBody;
@@ -70,22 +76,19 @@ class Zend_Service_Twitter_Response
      * Assigns the HTTP response to a property, as well as the body
      * representation. It then attempts to decode the body as JSON.
      *
-     * @param  Zend_Http_Response $httpResponse
+     * @param Zend_Http_Response $httpResponse            
      * @throws Zend_Service_Twitter_Exception if unable to decode JSON response
      */
     public function __construct(Zend_Http_Response $httpResponse)
     {
         $this->httpResponse = $httpResponse;
-        $this->rawBody      = $httpResponse->getBody();
+        $this->rawBody = $httpResponse->getBody();
         try {
             $jsonBody = Zend_Json::decode($this->rawBody, Zend_Json::TYPE_OBJECT);
             $this->jsonBody = $jsonBody;
         } catch (Zend_Json_Exception $e) {
             require_once 'Zend/Service/Twitter/Exception.php';
-            throw new Zend_Service_Twitter_Exception(sprintf(
-                'Unable to decode response from twitter: %s',
-                $e->getMessage()
-            ), 0, $e);
+            throw new Zend_Service_Twitter_Exception(sprintf('Unable to decode response from twitter: %s', $e->getMessage()), 0, $e);
         }
     }
 
@@ -95,7 +98,7 @@ class Zend_Service_Twitter_Response
      * If a named property exists within the JSON response returned,
      * proxies to it. Otherwise, returns null.
      *
-     * @param  string $name
+     * @param string $name            
      * @return mixed
      */
     public function __get($name)
@@ -103,7 +106,7 @@ class Zend_Service_Twitter_Response
         if (null === $this->jsonBody) {
             return null;
         }
-        if (!isset($this->jsonBody->{$name})) {
+        if (! isset($this->jsonBody->{$name})) {
             return null;
         }
         return $this->jsonBody->{$name};
@@ -126,7 +129,7 @@ class Zend_Service_Twitter_Response
      */
     public function isError()
     {
-        return !$this->httpResponse->isSuccessful();
+        return ! $this->httpResponse->isSuccessful();
     }
 
     /**
@@ -143,16 +146,12 @@ class Zend_Service_Twitter_Response
      */
     public function getErrors()
     {
-        if (!$this->isError()) {
+        if (! $this->isError()) {
             return array();
         }
-        if (null === $this->jsonBody
-            || !isset($this->jsonBody->errors)
-        ) {
+        if (null === $this->jsonBody || ! isset($this->jsonBody->errors)) {
             require_once 'Zend/Service/Twitter/Exception.php';
-            throw new Zend_Service_Twitter_Exception(
-                'Either no JSON response received, or JSON error response is malformed; cannot return errors'
-            );
+            throw new Zend_Service_Twitter_Exception('Either no JSON response received, or JSON error response is malformed; cannot return errors');
         }
         return $this->jsonBody->errors;
     }

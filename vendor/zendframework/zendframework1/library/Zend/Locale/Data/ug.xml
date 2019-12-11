@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
-Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Science Association http://ukij.org
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html Reviewed by Waris 
+	Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Science Association 
+	http://ukij.org -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9876 $"/>
-		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $"/>
-		<language type="ug"/>
+		<version number="$Revision: 9876 $" />
+		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $" />
+		<language type="ug" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -38,7 +38,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<language type="ang" draft="contributed">قەدىمكى ئىنگلىزچە</language>
 			<language type="anp" draft="contributed">ئانگىكاچە</language>
 			<language type="ar" draft="contributed">ئەرەبچە</language>
-			<language type="ar_001" draft="contributed">ھازىرقى زامان ئۆلچەملىك ئەرەبچە</language>
+			<language type="ar_001" draft="contributed">ھازىرقى زامان ئۆلچەملىك
+				ئەرەبچە</language>
 			<language type="arc" draft="contributed">ئارامۇچە</language>
 			<language type="arn" draft="contributed">ماپۇچە</language>
 			<language type="arp" draft="contributed">ئاراپاخوچە</language>
@@ -547,7 +548,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<script type="Bugi" draft="contributed">بۇگى</script>
 			<script type="Buhd" draft="contributed">بۇخىت</script>
 			<script type="Cakm" draft="contributed">چاكما</script>
-			<script type="Cans" draft="contributed">بىرلىككە كەلگەن كانادا يەرلىك بوغۇم جەدۋىلى</script>
+			<script type="Cans" draft="contributed">بىرلىككە كەلگەن كانادا يەرلىك بوغۇم
+				جەدۋىلى</script>
 			<script type="Cari" draft="contributed">كارىيا</script>
 			<script type="Cham" draft="contributed">چام</script>
 			<script type="Cher" draft="contributed">چېروكى</script>
@@ -762,10 +764,12 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<territory type="CA" draft="contributed">كانادا</territory>
 			<territory type="CC" draft="contributed">كەئەلىڭ كوكۇس ئاراللىرى</territory>
 			<territory type="CD" draft="contributed">كونگو - كىنشاسا</territory>
-			<territory type="CD" alt="variant" draft="contributed">كونگو (دېموكراتىك كونگو جۇمھۇرىيىتى)</territory>
+			<territory type="CD" alt="variant" draft="contributed">كونگو (دېموكراتىك
+				كونگو جۇمھۇرىيىتى)</territory>
 			<territory type="CF" draft="contributed">ئوتتۇرا ئافرىقا جۇمھۇرىيىتى</territory>
 			<territory type="CG" draft="contributed">كونگو - بىراززاۋىل</territory>
-			<territory type="CG" alt="variant" draft="contributed">كونگو (جۇمھۇرىيىتى)</territory>
+			<territory type="CG" alt="variant" draft="contributed">كونگو
+				(جۇمھۇرىيىتى)</territory>
 			<territory type="CH" draft="contributed">شىۋىتسارىيە</territory>
 			<territory type="CI" draft="contributed">كوتې دې ئىۋوئىر</territory>
 			<territory type="CI" alt="variant" draft="contributed">پىل چىشى قىرغىقى</territory>
@@ -801,7 +805,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<territory type="FI" draft="contributed">فىنلاندىيە</territory>
 			<territory type="FJ" draft="contributed">فىجى</territory>
 			<territory type="FK" draft="contributed">فالكلاند ئاراللىرى</territory>
-			<territory type="FK" alt="variant" draft="contributed">فالكلاند ئاراللىرى (ئىسلاس مالۋىناس)</territory>
+			<territory type="FK" alt="variant" draft="contributed">فالكلاند ئاراللىرى
+				(ئىسلاس مالۋىناس)</territory>
 			<territory type="FM" draft="contributed">مىكرونېزىيە</territory>
 			<territory type="FO" draft="contributed">فائېرو ئاراللىرى</territory>
 			<territory type="FR" draft="contributed">فىرانسىيە</territory>
@@ -820,12 +825,14 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<territory type="GP" draft="contributed">گىۋادېلۇپ</territory>
 			<territory type="GQ" draft="contributed">ئېكۋاتور گىۋىنېيەسى</territory>
 			<territory type="GR" draft="contributed">گىرېتسىيە</territory>
-			<territory type="GS" draft="contributed">جەنۇبىي جورجىيە ۋە جەنۇبىي ساندىۋىچ ئاراللىرى</territory>
+			<territory type="GS" draft="contributed">جەنۇبىي جورجىيە ۋە جەنۇبىي
+				ساندىۋىچ ئاراللىرى</territory>
 			<territory type="GT" draft="contributed">گىۋاتېمالا</territory>
 			<territory type="GU" draft="contributed">گۇئام</territory>
 			<territory type="GW" draft="contributed">گىۋىنېيە-بىسسائۇ</territory>
 			<territory type="GY" draft="contributed">گىۋىيانا</territory>
-			<territory type="HK" draft="contributed">شياڭگاڭ ئالاھىدە مەمۇرىي رايونى (جۇڭگو)</territory>
+			<territory type="HK" draft="contributed">شياڭگاڭ ئالاھىدە مەمۇرىي رايونى
+				(جۇڭگو)</territory>
 			<territory type="HK" alt="short" draft="contributed">شياڭگاڭ</territory>
 			<territory type="HM" draft="contributed">خېرد ۋە ماك-دونالد ئارىلى</territory>
 			<territory type="HN" draft="contributed">ھوندۇراس</territory>
@@ -838,7 +845,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<territory type="IL" draft="contributed">ئىسرائىلىيە</territory>
 			<territory type="IM" draft="contributed">مېن ئارىلى</territory>
 			<territory type="IN" draft="contributed">ھىندىستان</territory>
-			<territory type="IO" draft="contributed">ئەنگلىيەنىڭ ھىندى ئوكياندىكى تەۋەلىكى</territory>
+			<territory type="IO" draft="contributed">ئەنگلىيەنىڭ ھىندى ئوكياندىكى
+				تەۋەلىكى</territory>
 			<territory type="IQ" draft="contributed">ئىراق</territory>
 			<territory type="IR" draft="contributed">ئىران</territory>
 			<territory type="IS" draft="contributed">ئىسلاندىيە</territory>
@@ -877,11 +885,13 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<territory type="MG" draft="contributed">ماداغاسقار</territory>
 			<territory type="MH" draft="contributed">مارشال ئاراللىرى</territory>
 			<territory type="MK" draft="contributed">ماكېدونىيە</territory>
-			<territory type="MK" alt="variant" draft="contributed">ماكېدونىيە (سابىق يۇگۇسلاۋىيە ماكېدونىيە جۇمھۇرىيىتى)</territory>
+			<territory type="MK" alt="variant" draft="contributed">ماكېدونىيە (سابىق
+				يۇگۇسلاۋىيە ماكېدونىيە جۇمھۇرىيىتى)</territory>
 			<territory type="ML" draft="contributed">مالى</territory>
 			<territory type="MM" draft="contributed">بىرما</territory>
 			<territory type="MN" draft="contributed">موڭغۇلىيە</territory>
-			<territory type="MO" draft="contributed">ئاۋمېن ئالاھىدە مەمۇرىي رايونى (جۇڭگو)</territory>
+			<territory type="MO" draft="contributed">ئاۋمېن ئالاھىدە مەمۇرىي رايونى
+				(جۇڭگو)</territory>
 			<territory type="MO" alt="short" draft="contributed">ئاۋمېن</territory>
 			<territory type="MP" draft="contributed">شىمالىي مارىيانا ئاراللىرى</territory>
 			<territory type="MQ" draft="contributed">مارتىنىكا</territory>
@@ -914,7 +924,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<territory type="PH" draft="contributed">فىلىپپىن</territory>
 			<territory type="PK" draft="contributed">پاكىستان</territory>
 			<territory type="PL" draft="contributed">پولشا</territory>
-			<territory type="PM" draft="contributed">ساينىت-پىئېر ۋە مىكېلون ئاراللىرى</territory>
+			<territory type="PM" draft="contributed">ساينىت-پىئېر ۋە مىكېلون
+				ئاراللىرى</territory>
 			<territory type="PN" draft="contributed">پىتكاير ئاراللىرى</territory>
 			<territory type="PR" draft="contributed">پۇئېرتو-رىكو</territory>
 			<territory type="PS" draft="contributed">پەلەستىن زېمىنى</territory>
@@ -953,7 +964,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<territory type="TA" draft="contributed">ترىستان داكۇنھا</territory>
 			<territory type="TC" draft="contributed">تۇركس ۋە كايكوس ئاراللىرى</territory>
 			<territory type="TD" draft="contributed">چاد</territory>
-			<territory type="TF" draft="contributed">فىرانسىيەگە قاراشلىق جەنۇبتىكى زېمىنلىرى</territory>
+			<territory type="TF" draft="contributed">فىرانسىيەگە قاراشلىق جەنۇبتىكى
+				زېمىنلىرى</territory>
 			<territory type="TG" draft="contributed">توگو</territory>
 			<territory type="TH" draft="contributed">تايلاند</territory>
 			<territory type="TJ" draft="contributed">تاجىكىستان</territory>
@@ -969,7 +981,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<territory type="TZ" draft="contributed">تانزانىيە</territory>
 			<territory type="UA" draft="contributed">ئۇكرائىنا</territory>
 			<territory type="UG" draft="contributed">ئۇگاندا</territory>
-			<territory type="UM" draft="contributed">ئامېرىكا تەۋەلىكىدىكى سىرتقى كىچىك ئاراللار</territory>
+			<territory type="UM" draft="contributed">ئامېرىكا تەۋەلىكىدىكى سىرتقى
+				كىچىك ئاراللار</territory>
 			<territory type="US" draft="contributed">ئامېرىكا قوشما شتاتلىرى</territory>
 			<territory type="US" alt="short" draft="contributed">ئا ق ش</territory>
 			<territory type="UY" draft="contributed">ئۇرۇگۋاي</territory>
@@ -977,8 +990,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<territory type="VA" draft="contributed">ۋاتىكان شەھىرى</territory>
 			<territory type="VC" draft="contributed">ساينىت-ۋىنسېنت ۋە گىرېنادىنېس</territory>
 			<territory type="VE" draft="contributed">ۋېنېزۇئېلا</territory>
-			<territory type="VG" draft="contributed">ئەنگلىيەگە قاراشلىق ۋىرجىن ئارىلى</territory>
-			<territory type="VI" draft="contributed">ئامېرىكا تەۋەلىكىدىكى ۋىرجىن تاقىم ئاراللىرى</territory>
+			<territory type="VG" draft="contributed">ئەنگلىيەگە قاراشلىق ۋىرجىن
+				ئارىلى</territory>
+			<territory type="VI" draft="contributed">ئامېرىكا تەۋەلىكىدىكى ۋىرجىن
+				تاقىم ئاراللىرى</territory>
 			<territory type="VN" draft="contributed">ۋىيېتنام</territory>
 			<territory type="VU" draft="contributed">ۋانۇئاتۇ</territory>
 			<territory type="WF" draft="contributed">ۋالىس ۋە فۇتۇنا</territory>
@@ -993,21 +1008,27 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 		</territories>
 		<variants>
 			<variant type="1901" draft="contributed">ئەنئەنىۋى گېرمانچە ئىملا قائىدىسى</variant>
-			<variant type="1994" draft="contributed">ئۆلچەملەشتۈرۈلگەن رېسىيان ئىملا قائىدىسى</variant>
+			<variant type="1994" draft="contributed">ئۆلچەملەشتۈرۈلگەن رېسىيان ئىملا
+				قائىدىسى</variant>
 			<variant type="1996" draft="contributed">گېرمانچە ئىملا قائىدىسى 1996</variant>
-			<variant type="1606NICT" draft="contributed">ئوتتۇرا ئاخىرقى دەۋردىكى فىرانسۇزچە 1606</variant>
-			<variant type="1694ACAD" draft="contributed">دەسلەپكى مەزگىلدىكى زامانىۋى فىرانسۇزچە</variant>
+			<variant type="1606NICT" draft="contributed">ئوتتۇرا ئاخىرقى دەۋردىكى
+				فىرانسۇزچە 1606</variant>
+			<variant type="1694ACAD" draft="contributed">دەسلەپكى مەزگىلدىكى زامانىۋى
+				فىرانسۇزچە</variant>
 			<variant type="1959ACAD" draft="contributed">ئاكادېمىك</variant>
-			<variant type="ALALC97" draft="contributed">ALA-LC لاتىنلاشتۇرۇش، 1997 نەشرى</variant>
+			<variant type="ALALC97" draft="contributed">ALA-LC لاتىنلاشتۇرۇش، 1997
+				نەشرى</variant>
 			<variant type="ALUKU" draft="contributed">ئالۇكۇ شىۋەسى</variant>
 			<variant type="AREVELA" draft="contributed">شەرقىي ئەرمەنچە</variant>
 			<variant type="AREVMDA" draft="contributed">غەربىي ئەرمەنچە</variant>
-			<variant type="BAKU1926" draft="contributed">بىرلىككە كەلگەن تۈرك لاتىن ئېلىپبەسى</variant>
+			<variant type="BAKU1926" draft="contributed">بىرلىككە كەلگەن تۈرك لاتىن
+				ئېلىپبەسى</variant>
 			<variant type="BISKE" draft="contributed">سان گىيورگىيو/بىلا شىۋەسى</variant>
 			<variant type="BOHORIC" draft="contributed">بوخورىچ ئېلىپبەسى</variant>
 			<variant type="BOONT" draft="contributed">بۇنتلىڭچە</variant>
 			<variant type="DAJNKO" draft="contributed">داژىنكو ئېلىپبەسى</variant>
-			<variant type="EMODENG" draft="contributed">دەسلەپكى مەزگىلدىكى زامانىۋى ئىنگلىزچە</variant>
+			<variant type="EMODENG" draft="contributed">دەسلەپكى مەزگىلدىكى زامانىۋى
+				ئىنگلىزچە</variant>
 			<variant type="FONIPA" draft="contributed">IPA تاۋۇشلىرى</variant>
 			<variant type="FONUPA" draft="contributed">UPA تاۋۇشلىرى</variant>
 			<variant type="HEPBURN" draft="contributed">خېپبۇرن لاتىنلاشتۇرۇش</variant>
@@ -1034,9 +1055,11 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<variant type="SOLBA" draft="contributed">سىتولۋىززا/سولبىكا شىۋەسى</variant>
 			<variant type="TARASK" draft="contributed">تاراسكىۋىتسا ئىملا قائىدىسى</variant>
 			<variant type="UCCOR" draft="contributed">بىرلىككە كەلگەن ئىملا قائىدىسى</variant>
-			<variant type="UCRCOR" draft="contributed">بىرلىككە كەلگەن تۈزىتىلگەن ئىملا قائىدىسى</variant>
+			<variant type="UCRCOR" draft="contributed">بىرلىككە كەلگەن تۈزىتىلگەن ئىملا
+				قائىدىسى</variant>
 			<variant type="VALENCIA" draft="contributed">ۋالېنسىيە</variant>
-			<variant type="WADEGILE" draft="contributed">ۋېي ئائىلىسى پىنيىن لاتىنلاشتۇرۇش</variant>
+			<variant type="WADEGILE" draft="contributed">ۋېي ئائىلىسى پىنيىن
+				لاتىنلاشتۇرۇش</variant>
 		</variants>
 		<keys>
 			<key type="calendar" draft="contributed">يىلنامە</key>
@@ -1046,12 +1069,15 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 		</keys>
 		<types>
 			<type type="arab" key="numbers" draft="contributed">ئەرەبچە-ھىندىچە رەقەملەر</type>
-			<type type="arabext" key="numbers" draft="contributed">كېڭەيتىلگەن ئەرەبچە-ھىندىچە رەقەملەر</type>
+			<type type="arabext" key="numbers" draft="contributed">كېڭەيتىلگەن
+				ئەرەبچە-ھىندىچە رەقەملەر</type>
 			<type type="armn" key="numbers" draft="contributed">ئەرمەنچە رەقەملەر</type>
-			<type type="armnlow" key="numbers" draft="contributed">ئەرەبچە رەقەملەر (كىچىك ھەرپ)</type>
+			<type type="armnlow" key="numbers" draft="contributed">ئەرەبچە رەقەملەر (كىچىك
+				ھەرپ)</type>
 			<type type="bali" key="numbers" draft="contributed">بالىچە رەقەملەر</type>
 			<type type="beng" key="numbers" draft="contributed">بېنگالچە رەقەملەر</type>
-			<type type="big5han" key="collation" draft="contributed">مۇرەككەپ خەنچە تىزىش تەرتىپى - Big5</type>
+			<type type="big5han" key="collation" draft="contributed">مۇرەككەپ خەنچە تىزىش
+				تەرتىپى - Big5</type>
 			<type type="brah" key="numbers" draft="contributed">بىراخمىچە رەقەملەر</type>
 			<type type="buddhist" key="calendar" draft="contributed">بۇددا يىلنامەسى</type>
 			<type type="cakm" key="numbers" draft="contributed">چاكماچە رەقەملەر</type>
@@ -1060,38 +1086,54 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<type type="coptic" key="calendar" draft="contributed">كوپتىك يىلنامەسى</type>
 			<type type="dangi" key="calendar" draft="contributed">دانگى يىلنامەسى</type>
 			<type type="deva" key="numbers" draft="contributed">دېۋاناگارىچە رەقەملەر</type>
-			<type type="dictionary" key="collation" draft="contributed">لۇغەت تىزىش تەرتىپى</type>
-			<type type="ducet" key="collation" draft="contributed">كۆڭۈلدىكى يۇنىكود تىزىش تەرتىپى</type>
-			<type type="eor" key="collation" draft="contributed">ياۋروپا تەرتىپلەش قائىدىسى</type>
+			<type type="dictionary" key="collation" draft="contributed">لۇغەت تىزىش
+				تەرتىپى</type>
+			<type type="ducet" key="collation" draft="contributed">كۆڭۈلدىكى يۇنىكود تىزىش
+				تەرتىپى</type>
+			<type type="eor" key="collation" draft="contributed">ياۋروپا تەرتىپلەش
+				قائىدىسى</type>
 			<type type="ethi" key="numbers" draft="contributed">ئېفىيوپىيەچە رەقەملەر</type>
 			<type type="ethiopic" key="calendar" draft="contributed">ئېفىيوپىيە يىلنامەسى</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">ئېفىيوپىيە ئامېتې ئالېم يىلنامەسى</type>
-			<type type="fullwide" key="numbers" draft="contributed">تولۇق كەڭلىكتىكى رەقەملەر</type>
-			<type type="gb2312han" key="collation" draft="contributed">ئاددىي خەنچە تىزىش تەرتىپى - GB2312</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">ئېفىيوپىيە
+				ئامېتې ئالېم يىلنامەسى</type>
+			<type type="fullwide" key="numbers" draft="contributed">تولۇق كەڭلىكتىكى
+				رەقەملەر</type>
+			<type type="gb2312han" key="collation" draft="contributed">ئاددىي خەنچە تىزىش
+				تەرتىپى - GB2312</type>
 			<type type="geor" key="numbers" draft="contributed">گىرۇزىنچە رەقەملەر</type>
 			<type type="gregorian" key="calendar" draft="contributed">مىلادىيە يىلنامەسى</type>
 			<type type="grek" key="numbers" draft="contributed">گىرېكچە رەقەملەر</type>
-			<type type="greklow" key="numbers" draft="contributed">گىرېكچە رەقەملەر (كىچىك ھەرپ)</type>
+			<type type="greklow" key="numbers" draft="contributed">گىرېكچە رەقەملەر (كىچىك
+				ھەرپ)</type>
 			<type type="gujr" key="numbers" draft="contributed">گۇجاراتچە رەقەملەر</type>
 			<type type="guru" key="numbers" draft="contributed">گۇرمۇكىچە رەقەملەر</type>
 			<type type="hanidec" key="numbers" draft="contributed">خەنچە ئونلۇق رەقەملەر</type>
 			<type type="hans" key="numbers" draft="contributed">ئاددىي خەنچە رەقەملەر</type>
-			<type type="hansfin" key="numbers" draft="contributed">ئاددىي خەنچە پۇل-مۇئامىلە رەقەملەر</type>
+			<type type="hansfin" key="numbers" draft="contributed">ئاددىي خەنچە
+				پۇل-مۇئامىلە رەقەملەر</type>
 			<type type="hant" key="numbers" draft="contributed">مۇرەككەپ خەنچە رەقەملەر</type>
-			<type type="hantfin" key="numbers" draft="contributed">مۇرەككەپ خەنچە پۇل-مۇئامىلە رەقەملەر</type>
+			<type type="hantfin" key="numbers" draft="contributed">مۇرەككەپ خەنچە
+				پۇل-مۇئامىلە رەقەملەر</type>
 			<type type="hebr" key="numbers" draft="contributed">ئىبرانىچە رەقەملەر</type>
 			<type type="hebrew" key="calendar" draft="contributed">يەھۇدى يىلنامەسى</type>
-			<type type="indian" key="calendar" draft="contributed">ھىندىستان دۆلەت يىلنامەسى</type>
-			<type type="islamic" key="calendar" draft="contributed">ئىسلام ھىجرىيە يىلنامەسى</type>
-			<type type="islamic-civil" key="calendar" draft="contributed">ئىسلام ھىجرىيە يىلنامەسى (مەدىنە)</type>
-			<type type="islamic-rgsa" key="calendar" draft="contributed">ئىسلام ھىجرىيە يىلنامەسى (سەئۇدى ئەرەبىستان ئاي)</type>
-			<type type="islamic-tbla" key="calendar" draft="contributed">ئىسلام ھىجرىيە يىلنامەسى (ئاسترونومىيە دەۋرى)</type>
-			<type type="islamic-umalqura" key="calendar" draft="contributed">ئىسلام ھىجرىيە يىلنامەسى (ئۇم ئەلقۇرا)</type>
+			<type type="indian" key="calendar" draft="contributed">ھىندىستان دۆلەت
+				يىلنامەسى</type>
+			<type type="islamic" key="calendar" draft="contributed">ئىسلام ھىجرىيە
+				يىلنامەسى</type>
+			<type type="islamic-civil" key="calendar" draft="contributed">ئىسلام ھىجرىيە
+				يىلنامەسى (مەدىنە)</type>
+			<type type="islamic-rgsa" key="calendar" draft="contributed">ئىسلام ھىجرىيە
+				يىلنامەسى (سەئۇدى ئەرەبىستان ئاي)</type>
+			<type type="islamic-tbla" key="calendar" draft="contributed">ئىسلام ھىجرىيە
+				يىلنامەسى (ئاسترونومىيە دەۋرى)</type>
+			<type type="islamic-umalqura" key="calendar" draft="contributed">ئىسلام
+				ھىجرىيە يىلنامەسى (ئۇم ئەلقۇرا)</type>
 			<type type="iso8601" key="calendar" draft="contributed">ISO-8601 يىلنامەسى</type>
 			<type type="japanese" key="calendar" draft="contributed">ياپونىيە يىلنامەسى</type>
 			<type type="java" key="numbers" draft="contributed">ياۋاچە رەقەملەر</type>
 			<type type="jpan" key="numbers" draft="contributed">ياپونچە رەقەملەر</type>
-			<type type="jpanfin" key="numbers" draft="contributed">ياپونچە پۇل-مۇئامىلە رەقەملەر</type>
+			<type type="jpanfin" key="numbers" draft="contributed">ياپونچە پۇل-مۇئامىلە
+				رەقەملەر</type>
 			<type type="kali" key="numbers" draft="contributed">كاياھچە رەقەملەر</type>
 			<type type="khmr" key="numbers" draft="contributed">كېخمېرچە رەقەملەر</type>
 			<type type="knda" key="numbers" draft="contributed">كانناداچە رەقەملەر</type>
@@ -1111,18 +1153,23 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<type type="orya" key="numbers" draft="contributed">ئورىياچە رەقەملەر</type>
 			<type type="osma" key="numbers" draft="contributed">ئوسمانىيە رەقەملەر</type>
 			<type type="persian" key="calendar" draft="contributed">پارىس يىلنامەسى</type>
-			<type type="phonebook" key="collation" draft="contributed">تېلېفون نومۇر تىزىش تەرتىپى</type>
+			<type type="phonebook" key="collation" draft="contributed">تېلېفون نومۇر تىزىش
+				تەرتىپى</type>
 			<type type="pinyin" key="collation" draft="contributed">پىنيىن تىزىش تەرتىپى</type>
-			<type type="reformed" key="collation" draft="contributed">ياخشىلانغان تەرتىپلەش تەرتىپى</type>
+			<type type="reformed" key="collation" draft="contributed">ياخشىلانغان
+				تەرتىپلەش تەرتىپى</type>
 			<type type="roc" key="calendar" draft="contributed">مىنگو يىلنامەسى</type>
 			<type type="roman" key="numbers" draft="contributed">رىم رەقەملەر</type>
-			<type type="romanlow" key="numbers" draft="contributed">رىم رەقەملەر (كىچىك ھەرپ)</type>
+			<type type="romanlow" key="numbers" draft="contributed">رىم رەقەملەر (كىچىك
+				ھەرپ)</type>
 			<type type="saur" key="numbers" draft="contributed">سائۇراشتىراچە رەقەملەر</type>
 			<type type="search" key="collation" draft="contributed">ئادەتتىكى ئىزدەش</type>
-			<type type="searchjl" key="collation" draft="contributed">كورىيەچە ئۈزۈك تاۋۇش بويىچە ئىزدەش</type>
+			<type type="searchjl" key="collation" draft="contributed">كورىيەچە ئۈزۈك تاۋۇش
+				بويىچە ئىزدەش</type>
 			<type type="shrd" key="numbers" draft="contributed">شاراداچە رەقەملەر</type>
 			<type type="sora" key="numbers" draft="contributed">سورا سومپېڭ رەقەملەر</type>
-			<type type="standard" key="collation" draft="contributed">ئۆلچەملىك تەرتىپلەش تەرتىپى</type>
+			<type type="standard" key="collation" draft="contributed">ئۆلچەملىك تەرتىپلەش
+				تەرتىپى</type>
 			<type type="stroke" key="collation" draft="contributed">سىزىق بويىچە تەرتىپلەش</type>
 			<type type="sund" key="numbers" draft="contributed">سۇنداچە رەقەملەر</type>
 			<type type="takr" key="numbers" draft="contributed">تاكرىچە رەقەملەر</type>
@@ -1132,15 +1179,20 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<type type="telu" key="numbers" draft="contributed">تېلۇگۇچە رەقەملەر</type>
 			<type type="thai" key="numbers" draft="contributed">تايلاندچە رەقەملەر</type>
 			<type type="tibt" key="numbers" draft="contributed">تىبەتچە رەقەملەر</type>
-			<type type="traditional" key="collation" draft="contributed">ئەنئەنىۋى تەرتىپلەش تەرتىپى</type>
-			<type type="unihan" key="collation" draft="contributed">يان بۆلەك سىزىق بويچە تەرتىپلەش تەرتىپى</type>
+			<type type="traditional" key="collation" draft="contributed">ئەنئەنىۋى
+				تەرتىپلەش تەرتىپى</type>
+			<type type="unihan" key="collation" draft="contributed">يان بۆلەك سىزىق بويچە
+				تەرتىپلەش تەرتىپى</type>
 			<type type="vaii" key="numbers" draft="contributed">ۋايچە رەقەملەر</type>
-			<type type="zhuyin" key="collation" draft="contributed">ترانسكرىپسىيە تەرتىپلەش تەرتىپى</type>
+			<type type="zhuyin" key="collation" draft="contributed">ترانسكرىپسىيە
+				تەرتىپلەش تەرتىپى</type>
 		</types>
 		<measurementSystemNames>
 			<measurementSystemName type="metric" draft="contributed">مېتىر</measurementSystemName>
-			<measurementSystemName type="UK" draft="contributed">ئەنگلىيە ئۆلچىمى</measurementSystemName>
-			<measurementSystemName type="US" draft="contributed">ئامېرىكا ئۆلچىمى</measurementSystemName>
+			<measurementSystemName type="UK" draft="contributed">ئەنگلىيە
+				ئۆلچىمى</measurementSystemName>
+			<measurementSystemName type="US" draft="contributed">ئامېرىكا
+				ئۆلچىمى</measurementSystemName>
 		</measurementSystemNames>
 		<codePatterns>
 			<codePattern type="language" draft="contributed">تىل: {0}</codePattern>
@@ -1154,8 +1206,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 		</orientation>
 	</layout>
 	<characters>
-		<exemplarCharacters draft="contributed">[ئ ا ە ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ و ۇ ۆ ۈ ۋ ې ى ي]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[ئ ا ە ب پ ت ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ و ۇ ۆ ۈ ۋ ې ى ي]</exemplarCharacters>
+		<exemplarCharacters draft="contributed">[ئ ا ە ب پ ت ج چ خ د ر ز
+			ژ س ش غ ف ق ك گ ڭ ل م ن ھ و ۇ ۆ ۈ ۋ ې ى ي]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[ئ ا ە ب پ ت
+			ج چ خ د ر ز ژ س ش غ ف ق ك گ ڭ ل م ن ھ و ۇ ۆ ۈ ۋ ې ى ي]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart draft="contributed">»</quotationStart>
@@ -1329,8 +1383,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 							<greatestDifference id="M" draft="contributed">M/d – M/d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d" draft="contributed">E، M/d – E، M/d</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E، M/d – E، M/d</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E، M/d – E،
+								M/d</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E، M/d – E،
+								M/d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M" draft="contributed">MMM – MMM</greatestDifference>
@@ -1340,43 +1396,62 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 							<greatestDifference id="M" draft="contributed">MMM d – MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="contributed">E، MMM d – E، MMM d</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E، MMM d – E، MMM d</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E، MMM d – E،
+								MMM d</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E، MMM d – E،
+								MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="contributed">y – y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
-							<greatestDifference id="M" draft="contributed">M/y – M/y GGGGG</greatestDifference>
-							<greatestDifference id="y" draft="contributed">M/y – M/y GGGGG</greatestDifference>
+							<greatestDifference id="M" draft="contributed">M/y – M/y
+								GGGGG</greatestDifference>
+							<greatestDifference id="y" draft="contributed">M/y – M/y
+								GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="contributed">M/d/y – M/d/y GGGGG</greatestDifference>
-							<greatestDifference id="M" draft="contributed">M/d/y – M/d/y GGGGG</greatestDifference>
-							<greatestDifference id="y" draft="contributed">M/d/y – M/d/y GGGGG</greatestDifference>
+							<greatestDifference id="d" draft="contributed">M/d/y – M/d/y
+								GGGGG</greatestDifference>
+							<greatestDifference id="M" draft="contributed">M/d/y – M/d/y
+								GGGGG</greatestDifference>
+							<greatestDifference id="y" draft="contributed">M/d/y – M/d/y
+								GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="contributed">E، M/d/y – E، M/d/y GGGGG</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E، M/d/y – E، M/d/y GGGGG</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E، M/d/y – E، M/d/y GGGGG</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E، M/d/y – E،
+								M/d/y GGGGG</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E، M/d/y – E،
+								M/d/y GGGGG</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E، M/d/y – E،
+								M/d/y GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="contributed">MMM – MMM y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">MMM y – MMM y G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMM y – MMM y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d" draft="contributed">MMM d – d، y G</greatestDifference>
-							<greatestDifference id="M" draft="contributed">MMM d – MMM d، y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">MMM d، y – MMM d، y G</greatestDifference>
+							<greatestDifference id="d" draft="contributed">MMM d – d، y
+								G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">MMM d – MMM
+								d، y G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMM d، y –
+								MMM d، y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="contributed">E، MMM d – E، MMM d، y G</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E، MMM d – E، MMM d، y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E، MMM d، y – E، MMM d، y G</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E، MMM d – E،
+								MMM d، y G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E، MMM d – E،
+								MMM d، y G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E، MMM d، y –
+								E، MMM d، y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
-							<greatestDifference id="M" draft="contributed">MMMM – MMMM y G</greatestDifference>
-							<greatestDifference id="y" draft="contributed">MMMM y – MMMM y G</greatestDifference>
+							<greatestDifference id="M" draft="contributed">MMMM – MMMM y
+								G</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMMM y – MMMM
+								y G</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -1639,7 +1714,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 							<greatestDifference id="H" draft="contributed">HH – HH</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hm">
-							<greatestDifference id="a" draft="contributed">h:mm a – h:mm a</greatestDifference>
+							<greatestDifference id="a" draft="contributed">h:mm a – h:mm
+								a</greatestDifference>
 							<greatestDifference id="h" draft="contributed">h:mm – h:mm a</greatestDifference>
 							<greatestDifference id="m" draft="contributed">h:mm – h:mm a</greatestDifference>
 						</intervalFormatItem>
@@ -1648,13 +1724,18 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 							<greatestDifference id="m" draft="contributed">HH:mm – HH:mm</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hmv">
-							<greatestDifference id="a" draft="contributed">h:mm a – h:mm a v</greatestDifference>
-							<greatestDifference id="h" draft="contributed">h:mm – h:mm a v</greatestDifference>
-							<greatestDifference id="m" draft="contributed">h:mm – h:mm a v</greatestDifference>
+							<greatestDifference id="a" draft="contributed">h:mm a – h:mm
+								a v</greatestDifference>
+							<greatestDifference id="h" draft="contributed">h:mm – h:mm a
+								v</greatestDifference>
+							<greatestDifference id="m" draft="contributed">h:mm – h:mm a
+								v</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="Hmv">
-							<greatestDifference id="H" draft="contributed">HH:mm – HH:mm v</greatestDifference>
-							<greatestDifference id="m" draft="contributed">HH:mm – HH:mm v</greatestDifference>
+							<greatestDifference id="H" draft="contributed">HH:mm – HH:mm
+								v</greatestDifference>
+							<greatestDifference id="m" draft="contributed">HH:mm – HH:mm
+								v</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="hv">
 							<greatestDifference id="a" draft="contributed">h a – h a v</greatestDifference>
@@ -1671,8 +1752,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 							<greatestDifference id="M" draft="contributed">M/d – M/d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d" draft="contributed">E، M/d – E، M/d</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E، M/d – E، M/d</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E، M/d – E،
+								M/d</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E، M/d – E،
+								M/d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M" draft="contributed">MMM – MMM</greatestDifference>
@@ -1682,8 +1765,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 							<greatestDifference id="M" draft="contributed">MMM d – MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="contributed">E، MMM d – E، MMM d</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E، MMM d – E، MMM d</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E، MMM d – E،
+								MMM d</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E، MMM d – E،
+								MMM d</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="contributed">y – y</greatestDifference>
@@ -1698,9 +1783,12 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 							<greatestDifference id="y" draft="contributed">M/d/y – M/d/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="contributed">E، M/d/y – E، M/d/y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E، M/d/y – E، M/d/y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E، M/d/y – E، M/d/y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E، M/d/y – E،
+								M/d/y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E، M/d/y – E،
+								M/d/y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E، M/d/y – E،
+								M/d/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="contributed">MMM – MMM y</greatestDifference>
@@ -1708,17 +1796,23 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d" draft="contributed">MMM d – d، y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">MMM d – MMM d، y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">MMM d، y – MMM d، y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">MMM d – MMM
+								d، y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMM d، y –
+								MMM d، y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="contributed">E، MMM d – E، MMM d، y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E، MMM d – E، MMM d، y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E، MMM d، y – E، MMM d، y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E، MMM d – E،
+								MMM d، y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E، MMM d – E،
+								MMM d، y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E، MMM d، y –
+								E، MMM d، y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="contributed">MMMM – MMMM y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">MMMM y – MMMM y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">MMMM y – MMMM
+								y</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -1845,12 +1939,16 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 				<relative type="0" draft="contributed">بۇ يىل</relative>
 				<relative type="1" draft="contributed">كېلەر يىل</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="contributed">{0} يىلدىن كېيىن</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} يىلدىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0}
+						يىلدىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						يىلدىن كېيىن</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="contributed">{0} يىل ئىلگىرى</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} يىل ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0} يىل
+						ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						يىل ئىلگىرى</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="month">
@@ -1859,12 +1957,16 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 				<relative type="0" draft="contributed">بۇ ئاي</relative>
 				<relative type="1" draft="contributed">كېلەر ئاي</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="contributed">{0} ئايدىن كېيىن</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} ئايدىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0}
+						ئايدىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						ئايدىن كېيىن</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="contributed">{0} ئاي ئىلگىرى</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} ئاي ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0} ئاي
+						ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						ئاي ئىلگىرى</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="week">
@@ -1873,12 +1975,16 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 				<relative type="0" draft="contributed">بۇ ھەپتە</relative>
 				<relative type="1" draft="contributed">كېلەر ھەپتە</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="contributed">{0} ھەپتىدىن كېيىن</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} ھەپتىدىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0}
+						ھەپتىدىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						ھەپتىدىن كېيىن</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="contributed">{0} ھەپتە ئىلگىرى</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} ھەپتە ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0}
+						ھەپتە ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						ھەپتە ئىلگىرى</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="day">
@@ -1887,12 +1993,16 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 				<relative type="0" draft="contributed">بۈگۈن</relative>
 				<relative type="1" draft="contributed">ئەتە</relative>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="contributed">{0} كۈندىن كېيىن</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} كۈندىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0}
+						كۈندىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						كۈندىن كېيىن</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="contributed">{0} كۈن ئىلگىرى</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} كۈن ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0} كۈن
+						ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						كۈن ئىلگىرى</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="weekday">
@@ -1939,34 +2049,46 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<field type="hour">
 				<displayName draft="contributed">سائەت</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="contributed">{0} سائەتتىن كېيىن</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} سائەتتىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0}
+						سائەتتىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						سائەتتىن كېيىن</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="contributed">{0} سائەت ئىلگىرى</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} سائەت ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0}
+						سائەت ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						سائەت ئىلگىرى</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="minute">
 				<displayName draft="contributed">مىنۇت</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="contributed">{0} مىنۇتتىن كېيىن</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} مىنۇتتىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0}
+						مىنۇتتىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						مىنۇتتىن كېيىن</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="contributed">{0} مىنۇت ئىلگىرى</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} مىنۇت ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0}
+						مىنۇت ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						مىنۇت ئىلگىرى</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="second">
 				<displayName draft="contributed">سېكۇنت</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one" draft="contributed">{0} سېكۇنتتىن كېيىن</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} سېكۇنتتىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0}
+						سېكۇنتتىن كېيىن</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						سېكۇنتتىن كېيىن</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
-					<relativeTimePattern count="one" draft="contributed">{0} سېكۇنت ئىلگىرى</relativeTimePattern>
-					<relativeTimePattern count="other" draft="contributed">{0} سېكۇنت ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="one" draft="contributed">{0}
+						سېكۇنت ئىلگىرى</relativeTimePattern>
+					<relativeTimePattern count="other" draft="contributed">{0}
+						سېكۇنت ئىلگىرى</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="zone">
@@ -2163,8 +2285,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<metazone type="Australia_CentralWestern">
 				<long>
 					<generic draft="contributed">ئاۋسترالىيە ئوتتۇرا غەربىي قىسىم ۋاقتى</generic>
-					<standard draft="contributed">ئاۋستىرالىيە ئوتتۇرا غەربىي قىسىم ئۆلچەملىك ۋاقتى</standard>
-					<daylight draft="contributed">ئاۋسترالىيە ئوتتۇرا غەربىي قىسىم يازلىق ۋاقتى</daylight>
+					<standard draft="contributed">ئاۋستىرالىيە ئوتتۇرا غەربىي قىسىم
+						ئۆلچەملىك ۋاقتى</standard>
+					<daylight draft="contributed">ئاۋسترالىيە ئوتتۇرا غەربىي قىسىم يازلىق
+						ۋاقتى</daylight>
 				</long>
 			</metazone>
 			<metazone type="Australia_Eastern">
@@ -2369,7 +2493,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</metazone>
 			<metazone type="French_Southern">
 				<long>
-					<standard draft="contributed">فىرانسىيەگە قاراشلىق جەنۇبىي ۋە ئانتاركتىكا ۋاقتى</standard>
+					<standard draft="contributed">فىرانسىيەگە قاراشلىق جەنۇبىي ۋە
+						ئانتاركتىكا ۋاقتى</standard>
 				</long>
 			</metazone>
 			<metazone type="Galapagos">
@@ -2619,7 +2744,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<metazone type="Mexico_Northwest">
 				<long>
 					<generic draft="contributed">مېكسىكا غەربىي شىمالىي قىسىم ۋاقتى</generic>
-					<standard draft="contributed">مېكسىكا غەربىي شىمالىي قىسىم ئۆلچەملىك ۋاقتى</standard>
+					<standard draft="contributed">مېكسىكا غەربىي شىمالىي قىسىم ئۆلچەملىك
+						ۋاقتى</standard>
 					<daylight draft="contributed">مېكسىكا غەربىي شىمالىي قىسىم يازلىق ۋاقتى</daylight>
 				</long>
 			</metazone>
@@ -3002,13 +3128,19 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 					<pattern type="10000000000" count="one" draft="contributed">00 مىليارد</pattern>
 					<pattern type="10000000000" count="other" draft="contributed">00 مىليارد</pattern>
 					<pattern type="100000000000" count="one" draft="contributed">000 مىليارد</pattern>
-					<pattern type="100000000000" count="other" draft="contributed">000 مىليارد</pattern>
+					<pattern type="100000000000" count="other" draft="contributed">000
+						مىليارد</pattern>
 					<pattern type="1000000000000" count="one" draft="contributed">0 تىرىليون</pattern>
-					<pattern type="1000000000000" count="other" draft="contributed">0 تىرىليون</pattern>
-					<pattern type="10000000000000" count="one" draft="contributed">00 تىرىليون</pattern>
-					<pattern type="10000000000000" count="other" draft="contributed">00 تىرىليون</pattern>
-					<pattern type="100000000000000" count="one" draft="contributed">000 تىرىليون</pattern>
-					<pattern type="100000000000000" count="other" draft="contributed">000 تىرىليون</pattern>
+					<pattern type="1000000000000" count="other" draft="contributed">0
+						تىرىليون</pattern>
+					<pattern type="10000000000000" count="one" draft="contributed">00
+						تىرىليون</pattern>
+					<pattern type="10000000000000" count="other" draft="contributed">00
+						تىرىليون</pattern>
+					<pattern type="100000000000000" count="one" draft="contributed">000
+						تىرىليون</pattern>
+					<pattern type="100000000000000" count="other" draft="contributed">000
+						تىرىليون</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 			<decimalFormatLength type="short">
@@ -3068,13 +3200,17 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="AED">
 				<displayName draft="contributed">ئەرەب بىرلەشمە خەلىپىلىكى دەرھەمى</displayName>
-				<displayName count="one" draft="contributed">ئەرەب بىرلەشمە خەلىپىلىكى دەرھەمى</displayName>
-				<displayName count="other" draft="contributed">ئەرەب بىرلەشمە خەلىپىلىكى دەرھەمى</displayName>
+				<displayName count="one" draft="contributed">ئەرەب بىرلەشمە خەلىپىلىكى
+					دەرھەمى</displayName>
+				<displayName count="other" draft="contributed">ئەرەب بىرلەشمە
+					خەلىپىلىكى دەرھەمى</displayName>
 			</currency>
 			<currency type="AFA">
 				<displayName draft="contributed">ئافغان ئافغانى (1927–2002)</displayName>
-				<displayName count="one" draft="contributed">ئافغان ئافغانى (1927–2002)</displayName>
-				<displayName count="other" draft="contributed">Aئافغان ئافغانى (1927–2002)</displayName>
+				<displayName count="one" draft="contributed">ئافغان ئافغانى
+					(1927–2002)</displayName>
+				<displayName count="other" draft="contributed">Aئافغان ئافغانى
+					(1927–2002)</displayName>
 			</currency>
 			<currency type="AFN">
 				<displayName draft="contributed">ئافغان ئافغانى</displayName>
@@ -3083,8 +3219,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="ALK">
 				<displayName draft="contributed">ئالبانىيە لېكى (1946–1965)</displayName>
-				<displayName count="one" draft="contributed">ئالبانىيە لېكى (1946–1965)</displayName>
-				<displayName count="other" draft="contributed">ئالبانىيە لېكى (1946–1965)</displayName>
+				<displayName count="one" draft="contributed">ئالبانىيە لېكى
+					(1946–1965)</displayName>
+				<displayName count="other" draft="contributed">ئالبانىيە لېكى
+					(1946–1965)</displayName>
 			</currency>
 			<currency type="ALL">
 				<displayName draft="contributed">ئالبانىيە لېكى</displayName>
@@ -3097,9 +3235,12 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 				<displayName count="other" draft="contributed">ئەرمېنىيە دىرامى</displayName>
 			</currency>
 			<currency type="ANG">
-				<displayName draft="contributed">گوللاندىيەگە قاراشلىق ئانتىللېن گۇلدېنى</displayName>
-				<displayName count="one" draft="contributed">گوللاندىيەگە قاراشلىق ئانتىللېن گۇلدېنى</displayName>
-				<displayName count="other" draft="contributed">گوللاندىيەگە قاراشلىق ئانتىللېن گۇلدېنى</displayName>
+				<displayName draft="contributed">گوللاندىيەگە قاراشلىق ئانتىللېن
+					گۇلدېنى</displayName>
+				<displayName count="one" draft="contributed">گوللاندىيەگە قاراشلىق
+					ئانتىللېن گۇلدېنى</displayName>
+				<displayName count="other" draft="contributed">گوللاندىيەگە قاراشلىق
+					ئانتىللېن گۇلدېنى</displayName>
 			</currency>
 			<currency type="AOA">
 				<displayName draft="contributed">ئانگولا كۇۋانزاسى</displayName>
@@ -3108,18 +3249,25 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="AOK">
 				<displayName draft="contributed">ئانگولا كۇۋانزاسى (1977–1991)</displayName>
-				<displayName count="one" draft="contributed">ئانگولا كۇۋانزاسى (1977–1991)</displayName>
-				<displayName count="other" draft="contributed">ئانگولا كۇۋانزاسى (1977–1991))</displayName>
+				<displayName count="one" draft="contributed">ئانگولا كۇۋانزاسى
+					(1977–1991)</displayName>
+				<displayName count="other" draft="contributed">ئانگولا كۇۋانزاسى
+					(1977–1991))</displayName>
 			</currency>
 			<currency type="AON">
 				<displayName draft="contributed">ئانگولا يېڭى كۇۋانزاسى (1990–2000)</displayName>
-				<displayName count="one" draft="contributed">ئانگولا يېڭى كۇۋانزاسى (1990–2000)</displayName>
-				<displayName count="other" draft="contributed">ئانگولا يېڭى كۇۋانزاسى (1990–2000)</displayName>
+				<displayName count="one" draft="contributed">ئانگولا يېڭى كۇۋانزاسى
+					(1990–2000)</displayName>
+				<displayName count="other" draft="contributed">ئانگولا يېڭى كۇۋانزاسى
+					(1990–2000)</displayName>
 			</currency>
 			<currency type="AOR">
-				<displayName draft="contributed">ئانگولا قايتا تەڭشەلگەن كۇۋانزاسى (1995–1999)</displayName>
-				<displayName count="one" draft="contributed">ئانگولا قايتا تەڭشەلگەن كۇۋانزاسى (1995–1999)</displayName>
-				<displayName count="other" draft="contributed">ئانگولا قايتا تەڭشەلگەن كۇۋانزاسى (1995–1999)</displayName>
+				<displayName draft="contributed">ئانگولا قايتا تەڭشەلگەن كۇۋانزاسى
+					(1995–1999)</displayName>
+				<displayName count="one" draft="contributed">ئانگولا قايتا تەڭشەلگەن
+					كۇۋانزاسى (1995–1999)</displayName>
+				<displayName count="other" draft="contributed">ئانگولا قايتا تەڭشەلگەن
+					كۇۋانزاسى (1995–1999)</displayName>
 			</currency>
 			<currency type="ARA">
 				<displayName draft="contributed">ئارگېنتىنا ئاۋسترالى</displayName>
@@ -3128,18 +3276,24 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="ARL">
 				<displayName draft="contributed">ئارگېنتىنا پېسو لېيى (1970–1983)</displayName>
-				<displayName count="one" draft="contributed">ئارگېنتىنا پېسو لېيى (1970–1983)</displayName>
-				<displayName count="other" draft="contributed">ئارگېنتىنا پېسو لېيى (1970–1983)</displayName>
+				<displayName count="one" draft="contributed">ئارگېنتىنا پېسو لېيى
+					(1970–1983)</displayName>
+				<displayName count="other" draft="contributed">ئارگېنتىنا پېسو لېيى
+					(1970–1983)</displayName>
 			</currency>
 			<currency type="ARM">
 				<displayName draft="contributed">ئارگېنتىنا پېسوسى (1881–1970)</displayName>
-				<displayName count="one" draft="contributed">ئارگېنتىنا پېسوسى (1881–1970)</displayName>
-				<displayName count="other" draft="contributed">ئارگېنتىنا پېسوسى (1881–1970)</displayName>
+				<displayName count="one" draft="contributed">ئارگېنتىنا پېسوسى
+					(1881–1970)</displayName>
+				<displayName count="other" draft="contributed">ئارگېنتىنا پېسوسى
+					(1881–1970)</displayName>
 			</currency>
 			<currency type="ARP">
 				<displayName draft="contributed">ئارگېنتىنا پېسوسى (1983–1985)</displayName>
-				<displayName count="one" draft="contributed">ئارگېنتىنا پېسوسى (1983–1985)</displayName>
-				<displayName count="other" draft="contributed">ئارگېنتىنا پېسوسى (1983–1985)</displayName>
+				<displayName count="one" draft="contributed">ئارگېنتىنا پېسوسى
+					(1983–1985)</displayName>
+				<displayName count="other" draft="contributed">ئارگېنتىنا پېسوسى
+					(1983–1985)</displayName>
 			</currency>
 			<currency type="ARS">
 				<displayName draft="contributed">ئارگېنتىنا پېسوسى</displayName>
@@ -3163,8 +3317,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="AZM">
 				<displayName draft="contributed">ئەزەربەيجان ماناتى (1993–2006)</displayName>
-				<displayName count="one" draft="contributed">ئەزەربەيجان ماناتى (1993–2006)</displayName>
-				<displayName count="other" draft="contributed">ئەزەربەيجان ماناتى (1993–2006)</displayName>
+				<displayName count="one" draft="contributed">ئەزەربەيجان ماناتى
+					(1993–2006)</displayName>
+				<displayName count="other" draft="contributed">ئەزەربەيجان ماناتى
+					(1993–2006)</displayName>
 			</currency>
 			<currency type="AZN">
 				<displayName draft="contributed">ئەزەربەيجان ماناتى</displayName>
@@ -3172,19 +3328,28 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 				<displayName count="other" draft="contributed">ئەزەربەيجان ماناتى</displayName>
 			</currency>
 			<currency type="BAD">
-				<displayName draft="contributed">بوسنىيە-خېرتسېگوۋىنا دىنارى (1992–1994)</displayName>
-				<displayName count="one" draft="contributed">بوسنىيە-خېرتسېگوۋىنا دىنارى (1992–1994)</displayName>
-				<displayName count="other" draft="contributed">بوسنىيە-خېرتسېگوۋىنا دىنارى (1992–1994)</displayName>
+				<displayName draft="contributed">بوسنىيە-خېرتسېگوۋىنا دىنارى
+					(1992–1994)</displayName>
+				<displayName count="one" draft="contributed">بوسنىيە-خېرتسېگوۋىنا
+					دىنارى (1992–1994)</displayName>
+				<displayName count="other" draft="contributed">بوسنىيە-خېرتسېگوۋىنا
+					دىنارى (1992–1994)</displayName>
 			</currency>
 			<currency type="BAM">
-				<displayName draft="contributed">بوسنىيە-خېرتسېگوۋىنا ئالماشتۇرۇشچان ماركى</displayName>
-				<displayName count="one" draft="contributed">بوسنىيە-خېرتسېگوۋىنا ئالماشتۇرۇشچان ماركى</displayName>
-				<displayName count="other" draft="contributed">بوسنىيە-خېرتسېگوۋىنا ئالماشتۇرۇشچان ماركى</displayName>
+				<displayName draft="contributed">بوسنىيە-خېرتسېگوۋىنا ئالماشتۇرۇشچان
+					ماركى</displayName>
+				<displayName count="one" draft="contributed">بوسنىيە-خېرتسېگوۋىنا
+					ئالماشتۇرۇشچان ماركى</displayName>
+				<displayName count="other" draft="contributed">بوسنىيە-خېرتسېگوۋىنا
+					ئالماشتۇرۇشچان ماركى</displayName>
 			</currency>
 			<currency type="BAN">
-				<displayName draft="contributed">بوسنىيە-خېرتسېگوۋىنا يېڭى دىنارى (1994–1997)</displayName>
-				<displayName count="one" draft="contributed">بوسنىيە-خېرتسېگوۋىنا يېڭى دىنارى (1994–1997)</displayName>
-				<displayName count="other" draft="contributed">بوسنىيە-خېرتسېگوۋىنا يېڭى دىنارى (1994–1997)</displayName>
+				<displayName draft="contributed">بوسنىيە-خېرتسېگوۋىنا يېڭى دىنارى
+					(1994–1997)</displayName>
+				<displayName count="one" draft="contributed">بوسنىيە-خېرتسېگوۋىنا يېڭى
+					دىنارى (1994–1997)</displayName>
+				<displayName count="other" draft="contributed">بوسنىيە-خېرتسېگوۋىنا
+					يېڭى دىنارى (1994–1997)</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName draft="contributed">باربادوس دوللىرى</displayName>
@@ -3198,8 +3363,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="BEC">
 				<displayName draft="contributed">بېلگىيە فرانكى (ئالماشتۇرۇشچان)</displayName>
-				<displayName count="one" draft="contributed">بېلگىيە فرانكى (ئالماشتۇرۇشچان)</displayName>
-				<displayName count="other" draft="contributed">بېلگىيە فرانكى (ئالماشتۇرۇشچان)</displayName>
+				<displayName count="one" draft="contributed">بېلگىيە فرانكى
+					(ئالماشتۇرۇشچان)</displayName>
+				<displayName count="other" draft="contributed">بېلگىيە فرانكى
+					(ئالماشتۇرۇشچان)</displayName>
 			</currency>
 			<currency type="BEF">
 				<displayName draft="contributed">بېلگىيە فرانكى</displayName>
@@ -3208,8 +3375,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="BEL">
 				<displayName draft="contributed">بېلگىيە فرانكى (پۇل–مۇئامىلە)</displayName>
-				<displayName count="one" draft="contributed">بېلگىيە فرانكى (پۇل–مۇئامىلە)</displayName>
-				<displayName count="other" draft="contributed">بېلگىيە فرانكى (پۇل–مۇئامىلە)</displayName>
+				<displayName count="one" draft="contributed">بېلگىيە فرانكى
+					(پۇل–مۇئامىلە)</displayName>
+				<displayName count="other" draft="contributed">بېلگىيە فرانكى
+					(پۇل–مۇئامىلە)</displayName>
 			</currency>
 			<currency type="BGL">
 				<displayName draft="contributed">بۇلغارىيە قاتتىق لېۋاسى</displayName>
@@ -3218,8 +3387,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="BGM">
 				<displayName draft="contributed">بۇلغارىيە ئىجتىمائىي لېۋاسى</displayName>
-				<displayName count="one" draft="contributed">بۇلغارىيە ئىجتىمائىي لېۋاسى</displayName>
-				<displayName count="other" draft="contributed">بۇلغارىيە ئىجتىمائىي لېۋاسى</displayName>
+				<displayName count="one" draft="contributed">بۇلغارىيە ئىجتىمائىي
+					لېۋاسى</displayName>
+				<displayName count="other" draft="contributed">بۇلغارىيە ئىجتىمائىي
+					لېۋاسى</displayName>
 			</currency>
 			<currency type="BGN">
 				<displayName draft="contributed">بۇلغارىيە لېۋاسى</displayName>
@@ -3228,8 +3399,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="BGO">
 				<displayName draft="contributed">بۇلغارىيە لېۋاسى (1879–1952)</displayName>
-				<displayName count="one" draft="contributed">بۇلغارىيە لېۋاسى (1879–1952)</displayName>
-				<displayName count="other" draft="contributed">بۇلغارىيە لېۋاسى (1879–1952)</displayName>
+				<displayName count="one" draft="contributed">بۇلغارىيە لېۋاسى
+					(1879–1952)</displayName>
+				<displayName count="other" draft="contributed">بۇلغارىيە لېۋاسى
+					(1879–1952)</displayName>
 			</currency>
 			<currency type="BHD">
 				<displayName draft="contributed">بەھرەين دىنارى</displayName>
@@ -3258,8 +3431,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="BOL">
 				<displayName draft="contributed">بولىۋىيە بولىۋىيانوسى (1863–1963)</displayName>
-				<displayName count="one" draft="contributed">بولىۋىيە بولىۋىيانوسى (1863–1963)</displayName>
-				<displayName count="other" draft="contributed">بولىۋىيە بولىۋىيانوسى (1863–1963)</displayName>
+				<displayName count="one" draft="contributed">بولىۋىيە بولىۋىيانوسى
+					(1863–1963)</displayName>
+				<displayName count="other" draft="contributed">بولىۋىيە بولىۋىيانوسى
+					(1863–1963)</displayName>
 			</currency>
 			<currency type="BOP">
 				<displayName draft="contributed">بولىۋىيە پىسوسى</displayName>
@@ -3273,18 +3448,24 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="BRB">
 				<displayName draft="contributed">بىرازىلىيە يېڭى كرۇزېروسى (1967–1986)</displayName>
-				<displayName count="one" draft="contributed">بىرازىلىيە يېڭى كرۇزېروسى (1967–1986)</displayName>
-				<displayName count="other" draft="contributed">بىرازىلىيە يېڭى كرۇزېروسى (1967–1986)</displayName>
+				<displayName count="one" draft="contributed">بىرازىلىيە يېڭى كرۇزېروسى
+					(1967–1986)</displayName>
+				<displayName count="other" draft="contributed">بىرازىلىيە يېڭى
+					كرۇزېروسى (1967–1986)</displayName>
 			</currency>
 			<currency type="BRC">
 				<displayName draft="contributed">بىرازىلىيە كرۇزادوسى (1986–1989)</displayName>
-				<displayName count="one" draft="contributed">بىرازىلىيە كرۇزادوسى (1986–1989)</displayName>
-				<displayName count="other" draft="contributed">بىرازىلىيە كرۇزادوسى (1986–1989)</displayName>
+				<displayName count="one" draft="contributed">بىرازىلىيە كرۇزادوسى
+					(1986–1989)</displayName>
+				<displayName count="other" draft="contributed">بىرازىلىيە كرۇزادوسى
+					(1986–1989)</displayName>
 			</currency>
 			<currency type="BRE">
 				<displayName draft="contributed">بىرازىلىيە يېڭى كرۇزېروسى (1990–1993)</displayName>
-				<displayName count="one" draft="contributed">بىرازىلىيە يېڭى كرۇزېروسى (1990–1993)</displayName>
-				<displayName count="other" draft="contributed">بىرازىلىيە يېڭى كرۇزېروسى (1990–1993)</displayName>
+				<displayName count="one" draft="contributed">بىرازىلىيە يېڭى كرۇزېروسى
+					(1990–1993)</displayName>
+				<displayName count="other" draft="contributed">بىرازىلىيە يېڭى
+					كرۇزېروسى (1990–1993)</displayName>
 			</currency>
 			<currency type="BRL">
 				<displayName draft="contributed">بىرازىلىيە رىيالى</displayName>
@@ -3293,18 +3474,24 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="BRN">
 				<displayName draft="contributed">بىرازىلىيە يېڭى كرۇزادوسى (1989–1990)</displayName>
-				<displayName count="one" draft="contributed">بىرازىلىيە يېڭى كرۇزادوسى (1989–1990)</displayName>
-				<displayName count="other" draft="contributed">بىرازىلىيە يېڭى كرۇزادوسى (1989–1990)</displayName>
+				<displayName count="one" draft="contributed">بىرازىلىيە يېڭى كرۇزادوسى
+					(1989–1990)</displayName>
+				<displayName count="other" draft="contributed">بىرازىلىيە يېڭى
+					كرۇزادوسى (1989–1990)</displayName>
 			</currency>
 			<currency type="BRR">
 				<displayName draft="contributed">بىرازىلىيە كرۇزېروسى (1993–1994)</displayName>
-				<displayName count="one" draft="contributed">بىرازىلىيە كرۇزېروسى (1993–1994)</displayName>
-				<displayName count="other" draft="contributed">بىرازىلىيە كرۇزېروسى (1993–1994)</displayName>
+				<displayName count="one" draft="contributed">بىرازىلىيە كرۇزېروسى
+					(1993–1994)</displayName>
+				<displayName count="other" draft="contributed">بىرازىلىيە كرۇزېروسى
+					(1993–1994)</displayName>
 			</currency>
 			<currency type="BRZ">
 				<displayName draft="contributed">بىرازىلىيە كرۇزېروسى (1942–1967)</displayName>
-				<displayName count="one" draft="contributed">بىرازىلىيە كرۇزېروسى (1942–1967)</displayName>
-				<displayName count="other" draft="contributed">بىرازىلىيە كرۇزېروسى (1942–1967)</displayName>
+				<displayName count="one" draft="contributed">بىرازىلىيە كرۇزېروسى
+					(1942–1967)</displayName>
+				<displayName count="other" draft="contributed">بىرازىلىيە كرۇزېروسى
+					(1942–1967)</displayName>
 			</currency>
 			<currency type="BSD">
 				<displayName draft="contributed">باھاما دوللىرى</displayName>
@@ -3328,8 +3515,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="BYB">
 				<displayName draft="contributed">بېلارۇسىيە يېڭى رۇبلىسى (1994–1999)</displayName>
-				<displayName count="one" draft="contributed">بېلارۇسىيە يېڭى رۇبلىسى (1994–1999)</displayName>
-				<displayName count="other" draft="contributed">بېلارۇسىيە يېڭى رۇبلىسى (1994–1999)</displayName>
+				<displayName count="one" draft="contributed">بېلارۇسىيە يېڭى رۇبلىسى
+					(1994–1999)</displayName>
+				<displayName count="other" draft="contributed">بېلارۇسىيە يېڭى رۇبلىسى
+					(1994–1999)</displayName>
 			</currency>
 			<currency type="BYR">
 				<displayName draft="contributed">بېلارۇسىيە رۇبلىسى</displayName>
@@ -3374,7 +3563,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<currency type="CLF">
 				<displayName draft="contributed">چىلى ھېسابات بىرلىكى (UF)</displayName>
 				<displayName count="one" draft="contributed">چىلى ھېسابات بىرلىكى (UF)</displayName>
-				<displayName count="other" draft="contributed">چىلى ھېسابات بىرلىكى (UF)</displayName>
+				<displayName count="other" draft="contributed">چىلى ھېسابات بىرلىكى
+					(UF)</displayName>
 			</currency>
 			<currency type="CLP">
 				<displayName draft="contributed">چىلى پېسوسى</displayName>
@@ -3383,8 +3573,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="CNX">
 				<displayName draft="contributed">جۇڭگو خەلق بانكىسى دوللىرى</displayName>
-				<displayName count="one" draft="contributed">جۇڭگو خەلق بانكىسى دوللىرى</displayName>
-				<displayName count="other" draft="contributed">جۇڭگو خەلق بانكىسى دوللىرى</displayName>
+				<displayName count="one" draft="contributed">جۇڭگو خەلق بانكىسى
+					دوللىرى</displayName>
+				<displayName count="other" draft="contributed">جۇڭگو خەلق بانكىسى
+					دوللىرى</displayName>
 			</currency>
 			<currency type="CNY">
 				<displayName draft="contributed">جۇڭگو يۈەنى</displayName>
@@ -3399,8 +3591,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="COU">
 				<displayName draft="contributed">كولومبىيە ھەقىقىي قىممەت بىرلىكى</displayName>
-				<displayName count="one" draft="contributed">كولومبىيە ھەقىقىي قىممەت بىرلىكى</displayName>
-				<displayName count="other" draft="contributed">كولومبىيە ھەقىقىي قىممەت بىرلىكى</displayName>
+				<displayName count="one" draft="contributed">كولومبىيە ھەقىقىي قىممەت
+					بىرلىكى</displayName>
+				<displayName count="other" draft="contributed">كولومبىيە ھەقىقىي
+					قىممەت بىرلىكى</displayName>
 			</currency>
 			<currency type="CRC">
 				<displayName draft="contributed">كوستارىكا كولونى</displayName>
@@ -3409,18 +3603,24 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="CSD">
 				<displayName draft="contributed">سېربىيە دىنارى (2002–2006)</displayName>
-				<displayName count="one" draft="contributed">سېربىيە دىنارى (2002–2006)</displayName>
-				<displayName count="other" draft="contributed">سېربىيە دىنارى (2002–2006)</displayName>
+				<displayName count="one" draft="contributed">سېربىيە دىنارى
+					(2002–2006)</displayName>
+				<displayName count="other" draft="contributed">سېربىيە دىنارى
+					(2002–2006)</displayName>
 			</currency>
 			<currency type="CSK">
 				<displayName draft="contributed">چېخسىلوۋاكىيە قاتتىق كورۇناسى</displayName>
-				<displayName count="one" draft="contributed">چېخسىلوۋاكىيە قاتتىق كورۇناسى</displayName>
-				<displayName count="other" draft="contributed">چېخسىلوۋاكىيە قاتتىق كورۇناسى</displayName>
+				<displayName count="one" draft="contributed">چېخسىلوۋاكىيە قاتتىق
+					كورۇناسى</displayName>
+				<displayName count="other" draft="contributed">چېخسىلوۋاكىيە قاتتىق
+					كورۇناسى</displayName>
 			</currency>
 			<currency type="CUC">
 				<displayName draft="contributed">كۇبا ئالماشتۇرۇشچان پېسوسى</displayName>
-				<displayName count="one" draft="contributed">كۇبا ئالماشتۇرۇشچان پېسوسى</displayName>
-				<displayName count="other" draft="contributed">كۇبا ئالماشتۇرۇشچان پېسوسى</displayName>
+				<displayName count="one" draft="contributed">كۇبا ئالماشتۇرۇشچان
+					پېسوسى</displayName>
+				<displayName count="other" draft="contributed">كۇبا ئالماشتۇرۇشچان
+					پېسوسى</displayName>
 			</currency>
 			<currency type="CUP">
 				<displayName draft="contributed">كۇبا پېسوسى</displayName>
@@ -3440,7 +3640,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<currency type="CZK">
 				<displayName draft="contributed">چېخ جۇمھۇرىيىتى كورۇناسى</displayName>
 				<displayName count="one" draft="contributed">چېخ جۇمھۇرىيىتى كورۇناسى</displayName>
-				<displayName count="other" draft="contributed">چېخ جۇمھۇرىيىتى كورۇناسى</displayName>
+				<displayName count="other" draft="contributed">چېخ جۇمھۇرىيىتى
+					كورۇناسى</displayName>
 			</currency>
 			<currency type="DDM">
 				<displayName draft="contributed">شەرقىي گېرمانىيە ماركى</displayName>
@@ -3479,8 +3680,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="ECV">
 				<displayName draft="contributed">ئېكۋادور تۇراقلىق قىممەت بىرلىكى</displayName>
-				<displayName count="one" draft="contributed">ئېكۋادور تۇراقلىق قىممەت بىرلىكى</displayName>
-				<displayName count="other" draft="contributed">ئېكۋادور تۇراقلىق قىممەت بىرلىكى</displayName>
+				<displayName count="one" draft="contributed">ئېكۋادور تۇراقلىق قىممەت
+					بىرلىكى</displayName>
+				<displayName count="other" draft="contributed">ئېكۋادور تۇراقلىق
+					قىممەت بىرلىكى</displayName>
 			</currency>
 			<currency type="EEK">
 				<displayName draft="contributed">ئېستونىيە كرۇنى</displayName>
@@ -3499,13 +3702,18 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="ESA">
 				<displayName draft="contributed">ئىسپانىيە پېسېتاسى (A ھېسابات)</displayName>
-				<displayName count="one" draft="contributed">ئىسپانىيە پېسېتاسى (A ھېسابات)</displayName>
-				<displayName count="other" draft="contributed">ئىسپانىيە پېسېتاسى (A ھېسابات)</displayName>
+				<displayName count="one" draft="contributed">ئىسپانىيە پېسېتاسى (A
+					ھېسابات)</displayName>
+				<displayName count="other" draft="contributed">ئىسپانىيە پېسېتاسى (A
+					ھېسابات)</displayName>
 			</currency>
 			<currency type="ESB">
-				<displayName draft="contributed">ئىسپانىيە پېسېتاسى (ئالماشتۇرۇش ھېساباتى)</displayName>
-				<displayName count="one" draft="contributed">ئىسپانىيە پېسېتاسى (ئالماشتۇرۇش ھېساباتى)</displayName>
-				<displayName count="other" draft="contributed">ئىسپانىيە پېسېتاسى (ئالماشتۇرۇش ھېساباتى)</displayName>
+				<displayName draft="contributed">ئىسپانىيە پېسېتاسى (ئالماشتۇرۇش
+					ھېساباتى)</displayName>
+				<displayName count="one" draft="contributed">ئىسپانىيە پېسېتاسى
+					(ئالماشتۇرۇش ھېساباتى)</displayName>
+				<displayName count="other" draft="contributed">ئىسپانىيە پېسېتاسى
+					(ئالماشتۇرۇش ھېساباتى)</displayName>
 			</currency>
 			<currency type="ESP">
 				<displayName draft="contributed">ئىسپانىيە پېسېتاسى</displayName>
@@ -3534,8 +3742,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="FKP">
 				<displayName draft="contributed">فالكلاند ئاراللىرى فوند سىتېرلىڭى</displayName>
-				<displayName count="one" draft="contributed">فالكلاند ئاراللىرى فوند سىتېرلىڭى</displayName>
-				<displayName count="other" draft="contributed">فالكلاند ئاراللىرى فوند سىتېرلىڭى</displayName>
+				<displayName count="one" draft="contributed">فالكلاند ئاراللىرى فوند
+					سىتېرلىڭى</displayName>
+				<displayName count="other" draft="contributed">فالكلاند ئاراللىرى فوند
+					سىتېرلىڭى</displayName>
 			</currency>
 			<currency type="FRF">
 				<displayName draft="contributed">فىرانسىيە فرانكى</displayName>
@@ -3570,7 +3780,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<currency type="GIP">
 				<displayName draft="contributed">جەبىلتارىق فوند سىتېرلىڭى</displayName>
 				<displayName count="one" draft="contributed">جەبىلتارىق فوند سىتېرلىڭى</displayName>
-				<displayName count="other" draft="contributed">جەبىلتارىق فوند سىتېرلىڭى</displayName>
+				<displayName count="other" draft="contributed">جەبىلتارىق فوند
+					سىتېرلىڭى</displayName>
 			</currency>
 			<currency type="GMD">
 				<displayName draft="contributed">گامبىيە دالاسى</displayName>
@@ -3589,8 +3800,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="GQE">
 				<displayName draft="contributed">ئېكۋاتور گىۋىنېيە ئېكۋېلېسى</displayName>
-				<displayName count="one" draft="contributed">ئېكۋاتور گىۋىنېيە ئېكۋېلېسى</displayName>
-				<displayName count="other" draft="contributed">ئېكۋاتور گىۋىنېيە ئېكۋېلېسى</displayName>
+				<displayName count="one" draft="contributed">ئېكۋاتور گىۋىنېيە
+					ئېكۋېلېسى</displayName>
+				<displayName count="other" draft="contributed">ئېكۋاتور گىۋىنېيە
+					ئېكۋېلېسى</displayName>
 			</currency>
 			<currency type="GRD">
 				<displayName draft="contributed">گىرېتسىيە دراخماسى</displayName>
@@ -3604,8 +3817,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="GWE">
 				<displayName draft="contributed">پورتۇگالىيە گىۋىنېيە ئېسكۇدوسى</displayName>
-				<displayName count="one" draft="contributed">پورتۇگالىيە گىۋىنېيە ئېسكۇدوسى</displayName>
-				<displayName count="other" draft="contributed">پورتۇگالىيە گىۋىنېيە ئېسكۇدوسى</displayName>
+				<displayName count="one" draft="contributed">پورتۇگالىيە گىۋىنېيە
+					ئېسكۇدوسى</displayName>
+				<displayName count="other" draft="contributed">پورتۇگالىيە گىۋىنېيە
+					ئېسكۇدوسى</displayName>
 			</currency>
 			<currency type="GWP">
 				<displayName draft="contributed">گىۋىنېيە-بىسسائۇ پېسوسى</displayName>
@@ -3655,17 +3870,21 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<currency type="IEP">
 				<displayName draft="contributed">ئىرېلاندىيە فوندستېرلىڭى</displayName>
 				<displayName count="one" draft="contributed">ئىرېلاندىيە فوندستېرلىڭى</displayName>
-				<displayName count="other" draft="contributed">ئىرېلاندىيە فوندستېرلىڭى</displayName>
+				<displayName count="other" draft="contributed">ئىرېلاندىيە
+					فوندستېرلىڭى</displayName>
 			</currency>
 			<currency type="ILP">
 				<displayName draft="contributed">ئىسرائىلىيە فوندستېرلىڭى</displayName>
 				<displayName count="one" draft="contributed">ئىسرائىلىيە فوندستېرلىڭى</displayName>
-				<displayName count="other" draft="contributed">ئىسرائىلىيە فوندستېرلىڭى</displayName>
+				<displayName count="other" draft="contributed">ئىسرائىلىيە
+					فوندستېرلىڭى</displayName>
 			</currency>
 			<currency type="ILR">
 				<displayName draft="contributed">ئىسرائىل شېكېلى (1980–1985)</displayName>
-				<displayName count="one" draft="contributed">ئىسرائىل شېكېلى (1980–1985)</displayName>
-				<displayName count="other" draft="contributed">ئىسرائىل شېكېلى (1980–1985)</displayName>
+				<displayName count="one" draft="contributed">ئىسرائىل شېكېلى
+					(1980–1985)</displayName>
+				<displayName count="other" draft="contributed">ئىسرائىل شېكېلى
+					(1980–1985)</displayName>
 			</currency>
 			<currency type="ILS">
 				<displayName draft="contributed">ئىسرائىل يېڭى شېكېلى</displayName>
@@ -3689,8 +3908,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="ISJ">
 				<displayName draft="contributed">ئىسلاندىيە كروناسى (1918–1981)</displayName>
-				<displayName count="one" draft="contributed">ئىسلاندىيە كروناسى (1918–1981)</displayName>
-				<displayName count="other" draft="contributed">ئىسلاندىيە كروناسى (1918–1981)</displayName>
+				<displayName count="one" draft="contributed">ئىسلاندىيە كروناسى
+					(1918–1981)</displayName>
+				<displayName count="other" draft="contributed">ئىسلاندىيە كروناسى
+					(1918–1981)</displayName>
 			</currency>
 			<currency type="ISK">
 				<displayName draft="contributed">ئىسلاندىيە كروناسى</displayName>
@@ -3744,13 +3965,17 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="KRH">
 				<displayName draft="contributed">جەنۇبىي كورېيە خۋانى (1953–1962)</displayName>
-				<displayName count="one" draft="contributed">جەنۇبىي كورېيە خۋانى (1953–1962)</displayName>
-				<displayName count="other" draft="contributed">جەنۇبىي كورېيە خۋانى (1953–1962)</displayName>
+				<displayName count="one" draft="contributed">جەنۇبىي كورېيە خۋانى
+					(1953–1962)</displayName>
+				<displayName count="other" draft="contributed">جەنۇبىي كورېيە خۋانى
+					(1953–1962)</displayName>
 			</currency>
 			<currency type="KRO">
 				<displayName draft="contributed">جەنۇبىي كورېيە ۋونى (1945–1953)</displayName>
-				<displayName count="one" draft="contributed">جەنۇبىي كورېيە ۋونى (1945–1953)</displayName>
-				<displayName count="other" draft="contributed">جەنۇبىي كورېيە ۋونى (1945–1953)</displayName>
+				<displayName count="one" draft="contributed">جەنۇبىي كورېيە ۋونى
+					(1945–1953)</displayName>
+				<displayName count="other" draft="contributed">جەنۇبىي كورېيە ۋونى
+					(1945–1953)</displayName>
 			</currency>
 			<currency type="KRW">
 				<displayName draft="contributed">جەنۇبىي كورېيە ۋونى</displayName>
@@ -3765,7 +3990,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<currency type="KYD">
 				<displayName draft="contributed">كايمان ئاراللىرى دوللىرى</displayName>
 				<displayName count="one" draft="contributed">كايمان ئاراللىرى دوللىرى</displayName>
-				<displayName count="other" draft="contributed">كايمان ئاراللىرى دوللىرى</displayName>
+				<displayName count="other" draft="contributed">كايمان ئاراللىرى
+					دوللىرى</displayName>
 			</currency>
 			<currency type="KZT">
 				<displayName draft="contributed">قازاقىستان تەڭگىسى</displayName>
@@ -3809,8 +4035,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="LUC">
 				<displayName draft="contributed">ليۇكسېمبۇرگ ئالماشتۇرۇشچان پېسوسى</displayName>
-				<displayName count="one" draft="contributed">ليۇكسېمبۇرگ ئالماشتۇرۇشچان پېسوسى</displayName>
-				<displayName count="other" draft="contributed">ليۇكسېمبۇرگ ئالماشتۇرۇشچان پېسوسى</displayName>
+				<displayName count="one" draft="contributed">ليۇكسېمبۇرگ
+					ئالماشتۇرۇشچان پېسوسى</displayName>
+				<displayName count="other" draft="contributed">ليۇكسېمبۇرگ
+					ئالماشتۇرۇشچان پېسوسى</displayName>
 			</currency>
 			<currency type="LUF">
 				<displayName draft="contributed">ليۇكسېمبۇرگ فرانكى</displayName>
@@ -3819,8 +4047,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="LUL">
 				<displayName draft="contributed">لىيۇكسېمبۇرگ پۇل-مۇئامىلە فرانكى</displayName>
-				<displayName count="one" draft="contributed">لىيۇكسېمبۇرگ پۇل-مۇئامىلە فرانكى</displayName>
-				<displayName count="other" draft="contributed">لىيۇكسېمبۇرگ پۇل-مۇئامىلە فرانكى</displayName>
+				<displayName count="one" draft="contributed">لىيۇكسېمبۇرگ پۇل-مۇئامىلە
+					فرانكى</displayName>
+				<displayName count="other" draft="contributed">لىيۇكسېمبۇرگ
+					پۇل-مۇئامىلە فرانكى</displayName>
 			</currency>
 			<currency type="LVL">
 				<displayName draft="contributed">لاتۋىيە لاتى</displayName>
@@ -3879,8 +4109,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="MKN">
 				<displayName draft="contributed">ماكېدونىيە دىنارى (1992–1993)</displayName>
-				<displayName count="one" draft="contributed">ماكېدونىيە دىنارى (1992–1993)</displayName>
-				<displayName count="other" draft="contributed">ماكېدونىيە دىنارى (1992–1993)</displayName>
+				<displayName count="one" draft="contributed">ماكېدونىيە دىنارى
+					(1992–1993)</displayName>
+				<displayName count="other" draft="contributed">ماكېدونىيە دىنارى
+					(1992–1993)</displayName>
 			</currency>
 			<currency type="MLF">
 				<displayName draft="contributed">مالى فرانكى</displayName>
@@ -3944,8 +4176,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="MXP">
 				<displayName draft="contributed">مېكسىكا كۈمۈش پېسوسى (1861–1992)</displayName>
-				<displayName count="one" draft="contributed">مېكسىكا كۈمۈش پېسوسى (1861–1992)</displayName>
-				<displayName count="other" draft="contributed">مېكسىكا كۈمۈش پېسوسى (1861–1992)</displayName>
+				<displayName count="one" draft="contributed">مېكسىكا كۈمۈش پېسوسى
+					(1861–1992)</displayName>
+				<displayName count="other" draft="contributed">مېكسىكا كۈمۈش پېسوسى
+					(1861–1992)</displayName>
 			</currency>
 			<currency type="MXV">
 				<displayName draft="contributed">مېكسىكا مەبلەغ بىرلىكى</displayName>
@@ -3964,8 +4198,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="MZM">
 				<displayName draft="contributed">موزامبىك مېتىكالى (1980–2006)</displayName>
-				<displayName count="one" draft="contributed">موزامبىك مېتىكالى (1980–2006)</displayName>
-				<displayName count="other" draft="contributed">موزامبىك مېتىكالى (1980–2006)</displayName>
+				<displayName count="one" draft="contributed">موزامبىك مېتىكالى
+					(1980–2006)</displayName>
+				<displayName count="other" draft="contributed">موزامبىك مېتىكالى
+					(1980–2006)</displayName>
 			</currency>
 			<currency type="MZN">
 				<displayName draft="contributed">موزامبىك مېتىكالى</displayName>
@@ -3984,8 +4220,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="NIC">
 				<displayName draft="contributed">نىگېرىيە كوردوباسى (1988–1991)</displayName>
-				<displayName count="one" draft="contributed">نىگېرىيە كوردوباسى (1988–1991)</displayName>
-				<displayName count="other" draft="contributed">نىگېرىيە كوردوباسى (1988–1991)</displayName>
+				<displayName count="one" draft="contributed">نىگېرىيە كوردوباسى
+					(1988–1991)</displayName>
+				<displayName count="other" draft="contributed">نىگېرىيە كوردوباسى
+					(1988–1991)</displayName>
 			</currency>
 			<currency type="NIO">
 				<displayName draft="contributed">نىگېرىيە كوردوباسى</displayName>
@@ -4039,8 +4277,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="PGK">
 				<displayName draft="contributed">پاپۇئا يېڭى گىۋىنېيە كىناسى</displayName>
-				<displayName count="one" draft="contributed">پاپۇئا يېڭى گىۋىنېيە كىناسى</displayName>
-				<displayName count="other" draft="contributed">پاپۇئا يېڭى گىۋىنېيە كىناسى</displayName>
+				<displayName count="one" draft="contributed">پاپۇئا يېڭى گىۋىنېيە
+					كىناسى</displayName>
+				<displayName count="other" draft="contributed">پاپۇئا يېڭى گىۋىنېيە
+					كىناسى</displayName>
 			</currency>
 			<currency type="PHP">
 				<displayName draft="contributed">فىلىپپىن پېسوسى</displayName>
@@ -4060,7 +4300,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<currency type="PLZ">
 				<displayName draft="contributed">پولشا زىلوتى (1950–1995)</displayName>
 				<displayName count="one" draft="contributed">پولشا زىلوتى (1950–1995)</displayName>
-				<displayName count="other" draft="contributed">پولشا زىلوتى (1950–1995)</displayName>
+				<displayName count="other" draft="contributed">پولشا زىلوتى
+					(1950–1995)</displayName>
 			</currency>
 			<currency type="PTE">
 				<displayName draft="contributed">پورتۇگالىيە ئېسكۇدوسى</displayName>
@@ -4085,7 +4326,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<currency type="ROL">
 				<displayName draft="contributed">رۇمىنىيە لېيى (1952–2006)</displayName>
 				<displayName count="one" draft="contributed">رۇمىنىيە لېيى (1952–2006)</displayName>
-				<displayName count="other" draft="contributed">رۇمىنىيە لېيى (1952–2006)</displayName>
+				<displayName count="other" draft="contributed">رۇمىنىيە لېيى
+					(1952–2006)</displayName>
 			</currency>
 			<currency type="RON">
 				<displayName draft="contributed">رۇمىنىيە لېيى</displayName>
@@ -4104,8 +4346,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="RUR">
 				<displayName draft="contributed">رۇسىيە رۇبلىسى (1991–1998)</displayName>
-				<displayName count="one" draft="contributed">رۇسىيە رۇبلىسى (1991–1998)</displayName>
-				<displayName count="other" draft="contributed">رۇسىيە رۇبلىسى (1991–1998)</displayName>
+				<displayName count="one" draft="contributed">رۇسىيە رۇبلىسى
+					(1991–1998)</displayName>
+				<displayName count="other" draft="contributed">رۇسىيە رۇبلىسى
+					(1991–1998)</displayName>
 			</currency>
 			<currency type="RWF">
 				<displayName draft="contributed">رۋاندا فرانكى</displayName>
@@ -4120,7 +4364,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<currency type="SBD">
 				<displayName draft="contributed">سولومون ئاراللىرى دوللىرى</displayName>
 				<displayName count="one" draft="contributed">سولومون ئاراللىرى دوللىرى</displayName>
-				<displayName count="other" draft="contributed">سولومون ئاراللىرى دوللىرى</displayName>
+				<displayName count="other" draft="contributed">سولومون ئاراللىرى
+					دوللىرى</displayName>
 			</currency>
 			<currency type="SCR">
 				<displayName draft="contributed">سېيشېل رۇپىسى</displayName>
@@ -4130,7 +4375,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<currency type="SDD">
 				<displayName draft="contributed">سۇدان دىنارى (1992–2007)</displayName>
 				<displayName count="one" draft="contributed">سۇدان دىنارى (1992–2007)</displayName>
-				<displayName count="other" draft="contributed">سۇدان دىنارى (1992–2007)</displayName>
+				<displayName count="other" draft="contributed">سۇدان دىنارى
+					(1992–2007)</displayName>
 			</currency>
 			<currency type="SDG">
 				<displayName draft="contributed">سۇدان فوندستېرلىڭى</displayName>
@@ -4139,8 +4385,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="SDP">
 				<displayName draft="contributed">سۇدان فوندستېرلىڭى (1957–1998)</displayName>
-				<displayName count="one" draft="contributed">سۇدان فوندستېرلىڭى (1957–1998)</displayName>
-				<displayName count="other" draft="contributed">سۇدان فوندستېرلىڭى (1957–1998)</displayName>
+				<displayName count="one" draft="contributed">سۇدان فوندستېرلىڭى
+					(1957–1998)</displayName>
+				<displayName count="other" draft="contributed">سۇدان فوندستېرلىڭى
+					(1957–1998)</displayName>
 			</currency>
 			<currency type="SEK">
 				<displayName draft="contributed">شىۋېتسىيە كروناسى</displayName>
@@ -4154,8 +4402,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="SHP">
 				<displayName draft="contributed">ساينىت-ھېلېنا فوندستېرلىڭى</displayName>
-				<displayName count="one" draft="contributed">ساينىت-ھېلېنا فوندستېرلىڭى</displayName>
-				<displayName count="other" draft="contributed">ساينىت-ھېلېنا فوندستېرلىڭى</displayName>
+				<displayName count="one" draft="contributed">ساينىت-ھېلېنا
+					فوندستېرلىڭى</displayName>
+				<displayName count="other" draft="contributed">ساينىت-ھېلېنا
+					فوندستېرلىڭى</displayName>
 			</currency>
 			<currency type="SIT">
 				<displayName draft="contributed">سىلوۋېنىيە تولارى</displayName>
@@ -4189,13 +4439,17 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="SSP">
 				<displayName draft="contributed">جەنۇبىي سۇدان فوندستېرلىڭى</displayName>
-				<displayName count="one" draft="contributed">جەنۇبىي سۇدان فوندستېرلىڭى</displayName>
-				<displayName count="other" draft="contributed">جەنۇبىي سۇدان فوندستېرلىڭى</displayName>
+				<displayName count="one" draft="contributed">جەنۇبىي سۇدان
+					فوندستېرلىڭى</displayName>
+				<displayName count="other" draft="contributed">جەنۇبىي سۇدان
+					فوندستېرلىڭى</displayName>
 			</currency>
 			<currency type="STD">
 				<displayName draft="contributed">سان-تومې ۋە پىرىنسىپى دوبراسى</displayName>
-				<displayName count="one" draft="contributed">سان-تومې ۋە پىرىنسىپى دوبراسى</displayName>
-				<displayName count="other" draft="contributed">سان-تومې ۋە پىرىنسىپى دوبراسى</displayName>
+				<displayName count="one" draft="contributed">سان-تومې ۋە پىرىنسىپى
+					دوبراسى</displayName>
+				<displayName count="other" draft="contributed">سان-تومې ۋە پىرىنسىپى
+					دوبراسى</displayName>
 			</currency>
 			<currency type="SUR">
 				<displayName draft="contributed">سوۋىت رۇبلىسى</displayName>
@@ -4234,8 +4488,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="TMM">
 				<displayName draft="contributed">تۈركمەنىستان ماناتى (1993–2009)</displayName>
-				<displayName count="one" draft="contributed">تۈركمەنىستان ماناتى (1993–2009)</displayName>
-				<displayName count="other" draft="contributed">تۈركمەنىستان ماناتى (1993–2009)</displayName>
+				<displayName count="one" draft="contributed">تۈركمەنىستان ماناتى
+					(1993–2009)</displayName>
+				<displayName count="other" draft="contributed">تۈركمەنىستان ماناتى
+					(1993–2009)</displayName>
 			</currency>
 			<currency type="TMT">
 				<displayName draft="contributed">تۈركمەنىستان ماناتى</displayName>
@@ -4259,8 +4515,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="TRL">
 				<displayName draft="contributed">تۈركىيە لىراسى (1922–2005)</displayName>
-				<displayName count="one" draft="contributed">تۈركىيە لىراسى (1922–2005)</displayName>
-				<displayName count="other" draft="contributed">تۈركىيە لىراسى (1922–2005)</displayName>
+				<displayName count="one" draft="contributed">تۈركىيە لىراسى
+					(1922–2005)</displayName>
+				<displayName count="other" draft="contributed">تۈركىيە لىراسى
+					(1922–2005)</displayName>
 			</currency>
 			<currency type="TRY">
 				<displayName draft="contributed">تۈركىيە لىراسى</displayName>
@@ -4269,8 +4527,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="TTD">
 				<displayName draft="contributed">تىرىنىداد ۋە توباگو دوللىرى</displayName>
-				<displayName count="one" draft="contributed">تىرىنىداد ۋە توباگو دوللىرى</displayName>
-				<displayName count="other" draft="contributed">تىرىنىداد ۋە توباگو دوللىرى</displayName>
+				<displayName count="one" draft="contributed">تىرىنىداد ۋە توباگو
+					دوللىرى</displayName>
+				<displayName count="other" draft="contributed">تىرىنىداد ۋە توباگو
+					دوللىرى</displayName>
 			</currency>
 			<currency type="TWD">
 				<displayName draft="contributed">يېڭى تەيۋەن دوللىرى</displayName>
@@ -4294,8 +4554,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="UGS">
 				<displayName draft="contributed">ئۇگاندا شىللىڭى (1966–1987)</displayName>
-				<displayName count="one" draft="contributed">ئۇگاندا شىللىڭى (1966–1987)</displayName>
-				<displayName count="other" draft="contributed">ئۇگاندا شىللىڭى (1966–1987)</displayName>
+				<displayName count="one" draft="contributed">ئۇگاندا شىللىڭى
+					(1966–1987)</displayName>
+				<displayName count="other" draft="contributed">ئۇگاندا شىللىڭى
+					(1966–1987)</displayName>
 			</currency>
 			<currency type="UGX">
 				<displayName draft="contributed">ئۇگاندا شىللىڭى</displayName>
@@ -4310,23 +4572,31 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="USN">
 				<displayName draft="contributed">ئامېرىكا دوللىرى (كېيىنكى كۈن)</displayName>
-				<displayName count="one" draft="contributed">ئامېرىكا دوللىرى (كېيىنكى كۈن)</displayName>
-				<displayName count="other" draft="contributed">ئامېرىكا دوللىرى (كېيىنكى كۈن)</displayName>
+				<displayName count="one" draft="contributed">ئامېرىكا دوللىرى (كېيىنكى
+					كۈن)</displayName>
+				<displayName count="other" draft="contributed">ئامېرىكا دوللىرى
+					(كېيىنكى كۈن)</displayName>
 			</currency>
 			<currency type="USS">
 				<displayName draft="contributed">ئامېرىكا دوللىرى (ئوخشاش كۈن)</displayName>
-				<displayName count="one" draft="contributed">ئامېرىكا دوللىرى (ئوخشاش كۈن)</displayName>
-				<displayName count="other" draft="contributed">ئامېرىكا دوللىرى (ئوخشاش كۈن)</displayName>
+				<displayName count="one" draft="contributed">ئامېرىكا دوللىرى (ئوخشاش
+					كۈن)</displayName>
+				<displayName count="other" draft="contributed">ئامېرىكا دوللىرى
+					(ئوخشاش كۈن)</displayName>
 			</currency>
 			<currency type="UYI">
 				<displayName draft="contributed">ئۇرۇگۋاي پېسوسى (ئىندېكىسلاش بىرلىكى)</displayName>
-				<displayName count="one" draft="contributed">ئۇرۇگۋاي پېسوسى (ئىندېكىسلاش بىرلىكى)</displayName>
-				<displayName count="other" draft="contributed">ئۇرۇگۋاي پېسوسى (ئىندېكىسلاش بىرلىكى)</displayName>
+				<displayName count="one" draft="contributed">ئۇرۇگۋاي پېسوسى
+					(ئىندېكىسلاش بىرلىكى)</displayName>
+				<displayName count="other" draft="contributed">ئۇرۇگۋاي پېسوسى
+					(ئىندېكىسلاش بىرلىكى)</displayName>
 			</currency>
 			<currency type="UYP">
 				<displayName draft="contributed">ئۇرۇگۋاي پېسوسى (1975–1993)</displayName>
-				<displayName count="one" draft="contributed">ئۇرۇگۋاي پېسوسى (1975–1993)</displayName>
-				<displayName count="other" draft="contributed">ئۇرۇگۋاي پېسوسى (1975–1993)</displayName>
+				<displayName count="one" draft="contributed">ئۇرۇگۋاي پېسوسى
+					(1975–1993)</displayName>
+				<displayName count="other" draft="contributed">ئۇرۇگۋاي پېسوسى
+					(1975–1993)</displayName>
 			</currency>
 			<currency type="UYU">
 				<displayName draft="contributed">ئۇرۇگۋاي پېسوسى</displayName>
@@ -4340,8 +4610,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="VEB">
 				<displayName draft="contributed">ۋېنېزۇئېلا بولىۋارى (1871–2008)</displayName>
-				<displayName count="one" draft="contributed">ۋېنېزۇئېلا بولىۋارى (1871–2008)</displayName>
-				<displayName count="other" draft="contributed">ۋېنېزۇئېلا بولىۋارى (1871–2008)</displayName>
+				<displayName count="one" draft="contributed">ۋېنېزۇئېلا بولىۋارى
+					(1871–2008)</displayName>
+				<displayName count="other" draft="contributed">ۋېنېزۇئېلا بولىۋارى
+					(1871–2008)</displayName>
 			</currency>
 			<currency type="VEF">
 				<displayName draft="contributed">ۋېنېزۇئېلا بولىۋارى</displayName>
@@ -4356,7 +4628,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<currency type="VNN">
 				<displayName draft="contributed">ۋىيېتنام دوڭى (1978–1985)</displayName>
 				<displayName count="one" draft="contributed">ۋىيېتنام دوڭى (1978–1985)</displayName>
-				<displayName count="other" draft="contributed">ۋىيېتنام دوڭى (1978–1985)</displayName>
+				<displayName count="other" draft="contributed">ۋىيېتنام دوڭى
+					(1978–1985)</displayName>
 			</currency>
 			<currency type="VUV">
 				<displayName draft="contributed">ۋانۇئاتۇ ۋاتۇسى</displayName>
@@ -4369,39 +4642,52 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 				<displayName count="other" draft="contributed">ساموئا تالاسى</displayName>
 			</currency>
 			<currency type="XAF">
-				<displayName draft="contributed">ئافرىقا قىتئەسى پۇل-مۇئامىلە ئىتتىپاقى فرانكى</displayName>
-				<displayName count="one" draft="contributed">ئافرىقا قىتئەسى پۇل-مۇئامىلە ئىتتىپاقى فرانكى</displayName>
-				<displayName count="other" draft="contributed">ئافرىقا قىتئەسى پۇل-مۇئامىلە ئىتتىپاقى فرانكى</displayName>
+				<displayName draft="contributed">ئافرىقا قىتئەسى پۇل-مۇئامىلە
+					ئىتتىپاقى فرانكى</displayName>
+				<displayName count="one" draft="contributed">ئافرىقا قىتئەسى
+					پۇل-مۇئامىلە ئىتتىپاقى فرانكى</displayName>
+				<displayName count="other" draft="contributed">ئافرىقا قىتئەسى
+					پۇل-مۇئامىلە ئىتتىپاقى فرانكى</displayName>
 			</currency>
 			<currency type="XAG">
 				<displayName draft="contributed">كۈمۈش</displayName>
-				<displayName count="one" draft="contributed">ئالتۇن ئۈنسىيە بىرلىكىدىكى كۈمۈش</displayName>
-				<displayName count="other" draft="contributed">ئالتۇن ئۈنسىيە بىرلىكىدىكى كۈمۈش</displayName>
+				<displayName count="one" draft="contributed">ئالتۇن ئۈنسىيە
+					بىرلىكىدىكى كۈمۈش</displayName>
+				<displayName count="other" draft="contributed">ئالتۇن ئۈنسىيە
+					بىرلىكىدىكى كۈمۈش</displayName>
 			</currency>
 			<currency type="XAU">
 				<displayName draft="contributed">ئالتۇن</displayName>
-				<displayName count="one" draft="contributed">ئالتۇن ئۈنسىيە بىرلىكىدىكى ئالتۇن</displayName>
-				<displayName count="other" draft="contributed">ئالتۇن ئۈنسىيە بىرلىكىدىكى ئالتۇن</displayName>
+				<displayName count="one" draft="contributed">ئالتۇن ئۈنسىيە
+					بىرلىكىدىكى ئالتۇن</displayName>
+				<displayName count="other" draft="contributed">ئالتۇن ئۈنسىيە
+					بىرلىكىدىكى ئالتۇن</displayName>
 			</currency>
 			<currency type="XBA">
 				<displayName draft="contributed">ياۋروپا مۇرەككەپ بىرلىكى</displayName>
 				<displayName count="one" draft="contributed">ياۋروپا مۇرەككەپ بىرلىكى</displayName>
-				<displayName count="other" draft="contributed">ياۋروپا مۇرەككەپ بىرلىكى</displayName>
+				<displayName count="other" draft="contributed">ياۋروپا مۇرەككەپ
+					بىرلىكى</displayName>
 			</currency>
 			<currency type="XBB">
 				<displayName draft="contributed">ياۋروپا پۇل بىرلىكى (XBB)</displayName>
 				<displayName count="one" draft="contributed">ياۋروپا پۇل بىرلىكى (XBB)</displayName>
-				<displayName count="other" draft="contributed">ياۋروپا پۇل بىرلىكى (XBB)</displayName>
+				<displayName count="other" draft="contributed">ياۋروپا پۇل بىرلىكى
+					(XBB)</displayName>
 			</currency>
 			<currency type="XBC">
 				<displayName draft="contributed">ياۋروپا ھېسابات بىرلىكى (XBC)</displayName>
-				<displayName count="one" draft="contributed">ياۋروپا ھېسابات بىرلىكى (XBC)</displayName>
-				<displayName count="other" draft="contributed">ياۋروپا ھېسابات بىرلىكى (XBC)</displayName>
+				<displayName count="one" draft="contributed">ياۋروپا ھېسابات بىرلىكى
+					(XBC)</displayName>
+				<displayName count="other" draft="contributed">ياۋروپا ھېسابات بىرلىكى
+					(XBC)</displayName>
 			</currency>
 			<currency type="XBD">
 				<displayName draft="contributed">ياۋروپا ھېسابات بىرلىكى (XBD)</displayName>
-				<displayName count="one" draft="contributed">ياۋروپا ھېسابات بىرلىكى (XBD)</displayName>
-				<displayName count="other" draft="contributed">ياۋروپا ھېسابات بىرلىكى (XBD)</displayName>
+				<displayName count="one" draft="contributed">ياۋروپا ھېسابات بىرلىكى
+					(XBD)</displayName>
+				<displayName count="other" draft="contributed">ياۋروپا ھېسابات بىرلىكى
+					(XBD)</displayName>
 			</currency>
 			<currency type="XCD">
 				<displayName draft="contributed">شەرقىي كارىب دوللىرى</displayName>
@@ -4411,7 +4697,8 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			<currency type="XDR">
 				<displayName draft="contributed">ئالاھىدە پۇل ئېلىش ھوقۇقى</displayName>
 				<displayName count="one" draft="contributed">ئالاھىدە پۇل ئېلىش ھوقۇقى</displayName>
-				<displayName count="other" draft="contributed">ئالاھىدە پۇل ئېلىش ھوقۇقى</displayName>
+				<displayName count="other" draft="contributed">ئالاھىدە پۇل ئېلىش
+					ھوقۇقى</displayName>
 			</currency>
 			<currency type="XEU">
 				<displayName draft="contributed">ياۋروپا پۇل بىرلىكى</displayName>
@@ -4429,24 +4716,34 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 				<displayName count="other" draft="contributed">فىرانسىيە UIC فرانكى</displayName>
 			</currency>
 			<currency type="XOF">
-				<displayName draft="contributed">ئافرىقا قىتئەسى پۇل-مۇئامىلە ئىتتىپاقى فرانكى (BCEAO)</displayName>
-				<displayName count="one" draft="contributed">ئافرىقا قىتئەسى پۇل-مۇئامىلە ئىتتىپاقى فرانكى (BCEAO)</displayName>
-				<displayName count="other" draft="contributed">ئافرىقا قىتئەسى پۇل-مۇئامىلە ئىتتىپاقى فرانكى (BCEAO)</displayName>
+				<displayName draft="contributed">ئافرىقا قىتئەسى پۇل-مۇئامىلە
+					ئىتتىپاقى فرانكى (BCEAO)</displayName>
+				<displayName count="one" draft="contributed">ئافرىقا قىتئەسى
+					پۇل-مۇئامىلە ئىتتىپاقى فرانكى (BCEAO)</displayName>
+				<displayName count="other" draft="contributed">ئافرىقا قىتئەسى
+					پۇل-مۇئامىلە ئىتتىپاقى فرانكى (BCEAO)</displayName>
 			</currency>
 			<currency type="XPD">
 				<displayName draft="contributed">پاللادىي</displayName>
-				<displayName count="one" draft="contributed">ئالتۇن ئۈنسىيە بىرلىكىدىكى پاللادىي</displayName>
-				<displayName count="other" draft="contributed">ئالتۇن ئۈنسىيە بىرلىكىدىكى پاللادىي</displayName>
+				<displayName count="one" draft="contributed">ئالتۇن ئۈنسىيە
+					بىرلىكىدىكى پاللادىي</displayName>
+				<displayName count="other" draft="contributed">ئالتۇن ئۈنسىيە
+					بىرلىكىدىكى پاللادىي</displayName>
 			</currency>
 			<currency type="XPF">
-				<displayName draft="contributed">تىنچ ئوكيان پۇل-مۇئامىلە ئورتاق گەۋدىسى فرانكى</displayName>
-				<displayName count="one" draft="contributed">تىنچ ئوكيان پۇل-مۇئامىلە ئورتاق گەۋدىسى فرانكى</displayName>
-				<displayName count="other" draft="contributed">تىنچ ئوكيان پۇل-مۇئامىلە ئورتاق گەۋدىسى فرانكى</displayName>
+				<displayName draft="contributed">تىنچ ئوكيان پۇل-مۇئامىلە ئورتاق
+					گەۋدىسى فرانكى</displayName>
+				<displayName count="one" draft="contributed">تىنچ ئوكيان پۇل-مۇئامىلە
+					ئورتاق گەۋدىسى فرانكى</displayName>
+				<displayName count="other" draft="contributed">تىنچ ئوكيان
+					پۇل-مۇئامىلە ئورتاق گەۋدىسى فرانكى</displayName>
 			</currency>
 			<currency type="XPT">
 				<displayName draft="contributed">پىلاتىنا</displayName>
-				<displayName count="one" draft="contributed">ئالتۇن ئۈنسىيە بىرلىكىدىكى پىلاتىنا</displayName>
-				<displayName count="other" draft="contributed">ئالتۇن ئۈنسىيە بىرلىكىدىكى پىلاتىنا</displayName>
+				<displayName count="one" draft="contributed">ئالتۇن ئۈنسىيە
+					بىرلىكىدىكى پىلاتىنا</displayName>
+				<displayName count="other" draft="contributed">ئالتۇن ئۈنسىيە
+					بىرلىكىدىكى پىلاتىنا</displayName>
 			</currency>
 			<currency type="XRE">
 				<displayName draft="contributed">RINET فوندى</displayName>
@@ -4464,9 +4761,12 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 				<displayName count="other" draft="contributed">پۇل سىناش بىرلىكى</displayName>
 			</currency>
 			<currency type="XUA">
-				<displayName draft="contributed">ئاسىيا تەرەققىيات بانكىسى ھېسابات بىرلىكى</displayName>
-				<displayName count="one" draft="contributed">ئاسىيا تەرەققىيات بانكىسى ھېسابات بىرلىكى</displayName>
-				<displayName count="other" draft="contributed">ئاسىيا تەرەققىيات بانكىسى ھېسابات بىرلىكى</displayName>
+				<displayName draft="contributed">ئاسىيا تەرەققىيات بانكىسى ھېسابات
+					بىرلىكى</displayName>
+				<displayName count="one" draft="contributed">ئاسىيا تەرەققىيات بانكىسى
+					ھېسابات بىرلىكى</displayName>
+				<displayName count="other" draft="contributed">ئاسىيا تەرەققىيات
+					بانكىسى ھېسابات بىرلىكى</displayName>
 			</currency>
 			<currency type="XXX">
 				<displayName draft="contributed">يوچۇن پۇل</displayName>
@@ -4485,28 +4785,40 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="YUD">
 				<displayName draft="contributed">يۇگوسلاۋىيە قاتتىق دىنارى (1966–1990)</displayName>
-				<displayName count="one" draft="contributed">يۇگوسلاۋىيە قاتتىق دىنارى (1966–1990)</displayName>
-				<displayName count="other" draft="contributed">يۇگوسلاۋىيە قاتتىق دىنارى (1966–1990)</displayName>
+				<displayName count="one" draft="contributed">يۇگوسلاۋىيە قاتتىق دىنارى
+					(1966–1990)</displayName>
+				<displayName count="other" draft="contributed">يۇگوسلاۋىيە قاتتىق
+					دىنارى (1966–1990)</displayName>
 			</currency>
 			<currency type="YUM">
 				<displayName draft="contributed">يۇگوسلاۋىيە يېڭى دىنارى (1994–2002)</displayName>
-				<displayName count="one" draft="contributed">يۇگوسلاۋىيە يېڭى دىنارى (1994–2002)</displayName>
-				<displayName count="other" draft="contributed">يۇگوسلاۋىيە يېڭى دىنارى (1994–2002)</displayName>
+				<displayName count="one" draft="contributed">يۇگوسلاۋىيە يېڭى دىنارى
+					(1994–2002)</displayName>
+				<displayName count="other" draft="contributed">يۇگوسلاۋىيە يېڭى دىنارى
+					(1994–2002)</displayName>
 			</currency>
 			<currency type="YUN">
-				<displayName draft="contributed">يۇگوسلاۋىيە ئالماشتۇرۇشچان دىنارى (1990–1992)</displayName>
-				<displayName count="one" draft="contributed">يۇگوسلاۋىيە ئالماشتۇرۇشچان دىنارى (1990–1992)</displayName>
-				<displayName count="other" draft="contributed">يۇگوسلاۋىيە ئالماشتۇرۇشچان دىنارى (1990–1992)</displayName>
+				<displayName draft="contributed">يۇگوسلاۋىيە ئالماشتۇرۇشچان دىنارى
+					(1990–1992)</displayName>
+				<displayName count="one" draft="contributed">يۇگوسلاۋىيە
+					ئالماشتۇرۇشچان دىنارى (1990–1992)</displayName>
+				<displayName count="other" draft="contributed">يۇگوسلاۋىيە
+					ئالماشتۇرۇشچان دىنارى (1990–1992)</displayName>
 			</currency>
 			<currency type="YUR">
-				<displayName draft="contributed">يۇگوسلاۋىيە ئىسلاھات دىنارى (1992–1993)</displayName>
-				<displayName count="one" draft="contributed">يۇگوسلاۋىيە ئىسلاھات دىنارى (1992–1993)</displayName>
-				<displayName count="other" draft="contributed">يۇگوسلاۋىيە ئىسلاھات دىنارى (1992–1993)</displayName>
+				<displayName draft="contributed">يۇگوسلاۋىيە ئىسلاھات دىنارى
+					(1992–1993)</displayName>
+				<displayName count="one" draft="contributed">يۇگوسلاۋىيە ئىسلاھات
+					دىنارى (1992–1993)</displayName>
+				<displayName count="other" draft="contributed">يۇگوسلاۋىيە ئىسلاھات
+					دىنارى (1992–1993)</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName draft="contributed">جەنۇبىي ئافرىقا راندى (پۇل–مۇئامىلە)</displayName>
-				<displayName count="one" draft="contributed">جەنۇبىي ئافرىقا راندى (پۇل–مۇئامىلە)</displayName>
-				<displayName count="other" draft="contributed">جەنۇبىي ئافرىقا راندى (پۇل–مۇئامىلە)</displayName>
+				<displayName count="one" draft="contributed">جەنۇبىي ئافرىقا راندى
+					(پۇل–مۇئامىلە)</displayName>
+				<displayName count="other" draft="contributed">جەنۇبىي ئافرىقا راندى
+					(پۇل–مۇئامىلە)</displayName>
 			</currency>
 			<currency type="ZAR">
 				<displayName draft="contributed">جەنۇبىي ئافرىقا راندى</displayName>
@@ -4515,8 +4827,10 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="ZMK">
 				<displayName draft="contributed">زامبىيە كۋاچاسى (1968–2012)</displayName>
-				<displayName count="one" draft="contributed">زامبىيە كۋاچاسى (1968–2012)</displayName>
-				<displayName count="other" draft="contributed">زامبىيە كۋاچاسى (1968–2012)</displayName>
+				<displayName count="one" draft="contributed">زامبىيە كۋاچاسى
+					(1968–2012)</displayName>
+				<displayName count="other" draft="contributed">زامبىيە كۋاچاسى
+					(1968–2012)</displayName>
 			</currency>
 			<currency type="ZMW">
 				<displayName draft="contributed">زامبىيە كۋاچاسى</displayName>
@@ -4525,18 +4839,23 @@ Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Sci
 			</currency>
 			<currency type="ZRN">
 				<displayName draft="contributed">زايىر يېڭى زايىرى (1993–1998)</displayName>
-				<displayName count="one" draft="contributed">زايىر يېڭى زايىرى (1993–1998)</displayName>
-				<displayName count="other" draft="contributed">زايىر يېڭى زايىرى (1993–1998)</displayName>
+				<displayName count="one" draft="contributed">زايىر يېڭى زايىرى
+					(1993–1998)</displayName>
+				<displayName count="other" draft="contributed">زايىر يېڭى زايىرى
+					(1993–1998)</displayName>
 			</currency>
 			<currency type="ZRZ">
 				<displayName draft="contributed">زايىر زايىرى (1971–1993)</displayName>
 				<displayName count="one" draft="contributed">زايىر زايىرى (1971–1993)</displayName>
-				<displayName count="other" draft="contributed">زايىر زايىرى (1971–1993)</displayName>
+				<displayName count="other" draft="contributed">زايىر زايىرى
+					(1971–1993)</displayName>
 			</currency>
 			<currency type="ZWD">
 				<displayName draft="contributed">زىمبابۋې دوللىرى (1980–2008)</displayName>
-				<displayName count="one" draft="contributed">زىمبابۋې دوللىرى (1980–2008)</displayName>
-				<displayName count="other" draft="contributed">زىمبابۋې دوللىرى (1980–2008)</displayName>
+				<displayName count="one" draft="contributed">زىمبابۋې دوللىرى
+					(1980–2008)</displayName>
+				<displayName count="other" draft="contributed">زىمبابۋې دوللىرى
+					(1980–2008)</displayName>
 			</currency>
 			<currency type="ZWL">
 				<displayName draft="contributed">زىمبابۋې دوللىرى (2009)</displayName>

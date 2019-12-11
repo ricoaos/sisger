@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9287 $"/>
-		<generation date="$Date: 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013) $"/>
-		<language type="zh"/>
-		<script type="Hant"/>
-		<territory type="HK"/>
+		<version number="$Revision: 9287 $" />
+		<generation date="$Date: 2013-08-28 21:32:04 -0500 (Wed, 28 Aug 2013) $" />
+		<language type="zh" />
+		<script type="Hant" />
+		<territory type="HK" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -326,7 +325,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<availableFormats>
 						<dateFormatItem id="Ed" draft="contributed">d E</dateFormatItem>
 						<dateFormatItem id="GyMMM" draft="contributed">G y 年 M 月</dateFormatItem>
-						<dateFormatItem id="GyMMMEd" draft="contributed">G y 年 M 月 d 日 (E)</dateFormatItem>
+						<dateFormatItem id="GyMMMEd" draft="contributed">G y 年 M 月 d 日
+							(E)</dateFormatItem>
 						<dateFormatItem id="Md" draft="contributed">d/M</dateFormatItem>
 						<dateFormatItem id="MEd" draft="contributed">E, d/M</dateFormatItem>
 						<dateFormatItem id="MMMd" draft="contributed">M 月 d 日</dateFormatItem>
@@ -334,7 +334,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="yyyyM" draft="contributed">M/yGGGGG</dateFormatItem>
 						<dateFormatItem id="yyyyMd" draft="contributed">d/M/yGGGGG</dateFormatItem>
 						<dateFormatItem id="yyyyMEd" draft="contributed">E, d/M/yGGGGG</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd" draft="contributed">G y 年 M 月 d 日 (E)</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd" draft="contributed">G y 年 M 月 d 日
+							(E)</dateFormatItem>
 						<dateFormatItem id="yyyyQQQ" draft="contributed">G y 年第QQQ</dateFormatItem>
 						<dateFormatItem id="yyyyQQQQ" draft="contributed">G y 年QQQQ</dateFormatItem>
 					</availableFormats>
@@ -344,16 +345,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="contributed">d/M 至 d/M</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d" draft="contributed">d/M (E) 至 d/M (E)</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d/M (E) 至 d/M (E)</greatestDifference>
+							<greatestDifference id="d" draft="contributed">d/M (E) 至 d/M
+								(E)</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d/M (E) 至 d/M
+								(E)</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
 							<greatestDifference id="d" draft="contributed">M 月 d 日至 d 日</greatestDifference>
-							<greatestDifference id="M" draft="contributed">M 月 d 日至 M 月 d 日</greatestDifference>
+							<greatestDifference id="M" draft="contributed">M 月 d 日至 M 月
+								d 日</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="contributed">M 月 d 日 (E) 至 d 日 (E)</greatestDifference>
-							<greatestDifference id="M" draft="contributed">M 月 d 日 (E) 至 M 月 d 日 (E)</greatestDifference>
+							<greatestDifference id="d" draft="contributed">M 月 d 日 (E) 至
+								d 日 (E)</greatestDifference>
+							<greatestDifference id="M" draft="contributed">M 月 d 日 (E) 至
+								M 月 d 日 (E)</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="contributed">G y 年至 y 年</greatestDifference>
@@ -362,22 +368,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="contributed">G M/y 至 M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="contributed">G d/M/y 至 d/M/y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">G d/M/y 至 d/M/y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">G d/M/y 至 d/M/y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">G d/M/y 至
+								d/M/y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">G d/M/y 至
+								d/M/y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">G d/M/y 至
+								d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="contributed">G d/M/y (E) 至 d/M/y (E)</greatestDifference>
-							<greatestDifference id="M" draft="contributed">G d/M/y (E) 至 d/M/y (E)</greatestDifference>
-							<greatestDifference id="y" draft="contributed">G d/M/y (E) 至 d/M/y (E)</greatestDifference>
+							<greatestDifference id="d" draft="contributed">G d/M/y (E) 至
+								d/M/y (E)</greatestDifference>
+							<greatestDifference id="M" draft="contributed">G d/M/y (E) 至
+								d/M/y (E)</greatestDifference>
+							<greatestDifference id="y" draft="contributed">G d/M/y (E) 至
+								d/M/y (E)</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
-							<greatestDifference id="y" draft="contributed">G y 年 M 月至 y 年 M 月</greatestDifference>
+							<greatestDifference id="y" draft="contributed">G y 年 M 月至 y
+								年 M 月</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="contributed">G y 年 M 月 d 日 (E) 至 d 日 (E)</greatestDifference>
-							<greatestDifference id="M" draft="contributed">G y 年 M 月 d 日 (E) 至 M 月 d 日 (E)</greatestDifference>
-							<greatestDifference id="y" draft="contributed">G y 年 M 月 d 日 (E) 至 y 年 M 月 d 日 (E)</greatestDifference>
+							<greatestDifference id="d" draft="contributed">G y 年 M 月 d 日
+								(E) 至 d 日 (E)</greatestDifference>
+							<greatestDifference id="M" draft="contributed">G y 年 M 月 d 日
+								(E) 至 M 月 d 日 (E)</greatestDifference>
+							<greatestDifference id="y" draft="contributed">G y 年 M 月 d 日
+								(E) 至 y 年 M 月 d 日 (E)</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -450,7 +466,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 					</dateTimeFormatLength>
 					<availableFormats>
 						<dateFormatItem id="Ed" draft="contributed">d E</dateFormatItem>
-						<dateFormatItem id="GyMMMEd" draft="contributed">G y 年 M 月 d 日 (E)</dateFormatItem>
+						<dateFormatItem id="GyMMMEd" draft="contributed">G y 年 M 月 d 日
+							(E)</dateFormatItem>
 						<dateFormatItem id="Md" draft="contributed">d/M</dateFormatItem>
 						<dateFormatItem id="MEd" draft="contributed">E, d/M</dateFormatItem>
 						<dateFormatItem id="MMdd" draft="contributed">dd/MM</dateFormatItem>
@@ -470,16 +487,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="contributed">d/M 至 d/M</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d" draft="contributed">d/M (E) 至 d/M (E)</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d/M (E) 至 d/M (E)</greatestDifference>
+							<greatestDifference id="d" draft="contributed">d/M (E) 至 d/M
+								(E)</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d/M (E) 至 d/M
+								(E)</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMd">
 							<greatestDifference id="d" draft="contributed">M 月 d 日至 d 日</greatestDifference>
-							<greatestDifference id="M" draft="contributed">M 月 d 日至 M 月 d 日</greatestDifference>
+							<greatestDifference id="M" draft="contributed">M 月 d 日至 M 月
+								d 日</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="contributed">M 月 d 日 (E) 至 d 日 (E)</greatestDifference>
-							<greatestDifference id="M" draft="contributed">M 月 d 日 (E) 至 M 月 d 日 (E)</greatestDifference>
+							<greatestDifference id="d" draft="contributed">M 月 d 日 (E) 至
+								d 日 (E)</greatestDifference>
+							<greatestDifference id="M" draft="contributed">M 月 d 日 (E) 至
+								M 月 d 日 (E)</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yM">
 							<greatestDifference id="M" draft="contributed">M/y 至 M/y</greatestDifference>
@@ -491,27 +513,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="contributed">d/M/y 至 d/M/y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="contributed">d/M/y (E) 至 d/M/y (E)</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d/M/y (E) 至 d/M/y (E)</greatestDifference>
-							<greatestDifference id="y" draft="contributed">d/M/y (E) 至 d/M/y (E)</greatestDifference>
+							<greatestDifference id="d" draft="contributed">d/M/y (E) 至
+								d/M/y (E)</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d/M/y (E) 至
+								d/M/y (E)</greatestDifference>
+							<greatestDifference id="y" draft="contributed">d/M/y (E) 至
+								d/M/y (E)</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="contributed">y 年 M 月至 M 月</greatestDifference>
-							<greatestDifference id="y" draft="contributed">y 年 M 月至 y 年 M 月</greatestDifference>
+							<greatestDifference id="y" draft="contributed">y 年 M 月至 y 年
+								M 月</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
-							<greatestDifference id="d" draft="contributed">y 年 M 月 d 日至 d 日</greatestDifference>
-							<greatestDifference id="M" draft="contributed">y 年 M 月 d 日至 M 月 d 日</greatestDifference>
-							<greatestDifference id="y" draft="contributed">y 年 M 月 d 日至 y 年 M 月 d 日</greatestDifference>
+							<greatestDifference id="d" draft="contributed">y 年 M 月 d 日至
+								d 日</greatestDifference>
+							<greatestDifference id="M" draft="contributed">y 年 M 月 d 日至
+								M 月 d 日</greatestDifference>
+							<greatestDifference id="y" draft="contributed">y 年 M 月 d 日至
+								y 年 M 月 d 日</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="contributed">y 年 M 月 d 日 (E) 至 M 月 d 日 (E)</greatestDifference>
-							<greatestDifference id="M" draft="contributed">y 年 M 月 d 日 (E) 至 M 月 d 日 (E)</greatestDifference>
-							<greatestDifference id="y" draft="contributed">y 年 M 月 d 日 (E) 至 y 年 M 月 d日 (E)</greatestDifference>
+							<greatestDifference id="d" draft="contributed">y 年 M 月 d 日
+								(E) 至 M 月 d 日 (E)</greatestDifference>
+							<greatestDifference id="M" draft="contributed">y 年 M 月 d 日
+								(E) 至 M 月 d 日 (E)</greatestDifference>
+							<greatestDifference id="y" draft="contributed">y 年 M 月 d 日
+								(E) 至 y 年 M 月 d日 (E)</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M" draft="contributed">y 年 M 月 至 M 月</greatestDifference>
-							<greatestDifference id="y" draft="contributed">y 年 M 月至 y 年 M 月</greatestDifference>
+							<greatestDifference id="y" draft="contributed">y 年 M 月至 y 年
+								M 月</greatestDifference>
 						</intervalFormatItem>
 					</intervalFormats>
 				</dateTimeFormats>
@@ -544,7 +577,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="Gy" draft="contributed">G y 年</dateFormatItem>
 						<dateFormatItem id="GyMMM" draft="contributed">G y 年 M 月</dateFormatItem>
 						<dateFormatItem id="GyMMMd" draft="contributed">G y 年 M 月 d 日</dateFormatItem>
-						<dateFormatItem id="GyMMMEd" draft="contributed">G y 年 M 月 d 日 (E)</dateFormatItem>
+						<dateFormatItem id="GyMMMEd" draft="contributed">G y 年 M 月 d 日
+							(E)</dateFormatItem>
 						<dateFormatItem id="Md" draft="contributed">d-M</dateFormatItem>
 						<dateFormatItem id="MEd" draft="contributed">d-M（E）</dateFormatItem>
 						<dateFormatItem id="MMMd" draft="contributed">M 月 d 日</dateFormatItem>
@@ -556,7 +590,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<dateFormatItem id="yyyyMEd" draft="contributed">E, d/M/yGGGGG</dateFormatItem>
 						<dateFormatItem id="yyyyMMM" draft="contributed">G y 年 M 月</dateFormatItem>
 						<dateFormatItem id="yyyyMMMd" draft="contributed">G y 年 M 月 d 日</dateFormatItem>
-						<dateFormatItem id="yyyyMMMEd" draft="contributed">G y 年 M 月 d 日 (E)</dateFormatItem>
+						<dateFormatItem id="yyyyMMMEd" draft="contributed">G y 年 M 月 d 日
+							(E)</dateFormatItem>
 						<dateFormatItem id="yyyyQQQ" draft="contributed">G y 年第QQQ</dateFormatItem>
 						<dateFormatItem id="yyyyQQQQ" draft="contributed">G y 年QQQQ</dateFormatItem>
 					</availableFormats>

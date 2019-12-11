@@ -21,21 +21,25 @@
  */
 
 /**
+ *
  * @see Zend_Tool_Project_Context_Filesystem_File
  */
 require_once 'Zend/Tool/Project/Context/Filesystem/File.php';
 
 /**
+ *
  * @see Zend_Tool_Project_Context_System_Interface
  */
 require_once 'Zend/Tool/Project/Context/System/Interface.php';
 
 /**
+ *
  * @see Zend_Tool_Project_Context_System_NotOverwritable
  */
 require_once 'Zend/Tool/Project/Context/System/NotOverwritable.php';
 
 /**
+ *
  * @see Zend_Tool_Project_Profile_FileParser_Xml
  */
 require_once 'Zend/Tool/Project/Profile/FileParser/Xml.php';
@@ -46,23 +50,22 @@ require_once 'Zend/Tool/Project/Profile/FileParser/Xml.php';
  * A profile is a hierarchical set of resources that keep track of
  * items within a specific project.
  *
- * @category   Zend
- * @package    Zend_Tool
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Tool
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-class Zend_Tool_Project_Context_System_ProjectProfileFile
-    extends Zend_Tool_Project_Context_Filesystem_File
-    implements Zend_Tool_Project_Context_System_Interface,
-               Zend_Tool_Project_Context_System_NotOverwritable
+class Zend_Tool_Project_Context_System_ProjectProfileFile extends Zend_Tool_Project_Context_Filesystem_File implements Zend_Tool_Project_Context_System_Interface, Zend_Tool_Project_Context_System_NotOverwritable
 {
 
     /**
+     *
      * @var string
      */
     protected $_filesystemName = '.zfproject.xml';
 
     /**
+     *
      * @var Zend_Tool_Project_Profile
      */
     protected $_profile = null;
@@ -80,7 +83,7 @@ class Zend_Tool_Project_Context_System_ProjectProfileFile
     /**
      * setProfile()
      *
-     * @param Zend_Tool_Project_Profile $profile
+     * @param Zend_Tool_Project_Profile $profile            
      * @return Zend_Tool_Project_Context_System_ProjectProfileFile
      */
     public function setProfile($profile)
@@ -114,5 +117,4 @@ class Zend_Tool_Project_Context_System_ProjectProfileFile
         $xml = $parser->serialize($profile);
         return $xml;
     }
-
 }

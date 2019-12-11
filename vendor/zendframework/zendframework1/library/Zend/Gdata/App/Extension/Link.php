@@ -22,6 +22,7 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Extension
  */
 require_once 'Zend/Gdata/Extension.php';
@@ -29,25 +30,30 @@ require_once 'Zend/Gdata/Extension.php';
 /**
  * Data model for representing an atom:link element
  *
- * @category   Zend
- * @package    Zend_Gdata
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage App
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
 {
 
     protected $_rootElement = 'link';
+
     protected $_href = null;
+
     protected $_rel = null;
+
     protected $_type = null;
+
     protected $_hrefLang = null;
+
     protected $_title = null;
+
     protected $_length = null;
 
-    public function __construct($href = null, $rel = null, $type = null,
-            $hrefLang = null, $title = null, $length = null)
+    public function __construct($href = null, $rel = null, $type = null, $hrefLang = null, $title = null, $length = null)
     {
         parent::__construct();
         $this->_href = $href;
@@ -85,30 +91,31 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
     protected function takeAttributeFromDOM($attribute)
     {
         switch ($attribute->localName) {
-        case 'href':
-            $this->_href = $attribute->nodeValue;
-            break;
-        case 'rel':
-            $this->_rel = $attribute->nodeValue;
-            break;
-        case 'type':
-            $this->_type = $attribute->nodeValue;
-            break;
-        case 'hreflang':
-            $this->_hrefLang = $attribute->nodeValue;
-            break;
-        case 'title':
-            $this->_title = $attribute->nodeValue;
-            break;
-        case 'length':
-            $this->_length = $attribute->nodeValue;
-            break;
-        default:
-            parent::takeAttributeFromDOM($attribute);
+            case 'href':
+                $this->_href = $attribute->nodeValue;
+                break;
+            case 'rel':
+                $this->_rel = $attribute->nodeValue;
+                break;
+            case 'type':
+                $this->_type = $attribute->nodeValue;
+                break;
+            case 'hreflang':
+                $this->_hrefLang = $attribute->nodeValue;
+                break;
+            case 'title':
+                $this->_title = $attribute->nodeValue;
+                break;
+            case 'length':
+                $this->_length = $attribute->nodeValue;
+                break;
+            default:
+                parent::takeAttributeFromDOM($attribute);
         }
     }
 
     /**
+     *
      * @return string|null
      */
     public function getHref()
@@ -117,7 +124,8 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
     }
 
     /**
-     * @param string|null $value
+     *
+     * @param string|null $value            
      * @return Zend_Gdata_App_Entry Provides a fluent interface
      */
     public function setHref($value)
@@ -127,6 +135,7 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
     }
 
     /**
+     *
      * @return string|null
      */
     public function getRel()
@@ -135,7 +144,8 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
     }
 
     /**
-     * @param string|null $value
+     *
+     * @param string|null $value            
      * @return Zend_Gdata_App_Entry Provides a fluent interface
      */
     public function setRel($value)
@@ -145,6 +155,7 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
     }
 
     /**
+     *
      * @return string|null
      */
     public function getType()
@@ -153,7 +164,8 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
     }
 
     /**
-     * @param string|null $value
+     *
+     * @param string|null $value            
      * @return Zend_Gdata_App_Entry Provides a fluent interface
      */
     public function setType($value)
@@ -163,6 +175,7 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
     }
 
     /**
+     *
      * @return string|null
      */
     public function getHrefLang()
@@ -171,7 +184,8 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
     }
 
     /**
-     * @param string|null $value
+     *
+     * @param string|null $value            
      * @return Zend_Gdata_App_Entry Provides a fluent interface
      */
     public function setHrefLang($value)
@@ -181,6 +195,7 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
     }
 
     /**
+     *
      * @return string|null
      */
     public function getTitle()
@@ -189,7 +204,8 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
     }
 
     /**
-     * @param string|null $value
+     *
+     * @param string|null $value            
      * @return Zend_Gdata_App_Entry Provides a fluent interface
      */
     public function setTitle($value)
@@ -199,6 +215,7 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
     }
 
     /**
+     *
      * @return string|null
      */
     public function getLength()
@@ -207,7 +224,8 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
     }
 
     /**
-     * @param string|null $value
+     *
+     * @param string|null $value            
      * @return Zend_Gdata_App_Entry Provides a fluent interface
      */
     public function setLength($value)
@@ -215,5 +233,4 @@ class Zend_Gdata_App_Extension_Link extends Zend_Gdata_App_Extension
         $this->_length = $value;
         return $this;
     }
-
 }

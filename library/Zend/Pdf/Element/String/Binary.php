@@ -19,21 +19,22 @@
  * @version    $Id: Binary.php 23775 2011-03-01 17:25:24Z ralph $
  */
 
-
-/** Zend_Pdf_Element_String */
+/**
+ * Zend_Pdf_Element_String
+ */
 require_once 'Zend/Pdf/Element/String.php';
-
 
 /**
  * PDF file 'binary string' element implementation
  *
- * @category   Zend
- * @package    Zend_Pdf
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Pdf
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Pdf_Element_String_Binary extends Zend_Pdf_Element_String
 {
+
     /**
      * Object value
      *
@@ -41,11 +42,10 @@ class Zend_Pdf_Element_String_Binary extends Zend_Pdf_Element_String
      */
     public $value;
 
-
     /**
      * Escape string according to the PDF rules
      *
-     * @param string $inStr
+     * @param string $inStr            
      * @return string
      */
     public static function escape($inStr)
@@ -53,11 +53,10 @@ class Zend_Pdf_Element_String_Binary extends Zend_Pdf_Element_String
         return strtoupper(bin2hex($inStr));
     }
 
-
     /**
      * Unescape string according to the PDF rules
      *
-     * @param string $inStr
+     * @param string $inStr            
      * @return string
      */
     public static function unescape($inStr)
@@ -71,7 +70,7 @@ class Zend_Pdf_Element_String_Binary extends Zend_Pdf_Element_String
             $offset += strspn($inStr, "0123456789abcdefABCDEF", $offset);
             $chunks[] = substr($inStr, $start, $offset - $start);
             $length += strlen(end($chunks));
-
+            
             // Skip non-hexadecimal characters
             $offset += strcspn($inStr, "0123456789abcdefABCDEF", $offset);
         }
@@ -80,19 +79,18 @@ class Zend_Pdf_Element_String_Binary extends Zend_Pdf_Element_String
             // Final digit is assumed to be '0'
             $chunks[] = '0';
         }
-
-        return pack('H*' , implode($chunks));
+        
+        return pack('H*', implode($chunks));
     }
-
 
     /**
      * Return object as string
      *
-     * @param Zend_Pdf_Factory $factory
+     * @param Zend_Pdf_Factory $factory            
      * @return string
      */
     public function toString($factory = null)
     {
-        return '<' . self::escape((string)$this->value) . '>';
+        return '<' . self::escape((string) $this->value) . '>';
     }
 }

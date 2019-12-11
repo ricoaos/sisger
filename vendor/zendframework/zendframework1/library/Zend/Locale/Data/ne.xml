@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9876 $"/>
-		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $"/>
-		<language type="ne"/>
+		<version number="$Revision: 9876 $" />
+		<generation date="$Date: 2014-03-05 23:14:25 -0600 (Wed, 05 Mar 2014) $" />
+		<language type="ne" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -400,7 +399,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">फिन्ल्याण्ड</territory>
 			<territory type="FJ">फिजी</territory>
 			<territory type="FK">फकल्याण्ड टापुहरु</territory>
-			<territory type="FK" alt="variant">फक्ल्याण्ड टापुहरू (इज्लास माल्भिनास)</territory>
+			<territory type="FK" alt="variant">फक्ल्याण्ड टापुहरू (इज्लास
+				माल्भिनास)</territory>
 			<territory type="FM">माइक्रोनेसिया</territory>
 			<territory type="FO">फारोर टापुहरु</territory>
 			<territory type="FR">फ्रान्स</territory>
@@ -607,14 +607,16 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armn" key="numbers">आर्मेनियाली अङ्कहरू</type>
 			<type type="armnlow" key="numbers">आर्मनियाली साना अङ्कहरू</type>
 			<type type="beng" key="numbers">बङ्गाली अङ्कहरू</type>
-			<type type="big5han" key="collation" draft="contributed">परम्परागत चिनिँया क्रमबद्धता पद्दति - बिग फाइभ</type>
+			<type type="big5han" key="collation" draft="contributed">परम्परागत चिनिँया
+				क्रमबद्धता पद्दति - बिग फाइभ</type>
 			<type type="buddhist" key="calendar" draft="contributed">बुद्धिष्ट पात्रो</type>
 			<type type="chinese" key="calendar" draft="contributed">चिनिँया पात्रो</type>
 			<type type="deva" key="numbers">देवनागरी अङ्कहरू</type>
 			<type type="ducet" key="collation">पूर्वनिर्धारित युनिकोड क्रमबद्ध सूची</type>
 			<type type="ethi" key="numbers">इथियोपाली अङ्कहरू</type>
 			<type type="fullwide" key="numbers">पुरा चौडाईका अङ्कहरू</type>
-			<type type="gb2312han" key="collation" draft="contributed">सरलिकृत चिनियाँ क्रमबद्धता पद्दति-गीबीटुथ्रीवानटु</type>
+			<type type="gb2312han" key="collation" draft="contributed">सरलिकृत चिनियाँ
+				क्रमबद्धता पद्दति-गीबीटुथ्रीवानटु</type>
 			<type type="geor" key="numbers">जर्जियाली अङ्कहरू</type>
 			<type type="gregorian" key="calendar">ग्रेगोरियन पात्रो</type>
 			<type type="grek" key="numbers">ग्रीक अङ्कहरू</type>
@@ -630,7 +632,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="hebrew" key="calendar" draft="contributed">हिब्रु पात्रो</type>
 			<type type="indian" key="calendar" draft="contributed">भारतीय राष्ट्रिय पात्रो</type>
 			<type type="islamic" key="calendar" draft="contributed">इस्लामी पात्रो</type>
-			<type type="islamic-civil" key="calendar" draft="contributed">इस्लामी नागरिक पात्रो</type>
+			<type type="islamic-civil" key="calendar" draft="contributed">इस्लामी नागरिक
+				पात्रो</type>
 			<type type="japanese" key="calendar" draft="contributed">जापानी पात्रो</type>
 			<type type="jpan" key="numbers">जापानी अङ्कहरू</type>
 			<type type="jpanfin" key="numbers">जापानी वित्तीय अङ्कहरू</type>
@@ -641,20 +644,24 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="mlym" key="numbers">मलायलम अङ्कहरू</type>
 			<type type="mymr" key="numbers">म्यान्मारका अङ्कहरू</type>
 			<type type="orya" key="numbers">ओरिया अङ्कहरू</type>
-			<type type="phonebook" key="collation" draft="contributed">टेलिफोन पुस्तिका क्रमबद्धतापद्दति</type>
-			<type type="pinyin" key="collation" draft="contributed">पिनयिन क्रमबद्धता पद्दति</type>
+			<type type="phonebook" key="collation" draft="contributed">टेलिफोन पुस्तिका
+				क्रमबद्धतापद्दति</type>
+			<type type="pinyin" key="collation" draft="contributed">पिनयिन क्रमबद्धता
+				पद्दति</type>
 			<type type="roc" key="calendar" draft="contributed">चिनिँया गणतन्त्र पात्रो</type>
 			<type type="roman" key="numbers">रोमन अङ्कहरू</type>
 			<type type="romanlow" key="numbers">रोमन साना केसका अङ्कहरू</type>
 			<type type="search" key="collation">सामान्य खोजी</type>
 			<type type="standard" key="collation">स्तर</type>
-			<type type="stroke" key="collation" draft="contributed">स्ट्रोक क्रमबद्धता पद्दति</type>
+			<type type="stroke" key="collation" draft="contributed">स्ट्रोक क्रमबद्धता
+				पद्दति</type>
 			<type type="taml" key="numbers">परम्परागत तामिल अङ्कहरू</type>
 			<type type="tamldec" key="numbers">तामिल अङ्कहरू</type>
 			<type type="telu" key="numbers">तेलेगु अङ्कहरू</type>
 			<type type="thai" key="numbers">थाई अङ्कहरू</type>
 			<type type="tibt" key="numbers">तिब्बती अङ्कहरू</type>
-			<type type="traditional" key="collation" draft="contributed">परम्परागत क्रमबद्धता पद्दति</type>
+			<type type="traditional" key="collation" draft="contributed">परम्परागत
+				क्रमबद्धता पद्दति</type>
 		</types>
 		<measurementSystemNames>
 			<measurementSystemName type="metric">मेट्रिक</measurementSystemName>
@@ -668,9 +675,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[\u093C \u0901 \u0902 ः ॐ अ आ इ ई उ ऊ ऋ ऌ ऍ ए ऐ ऑ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल ळ व श ष स ह ऽ ा ि ी \u0941 \u0942 \u0943 \u0944 \u0945 \u0947 \u0948 ॉ ो ौ \u094D]</exemplarCharacters>
+		<exemplarCharacters>[\u093C \u0901 \u0902 ः ॐ अ आ इ ई उ ऊ ऋ ऌ ऍ ए ऐ ऑ
+			ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल ळ व श ष स
+			ह ऽ ा ि ी \u0941 \u0942 \u0943 \u0944 \u0945 \u0947 \u0948 ॉ ो ौ
+			\u094D]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[\u200C\u200D]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="unconfirmed">[अ आ इ ई उ ऊ ऋ ए ऐ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श ष स ह]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="unconfirmed">[अ आ इ ई उ ऊ
+			ऋ ए ऐ ओ औ क ख ग घ ङ च छ ज झ ञ ट ठ ड ढ ण त थ द ध न प फ ब भ म य र ल व श
+			ष स ह]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="word-final">{0} …</ellipsis>
@@ -794,9 +806,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">GGGGG y-MM-dd – y-MM-dd</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">GGGGG y-MM-dd, E – y-MM-dd, E</greatestDifference>
-							<greatestDifference id="M">GGGGG y-MM-dd, E – y-MM-dd, E</greatestDifference>
-							<greatestDifference id="y">GGGGG y-MM-dd, E – y-MM-dd, E</greatestDifference>
+							<greatestDifference id="d">GGGGG y-MM-dd, E –
+								y-MM-dd, E</greatestDifference>
+							<greatestDifference id="M">GGGGG y-MM-dd, E –
+								y-MM-dd, E</greatestDifference>
+							<greatestDifference id="y">GGGGG y-MM-dd, E –
+								y-MM-dd, E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">G y MMM–MMM</greatestDifference>
@@ -810,7 +825,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">G y MMM d, E – MMM d, E</greatestDifference>
 							<greatestDifference id="M">G y MMM d, E – MMM d, E</greatestDifference>
-							<greatestDifference id="y">G y MMM d, E – y MMM d, E</greatestDifference>
+							<greatestDifference id="y">G y MMM d, E – y MMM d,
+								E</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">G y MMMM–MMMM</greatestDifference>
@@ -3696,8 +3712,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>बोस्निया-हर्जगोभिनिया रूपान्तरयोग्य मार्क</displayName>
-				<displayName count="one">बोस्निया-हर्जगोभिनिया रूपान्तरयोग्य मार्क</displayName>
-				<displayName count="other">बोस्निया-हर्जगोभिनिया रूपान्तरयोग्य मार्कहरू</displayName>
+				<displayName count="one">बोस्निया-हर्जगोभिनिया रूपान्तरयोग्य
+					मार्क</displayName>
+				<displayName count="other">बोस्निया-हर्जगोभिनिया रूपान्तरयोग्य
+					मार्कहरू</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>बर्बाडियन डलर</displayName>

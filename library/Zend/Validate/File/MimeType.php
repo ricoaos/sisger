@@ -20,6 +20,7 @@
  */
 
 /**
+ *
  * @see Zend_Validate_Abstract
  */
 require_once 'Zend/Validate/Abstract.php';
@@ -27,31 +28,40 @@ require_once 'Zend/Validate/Abstract.php';
 /**
  * Validator for the mime type of a file
  *
- * @category  Zend
- * @package   Zend_Validate
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license   http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Validate
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
 {
-    /**#@+
-     * @const Error type constants
-     */
-    const FALSE_TYPE   = 'fileMimeTypeFalse';
-    const NOT_DETECTED = 'fileMimeTypeNotDetected';
-    const NOT_READABLE = 'fileMimeTypeNotReadable';
-    /**#@-*/
 
     /**
+     * #@+
+     * @const Error type constants
+     */
+    const FALSE_TYPE = 'fileMimeTypeFalse';
+
+    const NOT_DETECTED = 'fileMimeTypeNotDetected';
+
+    const NOT_READABLE = 'fileMimeTypeNotReadable';
+
+    /**
+     * #@-
+     */
+    
+    /**
+     *
      * @var array Error message templates
      */
     protected $_messageTemplates = array(
-        self::FALSE_TYPE   => "File '%value%' has a false mimetype of '%type%'",
+        self::FALSE_TYPE => "File '%value%' has a false mimetype of '%type%'",
         self::NOT_DETECTED => "The mimetype of file '%value%' could not be detected",
-        self::NOT_READABLE => "File '%value%' is not readable or does not exist",
+        self::NOT_READABLE => "File '%value%' is not readable or does not exist"
     );
 
     /**
+     *
      * @var array
      */
     protected $_messageVariables = array(
@@ -59,6 +69,7 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
     );
 
     /**
+     *
      * @var string
      */
     protected $_type;
@@ -88,6 +99,7 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
 
     /**
      * If no $_ENV['MAGIC'] is set, try and autodiscover it based on common locations
+     * 
      * @var array
      */
     protected $_magicFiles = array(
@@ -99,7 +111,7 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
         '/usr/share/mime/magic.mgc',
         '/usr/share/file/magic',
         '/usr/share/file/magic.mime',
-        '/usr/share/file/magic.mgc',
+        '/usr/share/file/magic.mgc'
     );
 
     /**
@@ -114,7 +126,8 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
      *
      * Mimetype to accept
      *
-     * @param  string|array $mimetype MimeType
+     * @param string|array $mimetype
+     *            MimeType
      * @return void
      */
     public function __construct($mimetype)
@@ -123,21 +136,21 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
             $mimetype = $mimetype->toArray();
         } elseif (is_string($mimetype)) {
             $mimetype = explode(',', $mimetype);
-        } elseif (!is_array($mimetype)) {
+        } elseif (! is_array($mimetype)) {
             require_once 'Zend/Validate/Exception.php';
             throw new Zend_Validate_Exception("Invalid options to validator provided");
         }
-
+        
         if (isset($mimetype['magicfile'])) {
             $this->setMagicFile($mimetype['magicfile']);
             unset($mimetype['magicfile']);
         }
-
+        
         if (isset($mimetype['headerCheck'])) {
             $this->enableHeaderCheck($mimetype['headerCheck']);
             unset($mimetype['headerCheck']);
         }
-
+        
         $this->setMimeType($mimetype);
     }
 
@@ -149,9 +162,9 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
     public function getMagicFile()
     {
         if (null === $this->_magicfile) {
-            if (!empty($_ENV['MAGIC'])) {
+            if (! empty($_ENV['MAGIC'])) {
                 $this->setMagicFile($_ENV['MAGIC']);
-            } elseif (!(@ini_get("safe_mode") == 'On' || @ini_get("safe_mode") === 1)) {
+            } elseif (! (@ini_get("safe_mode") == 'On' || @ini_get("safe_mode") === 1)) {
                 require_once 'Zend/Validate/Exception.php';
                 foreach ($this->_magicFiles as $file) {
                     // supressing errors which are thrown due to openbase_dir restrictions
@@ -165,12 +178,12 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
                     }
                 }
             }
-
+            
             if ($this->_magicfile === null) {
                 $this->_magicfile = false;
             }
         }
-
+        
         return $this->_magicfile;
     }
 
@@ -179,7 +192,7 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
      * if null, the MAGIC constant from php is used
      * if the MAGIC file is errorous, no file will be set
      *
-     * @param  string $file
+     * @param string $file            
      * @throws Zend_Validate_Exception When finfo can not read the magicfile
      * @return Zend_Validate_File_MimeType Provides fluid interface
      */
@@ -187,11 +200,11 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
     {
         if (empty($file)) {
             $this->_magicfile = null;
-        } else if (!(class_exists('finfo', false))) {
+        } else if (! (class_exists('finfo', false))) {
             $this->_magicfile = null;
             require_once 'Zend/Validate/Exception.php';
             throw new Zend_Validate_Exception('Magicfile can not be set. There is no finfo extension installed');
-        } else if (!is_file($file) || !is_readable($file)) {
+        } else if (! is_file($file) || ! is_readable($file)) {
             require_once 'Zend/Validate/Exception.php';
             throw new Zend_Validate_Exception('The given magicfile can not be read');
         } else {
@@ -205,7 +218,7 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
                 $this->_magicfile = $file;
             }
         }
-
+        
         return $this;
     }
 
@@ -223,7 +236,7 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
      * Defines if the http header should be used
      * Note that this is unsave and therefor the default value is false
      *
-     * @param  boolean $checkHeader
+     * @param boolean $checkHeader            
      * @return Zend_Validate_File_MimeType Provides fluid interface
      */
     public function enableHeaderCheck($headerCheck = true)
@@ -235,24 +248,26 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
     /**
      * Returns the set mimetypes
      *
-     * @param  boolean $asArray Returns the values as array, when false an concated string is returned
+     * @param boolean $asArray
+     *            Returns the values as array, when false an concated string is returned
      * @return string|array
      */
     public function getMimeType($asArray = false)
     {
-        $asArray   = (bool) $asArray;
+        $asArray = (bool) $asArray;
         $mimetype = (string) $this->_mimetype;
         if ($asArray) {
             $mimetype = explode(',', $mimetype);
         }
-
+        
         return $mimetype;
     }
 
     /**
      * Sets the mimetypes
      *
-     * @param  string|array $mimetype The mimetypes to validate
+     * @param string|array $mimetype
+     *            The mimetypes to validate
      * @return Zend_Validate_File_Extension Provides a fluent interface
      */
     public function setMimeType($mimetype)
@@ -265,41 +280,42 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
     /**
      * Adds the mimetypes
      *
-     * @param  string|array $mimetype The mimetypes to add for validation
+     * @param string|array $mimetype
+     *            The mimetypes to add for validation
      * @return Zend_Validate_File_Extension Provides a fluent interface
      */
     public function addMimeType($mimetype)
     {
         $mimetypes = $this->getMimeType(true);
-
+        
         if (is_string($mimetype)) {
             $mimetype = explode(',', $mimetype);
-        } elseif (!is_array($mimetype)) {
+        } elseif (! is_array($mimetype)) {
             require_once 'Zend/Validate/Exception.php';
             throw new Zend_Validate_Exception("Invalid options to validator provided");
         }
-
+        
         if (isset($mimetype['magicfile'])) {
             unset($mimetype['magicfile']);
         }
-
+        
         foreach ($mimetype as $content) {
-            if (empty($content) || !is_string($content)) {
+            if (empty($content) || ! is_string($content)) {
                 continue;
             }
             $mimetypes[] = trim($content);
         }
         $mimetypes = array_unique($mimetypes);
-
+        
         // Sanity check to ensure no empty values
         foreach ($mimetypes as $key => $mt) {
             if (empty($mt)) {
                 unset($mimetypes[$key]);
             }
         }
-
+        
         $this->_mimetype = implode(',', $mimetypes);
-
+        
         return $this;
     }
 
@@ -310,8 +326,10 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
      * of mimetypes can be checked. If you give for example "image" all image
      * mime types will be accepted like "image/gif", "image/jpeg" and so on.
      *
-     * @param  string $value Real file to check for mimetype
-     * @param  array  $file  File data from Zend_File_Transfer
+     * @param string $value
+     *            Real file to check for mimetype
+     * @param array $file
+     *            File data from Zend_File_Transfer
      * @return boolean
      */
     public function isValid($value, $file = null)
@@ -322,65 +340,64 @@ class Zend_Validate_File_MimeType extends Zend_Validate_Abstract
                 'name' => $value
             );
         }
-
+        
         // Is file readable ?
         require_once 'Zend/Loader.php';
-        if (!Zend_Loader::isReadable($value)) {
+        if (! Zend_Loader::isReadable($value)) {
             return $this->_throw($file, self::NOT_READABLE);
         }
-
+        
         $mimefile = $this->getMagicFile();
         if (class_exists('finfo', false)) {
             $const = defined('FILEINFO_MIME_TYPE') ? FILEINFO_MIME_TYPE : FILEINFO_MIME;
-            if (!empty($mimefile) && empty($this->_finfo)) {
+            if (! empty($mimefile) && empty($this->_finfo)) {
                 $this->_finfo = @finfo_open($const, $mimefile);
             }
-
+            
             if (empty($this->_finfo)) {
                 $this->_finfo = @finfo_open($const);
             }
-
+            
             $this->_type = null;
-            if (!empty($this->_finfo)) {
+            if (! empty($this->_finfo)) {
                 $this->_type = finfo_file($this->_finfo, $value);
             }
         }
-
-        if (empty($this->_type) &&
-            (function_exists('mime_content_type') && ini_get('mime_magic.magicfile'))) {
-                $this->_type = mime_content_type($value);
+        
+        if (empty($this->_type) && (function_exists('mime_content_type') && ini_get('mime_magic.magicfile'))) {
+            $this->_type = mime_content_type($value);
         }
-
+        
         if (empty($this->_type) && $this->_headerCheck) {
             $this->_type = $file['type'];
         }
-
+        
         if (empty($this->_type)) {
             return $this->_throw($file, self::NOT_DETECTED);
         }
-
+        
         $mimetype = $this->getMimeType(true);
         if (in_array($this->_type, $mimetype)) {
             return true;
         }
-
+        
         $types = explode('/', $this->_type);
         $types = array_merge($types, explode('-', $this->_type));
         $types = array_merge($types, explode(';', $this->_type));
-        foreach($mimetype as $mime) {
+        foreach ($mimetype as $mime) {
             if (in_array($mime, $types)) {
                 return true;
             }
         }
-
+        
         return $this->_throw($file, self::FALSE_TYPE);
     }
 
     /**
      * Throws an error of the given type
      *
-     * @param  string $file
-     * @param  string $errorType
+     * @param string $file            
+     * @param string $errorType            
      * @return false
      */
     protected function _throw($file, $errorType)

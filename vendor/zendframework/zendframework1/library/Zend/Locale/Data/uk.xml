@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="uk"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="uk" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -512,7 +511,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="zap">сапотекська</language>
 			<language type="zbl">блісса мова</language>
 			<language type="zen">зенага</language>
-			<language type="zgh" draft="contributed">стандартна марокканська берберська</language>
+			<language type="zgh" draft="contributed">стандартна марокканська
+				берберська</language>
 			<language type="zh">китайська</language>
 			<language type="zh_Hans">китайська спрощена</language>
 			<language type="zh_Hant">китайська традиційна</language>
@@ -788,7 +788,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Гваделупа</territory>
 			<territory type="GQ">Екваторіальна Гвінея</territory>
 			<territory type="GR">Греція</territory>
-			<territory type="GS">Південна Джорджія та Південні Сандвічеві Острови</territory>
+			<territory type="GS">Південна Джорджія та Південні Сандвічеві
+				Острови</territory>
 			<territory type="GT">Гватемала</territory>
 			<territory type="GU">Гуам</territory>
 			<territory type="GW">Гвінея-Бісау</territory>
@@ -991,15 +992,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="SOLBA">Діалект Столвіца/Солбіка</variant>
 			<variant type="TARASK">Орфографія Тараскевича</variant>
 			<variant type="UCCOR" draft="provisional">Уніфікована орфографія</variant>
-			<variant type="UCRCOR" draft="provisional">Уніфікована переглянута орфографія</variant>
+			<variant type="UCRCOR" draft="provisional">Уніфікована переглянута
+				орфографія</variant>
 			<variant type="VALENCIA">Валенсійська</variant>
 			<variant type="WADEGILE">Романізація Вейда-Джайлза</variant>
 		</variants>
 		<keys>
 			<key type="calendar">Календар</key>
 			<key type="colAlternate" draft="contributed">Ігнорувати сортування за символами</key>
-			<key type="colBackwards" draft="contributed">Зворотне сортування за діактричними знаками</key>
-			<key type="colCaseFirst" draft="contributed">Упорядкування за великими/малими символами</key>
+			<key type="colBackwards" draft="contributed">Зворотне сортування за
+				діактричними знаками</key>
+			<key type="colCaseFirst" draft="contributed">Упорядкування за великими/малими
+				символами</key>
 			<key type="colCaseLevel" draft="contributed">Сортування з урахуванням регістру</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Сортування кана</key>
 			<key type="collation">Порядок сортування</key>
@@ -1015,7 +1019,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</keys>
 		<types>
 			<type type="arab" key="numbers" draft="contributed">Арабсько-індійські цифри</type>
-			<type type="arabext" key="numbers" draft="contributed">Арабсько-індійські розширені цифри</type>
+			<type type="arabext" key="numbers" draft="contributed">Арабсько-індійські
+				розширені цифри</type>
 			<type type="armn" key="numbers">Вірменські цифри</type>
 			<type type="armnlow" key="numbers">Вірменські малі цифри</type>
 			<type type="beng" key="numbers">Бенгальські цифри</type>
@@ -1024,11 +1029,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="chinese" key="calendar">Китайський календар</type>
 			<type type="coptic" key="calendar" draft="contributed">Коптський календар</type>
 			<type type="deva" key="numbers">Цифри деванагарі</type>
-			<type type="dictionary" key="collation" draft="contributed">Порядок сортування: за словником</type>
-			<type type="ducet" key="collation" draft="contributed">Порядок сортування: Unicode за умовчанням</type>
+			<type type="dictionary" key="collation" draft="contributed">Порядок
+				сортування: за словником</type>
+			<type type="ducet" key="collation" draft="contributed">Порядок сортування:
+				Unicode за умовчанням</type>
 			<type type="ethi" key="numbers">Ефіопські цифри</type>
 			<type type="ethiopic" key="calendar" draft="contributed">Ефіопський календар</type>
-			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Ефіопський Амете Алем календар</type>
+			<type type="ethiopic-amete-alem" key="calendar" draft="contributed">Ефіопський
+				Амете Алем календар</type>
 			<type type="finance" key="numbers" draft="contributed">Фінансові символи чисел</type>
 			<type type="fullwide" key="numbers">Цифри повної ширини</type>
 			<type type="gb2312han" key="collation">Китайський спрощений</type>
@@ -1039,10 +1047,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="gujr" key="numbers" draft="contributed">Цифри гуджараті</type>
 			<type type="guru" key="numbers" draft="contributed">Цифри гурмукхі</type>
 			<type type="hanidec" key="numbers">Китайські десяткові цифри</type>
-			<type type="hans" key="numbers" draft="contributed">Китайські символи чисел (спрощене письмо)</type>
-			<type type="hansfin" key="numbers" draft="contributed">Китайські фінансові символи чисел (спрощене письмо)</type>
-			<type type="hant" key="numbers" draft="contributed">Китайські символи чисел (традиційне письмо)</type>
-			<type type="hantfin" key="numbers" draft="contributed">Китайські фінансові символи чисел (традиційне письмо)</type>
+			<type type="hans" key="numbers" draft="contributed">Китайські символи чисел
+				(спрощене письмо)</type>
+			<type type="hansfin" key="numbers" draft="contributed">Китайські фінансові
+				символи чисел (спрощене письмо)</type>
+			<type type="hant" key="numbers" draft="contributed">Китайські символи чисел
+				(традиційне письмо)</type>
+			<type type="hantfin" key="numbers" draft="contributed">Китайські фінансові
+				символи чисел (традиційне письмо)</type>
 			<type type="hebr" key="numbers">Цифри івриту</type>
 			<type type="hebrew" key="calendar">Єврейський календар</type>
 			<type type="identical" key="colStrength" draft="contributed">Сортувати всі</type>
@@ -1056,51 +1068,76 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="knda" key="numbers" draft="contributed">Цифри каннада</type>
 			<type type="laoo" key="numbers" draft="contributed">Лаоські цифри</type>
 			<type type="latn" key="numbers">Західні цифри</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Сортувати спершу за малими символами</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Сортувати спершу за
+				малими символами</type>
 			<type type="mlym" key="numbers">Малаяламські цифри</type>
 			<type type="mong" key="numbers" draft="contributed">Монгольські цифри</type>
 			<type type="mymr" key="numbers">М’янмські цифри</type>
 			<type type="native" key="numbers" draft="contributed">Місцеві цифри</type>
-			<type type="no" key="colBackwards" draft="contributed">Сортувати за діактричними знаками уніфіковано</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Сортувати в порядку звичайного регістру</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Сортувати без урахування регістру</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Сортувати за кана окремо</type>
-			<type type="no" key="colNormalization" draft="contributed">Сортувати без уніфікації</type>
-			<type type="no" key="colNumeric" draft="contributed">Сортувати за цифрами окремо</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Сортувати за символами</type>
+			<type type="no" key="colBackwards" draft="contributed">Сортувати за
+				діактричними знаками уніфіковано</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Сортувати в порядку
+				звичайного регістру</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Сортувати без
+				урахування регістру</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Сортувати за
+				кана окремо</type>
+			<type type="no" key="colNormalization" draft="contributed">Сортувати без
+				уніфікації</type>
+			<type type="no" key="colNumeric" draft="contributed">Сортувати за цифрами
+				окремо</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Сортувати за
+				символами</type>
 			<type type="orya" key="numbers" draft="contributed">Цифри орія</type>
 			<type type="persian" key="calendar" draft="contributed">Перський календар</type>
 			<type type="phonebook" key="collation">Телефонна книга</type>
-			<type type="phonetic" key="collation" draft="contributed">Фонетичний порядок сортування</type>
+			<type type="phonetic" key="collation" draft="contributed">Фонетичний порядок
+				сортування</type>
 			<type type="pinyin" key="collation">Порядок піньїн</type>
-			<type type="primary" key="colStrength" draft="contributed">Сортувати лише за основними літерами</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Сортувати за діактричними знаками/регістром/шириною/кана</type>
-			<type type="reformed" key="collation" draft="contributed">Порядок сортування: за виправленнями</type>
+			<type type="primary" key="colStrength" draft="contributed">Сортувати лише за
+				основними літерами</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Сортувати за
+				діактричними знаками/регістром/шириною/кана</type>
+			<type type="reformed" key="collation" draft="contributed">Порядок сортування:
+				за виправленнями</type>
 			<type type="roc" key="calendar">Китайський григоріанський</type>
 			<type type="roman" key="numbers" draft="contributed">Римські цифри</type>
 			<type type="romanlow" key="numbers" draft="contributed">Римські малі цифри</type>
 			<type type="search" key="collation" draft="contributed">Універсальний пошук</type>
-			<type type="searchjl" key="collation" draft="contributed">Пошук за початковою приголосною хангул</type>
-			<type type="secondary" key="colStrength" draft="contributed">Сортувати за діактричними знаками</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Сортувати, ігноруючи символи</type>
-			<type type="standard" key="collation" draft="contributed">Стандартний порядок сортування</type>
+			<type type="searchjl" key="collation" draft="contributed">Пошук за початковою
+				приголосною хангул</type>
+			<type type="secondary" key="colStrength" draft="contributed">Сортувати за
+				діактричними знаками</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Сортувати,
+				ігноруючи символи</type>
+			<type type="standard" key="collation" draft="contributed">Стандартний порядок
+				сортування</type>
 			<type type="stroke" key="collation">Порядок натискання клавіш</type>
 			<type type="taml" key="numbers">Тамільські традиційні цифри</type>
 			<type type="tamldec" key="numbers" draft="contributed">Тамільські цифри</type>
 			<type type="telu" key="numbers" draft="contributed">Цифри телугу</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Сортувати за діактричними знаками/регістром/шириною</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Сортувати за
+				діактричними знаками/регістром/шириною</type>
 			<type type="thai" key="numbers" draft="contributed">Тайські цифри</type>
 			<type type="tibt" key="numbers" draft="contributed">Тибетські цифри</type>
 			<type type="traditional" key="collation">Традиційний</type>
-			<type type="traditional" key="numbers" draft="contributed">Традиційні символи чисел</type>
-			<type type="unihan" key="collation" draft="contributed">Порядок сортування: за штрихами в корені</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Сортувати спершу за великими символами</type>
+			<type type="traditional" key="numbers" draft="contributed">Традиційні символи
+				чисел</type>
+			<type type="unihan" key="collation" draft="contributed">Порядок сортування: за
+				штрихами в корені</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Сортувати спершу за
+				великими символами</type>
 			<type type="vaii" key="numbers" draft="contributed">Цифри ваї</type>
-			<type type="yes" key="colBackwards" draft="contributed">Сортувати за діактричними знаками у зворотньому порядку</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Сортувати з урахуванням регістру</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Сортувати за кана інакше</type>
-			<type type="yes" key="colNormalization" draft="contributed">Сортувати за Unicode уніфіковано</type>
-			<type type="yes" key="colNumeric" draft="contributed">Сортувати за цифрами чисельно</type>
+			<type type="yes" key="colBackwards" draft="contributed">Сортувати за
+				діактричними знаками у зворотньому порядку</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Сортувати з
+				урахуванням регістру</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Сортувати за
+				кана інакше</type>
+			<type type="yes" key="colNormalization" draft="contributed">Сортувати за
+				Unicode уніфіковано</type>
+			<type type="yes" key="colNumeric" draft="contributed">Сортувати за цифрами
+				чисельно</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">BGN</transformName>
@@ -1109,7 +1146,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<transformName type="UNGEGN" draft="contributed">UNGEGN</transformName>
 			<transformName type="x-Accents" draft="contributed">Діактричні знаки</transformName>
 			<transformName type="x-Fullwidth" draft="contributed">Повна ширина</transformName>
-			<transformName type="x-Halfwidth" draft="contributed">Половинна ширина</transformName>
+			<transformName type="x-Halfwidth" draft="contributed">Половинна
+				ширина</transformName>
 			<transformName type="x-Jamo" draft="contributed">Jamo</transformName>
 			<transformName type="x-Pinyin" draft="contributed">Піньїнь</transformName>
 			<transformName type="x-Publishing" draft="contributed">Публікація</transformName>
@@ -1152,10 +1190,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[ʼ а б в г ґ д е є ж з и і ї й к л м н о п р с т у ф х ц ч ш щ ь ю я]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[{а\u0301} {е\u0301} ё {є\u0301} {и\u0301} {і\u0301} {ї\u0301} {о\u0301} {у\u0301} ъ ы э {ю\u0301} {я\u0301}]</exemplarCharacters>
-		<exemplarCharacters type="index">[А Б В Г Ґ Д Е Є Ж З И І Ї Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ю Я]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- – , ; \: ! ? . ' &quot; “ „ « » ( ) \[ \] \{ \} § @ * / \\ №]</exemplarCharacters>
+		<exemplarCharacters>[ʼ а б в г ґ д е є ж з и і ї й к л м н о п р с т у
+			ф х ц ч ш щ ь ю я]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[{а\u0301} {е\u0301} ё
+			{є\u0301} {и\u0301} {і\u0301} {ї\u0301} {о\u0301} {у\u0301} ъ ы э
+			{ю\u0301} {я\u0301}]</exemplarCharacters>
+		<exemplarCharacters type="index">[А Б В Г Ґ Д Е Є Ж З И І Ї
+			Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ю Я]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- – , ; \: ! ? . '
+			&quot; “ „ « » ( ) \[ \] \{ \} § @ * / \\ №]</exemplarCharacters>
 		<ellipsis type="final" draft="contributed">{0}…</ellipsis>
 		<ellipsis type="initial" draft="contributed">…{0}</ellipsis>
 		<ellipsis type="medial" draft="contributed">{0}…{1}</ellipsis>
@@ -1415,8 +1458,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="contributed">dd.MM – dd.MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d" draft="contributed">E, dd.MM – E, dd.MM</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, dd.MM – E, dd.MM</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, dd.MM – E,
+								dd.MM</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, dd.MM – E,
+								dd.MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M" draft="contributed">LLL–LLL</greatestDifference>
@@ -1426,8 +1471,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="contributed">d MMM – d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="contributed">E, d – E, d MMM</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, d MMM – E, d MMM</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, d – E, d
+								MMM</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, d MMM – E,
+								d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="contributed">y–y</greatestDifference>
@@ -1437,14 +1484,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="contributed">MM.y – MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="contributed">dd.MM.y – dd.MM.y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">dd.MM.y – dd.MM.y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">dd.MM.y – dd.MM.y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">dd.MM.y –
+								dd.MM.y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">dd.MM.y –
+								dd.MM.y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">dd.MM.y –
+								dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="contributed">E, dd.MM.y – E, dd.MM.y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, dd.MM.y – E, dd.MM.y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E, dd.MM.y – E, dd.MM.y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, dd.MM.y –
+								E, dd.MM.y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, dd.MM.y –
+								E, dd.MM.y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E, dd.MM.y –
+								E, dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="contributed">LLL–LLL y</greatestDifference>
@@ -1452,13 +1505,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d" draft="contributed">d–d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d MMM – d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">d MMM y – d MMM y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d MMM – d MMM
+								y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">d MMM y – d
+								MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="contributed">E, d – E, d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, d MMM – E, d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E, d MMM y – E, d MMM y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, d – E, d
+								MMM y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, d MMM – E,
+								d MMM y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E, d MMM y –
+								E, d MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">LLLL – LLLL y</greatestDifference>
@@ -1859,8 +1917,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="contributed">dd.MM – dd.MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MEd">
-							<greatestDifference id="d" draft="contributed">E, dd.MM – E, dd.MM</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, dd.MM – E, dd.MM</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, dd.MM – E,
+								dd.MM</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, dd.MM – E,
+								dd.MM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMM">
 							<greatestDifference id="M" draft="contributed">LLL–LLL</greatestDifference>
@@ -1870,8 +1930,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="M" draft="contributed">d MMM – d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="MMMEd">
-							<greatestDifference id="d" draft="contributed">E, d – E, d MMM</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, d MMM – E, d MMM</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, d – E, d
+								MMM</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, d MMM – E,
+								d MMM</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="y">
 							<greatestDifference id="y" draft="contributed">y–y</greatestDifference>
@@ -1881,14 +1943,20 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y" draft="contributed">MM.y – MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMd">
-							<greatestDifference id="d" draft="contributed">dd.MM.y – dd.MM.y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">dd.MM.y – dd.MM.y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">dd.MM.y – dd.MM.y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">dd.MM.y –
+								dd.MM.y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">dd.MM.y –
+								dd.MM.y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">dd.MM.y –
+								dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d" draft="contributed">E, dd.MM.y – E, dd.MM.y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, dd.MM.y – E, dd.MM.y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E, dd.MM.y – E, dd.MM.y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, dd.MM.y –
+								E, dd.MM.y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, dd.MM.y –
+								E, dd.MM.y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E, dd.MM.y –
+								E, dd.MM.y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M" draft="contributed">LLL–LLL y</greatestDifference>
@@ -1896,13 +1964,18 @@ For terms of use, see http://www.unicode.org/copyright.html
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMd">
 							<greatestDifference id="d" draft="contributed">d–d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">d MMM – d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">d MMM y – d MMM y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">d MMM – d MMM
+								y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">d MMM y – d
+								MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d" draft="contributed">E, d – E, d MMM y</greatestDifference>
-							<greatestDifference id="M" draft="contributed">E, d MMM – E, d MMM y</greatestDifference>
-							<greatestDifference id="y" draft="contributed">E, d MMM y – E, d MMM y</greatestDifference>
+							<greatestDifference id="d" draft="contributed">E, d – E, d
+								MMM y</greatestDifference>
+							<greatestDifference id="M" draft="contributed">E, d MMM – E,
+								d MMM y</greatestDifference>
+							<greatestDifference id="y" draft="contributed">E, d MMM y –
+								E, d MMM y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">LLLL – LLLL y</greatestDifference>
@@ -2533,7 +2606,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<gmtZeroFormat draft="contributed">GMT</gmtZeroFormat>
 			<regionFormat draft="contributed">Час: {0}</regionFormat>
 			<regionFormat type="daylight" draft="contributed">Час: {0}, літній</regionFormat>
-			<regionFormat type="standard" draft="contributed">Час: {0}, стандартний</regionFormat>
+			<regionFormat type="standard" draft="contributed">Час: {0},
+				стандартний</regionFormat>
 			<fallbackFormat draft="contributed">{1} ({0})</fallbackFormat>
 			<zone type="Etc/Unknown">
 				<exemplarCity>Невідоме місто</exemplarCity>
@@ -3840,29 +3914,38 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="America_Central">
 				<long>
 					<generic draft="contributed">за північноамериканським центральним часом</generic>
-					<standard draft="contributed">за північноамериканським центральним стандартним часом</standard>
-					<daylight draft="contributed">за північноамериканським центральним літнім часом</daylight>
+					<standard draft="contributed">за північноамериканським центральним
+						стандартним часом</standard>
+					<daylight draft="contributed">за північноамериканським центральним
+						літнім часом</daylight>
 				</long>
 			</metazone>
 			<metazone type="America_Eastern">
 				<long>
 					<generic draft="contributed">за північноамериканським східним часом</generic>
-					<standard draft="contributed">за північноамериканським східним стандартним часом</standard>
-					<daylight draft="contributed">за північноамериканським східним літнім часом</daylight>
+					<standard draft="contributed">за північноамериканським східним
+						стандартним часом</standard>
+					<daylight draft="contributed">за північноамериканським східним літнім
+						часом</daylight>
 				</long>
 			</metazone>
 			<metazone type="America_Mountain">
 				<long>
 					<generic draft="contributed">за північноамериканським гірним часом</generic>
-					<standard draft="contributed">за північноамериканським гірним стандартним часом</standard>
-					<daylight draft="contributed">за північноамериканським гірним літнім часом</daylight>
+					<standard draft="contributed">за північноамериканським гірним
+						стандартним часом</standard>
+					<daylight draft="contributed">за північноамериканським гірним літнім
+						часом</daylight>
 				</long>
 			</metazone>
 			<metazone type="America_Pacific">
 				<long>
-					<generic draft="contributed">за північноамериканським тихоокеанським часом</generic>
-					<standard draft="contributed">за північноамериканським тихоокеанським стандартним часом</standard>
-					<daylight draft="contributed">за північноамериканським тихоокеанським літнім часом</daylight>
+					<generic draft="contributed">за північноамериканським тихоокеанським
+						часом</generic>
+					<standard draft="contributed">за північноамериканським тихоокеанським
+						стандартним часом</standard>
+					<daylight draft="contributed">за північноамериканським тихоокеанським
+						літнім часом</daylight>
 				</long>
 			</metazone>
 			<metazone type="Anadyr">
@@ -3917,7 +4000,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="Australia_CentralWestern">
 				<long>
 					<generic draft="contributed">Час: Австралія, центрально-західний</generic>
-					<standard draft="contributed">Час: Австралія, центрально-західний стандартний</standard>
+					<standard draft="contributed">Час: Австралія, центрально-західний
+						стандартний</standard>
 					<daylight draft="contributed">Час: Австралія, центрально-західний літній</daylight>
 				</long>
 			</metazone>
@@ -3981,7 +4065,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="Cape_Verde">
 				<long>
 					<generic draft="contributed">за часом на островах Кабо-Верде</generic>
-					<standard draft="contributed">за стандартним часом на островах Кабо-Верде</standard>
+					<standard draft="contributed">за стандартним часом на островах
+						Кабо-Верде</standard>
 					<daylight draft="contributed">за літнім часом на островах Кабо-Верде</daylight>
 				</long>
 			</metazone>
@@ -4079,7 +4164,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="Europe_Central">
 				<long>
 					<generic draft="contributed">за центральноєвропейським часом</generic>
-					<standard draft="contributed">за центральноєвропейським стандартним часом</standard>
+					<standard draft="contributed">за центральноєвропейським стандартним
+						часом</standard>
 					<daylight draft="contributed">за центральноєвропейським літнім часом</daylight>
 				</long>
 			</metazone>
@@ -4100,7 +4186,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="Falkland">
 				<long>
 					<generic draft="contributed">за часом на Фолклендських островах</generic>
-					<standard draft="contributed">за стандартним часом на Фолклендських островах</standard>
+					<standard draft="contributed">за стандартним часом на Фолклендських
+						островах</standard>
 					<daylight draft="contributed">за літнім часом на Фолклендських островах</daylight>
 				</long>
 			</metazone>
@@ -4118,7 +4205,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</metazone>
 			<metazone type="French_Southern">
 				<long>
-					<standard draft="contributed">за часом на Французьких Південних і Антарктичних територіях</standard>
+					<standard draft="contributed">за часом на Французьких Південних і
+						Антарктичних територіях</standard>
 				</long>
 			</metazone>
 			<metazone type="Galapagos">
@@ -4390,8 +4478,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="New_Caledonia">
 				<long>
 					<generic draft="contributed">за часом на островах Нової Каледонії</generic>
-					<standard draft="contributed">за стандартним часом на островах Нової Каледонії</standard>
-					<daylight draft="contributed">за літнім часом на островах Нової Каледонії</daylight>
+					<standard draft="contributed">за стандартним часом на островах Нової
+						Каледонії</standard>
+					<daylight draft="contributed">за літнім часом на островах Нової
+						Каледонії</daylight>
 				</long>
 			</metazone>
 			<metazone type="New_Zealand">
@@ -4485,8 +4575,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<metazone type="Pierre_Miquelon">
 				<long>
 					<generic draft="contributed">за часом на островах Сен-П’єр і Мікелон</generic>
-					<standard draft="contributed">за стандартним часом на островах Сен-П’єр і Мікелон</standard>
-					<daylight draft="contributed">за літнім часом на островах Сен-П’єр і Мікелон</daylight>
+					<standard draft="contributed">за стандартним часом на островах Сен-П’єр
+						і Мікелон</standard>
+					<daylight draft="contributed">за літнім часом на островах Сен-П’єр і
+						Мікелон</daylight>
 				</long>
 			</metazone>
 			<metazone type="Pitcairn">
@@ -4740,20 +4832,32 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<pattern type="10000000000" count="other" draft="contributed">00 мільярда</pattern>
 					<pattern type="100000000000" count="one" draft="contributed">000 мільярд</pattern>
 					<pattern type="100000000000" count="few" draft="contributed">000 мільярди</pattern>
-					<pattern type="100000000000" count="many" draft="contributed">000 мільярдів</pattern>
-					<pattern type="100000000000" count="other" draft="contributed">000 мільярда</pattern>
+					<pattern type="100000000000" count="many" draft="contributed">000
+						мільярдів</pattern>
+					<pattern type="100000000000" count="other" draft="contributed">000
+						мільярда</pattern>
 					<pattern type="1000000000000" count="one" draft="contributed">0 трильйон</pattern>
 					<pattern type="1000000000000" count="few" draft="contributed">0 трильйони</pattern>
-					<pattern type="1000000000000" count="many" draft="contributed">0 трильйонів</pattern>
-					<pattern type="1000000000000" count="other" draft="contributed">0 трильйона</pattern>
-					<pattern type="10000000000000" count="one" draft="contributed">00 трильйон</pattern>
-					<pattern type="10000000000000" count="few" draft="contributed">00 трильйони</pattern>
-					<pattern type="10000000000000" count="many" draft="contributed">00 трильйонів</pattern>
-					<pattern type="10000000000000" count="other" draft="contributed">00 трильйона</pattern>
-					<pattern type="100000000000000" count="one" draft="contributed">000 трильйон</pattern>
-					<pattern type="100000000000000" count="few" draft="contributed">000 трильйони</pattern>
-					<pattern type="100000000000000" count="many" draft="contributed">000 трильйонів</pattern>
-					<pattern type="100000000000000" count="other" draft="contributed">000 трильйона</pattern>
+					<pattern type="1000000000000" count="many" draft="contributed">0
+						трильйонів</pattern>
+					<pattern type="1000000000000" count="other" draft="contributed">0
+						трильйона</pattern>
+					<pattern type="10000000000000" count="one" draft="contributed">00
+						трильйон</pattern>
+					<pattern type="10000000000000" count="few" draft="contributed">00
+						трильйони</pattern>
+					<pattern type="10000000000000" count="many" draft="contributed">00
+						трильйонів</pattern>
+					<pattern type="10000000000000" count="other" draft="contributed">00
+						трильйона</pattern>
+					<pattern type="100000000000000" count="one" draft="contributed">000
+						трильйон</pattern>
+					<pattern type="100000000000000" count="few" draft="contributed">000
+						трильйони</pattern>
+					<pattern type="100000000000000" count="many" draft="contributed">000
+						трильйонів</pattern>
+					<pattern type="100000000000000" count="other" draft="contributed">000
+						трильйона</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 			<decimalFormatLength type="short">
@@ -4903,10 +5007,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AOR">
 				<displayName>ангольська кванза реаджастадо (1995–1999)</displayName>
-				<displayName count="one">ангольська кванза реаджастадо (1995–1999)</displayName>
-				<displayName count="few">ангольські кванзи реаджастадо (1995–1999)</displayName>
-				<displayName count="many">ангольських кванз реаджастадо (1995–1999)</displayName>
-				<displayName count="other">ангольської кванзи реаджастадо (1995–1999)</displayName>
+				<displayName count="one">ангольська кванза реаджастадо
+					(1995–1999)</displayName>
+				<displayName count="few">ангольські кванзи реаджастадо
+					(1995–1999)</displayName>
+				<displayName count="many">ангольських кванз реаджастадо
+					(1995–1999)</displayName>
+				<displayName count="other">ангольської кванзи реаджастадо
+					(1995–1999)</displayName>
 			</currency>
 			<currency type="ARA">
 				<displayName>аргентинський австрал</displayName>
@@ -4945,17 +5053,22 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AZM">
 				<displayName>азербайджанський манат (1993–2006)</displayName>
-				<displayName count="one" draft="contributed">азербайджанський манат (1993–2006)</displayName>
-				<displayName count="few" draft="contributed">азербайджанські манати (1993–2006)</displayName>
-				<displayName count="many" draft="contributed">азербайджанських манатів (1993–2006)</displayName>
-				<displayName count="other" draft="contributed">азербайджанського маната (1993–2006)</displayName>
+				<displayName count="one" draft="contributed">азербайджанський манат
+					(1993–2006)</displayName>
+				<displayName count="few" draft="contributed">азербайджанські манати
+					(1993–2006)</displayName>
+				<displayName count="many" draft="contributed">азербайджанських манатів
+					(1993–2006)</displayName>
+				<displayName count="other" draft="contributed">азербайджанського
+					маната (1993–2006)</displayName>
 			</currency>
 			<currency type="AZN">
 				<displayName>азербайджанський манат</displayName>
 				<displayName count="one" draft="contributed">азербайджанський манат</displayName>
 				<displayName count="few" draft="contributed">азербайджанські манати</displayName>
 				<displayName count="many" draft="contributed">азербайджанських манатів</displayName>
-				<displayName count="other" draft="contributed">азербайджанського маната</displayName>
+				<displayName count="other" draft="contributed">азербайджанського
+					маната</displayName>
 				<symbol draft="contributed">ман.</symbol>
 			</currency>
 			<currency type="BAD">
@@ -4963,10 +5076,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>конвертована марка Боснії і Герцеговини</displayName>
-				<displayName count="one">конвертована марка Боснії і Герцеговини</displayName>
-				<displayName count="few">конвертовані марки Боснії і Герцеговини</displayName>
-				<displayName count="many">конвертованих марок Боснії і Герцеговини</displayName>
-				<displayName count="other">конвертованої марки Боснії і Герцеговини</displayName>
+				<displayName count="one">конвертована марка Боснії і
+					Герцеговини</displayName>
+				<displayName count="few">конвертовані марки Боснії і
+					Герцеговини</displayName>
+				<displayName count="many">конвертованих марок Боснії і
+					Герцеговини</displayName>
+				<displayName count="other">конвертованої марки Боснії і
+					Герцеговини</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>барбадоський долар</displayName>
@@ -5272,10 +5389,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">еритрейської накфи</displayName>
 			</currency>
 			<currency type="ESA">
-				<displayName draft="contributed">іспанська песета (&quot;А&quot; рахунок)</displayName>
+				<displayName draft="contributed">іспанська песета (&quot;А&quot;
+					рахунок)</displayName>
 			</currency>
 			<currency type="ESB">
-				<displayName draft="contributed">іспанська песета (конвертовані рахунки)</displayName>
+				<displayName draft="contributed">іспанська песета (конвертовані
+					рахунки)</displayName>
 			</currency>
 			<currency type="ESP">
 				<displayName>іспанська песета</displayName>
@@ -5453,8 +5572,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>ізраїльський новий шекель</displayName>
 				<displayName count="one" draft="contributed">ізраїльський новий шекель</displayName>
 				<displayName count="few" draft="contributed">ізраїльські нові шекелі</displayName>
-				<displayName count="many" draft="contributed">ізраїльських нових шекелів</displayName>
-				<displayName count="other" draft="contributed">ізраїльського нового шекеля</displayName>
+				<displayName count="many" draft="contributed">ізраїльських нових
+					шекелів</displayName>
+				<displayName count="other" draft="contributed">ізраїльського нового
+					шекеля</displayName>
 				<symbol draft="contributed">ILS</symbol>
 			</currency>
 			<currency type="INR">
@@ -6115,8 +6236,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>турецька ліра (1922–2005)</displayName>
 				<displayName count="one" draft="contributed">турецька ліра (1922–2005)</displayName>
 				<displayName count="few" draft="contributed">турецькі ліри (1922–2005)</displayName>
-				<displayName count="many" draft="contributed">турецьких лір (1922–2005)</displayName>
-				<displayName count="other" draft="contributed">турецької ліри (1922–2005)</displayName>
+				<displayName count="many" draft="contributed">турецьких лір
+					(1922–2005)</displayName>
+				<displayName count="other" draft="contributed">турецької ліри
+					(1922–2005)</displayName>
 			</currency>
 			<currency type="TRY">
 				<displayName>турецька ліра</displayName>
@@ -6136,8 +6259,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>новий тайванський долар</displayName>
 				<displayName count="one" draft="contributed">новий тайванський долар</displayName>
 				<displayName count="few" draft="contributed">нові тайванські долари</displayName>
-				<displayName count="many" draft="contributed">нових тайванських доларів</displayName>
-				<displayName count="other" draft="contributed">нового тайванського долара</displayName>
+				<displayName count="many" draft="contributed">нових тайванських
+					доларів</displayName>
+				<displayName count="other" draft="contributed">нового тайванського
+					долара</displayName>
 				<symbol draft="contributed">TWD</symbol>
 			</currency>
 			<currency type="TZS">
@@ -6188,7 +6313,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName draft="contributed">долар США (цього дня)</displayName>
 			</currency>
 			<currency type="UYI">
-				<displayName draft="contributed">уругвайський песо в індексованих одиницях</displayName>
+				<displayName draft="contributed">уругвайський песо в індексованих
+					одиницях</displayName>
 			</currency>
 			<currency type="UYP">
 				<displayName>уругвайське песо (1975–1993)</displayName>
@@ -6350,15 +6476,21 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName>південноафриканський ранд</displayName>
 				<displayName count="one" draft="contributed">південноафриканський ранд</displayName>
 				<displayName count="few" draft="contributed">південноафриканські ранди</displayName>
-				<displayName count="many" draft="contributed">південноафриканських рандів</displayName>
-				<displayName count="other" draft="contributed">південноафриканського ранда</displayName>
+				<displayName count="many" draft="contributed">південноафриканських
+					рандів</displayName>
+				<displayName count="other" draft="contributed">південноафриканського
+					ранда</displayName>
 			</currency>
 			<currency type="ZMK">
 				<displayName>замбійська квача (1968–2012)</displayName>
-				<displayName count="one" draft="contributed">замбійська квача (1968–2012)</displayName>
-				<displayName count="few" draft="contributed">замбійські квачі (1968–2012)</displayName>
-				<displayName count="many" draft="contributed">замбійських квач (1968–2012)</displayName>
-				<displayName count="other" draft="contributed">замбійські квачі (1968–2012)</displayName>
+				<displayName count="one" draft="contributed">замбійська квача
+					(1968–2012)</displayName>
+				<displayName count="few" draft="contributed">замбійські квачі
+					(1968–2012)</displayName>
+				<displayName count="many" draft="contributed">замбійських квач
+					(1968–2012)</displayName>
+				<displayName count="other" draft="contributed">замбійські квачі
+					(1968–2012)</displayName>
 			</currency>
 			<currency type="ZMW">
 				<displayName>замбійська квача</displayName>
@@ -6388,10 +6520,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other">зімбабвійського долара (2009)</displayName>
 			</currency>
 			<currency type="ZWR">
-				<displayName count="one" draft="provisional">зімбабвійський долар (2008)</displayName>
-				<displayName count="few" draft="provisional">зімбабвійські долари (2008)</displayName>
-				<displayName count="many" draft="provisional">зімбабвійських доларів (2008)</displayName>
-				<displayName count="other" draft="provisional">зімбабвійського долара (2008)</displayName>
+				<displayName count="one" draft="provisional">зімбабвійський долар
+					(2008)</displayName>
+				<displayName count="few" draft="provisional">зімбабвійські долари
+					(2008)</displayName>
+				<displayName count="many" draft="provisional">зімбабвійських доларів
+					(2008)</displayName>
+				<displayName count="other" draft="provisional">зімбабвійського долара
+					(2008)</displayName>
 			</currency>
 		</currencies>
 		<miscPatterns numberSystem="latn">
@@ -6449,8 +6585,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="area-square-kilometer">
 				<unitPattern count="one" draft="contributed">{0} квадратний кілометр</unitPattern>
 				<unitPattern count="few" draft="contributed">{0} квадратні кілометри</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} квадратних кілометрів</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} квадратного кілометра</unitPattern>
+				<unitPattern count="many" draft="contributed">{0} квадратних
+					кілометрів</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} квадратного
+					кілометра</unitPattern>
 			</unit>
 			<unit type="area-square-meter">
 				<unitPattern count="one" draft="contributed">{0} квадратний метр</unitPattern>
@@ -6623,8 +6761,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="pressure-inch-hg">
 				<unitPattern count="one" draft="contributed">{0} дюйм ртутного стовпа</unitPattern>
 				<unitPattern count="few" draft="contributed">{0} дюйми ртутного стовпа</unitPattern>
-				<unitPattern count="many" draft="contributed">{0} дюймів ртутного стовпа</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} дюйма ртутного стовпа</unitPattern>
+				<unitPattern count="many" draft="contributed">{0} дюймів ртутного
+					стовпа</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} дюйма ртутного
+					стовпа</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
 				<unitPattern count="one" draft="contributed">{0} мілібар</unitPattern>

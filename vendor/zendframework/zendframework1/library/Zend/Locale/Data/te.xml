@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="te"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="te" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -716,7 +715,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">ఫిన్లాండ్</territory>
 			<territory type="FJ">ఫిజీ</territory>
 			<territory type="FK">ఫాక్‌ల్యాండ్ దీవులు</territory>
-			<territory type="FK" alt="variant">ఫాక్‌ల్యాండ్ దీవులు (Islas Malvinas)</territory>
+			<territory type="FK" alt="variant">ఫాక్‌ల్యాండ్ దీవులు (Islas
+				Malvinas)</territory>
 			<territory type="FM">మైక్రోనేశియ</territory>
 			<territory type="FO">ఫారో దీవులు</territory>
 			<territory type="FR">ఫ్రాన్స్‌</territory>
@@ -735,7 +735,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">గ్వాడేలోప్</territory>
 			<territory type="GQ">ఎక్వేటోరియాల్ గినియా</territory>
 			<territory type="GR">గ్రీస్</territory>
-			<territory type="GS">దక్షిణ జార్జియా మరియు దక్షిణ సాండ్విచ్ దీవులు</territory>
+			<territory type="GS">దక్షిణ జార్జియా మరియు దక్షిణ సాండ్విచ్
+				దీవులు</territory>
 			<territory type="GT">గ్వాటిమాల</territory>
 			<territory type="GU">గ్వామ్</territory>
 			<territory type="GW">గినియా-బిస్సావ్</territory>
@@ -941,7 +942,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armn" key="numbers">అమెరికా సంఖ్యలు</type>
 			<type type="armnlow" key="numbers">అమెరికన్ చిన్న సంఖ్యలు</type>
 			<type type="beng" key="numbers">బెంగాలీ అంకెలు</type>
-			<type type="big5han" key="collation">సాంప్రదాయ చైనీస్ క్రమబద్ధీకరణ క్రమం - Big5</type>
+			<type type="big5han" key="collation">సాంప్రదాయ చైనీస్ క్రమబద్ధీకరణ క్రమం -
+				Big5</type>
 			<type type="buddhist" key="calendar">బుద్ధుల క్యాలెండర్‌</type>
 			<type type="chinese" key="calendar">చైనీస్ క్యాలెండర్</type>
 			<type type="coptic" key="calendar">కాప్టిక్ క్యాలెండర్</type>
@@ -950,10 +952,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="ducet" key="collation">డిఫాల్ట్ యూనీకోడ్ క్రమబద్ధీకరణ క్రమం</type>
 			<type type="ethi" key="numbers">ఎథియోపిక్ సంఖ్యలు</type>
 			<type type="ethiopic" key="calendar">ఎపోథిక్ క్యాలెండర్</type>
-			<type type="ethiopic-amete-alem" key="calendar">ఎథోపిక్ అమేటే అలెమ్ క్యాలెండర్</type>
+			<type type="ethiopic-amete-alem" key="calendar">ఎథోపిక్ అమేటే అలెమ్
+				క్యాలెండర్</type>
 			<type type="finance" key="numbers">ఆర్థిక సంఖ్యలు</type>
 			<type type="fullwide" key="numbers">పూర్తి వెడల్పు అంకెలు</type>
-			<type type="gb2312han" key="collation">సరళీకృత చైనీస్ క్రమబద్ధీకరణ క్రమం - GB2312</type>
+			<type type="gb2312han" key="collation">సరళీకృత చైనీస్ క్రమబద్ధీకరణ క్రమం -
+				GB2312</type>
 			<type type="geor" key="numbers">జార్జియన్ సంఖ్యలు</type>
 			<type type="gregorian" key="calendar">గ్రేగోరియన్ క్యాలెండర్</type>
 			<type type="grek" key="numbers">గ్రీక్ సంఖ్యలు</type>
@@ -962,7 +966,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers">గుర్ముఖీ అంకెలు</type>
 			<type type="hanidec" key="numbers">చైనీయుల దశాంశ సంఖ్యలు</type>
 			<type type="hans" key="numbers">సరళీకృతం చెయ్యబడిన చైనీయుల సంఖ్యలు</type>
-			<type type="hansfin" key="numbers">సరళీకృతం చెయ్యబడిన చైనీయుల ఆర్థిక సంఖ్యలు</type>
+			<type type="hansfin" key="numbers">సరళీకృతం చెయ్యబడిన చైనీయుల ఆర్థిక
+				సంఖ్యలు</type>
 			<type type="hant" key="numbers">సాంప్రదాయ చైనీయుల సంఖ్యలు</type>
 			<type type="hantfin" key="numbers">సాంప్రదాయ చైనీయుల ఆర్థిక సంఖ్యలు</type>
 			<type type="hebr" key="numbers">హెర్బ్యూ సంఖ్యలు</type>
@@ -995,22 +1000,27 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="phonebook" key="collation">ఫోన్‌బుక్ క్రమబద్ధీకరణ క్రమం</type>
 			<type type="phonetic" key="collation">ధ్వని ఉచ్ఛారిత క్రమబద్ధీకరణ క్రమం</type>
 			<type type="pinyin" key="collation">పిన్‌యిన్ క్రమబద్ధీకరణ క్రమం</type>
-			<type type="primary" key="colStrength">ప్రాథమిక అక్షరాలను మాత్రమే క్రమబద్ధీకరించు</type>
-			<type type="quaternary" key="colStrength">ఉచ్ఛారణలు/కేస్‌/వెడల్పు/కానాను క్రమబద్ధీకరించు</type>
-			<type type="reformed" key="collation">మళ్ళీ ఆకృతీకరించబడిన క్రమబద్ధీకరణ క్రమం</type>
+			<type type="primary" key="colStrength">ప్రాథమిక అక్షరాలను మాత్రమే
+				క్రమబద్ధీకరించు</type>
+			<type type="quaternary" key="colStrength">ఉచ్ఛారణలు/కేస్‌/వెడల్పు/కానాను
+				క్రమబద్ధీకరించు</type>
+			<type type="reformed" key="collation">మళ్ళీ ఆకృతీకరించబడిన క్రమబద్ధీకరణ
+				క్రమం</type>
 			<type type="roc" key="calendar">మింగ్యూ క్యాలెండర్</type>
 			<type type="roman" key="numbers">రోమన్ సంఖ్యలు</type>
 			<type type="romanlow" key="numbers">రోమన్ చిన్న సంఖ్యలు</type>
 			<type type="search" key="collation">సాధారణ-ప్రయోజన శోధన</type>
 			<type type="searchjl" key="collation">హాంగుల్ ప్రారంభ హల్లు ద్వారా శోధించు</type>
 			<type type="secondary" key="colStrength">ఉచ్ఛారణలని క్రమబద్ధీకరించు</type>
-			<type type="shifted" key="colAlternate">చిహ్నాలను విస్మరించడాన్ని క్రమబద్ధీకరించు</type>
+			<type type="shifted" key="colAlternate">చిహ్నాలను విస్మరించడాన్ని
+				క్రమబద్ధీకరించు</type>
 			<type type="standard" key="collation">ప్రామాణిక క్రమబద్ధీకరణ క్రమం</type>
 			<type type="stroke" key="collation">స్ట్రోక్ క్రమబద్ధీకరణ క్రమం</type>
 			<type type="taml" key="numbers">తమళ సంఖ్యలు</type>
 			<type type="tamldec" key="numbers">తమిళ అంకెలు</type>
 			<type type="telu" key="numbers">తెలుగు అంకెలు</type>
-			<type type="tertiary" key="colStrength">ఉచ్ఛారణలని/కేస్‌ని/వెడల్పుని క్రమబద్ధీకరించు</type>
+			<type type="tertiary" key="colStrength">ఉచ్ఛారణలని/కేస్‌ని/వెడల్పుని
+				క్రమబద్ధీకరించు</type>
 			<type type="thai" key="numbers">థాయి అంకెలు</type>
 			<type type="tibt" key="numbers">టిబిటన్ అంకెలు</type>
 			<type type="traditional" key="collation">సాంప్రదాయ క్రమబద్ధీకరణ క్రమం</type>
@@ -1048,9 +1058,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[అ ఆ ఇ ఈ ఉ ఊ ఋ ౠ ఌ ౡ ఎ ఏ ఐ ఒ ఓ ఔ ఁ ం ః క ఖ గ ఘ ఙ చ ఛ జ ఝ ఞ ట ఠ డ ఢ ణ త థ ద ధ న ప ఫ బ భ మ య ర ఱ ల వ శ ష స హ ళ \u0C3E \u0C3F \u0C40 ు ూ ృ ౄ \u0C46 \u0C47 \u0C48 \u0C4A \u0C4B \u0C4C \u0C4D \u0C55 \u0C56]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[\u200C\u200D ౦ ౧ ౨ ౩ ౪ ౫ ౬ ౭ ౮ ౯]</exemplarCharacters>
-		<exemplarCharacters type="index">[అ ఆ ఇ ఈ ఉ ఊ ఋ ౠ ఎ ఏ ఐ ఒ ఓ ఔ క ఖ గ ఘ ఙ చ ఛ జ ఝ ఞ ట ఠ డ ఢ ణ త థ ద ధ న ప ఫ బ భ మ య ర ఱ ల వ శ ష స హ ళ]</exemplarCharacters>
+		<exemplarCharacters>[అ ఆ ఇ ఈ ఉ ఊ ఋ ౠ ఌ ౡ ఎ ఏ ఐ ఒ ఓ ఔ ఁ ం ః క ఖ గ ఘ ఙ చ
+			ఛ జ ఝ ఞ ట ఠ డ ఢ ణ త థ ద ధ న ప ఫ బ భ మ య ర ఱ ల వ శ ష స హ ళ \u0C3E
+			\u0C3F \u0C40 ు ూ ృ ౄ \u0C46 \u0C47 \u0C48 \u0C4A \u0C4B \u0C4C
+			\u0C4D \u0C55 \u0C56]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[\u200C\u200D ౦ ౧ ౨ ౩ ౪ ౫
+			౬ ౭ ౮ ౯]</exemplarCharacters>
+		<exemplarCharacters type="index">[అ ఆ ఇ ఈ ఉ ఊ ఋ ౠ ఎ ఏ ఐ ఒ ఓ
+			ఔ క ఖ గ ఘ ఙ చ ఛ జ ఝ ఞ ట ఠ డ ఢ ణ త థ ద ధ న ప ఫ బ భ మ య ర ఱ ల వ శ ష స హ
+			ళ]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1234,7 +1250,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM - E, d MMM, y</greatestDifference>
 							<greatestDifference id="M">E, d MMM - E, d MMM, y</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y - E, d MMM, y</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y - E, d MMM,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>
@@ -1682,7 +1699,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM - E, d MMM, y</greatestDifference>
 							<greatestDifference id="M">E, d MMM - E, d MMM, y</greatestDifference>
-							<greatestDifference id="y">E, d MMM, y - E, d MMM, y</greatestDifference>
+							<greatestDifference id="y">E, d MMM, y - E, d MMM,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM – MMMM y</greatestDifference>
@@ -4230,8 +4248,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>బోస్నియా-హెర్జగోవినా మార్పిడి చెయ్యగలిగే మార్క్</displayName>
-				<displayName count="one">బోస్నియా-హెర్జగోవినా మార్పిడి చెయ్యగలిగే మార్క్</displayName>
-				<displayName count="other">బోస్నియా-హెర్జగోవినా మార్పిడి చెయ్యగలిగే మార్క్‌లు</displayName>
+				<displayName count="one">బోస్నియా-హెర్జగోవినా మార్పిడి
+					చెయ్యగలిగే మార్క్</displayName>
+				<displayName count="other">బోస్నియా-హెర్జగోవినా మార్పిడి
+					చెయ్యగలిగే మార్క్‌లు</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>బర్బాడియన్ డాలర్</displayName>

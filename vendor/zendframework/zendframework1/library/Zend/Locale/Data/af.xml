@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="af"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="af" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -404,7 +403,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Guadeloupe</territory>
 			<territory type="GQ">Ekwatoriaal-Guinee</territory>
 			<territory type="GR">Griekeland</territory>
-			<territory type="GS">Suid-Georgië en die Suidelike Sandwicheilande</territory>
+			<territory type="GS">Suid-Georgië en die Suidelike
+				Sandwicheilande</territory>
 			<territory type="GT">Guatemala</territory>
 			<territory type="GU">Guam</territory>
 			<territory type="GW">Guinee-Bissau</territory>
@@ -606,7 +606,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armn" key="numbers">Armeense syfers</type>
 			<type type="armnlow" key="numbers">Armeense kleinletter-syfers</type>
 			<type type="beng" key="numbers">Bengaalse syfers</type>
-			<type type="big5han" key="collation">Tradisionele Chinese sorteervolgorde - Groot5</type>
+			<type type="big5han" key="collation">Tradisionele Chinese sorteervolgorde -
+				Groot5</type>
 			<type type="buddhist" key="calendar">Boeddhistiese kalender</type>
 			<type type="chinese" key="calendar">Chinese kalender</type>
 			<type type="coptic" key="calendar">Koptiese kalender</type>
@@ -615,10 +616,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="ducet" key="collation">Verstek Unicode-sorteervolgorde</type>
 			<type type="ethi" key="numbers">Ethiopiese syfers</type>
 			<type type="ethiopic" key="calendar">Etiopiese kalender</type>
-			<type type="ethiopic-amete-alem" key="calendar">Etiopiese Amete Alem-kalender</type>
+			<type type="ethiopic-amete-alem" key="calendar">Etiopiese Amete
+				Alem-kalender</type>
 			<type type="finance" key="numbers">Finansiële syfers</type>
 			<type type="fullwide" key="numbers">Vollewydte-syfers</type>
-			<type type="gb2312han" key="collation">Vereenvoudigde Chinese sorteervolgorde - GB2312</type>
+			<type type="gb2312han" key="collation">Vereenvoudigde Chinese
+				sorteervolgorde - GB2312</type>
 			<type type="geor" key="numbers">Georgiese syfers</type>
 			<type type="gregorian" key="calendar">Gregoriese kalender</type>
 			<type type="grek" key="numbers">Griekse syfers</type>
@@ -627,7 +630,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers">Gurmukhi-syfers</type>
 			<type type="hanidec" key="numbers">Chinese desimale syfers</type>
 			<type type="hans" key="numbers">Vereenvoudigde Chinese syfers</type>
-			<type type="hansfin" key="numbers">Vereenvoudigde Chinese finansiële syfers</type>
+			<type type="hansfin" key="numbers">Vereenvoudigde Chinese finansiële
+				syfers</type>
 			<type type="hant" key="numbers">Tradisionele Chinese syfers</type>
 			<type type="hantfin" key="numbers">Tradisionele Chinese finansiële syfers</type>
 			<type type="hebr" key="numbers">Hebreeuse syfers</type>
@@ -713,10 +717,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a á â b c d e é è ê ë f g h i î ï j k l m n o ô ö p q r s t u û v w x y z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à â ä ã æ ç é è ê ë í ì î ï ó ò ô ö ú ù û ü ý]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="contributed">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
+		<exemplarCharacters>[a á â b c d e é è ê ë f g h i î ï j k l m n o ô ö
+			p q r s t u û v w x y z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à â ä ã æ ç é è ê ë í ì
+			î ï ó ò ô ö ú ù û ü ý]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="contributed">[A B C D E F
+			G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ ’ &quot; “ ” ( ) \[ \] § @ * / \&amp; # † ‡ ′ ″]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -898,9 +906,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">d MMM, y – d MMM, y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMEd">
-							<greatestDifference id="d">E, d MMM – E, d MMM, y G</greatestDifference>
-							<greatestDifference id="M">E, d MMM – E, d MMM, y G</greatestDifference>
-							<greatestDifference id="y">E, MMM d, y – E, MMM d, y G</greatestDifference>
+							<greatestDifference id="d">E, d MMM – E, d MMM, y
+								G</greatestDifference>
+							<greatestDifference id="M">E, d MMM – E, d MMM, y
+								G</greatestDifference>
+							<greatestDifference id="y">E, MMM d, y – E, MMM d,
+								y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y G</greatestDifference>
@@ -1340,7 +1351,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM – E, d MMM, y</greatestDifference>
 							<greatestDifference id="M">E, d MMM – E, d MMM, y</greatestDifference>
-							<greatestDifference id="y">E, MMM d, y – E, MMM d, y</greatestDifference>
+							<greatestDifference id="y">E, MMM d, y – E, MMM d,
+								y</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM–MMMM y</greatestDifference>

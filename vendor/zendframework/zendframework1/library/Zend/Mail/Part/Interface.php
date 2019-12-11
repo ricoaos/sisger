@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Zend Framework
  *
@@ -20,24 +21,23 @@
  * @version    $Id$
  */
 
-
 /**
- * @category   Zend
- * @package    Zend_Mail
+ *
+ * @category Zend
+ * @package Zend_Mail
  * @subpackage Storage
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
-
 interface Zend_Mail_Part_Interface extends RecursiveIterator
 {
+
     /**
      * Check if part is a multipart message
      *
      * @return bool if part is multipart
      */
     public function isMultipart();
-
 
     /**
      * Body of part
@@ -59,7 +59,8 @@ interface Zend_Mail_Part_Interface extends RecursiveIterator
     /**
      * Get part of multipart message
      *
-     * @param  int $num number of part starting with 1 for first part
+     * @param int $num
+     *            number of part starting with 1 for first part
      * @return Zend_Mail_Part wanted part
      * @throws Zend_Mail_Exception
      */
@@ -71,7 +72,6 @@ interface Zend_Mail_Part_Interface extends RecursiveIterator
      * @return int number of sub-parts
      */
     public function countParts();
-
 
     /**
      * Get all headers
@@ -89,8 +89,10 @@ interface Zend_Mail_Part_Interface extends RecursiveIterator
      * Internally headers that occur more than once are saved as array, all other as string. If $format
      * is set to string implode is used to concat the values (with Zend_Mime::LINEEND as delim).
      *
-     * @param  string $name   name of header, matches case-insensitive, but camel-case is replaced with dashes
-     * @param  string $format change type of return value to 'string' or 'array'
+     * @param string $name
+     *            name of header, matches case-insensitive, but camel-case is replaced with dashes
+     * @param string $format
+     *            change type of return value to 'string' or 'array'
      * @return string|array value of header in wanted or internal format
      * @throws Zend_Mail_Exception
      */
@@ -105,14 +107,16 @@ interface Zend_Mail_Part_Interface extends RecursiveIterator
      * Throws a Zend_Mail_Exception if the requested header does not exist. If
      * the specific header field does not exist, returns null.
      *
-     * @param  string $name       name of header, like in getHeader()
-     * @param  string $wantedPart the wanted part, default is first, if null an array with all parts is returned
-     * @param  string $firstName  key name for the first part
+     * @param string $name
+     *            name of header, like in getHeader()
+     * @param string $wantedPart
+     *            the wanted part, default is first, if null an array with all parts is returned
+     * @param string $firstName
+     *            key name for the first part
      * @return string|array wanted part or all parts as array($firstName => firstPart, partname => value)
      * @throws Zend_Exception, Zend_Mail_Exception
      */
     public function getHeaderField($name, $wantedPart = 0, $firstName = 0);
-
 
     /**
      * Getter for mail headers - name is matched in lowercase
@@ -121,7 +125,8 @@ interface Zend_Mail_Part_Interface extends RecursiveIterator
      *
      * @see Zend_Mail_Part::getHeader()
      *
-     * @param  string $name header name
+     * @param string $name
+     *            header name
      * @return string value of header
      * @throws Zend_Mail_Exception
      */

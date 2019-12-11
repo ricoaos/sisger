@@ -20,11 +20,13 @@
  */
 
 /**
+ *
  * @see Zend_Filter_Interface
  */
 require_once 'Zend/Filter/Interface.php';
 
 /**
+ *
  * @see Zend_Loader
  */
 require_once 'Zend/Locale/Format.php';
@@ -32,33 +34,35 @@ require_once 'Zend/Locale/Format.php';
 /**
  * Localizes given normalized input
  *
- * @category   Zend
- * @package    Zend_Filter
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Filter
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Filter_NormalizedToLocalized implements Zend_Filter_Interface
 {
+
     /**
      * Set options
      */
     protected $_options = array(
-        'locale'      => null,
+        'locale' => null,
         'date_format' => null,
-        'precision'   => null
+        'precision' => null
     );
 
     /**
      * Class constructor
      *
-     * @param string|Zend_Locale $locale (Optional) Locale to set
+     * @param string|Zend_Locale $locale
+     *            (Optional) Locale to set
      */
     public function __construct($options = null)
     {
         if ($options instanceof Zend_Config) {
             $options = $options->toArray();
         }
-
+        
         if (null !== $options) {
             $this->setOptions($options);
         }
@@ -77,7 +81,8 @@ class Zend_Filter_NormalizedToLocalized implements Zend_Filter_Interface
     /**
      * Sets options to use
      *
-     * @param  array $options (Optional) Options to use
+     * @param array $options
+     *            (Optional) Options to use
      * @return Zend_Filter_LocalizedToNormalized
      */
     public function setOptions(array $options = null)
@@ -91,7 +96,8 @@ class Zend_Filter_NormalizedToLocalized implements Zend_Filter_Interface
      *
      * Normalizes the given input
      *
-     * @param  string $value Value to normalized
+     * @param string $value
+     *            Value to normalized
      * @return string|array The normalized value
      */
     public function filter($value)
@@ -105,7 +111,7 @@ class Zend_Filter_NormalizedToLocalized implements Zend_Filter_Interface
         } else if ($this->_options['precision'] === null) {
             return Zend_Locale_Format::toFloat($value, $this->_options);
         }
-
+        
         return Zend_Locale_Format::toNumber($value, $this->_options);
     }
 }

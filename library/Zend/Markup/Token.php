@@ -21,20 +21,24 @@
  */
 
 /**
+ *
  * @see Zend_Markup_TokenList
  */
 require_once 'Zend/Markup/TokenList.php';
 
 /**
- * @category   Zend
- * @package    Zend_Markup
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Markup
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Markup_Token
 {
-    const TYPE_NONE    = 'none';
-    const TYPE_TAG     = 'tag';
+
+    const TYPE_NONE = 'none';
+
+    const TYPE_TAG = 'tag';
 
     /**
      * Children of this token
@@ -85,43 +89,37 @@ class Zend_Markup_Token
      */
     protected $_parent;
 
-
     /**
      * Construct the token
      *
-     * @param  string $tag
-     * @param  string $type
-     * @param  string $name
-     * @param  array $attributes
-     * @param  Zend_Markup_Token $parent
+     * @param string $tag            
+     * @param string $type            
+     * @param string $name            
+     * @param array $attributes            
+     * @param Zend_Markup_Token $parent            
      * @return void
      */
-    public function __construct(
-        $tag,
-        $type,
-        $name = '',
-        array $attributes = array(),
-        Zend_Markup_Token $parent = null
-    ) {
-        $this->_tag        = $tag;
-        $this->_type       = $type;
-        $this->_name       = $name;
+    public function __construct($tag, $type, $name = '', array $attributes = array(), Zend_Markup_Token $parent = null)
+    {
+        $this->_tag = $tag;
+        $this->_type = $type;
+        $this->_name = $name;
         $this->_attributes = $attributes;
-        $this->_parent     = $parent;
+        $this->_parent = $parent;
     }
 
     // accessors
-
+    
     /**
      * Set the stopper
      *
-     * @param string $stopper
+     * @param string $stopper            
      * @return Zend_Markup_Token
      */
     public function setStopper($stopper)
     {
         $this->_stopper = $stopper;
-
+        
         return $this;
     }
 
@@ -168,7 +166,7 @@ class Zend_Markup_Token
     /**
      * Get an attribute
      *
-     * @param string $name
+     * @param string $name            
      *
      * @return string
      */
@@ -180,7 +178,7 @@ class Zend_Markup_Token
     /**
      * Check if the token has an attribute
      *
-     * @param string $name
+     * @param string $name            
      *
      * @return bool
      */
@@ -207,14 +205,14 @@ class Zend_Markup_Token
     public function addAttribute($name, $value)
     {
         $this->_attributes[$name] = $value;
-
+        
         return $this;
     }
 
     /**
      * Check if an attribute is empty
      *
-     * @param string $name
+     * @param string $name            
      *
      * @return bool
      */
@@ -224,7 +222,7 @@ class Zend_Markup_Token
     }
 
     // functions for child/parent tokens
-
+    
     /**
      * Add a child token
      *
@@ -238,7 +236,7 @@ class Zend_Markup_Token
     /**
      * Set the children token list
      *
-     * @param  Zend_Markup_TokenList $children
+     * @param Zend_Markup_TokenList $children            
      * @return Zend_Markup_Token
      */
     public function setChildren(Zend_Markup_TokenList $children)
@@ -267,7 +265,7 @@ class Zend_Markup_Token
      */
     public function hasChildren()
     {
-        return !empty($this->_children);
+        return ! empty($this->_children);
     }
 
     /**
@@ -283,7 +281,7 @@ class Zend_Markup_Token
     /**
      * Set a parent token
      *
-     * @param  Zend_Markup_Token $parent
+     * @param Zend_Markup_Token $parent            
      * @return Zend_Markup_Token
      */
     public function setParent(Zend_Markup_Token $parent)
@@ -299,8 +297,8 @@ class Zend_Markup_Token
      */
     public function __clone()
     {
-        $this->_parent   = null;
+        $this->_parent = null;
         $this->_children = null;
-        $this->_tag      = '';
+        $this->_tag = '';
     }
 }

@@ -21,19 +21,22 @@
  */
 
 /**
+ *
  * @see Zend_Controller_Action
  */
 require_once 'Zend/Controller/Action.php';
 
 /**
- * @category   Zend
- * @package    Zend_Controller
+ *
+ * @category Zend
+ * @package Zend_Controller
  * @subpackage Zend_Controller_Action_Helper
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Controller_Action_Helper_Abstract
 {
+
     /**
      * $_actionController
      *
@@ -42,6 +45,7 @@ abstract class Zend_Controller_Action_Helper_Abstract
     protected $_actionController = null;
 
     /**
+     *
      * @var mixed $_frontController
      */
     protected $_frontController = null;
@@ -49,7 +53,7 @@ abstract class Zend_Controller_Action_Helper_Abstract
     /**
      * setActionController()
      *
-     * @param  Zend_Controller_Action $actionController
+     * @param Zend_Controller_Action $actionController            
      * @return Zend_Controller_ActionHelper_Abstract Provides a fluent interface
      */
     public function setActionController(Zend_Controller_Action $actionController = null)
@@ -84,8 +88,7 @@ abstract class Zend_Controller_Action_Helper_Abstract
      * @return void
      */
     public function init()
-    {
-    }
+    {}
 
     /**
      * Hook into action controller preDispatch() workflow
@@ -93,8 +96,7 @@ abstract class Zend_Controller_Action_Helper_Abstract
      * @return void
      */
     public function preDispatch()
-    {
-    }
+    {}
 
     /**
      * Hook into action controller postDispatch() workflow
@@ -102,8 +104,7 @@ abstract class Zend_Controller_Action_Helper_Abstract
      * @return void
      */
     public function postDispatch()
-    {
-    }
+    {}
 
     /**
      * getRequest() -
@@ -116,7 +117,7 @@ abstract class Zend_Controller_Action_Helper_Abstract
         if (null === $controller) {
             $controller = $this->getFrontController();
         }
-
+        
         return $controller->getRequest();
     }
 
@@ -131,7 +132,7 @@ abstract class Zend_Controller_Action_Helper_Abstract
         if (null === $controller) {
             $controller = $this->getFrontController();
         }
-
+        
         return $controller->getResponse();
     }
 

@@ -21,31 +21,34 @@
  */
 
 /**
+ *
  * @see Zend_CodeGenerator_Abstract
  */
 require_once 'Zend/CodeGenerator/Abstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_CodeGenerator
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_CodeGenerator
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_CodeGenerator_Php_Abstract extends Zend_CodeGenerator_Abstract
 {
 
     /**
      * Line feed to use in place of EOL
-     *
      */
     const LINE_FEED = "\n";
 
     /**
+     *
      * @var bool
      */
     protected $_isSourceDirty = true;
 
     /**
+     *
      * @var int|string
      */
     protected $_indentation = '    ';
@@ -53,7 +56,7 @@ abstract class Zend_CodeGenerator_Php_Abstract extends Zend_CodeGenerator_Abstra
     /**
      * setSourceDirty()
      *
-     * @param bool $isSourceDirty
+     * @param bool $isSourceDirty            
      * @return Zend_CodeGenerator_Php_Abstract
      */
     public function setSourceDirty($isSourceDirty = true)
@@ -75,7 +78,7 @@ abstract class Zend_CodeGenerator_Php_Abstract extends Zend_CodeGenerator_Abstra
     /**
      * setIndentation()
      *
-     * @param string|int $indentation
+     * @param string|int $indentation            
      * @return Zend_CodeGenerator_Php_Abstract
      */
     public function setIndentation($indentation)
@@ -93,5 +96,4 @@ abstract class Zend_CodeGenerator_Php_Abstract extends Zend_CodeGenerator_Abstra
     {
         return $this->_indentation;
     }
-
 }

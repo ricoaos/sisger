@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="ro"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="ro" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -722,7 +721,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">Finlanda</territory>
 			<territory type="FJ">Fiji</territory>
 			<territory type="FK">Insulele Falkland</territory>
-			<territory type="FK" alt="variant">Insulele Falkland (Insulele Malvine)</territory>
+			<territory type="FK" alt="variant">Insulele Falkland (Insulele
+				Malvine)</territory>
 			<territory type="FM">Micronezia</territory>
 			<territory type="FO">Insulele Feroe</territory>
 			<territory type="FR">Franța</territory>
@@ -890,7 +890,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="TZ">Tanzania</territory>
 			<territory type="UA">Ucraina</territory>
 			<territory type="UG">Uganda</territory>
-			<territory type="UM">Insulele Minore Îndepărtate ale Statelor Unite ale Americii</territory>
+			<territory type="UM">Insulele Minore Îndepărtate ale Statelor
+				Unite ale Americii</territory>
 			<territory type="US">Statele Unite ale Americii</territory>
 			<territory type="US" alt="short">S.U.A.</territory>
 			<territory type="UY">Uruguay</territory>
@@ -916,7 +917,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="1901" draft="provisional">ortografie germană tradițională</variant>
 			<variant type="1994" draft="provisional">ortografie resiană standardizată</variant>
 			<variant type="1996" draft="provisional">ortografie germană de la 1996</variant>
-			<variant type="1606NICT" draft="provisional">franceză medievală târzie până la 1606</variant>
+			<variant type="1606NICT" draft="provisional">franceză medievală târzie până
+				la 1606</variant>
 			<variant type="1694ACAD" draft="provisional">franceză modernă veche</variant>
 			<variant type="1959ACAD" draft="provisional">belarusă academică</variant>
 			<variant type="AREVELA" draft="provisional">armeană orientală</variant>
@@ -943,7 +945,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="SOLBA" draft="provisional">dialet Stolvizza/Solbica</variant>
 			<variant type="TARASK" draft="provisional">ortografie taraskievica</variant>
 			<variant type="UCCOR" draft="provisional">ortografie unificată cornish</variant>
-			<variant type="UCRCOR" draft="provisional">ortografie revizuită unificată cornish</variant>
+			<variant type="UCRCOR" draft="provisional">ortografie revizuită unificată
+				cornish</variant>
 			<variant type="VALENCIA" draft="provisional">valenciană</variant>
 			<variant type="WADEGILE">Wade-Giles</variant>
 		</variants>
@@ -951,7 +954,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<key type="colAlternate" draft="contributed">Ordonare cu simbolurile ignorate</key>
 			<key type="colBackwards" draft="contributed">Ordonare inversă după accent</key>
 			<key type="colCaseFirst" draft="contributed">Ordonare după majuscule/minuscule</key>
-			<key type="colCaseLevel" draft="contributed">Ordonare care ține seama de majuscule/minuscule</key>
+			<key type="colCaseLevel" draft="contributed">Ordonare care ține seama de
+				majuscule/minuscule</key>
 			<key type="colHiraganaQuaternary" draft="contributed">Ordonare după kana</key>
 			<key type="collation">ordine de sortare</key>
 			<key type="colNormalization" draft="contributed">Ordonare normalizată</key>
@@ -970,20 +974,25 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="armn" key="numbers">numerale armenești</type>
 			<type type="armnlow" key="numbers">numerale armenești cu minuscule</type>
 			<type type="beng" key="numbers">cifre bengaleze</type>
-			<type type="big5han" key="collation">sortare pentru chineza tradițională - Big5</type>
+			<type type="big5han" key="collation">sortare pentru chineza tradițională -
+				Big5</type>
 			<type type="buddhist" key="calendar">calendar budist</type>
 			<type type="chinese" key="calendar">calendar chinezesc</type>
 			<type type="coptic" key="calendar">calendar copt</type>
 			<type type="deva" key="numbers">cifre devanagari</type>
 			<type type="dictionary" key="collation">Ordine de sortare a dicționarului</type>
 			<type type="ducet" key="collation">ordine de sortare Unicode implicită</type>
-			<type type="eor" key="collation" draft="contributed">regulile europene de sortare</type>
+			<type type="eor" key="collation" draft="contributed">regulile europene de
+				sortare</type>
 			<type type="ethi" key="numbers">numerale etiopiene</type>
 			<type type="ethiopic" key="calendar">calendar etiopian</type>
-			<type type="ethiopic-amete-alem" key="calendar">Calendarul etiopian amete alem</type>
-			<type type="finance" key="numbers" draft="contributed">Sistemul numeric financiar</type>
+			<type type="ethiopic-amete-alem" key="calendar">Calendarul etiopian amete
+				alem</type>
+			<type type="finance" key="numbers" draft="contributed">Sistemul numeric
+				financiar</type>
 			<type type="fullwide" key="numbers">cifre cu lățimea întreagă</type>
-			<type type="gb2312han" key="collation">sortare pentru chineza simplificată - GB2312</type>
+			<type type="gb2312han" key="collation">sortare pentru chineza simplificată -
+				GB2312</type>
 			<type type="geor" key="numbers">numerale georgiene</type>
 			<type type="gregorian" key="calendar">calendar gregorian</type>
 			<type type="grek" key="numbers">numerale grecești</type>
@@ -992,12 +1001,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="guru" key="numbers">cifre gurmukhi</type>
 			<type type="hanidec" key="numbers">numerale zecimale chinezești</type>
 			<type type="hans" key="numbers">numerale chinezești simplificate</type>
-			<type type="hansfin" key="numbers">numerale financiare chinezești simplificate</type>
+			<type type="hansfin" key="numbers">numerale financiare chinezești
+				simplificate</type>
 			<type type="hant" key="numbers">numerale chinezești tradiționale</type>
-			<type type="hantfin" key="numbers">numerale financiare chinezești tradiționale</type>
+			<type type="hantfin" key="numbers">numerale financiare chinezești
+				tradiționale</type>
 			<type type="hebr" key="numbers">numerale ebraice</type>
 			<type type="hebrew" key="calendar">calendar ebraic</type>
-			<type type="identical" key="colStrength" draft="contributed">Ordonați-le pe toate</type>
+			<type type="identical" key="colStrength" draft="contributed">Ordonați-le pe
+				toate</type>
 			<type type="indian" key="calendar">calendar național indian</type>
 			<type type="islamic" key="calendar">calendar islamic</type>
 			<type type="islamic-civil" key="calendar">calendar islamic civil</type>
@@ -1008,51 +1020,73 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="knda" key="numbers">cifre kannada</type>
 			<type type="laoo" key="numbers">cifre laoțiene</type>
 			<type type="latn" key="numbers">cifre occidentale</type>
-			<type type="lower" key="colCaseFirst" draft="contributed">Ordonați întâi minusculele</type>
+			<type type="lower" key="colCaseFirst" draft="contributed">Ordonați întâi
+				minusculele</type>
 			<type type="mlym" key="numbers">cifre malayalam</type>
 			<type type="mong" key="numbers">Cifre mongole</type>
 			<type type="mymr" key="numbers">cifre birmaneze</type>
 			<type type="native" key="numbers" draft="contributed">Cifre native</type>
-			<type type="no" key="colBackwards" draft="contributed">Ordonați accentele în mod normal</type>
-			<type type="no" key="colCaseFirst" draft="contributed">Ordonați după dimensiunea normală a literei</type>
-			<type type="no" key="colCaseLevel" draft="contributed">Ordonați neținând seama de diferența dintre majuscule/minuscule</type>
-			<type type="no" key="colHiraganaQuaternary" draft="contributed">Ordonați caracterele kana separat</type>
-			<type type="no" key="colNormalization" draft="contributed">Ordonați fără normalizare</type>
-			<type type="no" key="colNumeric" draft="contributed">Ordonați cifrele individual</type>
-			<type type="non-ignorable" key="colAlternate" draft="contributed">Ordonați simbolurile</type>
+			<type type="no" key="colBackwards" draft="contributed">Ordonați accentele în
+				mod normal</type>
+			<type type="no" key="colCaseFirst" draft="contributed">Ordonați după
+				dimensiunea normală a literei</type>
+			<type type="no" key="colCaseLevel" draft="contributed">Ordonați neținând seama
+				de diferența dintre majuscule/minuscule</type>
+			<type type="no" key="colHiraganaQuaternary" draft="contributed">Ordonați
+				caracterele kana separat</type>
+			<type type="no" key="colNormalization" draft="contributed">Ordonați fără
+				normalizare</type>
+			<type type="no" key="colNumeric" draft="contributed">Ordonați cifrele
+				individual</type>
+			<type type="non-ignorable" key="colAlternate" draft="contributed">Ordonați
+				simbolurile</type>
 			<type type="orya" key="numbers">cifre oriya</type>
 			<type type="persian" key="calendar">calendar persan</type>
 			<type type="phonebook" key="collation">sortare după cartea de telefon</type>
-			<type type="phonetic" key="collation" draft="contributed">Tip de ordonare fonetică</type>
+			<type type="phonetic" key="collation" draft="contributed">Tip de ordonare
+				fonetică</type>
 			<type type="pinyin" key="collation">sortare pinyin</type>
-			<type type="primary" key="colStrength" draft="contributed">Ordonați numai literele de bază</type>
-			<type type="quaternary" key="colStrength" draft="contributed">Ordonați după accente/dimensiunea literei/lățime/kana</type>
+			<type type="primary" key="colStrength" draft="contributed">Ordonați numai
+				literele de bază</type>
+			<type type="quaternary" key="colStrength" draft="contributed">Ordonați după
+				accente/dimensiunea literei/lățime/kana</type>
 			<type type="reformed" key="collation">Ordine de sortare reformată</type>
 			<type type="roc" key="calendar">calendar al Republicii Chineze</type>
 			<type type="roman" key="numbers">numerale romane</type>
 			<type type="romanlow" key="numbers">numerale romane cu minuscule</type>
 			<type type="search" key="collation">căutare cu scop general</type>
-			<type type="searchjl" key="collation" draft="contributed">Căutați în funcție de consoana inițială hangul</type>
-			<type type="secondary" key="colStrength" draft="contributed">Ordonați după accent</type>
-			<type type="shifted" key="colAlternate" draft="contributed">Ordonați ignorând simbolurile</type>
+			<type type="searchjl" key="collation" draft="contributed">Căutați în funcție
+				de consoana inițială hangul</type>
+			<type type="secondary" key="colStrength" draft="contributed">Ordonați după
+				accent</type>
+			<type type="shifted" key="colAlternate" draft="contributed">Ordonați ignorând
+				simbolurile</type>
 			<type type="standard" key="collation">ordine de sortare standard</type>
 			<type type="stroke" key="collation">ordine de sortare după trasare</type>
 			<type type="taml" key="numbers">numerale tradiționale tamilă</type>
 			<type type="tamldec" key="numbers">cifre tamilă</type>
 			<type type="telu" key="numbers">cifre telugu</type>
-			<type type="tertiary" key="colStrength" draft="contributed">Ordonați după accente/dimensiunea literei/lățime</type>
+			<type type="tertiary" key="colStrength" draft="contributed">Ordonați după
+				accente/dimensiunea literei/lățime</type>
 			<type type="thai" key="numbers">cifre thailandeze</type>
 			<type type="tibt" key="numbers">cifre tibetane</type>
 			<type type="traditional" key="collation">sortare tradițională</type>
 			<type type="traditional" key="numbers" draft="contributed">Numere tradiționale</type>
-			<type type="unihan" key="collation">Ordine de sortare a liniilor ideogramelor</type>
-			<type type="upper" key="colCaseFirst" draft="contributed">Ordonați mai întâi majusculele</type>
+			<type type="unihan" key="collation">Ordine de sortare a liniilor
+				ideogramelor</type>
+			<type type="upper" key="colCaseFirst" draft="contributed">Ordonați mai întâi
+				majusculele</type>
 			<type type="vaii" key="numbers" draft="contributed">Cifre Vai</type>
-			<type type="yes" key="colBackwards" draft="contributed">Ordonați după accente în ordine inversă</type>
-			<type type="yes" key="colCaseLevel" draft="contributed">Ordonați ținând seama de diferența dintre majuscule/minuscule</type>
-			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Ordonați kana diferențiat</type>
-			<type type="yes" key="colNormalization" draft="contributed">Ordonați caracterele unicode normalizat</type>
-			<type type="yes" key="colNumeric" draft="contributed">Ordonați cifrele în ordine numerică</type>
+			<type type="yes" key="colBackwards" draft="contributed">Ordonați după accente
+				în ordine inversă</type>
+			<type type="yes" key="colCaseLevel" draft="contributed">Ordonați ținând seama
+				de diferența dintre majuscule/minuscule</type>
+			<type type="yes" key="colHiraganaQuaternary" draft="contributed">Ordonați kana
+				diferențiat</type>
+			<type type="yes" key="colNormalization" draft="contributed">Ordonați
+				caracterele unicode normalizat</type>
+			<type type="yes" key="colNumeric" draft="contributed">Ordonați cifrele în
+				ordine numerică</type>
 		</types>
 		<transformNames>
 			<transformName type="BGN" draft="contributed">BGN</transformName>
@@ -1060,8 +1094,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<transformName type="Tone" draft="contributed">Ton</transformName>
 			<transformName type="UNGEGN" draft="contributed">UNGEGN</transformName>
 			<transformName type="x-Accents" draft="contributed">Accente</transformName>
-			<transformName type="x-Fullwidth" draft="contributed">Cu lățime întreagă</transformName>
-			<transformName type="x-Halfwidth" draft="contributed">Cu jumătate de lățime</transformName>
+			<transformName type="x-Fullwidth" draft="contributed">Cu lățime
+				întreagă</transformName>
+			<transformName type="x-Halfwidth" draft="contributed">Cu jumătate de
+				lățime</transformName>
 			<transformName type="x-Jamo" draft="contributed">Jamo</transformName>
 			<transformName type="x-Pinyin" draft="contributed">Pinyin</transformName>
 			<transformName type="x-Publishing" draft="contributed">Publicare</transformName>
@@ -1078,10 +1114,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a ă â b c d e f g h i î j k l m n o p r s ș t ț u v x z]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[á à å ä ç é è ê ë ñ ö q ş ţ ü w y]</exemplarCharacters>
-		<exemplarCharacters type="index">[A Ă Â B C D E F G H I Î J K L M N O P Q R S Ș T Ț U V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … ' ‘ &quot; “ ” „ « » ( ) \[ \] @ * /]</exemplarCharacters>
+		<exemplarCharacters>[a ă â b c d e f g h i î j k l m n o p r s ș t ț u
+			v x z]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[á à å ä ç é è ê ë ñ ö q ş
+			ţ ü w y]</exemplarCharacters>
+		<exemplarCharacters type="index">[A Ă Â B C D E F G H I Î J
+			K L M N O P Q R S Ș T Ț U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[\- ‐ – — , ; \: ! ? . … '
+			‘ &quot; “ ” „ « » ( ) \[ \] @ * /]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1364,9 +1404,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">dd.MM.y - dd.MM.y G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, dd.MM.y - E, dd.MM.y G</greatestDifference>
-							<greatestDifference id="M">E, dd.MM.y - E, dd.MM.y G</greatestDifference>
-							<greatestDifference id="y">E, dd.MM.y - E, dd.MM.y G</greatestDifference>
+							<greatestDifference id="d">E, dd.MM.y - E, dd.MM.y
+								G</greatestDifference>
+							<greatestDifference id="M">E, dd.MM.y - E, dd.MM.y
+								G</greatestDifference>
+							<greatestDifference id="y">E, dd.MM.y - E, dd.MM.y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM-MMM y G</greatestDifference>
@@ -1380,7 +1423,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM - E, d MMM y G</greatestDifference>
 							<greatestDifference id="M">E, d MMM - E, d MMM y G</greatestDifference>
-							<greatestDifference id="y">E, d MMM y - E, d MMM y G</greatestDifference>
+							<greatestDifference id="y">E, d MMM y - E, d MMM y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM-MMMM y G</greatestDifference>
@@ -1948,12 +1992,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<relativeTime type="future">
 					<relativeTimePattern count="one">Peste {0} săptămână</relativeTimePattern>
 					<relativeTimePattern count="few">Peste {0} săptămâni</relativeTimePattern>
-					<relativeTimePattern count="other">Peste {0} de săptămâni</relativeTimePattern>
+					<relativeTimePattern count="other">Peste {0} de
+						săptămâni</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">Acum {0} săptămână</relativeTimePattern>
 					<relativeTimePattern count="few">Acum {0} săptămâni</relativeTimePattern>
-					<relativeTimePattern count="other">Acum {0} de săptămâni</relativeTimePattern>
+					<relativeTimePattern count="other">Acum {0} de
+						săptămâni</relativeTimePattern>
 				</relativeTime>
 			</field>
 			<field type="day">
@@ -2749,7 +2795,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</metazone>
 			<metazone type="French_Southern">
 				<long>
-					<standard draft="contributed">Ora din Teritoriile Australe și Antarctice Franceze</standard>
+					<standard draft="contributed">Ora din Teritoriile Australe și Antarctice
+						Franceze</standard>
 				</long>
 			</metazone>
 			<metazone type="Galapagos">
@@ -3691,9 +3738,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="CSD">
 				<displayName>dinar Serbia și Muntenegru (2002–2006)</displayName>
-				<displayName count="one">dinar Serbia și Muntenegru (2002–2006)</displayName>
-				<displayName count="few">dinari Serbia și Muntenegru (2002–2006)</displayName>
-				<displayName count="other">dinari Serbia și Muntenegru (2002–2006)</displayName>
+				<displayName count="one">dinar Serbia și Muntenegru
+					(2002–2006)</displayName>
+				<displayName count="few">dinari Serbia și Muntenegru
+					(2002–2006)</displayName>
+				<displayName count="other">dinari Serbia și Muntenegru
+					(2002–2006)</displayName>
 			</currency>
 			<currency type="CUC">
 				<displayName>peso cubanez convertibil</displayName>
@@ -4500,9 +4550,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="STD">
 				<displayName>dobra Sao Tome și Principe</displayName>
-				<displayName count="one" draft="contributed">dobra Sao Tome și Principe</displayName>
-				<displayName count="few" draft="contributed">dobre Sao Tome și Principe</displayName>
-				<displayName count="other" draft="contributed">dobre Sao Tome și Principe</displayName>
+				<displayName count="one" draft="contributed">dobra Sao Tome și
+					Principe</displayName>
+				<displayName count="few" draft="contributed">dobre Sao Tome și
+					Principe</displayName>
+				<displayName count="other" draft="contributed">dobre Sao Tome și
+					Principe</displayName>
 			</currency>
 			<currency type="SUR">
 				<displayName>rublă sovietică</displayName>
@@ -4550,8 +4603,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<currency type="TMM">
 				<displayName draft="contributed">manat turkmen (1993–2009)</displayName>
 				<displayName count="one" draft="contributed">manat turkmen (1993–2009)</displayName>
-				<displayName count="few" draft="contributed">manat turkmeni (1993–2009)</displayName>
-				<displayName count="other" draft="contributed">manat turkmeni (1993–2009)</displayName>
+				<displayName count="few" draft="contributed">manat turkmeni
+					(1993–2009)</displayName>
+				<displayName count="other" draft="contributed">manat turkmeni
+					(1993–2009)</displayName>
 			</currency>
 			<currency type="TMT">
 				<displayName>manat turkmen</displayName>
@@ -4809,9 +4864,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ZMK">
 				<displayName>kwacha zambian (1968–2012)</displayName>
-				<displayName count="one" draft="contributed">kwacha zambiană (1968–2012)</displayName>
-				<displayName count="few" draft="contributed">kwache zambiene (1968–2012)</displayName>
-				<displayName count="other" draft="contributed">kwache zambiene (1968–2012)</displayName>
+				<displayName count="one" draft="contributed">kwacha zambiană
+					(1968–2012)</displayName>
+				<displayName count="few" draft="contributed">kwache zambiene
+					(1968–2012)</displayName>
+				<displayName count="other" draft="contributed">kwache zambiene
+					(1968–2012)</displayName>
 			</currency>
 			<currency type="ZMW">
 				<displayName>kwacha zambian</displayName>
@@ -4886,7 +4944,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="area-square-kilometer">
 				<unitPattern count="one" draft="contributed">{0} kilometru pătrat</unitPattern>
 				<unitPattern count="few" draft="contributed">{0} kilometri pătrați</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} de kilometri pătrați</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} de kilometri
+					pătrați</unitPattern>
 			</unit>
 			<unit type="area-square-meter">
 				<unitPattern count="one" draft="contributed">{0} metru pătrat</unitPattern>
@@ -5029,9 +5088,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other" draft="contributed">{0} de hectopascali</unitPattern>
 			</unit>
 			<unit type="pressure-inch-hg">
-				<unitPattern count="one" draft="contributed">{0} inch coloană de mercur</unitPattern>
-				<unitPattern count="few" draft="contributed">{0} inchi coloană de mercur</unitPattern>
-				<unitPattern count="other" draft="contributed">{0} de inchi coloană de mercur</unitPattern>
+				<unitPattern count="one" draft="contributed">{0} inch coloană de
+					mercur</unitPattern>
+				<unitPattern count="few" draft="contributed">{0} inchi coloană de
+					mercur</unitPattern>
+				<unitPattern count="other" draft="contributed">{0} de inchi coloană de
+					mercur</unitPattern>
 			</unit>
 			<unit type="pressure-millibar">
 				<unitPattern count="one" draft="contributed">{0} milibar</unitPattern>

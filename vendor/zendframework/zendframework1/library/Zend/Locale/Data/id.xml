@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="id"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="id" />
 	</identity>
 	<localeDisplayNames>
 		<localeDisplayPattern>
@@ -828,7 +827,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP">Guadeloupe</territory>
 			<territory type="GQ">Guinea Ekuatorial</territory>
 			<territory type="GR">Yunani</territory>
-			<territory type="GS">Georgia Selatan dan Kepulauan Sandwich Selatan</territory>
+			<territory type="GS">Georgia Selatan dan Kepulauan Sandwich
+				Selatan</territory>
 			<territory type="GT">Guatemala</territory>
 			<territory type="GU">Guam</territory>
 			<territory type="GW">Guinea-Bissau</territory>
@@ -1080,7 +1080,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="ethiopic-amete-alem" key="calendar">Kalender Amete Alem Etiopia</type>
 			<type type="finance" key="numbers">Angka Finansial</type>
 			<type type="fullwide" key="numbers">Angka Lebar Penuh</type>
-			<type type="gb2312han" key="collation">Urutan Sortir China Aks. Sederhana - GB2312</type>
+			<type type="gb2312han" key="collation">Urutan Sortir China Aks. Sederhana -
+				GB2312</type>
 			<type type="geor" key="numbers">Angka Georgia</type>
 			<type type="gregorian" key="calendar">Kalender Gregorian</type>
 			<type type="grek" key="numbers">Angka Yunani</type>
@@ -1194,10 +1195,13 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</contextTransformUsage>
 	</contextTransforms>
 	<characters>
-		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s t u v w x y z]</exemplarCharacters>
+		<exemplarCharacters>[a b c d e f g h i j k l m n o p q r s t u v w x y
+			z]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[å q x z]</exemplarCharacters>
-		<exemplarCharacters type="index">[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]</exemplarCharacters>
-		<exemplarCharacters type="punctuation">[‐ – — , ; \: ! ? . … ' ‘ ’ “ ” ( ) \[ \] /]</exemplarCharacters>
+		<exemplarCharacters type="index">[A B C D E F G H I J K L M
+			N O P Q R S T U V W X Y Z]</exemplarCharacters>
+		<exemplarCharacters type="punctuation">[‐ – — , ; \: ! ? . … ' ‘
+			’ “ ” ( ) \[ \] /]</exemplarCharacters>
 		<ellipsis type="final">{0}…</ellipsis>
 		<ellipsis type="initial">…{0}</ellipsis>
 		<ellipsis type="medial">{0}…{1}</ellipsis>
@@ -1820,9 +1824,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 							<greatestDifference id="y">d/M/y – d/M/y GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMEd">
-							<greatestDifference id="d">E, d/M/y – E, d/M/y GGGGG</greatestDifference>
-							<greatestDifference id="M">E, d/M/y – E, d/M/y GGGGG</greatestDifference>
-							<greatestDifference id="y">E, d/M/y – E, d/M/y GGGGG</greatestDifference>
+							<greatestDifference id="d">E, d/M/y – E, d/M/y
+								GGGGG</greatestDifference>
+							<greatestDifference id="M">E, d/M/y – E, d/M/y
+								GGGGG</greatestDifference>
+							<greatestDifference id="y">E, d/M/y – E, d/M/y
+								GGGGG</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMM">
 							<greatestDifference id="M">MMM–MMM y G</greatestDifference>
@@ -1836,7 +1843,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 						<intervalFormatItem id="yMMMEd">
 							<greatestDifference id="d">E, d MMM – E, d MMM y G</greatestDifference>
 							<greatestDifference id="M">E, d MMM – E, d MMM y G</greatestDifference>
-							<greatestDifference id="y">E, d MMM y – E, d MMM y G</greatestDifference>
+							<greatestDifference id="y">E, d MMM y – E, d MMM y
+								G</greatestDifference>
 						</intervalFormatItem>
 						<intervalFormatItem id="yMMMM">
 							<greatestDifference id="M">MMMM – MMMM y G</greatestDifference>

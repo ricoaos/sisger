@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9791 $"/>
-		<generation date="$Date: 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014) $"/>
-		<language type="se"/>
+		<version number="$Revision: 9791 $" />
+		<generation date="$Date: 2014-02-25 15:16:49 -0600 (Tue, 25 Feb 2014) $" />
+		<language type="se" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
@@ -260,7 +259,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="GP" draft="unconfirmed">Guadeloupe</territory>
 			<territory type="GQ" draft="unconfirmed">Ekvatoriála Guinea</territory>
 			<territory type="GR" draft="unconfirmed">Greika</territory>
-			<territory type="GS" draft="unconfirmed">Lulli Georgia ja Lulli Sandwich-sullot</territory>
+			<territory type="GS" draft="unconfirmed">Lulli Georgia ja Lulli
+				Sandwich-sullot</territory>
 			<territory type="GT" draft="unconfirmed">Guatemala</territory>
 			<territory type="GU" draft="unconfirmed">Guam</territory>
 			<territory type="GW" draft="unconfirmed">Guinea-Bissau</territory>
@@ -447,12 +447,15 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<type type="gregorian" key="calendar" draft="unconfirmed">gregoria kaleander</type>
 			<type type="latn" key="numbers" draft="unconfirmed">oarjelohkosátni</type>
 			<type type="pinyin" key="collation" draft="unconfirmed">pinyin ortnet</type>
-			<type type="traditional" key="collation" draft="unconfirmed">árbevirolaš ortnet</type>
+			<type type="traditional" key="collation" draft="unconfirmed">árbevirolaš
+				ortnet</type>
 		</types>
 		<measurementSystemNames>
-			<measurementSystemName type="metric" draft="unconfirmed">SI állan</measurementSystemName>
+			<measurementSystemName type="metric" draft="unconfirmed">SI
+				állan</measurementSystemName>
 			<measurementSystemName type="UK" draft="unconfirmed">SB állan</measurementSystemName>
-			<measurementSystemName type="US" draft="unconfirmed">AOS állan</measurementSystemName>
+			<measurementSystemName type="US" draft="unconfirmed">AOS
+				állan</measurementSystemName>
 		</measurementSystemNames>
 		<codePatterns>
 			<codePattern type="language" draft="unconfirmed">giella: {0}</codePattern>
@@ -461,9 +464,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a á b c č d đ e f g h i j k l m n ŋ o p r s š t ŧ u v z ž]</exemplarCharacters>
-		<exemplarCharacters type="auxiliary">[à ç é è í ń ñ ó ò q ú w x y ü ø æ å ä ã ö]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="unconfirmed">[A Á B C Č D Đ E É F G H I J K L M N Ŋ O P Q R S Š T Ŧ U V W X Y Z Ž Ø Æ Å Ä Ö]</exemplarCharacters>
+		<exemplarCharacters>[a á b c č d đ e f g h i j k l m n ŋ o p r s š t ŧ
+			u v z ž]</exemplarCharacters>
+		<exemplarCharacters type="auxiliary">[à ç é è í ń ñ ó ò q ú w x
+			y ü ø æ å ä ã ö]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="unconfirmed">[A Á B C Č D
+			Đ E É F G H I J K L M N Ŋ O P Q R S Š T Ŧ U V W X Y Z Ž Ø Æ Å Ä Ö]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart draft="unconfirmed">”</quotationStart>
@@ -605,9 +611,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<field type="month">
 				<displayName draft="unconfirmed">mánnu</displayName>
 				<relativeTime type="future">
-					<relativeTimePattern count="one">{0} mánotbadji maŋŋilit</relativeTimePattern>
-					<relativeTimePattern count="two">{0} mánotbadji maŋŋilit</relativeTimePattern>
-					<relativeTimePattern count="other">{0} mánotbadji maŋŋilit</relativeTimePattern>
+					<relativeTimePattern count="one">{0} mánotbadji
+						maŋŋilit</relativeTimePattern>
+					<relativeTimePattern count="two">{0} mánotbadji
+						maŋŋilit</relativeTimePattern>
+					<relativeTimePattern count="other">{0} mánotbadji
+						maŋŋilit</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">{0} mánotbadji árat</relativeTimePattern>
@@ -669,8 +678,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName draft="unconfirmed">minuhtta</displayName>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} minuhta maŋŋilit</relativeTimePattern>
-					<relativeTimePattern count="two">{0} minuhtta maŋŋilit</relativeTimePattern>
-					<relativeTimePattern count="other">{0} minuhtta maŋŋilit</relativeTimePattern>
+					<relativeTimePattern count="two">{0} minuhtta
+						maŋŋilit</relativeTimePattern>
+					<relativeTimePattern count="other">{0} minuhtta
+						maŋŋilit</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">{0} minuhta árat</relativeTimePattern>
@@ -682,8 +693,10 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName draft="unconfirmed">sekunda</displayName>
 				<relativeTime type="future">
 					<relativeTimePattern count="one">{0} sekunda maŋŋilit</relativeTimePattern>
-					<relativeTimePattern count="two">{0} sekundda maŋŋilit</relativeTimePattern>
-					<relativeTimePattern count="other">{0} sekundda maŋŋilit</relativeTimePattern>
+					<relativeTimePattern count="two">{0} sekundda
+						maŋŋilit</relativeTimePattern>
+					<relativeTimePattern count="other">{0} sekundda
+						maŋŋilit</relativeTimePattern>
 				</relativeTime>
 				<relativeTime type="past">
 					<relativeTimePattern count="one">{0} sekunda árat</relativeTimePattern>
@@ -817,19 +830,28 @@ For terms of use, see http://www.unicode.org/copyright.html
 					<pattern type="1000000000" count="other" draft="unconfirmed">0 miljardit</pattern>
 					<pattern type="10000000000" count="one" draft="unconfirmed">00 miljardi</pattern>
 					<pattern type="10000000000" count="two" draft="unconfirmed">00 miljardit</pattern>
-					<pattern type="10000000000" count="other" draft="unconfirmed">00 miljardit</pattern>
+					<pattern type="10000000000" count="other" draft="unconfirmed">00
+						miljardit</pattern>
 					<pattern type="100000000000" count="one" draft="unconfirmed">000 miljardi</pattern>
-					<pattern type="100000000000" count="two" draft="unconfirmed">000 miljardit</pattern>
-					<pattern type="100000000000" count="other" draft="unconfirmed">000 miljardit</pattern>
+					<pattern type="100000000000" count="two" draft="unconfirmed">000
+						miljardit</pattern>
+					<pattern type="100000000000" count="other" draft="unconfirmed">000
+						miljardit</pattern>
 					<pattern type="1000000000000" count="one" draft="unconfirmed">0 biljona</pattern>
 					<pattern type="1000000000000" count="two" draft="unconfirmed">0 biljonat</pattern>
-					<pattern type="1000000000000" count="other" draft="unconfirmed">0 biljonat</pattern>
+					<pattern type="1000000000000" count="other" draft="unconfirmed">0
+						biljonat</pattern>
 					<pattern type="10000000000000" count="one" draft="unconfirmed">00 biljona</pattern>
-					<pattern type="10000000000000" count="two" draft="unconfirmed">00 biljonat</pattern>
-					<pattern type="10000000000000" count="other" draft="unconfirmed">00 biljonat</pattern>
-					<pattern type="100000000000000" count="one" draft="unconfirmed">000 biljona</pattern>
-					<pattern type="100000000000000" count="two" draft="unconfirmed">000 biljonat</pattern>
-					<pattern type="100000000000000" count="other" draft="unconfirmed">000 biljonat</pattern>
+					<pattern type="10000000000000" count="two" draft="unconfirmed">00
+						biljonat</pattern>
+					<pattern type="10000000000000" count="other" draft="unconfirmed">00
+						biljonat</pattern>
+					<pattern type="100000000000000" count="one" draft="unconfirmed">000
+						biljona</pattern>
+					<pattern type="100000000000000" count="two" draft="unconfirmed">000
+						biljonat</pattern>
+					<pattern type="100000000000000" count="other" draft="unconfirmed">000
+						biljonat</pattern>
 				</decimalFormat>
 			</decimalFormatLength>
 			<decimalFormatLength type="short">
@@ -954,9 +976,12 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<compoundUnitPattern draft="unconfirmed">{0} juohke {1}</compoundUnitPattern>
 			</compoundUnit>
 			<unit type="acceleration-g-force">
-				<unitPattern count="one" draft="unconfirmed">{0} Maapallo gravitaatiovoima</unitPattern>
-				<unitPattern count="two" draft="unconfirmed">{0} Maapallo gravitaatiovoimat</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} Maapallo gravitaatiovoimat</unitPattern>
+				<unitPattern count="one" draft="unconfirmed">{0} Maapallo
+					gravitaatiovoima</unitPattern>
+				<unitPattern count="two" draft="unconfirmed">{0} Maapallo
+					gravitaatiovoimat</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} Maapallo
+					gravitaatiovoimat</unitPattern>
 			</unit>
 			<unit type="angle-arc-minute">
 				<unitPattern count="one" draft="unconfirmed">{0} jorbbas minuhta</unitPattern>
@@ -976,7 +1001,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<unit type="area-acre">
 				<unitPattern count="one" draft="unconfirmed">{0} Amerihká tynnyrinala</unitPattern>
 				<unitPattern count="two" draft="unconfirmed">{0} Amerihká tynnyrinala</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} Amerihká tynnyrinala</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} Amerihká
+					tynnyrinala</unitPattern>
 			</unit>
 			<unit type="area-hectare">
 				<unitPattern count="one" draft="unconfirmed">{0} hehtaari</unitPattern>
@@ -1144,19 +1170,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<unitPattern count="other" draft="unconfirmed">{0} millibar</unitPattern>
 			</unit>
 			<unit type="speed-kilometer-per-hour">
-				<unitPattern count="one" draft="unconfirmed">{0} kilomehter kohti diibmu</unitPattern>
-				<unitPattern count="two" draft="unconfirmed">{0} kilomehtera kohti diibmu</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} kilomehtera kohti diibmu</unitPattern>
+				<unitPattern count="one" draft="unconfirmed">{0} kilomehter kohti
+					diibmu</unitPattern>
+				<unitPattern count="two" draft="unconfirmed">{0} kilomehtera kohti
+					diibmu</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} kilomehtera kohti
+					diibmu</unitPattern>
 			</unit>
 			<unit type="speed-meter-per-second">
 				<unitPattern count="one" draft="unconfirmed">{0} mehter kohti sekunti</unitPattern>
 				<unitPattern count="two" draft="unconfirmed">{0} mehtera kohti sekunti</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} mehtera kohti sekunti</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} mehtera kohti
+					sekunti</unitPattern>
 			</unit>
 			<unit type="speed-mile-per-hour">
-				<unitPattern count="one" draft="unconfirmed">{0} eangas miil kohti diibmu</unitPattern>
-				<unitPattern count="two" draft="unconfirmed">{0} eangas miila kohti diibmu</unitPattern>
-				<unitPattern count="other" draft="unconfirmed">{0} eangas miila kohti diibmu</unitPattern>
+				<unitPattern count="one" draft="unconfirmed">{0} eangas miil kohti
+					diibmu</unitPattern>
+				<unitPattern count="two" draft="unconfirmed">{0} eangas miila kohti
+					diibmu</unitPattern>
+				<unitPattern count="other" draft="unconfirmed">{0} eangas miila kohti
+					diibmu</unitPattern>
 			</unit>
 			<unit type="temperature-celsius">
 				<unitPattern count="one" draft="unconfirmed">{0} grádat Celsius</unitPattern>

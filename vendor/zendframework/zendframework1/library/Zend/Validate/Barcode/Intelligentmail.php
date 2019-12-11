@@ -20,26 +20,36 @@
  */
 
 /**
+ *
  * @see Zend_Validate_Barcode_AdapterAbstract
  */
 require_once 'Zend/Validate/Barcode/AdapterAbstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Validate
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Validate
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Validate_Barcode_IntelligentMail extends Zend_Validate_Barcode_AdapterAbstract
 {
+
     /**
      * Allowed barcode lengths
+     * 
      * @var integer
      */
-    protected $_length = array(20, 25, 29, 31);
+    protected $_length = array(
+        20,
+        25,
+        29,
+        31
+    );
 
     /**
      * Allowed barcode characters
+     * 
      * @var string
      */
     protected $_characters = '0123456789';

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * LICENSE
  *
@@ -20,14 +21,15 @@
 /**
  * Collection of message objects
  *
- * @category   Zend
- * @package    Zend_Cloud
+ * @category Zend
+ * @package Zend_Cloud
  * @subpackage QueueService
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Cloud_QueueService_MessageSet implements Countable, IteratorAggregate
 {
+
     /** @var int */
     protected $_messageCount;
 
@@ -37,13 +39,13 @@ class Zend_Cloud_QueueService_MessageSet implements Countable, IteratorAggregate
     /**
      * Constructor
      *
-     * @param  array $messages
+     * @param array $messages            
      * @return void
      */
     public function __construct(array $messages)
     {
         $this->_messageCount = count($messages);
-        $this->_messages     = new ArrayIterator($messages);
+        $this->_messages = new ArrayIterator($messages);
     }
 
     /**

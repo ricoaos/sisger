@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
-<!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
--->
+<!-- Copyright © 1991-2013 Unicode, Inc. CLDR data files are interpreted 
+	according to the LDML specification (http://unicode.org/reports/tr35/) For 
+	terms of use, see http://www.unicode.org/copyright.html -->
 <ldml>
 	<identity>
-		<version number="$Revision: 9852 $"/>
-		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $"/>
-		<language type="bs"/>
+		<version number="$Revision: 9852 $" />
+		<generation date="$Date: 2014-02-28 23:57:43 -0600 (Fri, 28 Feb 2014) $" />
+		<language type="bs" />
 	</identity>
 	<localeDisplayNames>
 		<languages>
-			<!-- This had confirmed data for bo,de,en,es,fr,it,ja,pt,ru,tk,tr,und,zh (all lowercase).
-				 Copy missing data from sr_Latn, converting to lowercase. Data that was unconfirmed here, does
-				 not match sr_Latn, and was not just the English name is now alt="proposed" draft="unconfirmed".
-			-->
+			<!-- This had confirmed data for bo,de,en,es,fr,it,ja,pt,ru,tk,tr,und,zh 
+				(all lowercase). Copy missing data from sr_Latn, converting to lowercase. 
+				Data that was unconfirmed here, does not match sr_Latn, and was not just 
+				the English name is now alt="proposed" draft="unconfirmed". -->
 			<language type="aa">afarski</language>
 			<language type="ab">abkazijski</language>
 			<language type="ace">ačineski</language>
@@ -446,10 +445,9 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<language type="zza">zaza</language>
 		</languages>
 		<scripts>
-			<!-- This just had data for Zxxx and Zzzz; Those were the same as in sr_Latn
-				 (but here they were lowercase); fill in the missing data from sr_Latn, but
-				 match lettercase conventions here (inconsistent lettercase in sr_Latn).
-			-->
+			<!-- This just had data for Zxxx and Zzzz; Those were the same as in sr_Latn 
+				(but here they were lowercase); fill in the missing data from sr_Latn, but 
+				match lettercase conventions here (inconsistent lettercase in sr_Latn). -->
 			<script type="Arab">arapsko pismo</script>
 			<script type="Armi">imperijsko aramejsko pismo</script>
 			<script type="Armn">jermensko pismo</script>
@@ -582,9 +580,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<script type="Zzzz">nepoznato ili nevažeće pismo</script>
 		</scripts>
 		<territories>
-			<!-- This just had data for BA, ZZ, and unconfirmed for ME, RS, TO (??). All
-				 but ZZ were the same as in sr_Latn; fill in the missing data from sr_Latn.
-			-->
+			<!-- This just had data for BA, ZZ, and unconfirmed for ME, RS, TO (??). 
+				All but ZZ were the same as in sr_Latn; fill in the missing data from sr_Latn. -->
 			<territory type="001">Svet</territory>
 			<territory type="002">Afrika</territory>
 			<territory type="003">Severnoamerički kontinent</territory>
@@ -693,7 +690,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<territory type="FI">Finska</territory>
 			<territory type="FJ">Fidži</territory>
 			<territory type="FK">Folklandska Ostrva</territory>
-			<territory type="FK" alt="variant" draft="provisional">Folklandska ostrva (Malvinska ostrva)</territory>
+			<territory type="FK" alt="variant" draft="provisional">Folklandska ostrva
+				(Malvinska ostrva)</territory>
 			<territory type="FM">Mikronezija</territory>
 			<territory type="FO">Farska Ostrva</territory>
 			<territory type="FR">Francuska</territory>
@@ -911,7 +909,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<variant type="SOLBA">Stolvica/Solbica dijalekt</variant>
 			<variant type="TARASK">Taraskijevica ortografija</variant>
 			<variant type="UCCOR" draft="provisional">Ujedinjena ortografija</variant>
-			<variant type="UCRCOR" draft="provisional">Ujedinjena revidirana ortografija</variant>
+			<variant type="UCRCOR" draft="provisional">Ujedinjena revidirana
+				ortografija</variant>
 			<variant type="VALENCIA">Valencijski</variant>
 			<variant type="WADEGILE" draft="provisional">Vejd-Žajl romanizacija</variant>
 		</variants>
@@ -945,16 +944,19 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<measurementSystemName type="US">SAD</measurementSystemName>
 		</measurementSystemNames>
 		<codePatterns>
-			<!-- Had no data for this but dtd does not accept alias, so copy from sr_Latn -->
+			<!-- Had no data for this but dtd does not accept alias, so copy from 
+				sr_Latn -->
 			<codePattern type="language">Jezik: {0}</codePattern>
 			<codePattern type="script">Skript: {0}</codePattern>
 			<codePattern type="territory">Region: {0}</codePattern>
 		</codePatterns>
 	</localeDisplayNames>
 	<characters>
-		<exemplarCharacters>[a b c ć č d đ {dž} e f g h i j k l {lj} m n {nj} o p r s š t u v z ž]</exemplarCharacters>
+		<exemplarCharacters>[a b c ć č d đ {dž} e f g h i j k l {lj} m n {nj}
+			o p r s š t u v z ž]</exemplarCharacters>
 		<exemplarCharacters type="auxiliary">[q w x y]</exemplarCharacters>
-		<exemplarCharacters type="index" draft="provisional">[A B C Ć Č D {DŽ} E F G H I J K L {LJ} M N {NJ} O P Q R S Š T U V W X Y Z Ž]</exemplarCharacters>
+		<exemplarCharacters type="index" draft="provisional">[A B C Ć Č D
+			{DŽ} E F G H I J K L {LJ} M N {NJ} O P Q R S Š T U V W X Y Z Ž]</exemplarCharacters>
 	</characters>
 	<delimiters>
 		<quotationStart draft="unconfirmed">‘</quotationStart>
@@ -1331,9 +1333,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</field>
 		</fields>
 		<timeZoneNames>
-			<!-- This just had confirmed data for "Etc/Unknown" (different from the translation
-				 in sr_Latn). Fill in the other translations from data in sr_Latn.
-			-->
+			<!-- This just had confirmed data for "Etc/Unknown" (different from the 
+				translation in sr_Latn). Fill in the other translations from data in sr_Latn. -->
 			<zone type="Etc/Unknown">
 				<exemplarCity>Nepoznati ili nevažeći grad</exemplarCity>
 			</zone>
@@ -3130,9 +3131,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 			<group>.</group>
 		</symbols>
 		<currencies>
-			<!-- This just had confirmed data for "XXX".
-				 Fill in the other translations from data in sr_Latn.
-			-->
+			<!-- This just had confirmed data for "XXX". Fill in the other translations 
+				from data in sr_Latn. -->
 			<currency type="ADP">
 				<displayName>Andorska pezeta</displayName>
 				<displayName count="one">Andorijska pezeta</displayName>
@@ -3212,10 +3212,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="AOR">
 				<displayName>Angolijska kvanza reajustado (1995–1999)</displayName>
-				<displayName count="one">angolijska kvanza reađustado (1995–1999)</displayName>
-				<displayName count="few">angalske kvanze reađustado (1995–1999)</displayName>
-				<displayName count="many">angolijskih kvanzi reađustado (1995–1999)</displayName>
-				<displayName count="other">angolijskih kvanzi reađustado (1995–1999)</displayName>
+				<displayName count="one">angolijska kvanza reađustado
+					(1995–1999)</displayName>
+				<displayName count="few">angalske kvanze reađustado
+					(1995–1999)</displayName>
+				<displayName count="many">angolijskih kvanzi reađustado
+					(1995–1999)</displayName>
+				<displayName count="other">angolijskih kvanzi reađustado
+					(1995–1999)</displayName>
 			</currency>
 			<currency type="ARA">
 				<displayName>Argentinski austral</displayName>
@@ -3231,10 +3235,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 				<displayName count="other" draft="provisional">argentinski pezos lej</displayName>
 			</currency>
 			<currency type="ARM">
-				<displayName count="one" draft="provisional">argentinski pezo monedo nacional</displayName>
-				<displayName count="few" draft="provisional">argentinski pezos moneda nacional</displayName>
-				<displayName count="many" draft="provisional">argentinskih pezosa moneda nacional</displayName>
-				<displayName count="other" draft="provisional">argentinskih pezosa moneda nacional</displayName>
+				<displayName count="one" draft="provisional">argentinski pezo monedo
+					nacional</displayName>
+				<displayName count="few" draft="provisional">argentinski pezos moneda
+					nacional</displayName>
+				<displayName count="many" draft="provisional">argentinskih pezosa
+					moneda nacional</displayName>
+				<displayName count="other" draft="provisional">argentinskih pezosa
+					moneda nacional</displayName>
 			</currency>
 			<currency type="ARP">
 				<displayName>Argentinski pezo (1983–1985)</displayName>
@@ -3294,18 +3302,26 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BAM">
 				<displayName>Bosansko-Hercegovačka konvertibilna marka</displayName>
-				<displayName count="one">bosansko-hercegovačka konvertibilna marka</displayName>
-				<displayName count="few">Bosansko-Hercegovačke konvertibilne marke</displayName>
-				<displayName count="many">Bosansko-Hercegovačkih konvertibilnih maraka</displayName>
-				<displayName count="other">bosansko-hercegovačkih konvertibilnih maraka</displayName>
+				<displayName count="one">bosansko-hercegovačka konvertibilna
+					marka</displayName>
+				<displayName count="few">Bosansko-Hercegovačke konvertibilne
+					marke</displayName>
+				<displayName count="many">Bosansko-Hercegovačkih konvertibilnih
+					maraka</displayName>
+				<displayName count="other">bosansko-hercegovačkih konvertibilnih
+					maraka</displayName>
 				<symbol>KM</symbol>
 			</currency>
 			<currency type="BAN">
 				<displayName draft="provisional">Bosansko-hercegovački novi dinar</displayName>
-				<displayName count="one" draft="provisional">bosansko-hercegovački novi dinar</displayName>
-				<displayName count="few" draft="provisional">bosansko-hercegovački novi dinari</displayName>
-				<displayName count="many" draft="provisional">bosansko-hercegovački novi dinari</displayName>
-				<displayName count="other" draft="provisional">bosansko-hercegovački novi dinar</displayName>
+				<displayName count="one" draft="provisional">bosansko-hercegovački
+					novi dinar</displayName>
+				<displayName count="few" draft="provisional">bosansko-hercegovački
+					novi dinari</displayName>
+				<displayName count="many" draft="provisional">bosansko-hercegovački
+					novi dinari</displayName>
+				<displayName count="other" draft="provisional">bosansko-hercegovački
+					novi dinar</displayName>
 			</currency>
 			<currency type="BBD">
 				<displayName>Barbadoski dolar</displayName>
@@ -3351,10 +3367,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="BGM">
 				<displayName draft="provisional">Bugarski socijalistički lev</displayName>
-				<displayName count="one" draft="provisional">bugarski socijalistički lev</displayName>
-				<displayName count="few" draft="provisional">bugarska socijalistička leva</displayName>
-				<displayName count="many" draft="provisional">bugarskih socijalističkih leva</displayName>
-				<displayName count="other" draft="provisional">bugarskih socijalističkih leva</displayName>
+				<displayName count="one" draft="provisional">bugarski socijalistički
+					lev</displayName>
+				<displayName count="few" draft="provisional">bugarska socijalistička
+					leva</displayName>
+				<displayName count="many" draft="provisional">bugarskih
+					socijalističkih leva</displayName>
+				<displayName count="other" draft="provisional">bugarskih
+					socijalističkih leva</displayName>
 			</currency>
 			<currency type="BGN">
 				<displayName>Bugarski lev</displayName>
@@ -3582,10 +3602,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="CNX">
 				<displayName draft="provisional">Dolar kineske narodne banke</displayName>
-				<displayName count="one" draft="provisional">dolar kineske narodne banke</displayName>
-				<displayName count="few" draft="provisional">dolari kineske narodne banke</displayName>
-				<displayName count="many" draft="provisional">dolari kineske narodne banke</displayName>
-				<displayName count="other" draft="provisional">dolar kineske narodne banke</displayName>
+				<displayName count="one" draft="provisional">dolar kineske narodne
+					banke</displayName>
+				<displayName count="few" draft="provisional">dolari kineske narodne
+					banke</displayName>
+				<displayName count="many" draft="provisional">dolari kineske narodne
+					banke</displayName>
+				<displayName count="other" draft="provisional">dolar kineske narodne
+					banke</displayName>
 			</currency>
 			<currency type="CNY">
 				<displayName>Kineski Juan Renminbi</displayName>
@@ -3624,10 +3648,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="CUC">
 				<displayName draft="provisional">Kubanski konvertibilni pezos</displayName>
-				<displayName count="one" draft="provisional">kubanski konvertibilni pezo</displayName>
-				<displayName count="few" draft="provisional">kubanska konvertibilna pezosa</displayName>
-				<displayName count="many" draft="provisional">kubanskih konvertibilnih pezosa</displayName>
-				<displayName count="other" draft="provisional">kubanskih konvertibilnih pezosa</displayName>
+				<displayName count="one" draft="provisional">kubanski konvertibilni
+					pezo</displayName>
+				<displayName count="few" draft="provisional">kubanska konvertibilna
+					pezosa</displayName>
+				<displayName count="many" draft="provisional">kubanskih konvertibilnih
+					pezosa</displayName>
+				<displayName count="other" draft="provisional">kubanskih
+					konvertibilnih pezosa</displayName>
 			</currency>
 			<currency type="CUP">
 				<displayName>Kubanski pezo</displayName>
@@ -3709,10 +3737,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="ECV">
 				<displayName>Ekvadorski unidad de valor konstantin (UVC)</displayName>
-				<displayName count="one">ekvadorski unidad de valor constante (UVC)</displayName>
-				<displayName count="few">ekvadorska unidad de valor constante (UVC)</displayName>
-				<displayName count="many">ekvadorskih unidad de valor constante (UVC)</displayName>
-				<displayName count="other">ekvadorski unidad de valor constante (UVC)</displayName>
+				<displayName count="one">ekvadorski unidad de valor constante
+					(UVC)</displayName>
+				<displayName count="few">ekvadorska unidad de valor constante
+					(UVC)</displayName>
+				<displayName count="many">ekvadorskih unidad de valor constante
+					(UVC)</displayName>
+				<displayName count="other">ekvadorski unidad de valor constante
+					(UVC)</displayName>
 			</currency>
 			<currency type="EEK">
 				<displayName>Estonska kruna</displayName>
@@ -4872,10 +4904,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="UYI">
 				<displayName>Urugvajski pezo en unidades indeksades</displayName>
-				<displayName count="one">urugvajski pesos en unidades indexadas</displayName>
-				<displayName count="few">urugvajska pesosa en unidades indexadas</displayName>
-				<displayName count="many">urugvajskih pesosa en unidades indexadas</displayName>
-				<displayName count="other">urugvajski pesos en unidades indexadas</displayName>
+				<displayName count="one">urugvajski pesos en unidades
+					indexadas</displayName>
+				<displayName count="few">urugvajska pesosa en unidades
+					indexadas</displayName>
+				<displayName count="many">urugvajskih pesosa en unidades
+					indexadas</displayName>
+				<displayName count="other">urugvajski pesos en unidades
+					indexadas</displayName>
 			</currency>
 			<currency type="UYP">
 				<displayName>Urugvajski pezo (1975–1993)</displayName>
@@ -5110,10 +5146,14 @@ For terms of use, see http://www.unicode.org/copyright.html
 			</currency>
 			<currency type="YUR">
 				<displayName draft="provisional">Jugoslovenski reformirani dinar</displayName>
-				<displayName count="one" draft="provisional">jugoslovenski reformirani dinar</displayName>
-				<displayName count="few" draft="provisional">jugoslovenska reformirana dinara</displayName>
-				<displayName count="many" draft="provisional">jugoslovenskih reformiranih dinara</displayName>
-				<displayName count="other" draft="provisional">jugoslovenskih reformiranih dinara</displayName>
+				<displayName count="one" draft="provisional">jugoslovenski reformirani
+					dinar</displayName>
+				<displayName count="few" draft="provisional">jugoslovenska reformirana
+					dinara</displayName>
+				<displayName count="many" draft="provisional">jugoslovenskih
+					reformiranih dinara</displayName>
+				<displayName count="other" draft="provisional">jugoslovenskih
+					reformiranih dinara</displayName>
 			</currency>
 			<currency type="ZAL">
 				<displayName>Južnoafrički rand (finansijski)</displayName>

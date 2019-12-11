@@ -21,6 +21,7 @@
  */
 
 /**
+ *
  * @see Zend_Tool_Project_Context_Interface
  */
 require_once 'Zend/Tool/Project/Context/Interface.php';
@@ -31,25 +32,28 @@ require_once 'Zend/Tool/Project/Context/Interface.php';
  * A profile is a hierarchical set of resources that keep track of
  * items within a specific project.
  *
- * @category   Zend
- * @package    Zend_Tool
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @category Zend
+ * @package Zend_Tool
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 abstract class Zend_Tool_Project_Context_Filesystem_Abstract implements Zend_Tool_Project_Context_Interface
 {
 
     /**
+     *
      * @var Zend_Tool_Project_Profile_Resource
      */
     protected $_resource = null;
 
     /**
+     *
      * @var string
      */
     protected $_baseDirectory = null;
 
     /**
+     *
      * @var string
      */
     protected $_filesystemName = null;
@@ -61,7 +65,9 @@ abstract class Zend_Tool_Project_Context_Filesystem_Abstract implements Zend_Too
      */
     public function init()
     {
-        $parentBaseDirectory = $this->_resource->getParentResource()->getContext()->getPath();
+        $parentBaseDirectory = $this->_resource->getParentResource()
+            ->getContext()
+            ->getPath();
         $this->_baseDirectory = $parentBaseDirectory;
         return $this;
     }
@@ -69,7 +75,7 @@ abstract class Zend_Tool_Project_Context_Filesystem_Abstract implements Zend_Too
     /**
      * setResource()
      *
-     * @param Zend_Tool_Project_Profile_Resource $resource
+     * @param Zend_Tool_Project_Profile_Resource $resource            
      * @return Zend_Tool_Project_Context_Filesystem_Abstract
      */
     public function setResource(Zend_Tool_Project_Profile_Resource $resource)
@@ -81,7 +87,7 @@ abstract class Zend_Tool_Project_Context_Filesystem_Abstract implements Zend_Too
     /**
      * setBaseDirectory()
      *
-     * @param string $baseDirectory
+     * @param string $baseDirectory            
      * @return Zend_Tool_Project_Context_Filesystem_Abstract
      */
     public function setBaseDirectory($baseDirectory)
@@ -103,7 +109,7 @@ abstract class Zend_Tool_Project_Context_Filesystem_Abstract implements Zend_Too
     /**
      * setFilesystemName()
      *
-     * @param string $filesystemName
+     * @param string $filesystemName            
      * @return Zend_Tool_Project_Context_Filesystem_Abstract
      */
     public function setFilesystemName($filesystemName)
@@ -150,7 +156,6 @@ abstract class Zend_Tool_Project_Context_Filesystem_Abstract implements Zend_Too
      * create()
      *
      * Create this resource/context
-     *
      */
     abstract public function create();
 
@@ -158,8 +163,6 @@ abstract class Zend_Tool_Project_Context_Filesystem_Abstract implements Zend_Too
      * delete()
      *
      * Delete this resouce/context
-     *
      */
     abstract public function delete();
-
 }

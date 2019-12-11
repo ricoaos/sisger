@@ -20,26 +20,28 @@
  * @version    $Id$
  */
 
-
 /**
+ *
  * @see Zend_Filter_Interface
  */
 require_once 'Zend/Filter/Interface.php';
 
-
 /**
- * @category   Zend
- * @package    Zend_Filter
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Filter
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Filter_Digits implements Zend_Filter_Interface
 {
+
     /**
      * Is PCRE is compiled with UTF-8 and Unicode support
      *
      * @var mixed
-     **/
+     *
+     */
     protected static $_unicodeEnabled;
 
     /**
@@ -61,12 +63,12 @@ class Zend_Filter_Digits implements Zend_Filter_Interface
      *
      * Returns the string $value, removing all but digit characters
      *
-     * @param  string $value
+     * @param string $value            
      * @return string
      */
     public function filter($value)
     {
-        if (!self::$_unicodeEnabled) {
+        if (! self::$_unicodeEnabled) {
             // POSIX named classes are not supported, use alternative 0-9 match
             $pattern = '/[^0-9]/';
         } else if (extension_loaded('mbstring')) {
@@ -76,7 +78,7 @@ class Zend_Filter_Digits implements Zend_Filter_Interface
             // Filter for the value without mbstring
             $pattern = '/[\p{^N}]/';
         }
-
+        
         return preg_replace($pattern, '', (string) $value);
     }
 }

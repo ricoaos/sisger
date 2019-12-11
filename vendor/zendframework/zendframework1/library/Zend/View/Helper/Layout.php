@@ -20,19 +20,22 @@
  * @license    http://framework.zend.com/license/new-bsd     New BSD License
  */
 
-/** Zend_View_Helper_Abstract.php */
+/**
+ * Zend_View_Helper_Abstract.php
+ */
 require_once 'Zend/View/Helper/Abstract.php';
 
 /**
  * View helper for retrieving layout object
  *
- * @package    Zend_View
+ * @package Zend_View
  * @subpackage Helper
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_View_Helper_Layout extends Zend_View_Helper_Abstract
 {
+
     /** @var Zend_Layout */
     protected $_layout;
 
@@ -51,14 +54,14 @@ class Zend_View_Helper_Layout extends Zend_View_Helper_Abstract
                 $this->_layout = new Zend_Layout();
             }
         }
-
+        
         return $this->_layout;
     }
 
     /**
      * Set layout object
      *
-     * @param  Zend_Layout $layout
+     * @param Zend_Layout $layout            
      * @return Zend_Layout_Controller_Action_Helper_Layout
      */
     public function setLayout(Zend_Layout $layout)

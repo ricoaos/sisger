@@ -20,18 +20,21 @@
  */
 
 /**
+ *
  * @see Zend_Filter_Interface
  */
 require_once 'Zend/Filter/Interface.php';
 
 /**
- * @category   Zend
- * @package    Zend_Filter
- * @copyright  Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Filter
+ * @copyright Copyright (c) 2005-2011 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Filter_StringTrim implements Zend_Filter_Interface
 {
+
     /**
      * List of characters provided to the trim() function
      *
@@ -45,19 +48,19 @@ class Zend_Filter_StringTrim implements Zend_Filter_Interface
     /**
      * Sets filter options
      *
-     * @param  string|array|Zend_Config $options
+     * @param string|array|Zend_Config $options            
      * @return void
      */
     public function __construct($options = null)
     {
         if ($options instanceof Zend_Config) {
             $options = $options->toArray();
-        } else if (!is_array($options)) {
-            $options          = func_get_args();
+        } else if (! is_array($options)) {
+            $options = func_get_args();
             $temp['charlist'] = array_shift($options);
-            $options          = $temp;
+            $options = $temp;
         }
-
+        
         if (array_key_exists('charlist', $options)) {
             $this->setCharList($options['charlist']);
         }
@@ -76,7 +79,7 @@ class Zend_Filter_StringTrim implements Zend_Filter_Interface
     /**
      * Sets the charList option
      *
-     * @param  string|null $charList
+     * @param string|null $charList            
      * @return Zend_Filter_StringTrim Provides a fluent interface
      */
     public function setCharList($charList)
@@ -90,7 +93,7 @@ class Zend_Filter_StringTrim implements Zend_Filter_Interface
      *
      * Returns the string $value with characters stripped from the beginning and end
      *
-     * @param  string $value
+     * @param string $value            
      * @return string
      */
     public function filter($value)
@@ -106,18 +109,22 @@ class Zend_Filter_StringTrim implements Zend_Filter_Interface
      * Unicode aware trim method
      * Fixes a PHP problem
      *
-     * @param string $value
-     * @param string $charlist
+     * @param string $value            
+     * @param string $charlist            
      * @return string
      */
     protected function _unicodeTrim($value, $charlist = '\\\\s')
     {
-        $chars = preg_replace(
-            array( '/[\^\-\]\\\]/S', '/\\\{4}/S', '/\//'),
-            array( '\\\\\\0', '\\', '\/' ),
-            $charlist
-        );
-
+        $chars = preg_replace(array(
+            '/[\^\-\]\\\]/S',
+            '/\\\{4}/S',
+            '/\//'
+        ), array(
+            '\\\\\\0',
+            '\\',
+            '\/'
+        ), $charlist);
+        
         $pattern = '^[' . $chars . ']*|[' . $chars . ']*$';
         return preg_replace("/$pattern/sSD", '', $value);
     }

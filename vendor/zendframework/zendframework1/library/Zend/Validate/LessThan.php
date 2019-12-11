@@ -20,21 +20,25 @@
  */
 
 /**
+ *
  * @see Zend_Validate_Abstract
  */
 require_once 'Zend/Validate/Abstract.php';
 
 /**
- * @category   Zend
- * @package    Zend_Validate
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ *
+ * @category Zend
+ * @package Zend_Validate
+ * @copyright Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @license http://framework.zend.com/license/new-bsd New BSD License
  */
 class Zend_Validate_LessThan extends Zend_Validate_Abstract
 {
+
     const NOT_LESS = 'notLessThan';
 
     /**
+     *
      * @var array
      */
     protected $_messageTemplates = array(
@@ -42,6 +46,7 @@ class Zend_Validate_LessThan extends Zend_Validate_Abstract
     );
 
     /**
+     *
      * @var array
      */
     protected $_messageVariables = array(
@@ -58,7 +63,7 @@ class Zend_Validate_LessThan extends Zend_Validate_Abstract
     /**
      * Sets validator options
      *
-     * @param  mixed|Zend_Config $max
+     * @param mixed|Zend_Config $max            
      * @throws Zend_Validate_Exception
      */
     public function __construct($max)
@@ -66,7 +71,7 @@ class Zend_Validate_LessThan extends Zend_Validate_Abstract
         if ($max instanceof Zend_Config) {
             $max = $max->toArray();
         }
-
+        
         if (is_array($max)) {
             if (array_key_exists('max', $max)) {
                 $max = $max['max'];
@@ -75,7 +80,7 @@ class Zend_Validate_LessThan extends Zend_Validate_Abstract
                 throw new Zend_Validate_Exception("Missing option 'max'");
             }
         }
-
+        
         $this->setMax($max);
     }
 
@@ -92,7 +97,7 @@ class Zend_Validate_LessThan extends Zend_Validate_Abstract
     /**
      * Sets the max option
      *
-     * @param  mixed $max
+     * @param mixed $max            
      * @return Zend_Validate_LessThan Provides a fluent interface
      */
     public function setMax($max)
@@ -106,7 +111,7 @@ class Zend_Validate_LessThan extends Zend_Validate_Abstract
      *
      * Returns true if and only if $value is less than max option
      *
-     * @param  mixed $value
+     * @param mixed $value            
      * @return boolean
      */
     public function isValid($value)
@@ -118,5 +123,4 @@ class Zend_Validate_LessThan extends Zend_Validate_Abstract
         }
         return true;
     }
-
 }

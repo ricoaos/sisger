@@ -21,52 +21,66 @@
  */
 
 /**
+ *
  * @see Zend_Gdata_Query
  */
 require_once 'Zend/Gdata/Query.php';
 
 /**
- * @category   Zend
- * @package    Zend_Gdata
+ *
+ * @category Zend
+ * @package Zend_Gdata
  * @subpackage Analytics
  */
 class Zend_Gdata_Analytics_AccountQuery extends Zend_Gdata_Query
 {
+
     const ANALYTICS_FEED_URI = 'https://www.googleapis.com/analytics/v2.4/management/accounts';
 
     /**
      * The default URI used for feeds.
      */
     protected $_defaultFeedUri = self::ANALYTICS_FEED_URI;
-    
+
     /**
+     *
      * @var string
      */
     protected $_accountId = '~all';
+
     /**
+     *
      * @var string
      */
     protected $_webpropertyId = '~all';
+
     /**
+     *
      * @var string
      */
     protected $_profileId = '~all';
-   
+
     /**
+     *
      * @var bool
-     */ 
+     */
     protected $_webproperties = false;
+
     /**
+     *
      * @var bool
      */
     protected $_profiles = false;
+
     /**
+     *
      * @var bool
      */
     protected $_goals = false;
-    
+
     /**
-     * @param string $accountId
+     *
+     * @param string $accountId            
      * @return Zend_Gdata_Analytics_AccountQuery
      */
     public function setAccountId($accountId)
@@ -74,8 +88,9 @@ class Zend_Gdata_Analytics_AccountQuery extends Zend_Gdata_Query
         $this->_accountId = $accountId;
         return $this;
     }
-    
+
     /**
+     *
      * @return string
      */
     public function getAccountId()
@@ -84,7 +99,8 @@ class Zend_Gdata_Analytics_AccountQuery extends Zend_Gdata_Query
     }
 
     /**
-     * @param string $webpropertyId
+     *
+     * @param string $webpropertyId            
      * @return Zend_Gdata_Analytics_AccountQuery
      */
     public function setWebpropertyId($webpropertyId)
@@ -92,17 +108,19 @@ class Zend_Gdata_Analytics_AccountQuery extends Zend_Gdata_Query
         $this->_webpropertyId = $webpropertyId;
         return $this;
     }
-    
+
     /**
+     *
      * @return string
      */
     public function getWebpropertyId()
     {
         return $this->_webpropertyId;
     }
-    
+
     /**
-     * @param string $profileId
+     *
+     * @param string $profileId            
      * @return Zend_Gdata_Analytics_AccountQuery
      */
     public function setProfileId($profileId)
@@ -112,59 +130,64 @@ class Zend_Gdata_Analytics_AccountQuery extends Zend_Gdata_Query
     }
 
     /**
+     *
      * @return string
      */
     public function getProfileId()
     {
         return $this->_profileId;
     }
-    
+
     /**
-     * @param string $accountId
+     *
+     * @param string $accountId            
      * @return Zend_Gdata_Analytics_AccountQuery
      */
     public function webproperties($accountId = '~all')
     {
         $this->_webproperties = true;
-        $this->setAccountId($accountId);    
+        $this->setAccountId($accountId);
         return $this;
     }
-    
+
     /**
-     * @param string $webpropertyId
-     * @param string $accountId
+     *
+     * @param string $webpropertyId            
+     * @param string $accountId            
      * @return Zend_Gdata_Analytics_AccountQuery
      */
     public function profiles($webpropertyId = '~all', $accountId = '~all')
     {
         $this->_profiles = true;
         if (null !== $accountId) {
-            $this->setAccountId($accountId);    
+            $this->setAccountId($accountId);
         }
         $this->setWebpropertyId($webpropertyId);
         return $this;
     }
-    
+
     /**
-     * @param string $webpropertyId
-     * @param string $accountId
-     * @param string $accountId
+     *
+     * @param string $webpropertyId            
+     * @param string $accountId            
+     * @param string $accountId            
      * @return Zend_Gdata_Analytics_AccountQuery
      */
     public function goals($profileId = '~all', $webpropertyId = '~all', $accountId = '~all')
     {
         $this->_goals = true;
         if (null !== $accountId) {
-            $this->setAccountId($accountId);    
+            $this->setAccountId($accountId);
         }
         if (null !== $webpropertyId) {
-            $this->setWebpropertyId($webpropertyId);    
+            $this->setWebpropertyId($webpropertyId);
         }
         $this->setProfileId($profileId);
         return $this;
     }
-    
+
     /**
+     *
      * @return string url
      */
     public function getQueryUrl()
@@ -183,7 +206,7 @@ class Zend_Gdata_Analytics_AccountQuery extends Zend_Gdata_Query
         if ($this->_goals) {
             $url .= '/' . $this->_profileId . '/goals';
         }
-
+        
         $url .= $this->getQueryString();
         return $url;
     }
