@@ -12,7 +12,6 @@ class Sistema_CargoController extends App_Controller_Action
     }
 
     public function indexAction()
-    
     {
         if($this->_request->getParam('id'))
         { 
@@ -27,18 +26,17 @@ class Sistema_CargoController extends App_Controller_Action
             $post['id_user_cadastro'] = $this->idUsuario;
             try {
     
-                if(empty($post["id_cargo"])){
-        
+                if(empty($post["id_cargo"])){        
                     $dtcadastro = date('Y-m-d H:i:s');
                     $post['dt_cadastro']= $dtcadastro;
                     $rsCargo = $this->mCargo->insert($post);
+                    $msg = "Registro gravado com sucesso.";
                 }else{
-                
-            
+                    $rsCargo = $_POST['id_cargo'];
+                    $where = $this->mCargo->getAdapter()->quoteInto('id_cargo = ?', $rsCargo);
+                    $this->mCargo->update($post,$where);
+                    $msg = "Registro alterado com sucesso.";
                 }
-                
-                $msg = "Registro gravado com sucesso.";
-
             } catch (Zend_Db_Exception $e) {
                 $e->rollBack();
                 $msg= $e->getMessage();
@@ -62,19 +60,18 @@ class Sistema_CargoController extends App_Controller_Action
      * Enter description here ...
      */
     public function inativarregistroAction()
-    {
+    {        
         if ($this->_request->getParam('id')) {
-            list ($date, $id) = explode('@', base64_decode($this->_request->getParam('id')));
-            $mfuncionario = new Model_Funcionario_Funcionario();
-            $where = $mfuncionario->getAdapter()->quoteInto('id_funcionario = ?', $id);
-            $mfuncionario->update(array(
-                'id_ativo' => 0
-            ), $where);
-            $this->_redirect('funcionario/funcionario/listagem');
+                       
+            $where = $this->mCargo->getAdapter()->quoteInto('id_cargo = ?', $this->_request->getParam('id'));
+            $ativo = $this->_request->getParam('ativo');
+            
+            $this->mCargo->update(array('id_ativo'=> $ativo),$where); 
+            $this->view->msg = "Registro alterado com sucesso.";
+            $this->_redirect('/sistema/cargo/listagem');
         }
     }
     
-
     /**
      *
      * @param unknown $params            

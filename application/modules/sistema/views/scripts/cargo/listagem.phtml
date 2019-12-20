@@ -18,38 +18,47 @@
 			<button class="btn btn-green" type="button">Adicionar Cargo</button>
 		</a>
 	</div>
+	
+	<?php if(!empty($this->msg)):?>
+		<div class="alert alert-success fade in">
+			<button class="close" aria-hidden="true" data-dismiss="alert" type="button">x</button>
+			<i class="fa-ok alert-icon s24"></i>
+			<strong><?php echo $this->msg?></strong>
+		</div>			
+	<?php endif;?>
+	
     <?php if(!empty($this->rsCargo)):?>
-    <div class="graph">
-		<div class="tables">
-			<table id="example" class="display nowrap" style="width: 100%">
-				<thead>
-					<tr>
-						<th>Código</th>
-						<th>Nome</th>
-						<th>Situação</th>
-						<th>Ação</th>
-					</tr>
-				</thead>
-				<tbody> 
-                    <?php foreach ($this->rsCargo as $list) : ?>
-                        <tr>
-						<td><?php echo $list['id_cargo'] ?></td>
-						<td><?php echo $list['st_nome'] ?></td>
-						<td><?php echo $list['id_ativo'] == 1 ? '<strong style="color:green;">'.'ATIVO'.'</strong>':'<strong style="color:red;">'.'INATIVO'.'</strong>'; ?></td>
-						<td style="text-align: center; width: 15%;">
-							<a href="<?php echo $this->baseUrl('/sistema/cargo/index/id/'.$list['id_cargo'])?>"><span class="label label-primary" title="Editar Registro"><i class="fa fa-edit"></i></span></a>
-                           	<?php if($list['id_ativo']==1):?>
-                                <a href=""><span class="label label-danger" title="Inativar Registro"><i class="fa fa-times-circle"></i></span></a>
-                            <?php else: ?>
-                                <a href=""><span class="label label-warning" title="Ativar Registro"><i class="fa fa-times-circle"></i></span></a>
-                            <?php endif;?>
-						</td>
-					</tr> 
-                    <?php endforeach; ?>
-                </tbody>
-			</table>
-		</div>
-	</div>
+        <div class="graph">
+    		<div class="tables">
+    			<table id="example" class="display nowrap" style="width: 100%">
+    				<thead>
+    					<tr>
+    						<th>Código</th>
+    						<th>Nome</th>
+    						<th>Situação</th>
+    						<th>Ação</th>
+    					</tr>
+    				</thead>
+    				<tbody> 
+                        <?php foreach ($this->rsCargo as $list) : ?>
+                            <tr>
+    						<td><?php echo $list['id_cargo'] ?></td>
+    						<td><?php echo $list['st_nome'] ?></td>
+    						<td><?php echo $list['id_ativo'] == 1 ? '<strong style="color:green;">'.'ATIVO'.'</strong>':'<strong style="color:red;">'.'INATIVO'.'</strong>'; ?></td>
+    						<td style="text-align: center; width: 15%;">
+    							<a href="<?php echo $this->baseUrl('/sistema/cargo/index/id/'.$list['id_cargo'])?>"><span class="label label-primary" title="Editar Registro"><i class="fa fa-edit"></i></span></a>
+                               	<?php if($list['id_ativo']==1):?>
+                                    <a href="<?php echo $this->baseUrl('/sistema/cargo/inativarregistro/id/'.$list['id_cargo'].'/ativo/0')?>"><span class="label label-danger" title="Inativar Registro"><i class="fa fa-times-circle"></i></span></a>
+                                <?php else: ?>
+                                    <a href="<?php echo $this->baseUrl('/sistema/cargo/inativarregistro/id/'.$list['id_cargo'].'/ativo/1')?>"><span class="label label-warning" title="Ativar Registro"><i class="fa fa-times-circle"></i></span></a>
+                                <?php endif;?>
+    						</td>
+    					</tr> 
+                        <?php endforeach; ?>
+                    </tbody>
+    			</table>
+    		</div>
+    	</div>
     <?php else :?>
         <div class="alert alert-danger fade in" style="text-align: center;"><strong>NÃO EXISTEM DADOS CADASTRADOS, CLIQUE NO BOTÃO "ADICIONAR CARGO" PARA REALIZAR OS CADASTROS</strong></div>
     <?php endif;?>

@@ -50,16 +50,18 @@
 							<label class="control-label">Estado Civil</label> 
 							<select name="st_estadoCivil" id="st_estadoCivil" required>
 								<option></option>
-								<option value="casado">CASADO (A)</option>
-								<option value="solteiro">SOLTEIRO (A)</option>
-								<option value="separado">SEPARADO (A)</option>
-								<option value="divorciado">DIVORCIADO (A)</option>
+								<?php foreach ($this->rsEstadocivil as $args) :?>
+									<option value='<?php echo $args['id_estado_civil']?>'><?php echo $args['st_nome']?></option>
+								<?php endforeach;?>
 							</select>
 						</div>
 						<div class="col-md-3 form-group2">
 							<label class="control-label">Cargo</label> 
 							<select name="id_cargo" id="id_cargo" required>
 								<option></option>
+								<?php foreach ($this->rsCargo as $cargo) :?>
+									<option value='<?php echo $cargo['id_cargo']?>'><?php echo $cargo['st_nome']?></option>
+								<?php endforeach;?>
 							</select>
 						</div>
 						<div class="col-md-4 form-group1">
