@@ -21,7 +21,7 @@
 							<input type="text" class="form-control" name="st_nome" id="st_nome" required>
 						</div>
 						<div class="col-md-4 form-group1">
-							<label class="control-label">CPF/CNPJ</label> 
+							<label class="control-label">CPF</label> 
 							<input type="text" class="form-control" name="num_cpf" id="num_cpf" required>
 						</div>
 					</div>
@@ -48,7 +48,7 @@
 
 						<div class="col-md-3 form-group2">
 							<label class="control-label">Estado Civil</label> 
-							<select name="st_estadoCivil" id="st_estadoCivil" required>
+							<select name="id_estado_civil" id="id_estado_civil" required>
 								<option></option>
 								<?php foreach ($this->rsEstadocivil as $args) :?>
 									<option value='<?php echo $args['id_estado_civil']?>'><?php echo $args['st_nome']?></option>
