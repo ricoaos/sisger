@@ -38,9 +38,10 @@ class Cadastro_FuncionarioController extends App_Controller_Action
                 date_default_timezone_set('America/Sao_Paulo');
                 
                 try{
+                                                        
+                    $target_dir = APPLICATION_PATH . '/../public/upload/';
                     
-                    $target_dir = APPLICATION_PATH .'../uploads/';
-                    $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
+                    $target_file = $target_dir . date("dmYHis").'_' . basename($_FILES["ds_assinatura"]["name"]);
                     $uploadOk = 1;
                     
                     $_UP = array();
@@ -53,53 +54,55 @@ class Cadastro_FuncionarioController extends App_Controller_Action
                     $_UP['erro'][3] = 'O upload do arquivo foi feito parcialmente';
                     $_UP['erro'][4] = 'Não foi feito o upload do arquivo';
                     
-                    $extensao = strtolower(end(explode('.', $_FILES['fileToUpload']['name'])));
+                    $extensao = strtolower(end(explode('.', $_FILES['ds_assinatura']['name'])));
                     
                     set_error_handler(function ($errno, $errstr, $errfile, $errline ) {
                         throw new ErrorException($errstr, 0, $errno, $errfile, $errline);
                     });
                         
-                    if ($_FILES['fileToUpload']['error'] != 0) {
-                        self::logs($_FILES["fileToUpload"],'Não foi possivel fazer o upload do arquivo,'.$_UP['erro'][$_FILES['fileToUpload']['error']]);
-                        throw new Exception("Não foi possivel fazer o upload do arquivo, ".'<b>'. $_UP['erro'][$_FILES['fileToUpload']['error']].'</strong>');
+                    if ($_FILES['ds_assinatura']['error'] != 0) {
+                        self::logs($_FILES["ds_assinatura"],'Não foi possivel fazer o upload do arquivo,'.$_UP['erro'][$_FILES['ds_assinatura']['error']]);
+                        throw new Exception("Não foi possivel fazer o upload do arquivo, ".'<b>'. $_UP['erro'][$_FILES['ds_assinatura']['error']].'</strong>');
                     }
                     
                     if (array_search($extensao, $_UP['extensoes']) === false){
-                        self::logs($_FILES["fileToUpload"],'Extensão de arquivo não permitido para essa operação');
+                        self::logs($_FILES["ds_assinatura"],'Extensão de arquivo não permitido para essa operação');
                         throw new Exception( "Por favor, envie arquivos com as seguintes extensões: jpg, png, gif, pdf");
                     }
                     
-                    if ($_UP['tamanho'] < $_FILES['fileToUpload']['size']){
-                        self::logs($_FILES["fileToUpload"],'O arquivo de upload é maior do que o limite de 1MB.');
+                    if ($_UP['tamanho'] < $_FILES['ds_assinatura']['size']){
+                        self::logs($_FILES["ds_assinatura"],'O arquivo de upload é maior do que o limite de 1MB.');
                         throw new Exception("O arquivo de upload é maior do que o limite de 1MB.");
                     }
-                    if (!self::validType($_FILES['fileToUpload'])){
-                        self::logs($_FILES["fileToUpload"],'Minetype não altorizado ou modificado');
+                    if (!self::validType($_FILES['ds_assinatura'])){
+                        self::logs($_FILES["ds_assinatura"],'Minetype não altorizado ou modificado');
                         throw new Exception("Minetype não altorizado ou modificado.");
                     }
                     
-                    $arquivo = strtolower(file_get_contents($_FILES["fileToUpload"]['tmp_name']));
+                    $arquivo = strtolower(file_get_contents($_FILES["ds_assinatura"]['tmp_name']));
                     $pattern = '/^<(\?php|script|notXSS)|(<\/.\w*>$)|<\w*\s*on....(?=s|\=)|(\?php|echo|alert|javascript|cmd|system|request|\?>$|<\?\s)/mi';
                     if (preg_match_all($pattern, $arquivo, $matches, PREG_SET_ORDER, 0)){
-                        self::logs($_FILES["fileToUpload"],'Arquivo com código malicioso');
+                        self::logs($_FILES["ds_assinatura"],'Arquivo com código malicioso');
                         throw new Exception( 'Arquivo com código malicioso!');
                     }
                     
-                    if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file) || $uploadOk != 0) {
-                        echo "Upload do arquivo ".'<strong>'. $_FILES["fileToUpload"]["name"].'</strong>'. " realizado com sucesso.";
-                        self::logs($_FILES["fileToUpload"], 'upload realizado com sucesso');
+                    if (move_uploaded_file($_FILES["ds_assinatura"]["tmp_name"], $target_file) || $uploadOk != 0) {
+                        self::logs($_FILES["ds_assinatura"], 'upload realizado com sucesso');
                     } else {
                         throw new Exception("Desculpe, houve um erro ao enviar seu arquivo.");
                     }
                         
-                }catch (Exception $e) {
-                    echo 'Exception => ',  utf8_encode($e->getMessage()), "\n";
+                }catch (Zend_Db_Exception $e) {
+                    $msg= utf8_encode($e->getMessage());
+                    $e->rollBack();
                 }
             }
             
             try {
                 
-                if(empty($post["id_cargo"])){
+                $post["ds_assinatura"] = date("dmYHis").'_' . basename($_FILES["ds_assinatura"]["name"]);
+                
+                if(empty($post["id_funcionario"])){
                     $dtcadastro = date('Y-m-d H:i:s');
                     $post['dt_cadastro']= $dtcadastro;
                     $rsFuncionario = $this->mFuncionario->insert($post);
@@ -110,13 +113,17 @@ class Cadastro_FuncionarioController extends App_Controller_Action
                     $this->mFuncionario->update($post,$where);
                     $msg = "Registro alterado com sucesso.";
                 }
+                
+                $args = self::getdadoscadastrados($rsFuncionario);
+                $this->view->dadospagina = $args;
+                
             } catch (Zend_Db_Exception $e) {
                 $e->rollBack();
                 $msg= $e->getMessage();
             }
             
             $this->view->msg = $msg;
-            $this->_redirect('/cadastro/funcionario/listagem');
+            //$this->_redirect('/cadastro/funcionario/listagem');
         }
     }
 
@@ -125,9 +132,7 @@ class Cadastro_FuncionarioController extends App_Controller_Action
      */
     public function listagemAction()
     {
-        // $mFuncionario = new Model_Funcionario_VwFuncionario();
-        // $rsFuncionario = $mFuncionario->fetchAll(array('id_organizacao = ?' => $this->idOrganizacao), '',30)->toArray();
-        $rsFuncionario = null;
+        $rsFuncionario = $this->mFuncionario->fetchAll()->toArray();
         $this->view->rsFuncionario = $rsFuncionario;
     }
 
@@ -136,37 +141,43 @@ class Cadastro_FuncionarioController extends App_Controller_Action
      */
     public function inativarregistroAction()
     {
-        if ($this->_request->getParam('id')) {
-            list ($date, $id) = explode('@', base64_decode($this->_request->getParam('id')));
-            $mfuncionario = new Model_Funcionario_Funcionario();
-            $where = $mfuncionario->getAdapter()->quoteInto('id_funcionario = ?', $id);
-            $mfuncionario->update(array(
-                'id_ativo' => 0
-            ), $where);
-            $this->_redirect('funcionario/funcionario/listagem');
+        if ($this->_request->getParam('id')) 
+        {            
+            $where = $this->mFuncionario->getAdapter()->quoteInto('id_funcionario = ?', $this->_request->getParam('id'));
+            $ativo = $this->_request->getParam('ativo');
+            
+            $this->mFuncionario->update(array('id_ativo'=> $ativo),$where);
+            $this->view->msg = "Registro alterado com sucesso.";
+            $this->_redirect('/cadastro/funcionario/listagem');
         }
     }
 
+    /**
+     * 
+     * @param unknown $params
+     * @return mixed
+     */
     public function getdadoscadastrados($params)
     {
-        $mFuncionario = new Model_Funcionario_VwFuncionario();
-        $dadospagina = $mFuncionario->fetchAll(array(
-            'id_funcionario = ?' => $params
-        ))->toArray();
-        list ($YY, $mm, $dd) = explode('-', $dadospagina[0]["dt_nascimento"]);
-        list ($YYa, $mma, $dda) = explode('-', $dadospagina[0]["dt_admissao"]);
-        $dadospagina[0]["dt_nascimento"] = $dd . '/' . $mm . '/' . $YY;
-        $dadospagina[0]["dt_admissao"] = $dda . '/' . $mma . '/' . $YYa;
+        $dadospagina = $this->mFuncionario->fetchAll(array('id_funcionario = ?' => $params ))->toArray();
         return $dadospagina[0];
     }
-    
-    
+     /**
+      * 
+      * @param unknown $file
+      * @param unknown $mensagem
+      */
     function logs($file,$mensagem){
         
         $texto = date('d/m/Y H:i:s').' ARQUIVO: '.$file['name'].', TIPO: '.$file['type'].', RESULT: '.$mensagem;
-        error_log($texto . PHP_EOL, 3, APPLICATION_PATH .'../uploads/log'.date("dmY").'.txt');
+        error_log($texto . PHP_EOL, 3, APPLICATION_PATH . '/../public/upload/log'.date("dmY").'.txt');
     }
     
+    /**
+     * 
+     * @param unknown $file
+     * @return boolean
+     */
     function validType($file) {
         
         $listValidFiles = array(

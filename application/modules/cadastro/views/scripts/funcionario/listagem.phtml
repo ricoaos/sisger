@@ -24,6 +24,17 @@
 			<button class="btn btn-green" type="button">Adicionar Funcionário</button>
 		</a>
 	</div>
+	
+	<div>
+		<?php if(!empty($this->msg)):?>
+			<div class="alert alert-success fade in">
+				<button class="close" aria-hidden="true" data-dismiss="alert" type="button">x</button>
+				<i class="fa-ok alert-icon s24"></i>
+				<strong><?php echo $this->msg?></strong>
+			</div>
+		<?php endif;?>
+	</div>
+	
     <?php if(!empty($this->rsFuncionario)):?>
     <div class="graph">
 		<div class="tables">
@@ -44,23 +55,18 @@
                         <tr>
 						<td><?php echo $list['st_nome'] ?></td>
 						<td><?php echo $list['num_matricula'] ?></td>
-						<td><?php echo $list['st_cargo'] ?></td>
+						<td><?php echo $list['id_cargo'] ?></td>
 						<td><?php echo $list['num_telefone'] ?></td>
-						<td><?php echo $list['st_email'] ?></td>
+						<td><?php echo $list['ds_email'] ?></td>
 						<td><?php echo $list['id_ativo'] == 1 ? '<strong style="color:green;">'.'ATIVO'.'</strong>':'<strong style="color:red;">'.'INATIVO'.'</strong>'; ?></td>
-						<td style="text-align: center; width: 15%;"><a href=""><span
-								class="label label-primary" title="Editar Registro"><i
-									class="fa fa-edit"></i></span></a>
-                                <?php if($list['id_ativo']==1):?>
-                                    <a href=""><span
-								class="label label-danger" title="Inativar Registro"><i
-									class="fa fa-times-circle"></i></span></a>
-                                <?php else: ?>
-                                    <a href=""><span
-								class="label label-warning" title="Ativar Registro"><i
-									class="fa fa-times-circle"></i></span></a>
-                            <?php endif;?>
-                            </td>
+						<td style="text-align: center; width: 15%;">
+							<a href="<?php echo $this->baseUrl('/cadastro/funcionario/index/id/'.$list['id_funcionario'])?>"><span class="label label-primary" title="Editar Registro"><i class="fa fa-edit"></i></span></a>
+                            <?php if($list['id_ativo']==1):?>
+                                <a href="<?php echo $this->baseUrl('/cadastro/funcionario/inativarregistro/id/'.$list['id_funcionario'].'/ativo/0')?>"><span class="label label-danger" title="Inativar Registro"><i class="fa fa-times-circle"></i></span></a>
+                            <?php else: ?>
+                                <a href="<?php echo $this->baseUrl('/cadastro/funcionario/inativarregistro/id/'.$list['id_funcionario'].'/ativo/1')?>"><span class="label label-warning" title="Ativar Registro"><i class="fa fa-times-circle"></i></span></a>
+                        	<?php endif;?>
+                        </td>
 					</tr> 
                     <?php endforeach; ?>
                 </tbody>

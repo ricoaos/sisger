@@ -6,41 +6,52 @@
 			<li class="active">Funcionário</li>
 		</ol>
 	</div>
-
+		
+	<div>
+		<?php if(!empty($this->msg)):?>
+			<div class="alert alert-success fade in">
+				<button class="close" aria-hidden="true" data-dismiss="alert" type="button">x</button>
+				<i class="fa-ok alert-icon s24"></i>
+				<strong><?php echo $this->msg?></strong>
+			</div>
+		<?php endif;?>
+	</div>
+	
 	<div class="forms-main">
 		<div class="graph-form">
 			<div class="validation-form">
-				<form class="form-horizontal group-border hover-stripped" role="form" method="post" action="<?php echo $this->baseUrl('/cadastro/funcionario/index')?>">
+				<form class="form-horizontal group-border hover-stripped" role="form" method="post" enctype="multipart/form-data" action="<?php echo $this->baseUrl('/cadastro/funcionario/index')?>">
+					<input type="hidden" id="id_funcionario" name="id_funcionario" value="<?php echo $this->dadospagina['id_funcionario']?>">
 					<div class="vali-form">
 						<div class="col-md-2 form-group1">
 							<label class="control-label">Matrícula</label> 
-							<input type="text" class="form-control" name="num_matricula" id="num_matricula" required>
+							<input type="text" class="form-control" name="num_matricula" id="num_matricula" required value="<?php echo $this->dadospagina['num_matricula']?>">
 						</div>
 						<div class="col-md-6 form-group1">
 							<label class="control-label">Nome</label> 
-							<input type="text" class="form-control" name="st_nome" id="st_nome" required>
+							<input type="text" class="form-control" name="st_nome" id="st_nome" required value="<?php echo $this->dadospagina['st_nome']?>">
 						</div>
 						<div class="col-md-4 form-group1">
 							<label class="control-label">CPF</label> 
-							<input type="text" class="form-control" name="num_cpf" id="num_cpf" required>
+							<input type="text" class="form-control" name="num_cpf" id="num_cpf" required value="<?php echo $this->dadospagina['num_cpf']?>">
 						</div>
 					</div>
 					<div class="vali-form">
 						<div class="col-md-2 form-group1">
 							<label class="control-label">RG</label> 
-							<input type="text" class="form-control" name="num_rg" id="num_rg" required>
+							<input type="text" class="form-control" name="num_rg" id="num_rg" required value="<?php echo $this->dadospagina['num_rg']?>">
 						</div>
 						<div class="col-md-2 form-group1">
 							<label class="control-label">Data Nascimento</label> 
-							<input type="text" class="form-control" name="dt_nascimento" id="dt_nascimento" required>
+							<input type="text" class="form-control" name="dt_nascimento" id="dt_nascimento" required value="<?php echo $this->dadospagina['dt_nascimento']?>">
 						</div>
 						<div class="col-md-4 form-group1">
 							<label class="control-label">CTPS</label> 
-							<input type="text" class="form-control" name="num_ctps" id="num_ctps" required>
+							<input type="text" class="form-control" name="num_ctps" id="num_ctps" required value="<?php echo $this->dadospagina['num_ctps']?>">
 						</div>
 						<div class="col-md-4 form-group1">
 							<label class="control-label">CNH</label> 
-							<input type="text" class="form-control" name="num_cnh" id="num_cnh" required>
+							<input type="text" class="form-control" name="num_cnh" id="num_cnh" value="<?php echo $this->dadospagina['num_cnh']?>">
 						</div>
 
 					</div>
@@ -51,7 +62,7 @@
 							<select name="id_estado_civil" id="id_estado_civil" required>
 								<option></option>
 								<?php foreach ($this->rsEstadocivil as $args) :?>
-									<option value='<?php echo $args['id_estado_civil']?>'><?php echo $args['st_nome']?></option>
+									<option value='<?php echo $args['id_estado_civil']?>' <?php if($this->dadospagina['id_estado_civil'] == $args['id_estado_civil']) echo "selected"?>><?php echo $args['st_nome']?></option>
 								<?php endforeach;?>
 							</select>
 						</div>
@@ -60,66 +71,66 @@
 							<select name="id_cargo" id="id_cargo" required>
 								<option></option>
 								<?php foreach ($this->rsCargo as $cargo) :?>
-									<option value='<?php echo $cargo['id_cargo']?>'><?php echo $cargo['st_nome']?></option>
+									<option value='<?php echo $cargo['id_cargo']?>' <?php if($this->dadospagina['id_cargo'] == $cargo['id_cargo']) echo "selected"?>><?php echo $cargo['st_nome']?></option>
 								<?php endforeach;?>
 							</select>
 						</div>
 						<div class="col-md-4 form-group1">
 							<label class="control-label">Email</label> 
-							<input type="text" class="form-control" name="st_email" id="st_email">
+							<input type="text" class="form-control" name="ds_email" id="ds_email" required value="<?php echo $this->dadospagina['ds_email']?>">
 						</div>
 						<div class="col-md-2 form-group1">
 							<label class="control-label">Telefone</label> 
-							<input type="text" class="form-control" name="num_telefone" id="num_telefone" maxlength="15">
+							<input type="text" class="form-control" name="num_telefone" id="num_telefone" maxlength="15" value="<?php echo $this->dadospagina['num_telefone']?>">
 						</div>
 
 					</div>
 					<div class="col-md-2 form-group1">
 						<label class="control-label">CEP</label> 
-						<input type="text" class="form-control" name="num_cep" id="num_cep" required>
+						<input type="text" class="form-control" name="num_cep" id="num_cep" required value="<?php echo $this->dadospagina['num_cep']?>">
 					</div>
 					<div class="col-md-8 form-group1">
 						<label class="control-label">Logradouro</label> 
-						<input type="text" class="form-control" name="ds_logradouro" id="ds_logradouro" required>
+						<input type="text" class="form-control" name="ds_logradouro" id="ds_logradouro" required value="<?php echo $this->dadospagina['ds_logradouro']?>">
 					</div>
 
 					<div class="col-md-2 form-group1">
 						<label class="control-label">Nº</label> 
-						<input type="text" class="form-control" name="num_logradouro" id="num_logradouro" required>
+						<input type="text" class="form-control" name="num_logradouro" id="num_logradouro" required value="<?php echo $this->dadospagina['num_logradouro']?>">
 					</div>
 
 					<div class="clearfix"></div>
 
 					<div class="col-md-12 form-group1">
 						<label class="control-label">Complemento</label> 
-						<input type="text" class="form-control" name="ds_complemento" id="ds_complemento">
+						<input type="text" class="form-control" name="ds_complemento" id="ds_complemento" value="<?php echo $this->dadospagina['ds_complemento']?>">
 					</div>
 
 					<div class="clearfix"></div>
 
 					<div class="col-md-5 form-group1">
 						<label class="control-label">Bairro</label> 
-						<input type="text" class="form-control" name="ds_bairro" id="ds_bairro" required>
+						<input type="text" class="form-control" name="ds_bairro" id="ds_bairro" required value="<?php echo $this->dadospagina['ds_bairro']?>">
 					</div>
 
 					<div class="col-md-5 form-group1">
 						<label class="control-label">Cidade</label> 
-						<input type="text" class="form-control" name="ds_cidade" id="ds_cidade" required>
+						<input type="text" class="form-control" name="ds_cidade" id="ds_cidade" required value="<?php echo $this->dadospagina['ds_cidade']?>">
 					</div>
 
 					<div class="col-md-2 form-group1">
 						<label class="control-label">UF</label> 
-						<input type="text" name="ds_uf" id="ds_uf" required>
+						<input type="text" name="ds_uf" id="ds_uf" required value="<?php echo $this->dadospagina['ds_uf']?>">
 					</div>
 
 					<div class="col-md-12 form-group2">
 						<label class="control-label">Upload Assinatura</label> 
-						<input type="file" id="ds_assinatura" name="ds_assinatura">
+						<input type="file" id="ds_assinatura" name="ds_assinatura" value="<?php echo $this->dadospagina['ds_assinatura']?>">
 					</div>
 
 					<div class="col-md-12 form-group1 ">
 						<label class="control-label">Observação</label>
-						<textarea name="ds_observacao" id="ds_observacao"></textarea>
+						<textarea name="ds_observacao" id="ds_observacao"><?php echo $this->dadospagina['ds_observacao']?></textarea>
 					</div>
 					<div class="col-md-12 form-group button-2">
 						<button type="submit" class="btn btn-primary">Salvar</button>
