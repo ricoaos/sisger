@@ -43,28 +43,23 @@
 					</tr>
 				</thead>
 				<tbody> 
-						<?php foreach ($this->rsClientes as $list) : ?>
-                            <tr>
-						<td><?php echo $list['st_nome'] ?></td>
-						<td><?php echo $list['num_cpf_cnpj'] ?></td>
-						<td><?php echo $list['ds_email'] ?>{{  $list->ds_email }}</td>
-						<td><?php echo $list['id_ativo'] == 1 ? '<strong style="color:green;">'.'ATIVO'.'</strong>':'<strong style="color:red;">'.'INATIVO'.'</strong>'; ?></td>
-						<td style="text-align: center; width: 15%;"><a href=""><span
-								class="label label-primary" title="Editar Registro"><i
-									class="fa fa-edit"></i></span></a>
-                                    <?php if($list['id_ativo']==1):?>
-                                        <a href=""><span
-								class="label label-danger" title="Inativar Registro"><i
-									class="fa fa-times-circle"></i></span></a>
-                                    <?php else: ?>
-                                        <a href=""><span
-								class="label label-warning" title="Ativar Registro"><i
-									class="fa fa-times-circle"></i></span></a>
-                                <?php endif;?>
-                                </td>
-					</tr> 
-							<?php endforeach; ?>
-                    </tbody>
+					<?php foreach ($this->rsClientes as $list) : ?>
+						<tr>
+    						<td><?php echo $list['st_nome'] ?></td>
+    						<td><?php echo $list['num_cpf_cnpj'] ?></td>
+    						<td><?php echo $list['ds_email'] ?></td>
+    						<td><?php echo $list['id_ativo'] == 1 ? '<strong style="color:green;">'.'ATIVO'.'</strong>':'<strong style="color:red;">'.'INATIVO'.'</strong>'; ?></td>
+    						<td style="text-align: center; width: 15%;">
+    							<a href="<?php echo $this->baseUrl('/cadastro/cliente/index/id/'.$list['id_cliente'])?>"><span class="label label-primary" title="Editar Registro"><i class="fa fa-edit"></i></span></a>
+                                <?php if($list['id_ativo']==1):?>
+                                    <a href="<?php echo $this->baseUrl('/cadastro/cliente/inativarregistro/id/'.$list['id_cliente'].'/ativo/0')?>"><span class="label label-danger" title="Inativar Registro"><i class="fa fa-times-circle"></i></span></a>
+                                <?php else: ?>
+                                    <a href="<?php echo $this->baseUrl('/cadastro/cliente/inativarregistro/id/'.$list['id_cliente'].'/ativo/1')?>"><span class="label label-warning" title="Ativar Registro"><i class="fa fa-times-circle"></i></span></a>
+                            	<?php endif;?>
+                            </td>
+    					</tr> 
+					<?php endforeach; ?>
+				</tbody>
 			</table>
 		</div>
 	</div>
