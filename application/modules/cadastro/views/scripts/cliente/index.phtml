@@ -19,33 +19,34 @@
 <div class="forms-main">
 	<div class="graph-form">
 		<div class="validation-form">
-			<form class="form-horizontal group-border hover-stripped" role="form" method="post" action="<?php echo $this->baseUrl('/cadastro/cliente/index')?>">
+			<form class="form-horizontal group-border hover-stripped" role="form" method="post" enctype="multipart/form-data" action="<?php echo $this->baseUrl('/cadastro/cliente/index')?>">
+				<input type="hidden" name="imageRT" id="imageRT" value="<?php echo $this->dadospagina[0]['ds_rt']?>">
 				<div class="vali-form">
 					<div class="col-md-2 form-group1">
 						<label class="control-label">Registro</label> 
-						<input type="text" class="form-control" name="id_cliente" id="id_cliente" value="<?php echo $this->dadospagina['id_cliente']?>">
+						<input type="text" class="form-control" name="id_cliente" id="id_cliente" value="<?php echo $this->dadospagina[0]['id_cliente']?>">
 					</div>
 					<div class="col-md-6 form-group2">
 						<label class="control-label">Tipo Cliente</label> 
 						<select name="tp_pessoa" id="tp_pessoa" required>
 							<option></option>
-							<option value="F" <?php if($this->dadospagina['tp_pessoa'] == 'F') echo "selected"?>>Física</option>
-							<option value="J" <?php if($this->dadospagina['tp_pessoa'] == 'J') echo "selected"?>>Jurídica</option>
+							<option value="F" <?php if($this->dadospagina[0]['tp_pessoa'] == 'F') echo "selected"?>>Física</option>
+							<option value="J" <?php if($this->dadospagina[0]['tp_pessoa'] == 'J') echo "selected"?>>Jurídica</option>
 						</select>
 					</div>
 					<div class="col-md-4 form-group1">
 						<label class="control-label">Situação</label> 
-						<input type="text" class="form-control" name="id_ativo" id="id_ativo" value="<?php echo $this->dadospagina['id_ativo'] == 1 ? 'ATIVO' : 'INATIVO'; ?>">
+						<input type="text" class="form-control" name="id_ativo" id="id_ativo" value="<?php echo $this->dadospagina[0]['id_ativo'] == 1 ? 'ATIVO' : 'INATIVO'; ?>">
 					</div>
 				</div>
 				<div class="vali-form">
 					<div class="col-md-8 form-group1">
 						<label class="control-label">Nome</label> 
-						<input type="text" class="form-control" name="st_nome" id="st_nome" required value="<?php echo $this->dadospagina['st_nome']?>">
+						<input type="text" class="form-control" name="st_nome" id="st_nome" required value="<?php echo $this->dadospagina[0]['st_nome']?>">
 					</div>
 					<div class="col-md-4 form-group1">
 						<label class="control-label">CPF/CNPJ</label> 
-						<input type="text" class="form-control" name="num_cpf_cnpj" id="num_cpf_cnpj" required value="<?php echo $this->dadospagina['num_cpf_cnpj']?>">
+						<input type="text" class="form-control" name="num_cpf_cnpj" id="num_cpf_cnpj" required value="<?php echo $this->dadospagina[0]['num_cpf_cnpj']?>">
 					</div>
 				</div>
 
@@ -53,89 +54,94 @@
 
 				<div class="col-md-6 form-group1">
 					<label class="control-label">Email</label> 
-					<input type="text" class="form-control" name="ds_email" id="ds_email" required value="<?php echo $this->dadospagina['ds_email']?>">
+					<input type="text" class="form-control" name="ds_email" id="ds_email" required value="<?php echo $this->dadospagina[0]['ds_email']?>">
 				</div>
 				<div class="col-md-3 form-group1">
 					<label class="control-label">Telefone</label> 
-					<input type="text" class="form-control" name="num_telefone" id="num_telefone" placeholder="DDD+número" required maxlength="15" value="<?php echo $this->dadospagina['num_telefone']?>">
+					<input type="text" class="form-control" name="num_telefone" id="num_telefone" placeholder="DDD+número" required maxlength="15" value="<?php echo $this->dadospagina[0]['num_telefone']?>">
 				</div>
 				<div class="col-md-3 form-group1">
 					<label class="control-label">Whatsapp</label> 
-					<input type="text" class="form-control" name="num_celular" id="num_celular" placeholder="DDD+número" maxlength="15" value="<?php echo $this->dadospagina['num_celular']?>">
+					<input type="text" class="form-control" name="num_celular" id="num_celular" placeholder="DDD+número" maxlength="15" value="<?php echo $this->dadospagina[0]['num_celular']?>">
 				</div>
 
 				<div class="clearfix"></div>
 
 				<div class="col-md-2 form-group1">
 					<label class="control-label">CEP</label> 
-					<input type="text" class="form-control" name="num_cep" id="num_cep" required value="<?php echo $this->dadospagina['num_cep']?>">
+					<input type="text" class="form-control" name="num_cep" id="num_cep" required value="<?php echo $this->dadospagina[0]['num_cep']?>">
 				</div>
 				<div class="col-md-8 form-group1">
 					<label class="control-label">Logradouro</label> 
-					<input type="text" class="form-control" name="ds_logradouro" id="ds_logradouro" required value="<?php echo $this->dadospagina['ds_logradouro']?>">
+					<input type="text" class="form-control" name="ds_logradouro" id="ds_logradouro" required value="<?php echo $this->dadospagina[0]['ds_logradouro']?>">
 				</div>
 
 				<div class="col-md-2 form-group1">
 					<label class="control-label">Nº</label> 
-					<input type="text" class="form-control" name="num_logradouro" id="num_logradouro" required value="<?php echo $this->dadospagina['num_logradouro']?>">
+					<input type="text" class="form-control" name="num_logradouro" id="num_logradouro" required value="<?php echo $this->dadospagina[0]['num_logradouro']?>">
 				</div>
 
 				<div class="clearfix"></div>
 
 				<div class="col-md-12 form-group1">
 					<label class="control-label">Complemento</label> 
-					<input type="text" class="form-control" name="ds_complemento" id="ds_complemento" value="<?php echo $this->dadospagina['ds_complemento']?>">
+					<input type="text" class="form-control" name="ds_complemento" id="ds_complemento" value="<?php echo $this->dadospagina[0]['ds_complemento']?>">
 				</div>
 
 				<div class="clearfix"></div>
 
 				<div class="col-md-5 form-group1">
 					<label class="control-label">Bairro</label> 
-					<input type="text" class="form-control" name="ds_bairro" id="ds_bairro" required value="<?php echo $this->dadospagina['ds_bairro']?>">
+					<input type="text" class="form-control" name="ds_bairro" id="ds_bairro" required value="<?php echo $this->dadospagina[0]['ds_bairro']?>">
 				</div>
 
 				<div class="col-md-5 form-group1">
 					<label class="control-label">Cidade</label> <input type="text"
-						class="form-control" name="ds_cidade" id="ds_cidade" required value="<?php echo $this->dadospagina['ds_cidade']?>">
+						class="form-control" name="ds_cidade" id="ds_cidade" required value="<?php echo $this->dadospagina[0]['ds_cidade']?>">
 				</div>
 
 				<div class="col-md-2 form-group1">
 					<label class="control-label">UF</label> 
-					<input type="text" class="form-control" name="ds_uf" id="ds_uf" required value="<?php echo $this->dadospagina['ds_uf']?>">
+					<input type="text" class="form-control" name="ds_uf" id="ds_uf" required value="<?php echo $this->dadospagina[0]['ds_uf']?>">
 				</div>
 
 				<div class="col-md-6 form-group2">
-					<label class="control-label">Funcionario Responsável pelo Contrato(RC)</label> 
+					<label class="control-label">Funcionário Responsável pelo Contrato(RC)</label> 
 					<select name="id_funcionario" id="id_funcionario"required>
 						<option></option>
 						<?php foreach ($this->rsFuncionario as $args) :?>
-							<option value='<?php echo $args['id_funcionario']?>' <?php if($this->dadospagina['id_funcionario'] == $args['id_funcionario']) echo "selected"?>><?php echo $args['st_nome']?></option>
+							<option value='<?php echo $args['id_funcionario']?>' <?php if($this->dadospagina[0]['id_funcionario'] == $args['id_funcionario']) echo "selected"?>><?php echo $args['st_nome']?></option>
 						<?php endforeach;?>
 					</select>
 				</div>
 
 				<div class="col-md-6 form-group1">
 					<label class="control-label">Responsável pelo Contrato (Cliente)</label>
-					<input type="text" class="form-control" name="ds_cliente_contrato" id="ds_cliente_contrato" required value="<?php echo $this->dadospagina['ds_cliente_contrato']?>">
+					<input type="text" class="form-control" name="ds_cliente_contrato" id="ds_cliente_contrato" required value="<?php echo $this->dadospagina[0]['ds_cliente_contrato']?>">
 				</div>
 
 				<div class="col-md-7 form-group1">
-					<label class="control-label">Manutenções do Contratadas : </label>
-						<?php foreach($this->rsRoteiro as $roteiro): ?>
-							<div class="checkbox-inline">
-            					<label><input type="checkbox" value="<?php echo $roteiro['id_roteiro']?>" id="id_roteiro[]" name="id_roteiro[]"><?php echo $roteiro['st_sigla'] ?></label>
-            				</div>
-						<?php endforeach; ?>
-					</div>
+					<label class="control-label">Manutenções do Contrato : </label>
+					<?php foreach($this->rsRoteiro as $roteiro): ?>
+						<div class="checkbox-inline">
+        					<label>
+        						<input type="checkbox" value="<?php echo $roteiro['id_roteiro']?>" id="id_roteiro[]" name="id_roteiro[]" <?php if ($this->dadospagina > 0) foreach($this->dadospagina as $id_roteiro){if($id_roteiro['id_roteiro'] == $roteiro['id_roteiro']) echo 'checked';} ?>>
+                                <?php echo $roteiro['st_sigla']?>
+        					</label>
+        				</div>
+					<?php endforeach; ?>
+				</div>
 
 				<div class="col-md-12 form-group1">
 					<label class="control-label">Upload da RT</label> 
 					<input type="file" id="ds_rt" name="ds_rt">
+					<span><?php echo $this->dadospagina[0]['ds_rt']?></span> 
+					
 				</div>
 
 				<div class="col-md-12 form-group1 ">
 					<label class="control-label">Observação</label>
-					<textarea name="ds_observacao" id="ds_observacao"><?php echo $this->dadospagina['ds_observacao']?></textarea>
+					<textarea name="ds_observacao" id="ds_observacao"><?php echo $this->dadospagina[0]['ds_observacao']?></textarea>
 				</div>
 
 				<div class="col-md-12 form-group button-2">
