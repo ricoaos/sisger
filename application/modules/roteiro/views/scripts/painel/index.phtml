@@ -12,9 +12,12 @@
 			<div class="validation-form">
 				<div class="vali-form">
 					<div class="col-md-12 form-group2">
-						<label class="control-label">Clientes</label> <select
-							name="id_cliente" id="id_cliente" required>
+						<label class="control-label">Clientes</label> 
+						<select name="id_cliente" id="id_cliente" required>
 							<option></option>
+							<?php foreach ($this->rsCliente as $args) :?>
+    							<option value='<?php echo $args['id_cliente']?>'><?php echo $args['st_nome']?></option>
+    						<?php endforeach;?>
 						</select>
 					</div>
 					<div class="col-md-12 form-group1">
@@ -22,9 +25,7 @@
 							<div class="grid-1">
 								<label class="control-label"><h3>Roteiros de Manutenção</h3></label>
 								<?php foreach($this->rsRoteiro as $roteiro): ?>
-									<a
-									href="<?php echo $this->baseUrl().'/roteiro/'.$roteiro['st_sigla'] ?>"><button
-										class="facebook"><?php echo $roteiro['st_sigla'] ?> </button></a>
+									<a href="<?php echo $this->baseUrl().'/roteiro/'.$roteiro['st_sigla'] ?>"><button class="facebook" id='id_button' name='id_button'><?php echo $roteiro['st_sigla'] ?></button></a>
 								<?php endforeach; ?>
 							</div>
 						</div>
@@ -35,4 +36,6 @@
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript" src="<?php echo $this->baseUrl('/js/roteiro/painel.js')?>"> </script>
 
