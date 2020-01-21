@@ -11,66 +11,62 @@
 	<div class="forms-main">
 		<div class="graph-form">
 			<div class="validation-form">
-				<form class="form-horizontal group-border hover-stripped"
-					role="form" method="post" action="">
+				<form class="form-horizontal group-border hover-stripped" role="form" method="post" action="">
+				
+					<input type="hidden" name="id_cliente" id="id_cliente" value="<?php echo $this->rsCliente[0]['id_cliente']?>">
+
+					<div class="col-md-5 form-group1">
+						<label class="control-label">Cliente</label> 
+						<input type="text" class="form-control" name="st_nome_c" id="st_nome_c" value="<?php echo $this->rsCliente[0]['st_nome']?>">
+					</div>
 
 					<div class="col-md-5 form-group2">
-						<label class="control-label">Cliente</label> <select
-							name="id_cliente" id="id_cliente" required
-							data-dependent="st_conformidade" class="dynamic">
+						<label class="control-label">Conformidade e nº da área</label> 
+						<select name="id_conformidade" id="id_conformidade" required>
 							<option></option>
 						</select>
 					</div>
 
-					<div class="col-md-5 form-group2">
-						<label class="control-label">Conformidade e nº da área</label> <select
-							name="id_conformidade" id="id_conformidade" required>
-							<option></option>
-							<option value=""></option>
-						</select>
+					<div class="col-md-2 form-group1">
+						<label class="control-label">Mês/Ano</label> 
+						<input type="text" class="form-control" name="st_mes_ano" id="st_mes_ano" value="<?php echo date('m/Y')?>">
 					</div>
 
-					<div class="col-md-2 form-group2">
-						<label class="control-label">Mês/Ano</label> <input type="text"
-							class="form-control" name="st_mes_ano" id="st_mes_ano"
-							value="<?php echo date('m/Y')?>">
+					<div class="col-md-4 form-group1">
+						<label class="control-label">Unidade</label> 
+						<input type="text" class="form-control" name="st_unidade" id="st_unidade">
 					</div>
 
-					<div class="col-md-4 form-group2">
-						<label class="control-label">Unidade</label> <input type="text"
-							class="form-control" name="st_unidade" id="st_unidade">
+					<div class="col-md-4 form-group1">
+						<label class="control-label">descrição</label> 
+						<input type="text" class="form-control" name="st_descricao" id="st_descricao">
 					</div>
 
-					<div class="col-md-4 form-group2">
-						<label class="control-label">descrição</label> <input type="text"
-							class="form-control" name="st_descricao" id="st_descricao">
+					<div class="col-md-4 form-group1">
+						<label class="control-label">Operador</label> 
+						<input type="text" class="form-control" name="st_operador" id="st_operador">
 					</div>
 
-					<div class="col-md-4 form-group2">
-						<label class="control-label">Operador</label> <input type="text"
-							class="form-control" name="st_operador" id="st_operador">
-					</div>
-
-					<div class="col-md-6 form-group2">
+					<div class="col-md-6 form-group1">
 						<label class="control-label">Supervisor do setor</label> <input
 							type="text" class="form-control" name="st_supervisor"
 							id="st_supervisor">
 					</div>
 
-					<div class="col-md-6 form-group2">
+					<div class="col-md-6 form-group1">
 						<label class="control-label">Engenheiro/Técnico em Segurança ou
 							Responsável</label> <input type="text" class="form-control"
 							name="st_engenheiro" id="st_engenheiro">
 					</div>
 
-					<div class="col-md-12 form-group2">
+					<div class="col-md-12 form-group1">
 						<label class="control-label"><strong>INSPENÇÃO DE SEGURANÇA</strong></label>
 					</div>
 
-					<div class="col-md-12 form-group2">
+					<div class="col-md-12 form-group1">
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Inspeção visual.</label>
 							</div>
 							<div class="col-md-1 form-group1">
@@ -88,7 +84,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Existência placas numeras padronizadas pela ABNT e
 									INMETRO.</label>
 							</div>
@@ -107,7 +103,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Abre no sentido de saída da rota de fuga.</label>
 							</div>
 							<div class="col-md-1 form-group1">
@@ -125,7 +121,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Faixa livre de pelo menos 1 m de qualquer obstáculo.</label>
 							</div>
 							<div class="col-md-1 form-group1">
@@ -143,7 +139,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Automatismo: fechamento (fechaduras, dispositivos
 									antipânico, selecionadores e travas, etc).</label>
 							</div>
@@ -162,7 +158,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Automatismo: facilidade de abertura (fechaduras,
 									dispositivos antipânico, selecionadores e travas, etc.).</label>
 							</div>
@@ -181,7 +177,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Limpeza dos alojadores de trincos, no piso e batentes,
 									com remoção de resíduos e objetos estranhos que dificultem o
 									funcionamento das partes móveis (dobradiças, fechaduras e
@@ -202,7 +198,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Localização.</label>
 							</div>
 							<div class="col-md-1 form-group1">
@@ -220,7 +216,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Proteção intempéries.</label>
 							</div>
 							<div class="col-md-1 form-group1">
@@ -238,7 +234,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Está bem fixada.</label>
 							</div>
 							<div class="col-md-1 form-group1">
@@ -254,7 +250,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Adequado classe do fogo.</label>
 							</div>
 							<div class="col-md-1 form-group1">
@@ -272,7 +268,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Trabalhadores aptos ao uso.</label>
 							</div>
 							<div class="col-md-1 form-group1">
@@ -290,7 +286,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Estado de todos os componentes (molas, travas, ferrolhos
 									e Barra antipânico). Obs: Semestral.</label>
 							</div>
@@ -309,7 +305,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Lubrificação de todas as partes móveis. Obs: Semestral.</label>
 							</div>
 							<div class="col-md-1 form-group1">
@@ -327,7 +323,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Legibilidade dos identificadores da porta. Obs:
 									Semestral.</label>
 							</div>
@@ -346,7 +342,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Pintura. Obs: Semestral.</label>
 							</div>
 							<div class="col-md-1 form-group1">
@@ -364,7 +360,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Revestimento. Obs: Semestral.</label>
 							</div>
 							<div class="col-md-1 form-group1">
@@ -382,7 +378,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Partes móveis em perfeitas condições de funcionamento.
 									Obs: Semestral.</label>
 							</div>
@@ -401,7 +397,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Corrosão, empenamento, deterioração e apresentação cantos
 									vivos cortantes que possam provocar ferimentos ao usuário,
 									quando em sua utilização normal. Obs: Anual.</label>
@@ -421,7 +417,7 @@
 						</div>
 						<div
 							style="padding-top: 2px; padding-right: 2px; padding-bottom: 50px; padding-left: 30px; background-color: #fff; border: 1px solid #E7E7E8;">
-							<div class="col-md-9 form-group2">
+							<div class="col-md-9 form-group1">
 								<label>Outros.</label>
 							</div>
 							<div class="col-md-1 form-group1">

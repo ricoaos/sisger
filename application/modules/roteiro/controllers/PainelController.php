@@ -33,7 +33,7 @@ class Roteiro_PainelController extends App_Controller_Action
         $value = $this->getRequest()->getPost('id_cliente');
         $this->mVwClienteRoteiro = new Model_Roteiro_VwClienteRoteiro();
         $result = $this->mVwClienteRoteiro->fetchAll(array('id_cliente = ?' => $value ))->toArray();
-        $result = json_encode(array('resultado'=>$result));        
+        $result = json_encode(array('resultado'=>$result));
         $this->_helper->json($result);
     }
 }

@@ -19,7 +19,7 @@ $(document).ready(function(){
 				var campo = '';
 				
 				$.each(objRoteiro, function(i, roteiro){
-					campo += '<a href='+baseUrl+'/roteiro/'+roteiro.st_sigla+'>';
+					campo += '<a href='+baseUrl+'/roteiro/'+roteiro.st_sigla+'/index/id/'+roteiro.id_cliente+'>';
 					campo += '<button class="facebook">'+roteiro.st_sigla+'</button>';
 					campo += '</a>';
 					campo += '<span>&nbsp;&nbsp;&nbsp;&nbsp</span>'
