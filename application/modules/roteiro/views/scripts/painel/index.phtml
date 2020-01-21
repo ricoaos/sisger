@@ -20,13 +20,11 @@
     						<?php endforeach;?>
 						</select>
 					</div>
-					<div class="col-md-12 form-group1">
+					<div class="col-md-12 form-group1" id='grid_roteiro'>
 						<div class="col-md-12 inner-grid-button">
 							<div class="grid-1">
 								<label class="control-label"><h3>Roteiros de Manutenção</h3></label>
-								<?php foreach($this->rsRoteiro as $roteiro): ?>
-									<a href="<?php echo $this->baseUrl().'/roteiro/'.$roteiro['st_sigla'] ?>"><button class="facebook" id='id_button' name='id_button'><?php echo $roteiro['st_sigla'] ?></button></a>
-								<?php endforeach; ?>
+								<span id="retorno"> </span>
 							</div>
 						</div>
 					</div>
