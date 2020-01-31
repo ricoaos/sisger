@@ -213,6 +213,15 @@ class Cadastro_ClienteController extends App_Controller_Action
         }
     }
 
+    /**
+     * 
+     */
+    public function getclientesAction()
+    {
+        $result = $this->mCliente->fetchAll()->toArray();
+        $result = json_encode(array('resultado'=>$result));
+        $this->_helper->json($result);
+    }
    
     /**
      *

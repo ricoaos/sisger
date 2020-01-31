@@ -51,21 +51,21 @@ class Usuario_UsuarioController extends App_Controller_Action
             }
         }
         
-        $mOrganizacao = new Model_Organizacao_Organizacao();
+       /* $mOrganizacao = new Model_Organizacao_Organizacao();
         $rsOrganizacao = $mOrganizacao->fetchAll(array(
             'cd_grupo = ?' => $this->grupo
         ))->toArray();
-        $this->view->organizacao = $rsOrganizacao;
+        $this->view->organizacao = $rsOrganizacao;*/
         
-        $mUsuarioPerfil = new Model_Sistema_Perfil();
-        $rsPerfis = $mUsuarioPerfil->fetchAll()->toArray();
-        $this->view->perfil = $rsPerfis;
+        $mPerfil = new Model_Usuario_Perfil();
+        $rsPerfis = $mPerfil->fetchAll(array('id_perfil != ?' => 1))->toArray( );
+        $this->view->rsPerfil = $rsPerfis;
         
-        $mFuncionario = new Model_Funcionario_VwFuncionario();
+       /* $mFuncionario = new Model_Funcionario_VwFuncionario();
         $rsFuncionario = $mFuncionario->fetchAll(array(
             'id_organizacao = ?' => $this->idOrganizacao
         ), '', 30)->toArray();
-        $this->view->rsFuncionario = $rsFuncionario;
+        $this->view->rsFuncionario = $rsFuncionario;*/
     }
 
     /**
@@ -97,9 +97,7 @@ class Usuario_UsuarioController extends App_Controller_Action
                 );
                 
                 $mUsuarioOrg->insert($dados);
-                $data = array(
-                    'id_organizacao_atual' => $post['id_organizacao']
-                );
+                $data = array('id_organizacao_atual' => $post['id_organizacao']);
                 $where = $this->mUsuario->getAdapter()->quoteInto('id_usuario = ?', $post["id_usuario"]);
                 $this->mUsuario->update($data, $where);
                 
@@ -108,9 +106,7 @@ class Usuario_UsuarioController extends App_Controller_Action
             
             $this->_helper->layout->disableLayout();
             $this->getHelper('viewRenderer')->setNoRender();
-            $this->getResponse()->setBody(json_encode(array(
-                'result' => $msg
-            )));
+            $this->getResponse()->setBody(json_encode(array('result' => $msg)));
         }
     }
 
@@ -131,11 +127,7 @@ class Usuario_UsuarioController extends App_Controller_Action
      */
     public function listagemAction()
     {
-        $rsUsuario = $this->mVwUsuario->fetchAll(array(
-            'id_grupo = ?' => $this->grupo,
-            'id_usuario != ?' => 1,
-            'id_organizacao = ?' => $this->idOrganizacao
-        ), '', 30)->toArray();
+        $rsUsuario = $this->mUsuario->fetchAll(array(), '', 30)->toArray();
         $this->view->rsUsuario = $rsUsuario;
     }
 
@@ -146,9 +138,7 @@ class Usuario_UsuarioController extends App_Controller_Action
      */
     public function getdadoscadastrados($params)
     {
-        $dadospagina = $this->mVwUsuario->fetchAll(array(
-            'id_usuario = ?' => $params
-        ))->toArray();
+        $dadospagina = $this->mUsuario->fetchAll(array('id_usuario = ?' => $params))->toArray();
         return $dadospagina[0];
     }
 }

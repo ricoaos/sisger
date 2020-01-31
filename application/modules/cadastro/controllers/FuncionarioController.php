@@ -162,6 +162,17 @@ class Cadastro_FuncionarioController extends App_Controller_Action
         $dadospagina = $this->mFuncionario->fetchAll(array('id_funcionario = ?' => $params ))->toArray();
         return $dadospagina[0];
     }
+    
+    /**
+     * 
+     */
+    public function getfuncionariosAction()
+    {
+        $result = $this->mFuncionario->fetchAll()->toArray();
+        $result = json_encode(array('resultado'=>$result));
+        $this->_helper->json($result);
+    }
+    
      /**
       * 
       * @param unknown $file
